@@ -9,6 +9,7 @@
 #ifndef __FEX__FECommon__
 #define __FEX__FECommon__
 
-#include <iostream>
+#define FE_NS_BEGIN namespace FESimpe{
+#define FE_NS_END }
 
 #endif /* defined(__FEX__FECommon__) */
