@@ -9,7 +9,15 @@
 #ifndef __FEX__FECommon__
 #define __FEX__FECommon__
 
-#define FE_NS_BEGIN namespace FESimpe{
+#include <memory>
+#define FE_NS_BEGIN namespace FESimple{
 #define FE_NS_END }
 
+FE_NS_BEGIN
+class GameObjBase;
+typedef std::shared_ptr<GameObjBase> GameObjPtr;
+typedef std::string Name;
+
+
+FE_NS_END
 #endif /* defined(__FEX__FECommon__) */

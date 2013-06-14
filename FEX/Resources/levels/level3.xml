@@ -1,0 +1,40 @@
+<xml>
+	<level map_width="12240.00" map_height="1500.00" >
+		<acting_range>
+<keyframe progress="0.00" pos="0.00,0.00" size="1024.00,1024.00"/>
+<keyframe progress="1000000.00" pos="0.00,0.00" size="1024.00,1024.00"/>
+		</acting_range>
+		<actions>
+			<action act="add_obj" sprite_desc="sprites/base.xml:starry_bg" layer="bg2" init_zorder="1" class="SSceneStaticObj" init_scale="2" progress="0.000000" init_position="0,0" />
+			<action act="add_obj" sprite_desc="sprites/base.xml:starry_bg" layer="bg2" init_zorder="1" class="SSceneStaticObj" init_scale="2" progress="0.000000" init_position="1024,0" init_rotation="0" />
+			<action act="add_obj" sprite_desc="sprites/base.xml:starry_bg" layer="bg2" init_zorder="1" class="SSceneStaticObj" init_scale="2" progress="0.000000" init_position="2048,0" />
+			<action act="add_obj" sprite_desc="sprites/base.xml:starry_bg" layer="bg2" init_zorder="1" class="SSceneStaticObj" init_scale="2" progress="0.000000" init_position="0,1024" />
+			<action act="add_obj" sprite_desc="sprites/base.xml:starry_bg" layer="bg2" init_zorder="1" class="SSceneStaticObj" init_scale="2" progress="0.000000" init_position="1024,1024" init_rotation="0" />
+			<action act="add_obj" sprite_desc="sprites/base.xml:starry_bg" layer="bg2" init_zorder="1" class="SSceneStaticObj" init_scale="2" progress="0.000000" init_position="2048,1024" />
+			<action act="add_obj" sprite_desc="sprites/base.xml:starry_bg2" layer="bg1" init_zorder="1" class="SSceneStaticObj" init_scale="2" progress="0.000000" init_position="0,0" />
+			<action act="add_obj" sprite_desc="sprites/base.xml:starry_bg2" layer="bg1" init_zorder="1" class="SSceneStaticObj" init_scale="2" progress="0.000000" init_position="1024,0" init_rotation="0" />
+			<action act="add_obj" sprite_desc="sprites/base.xml:starry_bg2" layer="bg1" init_zorder="1" class="SSceneStaticObj" init_scale="2" progress="0.000000" init_position="2048,0" />
+			<action act="add_obj" sprite_desc="sprites/base.xml:starry_bg2" layer="bg1" init_zorder="1" class="SSceneStaticObj" init_scale="2" progress="0.000000" init_position="0,1024" />
+			<action act="add_obj" sprite_desc="sprites/base.xml:starry_bg2" layer="bg1" init_zorder="1" class="SSceneStaticObj" init_scale="2" progress="0.000000" init_position="1024,1024" init_rotation="0" />
+			<action act="add_obj" sprite_desc="sprites/base.xml:starry_bg2" layer="bg1" init_zorder="1" class="SSceneStaticObj" init_scale="2" progress="0.000000" init_position="2048,1024" />
+			<action act="add_obj" sprite_desc="sprites/base.xml:planet1" layer="bg2" init_zorder="1" class="SSceneStaticObj" init_scale="2" init_position="808.94,192.30" progress="0.000000" />
+			<action act="add_obj" sprite_desc="sprites/base.xml:planet1" layer="bg1" init_zorder="1" class="SSceneStaticObj" init_scale="4" init_position="0,861.29" progress="0.000000" init_rotation="0" />
+			<action act="add_obj" sprite_desc="sprites/base.xml:planet1" layer="bg2" init_zorder="1" class="SSceneStaticObj" init_scale="1.2" init_position="609.63,490.16" progress="0.000000" />
+			<action act="add_obj" sprite_desc="sprites/base.xml:planet2" layer="bg1" init_zorder="2" class="SSceneStaticObj" init_scale="2" init_position="574.54,332.53" progress="0.000000" init_rotation="45" />
+
+            <action act="wave_begin" wave_id="1" desc="so many drones 1" />
+            <action act="add_obj" sprite_desc="sprites/base.xml:bosskim" layser="game" init_position="512,812" class="SuperBossKim" max_health="100" />
+            
+			<action-off jb_init_speed="1" init_max_health="4" random_spawn_count="1" random_spawn_range_type="rect" jb_max_speed="1" random_spawn_at_edge="true" batchable="true" sprite_desc="sprites/base.xml:craft_drone1" init_health="4" init_scale="1" act="add_obj" random_spawn_rect="330,330,624,624" class="SpriteRandomSpawnner" random_spawn_interval="2" spawn_class="SStupidDrone" />
+            <action act="wait_wave_end" />
+            <action act="wave_begin" wave_id="2" desc="so many drones 2" />
+			<action jb_init_speed="1" init_max_health="4" random_spawn_count="1" random_spawn_range_type="rect" jb_max_speed="1" random_spawn_at_edge="true" batchable="true" sprite_desc="sprites/base.xml:craft_drone1" init_health="4" init_scale="1" act="add_obj" random_spawn_rect="330,330,624,624" class="SpriteRandomSpawnner" random_spawn_interval="2" spawn_class="SStupidDrone" />
+            <action act="wait_wave_end" />
+            <action act="wave_begin" wave_id="3" desc="so many drones 3" />
+			<action jb_init_speed="1" init_max_health="4" random_spawn_count="1" random_spawn_range_type="rect" jb_max_speed="1" random_spawn_at_edge="true" batchable="true" sprite_desc="sprites/base.xml:craft_drone1" init_health="4" init_scale="1" act="add_obj" random_spawn_rect="330,330,624,624" class="SpriteRandomSpawnner" random_spawn_interval="2" spawn_class="SStupidDrone" />
+            <action act="wait_wave_end" />
+            
+
+		</actions>
+	</level>
+</xml>

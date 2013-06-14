@@ -1,0 +1,18 @@
+<bodies>
+
+<body name="robot" id="0" anchor_rel="0.536,0.401" anchor_abs="15.540,14.450" size="29.000,36.000">
+<polygon vertices=" -7.540,-14.450 ,2.460,-14.450 ,9.460,10.550 ,-3.540,-3.450" is_sensor="false" />
+<polygon vertices=" 0.460,20.550 ,-8.540,20.550 ,-8.540,7.550 ,0.460,11.550" is_sensor="false" />
+<polygon vertices=" -3.540,-3.450 ,9.460,10.550 ,0.460,11.550 ,-8.540,7.550 ,-13.540,4.550" is_sensor="false" />
+</body>
+<body name="robotic_eye" id="0" anchor_rel="0.500,0.500" anchor_abs="16.000,16.000" size="32.000,32.000">
+<circle radius="16.000" is_sensor="false" />
+</body>
+<body name="drone" id="0" anchor_rel="0.500,0.500" anchor_abs="24.000,20.500" size="48.000,41.000">
+<circle radius="18.000" is_sensor="false" />
+</body>
+<body name="bosskim" id="0" anchor_rel="0.500,0.500" anchor_abs="62.000,62.500" size="124.000,125.000">
+<circle radius="62.000" is_sensor="false" />
+</body>
+</bodies>
+        

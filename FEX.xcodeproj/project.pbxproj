@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		040B3C251766E05100596508 /* FEUtility.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 040B3C231766E05100596508 /* FEUtility.cpp */; };
 		04713BCD1760C81900443B48 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04713BCC1760C81900443B48 /* QuartzCore.framework */; };
 		04713BCF1760C81900443B48 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04713BCE1760C81900443B48 /* OpenGLES.framework */; };
 		04713BD11760C81900443B48 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04713BD01760C81900443B48 /* OpenAL.framework */; };
@@ -285,12 +286,25 @@
 		04846DD017623CBC009A5E6F /* GameLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04846DC517623CBC009A5E6F /* GameLayer.cpp */; };
 		04846DD117623CBC009A5E6F /* GameObjBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04846DC717623CBC009A5E6F /* GameObjBase.cpp */; };
 		04846DD217623CBC009A5E6F /* GameScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04846DC917623CBC009A5E6F /* GameScene.cpp */; };
-		04846DD317623CBC009A5E6F /* Sprite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04846DCB17623CBC009A5E6F /* Sprite.cpp */; };
-		04846DD417623CBC009A5E6F /* GameWorld.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04846DCD17623CBC009A5E6F /* GameWorld.cpp */; };
-		04846DD7176248FF009A5E6F /* FECommon.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04846DD5176248FF009A5E6F /* FECommon.cpp */; };
+		04846DD317623CBC009A5E6F /* SpriteComponent.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04846DCB17623CBC009A5E6F /* SpriteComponent.cpp */; };
+		04846DD7176248FF009A5E6F /* FE.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04846DD5176248FF009A5E6F /* FE.cpp */; };
+		04A9BE741765A38C007AC855 /* fonts in Resources */ = {isa = PBXBuildFile; fileRef = 04A9BE6B1765A38C007AC855 /* fonts */; };
+		04A9BE751765A38C007AC855 /* levels in Resources */ = {isa = PBXBuildFile; fileRef = 04A9BE6C1765A38C007AC855 /* levels */; };
+		04A9BE761765A38C007AC855 /* particles in Resources */ = {isa = PBXBuildFile; fileRef = 04A9BE6D1765A38C007AC855 /* particles */; };
+		04A9BE771765A38C007AC855 /* pdb in Resources */ = {isa = PBXBuildFile; fileRef = 04A9BE6E1765A38C007AC855 /* pdb */; };
+		04A9BE781765A38C007AC855 /* pic in Resources */ = {isa = PBXBuildFile; fileRef = 04A9BE6F1765A38C007AC855 /* pic */; };
+		04A9BE791765A38C007AC855 /* sfx in Resources */ = {isa = PBXBuildFile; fileRef = 04A9BE701765A38C007AC855 /* sfx */; };
+		04A9BE7A1765A38C007AC855 /* shaders in Resources */ = {isa = PBXBuildFile; fileRef = 04A9BE711765A38C007AC855 /* shaders */; };
+		04A9BE7B1765A38C007AC855 /* sprite_components in Resources */ = {isa = PBXBuildFile; fileRef = 04A9BE721765A38C007AC855 /* sprite_components */; };
+		04A9BE7C1765A38C007AC855 /* sprites in Resources */ = {isa = PBXBuildFile; fileRef = 04A9BE731765A38C007AC855 /* sprites */; };
+		04A9BE7F17661B4F007AC855 /* ResourceManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04A9BE7D17661B4E007AC855 /* ResourceManager.cpp */; };
+		04A9BE841766229B007AC855 /* pugixml.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04A9BE821766229B007AC855 /* pugixml.cpp */; };
+		04FA5F861764AB1E005DF04E /* SpriteBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04FA5F841764AB1E005DF04E /* SpriteBase.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		040B3C231766E05100596508 /* FEUtility.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FEUtility.cpp; sourceTree = "<group>"; };
+		040B3C241766E05100596508 /* FEUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FEUtility.h; sourceTree = "<group>"; };
 		04713BC91760C81900443B48 /* FEX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FEX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04713BCC1760C81900443B48 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		04713BCE1760C81900443B48 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
@@ -892,12 +906,26 @@
 		04846DC817623CBC009A5E6F /* GameObjBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameObjBase.h; sourceTree = "<group>"; };
 		04846DC917623CBC009A5E6F /* GameScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameScene.cpp; sourceTree = "<group>"; };
 		04846DCA17623CBC009A5E6F /* GameScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameScene.h; sourceTree = "<group>"; };
-		04846DCB17623CBC009A5E6F /* Sprite.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Sprite.cpp; sourceTree = "<group>"; };
-		04846DCC17623CBC009A5E6F /* Sprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sprite.h; sourceTree = "<group>"; };
-		04846DCD17623CBC009A5E6F /* GameWorld.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameWorld.cpp; sourceTree = "<group>"; };
-		04846DCE17623CBC009A5E6F /* GameWorld.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameWorld.h; sourceTree = "<group>"; };
-		04846DD5176248FF009A5E6F /* FECommon.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FECommon.cpp; sourceTree = "<group>"; };
-		04846DD6176248FF009A5E6F /* FECommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FECommon.h; sourceTree = "<group>"; };
+		04846DCB17623CBC009A5E6F /* SpriteComponent.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SpriteComponent.cpp; sourceTree = "<group>"; };
+		04846DCC17623CBC009A5E6F /* SpriteComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpriteComponent.h; sourceTree = "<group>"; };
+		04846DD5176248FF009A5E6F /* FE.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FE.cpp; sourceTree = "<group>"; };
+		04846DD6176248FF009A5E6F /* FE.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FE.h; sourceTree = "<group>"; };
+		04A9BE6B1765A38C007AC855 /* fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; name = fonts; path = Resources/fonts; sourceTree = "<group>"; };
+		04A9BE6C1765A38C007AC855 /* levels */ = {isa = PBXFileReference; lastKnownFileType = folder; name = levels; path = Resources/levels; sourceTree = "<group>"; };
+		04A9BE6D1765A38C007AC855 /* particles */ = {isa = PBXFileReference; lastKnownFileType = folder; name = particles; path = Resources/particles; sourceTree = "<group>"; };
+		04A9BE6E1765A38C007AC855 /* pdb */ = {isa = PBXFileReference; lastKnownFileType = folder; name = pdb; path = Resources/pdb; sourceTree = "<group>"; };
+		04A9BE6F1765A38C007AC855 /* pic */ = {isa = PBXFileReference; lastKnownFileType = folder; name = pic; path = Resources/pic; sourceTree = "<group>"; };
+		04A9BE701765A38C007AC855 /* sfx */ = {isa = PBXFileReference; lastKnownFileType = folder; name = sfx; path = Resources/sfx; sourceTree = "<group>"; };
+		04A9BE711765A38C007AC855 /* shaders */ = {isa = PBXFileReference; lastKnownFileType = folder; name = shaders; path = Resources/shaders; sourceTree = "<group>"; };
+		04A9BE721765A38C007AC855 /* sprite_components */ = {isa = PBXFileReference; lastKnownFileType = folder; name = sprite_components; path = Resources/sprite_components; sourceTree = "<group>"; };
+		04A9BE731765A38C007AC855 /* sprites */ = {isa = PBXFileReference; lastKnownFileType = folder; name = sprites; path = Resources/sprites; sourceTree = "<group>"; };
+		04A9BE7D17661B4E007AC855 /* ResourceManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ResourceManager.cpp; sourceTree = "<group>"; };
+		04A9BE7E17661B4E007AC855 /* ResourceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResourceManager.h; sourceTree = "<group>"; };
+		04A9BE811766229B007AC855 /* pugiconfig.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = pugiconfig.hpp; sourceTree = "<group>"; };
+		04A9BE821766229B007AC855 /* pugixml.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = pugixml.cpp; sourceTree = "<group>"; };
+		04A9BE831766229B007AC855 /* pugixml.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = pugixml.hpp; sourceTree = "<group>"; };
+		04FA5F841764AB1E005DF04E /* SpriteBase.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SpriteBase.cpp; sourceTree = "<group>"; };
+		04FA5F851764AB1E005DF04E /* SpriteBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpriteBase.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -970,6 +998,15 @@
 		04713BDD1760C81900443B48 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				04A9BE6B1765A38C007AC855 /* fonts */,
+				04A9BE6C1765A38C007AC855 /* levels */,
+				04A9BE6D1765A38C007AC855 /* particles */,
+				04A9BE6E1765A38C007AC855 /* pdb */,
+				04A9BE6F1765A38C007AC855 /* pic */,
+				04A9BE701765A38C007AC855 /* sfx */,
+				04A9BE711765A38C007AC855 /* shaders */,
+				04A9BE721765A38C007AC855 /* sprite_components */,
+				04A9BE731765A38C007AC855 /* sprites */,
 				04713BE21760C81900443B48 /* Default.png */,
 				04713BE41760C81900443B48 /* HelloWorld.png */,
 				04713BE61760C81900443B48 /* Icon-72.png */,
@@ -2100,22 +2137,45 @@
 		04846DC217623CBC009A5E6F /* FESimple */ = {
 			isa = PBXGroup;
 			children = (
-				04846DC317623CBC009A5E6F /* GameBase.cpp */,
-				04846DC417623CBC009A5E6F /* GameBase.h */,
-				04846DC517623CBC009A5E6F /* GameLayer.cpp */,
-				04846DC617623CBC009A5E6F /* GameLayer.h */,
-				04846DC717623CBC009A5E6F /* GameObjBase.cpp */,
-				04846DC817623CBC009A5E6F /* GameObjBase.h */,
-				04846DC917623CBC009A5E6F /* GameScene.cpp */,
-				04846DCA17623CBC009A5E6F /* GameScene.h */,
-				04846DCB17623CBC009A5E6F /* Sprite.cpp */,
-				04846DCC17623CBC009A5E6F /* Sprite.h */,
-				04846DCD17623CBC009A5E6F /* GameWorld.cpp */,
-				04846DCE17623CBC009A5E6F /* GameWorld.h */,
-				04846DD5176248FF009A5E6F /* FECommon.cpp */,
-				04846DD6176248FF009A5E6F /* FECommon.h */,
+				04A9BE801766229A007AC855 /* pugixml */,
+				04FA5F871764D3FC005DF04E /* Fundmental */,
+				04846DCB17623CBC009A5E6F /* SpriteComponent.cpp */,
+				04846DCC17623CBC009A5E6F /* SpriteComponent.h */,
+				04846DD5176248FF009A5E6F /* FE.cpp */,
+				04846DD6176248FF009A5E6F /* FE.h */,
+				04FA5F841764AB1E005DF04E /* SpriteBase.cpp */,
+				04FA5F851764AB1E005DF04E /* SpriteBase.h */,
+				04A9BE7D17661B4E007AC855 /* ResourceManager.cpp */,
+				04A9BE7E17661B4E007AC855 /* ResourceManager.h */,
+				040B3C231766E05100596508 /* FEUtility.cpp */,
+				040B3C241766E05100596508 /* FEUtility.h */,
 			);
 			path = FESimple;
+			sourceTree = "<group>";
+		};
+		04A9BE801766229A007AC855 /* pugixml */ = {
+			isa = PBXGroup;
+			children = (
+				04A9BE811766229B007AC855 /* pugiconfig.hpp */,
+				04A9BE821766229B007AC855 /* pugixml.cpp */,
+				04A9BE831766229B007AC855 /* pugixml.hpp */,
+			);
+			path = pugixml;
+			sourceTree = "<group>";
+		};
+		04FA5F871764D3FC005DF04E /* Fundmental */ = {
+			isa = PBXGroup;
+			children = (
+				04846DC517623CBC009A5E6F /* GameLayer.cpp */,
+				04846DC617623CBC009A5E6F /* GameLayer.h */,
+				04846DC917623CBC009A5E6F /* GameScene.cpp */,
+				04846DCA17623CBC009A5E6F /* GameScene.h */,
+				04846DC717623CBC009A5E6F /* GameObjBase.cpp */,
+				04846DC817623CBC009A5E6F /* GameObjBase.h */,
+				04846DC317623CBC009A5E6F /* GameBase.cpp */,
+				04846DC417623CBC009A5E6F /* GameBase.h */,
+			);
+			name = Fundmental;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -2181,6 +2241,15 @@
 				04713DF91760C81D00443B48 /* project.pbxproj in Resources */,
 				04713F781760C82000443B48 /* blocks.png in Resources */,
 				04713F7F1760C89600443B48 /* Default-568h@2x.png in Resources */,
+				04A9BE741765A38C007AC855 /* fonts in Resources */,
+				04A9BE751765A38C007AC855 /* levels in Resources */,
+				04A9BE761765A38C007AC855 /* particles in Resources */,
+				04A9BE771765A38C007AC855 /* pdb in Resources */,
+				04A9BE781765A38C007AC855 /* pic in Resources */,
+				04A9BE791765A38C007AC855 /* sfx in Resources */,
+				04A9BE7A1765A38C007AC855 /* shaders in Resources */,
+				04A9BE7B1765A38C007AC855 /* sprite_components in Resources */,
+				04A9BE7C1765A38C007AC855 /* sprites in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2446,9 +2515,12 @@
 				04846DD017623CBC009A5E6F /* GameLayer.cpp in Sources */,
 				04846DD117623CBC009A5E6F /* GameObjBase.cpp in Sources */,
 				04846DD217623CBC009A5E6F /* GameScene.cpp in Sources */,
-				04846DD317623CBC009A5E6F /* Sprite.cpp in Sources */,
-				04846DD417623CBC009A5E6F /* GameWorld.cpp in Sources */,
-				04846DD7176248FF009A5E6F /* FECommon.cpp in Sources */,
+				04846DD317623CBC009A5E6F /* SpriteComponent.cpp in Sources */,
+				04846DD7176248FF009A5E6F /* FE.cpp in Sources */,
+				04FA5F861764AB1E005DF04E /* SpriteBase.cpp in Sources */,
+				04A9BE7F17661B4F007AC855 /* ResourceManager.cpp in Sources */,
+				04A9BE841766229B007AC855 /* pugixml.cpp in Sources */,
+				040B3C251766E05100596508 /* FEUtility.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

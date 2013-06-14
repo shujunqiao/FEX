@@ -10,20 +10,34 @@
 #define __FEX__GameBase__
 
 #include <memory>
-
-namespace FESimple
+#include <list>
+class b2World;
+FE_NS_BEGIN
+class GameWorld;
+class GameScene;
+class GameObjBase;
+class GameBase
 {
-    class GameWorld;
-    class GameBase
+public:
+    GameBase();
+    ~GameBase();
+    void update(float delta_time);
+    void clean();
+    
+    void add_game_object( GameObjPtr obj );
+    void remove_game_object( GameObjPtr obj );
+    
+    //scene
+    GameScene* scene()
     {
-    public:
-        GameBase();
-        ~GameBase();
-        void update(float delta_time);
-        void clean();
-    protected:
-        std::unique_ptr<GameWorld>           m_game_world;
-    };
-}
+        return m_scene.get();
+    }
+protected:
+    std::unique_ptr<GameScene>              m_scene;       // visible world
+    std::unique_ptr<b2World>                m_phy_world;
+    std::list<GameObjPtr>                   m_objects;
+    
+};
+FE_NS_END
 
 #endif /* defined(__FEX__GameBase__) */

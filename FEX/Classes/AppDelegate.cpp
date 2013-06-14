@@ -11,8 +11,13 @@
 #include "cocos2d.h"
 #include "SimpleAudioEngine.h"
 
-
+#include "FE.h"
+#include "GameBase.h"
+#include "GameScene.h"
+#include "FEUtility.h"
+#include "ResourceManager.h"
 USING_NS_CC;
+using namespace FESimple;
 using namespace CocosDenshion;
 
 AppDelegate::AppDelegate()
@@ -35,13 +40,20 @@ bool AppDelegate::applicationDidFinishLaunching()
 
     // set FPS. the default value is 1.0/60 if you don't call this
     pDirector->setAnimationInterval(1.0 / 60);
-//
-//    // create a scene. it's an autorelease object
-//    CCScene *pScene = HelloWorld::scene();
-//
-//    // run
-//    pDirector->runWithScene(pScene);
 
+    
+    GameBase* game = new GameBase();
+    pDirector->runWithScene( game->scene()->ccscene() );
+
+    //std::vector<std::string> paths = {CCFileUtils::sharedFileUtils()->getWritablePath().c_str()};
+
+    //CCFileUtils::sharedFileUtils()->setSearchPaths(paths);
+    
+
+    
+    ResourceManager::load_sprite_component_desc(full_path("sprite_components/base.xml"));
+    //ResourceManager::load_sprite_desc(full_path("sprites/base.xml"));
+    //ResourceManager::load_physic_desc(full_path("pdb/main.xml"));
     return true;
 }
 
