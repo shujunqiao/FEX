@@ -21,22 +21,24 @@ class GameBase
 public:
     GameBase();
     ~GameBase();
+    
     void update(float delta_time);
     void clean();
     
-    void add_game_object( GameObjPtr obj );
+    void add_game_object( GameObjPtr obj, const Name& to_layer );
     void remove_game_object( GameObjPtr obj );
     
     //scene
-    GameScene* scene()
+    GameScene* get_scene()
     {
-        return m_scene.get();
+        return scene.get();
     }
-protected:
-    std::unique_ptr<GameScene>              m_scene;       // visible world
-    std::unique_ptr<b2World>                m_phy_world;
-    std::list<GameObjPtr>                   m_objects;
     
+protected:
+    std::unique_ptr<GameScene>              scene;       // visible world
+    std::unique_ptr<b2World>                phy_world;
+    std::list<GameObjPtr>                   objects;
+
 };
 FE_NS_END
 

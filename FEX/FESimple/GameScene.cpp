@@ -11,42 +11,40 @@
 FE_NS_BEGIN
 GameScene::GameScene()
 {
-    m_scene = new cocos2d::CCScene();
-    m_scene->init();
+    scene = new cocos2d::CCScene();
+    scene->init();
 }
 
 GameScene::~GameScene()
 {
-    m_scene->release();
+    scene->release();
 }
 
 //layers
 GameLayer* GameScene::get_layer( std::string name )
 {
-    for ( auto layer : m_layers )
+    for ( auto layer : layers )
     {
-        if ( layer->name() == name )
+        if ( layer->get_name() == name )
             return layer;
     }
-    return nullptr;
+    return *layers.begin();//return first layer
 }
 
-void GameScene::add_layer( GameLayer* layer, std::string name )
+void GameScene::add_layer( GameLayer* layer, const Name& name )
 {
-    if ( get_layer( name ) != nullptr )
-    {
-        m_layers.insert( m_layers.begin(), layer );
-        //added_to_world( this );
-    }
-    else
-    {
-        assert(0&&"layer with same name already exists");
-    }
+    layers.insert( layers.begin(), layer );
+    
+}
+
+void GameScene::remove_layer( GameLayer* layer )
+{
+    layers.remove( layer );
 }
 
 void GameScene::remove_all_layers()
 {
-    m_layers.clear();
+    layers.clear();
 }
 
 

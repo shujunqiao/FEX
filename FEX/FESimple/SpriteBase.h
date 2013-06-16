@@ -23,18 +23,24 @@ class SpriteBase :public GameObjBase
 {
 public:
     SpriteBase();
-    SpriteBase( const sprite_desc& desc );
+    SpriteBase( const std::shared_ptr<sprite_desc> desc );
     ~SpriteBase();
     
-    virtual void added_to_game( GameBase* game );
+    virtual void added_to_game( GameBase* game, const Name& to_layer );
     virtual void removed_from_game( GameBase* game );
     
     //components management
     void add_component( SpriteComponent* );
     void remove_component( SpriteComponent * );
     SpriteComponent* get_component( unsigned int index );
+    
+    
+    
+    //position , rotation, ect..
+    void set_position( CCPoint pos );
+    void set_rotation( float angle );
 protected:
-    std::vector< SpriteComponent* > m_components;
+    std::vector< SpriteComponent* > components;
 };
 FE_NS_END
 

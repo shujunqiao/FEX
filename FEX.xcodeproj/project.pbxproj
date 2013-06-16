@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		040B33CB176C6A3400AFBF95 /* sprite_components in Resources */ = {isa = PBXBuildFile; fileRef = 040B33CA176C6A3400AFBF95 /* sprite_components */; };
 		040B3C251766E05100596508 /* FEUtility.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 040B3C231766E05100596508 /* FEUtility.cpp */; };
 		04713BCD1760C81900443B48 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04713BCC1760C81900443B48 /* QuartzCore.framework */; };
 		04713BCF1760C81900443B48 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04713BCE1760C81900443B48 /* OpenGLES.framework */; };
@@ -295,7 +296,6 @@
 		04A9BE781765A38C007AC855 /* pic in Resources */ = {isa = PBXBuildFile; fileRef = 04A9BE6F1765A38C007AC855 /* pic */; };
 		04A9BE791765A38C007AC855 /* sfx in Resources */ = {isa = PBXBuildFile; fileRef = 04A9BE701765A38C007AC855 /* sfx */; };
 		04A9BE7A1765A38C007AC855 /* shaders in Resources */ = {isa = PBXBuildFile; fileRef = 04A9BE711765A38C007AC855 /* shaders */; };
-		04A9BE7B1765A38C007AC855 /* sprite_components in Resources */ = {isa = PBXBuildFile; fileRef = 04A9BE721765A38C007AC855 /* sprite_components */; };
 		04A9BE7C1765A38C007AC855 /* sprites in Resources */ = {isa = PBXBuildFile; fileRef = 04A9BE731765A38C007AC855 /* sprites */; };
 		04A9BE7F17661B4F007AC855 /* ResourceManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04A9BE7D17661B4E007AC855 /* ResourceManager.cpp */; };
 		04A9BE841766229B007AC855 /* pugixml.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04A9BE821766229B007AC855 /* pugixml.cpp */; };
@@ -303,6 +303,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		040B33CA176C6A3400AFBF95 /* sprite_components */ = {isa = PBXFileReference; lastKnownFileType = folder; name = sprite_components; path = Resources/sprite_components; sourceTree = "<group>"; };
 		040B3C231766E05100596508 /* FEUtility.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FEUtility.cpp; sourceTree = "<group>"; };
 		040B3C241766E05100596508 /* FEUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FEUtility.h; sourceTree = "<group>"; };
 		04713BC91760C81900443B48 /* FEX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FEX.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -917,7 +918,6 @@
 		04A9BE6F1765A38C007AC855 /* pic */ = {isa = PBXFileReference; lastKnownFileType = folder; name = pic; path = Resources/pic; sourceTree = "<group>"; };
 		04A9BE701765A38C007AC855 /* sfx */ = {isa = PBXFileReference; lastKnownFileType = folder; name = sfx; path = Resources/sfx; sourceTree = "<group>"; };
 		04A9BE711765A38C007AC855 /* shaders */ = {isa = PBXFileReference; lastKnownFileType = folder; name = shaders; path = Resources/shaders; sourceTree = "<group>"; };
-		04A9BE721765A38C007AC855 /* sprite_components */ = {isa = PBXFileReference; lastKnownFileType = folder; name = sprite_components; path = Resources/sprite_components; sourceTree = "<group>"; };
 		04A9BE731765A38C007AC855 /* sprites */ = {isa = PBXFileReference; lastKnownFileType = folder; name = sprites; path = Resources/sprites; sourceTree = "<group>"; };
 		04A9BE7D17661B4E007AC855 /* ResourceManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ResourceManager.cpp; sourceTree = "<group>"; };
 		04A9BE7E17661B4E007AC855 /* ResourceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResourceManager.h; sourceTree = "<group>"; };
@@ -998,6 +998,7 @@
 		04713BDD1760C81900443B48 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				040B33CA176C6A3400AFBF95 /* sprite_components */,
 				04A9BE6B1765A38C007AC855 /* fonts */,
 				04A9BE6C1765A38C007AC855 /* levels */,
 				04A9BE6D1765A38C007AC855 /* particles */,
@@ -1005,7 +1006,6 @@
 				04A9BE6F1765A38C007AC855 /* pic */,
 				04A9BE701765A38C007AC855 /* sfx */,
 				04A9BE711765A38C007AC855 /* shaders */,
-				04A9BE721765A38C007AC855 /* sprite_components */,
 				04A9BE731765A38C007AC855 /* sprites */,
 				04713BE21760C81900443B48 /* Default.png */,
 				04713BE41760C81900443B48 /* HelloWorld.png */,
@@ -2248,8 +2248,8 @@
 				04A9BE781765A38C007AC855 /* pic in Resources */,
 				04A9BE791765A38C007AC855 /* sfx in Resources */,
 				04A9BE7A1765A38C007AC855 /* shaders in Resources */,
-				04A9BE7B1765A38C007AC855 /* sprite_components in Resources */,
 				04A9BE7C1765A38C007AC855 /* sprites in Resources */,
+				040B33CB176C6A3400AFBF95 /* sprite_components in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -10,12 +10,20 @@
 #include "pugixml.hpp"
 #include "FEUtility.h"
 #include <algorithm>
+#include <memory>
+#include <FE.h>
+
+
 FE_NS_BEGIN
 
-SharedReourceMap<sprite_desc>              ResourceManager::m_sprite_descs;
-SharedReourceMap<physic_desc>              ResourceManager::m_physic_descs;
-SharedReourceMap<sprite_component_desc>    ResourceManager::m_sprite_components;
-SharedReourceMap<animation>                ResourceManager::m_animations;
+
+ResourceManager* ResourceManager::instance()
+{
+    static ResourceManager* mgr = nullptr;
+    if ( mgr == nullptr )
+        mgr = new ResourceManager();
+    return mgr;
+}
 
 void ResourceManager::load_sprite_desc( const std::string& filename )
 {
@@ -25,22 +33,22 @@ void ResourceManager::load_sprite_desc( const std::string& filename )
 
     for ( auto it : doc.child("sprites").children("sprite") )//<sprites><sprites>...
     {
-        sprite_desc desc;
+        sprite_desc* desc = new sprite_desc;
         std::string name = it.attribute("name").as_string();
         
         for ( auto cmpit : it.child("components").children("component") )//<sprite><components><component>...
         {
             sprite_component_ref sc_ref;
             
-            sc_ref.m_component_name = cmpit.attribute("desc").as_string();
-            sc_ref.m_offset = str_to_point(cmpit.attribute("offset").as_string());
-            desc.m_components.push_back(sc_ref);
+            sc_ref.component_name = cmpit.attribute("desc").as_string();
+            sc_ref.offset = string_to_point(cmpit.attribute("offset").as_string());
+            desc->components.push_back(sc_ref);
         }
         for ( auto jointit : it.child("joints").children("joint") )
         {
             sprite_joint_desc jdesc;
-            jdesc.m_component_a = jointit.attribute("component_a").as_int();
-            jdesc.m_component_b = jointit.attribute("component_b").as_int();
+            jdesc.component_a = jointit.attribute("component_a").as_int();
+            jdesc.component_b = jointit.attribute("component_b").as_int();
             //create b2jointdef
             switch( str_to_joint_type(jointit.attribute("type").as_string() ))
             {
@@ -50,14 +58,66 @@ void ResourceManager::load_sprite_desc( const std::string& filename )
                 default:
                     break;
             }
+            desc->joints.push_back(jdesc);
         }
-    }
+        sprite_descs[name] = std::shared_ptr<sprite_desc>(desc);
 
+    }
+    
+    
+    for ( auto it = sprite_descs.begin(); it != sprite_descs.end(); ++it )
+    {
+
+        logger("ResMgrDbg") << it->first << endl;
+    }
     
 }
 
 void ResourceManager::load_physic_desc( const std::string& filename )
 {
+    pugi::xml_document doc;
+    doc.load_file( filename.c_str() );
+    
+    for ( auto body_node: doc.child("bodies").children("body") )
+    {
+        physic_desc* desc = new physic_desc();
+        for( auto fixture_node: body_node.children() )
+        {
+            b2fixture_def fixdef;
+            b2Shape* shape;
+            if ( std::string("circle") == fixture_node.name()  )
+            {
+                shape = new b2CircleShape();
+                shape->m_radius = fixture_node.attribute("radius").as_float();
+                ((b2CircleShape*)shape)->m_p = string_to_b2Vec(fixture_node.attribute("center").as_string());
+            }
+            if ( std::string("polygon") == fixture_node.name() )
+            {
+                shape = new b2PolygonShape();
+
+                auto floats = string_to_floats( fixture_node.attribute("vertices").as_string() );
+                b2Vec2* tmpvecs = new b2Vec2[floats.size()/2];
+                for ( int i = 0; i < floats.size(); i+=2 )
+                {
+                    tmpvecs[i/2].x = floats[i];
+                    tmpvecs[i/2].y = floats[i+1];
+                }
+                ((b2PolygonShape*)shape)->Set(tmpvecs, floats.size()/2);
+                delete[] tmpvecs;
+            }
+            fixdef.shape = shape;
+            fixdef.isSensor = fixture_node.attribute("is_sensor").as_bool();
+            fixdef.identity = fixture_node.attribute("identity").as_int();
+            desc->fixture_defs.push_back(fixdef);
+        }
+        desc->body_def.type = string_to_b2BodyType( body_node.attribute("type").as_string() );
+        physic_descs[body_node.attribute("name").as_string()] = std::shared_ptr<physic_desc>(desc);
+    }
+
+    for ( auto it = physic_descs.begin(); it != physic_descs.end(); ++it )
+    {
+        logger("ResMgrDbg") << "PhysicDesc: " << it->first << endl;
+    }
 }
 
 void ResourceManager::load_sprite_component_desc( const std::string& filename )
@@ -67,9 +127,8 @@ void ResourceManager::load_sprite_component_desc( const std::string& filename )
 
     for ( auto it : doc.child("sprite_components").children("component") )
     {
-        sprite_component_desc desc;
+        sprite_component_desc* desc = new sprite_component_desc();
         std::string name = it.attribute("name").as_string();
-        cout << "sprite component" << name << endl;
         for ( auto animit : it.child("animations").children("sequence") )
         {
             //create animations by definition and store in another map
@@ -77,12 +136,11 @@ void ResourceManager::load_sprite_component_desc( const std::string& filename )
             std::string anim_name;
             anim_name = animit.attribute("name").as_string();
             //if already exists , skip
-            std::string unique_anim_name = relative_path_to_app( filename ) + ":" + name + ":" + anim_name;
-            if ( m_animations.item(unique_anim_name) != nullptr )
+            std::string unique_anim_name = name + ":" + anim_name;
+            if ( animations.item(unique_anim_name) != nullptr )
                 continue;
             
             std::vector<std::string> frame_names = split_string(animit.attribute("frames").as_string(), ",");
-            cout << "read frames:" << animit.attribute("frames").as_string() << endl;
             //add all frames in plistfile
             CCSpriteFrameCache::sharedSpriteFrameCache()->addSpriteFramesWithFile(animit.attribute("texture").as_string());
             CCArray* array_frames = CCArray::create();//array to create ccanimation
@@ -106,15 +164,28 @@ void ResourceManager::load_sprite_component_desc( const std::string& filename )
             //array_frame will be autoreleased, and CCAnimation will make a copy inside
             CCAnimation* ccanim;
             if ( frame_speed > 0 )
-                ccanim = CCAnimation::createWithSpriteFrames(array_frames, 1.0f/frame_speed);
+                ccanim = CCAnimation::createWithSpriteFrames(array_frames, frame_speed);
             else
                 ccanim = CCAnimation::createWithSpriteFrames(array_frames);
-            ccanim->retain();
+
             //as a resource , animation should be cached as well
-            cout << "add animation " << unique_anim_name << endl;
-            m_animations[unique_anim_name] = std::shared_ptr<animation>( new animation({anim_name,ccanim}));
+            animations[unique_anim_name] = std::shared_ptr<animation>( new animation({anim_name,ccanim}));
+            desc->animation_names.push_back(unique_anim_name);
         }
+        sprite_components[name] = std::shared_ptr<sprite_component_desc>(desc);
  
     }
+    //logout("Dbg.ResourceMan") << "sprite components loaded:" << endl;
+    for ( auto it = sprite_components.begin(); it != sprite_components.end(); ++it )
+    {
+        //logout("Dbg.ResourceMan") << it->first << endl;
+    }
+
+   // logout("Dbg.ResourceMan") << "sprite animations loaded:" << endl;
+    for ( auto it = animations.begin(); it != animations.end(); ++it )
+    {
+        //logout("Dbg.ResourceMan") << it->first << endl;
+    }
+    
 }
 FE_NS_END

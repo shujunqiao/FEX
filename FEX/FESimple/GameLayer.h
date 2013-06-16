@@ -18,17 +18,18 @@ class GameLayer :public GameObjBase
 {
 public:
     
-
+    GameLayer();
+    ~GameLayer();
     //triggers
-    virtual void added_to_game( GameBase* game );
+    virtual void added_to_game( GameBase* game, const Name& to_layer );
     virtual void removed_from_game( GameBase* game );
     
     cocos2d::CCLayer* cclayer()
     {
-        return m_layer;
+        return layer;
     }
 private:
-    cocos2d::CCLayer*       m_layer;
+    cocos2d::CCLayer*       layer;
 };
 FE_NS_END
 

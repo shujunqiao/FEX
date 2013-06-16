@@ -16,6 +16,8 @@
 #include "GameScene.h"
 #include "FEUtility.h"
 #include "ResourceManager.h"
+#include "SpriteBase.h"
+#include "GameLayer.h"
 USING_NS_CC;
 using namespace FESimple;
 using namespace CocosDenshion;
@@ -43,7 +45,7 @@ bool AppDelegate::applicationDidFinishLaunching()
 
     
     GameBase* game = new GameBase();
-    pDirector->runWithScene( game->scene()->ccscene() );
+    pDirector->runWithScene( game->get_scene()->ccscene() );
 
     //std::vector<std::string> paths = {CCFileUtils::sharedFileUtils()->getWritablePath().c_str()};
 
@@ -51,8 +53,13 @@ bool AppDelegate::applicationDidFinishLaunching()
     
 
     
-    ResourceManager::load_sprite_component_desc(full_path("sprite_components/base.xml"));
-    //ResourceManager::load_sprite_desc(full_path("sprites/base.xml"));
+    ResourceManager::instance()->load_sprite_component_desc(full_path("sprite_components/base.xml"));
+    ResourceManager::instance()->load_sprite_desc(full_path("sprites/base.xml"));
+    ResourceManager::instance()->load_physic_desc(full_path("pdb/main.xml"));
+    game->add_game_object( GameObjPtr(new GameLayer()), "root");
+    SpriteBase* hero;
+    game->add_game_object( GameObjPtr(hero = new SpriteBase(ResourceManager::instance()->sprite_descs.item("hero"))), "root" );
+    hero->set_position(CCPoint(512,512));
     //ResourceManager::load_physic_desc(full_path("pdb/main.xml"));
     return true;
 }

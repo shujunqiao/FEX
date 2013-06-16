@@ -10,14 +10,36 @@
 #include "ResourceManager.h"
 using namespace cocos2d;
 FE_NS_BEGIN
-SpriteComponent::SpriteComponent(  const CCPoint& location, const sprite_component_desc& desc )
+SpriteComponent::SpriteComponent(  const CCPoint& location, const std::shared_ptr<sprite_component_desc> desc )
 :CCSprite()
 {
     CCSprite::init();
-//    const sprite_component_desc& sc_desc = ResourceManager::get_sprite_component_desc(desc.m_sprite_component_name);
-    for ( auto anim_def : desc.m_animation_names )
+
+    for ( auto anim_name : desc->animation_names )
     {
-       // m_animations.push_back( sprite_animation(CCRepeatForever::create(CCAnimate::create(anim_def.m_animation)), anim_def.m_name));
+        auto anim = ResourceManager::instance()->animations.item(anim_name);
+        animations.push_back( sprite_animation(CCRepeatForever::create(CCAnimate::create(anim->ccanimation)), anim->name ) );
     }
+    play_anim("default");
 }
+
+
+bool SpriteComponent::play_anim( const Name& anim_name )
+{
+    for ( auto a : animations )
+    {
+        if ( a.name == anim_name )
+        {
+            runAction( a.animation );
+            return true;
+        }
+    }
+    return false;
+}
+
+void SpriteComponent::draw()
+{
+    CCSprite::draw();
+}
+
 FE_NS_END

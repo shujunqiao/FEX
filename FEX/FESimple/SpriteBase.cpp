@@ -18,31 +18,32 @@ SpriteBase::SpriteBase()
 {
 }
 
-SpriteBase::SpriteBase( const sprite_desc& desc )
+SpriteBase::SpriteBase( const std::shared_ptr<sprite_desc> desc )
 {
-    //for( auto &it : desc.m_components )
-       // m_components.push_back(
-       // new SpriteComponent( it.m_offset,
-         //   ResourceManager::get_sprite_component_desc(it.m_sprite_component_name))
-      //  );
+    for( auto &it : desc->components )
+    {
+       components.push_back(
+        new SpriteComponent( it.offset,
+                            ResourceManager::instance()->sprite_components.item(it.component_name)));
+    }
 }
 
 SpriteBase::~SpriteBase()
 {
 }
 
-void SpriteBase::added_to_game( GameBase* game )
+void SpriteBase::added_to_game( GameBase* game, const Name& to_layer )
 {
-    for( auto comp : m_components )
+    for( auto comp : components )
     {
         if ( comp != nullptr )
-            game->scene()->get_layer("")->cclayer()->addChild( comp );
+            game->get_scene()->get_layer(to_layer)->cclayer()->addChild( comp );
     }
 }
 
 void SpriteBase::removed_from_game( GameBase* game )
 {
-    for( auto comp : m_components )
+    for( auto comp : components )
     {
         if ( comp != nullptr )
             comp->removeFromParent();
@@ -52,19 +53,37 @@ void SpriteBase::removed_from_game( GameBase* game )
 //components management
 void SpriteBase::add_component( SpriteComponent* comp )
 {
-    m_components.push_back( comp );
+    components.push_back( comp );
 }
 
 void SpriteBase::remove_component( SpriteComponent * comp )
 {
-    m_components.erase(std::find(m_components.begin(), m_components.end(), comp));
+    components.erase(std::find(components.begin(), components.end(), comp));
 }
 
 SpriteComponent* SpriteBase::get_component( unsigned int index )
 {
-    if ( index < m_components.size() )
-        return m_components[index];
+    if ( index < components.size() )
+        return components[index];
     else
         return nullptr;
 }
+
+//position , rotation, ect..
+void SpriteBase::set_position( CCPoint pos )
+{
+    for( auto c : components )
+    {
+        c->setPosition( pos );
+    }
+}
+
+void SpriteBase::set_rotation( float angle )
+{
+    for( auto c : components )
+    {
+        c->setRotation( angle );
+    }
+}
+
 FE_NS_END

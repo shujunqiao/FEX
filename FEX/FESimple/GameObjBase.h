@@ -20,15 +20,15 @@ public:
     GameObjBase();
     ~GameObjBase();
     //triggers
-    virtual void added_to_game( GameBase* game ){};
+    virtual void added_to_game( GameBase* game, const Name& to_layer ){};
     virtual void removed_from_game(GameBase* game ){};
     
-    const std::string& name()
+    const Name& get_name()
     {
-        return m_name;
+        return name;
     }
 protected:
-    std::string m_name;
+    std::string name;
 };
 FE_NS_END
 #endif /* defined(__FEX__GameObjBase__) */

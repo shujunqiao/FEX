@@ -21,7 +21,8 @@ public:
     
     //layers
     GameLayer* get_layer( std::string name );
-    void add_layer( GameLayer* layer, std::string name );
+    void add_layer( GameLayer* layer, const Name& name );
+    void remove_layer( GameLayer* layer );
     void remove_all_layers();
     
     operator cocos2d::CCScene*()
@@ -30,13 +31,13 @@ public:
     }
     cocos2d::CCScene* ccscene()
     {
-        return m_scene;
+        return scene;
     }
     
     
 private:
-    cocos2d::CCScene*       m_scene;
-    std::list<GameLayer*>   m_layers;
+    cocos2d::CCScene*       scene;
+    std::list<GameLayer*>   layers;
 };
 FE_NS_END
 #endif /* defined(__FEX__GameScene__) */

@@ -5,20 +5,20 @@
 FE_NS_BEGIN
 
 GameBase::GameBase()
-:m_scene( new GameScene() )
-,m_phy_world( new b2World(b2Vec2(0,0)) )
+:scene( new GameScene() )
+,phy_world( new b2World(b2Vec2(0,0)) )
 {
     
 }
-void GameBase::add_game_object( GameObjPtr obj )
+void GameBase::add_game_object( GameObjPtr obj, const Name& to_layer)
 {
-    m_objects.push_back( obj );
-    obj->added_to_game( this );
+    objects.push_back( obj );
+    obj->added_to_game( this, to_layer );
 }
 
 void GameBase::remove_game_object( GameObjPtr obj )
 {
-    m_objects.remove( obj );
+    objects.remove( obj );
     obj->removed_from_game( this );
 }
 

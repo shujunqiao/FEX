@@ -23,25 +23,26 @@ public:
         if ( it != this->end() )
             return it->second;
         else
+        {
+            cout << "item: " << name << " not found.!" << endl;
             return std::shared_ptr<T>();
+        }
     }
 };
 
 class ResourceManager
 {
 public:
-    static const std::shared_ptr<sprite_desc> get_sprite_desc( const Name& name );
-    static const std::shared_ptr<physic_desc> get_physic_desc( const Name& name );
-    static const std::shared_ptr<sprite_component_desc> get_sprite_component_desc( const Name& name );
-    static const std::shared_ptr<animation> get_animation( const Name& name );
-    static void load_sprite_desc( const std::string& filename );
-    static void load_physic_desc( const std::string& filename );
-    static void load_sprite_component_desc( const std::string& filename );
+    static ResourceManager* instance();
+    
+    void load_sprite_desc( const std::string& filename );
+    void load_physic_desc( const std::string& filename );
+    void load_sprite_component_desc( const std::string& filename );
 
-    static SharedReourceMap<sprite_desc>              m_sprite_descs;
-    static SharedReourceMap<physic_desc>              m_physic_descs;
-    static SharedReourceMap<sprite_component_desc>    m_sprite_components;
-    static SharedReourceMap<animation>                m_animations;
+    SharedReourceMap<sprite_desc>              sprite_descs;
+    SharedReourceMap<physic_desc>              physic_descs;
+    SharedReourceMap<sprite_component_desc>    sprite_components;
+    SharedReourceMap<animation>                animations;
 };
 FE_NS_END
 
