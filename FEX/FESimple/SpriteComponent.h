@@ -120,6 +120,7 @@ struct sprite_animation
     Name                name;
 };
 
+
 class SpriteComponent :public cocos2d::CCSprite
 {
 public:
@@ -129,6 +130,13 @@ public:
 protected:
     std::vector<sprite_animation>  animations;
 };
+
+struct FixtureUserData
+{
+    SpriteComponent*    sprite_component;//weak ref
+    int                 identity;
+};
+
 
 FE_NS_END
 #endif /* defined(__FEX__Sprite__) */

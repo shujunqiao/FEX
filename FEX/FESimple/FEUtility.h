@@ -12,6 +12,7 @@
 #include "cocos2d.h"
 #include "Box2D.h"
 #include "FE.h"
+#include "logger.h"
 #include <iostream>
 
 FE_NS_BEGIN
@@ -25,64 +26,10 @@ std::string relative_path_to_app( const std::string& path );//get relative path 
 std::vector<float>  string_to_floats( const std::string& str );
 b2Vec2 string_to_b2Vec( const std::string& str );
 b2BodyType string_to_b2BodyType( const std::string& str );
+class GameBase* get_game();
 
-class logcandy
-{
-public:
-    logcandy( const char* str, ... )
-    {
-        va_list vl;
-        va_start(vl, str);
-        vsprintf(buff, str, vl);
-        va_end(vl);
-    }
-    
-    char buff[4096];
-};
+b2Vec2 point_to_b2Vec2( const cocos2d::CCPoint& pt );
+cocos2d::CCPoint b2Vec2_to_point( const b2Vec2& vec );
 
-class logger
-{
-public:
-    logger(const Name& category)
-    {
-        cout << "[" << category << "]" << ":";
-    }
-    
-    logger& operator<<(basic_ostream<char>& (*__pf)(basic_ostream<char>&))
-    {
-        cout << __pf;
-        return *this;
-    }
-    logger& operator<<(basic_ios<char, char_traits<char>>&
-                              (*__pf)(basic_ios<char, char_traits<char>>&))
-    {
-        cout << __pf;
-        return *this;
-    }
-    logger& operator<<(ios_base& (*__pf)(ios_base&))
-    {
-        cout << __pf;
-        return *this;
-    }
-    
-    template<class T>
-    logger& operator<<( const T& t)
-    {
-        cout << t;
-        return *this;
-    }
-        
-    logger& operator<<( const logcandy& t)
-    {
-        cout << t.buff;
-        return *this;
-    }
-        
-    logger& operator<<(basic_streambuf<char, char_traits<char>>* __sb)
-    {
-        cout << __sb;
-        return *this;
-    }
-};
 FE_NS_END
 #endif /* defined(__FEX__FEUtilits__) */

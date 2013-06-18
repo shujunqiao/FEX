@@ -34,6 +34,11 @@ public:
         return scene.get();
     }
     
+    b2World* get_phy_world()
+    {
+        return phy_world.get();
+    }
+    
 protected:
     std::unique_ptr<GameScene>              scene;       // visible world
     std::unique_ptr<b2World>                phy_world;

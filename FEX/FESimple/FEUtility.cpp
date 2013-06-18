@@ -99,6 +99,27 @@ b2BodyType string_to_b2BodyType( const std::string& str )
 }
 
 
+class GameBase* get_game()
+{
+    return nullptr;
+}
+
+float ptm_ratio()
+{
+    return 32.0f;
+}
+
+b2Vec2 point_to_b2Vec2( const cocos2d::CCPoint& pt )
+{
+    return b2Vec2( pt.x / ptm_ratio(), pt.y / ptm_ratio() );
+}
+
+cocos2d::CCPoint b2Vec2_to_point( const b2Vec2& vec )
+{
+    return cocos2d::CCPoint( vec.x * ptm_ratio(), vec.y * ptm_ratio() );
+}
+
 
 
 FE_NS_END
+

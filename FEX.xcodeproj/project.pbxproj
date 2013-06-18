@@ -924,6 +924,7 @@
 		04A9BE811766229B007AC855 /* pugiconfig.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = pugiconfig.hpp; sourceTree = "<group>"; };
 		04A9BE821766229B007AC855 /* pugixml.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = pugixml.cpp; sourceTree = "<group>"; };
 		04A9BE831766229B007AC855 /* pugixml.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = pugixml.hpp; sourceTree = "<group>"; };
+		04C8705B17700C670022B8AB /* logger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = logger.h; sourceTree = "<group>"; };
 		04FA5F841764AB1E005DF04E /* SpriteBase.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SpriteBase.cpp; sourceTree = "<group>"; };
 		04FA5F851764AB1E005DF04E /* SpriteBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpriteBase.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -2149,6 +2150,7 @@
 				04A9BE7E17661B4E007AC855 /* ResourceManager.h */,
 				040B3C231766E05100596508 /* FEUtility.cpp */,
 				040B3C241766E05100596508 /* FEUtility.h */,
+				04C8705B17700C670022B8AB /* logger.h */,
 			);
 			path = FESimple;
 			sourceTree = "<group>";
