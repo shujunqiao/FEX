@@ -18,7 +18,10 @@
 #include "ResourceManager.h"
 #include "SpriteBase.h"
 #include "GameLayer.h"
+#include "cocos-ext.h"
+#include "extensions/physics_nodes/CCPhysicsDebugNode.h"
 USING_NS_CC;
+USING_NS_CC_EXT;
 using namespace FESimple;
 using namespace CocosDenshion;
 
@@ -60,6 +63,9 @@ bool AppDelegate::applicationDidFinishLaunching()
     SpriteBase* hero;
     game->add_game_object( GameObjPtr(hero = new SpriteBase(ResourceManager::instance()->sprite_descs.item("hero"))), "root" );
     hero->set_position(CCPoint(512,512));
+
+    CCPhysicsSprite
+    
     //ResourceManager::load_physic_desc(full_path("pdb/main.xml"));
     return true;
 }
