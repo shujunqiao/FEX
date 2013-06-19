@@ -88,22 +88,23 @@ void ResourceManager::load_physic_desc( const std::string& filename )
             if ( std::string("circle") == fixture_node.name()  )
             {
                 shape = new b2CircleShape();
-                shape->m_radius = fixture_node.attribute("radius").as_float();
+                shape->m_radius = fixture_node.attribute("radius").as_float() / ptm_ratio();
                 ((b2CircleShape*)shape)->m_p = string_to_b2Vec(fixture_node.attribute("center").as_string());
+                ((b2CircleShape*)shape)->m_p.x /= ptm_ratio();
+                ((b2CircleShape*)shape)->m_p.y /= ptm_ratio();
             }
             if ( std::string("polygon") == fixture_node.name() )
             {
                 shape = new b2PolygonShape();
 
                 auto floats = string_to_floats( fixture_node.attribute("vertices").as_string() );
-                b2Vec2* tmpvecs = new b2Vec2[floats.size()/2];
+                std::vector<b2Vec2> tmpvecs(floats.size()/2);
                 for ( int i = 0; i < floats.size(); i+=2 )
                 {
-                    tmpvecs[i/2].x = floats[i];
-                    tmpvecs[i/2].y = floats[i+1];
+                    tmpvecs[i/2].x = floats[i] / ptm_ratio();
+                    tmpvecs[i/2].y = floats[i+1] / ptm_ratio();
                 }
-                ((b2PolygonShape*)shape)->Set(tmpvecs, floats.size()/2);
-                delete[] tmpvecs;
+                ((b2PolygonShape*)shape)->Set(&tmpvecs[0], floats.size()/2);
             }
             fixdef.shape = shape;
             fixdef.isSensor = fixture_node.attribute("is_sensor").as_bool();
@@ -172,9 +173,15 @@ void ResourceManager::load_sprite_component_desc( const std::string& filename )
             animations[unique_anim_name] = std::shared_ptr<animation>( new animation({anim_name,ccanim}));
             desc->animation_names.push_back(unique_anim_name);
         }
+        pugi::xml_node body_node = it.child("physics_def").child("body");
+        if ( body_node )
+        {
+            desc->physic_desc_name = body_node.attribute("url").as_string();
+        }
         sprite_components[name] = std::shared_ptr<sprite_component_desc>(desc);
  
     }
+
     //logout("Dbg.ResourceMan") << "sprite components loaded:" << endl;
     for ( auto it = sprite_components.begin(); it != sprite_components.end(); ++it )
     {

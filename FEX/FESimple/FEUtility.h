@@ -27,7 +27,7 @@ std::vector<float>  string_to_floats( const std::string& str );
 b2Vec2 string_to_b2Vec( const std::string& str );
 b2BodyType string_to_b2BodyType( const std::string& str );
 class GameBase* get_game();
-
+float ptm_ratio();
 b2Vec2 point_to_b2Vec2( const cocos2d::CCPoint& pt );
 cocos2d::CCPoint b2Vec2_to_point( const b2Vec2& vec );
 

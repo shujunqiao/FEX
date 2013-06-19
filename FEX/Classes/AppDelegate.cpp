@@ -19,7 +19,8 @@
 #include "SpriteBase.h"
 #include "GameLayer.h"
 #include "cocos-ext.h"
-#include "extensions/physics_nodes/CCPhysicsDebugNode.h"
+#include "GLES-Render.h"
+#include "CCPhyDebugNode.h"
 USING_NS_CC;
 USING_NS_CC_EXT;
 using namespace FESimple;
@@ -46,8 +47,12 @@ bool AppDelegate::applicationDidFinishLaunching()
     // set FPS. the default value is 1.0/60 if you don't call this
     pDirector->setAnimationInterval(1.0 / 60);
 
+    GameBase* game = get_game();
     
-    GameBase* game = new GameBase();
+    GLESDebugDraw* phydbg = new GLESDebugDraw( ptm_ratio() );
+    phydbg->SetFlags(0xffffffff);
+    
+    game->get_phy_world()->SetDebugDraw( phydbg );
     pDirector->runWithScene( game->get_scene()->ccscene() );
 
     //std::vector<std::string> paths = {CCFileUtils::sharedFileUtils()->getWritablePath().c_str()};
@@ -63,9 +68,10 @@ bool AppDelegate::applicationDidFinishLaunching()
     SpriteBase* hero;
     game->add_game_object( GameObjPtr(hero = new SpriteBase(ResourceManager::instance()->sprite_descs.item("hero"))), "root" );
     hero->set_position(CCPoint(512,512));
+    CCPhyDebugNode* dbgnode = new CCPhyDebugNode();
+    dbgnode->autorelease();
 
-    CCPhysicsSprite
-    
+    game->get_scene()->get_layer("root")->cclayer()->addChild( dbgnode, 1000 );
     //ResourceManager::load_physic_desc(full_path("pdb/main.xml"));
     return true;
 }

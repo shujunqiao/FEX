@@ -11,6 +11,7 @@
 #include <regex>
 #include <iostream>
 #include "FE.h"
+#include "GameBase.h"
 
 FE_NS_BEGIN
 cocos2d::CCPoint string_to_point( const char* str )
@@ -101,7 +102,10 @@ b2BodyType string_to_b2BodyType( const std::string& str )
 
 class GameBase* get_game()
 {
-    return nullptr;
+    static GameBase* g = nullptr;
+    if ( g == nullptr )
+        g = new GameBase();
+    return g;
 }
 
 float ptm_ratio()

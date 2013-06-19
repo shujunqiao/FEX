@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		040B33CB176C6A3400AFBF95 /* sprite_components in Resources */ = {isa = PBXBuildFile; fileRef = 040B33CA176C6A3400AFBF95 /* sprite_components */; };
 		040B3C251766E05100596508 /* FEUtility.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 040B3C231766E05100596508 /* FEUtility.cpp */; };
+		042B62171770C37D0010F03E /* CCPhyDebugNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 042B62151770C37C0010F03E /* CCPhyDebugNode.cpp */; };
 		04491165176F5EA200B995CB /* GLES-Render.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04491163176F5EA200B995CB /* GLES-Render.cpp */; };
 		04713BCD1760C81900443B48 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04713BCC1760C81900443B48 /* QuartzCore.framework */; };
 		04713BCF1760C81900443B48 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04713BCE1760C81900443B48 /* OpenGLES.framework */; };
@@ -307,6 +308,8 @@
 		040B33CA176C6A3400AFBF95 /* sprite_components */ = {isa = PBXFileReference; lastKnownFileType = folder; name = sprite_components; path = Resources/sprite_components; sourceTree = "<group>"; };
 		040B3C231766E05100596508 /* FEUtility.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FEUtility.cpp; sourceTree = "<group>"; };
 		040B3C241766E05100596508 /* FEUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FEUtility.h; sourceTree = "<group>"; };
+		042B62151770C37C0010F03E /* CCPhyDebugNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CCPhyDebugNode.cpp; sourceTree = "<group>"; };
+		042B62161770C37D0010F03E /* CCPhyDebugNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCPhyDebugNode.h; sourceTree = "<group>"; };
 		04491163176F5EA200B995CB /* GLES-Render.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "GLES-Render.cpp"; sourceTree = "<group>"; };
 		04491164176F5EA200B995CB /* GLES-Render.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GLES-Render.h"; sourceTree = "<group>"; };
 		04713BC91760C81900443B48 /* FEX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FEX.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -2156,6 +2159,8 @@
 				040B3C231766E05100596508 /* FEUtility.cpp */,
 				040B3C241766E05100596508 /* FEUtility.h */,
 				04C8705B17700C670022B8AB /* logger.h */,
+				042B62151770C37C0010F03E /* CCPhyDebugNode.cpp */,
+				042B62161770C37D0010F03E /* CCPhyDebugNode.h */,
 			);
 			path = FESimple;
 			sourceTree = "<group>";
@@ -2529,6 +2534,7 @@
 				04A9BE841766229B007AC855 /* pugixml.cpp in Sources */,
 				040B3C251766E05100596508 /* FEUtility.cpp in Sources */,
 				04491165176F5EA200B995CB /* GLES-Render.cpp in Sources */,
+				042B62171770C37D0010F03E /* CCPhyDebugNode.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

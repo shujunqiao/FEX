@@ -69,6 +69,8 @@ SpriteComponent* SpriteBase::get_component( unsigned int index )
         return nullptr;
 }
 
+
+
 //position , rotation, ect..
 void SpriteBase::set_position( CCPoint pos )
 {

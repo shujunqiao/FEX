@@ -15,7 +15,7 @@
 using namespace cocos2d;
 FE_NS_BEGIN
 SpriteComponent::SpriteComponent(  const CCPoint& location, const std::shared_ptr<sprite_component_desc> desc )
-:CCSprite()
+:CCSprite(),phy_body(nullptr)
 {
     CCSprite::init();
 
@@ -26,18 +26,18 @@ SpriteComponent::SpriteComponent(  const CCPoint& location, const std::shared_pt
     }
     play_anim("default");
     //create physics body
-    auto phy = ResourceManager::instance()->physic_descs.item(desc->physic_desc);
-    b2BodyDef bodydef = phy->body_def;
-    bodydef.position = point_to_b2Vec2( location );
-    b2Body* body = get_game()->get_phy_world()->CreateBody( &bodydef );
-    for ( auto fixdef_temp : phy->fixture_defs )
+    auto phy = ResourceManager::instance()->physic_descs.item(desc->physic_desc_name);
+    if ( phy != nullptr )
     {
-        b2FixtureDef fixdef = fixdef_temp;
-        fixdef.userData = this;
-        body->CreateFixture( &fixdef );
+        b2BodyDef bodydef = phy->body_def;
+        bodydef.position = point_to_b2Vec2( location );
+        phy_body = get_game()->get_phy_world()->CreateBody( &bodydef );
+        for ( auto fixdef_temp : phy->fixture_defs )
+        {
+            b2FixtureDef fixdef = fixdef_temp;
+            phy_body->CreateFixture( dynamic_cast<b2FixtureDef*>(&fixdef) );
+        }
     }
-    
-
 }
 
 
@@ -59,4 +59,56 @@ void SpriteComponent::draw()
     CCSprite::draw();
 }
 
+void SpriteComponent::setPosition(const CCPoint& pos)
+{
+    if ( phy_body )
+        phy_body->SetTransform( point_to_b2Vec2(pos), phy_body->GetAngle() );
+    else
+        CCSprite::setPosition(pos);
+}
+
+// this method will only get called if the sprite is batched.
+// return YES if the physic's values (angles, position ) changed.
+// If you return NO, then nodeToParentTransform won't be called.
+bool SpriteComponent::isDirty()
+{
+    return true;
+}
+
+
+// returns the transform matrix according the Box2D Body values
+CCAffineTransform SpriteComponent::nodeToParentTransform()
+{
+    b2Vec2 pos  = phy_body->GetPosition();
+	
+	float x = pos.x * ptm_ratio();
+	float y = pos.y * ptm_ratio();
+	
+	if (m_bIgnoreAnchorPointForPosition)
+    {
+		x += m_obAnchorPointInPoints.x;
+		y += m_obAnchorPointInPoints.y;
+	}
+	
+	// Make matrix
+	float radians = phy_body->GetAngle();
+	float c = cosf(radians);
+	float s = sinf(radians);
+	
+	// Although scale is not used by physics engines, it is calculated just in case
+	// the sprite is animated (scaled up/down) using actions.
+	// For more info see: http://www.cocos2d-iphone.org/forum/topic/68990
+	if (!m_obAnchorPointInPoints.equals(CCPointZero))
+    {
+		x += ((c * -m_obAnchorPointInPoints.x * m_fScaleX) + (-s * -m_obAnchorPointInPoints.y * m_fScaleY));
+		y += ((s * -m_obAnchorPointInPoints.x * m_fScaleX) + (c * -m_obAnchorPointInPoints.y * m_fScaleY));
+	}
+    
+	// Rot, Translate Matrix
+	m_sTransform = CCAffineTransformMake( c * m_fScaleX,	s * m_fScaleX,
+									     -s * m_fScaleY,	c * m_fScaleY,
+									     x,	y );
+	
+	return m_sTransform;
+}
 FE_NS_END

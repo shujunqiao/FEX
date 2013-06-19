@@ -57,7 +57,7 @@ struct physic_desc
 
 struct sprite_component_desc
 {
-    Name                        physic_desc;
+    Name                        physic_desc_name;
     std::vector<std::string>    animation_names;//animation name
     cocos2d::CCPoint    offset;
 };
@@ -120,6 +120,12 @@ struct sprite_animation
     Name                name;
 };
 
+struct FixtureUserData
+{
+    class SpriteComponent*      sprite_component;//weak ref
+    int                         identity;
+};
+
 
 class SpriteComponent :public cocos2d::CCSprite
 {
@@ -127,15 +133,18 @@ public:
     SpriteComponent( const CCPoint& location, const std::shared_ptr<sprite_component_desc> desc );
     bool play_anim( const Name& anim );
     virtual void draw();
+    
+    //overrided
+    void setPosition(const CCPoint& pos);
+    bool isDirty();
+    CCAffineTransform nodeToParentTransform();
+    
 protected:
-    std::vector<sprite_animation>  animations;
+    std::vector<sprite_animation>   animations;
+    b2Body*                         phy_body;
+    
 };
 
-struct FixtureUserData
-{
-    SpriteComponent*    sprite_component;//weak ref
-    int                 identity;
-};
 
 
 FE_NS_END
