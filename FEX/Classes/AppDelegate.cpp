@@ -35,8 +35,26 @@ AppDelegate::~AppDelegate()
 {
 }
 
+class hello
+{
+public:
+    void f(float a)
+    {
+        cout <<"f";
+    };
+};
+
+template <typename T, typename R, typename ...Args>
+R proxycall(T & obj, R (T::*mf)(Args...), Args &&... args)
+{
+    return (obj.*mf)(std::forward<Args>(args)...);
+}
+
 bool AppDelegate::applicationDidFinishLaunching()
 {
+    hello h;
+    proxycall( h, &hello::f, 0.0f);
+    
     // initialize director
     CCDirector *pDirector = CCDirector::sharedDirector();
     pDirector->setOpenGLView(CCEGLView::sharedOpenGLView());
@@ -70,9 +88,9 @@ bool AppDelegate::applicationDidFinishLaunching()
     hero->set_position(CCPoint(512,512));
     CCPhyDebugNode* dbgnode = new CCPhyDebugNode();
     dbgnode->autorelease();
-    //std::function<void (SpriteComponent&,float)>
+    std::function<void (SpriteComponent*, float)> fp = &SpriteComponent::apply_torque;
     
-    hero->each_component( [](SpriteComponent* cmp) {cmp->apply_torque(1000);} );
+    hero->each_component( &SpriteComponent::apply_torque, 300.0f );
     
     game->get_scene()->get_layer("root")->cclayer()->addChild( dbgnode, 1000 );
     //ResourceManager::load_physic_desc(full_path("pdb/main.xml"));

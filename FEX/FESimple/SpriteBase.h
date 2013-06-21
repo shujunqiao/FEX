@@ -35,12 +35,23 @@ public:
     void remove_component( SpriteComponent * );
     SpriteComponent* component( unsigned int index );
     
-    template<typename F>
-    void each_component( F f )
+//    template<typename F, typename... Args>
+//    void each_component( F f , Args ... args)
+//    {
+////        std::function<F(Args...)> fp;
+//        for( auto i : components )
+//        {
+//
+//            f(i,args...);
+//        }
+//    }
+
+    template <typename T, typename R, typename ...Args>
+    R each_component( R (T::*mf)(Args...), Args &&... args)
     {
         for( auto i : components )
         {
-            f(i);
+            return (i->*mf)(std::forward<Args>(args)...);
         }
     }
     
