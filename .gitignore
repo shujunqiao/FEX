@@ -4,3 +4,5 @@ FEX.xcodeproj/project.xcworkspace/xcuserdata/fancyzero.xcuserdatad/UserInterface
 *.xcbkptlist
 
 FEX.xcodeproj/xcuserdata/fancyzero.xcuserdatad/xcdebugger/Breakpoints.xcbkptlist
+
+FEX/libs/cocos2dx/platform/third_party/ios/.DS_Store
