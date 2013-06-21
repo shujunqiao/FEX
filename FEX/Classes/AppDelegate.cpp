@@ -70,7 +70,10 @@ bool AppDelegate::applicationDidFinishLaunching()
     hero->set_position(CCPoint(512,512));
     CCPhyDebugNode* dbgnode = new CCPhyDebugNode();
     dbgnode->autorelease();
-
+    //std::function<void (SpriteComponent&,float)>
+    
+    hero->each_component( [](SpriteComponent* cmp) {cmp->apply_torque(1000);} );
+    
     game->get_scene()->get_layer("root")->cclayer()->addChild( dbgnode, 1000 );
     //ResourceManager::load_physic_desc(full_path("pdb/main.xml"));
     return true;

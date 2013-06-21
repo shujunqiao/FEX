@@ -18,7 +18,7 @@ SpriteComponent::SpriteComponent(  const CCPoint& location, const std::shared_pt
 :CCSprite(),phy_body(nullptr)
 {
     CCSprite::init();
-
+    
     for ( auto anim_name : desc->animation_names )
     {
         auto anim = ResourceManager::instance()->animations.item(anim_name);
@@ -111,4 +111,53 @@ CCAffineTransform SpriteComponent::nodeToParentTransform()
 	
 	return m_sTransform;
 }
+
+
+void SpriteComponent::set_linear_velocity( const CCPoint& v )
+{
+    if ( phy_body )
+        phy_body->SetLinearVelocity( point_to_b2Vec2(v) );
+}
+
+void SpriteComponent::set_linear_damping( float damping )
+{
+    if ( phy_body )
+        phy_body->SetLinearDamping( damping );
+}
+
+void SpriteComponent::apply_force( const CCPoint& v, const CCPoint& location )
+{
+    if ( phy_body )
+        phy_body->ApplyForce( point_to_b2Vec2(v), point_to_b2Vec2(v) );
+}
+
+void SpriteComponent::apply_force( const CCPoint& v )
+{
+    if ( phy_body )
+        phy_body->ApplyForceToCenter( point_to_b2Vec2(v) );
+}
+
+void SpriteComponent::apply_torque( float q )
+{
+    if ( phy_body )
+        phy_body->ApplyTorque( q );
+}
+
+void SpriteComponent::set_angular_damping( float damping )
+{
+    if ( phy_body )
+        phy_body->SetAngularDamping( damping );
+}
+void SpriteComponent::apply_linear_impulse( const CCPoint& v )
+{
+    if ( phy_body )
+        phy_body->ApplyLinearImpulse(point_to_b2Vec2(v), phy_body->GetPosition());
+}
+
+void SpriteComponent::apply_angular_impulse( float i )
+{
+    if ( phy_body )
+        phy_body->ApplyAngularImpulse( i );
+}
+
 FE_NS_END

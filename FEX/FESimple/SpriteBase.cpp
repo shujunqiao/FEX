@@ -61,7 +61,7 @@ void SpriteBase::remove_component( SpriteComponent * comp )
     components.erase(std::find(components.begin(), components.end(), comp));
 }
 
-SpriteComponent* SpriteBase::get_component( unsigned int index )
+SpriteComponent* SpriteBase::component( unsigned int index )
 {
     if ( index < components.size() )
         return components[index];
@@ -69,6 +69,10 @@ SpriteComponent* SpriteBase::get_component( unsigned int index )
         return nullptr;
 }
 
+//std::vector< SpriteComponent* > SpriteBase::all_components()
+//{
+//    return components;
+//}
 
 
 //position , rotation, ect..

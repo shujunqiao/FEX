@@ -127,6 +127,7 @@ struct FixtureUserData
 };
 
 
+
 class SpriteComponent :public cocos2d::CCSprite
 {
 public:
@@ -139,6 +140,15 @@ public:
     bool isDirty();
     CCAffineTransform nodeToParentTransform();
     
+    //physics methods
+    void set_linear_velocity( const CCPoint& v );
+    void set_linear_damping( float damping );
+    void apply_force( const CCPoint& v, const CCPoint& location );
+    void apply_force( const CCPoint& v );
+    void apply_torque( float q );
+    void set_angular_damping( float damping );
+    void apply_linear_impulse( const CCPoint& v );
+    void apply_angular_impulse( float i );
 protected:
     std::vector<sprite_animation>   animations;
     b2Body*                         phy_body;

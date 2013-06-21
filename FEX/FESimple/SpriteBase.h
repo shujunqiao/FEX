@@ -15,6 +15,7 @@
 #include <memory>
 #include "Box2D.h"
 #include "SpriteComponent.h"
+#include <functional>
 
 FE_NS_BEGIN
 class SpriteComponent;
@@ -32,9 +33,16 @@ public:
     //components management
     void add_component( SpriteComponent* );
     void remove_component( SpriteComponent * );
-    SpriteComponent* get_component( unsigned int index );
+    SpriteComponent* component( unsigned int index );
     
-    
+    template<typename F>
+    void each_component( F f )
+    {
+        for( auto i : components )
+        {
+            f(i);
+        }
+    }
     
     //position , rotation, ect..
     void set_position( CCPoint pos );
