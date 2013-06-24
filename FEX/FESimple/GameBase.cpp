@@ -4,12 +4,37 @@
 #include "Box2D.h"
 FE_NS_BEGIN
 
+
+
 GameBase::GameBase()
 :scene( new GameScene() )
 ,phy_world( new b2World(b2Vec2(0,0)) )
 {
     
 }
+
+GameBase::~GameBase()
+{
+}
+
+void GameBase::update(float delta_time)
+{
+    if ( phy_world )
+    {
+        phy_world->Step( delta_time, 4, 8);
+    }
+    
+    for ( auto c : objects )
+    {
+        c->update( delta_time );
+    }
+}
+
+void GameBase::clean()
+{
+    objects.clear();
+}
+
 void GameBase::add_game_object( GameObjPtr obj, const Name& to_layer)
 {
     objects.push_back( obj );

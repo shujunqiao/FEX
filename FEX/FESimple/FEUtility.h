@@ -17,6 +17,7 @@
 
 FE_NS_BEGIN
 cocos2d::CCPoint string_to_point( const char* str );
+cocos2d::CCRect string_to_rect( const char* str );
 std::vector<std::string> split_string( const std::string& str, const std::string& split_by );
 b2JointType str_to_joint_type( const char* str );
 std::string full_path( const char* filename );
@@ -31,5 +32,16 @@ float ptm_ratio();
 b2Vec2 point_to_b2Vec2( const cocos2d::CCPoint& pt );
 cocos2d::CCPoint b2Vec2_to_point( const b2Vec2& vec );
 
+cocos2d::CCPoint& operator << (cocos2d::CCPoint& pt, const std::string& str);
+bool& operator << (bool& b, const std::string& str);
+cocos2d::CCRect& operator << (cocos2d::CCRect& rc, const std::string& str );
+cocos2d::CCPoint operator + ( const cocos2d::CCPoint& pt1, const cocos2d::CCPoint pt2 );
+
+float random01();
+float random_range( float from, float to);
+
 FE_NS_END
+
+
+
 #endif /* defined(__FEX__FEUtilits__) */

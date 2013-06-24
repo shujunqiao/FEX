@@ -35,14 +35,32 @@ AppDelegate::~AppDelegate()
 {
 }
 
+
+template <typename T> class Proxy
+{
+public:
+    Proxy(T &o): o_(o) {}
+    
+    template <typename A, typename B,
+    typename std::enable_if<std::is_convertible<B, A>::value>::type* = nullptr>
+    void call(void (T::*f)(A), B&& a)
+    {
+        (o_.*f)(std::forward<B>(a));
+    }
+
+private:
+    T &o_;
+};
+
 class hello
 {
 public:
-    void f(float a)
+    void f( const CCPoint& a)
     {
         cout <<"f";
     };
 };
+
 
 template <typename T, typename R, typename ...Args>
 R proxycall(T & obj, R (T::*mf)(Args...), Args &&... args)
@@ -50,10 +68,19 @@ R proxycall(T & obj, R (T::*mf)(Args...), Args &&... args)
     return (obj.*mf)(std::forward<Args>(args)...);
 }
 
+template <typename T, typename R, typename A, typename B>
+//typename std::enable_if<std::is_convertible<B, A>::value>::type* = nullptr>
+R call(T & obj, R (T::*mf)(A),B&& a)
+{
+    return (obj.*mf)((A)a );
+}
+
 bool AppDelegate::applicationDidFinishLaunching()
 {
     hello h;
-    proxycall( h, &hello::f, 0.0f);
+    Proxy<hello> p(h);
+    p.call(&hello::f, CCPoint(0,0));
+    call( h, &hello::f, CCPoint(0,0));
     
     // initialize director
     CCDirector *pDirector = CCDirector::sharedDirector();
@@ -83,17 +110,22 @@ bool AppDelegate::applicationDidFinishLaunching()
     ResourceManager::instance()->load_sprite_desc(full_path("sprites/base.xml"));
     ResourceManager::instance()->load_physic_desc(full_path("pdb/main.xml"));
     game->add_game_object( GameObjPtr(new GameLayer()), "root");
-    SpriteBase* hero;
-    game->add_game_object( GameObjPtr(hero = new SpriteBase(ResourceManager::instance()->sprite_descs.item("hero"))), "root" );
-    hero->set_position(CCPoint(512,512));
+    
+//
+
+    int i = 50;
+    while(i-- > 0)
+    {
+    game->add_game_object( GameObjFactory::construct_obj("SpriteBase", SpawnParams({{"init_location","500,500"},{"sprite_desc","hero"}})), "root" );
+    }
+
     CCPhyDebugNode* dbgnode = new CCPhyDebugNode();
     dbgnode->autorelease();
-    std::function<void (SpriteComponent*, float)> fp = &SpriteComponent::apply_torque;
     
-    hero->each_component( &SpriteComponent::apply_torque, 300.0f );
+    //hero->each_component( &SpriteComponent::set_linear_velocity, CCPoint(50,0) );
     
     game->get_scene()->get_layer("root")->cclayer()->addChild( dbgnode, 1000 );
-    //ResourceManager::load_physic_desc(full_path("pdb/main.xml"));
+    
     return true;
 }
 

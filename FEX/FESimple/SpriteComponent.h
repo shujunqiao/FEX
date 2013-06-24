@@ -132,6 +132,8 @@ class SpriteComponent :public cocos2d::CCSprite
 {
 public:
     SpriteComponent( const CCPoint& location, const std::shared_ptr<sprite_component_desc> desc );
+    ~SpriteComponent();
+    
     bool play_anim( const Name& anim );
     virtual void draw();
     

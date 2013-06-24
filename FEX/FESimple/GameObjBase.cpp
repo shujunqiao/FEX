@@ -8,13 +8,23 @@
 #include "FE.h"
 #include "GameObjBase.h"
 FE_NS_BEGIN
+
+GameObjBase::GameObjBase( const std::map<Name, std::string>& params )
+{
+}
+
 GameObjBase::GameObjBase()
 {
 }
 
 GameObjBase::~GameObjBase()
 {
-    printf("%p destoryed", this );
+
+    logger("obj lifetime") << "object: " << name << "( " << this << " ) destoryed" << endl;
+}
+
+void GameObjBase::update( float delta_time )
+{
 }
 
 FE_NS_END

@@ -24,7 +24,9 @@ class SpriteBase :public GameObjBase
 {
 public:
     SpriteBase();
-    SpriteBase( const std::shared_ptr<sprite_desc> desc );
+    SpriteBase( const CCPoint& location, const std::shared_ptr<sprite_desc> desc );
+    SpriteBase( const SpawnParams& params );
+    SpriteBase( const CCPoint& location, const SpawnParams& params );
     ~SpriteBase();
     
     virtual void added_to_game( GameBase* game, const Name& to_layer );
@@ -35,25 +37,15 @@ public:
     void remove_component( SpriteComponent * );
     SpriteComponent* component( unsigned int index );
     
-//    template<typename F, typename... Args>
-//    void each_component( F f , Args ... args)
-//    {
-////        std::function<F(Args...)> fp;
-//        for( auto i : components )
-//        {
-//
-//            f(i,args...);
-//        }
-//    }
-
-    template <typename T, typename R, typename ...Args>
-    R each_component( R (T::*mf)(Args...), Args &&... args)
+    template <typename T, typename ...ArgsA, typename ...ArgsB,
+    typename std::enable_if<std::is_convertible<ArgsB..., ArgsA...>::value>::type* = nullptr>
+    void each_component( void (T::*mf)(ArgsA...), ArgsB&& ...args)
     {
         for( auto i : components )
-        {
-            return (i->*mf)(std::forward<Args>(args)...);
-        }
+            (i->*mf)(std::forward<ArgsB>(args)...);
     }
+
+    void update( float delta_time );
     
     //position , rotation, ect..
     void set_position( CCPoint pos );

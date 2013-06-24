@@ -12,7 +12,7 @@
 #include <algorithm>
 #include <memory>
 #include <FE.h>
-
+#include "LevelBase.h"
 
 FE_NS_BEGIN
 
@@ -195,4 +195,16 @@ void ResourceManager::load_sprite_component_desc( const std::string& filename )
     }
     
 }
+
+std::shared_ptr<LevelData> ResourceManager::get_level_data( const Name& name )
+{
+    if ( levels.item( name ) == nullptr )
+    {
+        LevelData* lvl = new LevelData();
+        lvl->load( name );
+        levels[name] = std::shared_ptr<LevelData>(lvl);
+    }
+    return levels.item( name );
+}
+
 FE_NS_END

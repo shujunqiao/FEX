@@ -18,18 +18,35 @@ SpriteBase::SpriteBase()
 {
 }
 
-SpriteBase::SpriteBase( const std::shared_ptr<sprite_desc> desc )
+SpriteBase::SpriteBase( const CCPoint& location, const std::shared_ptr<sprite_desc> desc )
 {
+    assert(desc);
     for( auto &it : desc->components )
     {
        components.push_back(
-        new SpriteComponent( it.offset,
+        new SpriteComponent( it.offset + location,
                             ResourceManager::instance()->sprite_components.item(it.component_name)));
     }
 }
 
+SpriteBase::SpriteBase( const SpawnParams& params )
+:SpriteBase( string_to_point(params.find("init_location")->second.c_str()),
+            ResourceManager::instance()->sprite_descs.item( params.find("sprite_desc")->second) )
+{
+    
+}
+
+SpriteBase::SpriteBase( const CCPoint& location, const SpawnParams& params )
+:SpriteBase( location,
+            ResourceManager::instance()->sprite_descs.item( params.find("sprite_desc")->second) )
+{
+    
+}
+
 SpriteBase::~SpriteBase()
 {
+    removed_from_game( nullptr );
+    components.clear();
 }
 
 void SpriteBase::added_to_game( GameBase* game, const Name& to_layer )
@@ -46,7 +63,11 @@ void SpriteBase::removed_from_game( GameBase* game )
     for( auto comp : components )
     {
         if ( comp != nullptr )
+        {
+            logger("tmp") << comp->retainCount() << endl;
             comp->removeFromParent();
+            comp->release();
+        }
     }
 }
 
@@ -74,6 +95,10 @@ SpriteComponent* SpriteBase::component( unsigned int index )
 //    return components;
 //}
 
+void SpriteBase::update( float delta_time )
+{
+    each_component(&SpriteComponent::apply_linear_impulse, CCPoint(random_range(-10,10), random_range(-10,10)));
+}
 
 //position , rotation, ect..
 void SpriteBase::set_position( CCPoint pos )

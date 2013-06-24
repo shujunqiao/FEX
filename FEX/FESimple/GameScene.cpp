@@ -11,8 +11,10 @@
 FE_NS_BEGIN
 GameScene::GameScene()
 {
-    scene = new cocos2d::CCScene();
+    scene = new MyScene();
     scene->init();
+    scene->autorelease();
+    scene->scheduleUpdate();
 }
 
 GameScene::~GameScene()
@@ -46,6 +48,5 @@ void GameScene::remove_all_layers()
 {
     layers.clear();
 }
-
 
 FE_NS_END

@@ -11,8 +11,21 @@
 #include "FE.h"
 #include "cocos2d.h"
 #include "GameObjBase.h"
+#include "FEUtility.h"
+#include "GameBase.h"
 FE_NS_BEGIN
 class GameLayer;
+
+class MyScene : public cocos2d::CCScene
+{
+public:
+    void update( float delta_time )
+    {
+        get_game()->update(delta_time);
+        cocos2d::CCScene::update( delta_time );
+    }
+};
+
 class GameScene :public GameObjBase
 {
 public:
@@ -34,9 +47,8 @@ public:
         return scene;
     }
     
-    
 private:
-    cocos2d::CCScene*       scene;
+    MyScene*                scene;
     std::list<GameLayer*>   layers;
 };
 FE_NS_END

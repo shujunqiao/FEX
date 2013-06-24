@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		040589F6177582F5003648E1 /* LevelBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 040589F4177582F4003648E1 /* LevelBase.cpp */; };
 		040B33CB176C6A3400AFBF95 /* sprite_components in Resources */ = {isa = PBXBuildFile; fileRef = 040B33CA176C6A3400AFBF95 /* sprite_components */; };
 		040B3C251766E05100596508 /* FEUtility.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 040B3C231766E05100596508 /* FEUtility.cpp */; };
 		042B62171770C37D0010F03E /* CCPhyDebugNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 042B62151770C37C0010F03E /* CCPhyDebugNode.cpp */; };
@@ -301,10 +302,13 @@
 		04A9BE7C1765A38C007AC855 /* sprites in Resources */ = {isa = PBXBuildFile; fileRef = 04A9BE731765A38C007AC855 /* sprites */; };
 		04A9BE7F17661B4F007AC855 /* ResourceManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04A9BE7D17661B4E007AC855 /* ResourceManager.cpp */; };
 		04A9BE841766229B007AC855 /* pugixml.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04A9BE821766229B007AC855 /* pugixml.cpp */; };
+		04FA3C0A1776F4D000F3EF90 /* GameObjFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04FA3C081776F4D000F3EF90 /* GameObjFactory.cpp */; };
 		04FA5F861764AB1E005DF04E /* SpriteBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04FA5F841764AB1E005DF04E /* SpriteBase.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		040589F4177582F4003648E1 /* LevelBase.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LevelBase.cpp; sourceTree = "<group>"; };
+		040589F5177582F5003648E1 /* LevelBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LevelBase.h; sourceTree = "<group>"; };
 		040B33CA176C6A3400AFBF95 /* sprite_components */ = {isa = PBXFileReference; lastKnownFileType = folder; name = sprite_components; path = Resources/sprite_components; sourceTree = "<group>"; };
 		040B3C231766E05100596508 /* FEUtility.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FEUtility.cpp; sourceTree = "<group>"; };
 		040B3C241766E05100596508 /* FEUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FEUtility.h; sourceTree = "<group>"; };
@@ -931,6 +935,9 @@
 		04A9BE821766229B007AC855 /* pugixml.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = pugixml.cpp; sourceTree = "<group>"; };
 		04A9BE831766229B007AC855 /* pugixml.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = pugixml.hpp; sourceTree = "<group>"; };
 		04C8705B17700C670022B8AB /* logger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = logger.h; sourceTree = "<group>"; };
+		04FA3C071776B01000F3EF90 /* ClassInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClassInfo.h; sourceTree = "<group>"; };
+		04FA3C081776F4D000F3EF90 /* GameObjFactory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameObjFactory.cpp; sourceTree = "<group>"; };
+		04FA3C091776F4D000F3EF90 /* GameObjFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameObjFactory.h; sourceTree = "<group>"; };
 		04FA5F841764AB1E005DF04E /* SpriteBase.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SpriteBase.cpp; sourceTree = "<group>"; };
 		04FA5F851764AB1E005DF04E /* SpriteBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpriteBase.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -992,11 +999,11 @@
 		04713BDC1760C81900443B48 /* FEX */ = {
 			isa = PBXGroup;
 			children = (
+				04713F701760C82000443B48 /* Classes */,
 				04846DC217623CBC009A5E6F /* FESimple */,
 				04713BDD1760C81900443B48 /* Resources */,
 				04713BF51760C81900443B48 /* ios */,
 				04713BFE1760C81900443B48 /* libs */,
-				04713F701760C82000443B48 /* Classes */,
 				04713F6E1760C81F00443B48 /* Supporting Files */,
 			);
 			path = FEX;
@@ -2161,6 +2168,8 @@
 				04C8705B17700C670022B8AB /* logger.h */,
 				042B62151770C37C0010F03E /* CCPhyDebugNode.cpp */,
 				042B62161770C37D0010F03E /* CCPhyDebugNode.h */,
+				040589F4177582F4003648E1 /* LevelBase.cpp */,
+				040589F5177582F5003648E1 /* LevelBase.h */,
 			);
 			path = FESimple;
 			sourceTree = "<group>";
@@ -2186,6 +2195,9 @@
 				04846DC817623CBC009A5E6F /* GameObjBase.h */,
 				04846DC317623CBC009A5E6F /* GameBase.cpp */,
 				04846DC417623CBC009A5E6F /* GameBase.h */,
+				04FA3C071776B01000F3EF90 /* ClassInfo.h */,
+				04FA3C081776F4D000F3EF90 /* GameObjFactory.cpp */,
+				04FA3C091776F4D000F3EF90 /* GameObjFactory.h */,
 			);
 			name = Fundmental;
 			sourceTree = "<group>";
@@ -2535,6 +2547,8 @@
 				040B3C251766E05100596508 /* FEUtility.cpp in Sources */,
 				04491165176F5EA200B995CB /* GLES-Render.cpp in Sources */,
 				042B62171770C37D0010F03E /* CCPhyDebugNode.cpp in Sources */,
+				040589F6177582F5003648E1 /* LevelBase.cpp in Sources */,
+				04FA3C0A1776F4D000F3EF90 /* GameObjFactory.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

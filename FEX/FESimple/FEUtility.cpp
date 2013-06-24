@@ -16,9 +16,28 @@
 FE_NS_BEGIN
 cocos2d::CCPoint string_to_point( const char* str )
 {
-    return cocos2d::CCPointFromString(str);
+    cocos2d::CCPoint pt;
+    auto floats = split_string( str, "," );
+    if ( floats.size() < 2 )
+        return pt;
+    pt.x = atof(floats[0].c_str());
+    pt.y = atof(floats[1].c_str());
+    return pt;
 }
 
+cocos2d::CCRect string_to_rect( const char* str )
+{
+    cocos2d::CCRect rc;
+    auto floats = split_string( str, "," );
+    if ( floats.size() < 4 )
+        return rc;
+    rc.origin.x = atof(floats[0].c_str());
+    rc.origin.y = atof(floats[1].c_str());
+    rc.size.width = atof(floats[2].c_str());
+    rc.size.height = atof(floats[3].c_str());
+    
+    return rc;
+}
 
 std::vector<std::string> split_string( const std::string& s, const std::string& separator )
 {
@@ -123,6 +142,39 @@ cocos2d::CCPoint b2Vec2_to_point( const b2Vec2& vec )
     return cocos2d::CCPoint( vec.x * ptm_ratio(), vec.y * ptm_ratio() );
 }
 
+
+cocos2d::CCPoint& operator << (cocos2d::CCPoint& pt, const std::string& str)
+{
+    pt = string_to_point( str.c_str() );
+    return pt;
+}
+
+bool& operator << (bool& b, const std::string& str)
+{
+    b = (strcasecmp("true", str.c_str() ) == 0 );
+    return b;
+}
+
+cocos2d::CCRect& operator << (cocos2d::CCRect& rc, const std::string& str )
+{
+    rc = string_to_rect(str.c_str());
+    return rc;
+}
+
+cocos2d::CCPoint operator + ( const cocos2d::CCPoint& pt1, const cocos2d::CCPoint pt2 )
+{
+    return cocos2d::CCPoint( pt1.x + pt2.x, pt1.y + pt2.y );
+}
+
+float random01()
+{
+    return rand()/float(RAND_MAX);
+}
+
+float random_range( float from, float to)
+{
+    return random01() * (to - from) + from;
+}
 
 
 FE_NS_END

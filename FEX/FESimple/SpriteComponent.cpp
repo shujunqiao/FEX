@@ -40,6 +40,11 @@ SpriteComponent::SpriteComponent(  const CCPoint& location, const std::shared_pt
     }
 }
 
+SpriteComponent::~SpriteComponent()
+{
+    if (phy_body)
+        get_game()->get_phy_world()->DestroyBody(phy_body);
+}
 
 bool SpriteComponent::play_anim( const Name& anim_name )
 {
