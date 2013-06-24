@@ -1,0 +1,247 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		04ED2759177889E80078D7AF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04ED2758177889E80078D7AF /* Foundation.framework */; };
+		04ED275E177889E80078D7AF /* FESimple.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 04ED275D177889E80078D7AF /* FESimple.h */; };
+		04ED2760177889E80078D7AF /* FESimple.m in Sources */ = {isa = PBXBuildFile; fileRef = 04ED275F177889E80078D7AF /* FESimple.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		04ED2753177889E80078D7AF /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/${PRODUCT_NAME}";
+			dstSubfolderSpec = 16;
+			files = (
+				04ED275E177889E80078D7AF /* FESimple.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		04ED2755177889E80078D7AF /* libFESimple.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libFESimple.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		04ED2758177889E80078D7AF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		04ED275C177889E80078D7AF /* FESimple-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FESimple-Prefix.pch"; sourceTree = "<group>"; };
+		04ED275D177889E80078D7AF /* FESimple.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FESimple.h; sourceTree = "<group>"; };
+		04ED275F177889E80078D7AF /* FESimple.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FESimple.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		04ED2752177889E80078D7AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04ED2759177889E80078D7AF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		04ED274C177889E80078D7AF = {
+			isa = PBXGroup;
+			children = (
+				04ED275A177889E80078D7AF /* FESimple */,
+				04ED2757177889E80078D7AF /* Frameworks */,
+				04ED2756177889E80078D7AF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		04ED2756177889E80078D7AF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				04ED2755177889E80078D7AF /* libFESimple.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		04ED2757177889E80078D7AF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				04ED2758177889E80078D7AF /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		04ED275A177889E80078D7AF /* FESimple */ = {
+			isa = PBXGroup;
+			children = (
+				04ED275D177889E80078D7AF /* FESimple.h */,
+				04ED275F177889E80078D7AF /* FESimple.m */,
+				04ED275B177889E80078D7AF /* Supporting Files */,
+			);
+			path = FESimple;
+			sourceTree = "<group>";
+		};
+		04ED275B177889E80078D7AF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				04ED275C177889E80078D7AF /* FESimple-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		04ED2754177889E80078D7AF /* FESimple */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04ED2763177889E80078D7AF /* Build configuration list for PBXNativeTarget "FESimple" */;
+			buildPhases = (
+				04ED2751177889E80078D7AF /* Sources */,
+				04ED2752177889E80078D7AF /* Frameworks */,
+				04ED2753177889E80078D7AF /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FESimple;
+			productName = FESimple;
+			productReference = 04ED2755177889E80078D7AF /* libFESimple.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		04ED274D177889E80078D7AF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = Fancyzero;
+			};
+			buildConfigurationList = 04ED2750177889E80078D7AF /* Build configuration list for PBXProject "FESimple" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 04ED274C177889E80078D7AF;
+			productRefGroup = 04ED2756177889E80078D7AF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				04ED2754177889E80078D7AF /* FESimple */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		04ED2751177889E80078D7AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04ED2760177889E80078D7AF /* FESimple.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		04ED2761177889E80078D7AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		04ED2762177889E80078D7AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		04ED2764177889E80078D7AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/FESimple.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FESimple/FESimple-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		04ED2765177889E80078D7AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/FESimple.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FESimple/FESimple-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		04ED2750177889E80078D7AF /* Build configuration list for PBXProject "FESimple" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04ED2761177889E80078D7AF /* Debug */,
+				04ED2762177889E80078D7AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04ED2763177889E80078D7AF /* Build configuration list for PBXNativeTarget "FESimple" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04ED2764177889E80078D7AF /* Debug */,
+				04ED2765177889E80078D7AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 04ED274D177889E80078D7AF /* Project object */;
+}
