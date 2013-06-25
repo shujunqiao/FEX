@@ -165,4 +165,10 @@ void SpriteComponent::apply_angular_impulse( float i )
         phy_body->ApplyAngularImpulse( i );
 }
 
+void SpriteComponent::wakeup()
+{
+    if ( phy_body )
+        phy_body->SetAwake(true);
+}
+
 FE_NS_END

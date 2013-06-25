@@ -37,7 +37,7 @@ public:
     void remove_component( SpriteComponent * );
     SpriteComponent* component( unsigned int index );
     
-    template <typename T, typename ...ArgsA, typename ...ArgsB,
+    template <typename T, typename ...ArgsA , typename ...ArgsB,
     typename std::enable_if<std::is_convertible<ArgsB..., ArgsA...>::value>::type* = nullptr>
     void each_component( void (T::*mf)(ArgsA...), ArgsB&& ...args)
     {
@@ -45,6 +45,14 @@ public:
             (i->*mf)(std::forward<ArgsB>(args)...);
     }
 
+    template <typename T>
+    void each_component( void (T::*mf)() )
+    {
+        for( auto i : components )
+            (i->*mf)();
+    }
+    
+    
     void update( float delta_time );
     
     //position , rotation, ect..

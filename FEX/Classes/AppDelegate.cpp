@@ -114,17 +114,17 @@ bool AppDelegate::applicationDidFinishLaunching()
 //
 
     int i = 50;
-    while(i-- > 0)
+    while(i-->0)
     {
-    game->add_game_object( GameObjFactory::construct_obj("SpriteBase", SpawnParams({{"init_location","500,500"},{"sprite_desc","hero"}})), "root" );
+    game->add_game_object( GameObjFactory::construct_obj("SpriteBase", SpawnParams({{"init_location","500,500"},{"sprite_desc","pickup_s_gun"}})), "root" );
     }
 
-    CCPhyDebugNode* dbgnode = new CCPhyDebugNode();
-    dbgnode->autorelease();
+    //CCPhyDebugNode* dbgnode = new CCPhyDebugNode();
+    //dbgnode->autorelease();
     
     //hero->each_component( &SpriteComponent::set_linear_velocity, CCPoint(50,0) );
     
-    game->get_scene()->get_layer("root")->cclayer()->addChild( dbgnode, 1000 );
+    //game->get_scene()->get_layer("root")->cclayer()->addChild( dbgnode, 1000 );
     
     return true;
 }

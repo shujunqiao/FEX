@@ -97,7 +97,8 @@ SpriteComponent* SpriteBase::component( unsigned int index )
 
 void SpriteBase::update( float delta_time )
 {
-    each_component(&SpriteComponent::apply_linear_impulse, CCPoint(random_range(-10,10), random_range(-10,10)));
+    //each_component(&SpriteComponent::apply_linear_impulse, CCPoint(random_range(-10,10), random_range(-10,10)));
+    each_component(&SpriteComponent::wakeup);
 }
 
 //position , rotation, ect..

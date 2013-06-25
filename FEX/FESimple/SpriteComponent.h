@@ -151,6 +151,7 @@ public:
     void set_angular_damping( float damping );
     void apply_linear_impulse( const CCPoint& v );
     void apply_angular_impulse( float i );
+    void wakeup();
 protected:
     std::vector<sprite_animation>   animations;
     b2Body*                         phy_body;

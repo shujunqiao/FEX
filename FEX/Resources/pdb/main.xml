@@ -1,4 +1,7 @@
 <bodies>
+    <body name="heal" id="0" anchor_rel="0.500,0.500" anchor_abs="25.000,25.000" size="50.000,50.000">
+        <circle radius="25.000" is_sensor="false" />
+    </body>
 
 <body name="blade" id="0" anchor_rel="0.646,0.031" anchor_abs="115.000,4.000" size="178.000,128.000">
 <polygon vertices=" 59.000,98.000 ,37.000,111.000 ,-23.000,124.500 ,-24.000,124.500 ,-3.000,94.000 ,12.000,88.000" is_sensor="false" />
