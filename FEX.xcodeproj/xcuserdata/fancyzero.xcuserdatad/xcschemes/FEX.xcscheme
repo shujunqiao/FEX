@@ -14,8 +14,8 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "04713BC81760C81900443B48"
-               BuildableName = "FEX.app"
+               BlueprintIdentifier = "04A627AF177BEC7900E1760D"
+               BuildableName = "libFEX.a"
                BlueprintName = "FEX"
                ReferencedContainer = "container:FEX.xcodeproj">
             </BuildableReference>
@@ -32,8 +32,8 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "04713BC81760C81900443B48"
-            BuildableName = "FEX.app"
+            BlueprintIdentifier = "04A627AF177BEC7900E1760D"
+            BuildableName = "libFEX.a"
             BlueprintName = "FEX"
             ReferencedContainer = "container:FEX.xcodeproj">
          </BuildableReference>
@@ -51,8 +51,8 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "04713BC81760C81900443B48"
-            BuildableName = "FEX.app"
+            BlueprintIdentifier = "04A627AF177BEC7900E1760D"
+            BuildableName = "libFEX.a"
             BlueprintName = "FEX"
             ReferencedContainer = "container:FEX.xcodeproj">
          </BuildableReference>
@@ -69,8 +69,8 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "04713BC81760C81900443B48"
-            BuildableName = "FEX.app"
+            BlueprintIdentifier = "04A627AF177BEC7900E1760D"
+            BuildableName = "libFEX.a"
             BlueprintName = "FEX"
             ReferencedContainer = "container:FEX.xcodeproj">
          </BuildableReference>

@@ -2,13 +2,16 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:libcocos2dx/external/Box2D/proj.ios/Box2D.xcodeproj">
+      location = "group:FEXGameTemplate/FEXGameTemplate.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:libcocos2dx/CocosDenshion/proj.ios/CocosDenshion.xcodeproj">
+      location = "group:libs/external/Box2D/proj.ios/Box2D.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:libcocos2dx/cocos2dx/proj.ios/cocos2dx.xcodeproj">
+      location = "group:libs/CocosDenshion/proj.ios/CocosDenshion.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:libs/cocos2dx/proj.ios/cocos2dx.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:FEX.xcodeproj">

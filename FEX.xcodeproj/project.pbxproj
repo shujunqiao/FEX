@@ -7,71 +7,37 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		040589F6177582F5003648E1 /* LevelBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 040589F4177582F4003648E1 /* LevelBase.cpp */; };
-		040B33CB176C6A3400AFBF95 /* sprite_components in Resources */ = {isa = PBXBuildFile; fileRef = 040B33CA176C6A3400AFBF95 /* sprite_components */; };
-		040B3C251766E05100596508 /* FEUtility.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 040B3C231766E05100596508 /* FEUtility.cpp */; };
-		0411798F177B589E00A2748B /* libBox2D.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0411798C177B589D00A2748B /* libBox2D.a */; };
-		04117990177B589E00A2748B /* libcocos2dx.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0411798D177B589D00A2748B /* libcocos2dx.a */; };
-		04117991177B589E00A2748B /* libCocosDenshion.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0411798E177B589D00A2748B /* libCocosDenshion.a */; };
-		042B62171770C37D0010F03E /* CCPhyDebugNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 042B62151770C37C0010F03E /* CCPhyDebugNode.cpp */; };
-		04491165176F5EA200B995CB /* GLES-Render.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04491163176F5EA200B995CB /* GLES-Render.cpp */; };
-		04713BCD1760C81900443B48 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04713BCC1760C81900443B48 /* QuartzCore.framework */; };
-		04713BCF1760C81900443B48 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04713BCE1760C81900443B48 /* OpenGLES.framework */; };
-		04713BD11760C81900443B48 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04713BD01760C81900443B48 /* OpenAL.framework */; };
-		04713BD31760C81900443B48 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04713BD21760C81900443B48 /* AudioToolbox.framework */; };
-		04713BD51760C81900443B48 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04713BD41760C81900443B48 /* AVFoundation.framework */; };
-		04713BD71760C81900443B48 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04713BD61760C81900443B48 /* UIKit.framework */; };
-		04713BD91760C81900443B48 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04713BD81760C81900443B48 /* Foundation.framework */; };
-		04713BDB1760C81900443B48 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04713BDA1760C81900443B48 /* CoreGraphics.framework */; };
-		04713BE31760C81900443B48 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 04713BE21760C81900443B48 /* Default.png */; };
-		04713BE51760C81900443B48 /* HelloWorld.png in Resources */ = {isa = PBXBuildFile; fileRef = 04713BE41760C81900443B48 /* HelloWorld.png */; };
-		04713BE71760C81900443B48 /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 04713BE61760C81900443B48 /* Icon-72.png */; };
-		04713BE91760C81900443B48 /* Icon-Small-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 04713BE81760C81900443B48 /* Icon-Small-50.png */; };
-		04713BEB1760C81900443B48 /* Icon-Small.png in Resources */ = {isa = PBXBuildFile; fileRef = 04713BEA1760C81900443B48 /* Icon-Small.png */; };
-		04713BED1760C81900443B48 /* Icon-Small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 04713BEC1760C81900443B48 /* Icon-Small@2x.png */; };
-		04713BEF1760C81900443B48 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 04713BEE1760C81900443B48 /* Icon.png */; };
-		04713BF11760C81900443B48 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 04713BF01760C81900443B48 /* Icon@2x.png */; };
-		04713BF31760C81900443B48 /* iTunesArtwork in Resources */ = {isa = PBXBuildFile; fileRef = 04713BF21760C81900443B48 /* iTunesArtwork */; };
-		04713BF81760C81900443B48 /* AppController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 04713BF71760C81900443B48 /* AppController.mm */; };
-		04713BFB1760C81900443B48 /* RootViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 04713BFA1760C81900443B48 /* RootViewController.mm */; };
-		04713BFD1760C81900443B48 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04713BFC1760C81900443B48 /* main.m */; };
-		04713F731760C82000443B48 /* AppDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04713F721760C82000443B48 /* AppDelegate.cpp */; };
-		04713F781760C82000443B48 /* blocks.png in Resources */ = {isa = PBXBuildFile; fileRef = 04713F771760C82000443B48 /* blocks.png */; };
-		04713F7F1760C89600443B48 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 04713F7E1760C89600443B48 /* Default-568h@2x.png */; };
-		04846DCF17623CBC009A5E6F /* GameBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04846DC317623CBC009A5E6F /* GameBase.cpp */; };
-		04846DD017623CBC009A5E6F /* GameLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04846DC517623CBC009A5E6F /* GameLayer.cpp */; };
-		04846DD117623CBC009A5E6F /* GameObjBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04846DC717623CBC009A5E6F /* GameObjBase.cpp */; };
-		04846DD217623CBC009A5E6F /* GameScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04846DC917623CBC009A5E6F /* GameScene.cpp */; };
-		04846DD317623CBC009A5E6F /* SpriteComponent.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04846DCB17623CBC009A5E6F /* SpriteComponent.cpp */; };
-		04846DD7176248FF009A5E6F /* FE.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04846DD5176248FF009A5E6F /* FE.cpp */; };
-		04A9BE741765A38C007AC855 /* fonts in Resources */ = {isa = PBXBuildFile; fileRef = 04A9BE6B1765A38C007AC855 /* fonts */; };
-		04A9BE751765A38C007AC855 /* levels in Resources */ = {isa = PBXBuildFile; fileRef = 04A9BE6C1765A38C007AC855 /* levels */; };
-		04A9BE761765A38C007AC855 /* particles in Resources */ = {isa = PBXBuildFile; fileRef = 04A9BE6D1765A38C007AC855 /* particles */; };
-		04A9BE771765A38C007AC855 /* pdb in Resources */ = {isa = PBXBuildFile; fileRef = 04A9BE6E1765A38C007AC855 /* pdb */; };
-		04A9BE781765A38C007AC855 /* pic in Resources */ = {isa = PBXBuildFile; fileRef = 04A9BE6F1765A38C007AC855 /* pic */; };
-		04A9BE791765A38C007AC855 /* sfx in Resources */ = {isa = PBXBuildFile; fileRef = 04A9BE701765A38C007AC855 /* sfx */; };
-		04A9BE7A1765A38C007AC855 /* shaders in Resources */ = {isa = PBXBuildFile; fileRef = 04A9BE711765A38C007AC855 /* shaders */; };
-		04A9BE7C1765A38C007AC855 /* sprites in Resources */ = {isa = PBXBuildFile; fileRef = 04A9BE731765A38C007AC855 /* sprites */; };
-		04A9BE7F17661B4F007AC855 /* ResourceManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04A9BE7D17661B4E007AC855 /* ResourceManager.cpp */; };
-		04A9BE841766229B007AC855 /* pugixml.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04A9BE821766229B007AC855 /* pugixml.cpp */; };
-		04FA3C0A1776F4D000F3EF90 /* GameObjFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04FA3C081776F4D000F3EF90 /* GameObjFactory.cpp */; };
-		04FA5F861764AB1E005DF04E /* SpriteBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04FA5F841764AB1E005DF04E /* SpriteBase.cpp */; };
+		04A627B1177BEC7900E1760D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04713BD81760C81900443B48 /* Foundation.framework */; };
+		04A627ED177BEDD200E1760D /* CCPhyDebugNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04A627CB177BEDD200E1760D /* CCPhyDebugNode.cpp */; };
+		04A627EE177BEDD200E1760D /* ControllerBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04A627CE177BEDD200E1760D /* ControllerBase.cpp */; };
+		04A627EF177BEDD200E1760D /* FE.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04A627D0177BEDD200E1760D /* FE.cpp */; };
+		04A627F0177BEDD200E1760D /* FEUtility.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04A627D2177BEDD200E1760D /* FEUtility.cpp */; };
+		04A627F1177BEDD200E1760D /* GameBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04A627D4177BEDD200E1760D /* GameBase.cpp */; };
+		04A627F2177BEDD200E1760D /* GameLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04A627D6177BEDD200E1760D /* GameLayer.cpp */; };
+		04A627F3177BEDD200E1760D /* GameObjBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04A627D8177BEDD200E1760D /* GameObjBase.cpp */; };
+		04A627F4177BEDD200E1760D /* GameObjFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04A627DA177BEDD200E1760D /* GameObjFactory.cpp */; };
+		04A627F5177BEDD200E1760D /* GameScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04A627DC177BEDD200E1760D /* GameScene.cpp */; };
+		04A627F6177BEDD200E1760D /* GLES-Render.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04A627DE177BEDD200E1760D /* GLES-Render.cpp */; };
+		04A627F7177BEDD200E1760D /* LevelBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04A627E0177BEDD200E1760D /* LevelBase.cpp */; };
+		04A627F8177BEDD200E1760D /* pugixml.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04A627E5177BEDD200E1760D /* pugixml.cpp */; };
+		04A627F9177BEDD200E1760D /* ResourceManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04A627E7177BEDD200E1760D /* ResourceManager.cpp */; };
+		04A627FA177BEDD200E1760D /* SpriteBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04A627E9177BEDD200E1760D /* SpriteBase.cpp */; };
+		04A627FB177BEDD200E1760D /* SpriteComponent.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04A627EB177BEDD200E1760D /* SpriteComponent.cpp */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		04A627AE177BEC7900E1760D /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/${PRODUCT_NAME}";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		040589F4177582F4003648E1 /* LevelBase.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LevelBase.cpp; sourceTree = "<group>"; };
-		040589F5177582F5003648E1 /* LevelBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LevelBase.h; sourceTree = "<group>"; };
-		040B33CA176C6A3400AFBF95 /* sprite_components */ = {isa = PBXFileReference; lastKnownFileType = folder; name = sprite_components; path = Resources/sprite_components; sourceTree = "<group>"; };
-		040B3C231766E05100596508 /* FEUtility.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FEUtility.cpp; sourceTree = "<group>"; };
-		040B3C241766E05100596508 /* FEUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FEUtility.h; sourceTree = "<group>"; };
-		0411798C177B589D00A2748B /* libBox2D.a */ = {isa = PBXFileReference; lastKnownFileType = file; name = libBox2D.a; path = "libcocos2dx/external/Box2D/proj.ios/build/Release-iphoneos/libBox2D.a"; sourceTree = "<group>"; };
-		0411798D177B589D00A2748B /* libcocos2dx.a */ = {isa = PBXFileReference; lastKnownFileType = file; name = libcocos2dx.a; path = "libcocos2dx/cocos2dx/proj.ios/build/Release-iphoneos/libcocos2dx.a"; sourceTree = "<group>"; };
-		0411798E177B589D00A2748B /* libCocosDenshion.a */ = {isa = PBXFileReference; lastKnownFileType = file; name = libCocosDenshion.a; path = "libcocos2dx/CocosDenshion/proj.ios/build/Release-iphoneos/libCocosDenshion.a"; sourceTree = "<group>"; };
-		042B62151770C37C0010F03E /* CCPhyDebugNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CCPhyDebugNode.cpp; sourceTree = "<group>"; };
-		042B62161770C37D0010F03E /* CCPhyDebugNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCPhyDebugNode.h; sourceTree = "<group>"; };
-		04491163176F5EA200B995CB /* GLES-Render.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "GLES-Render.cpp"; sourceTree = "<group>"; };
-		04491164176F5EA200B995CB /* GLES-Render.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GLES-Render.h"; sourceTree = "<group>"; };
-		04713BC91760C81900443B48 /* FEX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FEX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04713BCC1760C81900443B48 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		04713BCE1760C81900443B48 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		04713BD01760C81900443B48 /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
@@ -80,75 +46,49 @@
 		04713BD61760C81900443B48 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		04713BD81760C81900443B48 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		04713BDA1760C81900443B48 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		04713BE21760C81900443B48 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = Resources/Default.png; sourceTree = "<group>"; };
-		04713BE41760C81900443B48 /* HelloWorld.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = HelloWorld.png; path = Resources/HelloWorld.png; sourceTree = "<group>"; };
-		04713BE61760C81900443B48 /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-72.png"; path = "Resources/Icon-72.png"; sourceTree = "<group>"; };
-		04713BE81760C81900443B48 /* Icon-Small-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-Small-50.png"; path = "Resources/Icon-Small-50.png"; sourceTree = "<group>"; };
-		04713BEA1760C81900443B48 /* Icon-Small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-Small.png"; path = "Resources/Icon-Small.png"; sourceTree = "<group>"; };
-		04713BEC1760C81900443B48 /* Icon-Small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-Small@2x.png"; path = "Resources/Icon-Small@2x.png"; sourceTree = "<group>"; };
-		04713BEE1760C81900443B48 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon.png; path = Resources/Icon.png; sourceTree = "<group>"; };
-		04713BF01760C81900443B48 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon@2x.png"; path = "Resources/Icon@2x.png"; sourceTree = "<group>"; };
-		04713BF21760C81900443B48 /* iTunesArtwork */ = {isa = PBXFileReference; lastKnownFileType = file; name = iTunesArtwork; path = Resources/iTunesArtwork; sourceTree = "<group>"; };
-		04713BF41760C81900443B48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = Resources/Info.plist; sourceTree = "<group>"; };
-		04713BF61760C81900443B48 /* AppController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppController.h; path = ios/AppController.h; sourceTree = "<group>"; };
-		04713BF71760C81900443B48 /* AppController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = AppController.mm; path = ios/AppController.mm; sourceTree = "<group>"; };
-		04713BF91760C81900443B48 /* RootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RootViewController.h; path = ios/RootViewController.h; sourceTree = "<group>"; };
-		04713BFA1760C81900443B48 /* RootViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = RootViewController.mm; path = ios/RootViewController.mm; sourceTree = "<group>"; };
-		04713BFC1760C81900443B48 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = main.m; path = ios/main.m; sourceTree = "<group>"; };
-		04713F6F1760C81F00443B48 /* Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = "<group>"; };
-		04713F711760C82000443B48 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Classes/AppDelegate.h; sourceTree = "<group>"; };
-		04713F721760C82000443B48 /* AppDelegate.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = AppDelegate.cpp; path = Classes/AppDelegate.cpp; sourceTree = "<group>"; };
-		04713F771760C82000443B48 /* blocks.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = blocks.png; path = Resources/blocks.png; sourceTree = "<group>"; };
-		04713F7E1760C89600443B48 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		04846DC317623CBC009A5E6F /* GameBase.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameBase.cpp; sourceTree = "<group>"; };
-		04846DC417623CBC009A5E6F /* GameBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameBase.h; sourceTree = "<group>"; };
-		04846DC517623CBC009A5E6F /* GameLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameLayer.cpp; sourceTree = "<group>"; };
-		04846DC617623CBC009A5E6F /* GameLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameLayer.h; sourceTree = "<group>"; };
-		04846DC717623CBC009A5E6F /* GameObjBase.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameObjBase.cpp; sourceTree = "<group>"; };
-		04846DC817623CBC009A5E6F /* GameObjBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameObjBase.h; sourceTree = "<group>"; };
-		04846DC917623CBC009A5E6F /* GameScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameScene.cpp; sourceTree = "<group>"; };
-		04846DCA17623CBC009A5E6F /* GameScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameScene.h; sourceTree = "<group>"; };
-		04846DCB17623CBC009A5E6F /* SpriteComponent.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SpriteComponent.cpp; sourceTree = "<group>"; };
-		04846DCC17623CBC009A5E6F /* SpriteComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpriteComponent.h; sourceTree = "<group>"; };
-		04846DD5176248FF009A5E6F /* FE.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FE.cpp; sourceTree = "<group>"; };
-		04846DD6176248FF009A5E6F /* FE.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FE.h; sourceTree = "<group>"; };
-		04A9BE6B1765A38C007AC855 /* fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; name = fonts; path = Resources/fonts; sourceTree = "<group>"; };
-		04A9BE6C1765A38C007AC855 /* levels */ = {isa = PBXFileReference; lastKnownFileType = folder; name = levels; path = Resources/levels; sourceTree = "<group>"; };
-		04A9BE6D1765A38C007AC855 /* particles */ = {isa = PBXFileReference; lastKnownFileType = folder; name = particles; path = Resources/particles; sourceTree = "<group>"; };
-		04A9BE6E1765A38C007AC855 /* pdb */ = {isa = PBXFileReference; lastKnownFileType = folder; name = pdb; path = Resources/pdb; sourceTree = "<group>"; };
-		04A9BE6F1765A38C007AC855 /* pic */ = {isa = PBXFileReference; lastKnownFileType = folder; name = pic; path = Resources/pic; sourceTree = "<group>"; };
-		04A9BE701765A38C007AC855 /* sfx */ = {isa = PBXFileReference; lastKnownFileType = folder; name = sfx; path = Resources/sfx; sourceTree = "<group>"; };
-		04A9BE711765A38C007AC855 /* shaders */ = {isa = PBXFileReference; lastKnownFileType = folder; name = shaders; path = Resources/shaders; sourceTree = "<group>"; };
-		04A9BE731765A38C007AC855 /* sprites */ = {isa = PBXFileReference; lastKnownFileType = folder; name = sprites; path = Resources/sprites; sourceTree = "<group>"; };
-		04A9BE7D17661B4E007AC855 /* ResourceManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ResourceManager.cpp; sourceTree = "<group>"; };
-		04A9BE7E17661B4E007AC855 /* ResourceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResourceManager.h; sourceTree = "<group>"; };
-		04A9BE811766229B007AC855 /* pugiconfig.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = pugiconfig.hpp; sourceTree = "<group>"; };
-		04A9BE821766229B007AC855 /* pugixml.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = pugixml.cpp; sourceTree = "<group>"; };
-		04A9BE831766229B007AC855 /* pugixml.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = pugixml.hpp; sourceTree = "<group>"; };
-		04C8705B17700C670022B8AB /* logger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = logger.h; sourceTree = "<group>"; };
-		04FA3C071776B01000F3EF90 /* ClassInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClassInfo.h; sourceTree = "<group>"; };
-		04FA3C081776F4D000F3EF90 /* GameObjFactory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameObjFactory.cpp; sourceTree = "<group>"; };
-		04FA3C091776F4D000F3EF90 /* GameObjFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameObjFactory.h; sourceTree = "<group>"; };
-		04FA5F841764AB1E005DF04E /* SpriteBase.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SpriteBase.cpp; sourceTree = "<group>"; };
-		04FA5F851764AB1E005DF04E /* SpriteBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpriteBase.h; sourceTree = "<group>"; };
+		04A627B0177BEC7900E1760D /* libFEX.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libFEX.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		04A627B4177BEC7900E1760D /* FEX-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "FEX-Prefix.pch"; path = "FEX/FEX-Prefix.pch"; sourceTree = "<group>"; };
+		04A627CB177BEDD200E1760D /* CCPhyDebugNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CCPhyDebugNode.cpp; path = FEX/CCPhyDebugNode.cpp; sourceTree = "<group>"; };
+		04A627CC177BEDD200E1760D /* CCPhyDebugNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CCPhyDebugNode.h; path = FEX/CCPhyDebugNode.h; sourceTree = "<group>"; };
+		04A627CD177BEDD200E1760D /* ClassInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ClassInfo.h; path = FEX/ClassInfo.h; sourceTree = "<group>"; };
+		04A627CE177BEDD200E1760D /* ControllerBase.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ControllerBase.cpp; path = FEX/ControllerBase.cpp; sourceTree = "<group>"; };
+		04A627CF177BEDD200E1760D /* ControllerBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ControllerBase.h; path = FEX/ControllerBase.h; sourceTree = "<group>"; };
+		04A627D0177BEDD200E1760D /* FE.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FE.cpp; path = FEX/FE.cpp; sourceTree = "<group>"; };
+		04A627D1177BEDD200E1760D /* FE.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FE.h; path = FEX/FE.h; sourceTree = "<group>"; };
+		04A627D2177BEDD200E1760D /* FEUtility.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FEUtility.cpp; path = FEX/FEUtility.cpp; sourceTree = "<group>"; };
+		04A627D3177BEDD200E1760D /* FEUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FEUtility.h; path = FEX/FEUtility.h; sourceTree = "<group>"; };
+		04A627D4177BEDD200E1760D /* GameBase.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GameBase.cpp; path = FEX/GameBase.cpp; sourceTree = "<group>"; };
+		04A627D5177BEDD200E1760D /* GameBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameBase.h; path = FEX/GameBase.h; sourceTree = "<group>"; };
+		04A627D6177BEDD200E1760D /* GameLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GameLayer.cpp; path = FEX/GameLayer.cpp; sourceTree = "<group>"; };
+		04A627D7177BEDD200E1760D /* GameLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameLayer.h; path = FEX/GameLayer.h; sourceTree = "<group>"; };
+		04A627D8177BEDD200E1760D /* GameObjBase.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GameObjBase.cpp; path = FEX/GameObjBase.cpp; sourceTree = "<group>"; };
+		04A627D9177BEDD200E1760D /* GameObjBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameObjBase.h; path = FEX/GameObjBase.h; sourceTree = "<group>"; };
+		04A627DA177BEDD200E1760D /* GameObjFactory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GameObjFactory.cpp; path = FEX/GameObjFactory.cpp; sourceTree = "<group>"; };
+		04A627DB177BEDD200E1760D /* GameObjFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameObjFactory.h; path = FEX/GameObjFactory.h; sourceTree = "<group>"; };
+		04A627DC177BEDD200E1760D /* GameScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GameScene.cpp; path = FEX/GameScene.cpp; sourceTree = "<group>"; };
+		04A627DD177BEDD200E1760D /* GameScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameScene.h; path = FEX/GameScene.h; sourceTree = "<group>"; };
+		04A627DE177BEDD200E1760D /* GLES-Render.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = "GLES-Render.cpp"; path = "FEX/GLES-Render.cpp"; sourceTree = "<group>"; };
+		04A627DF177BEDD200E1760D /* GLES-Render.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "GLES-Render.h"; path = "FEX/GLES-Render.h"; sourceTree = "<group>"; };
+		04A627E0177BEDD200E1760D /* LevelBase.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = LevelBase.cpp; path = FEX/LevelBase.cpp; sourceTree = "<group>"; };
+		04A627E1177BEDD200E1760D /* LevelBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LevelBase.h; path = FEX/LevelBase.h; sourceTree = "<group>"; };
+		04A627E2177BEDD200E1760D /* logger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = logger.h; path = FEX/logger.h; sourceTree = "<group>"; };
+		04A627E4177BEDD200E1760D /* pugiconfig.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = pugiconfig.hpp; sourceTree = "<group>"; };
+		04A627E5177BEDD200E1760D /* pugixml.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = pugixml.cpp; sourceTree = "<group>"; };
+		04A627E6177BEDD200E1760D /* pugixml.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = pugixml.hpp; sourceTree = "<group>"; };
+		04A627E7177BEDD200E1760D /* ResourceManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ResourceManager.cpp; path = FEX/ResourceManager.cpp; sourceTree = "<group>"; };
+		04A627E8177BEDD200E1760D /* ResourceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ResourceManager.h; path = FEX/ResourceManager.h; sourceTree = "<group>"; };
+		04A627E9177BEDD200E1760D /* SpriteBase.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SpriteBase.cpp; path = FEX/SpriteBase.cpp; sourceTree = "<group>"; };
+		04A627EA177BEDD200E1760D /* SpriteBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SpriteBase.h; path = FEX/SpriteBase.h; sourceTree = "<group>"; };
+		04A627EB177BEDD200E1760D /* SpriteComponent.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SpriteComponent.cpp; path = FEX/SpriteComponent.cpp; sourceTree = "<group>"; };
+		04A627EC177BEDD200E1760D /* SpriteComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SpriteComponent.h; path = FEX/SpriteComponent.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		04713BC61760C81900443B48 /* Frameworks */ = {
+		04A627AD177BEC7900E1760D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0411798F177B589E00A2748B /* libBox2D.a in Frameworks */,
-				04117990177B589E00A2748B /* libcocos2dx.a in Frameworks */,
-				04117991177B589E00A2748B /* libCocosDenshion.a in Frameworks */,
-				04713BCD1760C81900443B48 /* QuartzCore.framework in Frameworks */,
-				04713BCF1760C81900443B48 /* OpenGLES.framework in Frameworks */,
-				04713BD11760C81900443B48 /* OpenAL.framework in Frameworks */,
-				04713BD31760C81900443B48 /* AudioToolbox.framework in Frameworks */,
-				04713BD51760C81900443B48 /* AVFoundation.framework in Frameworks */,
-				04713BD71760C81900443B48 /* UIKit.framework in Frameworks */,
-				04713BD91760C81900443B48 /* Foundation.framework in Frameworks */,
-				04713BDB1760C81900443B48 /* CoreGraphics.framework in Frameworks */,
+				04A627B1177BEC7900E1760D /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -158,11 +98,8 @@
 		04713BC01760C81900443B48 = {
 			isa = PBXGroup;
 			children = (
-				0411798C177B589D00A2748B /* libBox2D.a */,
-				0411798D177B589D00A2748B /* libcocos2dx.a */,
-				0411798E177B589D00A2748B /* libCocosDenshion.a */,
-				04713F7E1760C89600443B48 /* Default-568h@2x.png */,
-				04713BDC1760C81900443B48 /* FEX */,
+				04A627CA177BEDC600E1760D /* Src */,
+				04A627B4177BEC7900E1760D /* FEX-Prefix.pch */,
 				04713BCB1760C81900443B48 /* Frameworks */,
 				04713BCA1760C81900443B48 /* Products */,
 			);
@@ -171,7 +108,7 @@
 		04713BCA1760C81900443B48 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				04713BC91760C81900443B48 /* FEX.app */,
+				04A627B0177BEC7900E1760D /* libFEX.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -191,138 +128,65 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		04713BDC1760C81900443B48 /* FEX */ = {
+		04A627CA177BEDC600E1760D /* Src */ = {
 			isa = PBXGroup;
 			children = (
-				04713F701760C82000443B48 /* Classes */,
-				04846DC217623CBC009A5E6F /* FESimple */,
-				04713BDD1760C81900443B48 /* Resources */,
-				04713BF51760C81900443B48 /* ios */,
-				04713F6E1760C81F00443B48 /* Supporting Files */,
+				04A627CB177BEDD200E1760D /* CCPhyDebugNode.cpp */,
+				04A627CC177BEDD200E1760D /* CCPhyDebugNode.h */,
+				04A627CD177BEDD200E1760D /* ClassInfo.h */,
+				04A627CE177BEDD200E1760D /* ControllerBase.cpp */,
+				04A627CF177BEDD200E1760D /* ControllerBase.h */,
+				04A627D0177BEDD200E1760D /* FE.cpp */,
+				04A627D1177BEDD200E1760D /* FE.h */,
+				04A627D2177BEDD200E1760D /* FEUtility.cpp */,
+				04A627D3177BEDD200E1760D /* FEUtility.h */,
+				04A627D4177BEDD200E1760D /* GameBase.cpp */,
+				04A627D5177BEDD200E1760D /* GameBase.h */,
+				04A627D6177BEDD200E1760D /* GameLayer.cpp */,
+				04A627D7177BEDD200E1760D /* GameLayer.h */,
+				04A627D8177BEDD200E1760D /* GameObjBase.cpp */,
+				04A627D9177BEDD200E1760D /* GameObjBase.h */,
+				04A627DA177BEDD200E1760D /* GameObjFactory.cpp */,
+				04A627DB177BEDD200E1760D /* GameObjFactory.h */,
+				04A627DC177BEDD200E1760D /* GameScene.cpp */,
+				04A627DD177BEDD200E1760D /* GameScene.h */,
+				04A627DE177BEDD200E1760D /* GLES-Render.cpp */,
+				04A627DF177BEDD200E1760D /* GLES-Render.h */,
+				04A627E0177BEDD200E1760D /* LevelBase.cpp */,
+				04A627E1177BEDD200E1760D /* LevelBase.h */,
+				04A627E2177BEDD200E1760D /* logger.h */,
+				04A627E3177BEDD200E1760D /* pugixml */,
+				04A627E7177BEDD200E1760D /* ResourceManager.cpp */,
+				04A627E8177BEDD200E1760D /* ResourceManager.h */,
+				04A627E9177BEDD200E1760D /* SpriteBase.cpp */,
+				04A627EA177BEDD200E1760D /* SpriteBase.h */,
+				04A627EB177BEDD200E1760D /* SpriteComponent.cpp */,
+				04A627EC177BEDD200E1760D /* SpriteComponent.h */,
 			);
-			path = FEX;
+			name = Src;
 			sourceTree = "<group>";
 		};
-		04713BDD1760C81900443B48 /* Resources */ = {
+		04A627E3177BEDD200E1760D /* pugixml */ = {
 			isa = PBXGroup;
 			children = (
-				040B33CA176C6A3400AFBF95 /* sprite_components */,
-				04A9BE6B1765A38C007AC855 /* fonts */,
-				04A9BE6C1765A38C007AC855 /* levels */,
-				04A9BE6D1765A38C007AC855 /* particles */,
-				04A9BE6E1765A38C007AC855 /* pdb */,
-				04A9BE6F1765A38C007AC855 /* pic */,
-				04A9BE701765A38C007AC855 /* sfx */,
-				04A9BE711765A38C007AC855 /* shaders */,
-				04A9BE731765A38C007AC855 /* sprites */,
-				04713BE21760C81900443B48 /* Default.png */,
-				04713BE41760C81900443B48 /* HelloWorld.png */,
-				04713BE61760C81900443B48 /* Icon-72.png */,
-				04713BE81760C81900443B48 /* Icon-Small-50.png */,
-				04713BEA1760C81900443B48 /* Icon-Small.png */,
-				04713BEC1760C81900443B48 /* Icon-Small@2x.png */,
-				04713BEE1760C81900443B48 /* Icon.png */,
-				04713BF01760C81900443B48 /* Icon@2x.png */,
-				04713BF21760C81900443B48 /* iTunesArtwork */,
-				04713BF41760C81900443B48 /* Info.plist */,
-				04713F771760C82000443B48 /* blocks.png */,
+				04A627E4177BEDD200E1760D /* pugiconfig.hpp */,
+				04A627E5177BEDD200E1760D /* pugixml.cpp */,
+				04A627E6177BEDD200E1760D /* pugixml.hpp */,
 			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
-		04713BF51760C81900443B48 /* ios */ = {
-			isa = PBXGroup;
-			children = (
-				04713BF61760C81900443B48 /* AppController.h */,
-				04713BF71760C81900443B48 /* AppController.mm */,
-				04713BF91760C81900443B48 /* RootViewController.h */,
-				04713BFA1760C81900443B48 /* RootViewController.mm */,
-				04713BFC1760C81900443B48 /* main.m */,
-			);
-			name = ios;
-			sourceTree = "<group>";
-		};
-		04713F6E1760C81F00443B48 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				04713F6F1760C81F00443B48 /* Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		04713F701760C82000443B48 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				04713F711760C82000443B48 /* AppDelegate.h */,
-				04713F721760C82000443B48 /* AppDelegate.cpp */,
-			);
-			name = Classes;
-			sourceTree = "<group>";
-		};
-		04846DC217623CBC009A5E6F /* FESimple */ = {
-			isa = PBXGroup;
-			children = (
-				04491163176F5EA200B995CB /* GLES-Render.cpp */,
-				04491164176F5EA200B995CB /* GLES-Render.h */,
-				04A9BE801766229A007AC855 /* pugixml */,
-				04FA5F871764D3FC005DF04E /* Fundmental */,
-				04846DCB17623CBC009A5E6F /* SpriteComponent.cpp */,
-				04846DCC17623CBC009A5E6F /* SpriteComponent.h */,
-				04846DD5176248FF009A5E6F /* FE.cpp */,
-				04846DD6176248FF009A5E6F /* FE.h */,
-				04FA5F841764AB1E005DF04E /* SpriteBase.cpp */,
-				04FA5F851764AB1E005DF04E /* SpriteBase.h */,
-				04A9BE7D17661B4E007AC855 /* ResourceManager.cpp */,
-				04A9BE7E17661B4E007AC855 /* ResourceManager.h */,
-				040B3C231766E05100596508 /* FEUtility.cpp */,
-				040B3C241766E05100596508 /* FEUtility.h */,
-				04C8705B17700C670022B8AB /* logger.h */,
-				042B62151770C37C0010F03E /* CCPhyDebugNode.cpp */,
-				042B62161770C37D0010F03E /* CCPhyDebugNode.h */,
-				040589F4177582F4003648E1 /* LevelBase.cpp */,
-				040589F5177582F5003648E1 /* LevelBase.h */,
-			);
-			path = FESimple;
-			sourceTree = "<group>";
-		};
-		04A9BE801766229A007AC855 /* pugixml */ = {
-			isa = PBXGroup;
-			children = (
-				04A9BE811766229B007AC855 /* pugiconfig.hpp */,
-				04A9BE821766229B007AC855 /* pugixml.cpp */,
-				04A9BE831766229B007AC855 /* pugixml.hpp */,
-			);
-			path = pugixml;
-			sourceTree = "<group>";
-		};
-		04FA5F871764D3FC005DF04E /* Fundmental */ = {
-			isa = PBXGroup;
-			children = (
-				04846DC517623CBC009A5E6F /* GameLayer.cpp */,
-				04846DC617623CBC009A5E6F /* GameLayer.h */,
-				04846DC917623CBC009A5E6F /* GameScene.cpp */,
-				04846DCA17623CBC009A5E6F /* GameScene.h */,
-				04846DC717623CBC009A5E6F /* GameObjBase.cpp */,
-				04846DC817623CBC009A5E6F /* GameObjBase.h */,
-				04846DC317623CBC009A5E6F /* GameBase.cpp */,
-				04846DC417623CBC009A5E6F /* GameBase.h */,
-				04FA3C071776B01000F3EF90 /* ClassInfo.h */,
-				04FA3C081776F4D000F3EF90 /* GameObjFactory.cpp */,
-				04FA3C091776F4D000F3EF90 /* GameObjFactory.h */,
-			);
-			name = Fundmental;
+			name = pugixml;
+			path = FEX/pugixml;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		04713BC81760C81900443B48 /* FEX */ = {
+		04A627AF177BEC7900E1760D /* FEX */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 04713F7B1760C82000443B48 /* Build configuration list for PBXNativeTarget "FEX" */;
+			buildConfigurationList = 04A627B9177BEC7900E1760D /* Build configuration list for PBXNativeTarget "FEX" */;
 			buildPhases = (
-				04713BC51760C81900443B48 /* Sources */,
-				04713BC61760C81900443B48 /* Frameworks */,
-				04713BC71760C81900443B48 /* Resources */,
+				04A627AC177BEC7900E1760D /* Sources */,
+				04A627AD177BEC7900E1760D /* Frameworks */,
+				04A627AE177BEC7900E1760D /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -330,8 +194,8 @@
 			);
 			name = FEX;
 			productName = FEX;
-			productReference = 04713BC91760C81900443B48 /* FEX.app */;
-			productType = "com.apple.product-type.application";
+			productReference = 04A627B0177BEC7900E1760D /* libFEX.a */;
+			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
 
@@ -353,64 +217,31 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				04713BC81760C81900443B48 /* FEX */,
+				04A627AF177BEC7900E1760D /* FEX */,
 			);
 		};
 /* End PBXProject section */
 
-/* Begin PBXResourcesBuildPhase section */
-		04713BC71760C81900443B48 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				04713BE31760C81900443B48 /* Default.png in Resources */,
-				04713BE51760C81900443B48 /* HelloWorld.png in Resources */,
-				04713BE71760C81900443B48 /* Icon-72.png in Resources */,
-				04713BE91760C81900443B48 /* Icon-Small-50.png in Resources */,
-				04713BEB1760C81900443B48 /* Icon-Small.png in Resources */,
-				04713BED1760C81900443B48 /* Icon-Small@2x.png in Resources */,
-				04713BEF1760C81900443B48 /* Icon.png in Resources */,
-				04713BF11760C81900443B48 /* Icon@2x.png in Resources */,
-				04713BF31760C81900443B48 /* iTunesArtwork in Resources */,
-				04713F781760C82000443B48 /* blocks.png in Resources */,
-				04713F7F1760C89600443B48 /* Default-568h@2x.png in Resources */,
-				04A9BE741765A38C007AC855 /* fonts in Resources */,
-				04A9BE751765A38C007AC855 /* levels in Resources */,
-				04A9BE761765A38C007AC855 /* particles in Resources */,
-				04A9BE771765A38C007AC855 /* pdb in Resources */,
-				04A9BE781765A38C007AC855 /* pic in Resources */,
-				04A9BE791765A38C007AC855 /* sfx in Resources */,
-				04A9BE7A1765A38C007AC855 /* shaders in Resources */,
-				04A9BE7C1765A38C007AC855 /* sprites in Resources */,
-				040B33CB176C6A3400AFBF95 /* sprite_components in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
-		04713BC51760C81900443B48 /* Sources */ = {
+		04A627AC177BEC7900E1760D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04713BF81760C81900443B48 /* AppController.mm in Sources */,
-				04713BFB1760C81900443B48 /* RootViewController.mm in Sources */,
-				04713BFD1760C81900443B48 /* main.m in Sources */,
-				04713F731760C82000443B48 /* AppDelegate.cpp in Sources */,
-				04846DCF17623CBC009A5E6F /* GameBase.cpp in Sources */,
-				04846DD017623CBC009A5E6F /* GameLayer.cpp in Sources */,
-				04846DD117623CBC009A5E6F /* GameObjBase.cpp in Sources */,
-				04846DD217623CBC009A5E6F /* GameScene.cpp in Sources */,
-				04846DD317623CBC009A5E6F /* SpriteComponent.cpp in Sources */,
-				04846DD7176248FF009A5E6F /* FE.cpp in Sources */,
-				04FA5F861764AB1E005DF04E /* SpriteBase.cpp in Sources */,
-				04A9BE7F17661B4F007AC855 /* ResourceManager.cpp in Sources */,
-				04A9BE841766229B007AC855 /* pugixml.cpp in Sources */,
-				040B3C251766E05100596508 /* FEUtility.cpp in Sources */,
-				04491165176F5EA200B995CB /* GLES-Render.cpp in Sources */,
-				042B62171770C37D0010F03E /* CCPhyDebugNode.cpp in Sources */,
-				040589F6177582F5003648E1 /* LevelBase.cpp in Sources */,
-				04FA3C0A1776F4D000F3EF90 /* GameObjFactory.cpp in Sources */,
+				04A627ED177BEDD200E1760D /* CCPhyDebugNode.cpp in Sources */,
+				04A627EE177BEDD200E1760D /* ControllerBase.cpp in Sources */,
+				04A627EF177BEDD200E1760D /* FE.cpp in Sources */,
+				04A627F0177BEDD200E1760D /* FEUtility.cpp in Sources */,
+				04A627F1177BEDD200E1760D /* GameBase.cpp in Sources */,
+				04A627F2177BEDD200E1760D /* GameLayer.cpp in Sources */,
+				04A627F3177BEDD200E1760D /* GameObjBase.cpp in Sources */,
+				04A627F4177BEDD200E1760D /* GameObjFactory.cpp in Sources */,
+				04A627F5177BEDD200E1760D /* GameScene.cpp in Sources */,
+				04A627F6177BEDD200E1760D /* GLES-Render.cpp in Sources */,
+				04A627F7177BEDD200E1760D /* LevelBase.cpp in Sources */,
+				04A627F8177BEDD200E1760D /* pugixml.cpp in Sources */,
+				04A627F9177BEDD200E1760D /* ResourceManager.cpp in Sources */,
+				04A627FA177BEDD200E1760D /* SpriteBase.cpp in Sources */,
+				04A627FB177BEDD200E1760D /* SpriteComponent.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -429,7 +260,6 @@
 					"COCOS2D_DEBUG=1",
 					USE_FILE32API,
 					CC_TARGET_OS_IPHONE,
-					"CC_ENABLE_CHIPMUNK_INTEGRATION=1",
 					"CC_ENABLE_CHIPMUNK_INTEGRATION=0",
 					"CC_ENABLE_BOX2D_INTEGRATION=1",
 				);
@@ -483,61 +313,60 @@
 			};
 			name = Release;
 		};
-		04713F7C1760C82000443B48 /* Debug */ = {
+		04A627BA177BEC7900E1760D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/FEX.dst;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = FEX/Prefix.pch;
+				GCC_PREFIX_HEADER = "FEX/FEX-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
-					DEBUG,
-					"COCOS2D_DEBUG=1",
-					USE_FILE32API,
-					CC_TARGET_OS_IPHONE,
-					"CC_ENABLE_CHIPMUNK_INTEGRATION=0",
-					"CC_ENABLE_BOX2D_INTEGRATION=1",
-				);
-				"GCC_THUMB_SUPPORT[arch=armv6]" = "";
-				HEADER_SEARCH_PATHS = (
-					"\"libcocos2dx/cocos2dx/kazmath/include\"",
-					"\"libcocos2dx/cocos2dx\"",
-					"\"libcocos2dx/CocosDenshion/include\"",
-					"\"libcocos2dx/extensions\"",
-					"\"libcocos2dx/cocos2dx/include\"",
-					"\"libcocos2dx/cocos2dx/platform/third_party/ios\"",
-					"\"libcocos2dx/cocos2dx/platform/ios\"",
-					"\"libcocos2dx/external\"",
-				);
-				INFOPLIST_FILE = FEX/Resources/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
-				LIBRARY_SEARCH_PATHS = (
+					"DEBUG=1",
 					"$(inherited)",
-					"\"libcocos2d/cocos2dx/platform/third_party/ios/libraries\"",
 				);
-				OTHER_LDFLAGS = (
-					"-lxml2",
-					"-lz",
-					"-lsqlite3",
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				HEADER_SEARCH_PATHS = (
+					"\"libs/cocos2dx/kazmath/include\"",
+					"\"libs/cocos2dx\"",
+					"\"libs/CocosDenshion/include\"",
+					"\"libs/extensions\"",
+					"\"libs/cocos2dx/include\"",
+					"\"libs/cocos2dx/platform/third_party/ios\"",
+					"\"libs/cocos2dx/platform/ios\"",
+					"\"libs/external\"",
 				);
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				USER_HEADER_SEARCH_PATHS = "";
-				WRAPPER_EXTENSION = app;
+				SKIP_INSTALL = YES;
 			};
 			name = Debug;
 		};
-		04713F7D1760C82000443B48 /* Release */ = {
+		04A627BB177BEC7900E1760D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = YES;
+				DSTROOT = /tmp/FEX.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = FEX/Prefix.pch;
+				GCC_PREFIX_HEADER = "FEX/FEX-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					NDEBUG,
 					USE_FILE32API,
@@ -545,32 +374,22 @@
 					"CC_ENABLE_CHIPMUNK_INTEGRATION=0",
 					"CC_ENABLE_BOX2D_INTEGRATION=1",
 				);
-				"GCC_THUMB_SUPPORT[arch=armv6]" = "";
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				HEADER_SEARCH_PATHS = (
-					"\"libcocos2dx/cocos2dx/kazmath/include\"",
-					"\"libcocos2dx/cocos2dx\"",
-					"\"libcocos2dx/CocosDenshion/include\"",
-					"\"libcocos2dx/extensions\"",
-					"\"libcocos2dx/cocos2dx/include\"",
-					"\"libcocos2dx/cocos2dx/platform/third_party/ios\"",
-					"\"libcocos2dx/cocos2dx/platform/ios\"",
-					"\"libcocos2dx/external\"",
+					"\"libs/cocos2dx/kazmath/include\"",
+					"\"libs/cocos2dx\"",
+					"\"libs/CocosDenshion/include\"",
+					"\"libs/extensions\"",
+					"\"libs/cocos2dx/include\"",
+					"\"libs/cocos2dx/platform/third_party/ios\"",
+					"\"libs/cocos2dx/platform/ios\"",
+					"\"libs/external\"",
 				);
-				INFOPLIST_FILE = FEX/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"libcocos2d/cocos2dx/platform/third_party/ios/libraries\"",
-				);
-				OTHER_LDFLAGS = (
-					"-lxml2",
-					"-lz",
-					"-lsqlite3",
-				);
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				USER_HEADER_SEARCH_PATHS = "";
+				SKIP_INSTALL = YES;
 				VALIDATE_PRODUCT = YES;
-				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
 		};
@@ -586,11 +405,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		04713F7B1760C82000443B48 /* Build configuration list for PBXNativeTarget "FEX" */ = {
+		04A627B9177BEC7900E1760D /* Build configuration list for PBXNativeTarget "FEX" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				04713F7C1760C82000443B48 /* Debug */,
-				04713F7D1760C82000443B48 /* Release */,
+				04A627BA177BEC7900E1760D /* Debug */,
+				04A627BB177BEC7900E1760D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
