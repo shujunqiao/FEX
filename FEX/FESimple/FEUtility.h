@@ -10,7 +10,7 @@
 #define __FEX__FEUtilits__
 
 #include "cocos2d.h"
-#include "Box2D.h"
+#include "Box2D/Box2D.h"
 #include "FE.h"
 #include "logger.h"
 #include <iostream>

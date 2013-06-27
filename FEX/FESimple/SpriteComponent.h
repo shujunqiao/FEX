@@ -10,7 +10,7 @@
 #define __FEX__Sprite__
 #include "FE.h"
 #include "cocos2d.h"
-#include "box2d.h"
+#include "Box2D/Box2D.h"
 using namespace cocos2d;
 FE_NS_BEGIN
 

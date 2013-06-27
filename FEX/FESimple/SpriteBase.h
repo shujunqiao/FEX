@@ -13,7 +13,7 @@
 #include "GameObjBase.h"
 #include <vector>
 #include <memory>
-#include "Box2D.h"
+#include "Box2D/Box2D.h"
 #include "SpriteComponent.h"
 #include <functional>
 
@@ -37,8 +37,8 @@ public:
     void remove_component( SpriteComponent * );
     SpriteComponent* component( unsigned int index );
     
-    template <typename T, typename ...ArgsA , typename ...ArgsB,
-    typename std::enable_if<std::is_convertible<ArgsB..., ArgsA...>::value>::type* = nullptr>
+    template <typename T, typename ...ArgsA , typename ...ArgsB>//,
+//    typename std::enable_if<std::is_convertible<ArgsB..., ArgsA...>::value>::type* = nullptr>
     void each_component( void (T::*mf)(ArgsA...), ArgsB&& ...args)
     {
         for( auto i : components )

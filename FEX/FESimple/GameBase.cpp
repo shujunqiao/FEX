@@ -1,7 +1,7 @@
 #include "FE.h"
 #include "GameBase.h"
 #include "GameScene.h"
-#include "Box2D.h"
+#include "Box2D/Box2D.h"
 FE_NS_BEGIN
 
 
@@ -45,6 +45,11 @@ void GameBase::remove_game_object( GameObjPtr obj )
 {
     objects.remove( obj );
     obj->removed_from_game( this );
+}
+
+GameObjPtr GameBase::get_obj( const Name& name )
+{
+    return find_obj_if([&](GameObjPtr i){return i->get_name() == name; } );
 }
 
 FE_NS_END

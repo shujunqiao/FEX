@@ -11,6 +11,7 @@
 
 #include <memory>
 #include <list>
+#include <algorithm>
 class b2World;
 FE_NS_BEGIN
 class GameWorld;
@@ -39,11 +40,26 @@ public:
         return phy_world.get();
     }
     
+    template<class _Predicate>
+    GameObjPtr find_obj_if( _Predicate predicate )
+    {
+        return *std::find_if( objects.begin(), objects.end(), predicate );
+    }
+
+    template<class _Predicate>
+    std::vector<GameObjPtr> find_all_if( _Predicate predicate )
+    {
+        std::vector<GameObjPtr> result;
+        std::for_each(objects.begin(), objects.end(), [](GameObjPtr i){ if ( predicate(i)) result.push_back(i); } );
+        return result;
+    }
+    
+    GameObjPtr get_obj( const Name& name );
+    
 protected:
     std::unique_ptr<GameScene>              scene;       // visible world
     std::unique_ptr<b2World>                phy_world;
     std::list<GameObjPtr>                   objects;
-
 };
 FE_NS_END
 

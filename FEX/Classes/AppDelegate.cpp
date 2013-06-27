@@ -55,7 +55,7 @@ private:
 class hello
 {
 public:
-    void f( const CCPoint& a)
+    void f( int a)
     {
         cout <<"f";
     };
@@ -68,19 +68,20 @@ R proxycall(T & obj, R (T::*mf)(Args...), Args &&... args)
     return (obj.*mf)(std::forward<Args>(args)...);
 }
 
-template <typename T, typename R, typename A, typename B>
+template <typename T, typename R, typename A, typename B>//,
 //typename std::enable_if<std::is_convertible<B, A>::value>::type* = nullptr>
 R call(T & obj, R (T::*mf)(A),B&& a)
 {
-    return (obj.*mf)((A)a );
+    return (obj.*mf)( a );
 }
 
 bool AppDelegate::applicationDidFinishLaunching()
 {
-    hello h;
-    Proxy<hello> p(h);
-    p.call(&hello::f, CCPoint(0,0));
-    call( h, &hello::f, CCPoint(0,0));
+    //hello h;
+   // char a;
+   // Proxy<hello> p(h);
+    //p.call(&hello::f, a);
+    //call( h, &hello::f, a);
     
     // initialize director
     CCDirector *pDirector = CCDirector::sharedDirector();
