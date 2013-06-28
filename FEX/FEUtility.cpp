@@ -10,10 +10,18 @@
 #include "cocos2d.h"
 #include <regex>
 #include <iostream>
+#include <random>
 #include "FE.h"
 #include "GameBase.h"
 
+
 FE_NS_BEGIN
+
+std::random_device rd;
+std::mt19937    mt_random_engine(rd());
+
+float Pi = 3.1415926f;
+
 cocos2d::CCPoint string_to_point( const char* str )
 {
     cocos2d::CCPoint pt;
@@ -166,16 +174,17 @@ cocos2d::CCPoint operator + ( const cocos2d::CCPoint& pt1, const cocos2d::CCPoin
     return cocos2d::CCPoint( pt1.x + pt2.x, pt1.y + pt2.y );
 }
 
-float random01()
+float random( float from = 0.0f, float to = 1.0f)
 {
-    return rand()/float(RAND_MAX);
+    std::uniform_int_distribution<float> float_uniform_dist(from,to);
+    return float_uniform_dist(mt_random_engine);
 }
 
-float random_range( float from, float to)
+cocos2d::CCPoint random_dir( float from_rad = 0, float to_rad = Pi )
 {
-    return random01() * (to - from) + from;
+    float rad = random(from_rad, to_rad);
+    return cocos2d::CCPoint( cos(rad), sin(rad) );
 }
-
 
 FE_NS_END
 

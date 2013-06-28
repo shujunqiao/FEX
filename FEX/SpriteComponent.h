@@ -59,7 +59,6 @@ struct sprite_component_desc
 {
     Name                        physic_desc_name;
     std::vector<std::string>    animation_names;//animation name
-    cocos2d::CCPoint    offset;
 };
 
 struct sprite_component_ref

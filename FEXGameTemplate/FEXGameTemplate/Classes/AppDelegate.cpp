@@ -26,63 +26,17 @@ USING_NS_CC_EXT;
 using namespace FESimple;
 using namespace CocosDenshion;
 
+
 AppDelegate::AppDelegate()
 {
-
 }
 
 AppDelegate::~AppDelegate()
 {
 }
 
-
-template <typename T> class Proxy
-{
-public:
-    Proxy(T &o): o_(o) {}
-    
-    template <typename A, typename B,
-    typename std::enable_if<std::is_convertible<B, A>::value>::type* = nullptr>
-    void call(void (T::*f)(A), B&& a)
-    {
-        (o_.*f)(std::forward<B>(a));
-    }
-
-private:
-    T &o_;
-};
-
-class hello
-{
-public:
-    void f( int a)
-    {
-        cout <<"f";
-    };
-};
-
-
-template <typename T, typename R, typename ...Args>
-R proxycall(T & obj, R (T::*mf)(Args...), Args &&... args)
-{
-    return (obj.*mf)(std::forward<Args>(args)...);
-}
-
-template <typename T, typename R, typename A, typename B>//,
-//typename std::enable_if<std::is_convertible<B, A>::value>::type* = nullptr>
-R call(T & obj, R (T::*mf)(A),B&& a)
-{
-    return (obj.*mf)( a );
-}
-
 bool AppDelegate::applicationDidFinishLaunching()
 {
-    //hello h;
-   // char a;
-   // Proxy<hello> p(h);
-    //p.call(&hello::f, a);
-    //call( h, &hello::f, a);
-    
     // initialize director
     CCDirector *pDirector = CCDirector::sharedDirector();
     pDirector->setOpenGLView(CCEGLView::sharedOpenGLView());
@@ -96,24 +50,20 @@ bool AppDelegate::applicationDidFinishLaunching()
     GameBase* game = get_game();
     
     GLESDebugDraw* phydbg = new GLESDebugDraw( ptm_ratio() );
-    phydbg->SetFlags(0xffffffff);
+    phydbg->SetFlags(0);
     
-    game->get_phy_world()->SetDebugDraw( phydbg );
+   // game->get_phy_world()->SetDebugDraw( phydbg );
     pDirector->runWithScene( game->get_scene()->ccscene() );
 
     //std::vector<std::string> paths = {CCFileUtils::sharedFileUtils()->getWritablePath().c_str()};
 
     //CCFileUtils::sharedFileUtils()->setSearchPaths(paths);
     
-
-    
     ResourceManager::instance()->load_sprite_component_desc(full_path("sprite_components/base.xml"));
     ResourceManager::instance()->load_sprite_desc(full_path("sprites/base.xml"));
     ResourceManager::instance()->load_physic_desc(full_path("pdb/main.xml"));
-    game->add_game_object( GameObjPtr(new GameLayer()), "root");
+    //game->add_game_object( GameObjPtr(new GameLayer()), "root");
     
-//
-
     int i = 50;
     while(i-->0)
     {

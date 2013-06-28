@@ -1,0 +1,272 @@
+<sprites>
+	<sprite name="ui_button">
+		<components>
+			<component desc="controller_dir_button"/>
+		</components>
+	</sprite>
+	
+	<sprite name="ui_bg">
+		<components>
+			<component desc="controller_bg_landscape"/>
+		</components>
+	</sprite>
+	
+	<sprite name="fluffy_bear">
+		<components>
+			<component name="left_arm" desc="fluffy_bear_lh" offset="-10,4" collision_cat="1" collision_filter="2"/>
+			<component name="right_arm" desc="fluffy_bear_rh" offset="11,5" collision_cat="1" collision_filter="2"/>
+			<component name="left_leg" desc="fluffy_bear_ll" offset="-6,-16" collision_cat="1" collision_filter="2"/>
+			<component name="right_leg" desc="fluffy_bear_rl" offset="6,-14" collision_cat="1" collision_filter="2"/>
+			<component name="body" desc="fluffy_bear_body" offset="0,0" collision_cat="1" collision_filter="2"/>
+		</components>
+		<joints>
+			<joint type="revolute" component_a="4" component_b="1" enable_limit="true" up_limit="15" low_limit="-15"/>
+			<joint type="revolute" component_a="4" component_b="2" enable_limit="true" up_limit="15" low_limit="-15"/>
+			<joint type="revolute" component_a="4" component_b="3" enable_limit="true" up_limit="15" low_limit="-15"/>
+			<joint type="revolute" component_a="4" component_b="0" enable_limit="true" up_limit="15" low_limit="-15"/>
+		</joints>
+	</sprite>
+	<sprite name="robot">
+		<components>
+			<component name="left_hand" desc="toy_robot_left_hand" offset="-100,-60" collision_cat="1" collision_filter="2"/>
+			<component name="right_hand" desc="toy_robot_right_hand" offset="105,-60" collision_cat="1" collision_filter="2"/>
+			<component name="left_arm" desc="toy_robot_left_arm" offset="-100,10" collision_cat="1" collision_filter="2"/>
+			<component name="right_arm" desc="toy_robot_right_arm" offset="100,10" collision_cat="1" collision_filter="2"/>
+			<component name="left_leg" desc="toy_robot_left_leg" offset="-40,-170" collision_cat="1" collision_filter="2"/>
+			<component name="right_leg" desc="toy_robot_right_leg" offset="50,-170" collision_cat="1" collision_filter="2"/>
+			<component name="body" desc="toy_robot_body"  collision_cat="1" collision_filter="2"/>
+			<component name="head" desc="toy_robot_head"  offset="0,48" collision_cat="1" collision_filter="2"/>			
+		</components>
+		<joints>
+			<joint type="fixed" component_a="0" component_b="3"/>
+		</joints>
+	</sprite>
+	<sprite name="hero">
+		<components>
+			<component desc="x32"  collision_cat="1" collision_filter="2"/>
+		</components>
+	</sprite>
+
+	<sprite name="bullet1">
+		<components>
+			<component desc="bullet1" />
+		</components>
+	</sprite>
+	<sprite name="bullet2">
+		<components>
+			<component desc="bullet2" />
+		</components>
+	</sprite>
+	<sprite name="bullet3">
+		<components>
+			<component desc="bullet3" />
+		</components>
+	</sprite>
+	<sprite name="bullet4">
+		<components>
+			<component desc="bullet4" />
+		</components>
+	</sprite>
+	<sprite name="laser1">
+		<components>
+			<component desc="laser1" />
+		</components>
+	</sprite>
+	<sprite name="toy_bigball1">
+		<components>
+			<component desc="toy_bigball1"  />
+		</components>
+	</sprite>
+	<sprite name="toy_bigball2">
+		<components>
+			<component desc="toy_bigball2"  />
+		</components>
+	</sprite>
+	<sprite name="toy_bigball3">
+		<components>
+			<component desc="toy_bigball3"  />
+		</components>
+	</sprite>
+	<sprite name="craft_drone1">
+		<components>
+			<component desc="craft_drone1"  />
+		</components>
+	</sprite>
+	<sprite name="craft_drone2">
+		<components>
+			<component desc="craft_drone2"  />
+		</components>
+	</sprite>
+	<sprite name="toy_toybox">
+		<components>
+			<component desc="toy_toybox"  />
+		</components>
+	</sprite>
+	<sprite name="toy_diskship1">
+		<components>
+			<component desc="toy_diskship1"  />
+		</components>
+	</sprite>
+	<sprite name="toy_diskship2">
+		<components>
+			<component desc="toy_diskship2"  />
+		</components>
+	</sprite>
+
+	<sprite name="starry_bg">
+		<components>
+			<component desc="starry_bg"  />
+		</components>
+	</sprite>
+	<sprite name="starry_bg2">
+		<components>
+			<component desc="starry_bg2"  />
+		</components>
+	</sprite>
+	<sprite name="toy_bear">
+		<components>
+			<component desc="toy_bear"  />
+		</components>
+	</sprite>
+	
+	
+	<sprite name="toy_football">
+		<components>
+			<component desc="toy_football"  />
+		</components>
+	</sprite>
+
+	<sprite name="toy_barsketball">
+		<components>
+			<component desc="toy_barsketball"  />
+		</components>
+	</sprite>
+	
+	<sprite name="pickup_heal">
+		<components>
+			<component desc="pickup_heal"  />
+		</components>
+	</sprite>
+	<sprite name="pickup_s_gun">
+		<components>
+			<component desc="pickup_s_gun"  />
+		</components>
+	</sprite>
+	<sprite name="pickup_bomb">
+		<components>
+			<component desc="pickup_bomb"  />
+		</components>
+	</sprite>
+	<sprite name="pickup_weapon_boost">
+		<components>
+			<component desc="pickup_weapon_boost"  />
+		</components>
+	</sprite>
+	<sprite name="pickup_weapon_overpower">
+		<components>
+			<component desc="pickup_weapon_overpower"  />
+		</components>
+	</sprite>
+    
+	<sprite name="pickup_l_gun">
+		<components>
+			<component desc="pickup_l_gun"  />
+		</components>
+	</sprite>
+	
+	<sprite name="pickup_b_gun">
+		<components>
+			<component desc="pickup_b_gun"  />
+		</components>
+	</sprite>
+	
+	<sprite name="toy_marble1">
+		<components>
+			<component desc="toy_marble1"  />
+		</components>
+	</sprite>
+	
+	<sprite name="toy_marble2">
+		<components>
+			<component desc="toy_marble2" />
+		</components>
+	</sprite>
+	<sprite name="toy_brick1">
+		<components>
+			<component desc="toy_brick1" />
+		</components>
+	</sprite>
+	<sprite name="toy_brick2">
+		<components>
+			<component desc="toy_brick2" />
+		</components>
+	</sprite>
+	<sprite name="toy_brick3">
+		<components>
+			<component desc="toy_brick3" />
+		</components>
+	</sprite>
+	<sprite name="toy_brick4">
+		<components>
+			<component desc="toy_brick4" />
+		</components>
+	</sprite>
+	<sprite name="toy_tesla">
+		<components>
+			<component desc="toy_tesla" />
+		</components>
+	</sprite>
+	<sprite name="wave_bullet1">
+		<components>
+			<component desc="wave_bullet1" />
+		</components>
+	</sprite>
+	
+	<sprite name="toy_hot_tube">
+		<components>
+			<component desc="toy_hot_tube" />
+		</components>
+	</sprite>
+	
+	<sprite name="toy_clown">
+		<components>
+			<component desc="toy_clown" />
+		</components>
+	</sprite>
+    
+    <sprite name="circle_r1">
+		<components>
+			<component desc="circle_r1" />
+		</components>
+	</sprite>
+    <sprite name="laser_expo">
+		<components>
+			<component desc="laser_expo" />
+		</components>
+	</sprite>
+    <sprite name="laser_charge">
+		<components>
+			<component desc="laser_charge" />
+		</components>
+	</sprite>
+    <sprite name="planet1">
+		<components>
+			<component desc="planet1" />
+		</components>
+	</sprite>
+    <sprite name="planet2">
+		<components>
+			<component desc="planet2" />
+		</components>
+	</sprite>
+    <sprite name="bosskim">
+		<components>
+			<component desc="bosskim_body" />
+		</components>
+    </sprite>
+    <sprite name="missile" >
+		<components>
+			<component desc="missile" />
+		</components>
+    </sprite>
+</sprites>

@@ -1,0 +1,557 @@
+<sprite_components>
+	<component name="toy_hot_tube">
+		<physics_def>
+			<body type="dynamic" url="hot_tube"/>
+		</physics_def>
+		<animations>
+			<sequence name="default" animated="true" texture="pic/toy_kingdom.plist" frames="hot_tube.png" frame_speed="0"/>
+		</animations>
+	</component>
+	
+	<component name="bullet1">
+		<physics_def cat="1" mask="2">
+			<body type="dynamic"  offset_x="0" offset_y="0" rotation="0" url="bullet1"/>
+		</physics_def>
+		<animations>
+			<sequence name="default" animated="true" texture="pic/bullets.plist" frames="bullet1.png" frame_speed="0"/>
+		</animations>
+	</component>
+	<component name="bullet2">
+		<physics_def cat="1" mask="2">
+			<body type="dynamic"  offset_x="0" offset_y="0" rotation="0" url="bullet2"/>
+		</physics_def>
+		<animations>
+			<sequence name="default" animated="true" texture="pic/bullets.plist" frames="bullet2.png" frame_speed="0"/>
+		</animations>
+	</component>
+	<component name="bullet3">
+		<physics_def cat="1" mask="2">
+			<body type="dynamic"  offset_x="0" offset_y="0" rotation="0" url="bullet3"/>
+		</physics_def>
+		<animations>
+			<sequence name="default" animated="true" texture="pic/bullets.plist" frames="bullet3.png" frame_speed="0"/>
+		</animations>
+	</component>
+	<component name="bullet4">
+		<physics_def cat="1" mask="2">
+			<body type="dynamic"  offset_x="0" offset_y="0" rotation="0" url="bullet4"/>
+		</physics_def>
+		<animations>
+			<sequence name="default" animated="true" texture="pic/bullets.plist" frames="bullet4.png" frame_speed="0"/>
+		</animations>
+	</component>
+	
+	<component name="x32">
+		<physics_def cat="1" mask="2">
+			<body type="dynamic" offset_x="0" offset_y="0" rotation="0"  url="x32_1"/>
+        </physics_def>
+		<animations>
+			<sequence name="default" animated="true" texture="pic/bullets.plist" frames="x32_1.png,x32_2.png,x32_3.png" frame_speed="0.1"/>
+		</animations>
+	</component>
+	
+	
+	<component name="craft_drone1">
+		<physics_def cat="1" mask="2">
+			<body type="dynamic" offset_x="0" offset_y="0" rotation="0" url="toy_frog_1"/>
+		</physics_def>
+		<animations>
+			<sequence name="default" animated="false" texture="pic/crafts1.plist" frames="drone.png" frame_speed="0"/>
+		</animations>
+	</component>
+	
+	
+	<component name="craft_drone2">
+		<physics_def cat="1" mask="2">
+			<body type="dynamic" offset_x="0" offset_y="0" rotation="0" url="toy_frog_1"/>
+		</physics_def>
+		<animations>
+			<sequence name="default" animated="true" texture="pic/crafts1.plist" frames="drone2.png" frame_speed="0"/>
+		</animations>
+	</component>
+	
+	
+	<component name="toy_barsketball">
+		<physics_def cat="1" mask="2">
+			<body type="dynamic"  restitution="1" offset_x="0" offset_y="0" rotation="0" url="toy_barsketball"/>
+		</physics_def>
+		<animations>
+			<sequence name="default" animated="true" texture="pic/toy_kingdom.plist" frames="toy_barsketball.png" frame_speed="0"/>
+		</animations>
+	</component>
+	
+	
+	<component name="toy_football">
+		<physics_def cat="1" mask="2">
+			<body type="dynamic" restitution="1" offset_x="0" offset_y="0" rotation="0" url="toy_football"/>
+		</physics_def>
+		<animations>
+			<sequence name="default" animated="true" texture="pic/toy_kingdom.plist" frames="toy_football.png" frame_speed="0"/>
+		</animations>
+	</component>
+	
+	
+	<component name="toy_diskship1">
+		<physics_def cat="1" mask="2">
+			<body type="dynamic" offset_x="0" offset_y="0" rotation="0" url="toy_diskship_1"/>
+		</physics_def>
+		<animations>
+			<sequence name="default" animated="true" texture="pic/toy_kingdom.plist" frames="toy_diskship_1.png" frame_speed="0"/>
+		</animations>
+	</component>
+	
+	
+	<component name="toy_diskship2">
+		<physics_def cat="1" mask="2">
+			<body type="dynamic" offset_x="0" offset_y="0" rotation="0" url="toy_diskship_1"/>
+		</physics_def>
+		<animations>
+			<sequence name="default" animated="true" texture="pic/toy_kingdom.plist" frames="toy_diskship_2.png" frame_speed="0"/>
+		</animations>
+	</component>
+	
+	<component name="pickup_heal">
+		<physics_def cat="1" mask="2">
+			<body type="dynamic"  url="heal" />
+		</physics_def>
+		<animations>
+			<sequence name="default" animated="true" texture="pic/bullets.plist" frames="heal.png" frame_speed="0"/>
+		</animations>
+	</component>
+	
+	<component name="pickup_s_gun">
+		<physics_def cat="1" mask="2">
+			<body type="dynamic"  url="heal" />
+		</physics_def>
+		<animations>
+			<sequence name="default" animated="true" texture="pic/bullets.plist" frames="s_gun.png" frame_speed="0"/>
+		</animations>
+	</component>
+	
+	<component name="pickup_bomb">
+		<physics_def cat="1" mask="2">
+			<body type="dynamic"  url="heal" />
+		</physics_def>
+		<animations>
+			<sequence name="default" animated="true" texture="pic/bullets.plist" frames="bomb.png" frame_speed="0"/>
+		</animations>
+	</component>
+	
+	<component name="pickup_weapon_boost">
+		<physics_def cat="1" mask="2">
+			<body type="dynamic"  url="heal" />
+		</physics_def>
+		<animations>
+			<sequence name="default" animated="true" texture="pic/bullets.plist" frames="boost.png" frame_speed="0"/>
+		</animations>
+	</component>
+	<component name="pickup_weapon_overpower">
+		<physics_def cat="1" mask="2">
+			<body type="dynamic"  url="heal" />
+		</physics_def>
+		<animations>
+			<sequence name="default" animated="true" texture="pic/bullets.plist" frames="powerup.png" frame_speed="0"/>
+		</animations>
+	</component>
+    
+	<component name="pickup_b_gun">
+		<physics_def cat="1" mask="2">
+			<body type="dynamic"  url="heal" />
+		</physics_def>
+		<animations>
+			<sequence name="default" animated="true" texture="pic/bullets.plist" frames="b_gun.png" frame_speed="0"/>
+		</animations>
+	</component>
+    
+	<component name="pickup_l_gun">
+		<physics_def cat="1" mask="2">
+			<body type="dynamic"  url="heal" />
+		</physics_def>
+		<animations>
+			<sequence name="default" animated="true" texture="pic/bullets.plist" frames="l_gun.png" frame_speed="0"/>
+		</animations>
+	</component>
+	
+	<component name="toy_tesla">
+		<physics_def cat="1" mask="2">
+			<body type="static" offset_x="0" offset_y="0" rotation="0" url="toy_tesla"/>
+		</physics_def>
+		<animations>
+			<sequence name="default" animated="false" texture="pic/toy_kingdom.plist" frames="toy_tesla.png" frame_speed="0"/>
+		</animations>
+	</component>
+	
+	<component name="toy_brick1">
+		<physics_def cat="1" mask="2">
+			<body type="static" offset_x="0" offset_y="0" rotation="0" url="toy_brick1"/>
+		</physics_def>
+		<animations>
+			<sequence name="default" animated="false" texture="pic/toy_kingdom.plist" frames="toy_brick1.png" frame_speed="0"/>
+		</animations>
+	</component>
+	<component name="toy_brick2">
+		<physics_def cat="1" mask="2">
+			<body type="static" offset_x="0" offset_y="0" rotation="0" url="tyo_brick2"/>
+		</physics_def>
+		<animations>
+			<sequence name="default" animated="false" texture="pic/toy_kingdom.plist" frames="tyo_brick2.png" frame_speed="0"/>
+		</animations>
+	</component>
+	
+	<component name="toy_brick3">
+		<physics_def cat="1" mask="2">
+			<body type="static" offset_x="0" offset_y="0" rotation="0" url="toy_brick3"/>
+		</physics_def>
+		<animations>
+			<sequence name="default" animated="false" texture="pic/toy_kingdom.plist" frames="toy_brick3.png" frame_speed="0"/>
+		</animations>
+	</component>
+	
+	<component name="toy_brick4">
+		<physics_def cat="1" mask="2">
+			<body type="static" offset_x="0" offset_y="0" rotation="0" url="toy_brick4"/>
+		</physics_def>
+		<animations>
+			<sequence name="default" animated="false" texture="pic/toy_kingdom.plist" frames="toy_brick4.png" frame_speed="0"/>
+		</animations>
+	</component>
+	
+	<component name="toy_bigball3">
+		<physics_def cat="1" mask="2">
+			<body type="static" offset_x="0" offset_y="0" rotation="0" url="toy_big_ball_3"/>
+		</physics_def>
+		<animations>
+			<sequence name="default" animated="true" texture="pic/toy_kingdom.plist" frames="toy_big_ball_1.png" frame_speed="0"/>
+		</animations>
+	</component>
+	<component name="toy_bigball1">
+		<physics_def cat="1" mask="2">
+			<body type="static" offset_x="0" offset_y="0" rotation="0" url="toy_big_ball_1"/>
+		</physics_def>
+		<animations>
+			<sequence name="default" animated="true" texture="pic/toy_kingdom.plist" frames="toy_big_ball_1.png" frame_speed="0"/>
+		</animations>
+	</component>
+	
+	<component name="toy_bigball1">
+		<physics_def cat="1" mask="2">
+			<body type="static" offset_x="0" offset_y="0" rotation="0" url="toy_big_ball_1"/>
+		</physics_def>
+		<animations>
+			<sequence name="default" animated="true" texture="pic/toy_kingdom.plist" frames="toy_big_ball_1.png" frame_speed="0"/>
+		</animations>
+	</component>
+	
+	
+	<component name="toy_bigball2">
+		<physics_def cat="1" mask="2">
+			<body type="static" offset_x="0" offset_y="0" rotation="0" url="toy_big_ball_1"/>
+		</physics_def>
+		<animations>
+			<sequence name="default" animated="true" texture="pic/toy_kingdom.plist" frames="toy_big_ball_2.png" frame_speed="0"/>
+		</animations>
+	</component>
+	
+	
+	<component name="toy_bigball3">
+		<physics_def cat="1" mask="2">
+			<body type="static" offset_x="0" offset_y="0" rotation="0" url="toy_big_ball_1"/>
+		</physics_def>
+		<animations>
+			<sequence name="default" animated="true" texture="pic/toy_kingdom.plist" frames="toy_big_ball_3.png" frame_speed="0"/>
+		</animations>
+	</component>
+	
+	
+	<component name="toy_toybox">
+		<physics_def cat="1" mask="2">
+			<body type="static" offset_x="0" offset_y="0" rotation="0" url="toy_toybox"/>
+		</physics_def>
+		<animations>
+			<sequence name="default" animated="true" texture="pic/toy_kingdom.plist" frames="toy_toybox.png" frame_speed="0"/>
+		</animations>
+	</component>
+	
+	
+	<component name="toy_robot_body">
+		<physics_def cat="1" mask="2">
+			<body type="kinematic" url="ribbody"/>
+		</physics_def>
+		<animations>
+			<sequence name="default" animated="true" texture="pic/toy_kingdom.plist" frames="ribbody.png" frame_speed="0"/>
+		</animations>
+	</component>
+	
+	<component name="toy_robot_head">
+		<physics_def cat="1" mask="2">
+			<body type="dynamic" url="ribhead"/>
+		</physics_def>
+		<animations>
+			<sequence name="default" animated="true" texture="pic/toy_kingdom.plist" frames="ribhead.png" frame_speed="0"/>
+		</animations>
+	</component>
+	<component name="toy_robot_left_arm">
+		<physics_def cat="1" mask="2">
+			<body type="dynamic" offset_x="0" offset_y="0" rotation="0" url="left_arm"/>
+		</physics_def>
+		<animations>
+			<sequence name="default" animated="false" anchor_x="26" anchor_y="91" texture="pic/toy_kingdom.plist" frames="left_arm.png" frame_speed="0"/>
+		</animations>
+	</component>
+	
+	<component name="toy_robot_left_hand">
+		<physics_def cat="1" mask="2">
+			<body type="dynamic" offset_x="0" offset_y="0" rotation="0" url="left_hand"/>
+		</physics_def>
+		<animations>
+			<sequence name="default" animated="true" texture="pic/toy_kingdom.plist" frames="left_hand.png" frame_speed="0"/>
+		</animations>
+	</component>
+	
+	
+	<component name="toy_robot_left_leg">
+		<physics_def cat="1" mask="2">
+			<body type="dynamic" offset_x="0" offset_y="0" rotation="0" url="left_leg"/>
+		</physics_def>
+		<animations>
+			<sequence name="default" animated="true" texture="pic/toy_kingdom.plist" frames="left_leg.png" frame_speed="0"/>
+		</animations>
+	</component>
+	
+	
+	<component name="toy_robot_right_arm">
+		<physics_def cat="1" mask="2">
+			<body type="dynamic" offset_x="0" offset_y="0" rotation="0" url="right_arm"/>
+		</physics_def>
+		<animations>
+			<sequence name="default" animated="true" texture="pic/toy_kingdom.plist" frames="right_arm.png" frame_speed="0"/>
+		</animations>
+	</component>
+	
+	
+	<component name="toy_robot_right_hand">
+		<physics_def cat="1" mask="2">
+			<body type="dynamic" offset_x="0" offset_y="0" rotation="0" url="right_hand"/>
+		</physics_def>
+		<animations>
+			<sequence name="default" animated="true" texture="pic/toy_kingdom.plist" frames="right_hand.png" frame_speed="0"/>
+		</animations>
+	</component>
+	
+	
+	<component name="toy_robot_right_leg">
+		<physics_def cat="1" mask="2">
+			<body type="dynamic" offset_x="0" offset_y="0" rotation="0" url="right_leg"/>
+			
+		</physics_def>
+		<animations>
+			<sequence name="default" animated="true" texture="pic/toy_kingdom.plist" frames="right_leg.png" frame_speed="0"/>
+		</animations>
+	</component>
+	<component name="toy_bear">
+		<physics_def cat="1" mask="2">
+			<body type="dynamic" offset_x="0" offset_y="0" rotation="0" url="toy_bear"/>
+			
+		</physics_def>
+		<animations>
+			<sequence name="default" animated="true" texture="pic/toy_kingdom.plist" frames="toy_bear.png" frame_speed="0"/>
+		</animations>
+	</component>
+	
+	<component name="laser1">
+		<physics_def cat="1" mask="2">
+			<body type="dynamic" offset_x="0" offset_y="0" rotation="0" url="laser"/>
+			
+		</physics_def>
+		<animations>
+			<sequence name="default" animated="true" texture="pic/bullets.plist" frames="laser.png" frame_speed="0"/>
+		</animations>
+	</component>
+	
+	<component name="toy_marble1">
+		<physics_def>
+			<body type="dynamic"  restitution="1"  url="toy_marble_1"/>
+		</physics_def>
+		<animations>
+			<sequence name="default" animated="false" texture="pic/toy_kingdom.plist" frames="toy_marble_1.png" frame_speed="0"/>
+		</animations>
+	</component>
+	
+	<component name="toy_marble2">
+		<physics_def>
+			<body type="dynamic"  restitution="1"  url="toy_marble_1"/>
+		</physics_def>
+		<animations>
+			<sequence name="default" animated="false" texture="pic/toy_kingdom.plist" frames="toy_marble_2.png" frame_speed="0"/>
+		</animations>
+	</component>
+	<component name="wave_bullet1">
+		<physics_def cat="1" mask="2">
+			<body type="dynamic"  offset_x="0" offset_y="0" rotation="0" url="wave1"/>
+		</physics_def>
+		<animations>
+			<sequence name="default" animated="true" texture="pic/bullets.plist" frames="wave1.png,wave2.png" frame_speed="0"/>
+		</animations>
+	</component>
+	
+	<component name="fluffy_bear_body">
+		<physics_def >
+			<body type="dynamic" url="fluffy_bear_body"/>
+		</physics_def>
+		<animations>
+			<sequence name="default" animated="true" texture="pic/toy_kingdom.plist" frames="fluffy_bear_body.png" frame_speed="0"/>
+		</animations>
+	</component>
+	<component name="fluffy_bear_lh">
+		<physics_def >
+			<body type="dynamic" url="fluffy_bear_lh"/>
+		</physics_def>
+		<animations>
+			<sequence name="default" animated="true" texture="pic/toy_kingdom.plist" frames="fluffy_bear_lh.png" frame_speed="0"/>
+		</animations>
+	</component>
+	<component name="fluffy_bear_rh">
+		<physics_def >
+			<body type="dynamic" url="fluffy_bear_rh"/>
+		</physics_def>
+		<animations>
+			<sequence name="default" animated="true" texture="pic/toy_kingdom.plist" frames="fluffy_bear_rh.png" frame_speed="0"/>
+		</animations>
+	</component>
+	<component name="fluffy_bear_ll">
+		<physics_def >
+			<body type="dynamic" url="fluffy_bear_ll"/>
+		</physics_def>
+		<animations>
+			<sequence name="default" animated="true" texture="pic/toy_kingdom.plist" frames="fluffy_bear_ll.png" frame_speed="0"/>
+		</animations>
+	</component>
+	<component name="fluffy_bear_rl">
+		<physics_def >
+			<body type="dynamic" url="fluffy_bear_rl"/>
+		</physics_def>
+		<animations>
+			<sequence name="default" animated="true" texture="pic/toy_kingdom.plist" frames="fluffy_bear_rl.png" frame_speed="0"/>
+		</animations>
+	</component>
+	<component name="toy_angle_l">
+		<physics_def >
+			<body type="dynamic" url="angle_l"/>
+		</physics_def>
+		<animations>
+			<sequence name="default" animated="true" texture="pic/toy_kingdom.plist" frames="angle_l.png" frame_speed="0"/>
+		</animations>
+	</component>
+	<component name="toy_angle_r">
+		<physics_def >
+			<body type="dynamic" url="angle_r"/>
+		</physics_def>
+		<animations>
+			<sequence name="default" animated="true" texture="pic/toy_kingdom.plist" frames="angle_r.png" frame_speed="0"/>
+		</animations>
+	</component>
+	<component name="toy_duck">
+		<physics_def >
+			<body type="dynamic" url="duck"/>
+		</physics_def>
+		<animations>
+			<sequence name="default" animated="true" texture="pic/toy_kingdom.plist" frames="duck.png" frame_speed="0"/>
+		</animations>
+	</component>
+	<component name="toy_bubble1">
+		<physics_def >
+			<body type="dynamic" url="bubble1"/>
+		</physics_def>
+		<animations>
+			<sequence name="default" animated="true" texture="pic/toy_kingdom.plist" frames="bubble1.png" frame_speed="0"/>
+		</animations>
+	</component>
+	<component name="toy_bubble2">
+		<physics_def >
+			<body type="dynamic" url="bubble2"/>
+		</physics_def>
+		<animations>
+			<sequence name="default" animated="true" texture="pic/toy_kingdom.plist" frames="bubble2.png" frame_speed="0"/>
+		</animations>
+	</component>
+	<component name="toy_bubble3">
+		<physics_def >
+			<body type="dynamic" url="bubble3"/>
+		</physics_def>
+		<animations>
+			<sequence name="default" animated="true" texture="pic/toy_kingdom.plist" frames="bubble3.png" frame_speed="0"/>
+		</animations>
+	</component>
+	<component name="toy_bubble4">
+		<physics_def >
+			<body type="dynamic" url="bubble4"/>
+		</physics_def>
+		<animations>
+			<sequence name="default" animated="true" texture="pic/toy_kingdom.plist" frames="bubble4.png" frame_speed="0"/>
+		</animations>
+	</component>
+	<component name="toy_string">
+		<physics_def >
+			<body type="dynamic" url="string"/>
+		</physics_def>
+		<animations>
+			<sequence name="default" animated="true" texture="pic/toy_kingdom.plist" frames="string.png" frame_speed="0"/>
+		</animations>
+	</component>
+	<component name="toy_clown">
+		<physics_def >
+			<body type="dynamic" url="clown"/>
+		</physics_def>
+		<animations>
+			<sequence name="default" animated="true" texture="pic/toy_kingdom.plist" frames="clown.png" frame_speed="0"/>
+		</animations>
+	</component>
+	<component name="circle_r1">
+		<physics_def >
+			<body type="dynamic" url="circle_r1"/>
+		</physics_def>
+		<animations>
+			<sequence name="default" animated="false" texture="pic/bullets.plist" frames="bullet1.png" frame_speed="0"/>
+		</animations>
+	</component>
+	<component name="laser_expo">
+		<physics_def >
+            <body is_dynamic="true"  rotation="0" anchor="0.5,0.5">
+            </body>
+		</physics_def>
+		<animations>
+			<sequence name="default" animated="true" repeat_count="1" texture="pic/bullets.plist" frames="big_expolsion1.png,big_expolsion2.png" frame_speed="0.1"/>
+		</animations>
+	</component>
+	<component name="laser_charge">
+		<animations>
+			<sequence name="default" animated="false" repeat_count="1" texture="pic/bullets.plist" frames="laser_charge.png" frame_speed="0"/>
+		</animations>
+	</component>
+	<component name="planet1">
+		<animations>
+			<sequence name="default" animated="false" repeat_count="1" texture="pic/bg1.plist" frames="planet1.png" frame_speed="0"/>
+		</animations>
+	</component>
+	<component name="planet2">
+		<animations>
+			<sequence name="default" animated="false" repeat_count="1" texture="pic/bg1.plist" frames="planet2.png" frame_speed="0"/>
+		</animations>
+	</component>
+	<component name="bosskim_body">
+		<animations>
+			<sequence name="default" animated="false" repeat_count="1" texture="pic/crafts1.plist" frames="bosskim.png" frame_speed="0"/>
+		</animations>
+		<physics_def >
+			<body type="dynamic" url="bosskim"/>
+		</physics_def>
+	</component>
+	<component name="missile">
+		<animations>
+			<sequence name="default" animated="false" repeat_count="1" texture="pic/bullets.plist" frames="missile_1.png,missile_2.png" frame_speed="0"/>
+		</animations>
+		<physics_def >
+			<body type="dynamic" url="missile"/>
+		</physics_def>
+	</component>
+</sprite_components>

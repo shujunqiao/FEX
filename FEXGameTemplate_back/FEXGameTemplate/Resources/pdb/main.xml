@@ -1,0 +1,168 @@
+<bodies>
+    <body name="heal" id="0" anchor_rel="0.500,0.500" anchor_abs="25.000,25.000" size="50.000,50.000">
+        <circle radius="25.000" is_sensor="false" />
+    </body>
+
+<body name="blade" id="0" anchor_rel="0.646,0.031" anchor_abs="115.000,4.000" size="178.000,128.000">
+<polygon vertices=" 59.000,98.000 ,37.000,111.000 ,-23.000,124.500 ,-24.000,124.500 ,-3.000,94.000 ,12.000,88.000" is_sensor="false" />
+<polygon vertices=" -111.000,59.000 ,-57.000,94.000 ,-24.000,124.500 ,-87.000,100.500" is_sensor="false" />
+<polygon vertices=" -57.000,94.000 ,-3.000,94.000 ,-24.000,124.500" is_sensor="false" />
+<polygon vertices=" -0.000,0.000 ,12.000,88.000 ,-3.000,94.000" is_sensor="false" />
+</body>
+<body name="cloud1" id="0" anchor_rel="0.440,0.463" anchor_abs="113.590,40.777" size="258.000,88.000">
+</body>
+<body name="cloud2" id="0" anchor_rel="0.000,0.000" anchor_abs="0.000,0.000" size="447.000,57.000">
+</body>
+<body name="cloud3" id="0" anchor_rel="0.000,0.000" anchor_abs="0.000,0.000" size="495.000,113.000">
+</body>
+<body name="cloud4" id="0" anchor_rel="0.000,0.000" anchor_abs="0.000,0.000" size="604.000,100.000">
+</body>
+<body name="cloud5" id="0" anchor_rel="0.000,0.000" anchor_abs="0.000,0.000" size="244.000,97.000">
+</body>
+<body name="cloud6" id="0" anchor_rel="0.000,0.000" anchor_abs="0.000,0.000" size="550.000,167.000">
+</body>
+<body name="cocoon1" id="0" anchor_rel="0.500,0.500" anchor_abs="41.000,57.500" size="82.000,115.000">
+<polygon vertices=" -35.000,47.500 ,-35.000,7.500 ,-21.000,-50.500 ,25.000,-51.500 ,42.000,16.500 ,22.000,55.500" is_sensor="false" />
+</body>
+<body name="cocoon2" id="0" anchor_rel="0.500,0.500" anchor_abs="51.000,61.000" size="102.000,122.000">
+<polygon vertices=" -41.000,49.000 ,-50.500,-21.000 ,-11.000,-61.000 ,42.000,-53.000 ,50.000,-25.000 ,40.000,41.000 ,7.000,61.500" is_sensor="false" />
+</body>
+<body name="eye_wheel" id="0" anchor_rel="0.500,0.500" anchor_abs="168.000,161.000" size="336.000,322.000">
+<circle radius="133.004" is_sensor="false" />
+</body>
+<body name="figure_body" id="0" anchor_rel="0.500,0.500" anchor_abs="96.000,113.500" size="192.000,227.000">
+<polygon vertices=" -39.000,111.000 ,-79.500,67.500 ,-96.500,-51.500 ,-82.000,-99.500 ,68.000,-110.000 ,93.500,-78.500 ,17.000,113.000 ,16.000,113.000" is_sensor="false" />
+<polygon vertices=" 77.000,64.500 ,17.000,113.000 ,93.500,-78.500" is_sensor="false" />
+</body>
+<body name="figure_head" id="0" anchor_rel="0.523,0.316" anchor_abs="91.500,48.000" size="175.000,152.000">
+<polygon vertices=" -88.000,49.000 ,-67.000,-23.000 ,8.500,-46.500 ,59.000,-14.000 ,27.500,97.500 ,-28.000,99.000" is_sensor="false" />
+<polygon vertices=" 83.000,40.000 ,28.500,97.500 ,27.500,97.500 ,59.000,-14.000" is_sensor="false" />
+</body>
+<body name="gate" id="0" anchor_rel="0.463,0.083" anchor_abs="151.000,17.000" size="326.000,205.000">
+<polygon vertices=" -113.500,136.000 ,-80.500,115.000 ,-44.000,115.500 ,-80.500,146.000" is_sensor="false" />
+<polygon vertices=" 122.000,130.500 ,86.500,140.000 ,83.500,101.000" is_sensor="false" />
+<polygon vertices=" 173.000,179.500 ,114.000,170.000 ,86.500,140.000 ,144.500,152.000" is_sensor="false" />
+<polygon vertices=" 114.000,170.000 ,21.000,170.500 ,86.500,140.000" is_sensor="false" />
+<polygon vertices=" 86.500,140.000 ,21.000,170.500 ,-107.000,173.000 ,55.500,109.000 ,83.500,101.000" is_sensor="false" />
+<polygon vertices=" -37.000,-12.000 ,-44.000,115.500 ,-80.500,115.000 ,-66.000,-11.000" is_sensor="false" />
+<polygon vertices=" -44.000,115.500 ,55.500,109.000 ,-80.500,146.000" is_sensor="false" />
+<polygon vertices=" 70.000,-14.500 ,83.500,101.000 ,55.500,109.000 ,49.000,-9.000" is_sensor="false" />
+<polygon vertices=" -138.000,169.500 ,-80.500,146.000 ,55.500,109.000 ,-146.000,187.500 ,-147.000,187.500" is_sensor="false" />
+</body>
+<body name="lanten_2" id="0" anchor_rel="0.667,0.241" anchor_abs="50.000,42.000" size="75.000,174.000">
+<polygon vertices=" 24.000,49.000 ,-17.000,53.000 ,-42.000,32.000 ,-24.000,-35.000 ,20.000,-24.000" is_sensor="false" />
+<polygon vertices=" 10.000,-40.000 ,20.000,-24.000 ,-24.000,-35.000" is_sensor="false" />
+</body>
+<body name="lanten_wave_1" id="0" anchor_rel="0.807,0.450" anchor_abs="92.000,18.000" size="114.000,40.000">
+</body>
+<body name="lanten_wave_2" id="0" anchor_rel="0.000,0.000" anchor_abs="0.000,0.000" size="113.000,39.000">
+</body>
+<body name="lanten_wave_3" id="0" anchor_rel="0.000,0.000" anchor_abs="0.000,0.000" size="113.000,33.000">
+</body>
+<body name="lanten" id="0" anchor_rel="0.737,0.299" anchor_abs="87.000,43.000" size="118.000,144.000">
+<polygon vertices=" 8.000,-37.000 ,26.500,-10.000 ,26.000,56.500 ,-14.000,65.000 ,-33.000,42.000 ,-22.000,-30.000" is_sensor="false" />
+</body>
+<body name="mountain1" id="0" anchor_rel="0.500,0.000" anchor_abs="104.500,0.000" size="209.000,204.000">
+<polygon vertices=" 103.500,4.000 ,56.000,169.000 ,28.500,198.500 ,-1.500,204.500 ,-49.500,190.500 ,-84.500,153.500 ,-105.000,4.000" is_sensor="false" />
+</body>
+<body name="mountain2" id="0" anchor_rel="0.500,0.000" anchor_abs="115.500,0.000" size="231.000,286.000">
+<polygon vertices=" -112.500,2.500 ,107.500,3.500 ,-62.000,245.000" is_sensor="false" />
+<polygon vertices=" 108.500,40.500 ,59.000,74.000 ,107.500,3.500" is_sensor="false" />
+<polygon vertices=" 18.000,272.000 ,-17.500,286.500 ,-18.500,286.500 ,-62.000,245.000 ,59.000,74.000" is_sensor="false" />
+</body>
+<body name="mountain3" id="0" anchor_rel="0.500,0.000" anchor_abs="145.000,0.000" size="290.000,305.000">
+<polygon vertices=" 138.000,4.000 ,118.000,141.000 ,99.000,162.000 ,-109.000,85.000 ,-135.000,52.000 ,-143.000,2.000" is_sensor="false" />
+<polygon vertices=" 24.000,299.000 ,-5.000,306.000 ,-6.000,306.000 ,41.000,262.000" is_sensor="false" />
+<polygon vertices=" -56.000,286.000 ,-96.000,215.000 ,-109.000,85.000 ,99.000,162.000 ,41.000,262.000 ,-6.000,306.000" is_sensor="false" />
+<polygon vertices=" 76.000,244.000 ,41.000,262.000 ,99.000,162.000" is_sensor="false" />
+</body>
+<body name="mountain4" id="0" anchor_rel="0.500,0.000" anchor_abs="132.000,0.000" size="264.000,126.000">
+<polygon vertices=" 116.500,54.000 ,81.500,74.000 ,-130.000,4.500 ,130.500,6.000" is_sensor="false" />
+<polygon vertices=" 57.500,120.000 ,32.000,124.000 ,14.000,117.000 ,-130.000,4.500 ,81.500,74.000" is_sensor="false" />
+<polygon vertices=" -108.000,80.500 ,-126.000,50.000 ,-130.000,4.500 ,14.000,117.000 ,-54.000,102.000" is_sensor="false" />
+</body>
+<body name="skydog_body" id="0" anchor_rel="0.681,0.301" anchor_abs="113.000,46.000" size="166.000,153.000">
+<polygon vertices=" 46.500,-15.000 ,5.000,27.500 ,-8.000,-25.500 ,8.500,-37.000" is_sensor="false" />
+<polygon vertices=" 26.500,49.000 ,3.500,81.000 ,-72.000,107.500 ,5.000,27.500" is_sensor="false" />
+<polygon vertices=" -113.500,62.000 ,-89.500,16.000 ,-32.000,3.500 ,-72.000,107.500 ,-73.000,107.500" is_sensor="false" />
+<polygon vertices=" 5.000,27.500 ,-72.000,107.500 ,-32.000,3.500 ,-13.000,-40.500 ,-8.000,-25.500" is_sensor="false" />
+</body>
+<body name="skydog_mask" id="0" anchor_rel="0.582,0.457" anchor_abs="139.000,64.000" size="239.000,140.000">
+<polygon vertices=" 99.500,8.000 ,73.500,16.000 ,52.500,-14.000 ,82.000,-15.500" is_sensor="false" />
+<polygon vertices=" -136.500,-22.000 ,-100.000,-35.500 ,-30.000,-24.500 ,-39.000,-6.500 ,-129.000,3.500" is_sensor="false" />
+<polygon vertices=" 31.000,-59.500 ,52.500,-14.000 ,12.000,76.500 ,11.000,76.500 ,-30.500,53.000 ,-39.000,-6.500 ,-30.000,-24.500 ,-8.500,-59.000" is_sensor="false" />
+<polygon vertices=" 60.000,62.500 ,12.000,76.500 ,52.500,-14.000 ,73.500,16.000" is_sensor="false" />
+</body>
+<body name="skydog_win_l" id="0" anchor_rel="0.221,0.292" anchor_abs="15.000,14.000" size="68.000,48.000">
+</body>
+<body name="skydog_wing_r" id="0" anchor_rel="0.288,0.246" anchor_abs="17.000,15.000" size="59.000,61.000">
+</body>
+<body name="spider_body" id="0" anchor_rel="0.500,0.500" anchor_abs="218.000,163.500" size="436.000,327.000">
+<polygon vertices=" -1.000,-144.500 ,20.000,-122.500 ,-15.000,-129.500" is_sensor="false" />
+<polygon vertices=" 21.000,-160.500 ,58.000,-144.000 ,64.000,-124.000 ,36.000,-138.500" is_sensor="false" />
+<polygon vertices=" 36.000,-138.500 ,64.000,-124.000 ,20.000,-122.500" is_sensor="false" />
+<polygon vertices=" -53.000,-156.500 ,-63.000,-139.500 ,-81.000,-134.500" is_sensor="false" />
+<polygon vertices=" -81.000,-134.500 ,-63.000,-139.500 ,-57.000,-123.500 ,-74.000,-119.500" is_sensor="false" />
+<polygon vertices=" -207.000,3.500 ,-186.000,-42.500 ,20.000,-122.500 ,64.000,-124.000 ,174.000,-84.500 ,-17.000,131.500 ,-94.000,121.500 ,-167.000,77.500" is_sensor="false" />
+<polygon vertices=" 203.000,-46.500 ,202.000,3.500 ,161.000,64.500 ,91.000,103.500 ,-17.000,131.500 ,174.000,-84.500" is_sensor="false" />
+<polygon vertices=" -22.000,-140.500 ,-15.000,-129.500 ,-57.000,-123.500" is_sensor="false" />
+<polygon vertices=" -15.000,-129.500 ,20.000,-122.500 ,-186.000,-42.500 ,-74.000,-119.500 ,-57.000,-123.500" is_sensor="false" />
+<polygon vertices=" 117.000,-115.500 ,174.000,-84.500 ,64.000,-124.000" is_sensor="false" />
+<polygon vertices=" -157.000,-78.500 ,-74.000,-119.500 ,-186.000,-42.500" is_sensor="false" />
+</body>
+<body name="spider_ld" id="0" anchor_rel="0.500,0.000" anchor_abs="17.000,0.000" size="34.000,133.000">
+<polygon vertices=" -16.000,2.000 ,6.000,1.000 ,12.500,36.000 ,-1.000,28.000" is_sensor="false" />
+<polygon vertices=" -1.000,28.000 ,12.500,36.000 ,5.000,132.500 ,4.000,132.500" is_sensor="false" />
+</body>
+<body name="spider_lu" id="0" anchor_rel="0.581,0.000" anchor_abs="18.000,0.000" size="31.000,137.000">
+<polygon vertices=" 9.000,137.500 ,-8.000,137.500 ,-5.000,1.000 ,5.000,4.000 ,12.500,107.000" is_sensor="false" />
+</body>
+<body name="spider_rd" id="0" anchor_rel="0.500,0.000" anchor_abs="14.500,0.000" size="29.000,133.000">
+<polygon vertices=" 13.500,2.500 ,1.500,30.000 ,-12.500,33.000 ,-7.500,2.000" is_sensor="false" />
+<polygon vertices=" 1.500,30.000 ,-0.500,131.000 ,-12.500,33.000" is_sensor="false" />
+</body>
+<body name="spider_ru" id="0" anchor_rel="0.478,0.025" anchor_abs="13.850,3.470" size="29.000,137.000">
+<polygon vertices=" 8.150,126.530 ,-7.850,134.030 ,-8.850,134.030 ,-11.850,89.530 ,4.150,109.530" is_sensor="false" />
+<polygon vertices=" -3.850,3.530 ,5.150,-2.470 ,4.150,109.530 ,-11.850,89.530" is_sensor="false" />
+</body>
+<body name="stone_light" id="0" anchor_rel="0.575,0.028" anchor_abs="98.910,5.978" size="172.000,210.000">
+<polygon vertices=" -53.910,98.022 ,-26.910,90.022 ,19.090,95.022 ,33.090,130.022 ,3.590,176.022 ,-20.910,173.022 ,-52.910,126.022" is_sensor="false" />
+<polygon vertices=" -94.910,133.022 ,-52.910,126.022 ,-20.910,173.022" is_sensor="false" />
+<polygon vertices=" 68.090,137.022 ,3.590,176.022 ,33.090,130.022" is_sensor="false" />
+<polygon vertices=" 34.090,107.022 ,33.090,130.022 ,19.090,95.022" is_sensor="false" />
+<polygon vertices=" -26.910,185.022 ,-20.910,173.022 ,3.590,176.022 ,-9.910,204.522 ,-10.910,204.522" is_sensor="false" />
+<polygon vertices=" 11.590,183.022 ,-9.910,204.522 ,3.590,176.022" is_sensor="false" />
+<polygon vertices=" -27.910,16.022 ,-39.910,-1.978 ,36.090,0.022 ,31.090,13.022 ,13.090,23.022 ,-13.910,20.022" is_sensor="false" />
+<polygon vertices=" -13.910,20.022 ,13.090,23.022 ,19.090,95.022 ,-26.910,90.022" is_sensor="false" />
+</body>
+<body name="tower" id="0" anchor_rel="0.503,0.022" anchor_abs="47.830,5.435" size="95.000,250.000">
+<polygon vertices=" -44.830,164.565 ,-25.830,158.565 ,-23.830,178.565" is_sensor="false" />
+<polygon vertices=" -46.830,56.565 ,-33.830,45.565 ,36.170,25.565 ,32.170,56.565 ,-33.830,70.565" is_sensor="false" />
+<polygon vertices=" -37.830,-2.435 ,38.170,3.565 ,36.170,25.565 ,-33.830,45.565" is_sensor="false" />
+<polygon vertices=" 41.170,57.565 ,32.670,71.565 ,32.170,56.565" is_sensor="false" />
+<polygon vertices=" -41.830,139.565 ,-30.830,133.565 ,-25.830,158.565" is_sensor="false" />
+<polygon vertices=" 39.670,162.565 ,30.670,180.565 ,29.670,153.565" is_sensor="false" />
+<polygon vertices=" 38.670,83.565 ,30.670,96.565 ,32.670,71.565" is_sensor="false" />
+<polygon vertices=" 18.670,239.565 ,9.170,242.565 ,5.170,219.565 ,13.170,220.565" is_sensor="false" />
+<polygon vertices=" -43.830,80.565 ,-33.830,70.565 ,32.170,56.565 ,-30.830,102.565" is_sensor="false" />
+<polygon vertices=" 38.670,135.565 ,29.670,153.565 ,30.670,128.565" is_sensor="false" />
+<polygon vertices=" -40.830,107.565 ,-30.830,102.565 ,-30.830,133.565" is_sensor="false" />
+<polygon vertices=" 46.170,187.065 ,13.170,220.565 ,30.670,180.565" is_sensor="false" />
+<polygon vertices=" -41.830,195.565 ,-20.830,191.565 ,5.170,219.565" is_sensor="false" />
+<polygon vertices=" 36.670,109.565 ,30.670,128.565 ,30.670,96.565" is_sensor="false" />
+<polygon vertices=" -30.830,102.565 ,32.170,56.565 ,32.670,71.565 ,30.670,96.565 ,5.170,219.565 ,-25.830,158.565 ,-30.830,133.565" is_sensor="false" />
+<polygon vertices=" 30.670,180.565 ,13.170,220.565 ,5.170,219.565 ,29.670,153.565" is_sensor="false" />
+<polygon vertices=" -20.830,191.565 ,-23.830,178.565 ,-25.830,158.565 ,5.170,219.565" is_sensor="false" />
+<polygon vertices=" 29.670,153.565 ,5.170,219.565 ,30.670,96.565 ,30.670,128.565" is_sensor="false" />
+</body>
+<body name="u" id="0" anchor_rel="0.500,0.500" anchor_abs="98.500,85.000" size="197.000,170.000">
+<circle radius="80.006" is_sensor="false" />
+</body>
+<body name="wheel1" id="0" anchor_rel="0.500,0.500" anchor_abs="64.000,60.500" size="128.000,121.000">
+<circle radius="59.000" is_sensor="false" />
+</body>
+    <body name="x32_1" id="0" anchor_rel="0.400,0.500" anchor_abs="10.000,11.000" size="25.000,22.000">
+        <polygon vertices=" -6.000,4.000 ,-6.000,-4.000 ,12.000,-4.000 ,15.000,-1.000 ,15.000,1.000 ,12.000,4.000" is_sensor="false" />
+    </body>
+</bodies>
+        

@@ -37,8 +37,7 @@ bool& operator << (bool& b, const std::string& str);
 cocos2d::CCRect& operator << (cocos2d::CCRect& rc, const std::string& str );
 cocos2d::CCPoint operator + ( const cocos2d::CCPoint& pt1, const cocos2d::CCPoint pt2 );
 
-float random01();
-float random_range( float from, float to);
+float random( float from, float to);
 
 FE_NS_END
 
