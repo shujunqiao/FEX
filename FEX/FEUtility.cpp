@@ -19,8 +19,25 @@ FE_NS_BEGIN
 
 std::random_device rd;
 std::mt19937    mt_random_engine(rd());
+/*
+template<int n>
+struct Pi
+{
+public:
+    constexpr const static float value = 4 *pow(-1, n+1)/(2*n-1) + Pi<n-1>::value;
+};
 
-float Pi = 3.1415926f;
+
+template<>
+struct Pi<1>
+{
+public:
+    constexpr const static float value = 4.0f;
+};
+
+float Pi2 = Pi<100>::value;
+ */
+float Pi = 3.14159265359f;
 
 cocos2d::CCPoint string_to_point( const char* str )
 {
@@ -125,14 +142,15 @@ b2BodyType string_to_b2BodyType( const std::string& str )
     STR2BODYTYPE(str.c_str(), kinematic);
     return b2_dynamicBody;
 }
-
-
+class GameBase;
+GameBase* g_game = nullptr;
+void set_game(GameBase* g)
+{
+    g_game = g;
+}
 class GameBase* get_game()
 {
-    static GameBase* g = nullptr;
-    if ( g == nullptr )
-        g = new GameBase();
-    return g;
+    return g_game;
 }
 
 float ptm_ratio()

@@ -12,10 +12,11 @@
 #include "FE.h"
 #include <string>
 #include <map>
+#include <memory>
 FE_NS_BEGIN
 class GameWorld;
 class GameBase;
-class GameObjBase
+class GameObjBase : public std::enable_shared_from_this<GameObjBase>
 {
 public:
 
@@ -33,7 +34,16 @@ public:
     {
         return name;
     }
+    bool is_dead()
+    {
+        return dead;
+    }
+    void set_dead( bool b)
+    {
+        dead = b;
+    }
 protected:
+    bool        dead;
     ClassInfo*  classinfo;
     std::string name;
 };

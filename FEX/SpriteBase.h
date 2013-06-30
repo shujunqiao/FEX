@@ -33,6 +33,7 @@ public:
     virtual void removed_from_game( GameBase* game );
     
     //components management
+    void remove_all_component();
     void add_component( SpriteComponent* );
     void remove_component( SpriteComponent * );
     SpriteComponent* component( unsigned int index );
@@ -51,13 +52,15 @@ public:
         for( auto i : components )
             (i->*mf)();
     }
+
+    virtual void begin_contact( b2Contact* contact );
+    virtual void end_contact( b2Contact* contact );
     
-    
-    void update( float delta_time );
+    virtual void update( float delta_time );
     
     //position , rotation, ect..
-    void set_position( CCPoint pos );
-    void set_rotation( float angle );
+    virtual void set_position( CCPoint pos );
+    virtual void set_rotation( float angle );
 protected:
     std::vector< SpriteComponent* > components;
 };

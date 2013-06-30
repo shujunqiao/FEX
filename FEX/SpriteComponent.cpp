@@ -11,6 +11,7 @@
 #include "FEUtility.h"
 #include "FE.h"
 #include "GameBase.h"
+#include "SpriteBase.h"
 
 using namespace cocos2d;
 FE_NS_BEGIN
@@ -117,7 +118,18 @@ CCAffineTransform SpriteComponent::nodeToParentTransform()
 	return m_sTransform;
 }
 
+// physics callbacks
+void SpriteComponent::begin_contact( class b2Contact* contact )
+{
+    owner.lock()->begin_contact(contact);
+}
 
+void SpriteComponent::end_contact( class b2Contact* contact )
+{
+    owner.lock()->end_contact(contact);
+}
+
+// physics methods
 void SpriteComponent::set_linear_velocity( const CCPoint& v )
 {
     if ( phy_body )

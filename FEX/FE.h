@@ -22,6 +22,18 @@ typedef std::shared_ptr<GameObjBase> GameObjPtr;
 typedef std::string Name;
 typedef std::map<Name, std::string> SpawnParams;
 
+class GameInfoBase
+{
+    
+};
+
+template<typename GameClass>
+class GameInfo : public GameInfoBase
+{
+public:
+    std::unique_ptr<GameClass>   game;
+};
+
 FE_NS_END
 #include "ClassInfo.h"
 #include "GameObjFactory.h"

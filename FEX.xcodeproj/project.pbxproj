@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		040A59E6177E6FA00010E979 /* CollisionListener.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 040A59E4177E6FA00010E979 /* CollisionListener.cpp */; };
 		04A627B1177BEC7900E1760D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04713BD81760C81900443B48 /* Foundation.framework */; };
 		04A627ED177BEDD200E1760D /* CCPhyDebugNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04A627CB177BEDD200E1760D /* CCPhyDebugNode.cpp */; };
 		04A627EE177BEDD200E1760D /* ControllerBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04A627CE177BEDD200E1760D /* ControllerBase.cpp */; };
@@ -38,6 +39,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		040A59E4177E6FA00010E979 /* CollisionListener.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CollisionListener.cpp; path = FEX/CollisionListener.cpp; sourceTree = "<group>"; };
+		040A59E5177E6FA00010E979 /* CollisionListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CollisionListener.h; path = FEX/CollisionListener.h; sourceTree = "<group>"; };
 		04713BCC1760C81900443B48 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		04713BCE1760C81900443B48 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		04713BD01760C81900443B48 /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
@@ -162,6 +165,8 @@
 				04A627EA177BEDD200E1760D /* SpriteBase.h */,
 				04A627EB177BEDD200E1760D /* SpriteComponent.cpp */,
 				04A627EC177BEDD200E1760D /* SpriteComponent.h */,
+				040A59E4177E6FA00010E979 /* CollisionListener.cpp */,
+				040A59E5177E6FA00010E979 /* CollisionListener.h */,
 			);
 			name = Src;
 			sourceTree = "<group>";
@@ -242,6 +247,7 @@
 				04A627F9177BEDD200E1760D /* ResourceManager.cpp in Sources */,
 				04A627FA177BEDD200E1760D /* SpriteBase.cpp in Sources */,
 				04A627FB177BEDD200E1760D /* SpriteComponent.cpp in Sources */,
+				040A59E6177E6FA00010E979 /* CollisionListener.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -345,7 +351,7 @@
 					"\"libs/external\"",
 				);
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -386,6 +392,7 @@
 					"\"libs/external\"",
 				);
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;

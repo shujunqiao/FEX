@@ -27,6 +27,7 @@ std::string relative_path_to_app( const std::string& path );//get relative path 
 std::vector<float>  string_to_floats( const std::string& str );
 b2Vec2 string_to_b2Vec( const std::string& str );
 b2BodyType string_to_b2BodyType( const std::string& str );
+void set_game( class GameBase* game );
 class GameBase* get_game();
 float ptm_ratio();
 b2Vec2 point_to_b2Vec2( const cocos2d::CCPoint& pt );
@@ -38,6 +39,7 @@ cocos2d::CCRect& operator << (cocos2d::CCRect& rc, const std::string& str );
 cocos2d::CCPoint operator + ( const cocos2d::CCPoint& pt1, const cocos2d::CCPoint pt2 );
 
 float random( float from, float to);
+
 
 FE_NS_END
 

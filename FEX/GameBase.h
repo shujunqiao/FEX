@@ -23,7 +23,7 @@ public:
     GameBase();
     ~GameBase();
     
-    void update(float delta_time);
+    virtual void update(float delta_time);
     void clean();                       //删除所有对象，关卡
     
     void add_game_object( GameObjPtr obj, const Name& to_layer );
@@ -52,6 +52,12 @@ public:
         std::vector<GameObjPtr> result;
         std::for_each(objects.begin(), objects.end(), [](GameObjPtr i){ if ( predicate(i)) result.push_back(i); } );
         return result;
+    }
+    
+    template<class _Predicate>
+    void each_obj( _Predicate predicate )
+    {
+        std::for_each( objects.begin(), objects.end(), predicate);
     }
     
     GameObjPtr get_obj( const Name& name );

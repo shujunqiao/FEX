@@ -11,9 +11,12 @@
 #include "FE.h"
 #include "cocos2d.h"
 #include "Box2D/Box2D.h"
+#include <memory>
+
+
 using namespace cocos2d;
 FE_NS_BEGIN
-
+class SpriteBase;
 struct animation
 {
     animation( const Name& name, cocos2d::CCAnimation* anim )
@@ -125,13 +128,15 @@ struct FixtureUserData
     int                         identity;
 };
 
-
+/*
+可渲染，可具有物理模型的一种SpriteComponent 
+*/
 
 class SpriteComponent :public cocos2d::CCSprite
 {
 public:
     SpriteComponent( const CCPoint& location, const std::shared_ptr<sprite_component_desc> desc );
-    ~SpriteComponent();
+    virtual ~SpriteComponent();
     
     bool play_anim( const Name& anim );
     virtual void draw();
@@ -141,6 +146,9 @@ public:
     bool isDirty();
     CCAffineTransform nodeToParentTransform();
     
+    //physics callback
+    void begin_contact( class b2Contact* contact );
+    void end_contact( class b2Contact* contact );
     //physics methods
     void set_linear_velocity( const CCPoint& v );
     void set_linear_damping( float damping );
@@ -151,7 +159,17 @@ public:
     void apply_linear_impulse( const CCPoint& v );
     void apply_angular_impulse( float i );
     void wakeup();
+    
+    void set_owner(std::weak_ptr<SpriteBase> s)
+    {
+        owner = s;
+    }
+    class std::weak_ptr<SpriteBase> get_owner()
+    {
+        return owner;
+    }
 protected:
+    std::weak_ptr<SpriteBase>       owner;
     std::vector<sprite_animation>   animations;
     b2Body*                         phy_body;
     

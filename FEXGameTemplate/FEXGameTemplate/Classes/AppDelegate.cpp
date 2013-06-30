@@ -12,6 +12,7 @@
 #include "SimpleAudioEngine.h"
 
 #include "FE.h"
+#include "FEUtility.h"
 #include "GameBase.h"
 #include "GameScene.h"
 #include "FEUtility.h"
@@ -21,6 +22,10 @@
 #include "cocos-ext.h"
 #include "GLES-Render.h"
 #include "CCPhyDebugNode.h"
+#include "GameTheSoldiers.h"
+//#include "Python.h"
+
+
 USING_NS_CC;
 USING_NS_CC_EXT;
 using namespace FESimple;
@@ -47,8 +52,8 @@ bool AppDelegate::applicationDidFinishLaunching()
     // set FPS. the default value is 1.0/60 if you don't call this
     pDirector->setAnimationInterval(1.0 / 60);
 
-    GameBase* game = get_game();
-    
+    GameTheSoldiers* game = new GameTheSoldiers();
+    set_game( game );
     GLESDebugDraw* phydbg = new GLESDebugDraw( ptm_ratio() );
     phydbg->SetFlags(0);
     
@@ -63,6 +68,13 @@ bool AppDelegate::applicationDidFinishLaunching()
     ResourceManager::instance()->load_sprite_desc(full_path("sprites/base.xml"));
     ResourceManager::instance()->load_physic_desc(full_path("pdb/main.xml"));
     //game->add_game_object( GameObjPtr(new GameLayer()), "root");
+
+    
+//    Py_SetProgramName("aaa");  /* optional but recommended */
+//    Py_Initialize();
+//    PyRun_SimpleString("from time import time,ctime\n"
+//                       "print 'Today is',ctime(time())\n");
+//    Py_Finalize();
     
     int i = 50;
     while(i-->0)

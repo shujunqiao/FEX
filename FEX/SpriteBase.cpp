@@ -23,9 +23,11 @@ SpriteBase::SpriteBase( const CCPoint& location, const std::shared_ptr<sprite_de
     assert(desc);
     for( auto &it : desc->components )
     {
-       components.push_back(
-        new SpriteComponent( it.offset + location,
-                            ResourceManager::instance()->sprite_components.item(it.component_name)));
+        add_component(
+                      new SpriteComponent( it.offset + location,
+                            ResourceManager::instance()->
+                            sprite_components.item(it.component_name))
+                      );
     }
 }
 
@@ -46,7 +48,7 @@ SpriteBase::SpriteBase( const CCPoint& location, const SpawnParams& params )
 SpriteBase::~SpriteBase()
 {
     removed_from_game( nullptr );
-    components.clear();
+    remove_all_component();
 }
 
 void SpriteBase::added_to_game( GameBase* game, const Name& to_layer )
@@ -72,13 +74,24 @@ void SpriteBase::removed_from_game( GameBase* game )
 }
 
 //components management
+void SpriteBase::remove_all_component()
+{
+    for (auto c: components )
+    {
+        c->set_owner(std::shared_ptr<SpriteBase>(nullptr));
+    }
+    components.clear();
+}
+
 void SpriteBase::add_component( SpriteComponent* comp )
 {
     components.push_back( comp );
+    comp->set_owner( std::dynamic_pointer_cast<SpriteBase>(shared_from_this()) );
 }
 
 void SpriteBase::remove_component( SpriteComponent * comp )
 {
+    comp->set_owner(std::shared_ptr<SpriteBase>(nullptr));
     components.erase(std::find(components.begin(), components.end(), comp));
 }
 
@@ -94,6 +107,15 @@ SpriteComponent* SpriteBase::component( unsigned int index )
 //{
 //    return components;
 //}
+
+void SpriteBase::begin_contact( b2Contact* contact )
+{
+}
+
+void SpriteBase::end_contact( b2Contact* contact )
+{
+}
+
 
 void SpriteBase::update( float delta_time )
 {

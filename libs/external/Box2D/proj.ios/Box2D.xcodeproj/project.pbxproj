@@ -68,6 +68,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		040BD464177F296F00139293 /* libBox2D-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "libBox2D-Prefix.pch"; sourceTree = "<group>"; };
+		040BD465177F296F00139293 /* libBox2D.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = libBox2D.h; sourceTree = "<group>"; };
+		040BD467177F296F00139293 /* libBox2D.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = libBox2D.m; sourceTree = "<group>"; };
 		0411785D177B544800A2748B /* libBox2D.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libBox2D.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		04117860177B544800A2748B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		041178FD177B556000A2748B /* Box2D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Box2D.h; path = ../Box2D.h; sourceTree = "<group>"; };
@@ -175,6 +178,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		040BD462177F296F00139293 /* libBox2D */ = {
+			isa = PBXGroup;
+			children = (
+				040BD465177F296F00139293 /* libBox2D.h */,
+				040BD467177F296F00139293 /* libBox2D.m */,
+				040BD463177F296F00139293 /* Supporting Files */,
+			);
+			path = libBox2D;
+			sourceTree = "<group>";
+		};
+		040BD463177F296F00139293 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				040BD464177F296F00139293 /* libBox2D-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		04117854177B544800A2748B = {
 			isa = PBXGroup;
 			children = (
@@ -183,6 +204,7 @@
 				04117916177B556000A2748B /* Common */,
 				04117924177B556000A2748B /* Dynamics */,
 				0411795C177B556000A2748B /* Rope */,
+				040BD462177F296F00139293 /* libBox2D */,
 				0411785F177B544800A2748B /* Frameworks */,
 				0411785E177B544800A2748B /* Products */,
 			);
@@ -510,6 +532,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_PREFIX_HEADER = "";
 				HEADER_SEARCH_PATHS = ../../;
+				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -523,6 +546,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_PREFIX_HEADER = "";
 				HEADER_SEARCH_PATHS = ../../;
+				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
