@@ -13,6 +13,8 @@
 		043C4F4A177FC28300A55BD9 /* libFEX.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 043C4F49177FC28300A55BD9 /* libFEX.a */; };
 		043C4F4C177FC28800A55BD9 /* libCocosDenshion.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 043C4F4B177FC28800A55BD9 /* libCocosDenshion.a */; };
 		043C4F4E177FC28E00A55BD9 /* libBox2D.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 043C4F4D177FC28E00A55BD9 /* libBox2D.a */; };
+		043C4F50177FCEFF00A55BD9 /* python2.7.all.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 043C4F4F177FCEFF00A55BD9 /* python2.7.all.a */; };
+		043C4F52177FDEEA00A55BD9 /* python in Resources */ = {isa = PBXBuildFile; fileRef = 043C4F51177FDEEA00A55BD9 /* python */; };
 		04A63034177C5AC800E1760D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04A63033177C5AC800E1760D /* QuartzCore.framework */; };
 		04A63036177C5AC800E1760D /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04A63035177C5AC800E1760D /* OpenGLES.framework */; };
 		04A63038177C5AC800E1760D /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04A63037177C5AC800E1760D /* OpenAL.framework */; };
@@ -145,13 +147,12 @@
 		040A5A48177F233B0010E979 /* unicodeobject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = unicodeobject.h; sourceTree = "<group>"; };
 		040A5A49177F233B0010E979 /* warnings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = warnings.h; sourceTree = "<group>"; };
 		040A5A4A177F233B0010E979 /* weakrefobject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = weakrefobject.h; sourceTree = "<group>"; };
-		040A5A4D177F25370010E979 /* libpython2.7.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libpython2.7.a; path = ../libs/python2.7/libpython2.7.a; sourceTree = "<group>"; };
-		040A5A4E177F25370010E979 /* libpython2.7.sim.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libpython2.7.sim.a; path = ../libs/python2.7/libpython2.7.sim.a; sourceTree = "<group>"; };
-		040BD452177F285F00139293 /* libpython2.7.ios.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libpython2.7.ios.a; path = ../libs/python2.7/libpython2.7.ios.a; sourceTree = "<group>"; };
 		043C4F47177FC23300A55BD9 /* libcocos2dx.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcocos2dx.a; path = "../../../Library/Developer/Xcode/DerivedData/FETemplate-bwkxjubalbhtkretxzgqqgetelpu/Build/Products/Debug-iphoneos/libcocos2dx.a"; sourceTree = "<group>"; };
 		043C4F49177FC28300A55BD9 /* libFEX.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libFEX.a; path = "../../../Library/Developer/Xcode/DerivedData/FETemplate-bwkxjubalbhtkretxzgqqgetelpu/Build/Products/Debug-iphoneos/libFEX.a"; sourceTree = "<group>"; };
 		043C4F4B177FC28800A55BD9 /* libCocosDenshion.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libCocosDenshion.a; path = "../../../Library/Developer/Xcode/DerivedData/FETemplate-bwkxjubalbhtkretxzgqqgetelpu/Build/Products/Debug-iphoneos/libCocosDenshion.a"; sourceTree = "<group>"; };
 		043C4F4D177FC28E00A55BD9 /* libBox2D.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libBox2D.a; path = "../../../Library/Developer/Xcode/DerivedData/FETemplate-bwkxjubalbhtkretxzgqqgetelpu/Build/Products/Debug-iphoneos/libBox2D.a"; sourceTree = "<group>"; };
+		043C4F4F177FCEFF00A55BD9 /* python2.7.all.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = python2.7.all.a; path = ../libs/python2.7/libs/python2.7.all.a; sourceTree = "<group>"; };
+		043C4F51177FDEEA00A55BD9 /* python */ = {isa = PBXFileReference; lastKnownFileType = folder; name = python; path = Resources/python; sourceTree = "<group>"; };
 		04A63030177C5AC800E1760D /* FEXGameTemplate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FEXGameTemplate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04A63033177C5AC800E1760D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		04A63035177C5AC800E1760D /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
@@ -198,6 +199,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				043C4F50177FCEFF00A55BD9 /* python2.7.all.a in Frameworks */,
 				043C4F48177FC23300A55BD9 /* libcocos2dx.a in Frameworks */,
 				043C4F4E177FC28E00A55BD9 /* libBox2D.a in Frameworks */,
 				043C4F4C177FC28800A55BD9 /* libCocosDenshion.a in Frameworks */,
@@ -330,13 +332,11 @@
 		04A63027177C5AC800E1760D = {
 			isa = PBXGroup;
 			children = (
+				043C4F4F177FCEFF00A55BD9 /* python2.7.all.a */,
 				043C4F4D177FC28E00A55BD9 /* libBox2D.a */,
 				043C4F4B177FC28800A55BD9 /* libCocosDenshion.a */,
 				043C4F49177FC28300A55BD9 /* libFEX.a */,
 				043C4F47177FC23300A55BD9 /* libcocos2dx.a */,
-				040BD452177F285F00139293 /* libpython2.7.ios.a */,
-				040A5A4D177F25370010E979 /* libpython2.7.a */,
-				040A5A4E177F25370010E979 /* libpython2.7.sim.a */,
 				04A63043177C5AC800E1760D /* FEXGameTemplate */,
 				04A63032177C5AC800E1760D /* Frameworks */,
 				04A63031177C5AC800E1760D /* Products */,
@@ -382,6 +382,7 @@
 		04A63044177C5AC800E1760D /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				043C4F51177FDEEA00A55BD9 /* python */,
 				04A633B9177C5C9000E1760D /* fonts */,
 				04A633BA177C5C9000E1760D /* levels */,
 				04A633BB177C5C9000E1760D /* particles */,
@@ -508,6 +509,7 @@
 				04A633C8177C5C9000E1760D /* shaders in Resources */,
 				04A633C9177C5C9000E1760D /* sprite_components in Resources */,
 				04A633CA177C5C9000E1760D /* sprites in Resources */,
+				043C4F52177FDEEA00A55BD9 /* python in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -621,6 +623,7 @@
 					"\"$(SRCROOT)/FEXGameTemplate/libs/cocos2dx/platform/third_party/ios/libraries\"",
 					"\"$(SRCROOT)/../libs/python2.7\"",
 					"\"$(SRCROOT)/../../../Library/Developer/Xcode/DerivedData/FETemplate-bwkxjubalbhtkretxzgqqgetelpu/Build/Products/Debug-iphoneos\"",
+					"\"$(SRCROOT)/../libs/python2.7/libs\"",
 				);
 				OTHER_LDFLAGS = (
 					"-lxml2",
@@ -664,6 +667,7 @@
 					"\"$(SRCROOT)/FEXGameTemplate/libs/cocos2dx/platform/third_party/ios/libraries\"",
 					"\"$(SRCROOT)/../libs/python2.7\"",
 					"\"$(SRCROOT)/../../../Library/Developer/Xcode/DerivedData/FETemplate-bwkxjubalbhtkretxzgqqgetelpu/Build/Products/Debug-iphoneos\"",
+					"\"$(SRCROOT)/../libs/python2.7/libs\"",
 				);
 				OTHER_LDFLAGS = (
 					"-lxml2",

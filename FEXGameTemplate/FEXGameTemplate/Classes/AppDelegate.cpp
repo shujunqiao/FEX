@@ -23,7 +23,7 @@
 #include "GLES-Render.h"
 #include "CCPhyDebugNode.h"
 #include "GameTheSoldiers.h"
-//#include "Python.h"
+#include "Python.h"
 
 
 USING_NS_CC;
@@ -69,12 +69,15 @@ bool AppDelegate::applicationDidFinishLaunching()
     ResourceManager::instance()->load_physic_desc(full_path("pdb/main.xml"));
     //game->add_game_object( GameObjPtr(new GameLayer()), "root");
 
-    
-//    Py_SetProgramName("aaa");  /* optional but recommended */
-//    Py_Initialize();
-//    PyRun_SimpleString("from time import time,ctime\n"
-//                       "print 'Today is',ctime(time())\n");
-//    Py_Finalize();
+    char pypath[1024];
+    strcpy(pypath, full_path("python").c_str());
+
+ 
+    Py_SetPythonHome(pypath);
+
+    Py_Initialize();
+    PyRun_SimpleString("print 'nimei'");
+    Py_Finalize();
     
     int i = 50;
     while(i-->0)
