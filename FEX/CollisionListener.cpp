@@ -15,6 +15,7 @@ SpriteComponent* get_component( b2Fixture* fixture )
 {
     if ( fixture and static_cast<FixtureUserData*>(fixture->GetUserData()) )
         return static_cast<FixtureUserData*> (fixture->GetUserData())->sprite_component;
+    return nullptr;
 }
 SpriteComponent* get_componentB( b2Contact* contact );
 

@@ -29,8 +29,8 @@
 /* Begin PBXCopyFilesBuildPhase section */
 		04A627AE177BEC7900E1760D /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "include/${PRODUCT_NAME}";
+			buildActionMask = 12;
+			dstPath = "build/${PRODUCT_NAME}";
 			dstSubfolderSpec = 16;
 			files = (
 			);
@@ -350,7 +350,7 @@
 					"\"libs/cocos2dx/platform/ios\"",
 					"\"libs/external\"",
 				);
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -391,7 +391,7 @@
 					"\"libs/cocos2dx/platform/ios\"",
 					"\"libs/external\"",
 				);
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";

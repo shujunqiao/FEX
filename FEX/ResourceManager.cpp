@@ -68,7 +68,7 @@ void ResourceManager::load_sprite_desc( const std::string& filename )
     for ( auto it = sprite_descs.begin(); it != sprite_descs.end(); ++it )
     {
 
-        logger("ResMgrDbg") << it->first << endl;
+        logger("ResMgrDbg") << "SpriteDesc:" << it->first << endl;
     }
     
 }
@@ -123,6 +123,7 @@ void ResourceManager::load_physic_desc( const std::string& filename )
 
 void ResourceManager::load_sprite_component_desc( const std::string& filename )
 {
+    //logger("test") << "tst2" << endl;
     pugi::xml_document doc;
     doc.load_file( filename.c_str() );
 
@@ -154,7 +155,7 @@ void ResourceManager::load_sprite_component_desc( const std::string& filename )
                 frame = CCSpriteFrameCache::sharedSpriteFrameCache()->spriteFrameByName(frame_name.c_str());
                 if ( frame == nullptr )
                 {
-                    cout << frame_name << " not found" << endl;
+                    cout << "frame named \""<< frame_name << "\" not found" << endl;
                     continue;
                 }
                 array_frames->addObject(frame);
@@ -182,16 +183,16 @@ void ResourceManager::load_sprite_component_desc( const std::string& filename )
  
     }
 
-    //logout("Dbg.ResourceMan") << "sprite components loaded:" << endl;
+    logger("Dbg.ResourceMan") << "sprite components loaded:" << endl;
     for ( auto it = sprite_components.begin(); it != sprite_components.end(); ++it )
     {
-        //logout("Dbg.ResourceMan") << it->first << endl;
+        logger("Dbg.ResourceMan") << it->first << endl;
     }
 
-   // logout("Dbg.ResourceMan") << "sprite animations loaded:" << endl;
+    logger("Dbg.ResourceMan") << "sprite animations loaded:" << endl;
     for ( auto it = animations.begin(); it != animations.end(); ++it )
     {
-        //logout("Dbg.ResourceMan") << it->first << endl;
+        logger("Dbg.ResourceMan") << it->first << endl;
     }
     
 }

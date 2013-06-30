@@ -10,14 +10,13 @@
 #include "SpriteBase.h"
 
 FE_NS_BEGIN
-#define TRY_CONSTRUCT_CLASS( class ) if ( classname == #class ) ret = GameObjPtr( new class( params ) );
+#define TRY_CONSTRUCT_CLASS( class ) if ( classname == #class ) return GameObjPtr( new class( params ) );
 
 GameObjPtr GameObjFactory::construct_obj( const Name& classname, const SpawnParams& params )
 {
-    GameObjPtr ret;
     TRY_CONSTRUCT_CLASS( GameObjBase );
     TRY_CONSTRUCT_CLASS( SpriteBase );
-    return ret;
+    return GameObjPtr(nullptr);
 }
 
 FE_NS_END

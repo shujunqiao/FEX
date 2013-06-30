@@ -86,13 +86,13 @@ void SpriteBase::remove_all_component()
 void SpriteBase::add_component( SpriteComponent* comp )
 {
     components.push_back( comp );
-    comp->set_owner( std::dynamic_pointer_cast<SpriteBase>(shared_from_this()) );
+    //comp->set_owner( std::dynamic_pointer_cast<SpriteBase>(shared_from_this()) );
 }
 
 void SpriteBase::remove_component( SpriteComponent * comp )
 {
     comp->set_owner(std::shared_ptr<SpriteBase>(nullptr));
-    components.erase(std::find(components.begin(), components.end(), comp));
+    //components.erase(std::find(components.begin(), components.end(), comp));
 }
 
 SpriteComponent* SpriteBase::component( unsigned int index )

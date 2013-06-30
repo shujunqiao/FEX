@@ -25,7 +25,7 @@ bool LevelData::load( const std::string& filename )
     }
     if ( acting_range )
     {
-        for ( auto it : acting_range.children("keyframe") )
+        //for ( auto it : acting_range.children("keyframe") )
         {
 //			level_acting_range_keyframe k;
 //			CGPoint p;

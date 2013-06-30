@@ -55,9 +55,9 @@ bool AppDelegate::applicationDidFinishLaunching()
     GameTheSoldiers* game = new GameTheSoldiers();
     set_game( game );
     GLESDebugDraw* phydbg = new GLESDebugDraw( ptm_ratio() );
-    phydbg->SetFlags(0);
+    phydbg->SetFlags(0xffffffff);
     
-   // game->get_phy_world()->SetDebugDraw( phydbg );
+    game->get_phy_world()->SetDebugDraw( phydbg );
     pDirector->runWithScene( game->get_scene()->ccscene() );
 
     //std::vector<std::string> paths = {CCFileUtils::sharedFileUtils()->getWritablePath().c_str()};
@@ -67,30 +67,25 @@ bool AppDelegate::applicationDidFinishLaunching()
     ResourceManager::instance()->load_sprite_component_desc(full_path("sprite_components/base.xml"));
     ResourceManager::instance()->load_sprite_desc(full_path("sprites/base.xml"));
     ResourceManager::instance()->load_physic_desc(full_path("pdb/main.xml"));
-    //game->add_game_object( GameObjPtr(new GameLayer()), "root");
+    game->add_game_object( GameObjPtr(new GameLayer()), "root");
 
-    char pypath[1024];
-    strcpy(pypath, full_path("python").c_str());
+//    char pypath[1024];
+//    strcpy(pypath, full_path("python").c_str());
+//    Py_SetPythonHome(pypath);
 
- 
-    Py_SetPythonHome(pypath);
-
-    Py_Initialize();
-    PyRun_SimpleString("print 'nimei'");
-    Py_Finalize();
     
     int i = 50;
     while(i-->0)
     {
-    game->add_game_object( GameObjFactory::construct_obj("SpriteBase", SpawnParams({{"init_location","500,500"},{"sprite_desc","pickup_s_gun"}})), "root" );
+        game->add_game_object( GameObjFactory::construct_obj("SpriteBase", SpawnParams({{"init_location","500,500"},{"sprite_desc","saw"}})), "root" );
     }
 
-    //CCPhyDebugNode* dbgnode = new CCPhyDebugNode();
-    //dbgnode->autorelease();
+    CCPhyDebugNode* dbgnode = new CCPhyDebugNode();
+    dbgnode->autorelease();
     
     //hero->each_component( &SpriteComponent::set_linear_velocity, CCPoint(50,0) );
     
-    //game->get_scene()->get_layer("root")->cclayer()->addChild( dbgnode, 1000 );
+    game->get_scene()->get_layer("root")->cclayer()->addChild( dbgnode, 1000 );
     
     return true;
 }
