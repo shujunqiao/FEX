@@ -9,12 +9,20 @@
 #ifndef FEX_ClassInfo_h
 #define FEX_ClassInfo_h
 #include "FE.h"
-FE_NS_BEGIN
+#include <string>
+#include <vector>
+#include <functional>
 
-typedef void* ( *CONSTRUCTOR_FUNC )();
+
+extern std::vector<class ClassInfo*> fe_classes;
 class ClassInfo
 {
 public:
+//    ClassInfo(const Name& name, const std::vector<ClassInfo*> parents, const std::function<void*(const SpawnParams&)>& con )
+//    :name(name), parent_classes(parents),constructor(con)
+//    {
+//        fe_classes.push_back(this);
+//    }
     bool is_kind_of( const ClassInfo* another )
     {
         if ( this == another )
@@ -26,49 +34,19 @@ public:
         return false;
     }
     
-    Name                    name;
-    std::vector<ClassInfo*>	parent_classes;
-    CONSTRUCTOR_FUNC		construct;
+    Name                                            name;
+    std::vector<ClassInfo*>                         parent_classes;
+    std::function<void*(const SpawnParams&)>        constructor;
 };
 
-//static std::map<std::string, ClassInfo> Factory;
-//
-//template<typename c >
-//class ClassRegister
-//{
-//public:
-//    void reg( const std::string& name )
-//    {
-//        Factory[name] = c::static_classinfo;
-//    }
-//};
+#define CLASS_INFO_OF(classname) (&classname::classinfo)
 
-#define DEFINE_PARENT_CLASS( childclass, parentclass ) childclass::get_classinfo()->parent_classes.push_back(parentclass::get_classinfo());
-#define DECLAR_CLASS( classname )\
-static std::shared_ptr<classname> construct( const SpawnParams& params){ return std::shared_ptr(new classname( params )); }\
-static ClassInfo	static_classinfo;
-//void bind_classinfo() { classinfo = &classname::static_classinfo; }\
+#define DECLARE_CLASS_INFO(classname)\
+static ClassInfo  classinfo;\
+virtual ClassInfo* get_class_info(){ return &classname::classinfo; };
+
+#define IMPLEMENT_CLASS_INFO(classname,parent_classes) ClassInfo classname::classinfo = {#classname,parent_classes,[](const SpawnParams& p){return new classname(p);}};
 
 
-#define DECLAR_ABSTRACTL_CLASS( classname )\
-public:\
-static classinfo*	get_classinfo(){ return &classname::static_classinfo; }\
-void bind_classinfo() { classinfo = &classname::static_classinfo; }\
-private:\
-static classinfo	static_classinfo;
-
-#define CLASS_CONSTRUCTOR_INCLUDE( classname )\
-bind_classinfo();\
-m_id = classname::static_classinfo.name;
-
-#define	REGISTER_CLASS( classname )\
-classname::get_classinfo()->name = _T(#classname);\
-classname::get_classinfo()->construct = ((CONSTRUCTOR_FUNC)(classname::constructor));
-
-#define DEFINE_PTR(classname)	typedef std::shared_ptr<classname> classname##_ptr;
-
-#define IMPLEMENT_CLASS( classname ) classinfo classname::static_classinfo;
-
-FE_NS_END
 
 #endif

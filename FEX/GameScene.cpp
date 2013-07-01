@@ -9,12 +9,21 @@
 #include "GameScene.h"
 #include "GameLayer.h"
 FE_NS_BEGIN
+
+IMPLEMENT_CLASS_INFO(GameScene, {&GameObjBase::classinfo})
+
 GameScene::GameScene()
 {
     scene = new MyScene();
     scene->init();
     scene->autorelease();
     scene->scheduleUpdate();
+}
+
+GameScene::GameScene( const SpawnParams& param)
+:GameScene()
+{
+
 }
 
 GameScene::~GameScene()

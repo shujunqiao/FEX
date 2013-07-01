@@ -12,10 +12,18 @@
 
 FE_NS_BEGIN
 
+IMPLEMENT_CLASS_INFO(GameLayer, {&GameObjBase::classinfo})
+
 GameLayer::GameLayer()
 :layer(cocos2d::CCLayer::create())
 {
     layer->retain();
+}
+
+GameLayer::GameLayer( const SpawnParams& params )
+:GameLayer()
+{
+
 }
 
 GameLayer::~GameLayer()

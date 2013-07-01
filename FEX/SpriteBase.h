@@ -23,6 +23,8 @@ class SpriteComponent;
 class SpriteBase :public GameObjBase
 {
 public:
+    DECLARE_CLASS_INFO(SpriteBase)
+    
     SpriteBase();
     SpriteBase( const CCPoint& location, const std::shared_ptr<sprite_desc> desc );
     SpriteBase( const SpawnParams& params );

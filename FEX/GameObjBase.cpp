@@ -7,10 +7,16 @@
 //
 #include "FE.h"
 #include "GameObjBase.h"
+
 FE_NS_BEGIN
 
-GameObjBase::GameObjBase( const std::map<Name, std::string>& params )
+
+
+IMPLEMENT_CLASS_INFO(GameObjBase,{})
+
+GameObjBase::GameObjBase( const SpawnParams& params )
 {
+    printf("yes");
 }
 
 GameObjBase::GameObjBase()

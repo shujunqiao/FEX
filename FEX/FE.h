@@ -15,24 +15,24 @@
 #include <vector>
 #define FE_NS_BEGIN namespace FESimple{
 #define FE_NS_END }
-
+#define FE_NS_USING using namespace FESimple;
 FE_NS_BEGIN
+
+void register_classes();
+
 class GameObjBase;
 typedef std::shared_ptr<GameObjBase> GameObjPtr;
 typedef std::string Name;
 typedef std::map<Name, std::string> SpawnParams;
+#include "ClassInfo.h"
 
-class GameInfoBase
+struct GameInfo
 {
-    
+    class GameBase*                         game;
+    std::vector<class ControllerBase*>      controllers;
 };
 
-template<typename GameClass>
-class GameInfo : public GameInfoBase
-{
-public:
-    std::unique_ptr<GameClass>   game;
-};
+GameInfo* get_game_info();
 
 FE_NS_END
 #include "ClassInfo.h"

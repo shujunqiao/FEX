@@ -12,6 +12,9 @@
 #include "FE.h"
 
 FE_NS_BEGIN
+
+
+
 class GameObjFactory
 {
 public:

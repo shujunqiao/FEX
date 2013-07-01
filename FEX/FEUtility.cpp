@@ -143,14 +143,14 @@ b2BodyType string_to_b2BodyType( const std::string& str )
     return b2_dynamicBody;
 }
 class GameBase;
-GameBase* g_game = nullptr;
+
 void set_game(GameBase* g)
 {
-    g_game = g;
+    get_game_info()->game = g;
 }
 class GameBase* get_game()
 {
-    return g_game;
+    return get_game_info()->game;
 }
 
 float ptm_ratio()
@@ -167,7 +167,6 @@ cocos2d::CCPoint b2Vec2_to_point( const b2Vec2& vec )
 {
     return cocos2d::CCPoint( vec.x * ptm_ratio(), vec.y * ptm_ratio() );
 }
-
 
 cocos2d::CCPoint& operator << (cocos2d::CCPoint& pt, const std::string& str)
 {

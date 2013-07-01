@@ -11,8 +11,7 @@
 #include "cocos2d.h"
 #include "SimpleAudioEngine.h"
 
-#include "FE.h"
-#include "FEUtility.h"
+#include "GameTheSoldiersCommon.h"
 #include "GameBase.h"
 #include "GameScene.h"
 #include "FEUtility.h"
@@ -24,22 +23,39 @@
 #include "CCPhyDebugNode.h"
 #include "GameTheSoldiers.h"
 #include "Python.h"
+#include <locale.h>
+
+
 
 
 USING_NS_CC;
 USING_NS_CC_EXT;
-using namespace FESimple;
+FE_NS_USING;
 using namespace CocosDenshion;
-
+using namespace GameTheSoldiersNamespace;
 
 AppDelegate::AppDelegate()
 {
+
+
 }
 
 AppDelegate::~AppDelegate()
 {
 }
-
+class comma_numpunct : public std::numpunct<char>
+{
+protected:
+    virtual char do_thousands_sep() const
+    {
+        return ',';
+    }
+    
+    virtual std::string do_grouping() const
+    {
+        return "\03";
+    }
+};
 bool AppDelegate::applicationDidFinishLaunching()
 {
     // initialize director
@@ -62,8 +78,11 @@ bool AppDelegate::applicationDidFinishLaunching()
 
     //std::vector<std::string> paths = {CCFileUtils::sharedFileUtils()->getWritablePath().c_str()};
 
-    //CCFileUtils::sharedFileUtils()->setSearchPaths(paths);
-    
+    char* aa = setlocale(LC_ALL, "English");
+
+    printf("%'d\n", 1123456789);
+
+
     ResourceManager::instance()->load_sprite_component_desc(full_path("sprite_components/base.xml"));
     ResourceManager::instance()->load_sprite_desc(full_path("sprites/base.xml"));
     ResourceManager::instance()->load_physic_desc(full_path("pdb/main.xml"));
@@ -74,10 +93,12 @@ bool AppDelegate::applicationDidFinishLaunching()
 //    Py_SetPythonHome(pypath);
 
     
+    GameObjBase::classinfo.constructor(SpawnParams());
     int i = 50;
     while(i-->0)
     {
-        game->add_game_object( GameObjFactory::construct_obj("SpriteBase", SpawnParams({{"init_location","500,500"},{"sprite_desc","saw"}})), "root" );
+        GameObjPtr p;
+        game->add_game_object( p = GameObjFactory::construct_obj("SpriteBase", SpawnParams({{"init_location","500,500"},{"sprite_desc","saw"}})), "root" );
     }
 
     CCPhyDebugNode* dbgnode = new CCPhyDebugNode();

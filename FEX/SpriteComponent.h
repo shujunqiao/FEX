@@ -135,6 +135,9 @@ struct FixtureUserData
 class SpriteComponent :public cocos2d::CCSprite
 {
 public:
+    
+    //DECLARE_CLASS_INFO(SpriteComponent)
+    
     SpriteComponent( const CCPoint& location, const std::shared_ptr<sprite_component_desc> desc );
     virtual ~SpriteComponent();
     

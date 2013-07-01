@@ -12,7 +12,8 @@
 #include "GameBase.h"
 #include "GameTheSoldiers.h"
 #include <memory>
-using namespace FESimple;
+FE_NS_USING
+GTS_NS_BEGIN
 bool IOSTouchController::ccTouchBegan(CCTouch *pTouch, CCEvent *pEvent)
 {
     auto pt = pTouch->getLocation();
@@ -29,4 +30,4 @@ void IOSTouchController::ccTouchEnded(CCTouch *pTouch, CCEvent *pEvent)
 void IOSTouchController::ccTouchCancelled(CCTouch *pTouch, CCEvent *pEvent)
 {
 }
-
+GTS_NS_END

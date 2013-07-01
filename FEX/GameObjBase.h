@@ -14,13 +14,16 @@
 #include <map>
 #include <memory>
 FE_NS_BEGIN
+
+
 class GameWorld;
 class GameBase;
 class GameObjBase : public std::enable_shared_from_this<GameObjBase>
 {
 public:
-
-    GameObjBase( const std::map<Name, std::string>& params );
+    DECLARE_CLASS_INFO(GameObjBase)
+    
+    GameObjBase( const SpawnParams& params );
     GameObjBase();
     ~GameObjBase();
     //triggers
@@ -44,8 +47,10 @@ public:
     }
 protected:
     bool        dead;
-    ClassInfo*  classinfo;
+
     std::string name;
 };
+
+
 FE_NS_END
 #endif /* defined(__FEX__GameObjBase__) */

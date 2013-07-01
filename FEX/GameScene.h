@@ -29,7 +29,10 @@ public:
 class GameScene :public GameObjBase
 {
 public:
+    
+    DECLARE_CLASS_INFO(GameScene)
     GameScene();
+    GameScene( const SpawnParams& param);
     ~GameScene();
     
     //layers

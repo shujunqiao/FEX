@@ -8,13 +8,20 @@
 
 #ifndef __FEXGameTemplate__GameSoliders__
 #define __FEXGameTemplate__GameSoliders__
-#include "FE.h"
+#include "GameTheSoldiersCommon.h"
 #include "GameBase.h"
-using namespace FESimple;
+
+FE_NS_USING
+
+GTS_NS_BEGIN
 
 class GameTheSoldiers : public GameBase
 {
-    std::unique_ptr<GameTheSoldiers> instance();
+public:
+    GameTheSoldiers();
+    
+protected:
+    std::unique_ptr<GameBase> level;
 };
-
+GTS_NS_END
 #endif /* defined(__FEXGameTemplate__GameSoliders__) */

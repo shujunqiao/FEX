@@ -14,27 +14,33 @@
 #include "cocos2d.h"
 #include "ResourceManager.h"
 FE_NS_BEGIN
+
+IMPLEMENT_CLASS_INFO(SpriteBase,{&GameObjBase::classinfo})
+
 SpriteBase::SpriteBase()
+:GameObjBase()
 {
 }
 
 SpriteBase::SpriteBase( const CCPoint& location, const std::shared_ptr<sprite_desc> desc )
 {
+
+}
+
+SpriteBase::SpriteBase( const SpawnParams& params )
+:GameObjBase( params )
+{
+    auto location = string_to_point(params.find("init_location")->second.c_str());
+    auto desc = ResourceManager::instance()->sprite_descs.item( params.find("sprite_desc")->second);
     assert(desc);
     for( auto &it : desc->components )
     {
         add_component(
                       new SpriteComponent( it.offset + location,
-                            ResourceManager::instance()->
-                            sprite_components.item(it.component_name))
+                                          ResourceManager::instance()->
+                                          sprite_components.item(it.component_name))
                       );
     }
-}
-
-SpriteBase::SpriteBase( const SpawnParams& params )
-:SpriteBase( string_to_point(params.find("init_location")->second.c_str()),
-            ResourceManager::instance()->sprite_descs.item( params.find("sprite_desc")->second) )
-{
     
 }
 

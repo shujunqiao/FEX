@@ -9,16 +9,18 @@
 #ifndef __FEXGameTemplate__IOSTcouchController__
 #define __FEXGameTemplate__IOSTcouchController__
 
-#include "FE.h"
+#include "GameTheSoldiersCommon.h"
 #include "ControllerBase.h"
-using namespace FESimple;
+
+FE_NS_USING
+GTS_NS_BEGIN
 class IOSTouchController : public ControllerBase, cocos2d::CCTargetedTouchDelegate
 {
 public:
-    virtual bool ccTouchBegan(CCTouch *pTouch, CCEvent *pEvent);
-    virtual void ccTouchMoved(CCTouch *pTouch, CCEvent *pEvent);
-    virtual void ccTouchEnded(CCTouch *pTouch, CCEvent *pEvent);
-    virtual void ccTouchCancelled(CCTouch *pTouch, CCEvent *pEvent);    
+    virtual bool ccTouchBegan(cocos2d::CCTouch *pTouch,     cocos2d::CCEvent *pEvent);
+    virtual void ccTouchMoved(cocos2d::CCTouch *pTouch,     cocos2d::CCEvent *pEvent);
+    virtual void ccTouchEnded(cocos2d::CCTouch *pTouch,     cocos2d::CCEvent *pEvent);
+    virtual void ccTouchCancelled(cocos2d::CCTouch *pTouch, cocos2d::CCEvent *pEvent);
 };
-
+GTS_NS_END
 #endif /* defined(__FEXGameTemplate__IOSTcouchController__) */

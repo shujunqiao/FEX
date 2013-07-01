@@ -15,6 +15,9 @@
 
 using namespace cocos2d;
 FE_NS_BEGIN
+
+//IMPLEMENT_CLASS_INFO(SpriteComponent,{})
+
 SpriteComponent::SpriteComponent(  const CCPoint& location, const std::shared_ptr<sprite_component_desc> desc )
 :CCSprite(),phy_body(nullptr)
 {

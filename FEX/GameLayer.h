@@ -17,8 +17,9 @@ class GameBase;
 class GameLayer :public GameObjBase
 {
 public:
-    
+    DECLARE_CLASS_INFO(GameLayer)
     GameLayer();
+    GameLayer( const SpawnParams& params );
     ~GameLayer();
     //triggers
     virtual void added_to_game( GameBase* game, const Name& to_layer );
