@@ -16,11 +16,12 @@ IMPLEMENT_CLASS_INFO(GameObjBase,{})
 
 GameObjBase::GameObjBase( const SpawnParams& params )
 {
-    printf("yes");
+
 }
 
 GameObjBase::GameObjBase()
 {
+
 }
 
 GameObjBase::~GameObjBase()

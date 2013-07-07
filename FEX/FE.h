@@ -18,8 +18,6 @@
 #define FE_NS_USING using namespace FESimple;
 FE_NS_BEGIN
 
-void register_classes();
-
 class GameObjBase;
 typedef std::shared_ptr<GameObjBase> GameObjPtr;
 typedef std::string Name;

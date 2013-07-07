@@ -299,7 +299,7 @@
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				USER_HEADER_SEARCH_PATHS = "../../cocos2dx/platform/ios ../../cocos2dx/include ../../cocos2dx/kazmath/include ../../cocos2dx/";
+				USER_HEADER_SEARCH_PATHS = "../../cocos2dx/platform/mac ../../cocos2dx/include ../../cocos2dx/kazmath/include ../../cocos2dx/";
 				VALID_ARCHS = "i386 x86_64";
 			};
 			name = Debug;
@@ -328,7 +328,7 @@
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				USER_HEADER_SEARCH_PATHS = "../../cocos2dx/platform/ios ../../cocos2dx/include ../../cocos2dx/kazmath/include ../../cocos2dx/";
+				USER_HEADER_SEARCH_PATHS = "../../cocos2dx/platform/mac ../../cocos2dx/include ../../cocos2dx/kazmath/include ../../cocos2dx/";
 				VALID_ARCHS = "i386 x86_64";
 			};
 			name = Release;

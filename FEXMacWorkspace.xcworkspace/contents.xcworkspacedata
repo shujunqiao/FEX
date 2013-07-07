@@ -2,6 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:Editor/Editor.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:FEX.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:libs/CocosDenshion/proj.mac/CocosDenshion.xcodeproj">
    </FileRef>
    <FileRef

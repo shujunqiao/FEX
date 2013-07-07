@@ -40,6 +40,7 @@ public:
     void remove_component( SpriteComponent * );
     SpriteComponent* component( unsigned int index );
     
+#if !defined SWIG_ING
     template <typename T, typename ...ArgsA , typename ...ArgsB>//,
 //    typename std::enable_if<std::is_convertible<ArgsB..., ArgsA...>::value>::type* = nullptr>
     void each_component( void (T::*mf)(ArgsA...), ArgsB&& ...args)
@@ -54,7 +55,7 @@ public:
         for( auto i : components )
             (i->*mf)();
     }
-
+#endif
     virtual void begin_contact( b2Contact* contact );
     virtual void end_contact( b2Contact* contact );
     

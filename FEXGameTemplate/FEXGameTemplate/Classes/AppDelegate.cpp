@@ -26,7 +26,7 @@
 #include <locale.h>
 #include "IOSTcouchController.h"
 
-
+#include "FEX_wrap.cxx"
 
 USING_NS_CC;
 USING_NS_CC_EXT;
@@ -82,15 +82,30 @@ bool AppDelegate::applicationDidFinishLaunching()
     Py_Initialize();
 
     
+    init_FEX();
+
+    PyRun_SimpleString("import FEX\n"
+                       "x = FEX.GameObjFactory_construct_obj('SpriteBase',FEX.map_string_string({ 'init_location':'500,500','sprite_desc' : 'saw'}))\n"
+                       "FEX.cvar.g_game_info.game.add_game_object(x,'root')"
+                       );
+//                       "y = 105\n"
+//                       "g = example.gcd(x,y)\n"
+//                       "print \"The gcd of %d and %d is %d\" % (x,y,g)\n"
+//                       "print \"Foo = \", example.cvar.Foo\n"
+//                       "example.cvar.Foo = 3.1415926\n"
+//                       "print \"Foo = \", example.cvar.Foo");
+
+    
+    
     GameObjBase::classinfo.constructor(SpawnParams());
-    int i = 50;
-    while(i-->0)
-    {
-        GameObjPtr p;
-        game->add_game_object( p = GameObjFactory::construct_obj("SpriteBase", SpawnParams({{"init_location","500,500"},{"sprite_desc","saw"}})), "root" );
-        std::dynamic_pointer_cast<SpriteBase>(p)->each_component(&SpriteComponent::apply_linear_impulse, random_dir());
-        std::dynamic_pointer_cast<SpriteBase>(p)->each_component(&SpriteComponent::set_linear_damping, 1.0f);
-    }
+//    int i = 50;
+//    while(i-->0)
+//    {
+//        GameObjPtr p;
+//        game->add_game_object( p = GameObjFactory::construct_obj("SpriteBase", SpawnParams({{"init_location","500,500"},{"sprite_desc","saw"}})), "root" );
+//        std::dynamic_pointer_cast<SpriteBase>(p)->each_component(&SpriteComponent::apply_linear_impulse, random_dir());
+//        std::dynamic_pointer_cast<SpriteBase>(p)->each_component(&SpriteComponent::set_linear_damping, 1.0f);
+//    }
 
     CCPhyDebugNode* dbgnode = new CCPhyDebugNode();
     dbgnode->autorelease();

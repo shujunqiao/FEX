@@ -11,6 +11,7 @@
 		040A59ED177ECF2D0010E979 /* IOSTcouchController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 040A59EB177ECF2D0010E979 /* IOSTcouchController.cpp */; };
 		043C4F50177FCEFF00A55BD9 /* python2.7.all.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 043C4F4F177FCEFF00A55BD9 /* python2.7.all.a */; };
 		043C4F52177FDEEA00A55BD9 /* python in Resources */ = {isa = PBXBuildFile; fileRef = 043C4F51177FDEEA00A55BD9 /* python */; };
+		045FF19017894295007A338D /* example.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 045FF18E17894295007A338D /* example.cpp */; };
 		046D5D5B1780851F00919167 /* libFEX.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 046D5D5A1780851F00919167 /* libFEX.a */; };
 		046D5D5D1780873700919167 /* libcocos2dx.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 046D5D5C1780873700919167 /* libcocos2dx.a */; };
 		046D5D5F1780873A00919167 /* libCocosDenshion.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 046D5D5E1780873A00919167 /* libCocosDenshion.a */; };
@@ -151,6 +152,8 @@
 		040A5A4A177F233B0010E979 /* weakrefobject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = weakrefobject.h; sourceTree = "<group>"; };
 		043C4F4F177FCEFF00A55BD9 /* python2.7.all.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = python2.7.all.a; path = ../libs/python2.7/libs/python2.7.all.a; sourceTree = "<group>"; };
 		043C4F51177FDEEA00A55BD9 /* python */ = {isa = PBXFileReference; lastKnownFileType = folder; name = python; path = Resources/python; sourceTree = "<group>"; };
+		045FF18E17894295007A338D /* example.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = example.cpp; path = Classes/example.cpp; sourceTree = "<group>"; };
+		045FF19517899563007A338D /* FEX_wrap.cxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FEX_wrap.cxx; path = Classes/FEX_wrap.cxx; sourceTree = "<group>"; };
 		046D5D5A1780851F00919167 /* libFEX.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libFEX.a; path = "../../../Library/Developer/Xcode/DerivedData/FETemplate-bwkxjubalbhtkretxzgqqgetelpu/Build/Products/Debug-iphoneos/libFEX.a"; sourceTree = "<group>"; };
 		046D5D5C1780873700919167 /* libcocos2dx.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcocos2dx.a; path = "../../../Library/Developer/Xcode/DerivedData/FETemplate-bwkxjubalbhtkretxzgqqgetelpu/Build/Products/Debug-iphoneos/libcocos2dx.a"; sourceTree = "<group>"; };
 		046D5D5E1780873A00919167 /* libCocosDenshion.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libCocosDenshion.a; path = "../../../Library/Developer/Xcode/DerivedData/FETemplate-bwkxjubalbhtkretxzgqqgetelpu/Build/Products/Debug-iphoneos/libCocosDenshion.a"; sourceTree = "<group>"; };
@@ -442,6 +445,8 @@
 		04A633A1177C5ACF00E1760D /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				045FF19517899563007A338D /* FEX_wrap.cxx */,
+				045FF18E17894295007A338D /* example.cpp */,
 				04A633A2177C5ACF00E1760D /* AppDelegate.h */,
 				04A633A3177C5ACF00E1760D /* AppDelegate.cpp */,
 			);
@@ -538,6 +543,7 @@
 				040A59ED177ECF2D0010E979 /* IOSTcouchController.cpp in Sources */,
 				04E11FA4178179B7009E1847 /* WarZone.cpp in Sources */,
 				04E11FA7178179E3009E1847 /* GameTheSoldiersCommon.cpp in Sources */,
+				045FF19017894295007A338D /* example.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

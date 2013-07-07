@@ -15,14 +15,17 @@
 #include <memory>
 FE_NS_BEGIN
 
-
 class GameWorld;
 class GameBase;
+
 class GameObjBase : public std::enable_shared_from_this<GameObjBase>
 {
+
 public:
+    //static ClassInfo  classinfo;
+    //virtual ClassInfo* get_class_info(){ return &GameObjBase::classinfo; };
     DECLARE_CLASS_INFO(GameObjBase)
-    
+
     GameObjBase( const SpawnParams& params );
     GameObjBase();
     ~GameObjBase();

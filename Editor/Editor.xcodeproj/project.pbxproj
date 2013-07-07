@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		045FF181178926D9007A338D /* AppDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 045FF17D178926D9007A338D /* AppDelegate.cpp */; };
+		045FF182178926D9007A338D /* HelloWorldScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 045FF17F178926D9007A338D /* HelloWorldScene.cpp */; };
+		045FF18817892759007A338D /* libBox2D.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 045FF18317892759007A338D /* libBox2D.a */; };
+		045FF18917892759007A338D /* libcocos2dx.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 045FF18417892759007A338D /* libcocos2dx.a */; };
+		045FF18A17892759007A338D /* libCocosDenshion.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 045FF18517892759007A338D /* libCocosDenshion.a */; };
+		045FF18B17892759007A338D /* libFEX copy.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 045FF18617892759007A338D /* libFEX copy.a */; };
 		15C64823165F391E007D4F18 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15C64822165F391E007D4F18 /* Cocoa.framework */; };
 		15C64825165F3934007D4F18 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15C64824165F3934007D4F18 /* OpenGL.framework */; };
 		15C64827165F394E007D4F18 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15C64826165F394E007D4F18 /* QuartzCore.framework */; };
@@ -17,8 +23,6 @@
 		15C64831165F39AB007D4F18 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 15C64830165F39AB007D4F18 /* libxml2.dylib */; };
 		15C64833165F3AFD007D4F18 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15C64832165F3AFD007D4F18 /* Foundation.framework */; };
 		15C6498716633E65007D4F18 /* libcurl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 15C6498616633E65007D4F18 /* libcurl.a */; };
-		1AFAF8CA16D3886000DB1158 /* AppDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1AFAF8C616D3886000DB1158 /* AppDelegate.cpp */; };
-		1AFAF8CB16D3886000DB1158 /* HelloWorldScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1AFAF8C816D3886000DB1158 /* HelloWorldScene.cpp */; };
 		41BC70E415BF81A5006A0A6C /* AppController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 41BC70DA15BF81A5006A0A6C /* AppController.mm */; };
 		41BC70E515BF81A5006A0A6C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 41BC70DC15BF81A5006A0A6C /* InfoPlist.strings */; };
 		41BC70E615BF81A5006A0A6C /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 41BC70DE15BF81A5006A0A6C /* MainMenu.xib */; };
@@ -27,6 +31,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		045FF17D178926D9007A338D /* AppDelegate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AppDelegate.cpp; sourceTree = "<group>"; };
+		045FF17E178926D9007A338D /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		045FF17F178926D9007A338D /* HelloWorldScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HelloWorldScene.cpp; sourceTree = "<group>"; };
+		045FF180178926D9007A338D /* HelloWorldScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelloWorldScene.h; sourceTree = "<group>"; };
+		045FF18317892759007A338D /* libBox2D.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libBox2D.a; path = ../libs/external/Box2D/proj.mac/build/Release/libBox2D.a; sourceTree = "<group>"; };
+		045FF18417892759007A338D /* libcocos2dx.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcocos2dx.a; path = ../libs/cocos2dx/proj.mac/build/Release/libcocos2dx.a; sourceTree = "<group>"; };
+		045FF18517892759007A338D /* libCocosDenshion.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libCocosDenshion.a; path = ../libs/CocosDenshion/proj.mac/build/Release/libCocosDenshion.a; sourceTree = "<group>"; };
+		045FF18617892759007A338D /* libFEX copy.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libFEX copy.a"; path = "../build/Release/libFEX copy.a"; sourceTree = "<group>"; };
+		045FF18717892759007A338D /* libFEX.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libFEX.a; path = "../build/Release-iphoneos/libFEX.a"; sourceTree = "<group>"; };
 		15C64822165F391E007D4F18 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
 		15C64824165F3934007D4F18 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/OpenGL.framework; sourceTree = DEVELOPER_DIR; };
 		15C64826165F394E007D4F18 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
@@ -37,10 +50,6 @@
 		15C64830165F39AB007D4F18 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/lib/libxml2.dylib; sourceTree = DEVELOPER_DIR; };
 		15C64832165F3AFD007D4F18 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		15C6498616633E65007D4F18 /* libcurl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcurl.a; path = ../../cocos2dx/platform/third_party/ios/libraries/libcurl.a; sourceTree = "<group>"; };
-		1AFAF8C616D3886000DB1158 /* AppDelegate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = AppDelegate.cpp; path = ../Classes/AppDelegate.cpp; sourceTree = "<group>"; };
-		1AFAF8C716D3886000DB1158 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../Classes/AppDelegate.h; sourceTree = "<group>"; };
-		1AFAF8C816D3886000DB1158 /* HelloWorldScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = HelloWorldScene.cpp; path = ../Classes/HelloWorldScene.cpp; sourceTree = "<group>"; };
-		1AFAF8C916D3886000DB1158 /* HelloWorldScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HelloWorldScene.h; path = ../Classes/HelloWorldScene.h; sourceTree = "<group>"; };
 		1D6058910D05DD3D006BFB54 /* Editor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Editor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41BC70D915BF81A5006A0A6C /* AppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppController.h; sourceTree = SOURCE_ROOT; };
 		41BC70DA15BF81A5006A0A6C /* AppController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AppController.mm; sourceTree = SOURCE_ROOT; };
@@ -57,6 +66,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				045FF18817892759007A338D /* libBox2D.a in Frameworks */,
+				045FF18917892759007A338D /* libcocos2dx.a in Frameworks */,
+				045FF18A17892759007A338D /* libCocosDenshion.a in Frameworks */,
+				045FF18B17892759007A338D /* libFEX copy.a in Frameworks */,
 				15C6498716633E65007D4F18 /* libcurl.a in Frameworks */,
 				15C64833165F3AFD007D4F18 /* Foundation.framework in Frameworks */,
 				15C64831165F39AB007D4F18 /* libxml2.dylib in Frameworks */,
@@ -73,16 +86,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		15AA9C4015B7EC450033D6C2 /* Classes */ = {
+		045FF17C178926D9007A338D /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				1AFAF8C616D3886000DB1158 /* AppDelegate.cpp */,
-				1AFAF8C716D3886000DB1158 /* AppDelegate.h */,
-				1AFAF8C816D3886000DB1158 /* HelloWorldScene.cpp */,
-				1AFAF8C916D3886000DB1158 /* HelloWorldScene.h */,
+				045FF17D178926D9007A338D /* AppDelegate.cpp */,
+				045FF17E178926D9007A338D /* AppDelegate.h */,
+				045FF17F178926D9007A338D /* HelloWorldScene.cpp */,
+				045FF180178926D9007A338D /* HelloWorldScene.h */,
 			);
-			name = Classes;
-			path = ../classes;
+			path = Classes;
 			sourceTree = "<group>";
 		};
 		19C28FACFE9D520D11CA2CBB /* Products */ = {
@@ -96,7 +108,12 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
-				15AA9C4015B7EC450033D6C2 /* Classes */,
+				045FF18317892759007A338D /* libBox2D.a */,
+				045FF18417892759007A338D /* libcocos2dx.a */,
+				045FF18517892759007A338D /* libCocosDenshion.a */,
+				045FF18617892759007A338D /* libFEX copy.a */,
+				045FF18717892759007A338D /* libFEX.a */,
+				045FF17C178926D9007A338D /* Classes */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				41BC70D815BF818D006A0A6C /* mac */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
@@ -222,8 +239,8 @@
 			files = (
 				41BC70E415BF81A5006A0A6C /* AppController.mm in Sources */,
 				41BC70E815BF81A5006A0A6C /* main.m in Sources */,
-				1AFAF8CA16D3886000DB1158 /* AppDelegate.cpp in Sources */,
-				1AFAF8CB16D3886000DB1158 /* HelloWorldScene.cpp in Sources */,
+				045FF181178926D9007A338D /* AppDelegate.cpp in Sources */,
+				045FF182178926D9007A338D /* HelloWorldScene.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,15 +287,13 @@
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_VERSION = "";
 				HEADER_SEARCH_PATHS = (
-					"$(SRCROOT)/../../../CocosDenshion/include",
-					"\"$(SRCROOT)/../../../external/chipmunk/include/constraints\"",
-					"\"$(SRCROOT)/../../../external/chipmunk/include/chipmunk\"",
-					"\"$(SRCROOT)/../../../cocos2dx/kazmath/include\"",
-					"\"$(SRCROOT)/../../../extensions\"",
-					"\"$(SRCROOT)/../../../external\"",
-					"\"$(SRCROOT)/../../../cocos2dx\"",
-					"\"$(SRCROOT)/../../../cocos2dx/include\"",
-					"\"$(SRCROOT)/../../../cocos2dx/platform/mac\"",
+					"$(SRCROOT)/../libs/CocosDenshion/include",
+					"\"$(SRCROOT)/../libs/cocos2dx/kazmath/include\"",
+					"\"$(SRCROOT)/../libs/extensions\"",
+					"\"$(SRCROOT)/../libs/external\"",
+					"\"$(SRCROOT)/../libs/cocos2dx\"",
+					"\"$(SRCROOT)/../libs/cocos2dx/include\"",
+					"\"$(SRCROOT)/../libs/cocos2dx/platform/mac\"",
 				);
 				INFOPLIST_FILE = Info.plist;
 				LIBRARY_SEARCH_PATHS = "\"$(SRCROOT)/../../../cocos2dx/platform/third_party/mac/libraries\"";
@@ -310,15 +325,13 @@
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_VERSION = "";
 				HEADER_SEARCH_PATHS = (
-					"$(SRCROOT)/../../../CocosDenshion/include",
-					"\"$(SRCROOT)/../../../external/chipmunk/include/constraints\"",
-					"\"$(SRCROOT)/../../../external/chipmunk/include/chipmunk\"",
-					"\"$(SRCROOT)/../../../cocos2dx/kazmath/include\"",
-					"\"$(SRCROOT)/../../../extensions\"",
-					"\"$(SRCROOT)/../../../external\"",
-					"\"$(SRCROOT)/../../../cocos2dx\"",
-					"\"$(SRCROOT)/../../../cocos2dx/include\"",
-					"\"$(SRCROOT)/../../../cocos2dx/platform/mac\"",
+					"$(SRCROOT)/../libs/CocosDenshion/include",
+					"\"$(SRCROOT)/../libs/cocos2dx/kazmath/include\"",
+					"\"$(SRCROOT)/../libs/extensions\"",
+					"\"$(SRCROOT)/../libs/external\"",
+					"\"$(SRCROOT)/../libs/cocos2dx\"",
+					"\"$(SRCROOT)/../libs/cocos2dx/include\"",
+					"\"$(SRCROOT)/../libs/cocos2dx/platform/mac\"",
 				);
 				INFOPLIST_FILE = Info.plist;
 				LIBRARY_SEARCH_PATHS = "\"$(SRCROOT)/../../../cocos2dx/platform/third_party/mac/libraries\"";

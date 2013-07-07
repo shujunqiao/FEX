@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>E6BFE1D9-4D23-4B57-9D0B-6A879876E599</string>
+	<key>IDESourceControlProjectName</key>
+	<string>FEXMacWorkspace</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>B031C4DA-A024-4977-9D9B-C6F4DD9713CA</key>
+		<string>https://github.com/fancyzero/FEX.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>FEXMacWorkspace.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>B031C4DA-A024-4977-9D9B-C6F4DD9713CA</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/fancyzero/FEX.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>B031C4DA-A024-4977-9D9B-C6F4DD9713CA</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>B031C4DA-A024-4977-9D9B-C6F4DD9713CA</string>
+			<key>IDESourceControlWCCName</key>
+			<string>FEX</string>
+		</dict>
+	</array>
+</dict>
+</plist>

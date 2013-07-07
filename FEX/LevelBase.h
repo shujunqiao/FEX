@@ -17,7 +17,7 @@
  LevelBase
  定义游戏地图大小、关卡逻辑、等等
  */
-USING_NS_CC;
+//USING_NS_CC;
 
 FE_NS_BEGIN
 struct LevelTrigger
@@ -37,7 +37,7 @@ struct LevelTrigger
 
 struct LevelBound
 {
-    CCRect rect;
+    cocos2d::CCRect rect;
 };
 
 struct LevelData
@@ -50,10 +50,10 @@ struct LevelData
 class LevelBase
 {
 public:
-    virtual bool attach( const Name& leveldata_name );  //附加关卡，不删除现有内容
-    virtual void reset( const Name& leveldata_name );   //重置关卡，删除所有游戏对象
+    virtual bool attach( const Name& leveldata_name ){return false;};  //附加关卡，不删除现有内容
+    virtual void reset( const Name& leveldata_name ){return;};   //重置关卡，删除所有游戏对象
     void update( float delta_time );
-    
+
     LevelBound& get_bound()
     {
         return bound;
