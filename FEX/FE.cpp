@@ -8,11 +8,5 @@
 
 #include "FE.h"
 FE_NS_BEGIN
-GameInfo    g_game_info;
-
-GameInfo* get_game_info()
-{
-    return &g_game_info;
-}
 
 FE_NS_END

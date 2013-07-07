@@ -14,9 +14,8 @@ USING_NS_CC;
 FE_NS_BEGIN
 
 
-class ControllerBase
-{
-    
+class ControllerBase :public CCObject
+{    
 };
 
 

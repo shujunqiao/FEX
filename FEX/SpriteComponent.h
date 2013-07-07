@@ -145,7 +145,9 @@ public:
     virtual void draw();
     
     //overrided
+    void update(float delta_time);
     void setPosition(const CCPoint& pos);
+    const CCPoint& getPosition();
     bool isDirty();
     CCAffineTransform nodeToParentTransform();
     

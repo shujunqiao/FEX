@@ -379,8 +379,8 @@
 		04A63043177C5AC800E1760D /* FEXGameTemplate */ = {
 			isa = PBXGroup;
 			children = (
-				040A59EA177ECE450010E979 /* GameClasses */,
 				04A633A1177C5ACF00E1760D /* Classes */,
+				040A59EA177ECE450010E979 /* GameClasses */,
 				040A59EE177F233A0010E979 /* python2.7 */,
 				04A63044177C5AC800E1760D /* Resources */,
 				04A6305C177C5AC900E1760D /* ios */,

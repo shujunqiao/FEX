@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'GameLib' target in the 'GameLib' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif

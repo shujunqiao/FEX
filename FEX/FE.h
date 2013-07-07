@@ -26,13 +26,6 @@ typedef std::string Name;
 typedef std::map<Name, std::string> SpawnParams;
 #include "ClassInfo.h"
 
-struct GameInfo
-{
-    class GameBase*                         game;
-    std::vector<class ControllerBase*>      controllers;
-};
-
-GameInfo* get_game_info();
 
 FE_NS_END
 #include "ClassInfo.h"

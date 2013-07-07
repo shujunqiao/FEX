@@ -191,16 +191,39 @@ cocos2d::CCPoint operator + ( const cocos2d::CCPoint& pt1, const cocos2d::CCPoin
     return cocos2d::CCPoint( pt1.x + pt2.x, pt1.y + pt2.y );
 }
 
-float random( float from = 0.0f, float to = 1.0f)
+cocos2d::CCPoint operator - ( const cocos2d::CCPoint& pt1, const cocos2d::CCPoint pt2 )
+{
+    return cocos2d::CCPoint( pt1.x - pt2.x, pt1.y - pt2.y );
+}
+
+float angle_to_rad( float angle )
+{
+    return angle  * (Pi / 180.0f);
+}
+
+float rad_to_angle( float rad )
+{
+    return rad * (180.0f / Pi);
+}
+
+float random( float from, float to )
 {
     std::uniform_int_distribution<float> float_uniform_dist(from,to);
     return float_uniform_dist(mt_random_engine);
 }
 
-cocos2d::CCPoint random_dir( float from_rad = 0, float to_rad = Pi )
+cocos2d::CCPoint random_dir( float from_rad, float to_rad )
 {
     float rad = random(from_rad, to_rad);
     return cocos2d::CCPoint( cos(rad), sin(rad) );
+}
+
+
+GameInfo    g_game_info;
+
+GameInfo* get_game_info()
+{
+    return &g_game_info;
 }
 
 FE_NS_END

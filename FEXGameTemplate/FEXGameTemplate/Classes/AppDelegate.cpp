@@ -24,7 +24,7 @@
 #include "GameTheSoldiers.h"
 #include "Python.h"
 #include <locale.h>
-
+#include "IOSTcouchController.h"
 
 
 
@@ -43,19 +43,7 @@ AppDelegate::AppDelegate()
 AppDelegate::~AppDelegate()
 {
 }
-class comma_numpunct : public std::numpunct<char>
-{
-protected:
-    virtual char do_thousands_sep() const
-    {
-        return ',';
-    }
-    
-    virtual std::string do_grouping() const
-    {
-        return "\03";
-    }
-};
+
 bool AppDelegate::applicationDidFinishLaunching()
 {
     // initialize director
@@ -70,27 +58,28 @@ bool AppDelegate::applicationDidFinishLaunching()
 
     GameTheSoldiers* game = new GameTheSoldiers();
     set_game( game );
+    
+    //std::unique_ptr<IOSTouchController> pp = std::unique_ptr<IOSTouchController>( new IOSTouchController() );
+    IOSTouchController*  p =new IOSTouchController();
+    CCDirector::sharedDirector()->getTouchDispatcher()->addTargetedDelegate(p, 0, false);
+    get_game_info()->controllers.push_back( p );
     GLESDebugDraw* phydbg = new GLESDebugDraw( ptm_ratio() );
-    phydbg->SetFlags(0xffffffff);
+    phydbg->SetFlags(0);
     
     game->get_phy_world()->SetDebugDraw( phydbg );
     pDirector->runWithScene( game->get_scene()->ccscene() );
 
     //std::vector<std::string> paths = {CCFileUtils::sharedFileUtils()->getWritablePath().c_str()};
 
-    char* aa = setlocale(LC_ALL, "English");
-
-    printf("%'d\n", 1123456789);
-
-
     ResourceManager::instance()->load_sprite_component_desc(full_path("sprite_components/base.xml"));
     ResourceManager::instance()->load_sprite_desc(full_path("sprites/base.xml"));
     ResourceManager::instance()->load_physic_desc(full_path("pdb/main.xml"));
     game->add_game_object( GameObjPtr(new GameLayer()), "root");
 
-//    char pypath[1024];
-//    strcpy(pypath, full_path("python").c_str());
-//    Py_SetPythonHome(pypath);
+    char pypath[1024];
+    strcpy(pypath, full_path("python").c_str());
+    Py_SetPythonHome(pypath);
+    Py_Initialize();
 
     
     GameObjBase::classinfo.constructor(SpawnParams());
@@ -99,6 +88,8 @@ bool AppDelegate::applicationDidFinishLaunching()
     {
         GameObjPtr p;
         game->add_game_object( p = GameObjFactory::construct_obj("SpriteBase", SpawnParams({{"init_location","500,500"},{"sprite_desc","saw"}})), "root" );
+        std::dynamic_pointer_cast<SpriteBase>(p)->each_component(&SpriteComponent::apply_linear_impulse, random_dir());
+        std::dynamic_pointer_cast<SpriteBase>(p)->each_component(&SpriteComponent::set_linear_damping, 1.0f);
     }
 
     CCPhyDebugNode* dbgnode = new CCPhyDebugNode();

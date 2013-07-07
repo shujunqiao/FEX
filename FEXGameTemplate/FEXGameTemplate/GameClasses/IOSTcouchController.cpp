@@ -14,11 +14,30 @@
 #include <memory>
 FE_NS_USING
 GTS_NS_BEGIN
+
+IOSTouchController::IOSTouchController()
+:CCTargetedTouchDelegate(),ControllerBase()
+{
+
+}
+
 bool IOSTouchController::ccTouchBegan(CCTouch *pTouch, CCEvent *pEvent)
 {
     auto pt = pTouch->getLocation();
     GameTheSoldiers* game = dynamic_cast<GameTheSoldiers*>(get_game());
-    game->each_obj([](GameObjPtr obj){ if ( std::dynamic_pointer_cast<SpriteBase>(obj) ) std::dynamic_pointer_cast<SpriteBase>(obj)->each_component(&SpriteComponent::apply_linear_impulse, CCPoint(10,10)); });
+
+
+    game->each_obj([&](GameObjPtr obj)
+    {
+        if ( std::dynamic_pointer_cast<SpriteBase>(obj) )
+        {
+            CCPoint dir = ccpNormalize((pt - std::dynamic_pointer_cast<SpriteBase>(obj)->component(0)->getPosition()));
+            logger("pos") << std::dynamic_pointer_cast<SpriteBase>(obj)->component(0)->getPosition().x << "," << std::dynamic_pointer_cast<SpriteBase>(obj)->component(0)->getPosition().y << endl;
+            logger("touch") << dir.x <<"," << dir.y << endl;
+            std::dynamic_pointer_cast<SpriteBase>(obj)->each_component(&SpriteComponent::apply_linear_impulse, ccpMult( dir,5));
+        }
+    }
+                   );
     return true;
 }
 void IOSTouchController::ccTouchMoved(CCTouch *pTouch, CCEvent *pEvent)

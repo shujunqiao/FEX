@@ -42,6 +42,7 @@ SpriteComponent::SpriteComponent(  const CCPoint& location, const std::shared_pt
             phy_body->CreateFixture( dynamic_cast<b2FixtureDef*>(&fixdef) );
         }
     }
+    //scheduleUpdate();
 }
 
 SpriteComponent::~SpriteComponent()
@@ -68,12 +69,31 @@ void SpriteComponent::draw()
     CCSprite::draw();
 }
 
+void SpriteComponent::update(float fDelta)
+{
+    //sync position and rotation with physics body
+//    if ( phy_body )
+//    {
+//        CCSprite::setPosition(b2Vec2_to_point(phy_body->GetPosition()));
+//        CCSprite::setRotation(rad_to_angle(phy_body->GetAngle()));
+//    }
+    CCSprite::update( fDelta );
+}
+
 void SpriteComponent::setPosition(const CCPoint& pos)
 {
     if ( phy_body )
         phy_body->SetTransform( point_to_b2Vec2(pos), phy_body->GetAngle() );
+    
+    CCSprite::setPosition(pos);
+}
+
+const CCPoint& SpriteComponent::getPosition()
+{
+    if ( phy_body )
+        return m_obPosition = b2Vec2_to_point( phy_body->GetPosition() );
     else
-        CCSprite::setPosition(pos);
+        return CCSprite::getPosition();
 }
 
 // this method will only get called if the sprite is batched.
