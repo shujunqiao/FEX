@@ -9,6 +9,7 @@
 #ifndef __FEX__SpriteBase__
 #define __FEX__SpriteBase__
 
+
 #include "FE.h"
 #include "GameObjBase.h"
 #include <vector>
@@ -16,6 +17,7 @@
 #include "Box2D/Box2D.h"
 #include "SpriteComponent.h"
 #include <functional>
+
 
 FE_NS_BEGIN
 class SpriteComponent;
@@ -26,9 +28,9 @@ public:
     DECLARE_CLASS_INFO(SpriteBase)
     
     SpriteBase();
-    SpriteBase( const CCPoint& location, const std::shared_ptr<sprite_desc> desc );
+    SpriteBase( const cocos2d::CCPoint& location, const std::shared_ptr<sprite_desc> desc );
     SpriteBase( const SpawnParams& params );
-    SpriteBase( const CCPoint& location, const SpawnParams& params );
+    SpriteBase( const cocos2d::CCPoint& location, const SpawnParams& params );
     ~SpriteBase();
     
     virtual void added_to_game( GameBase* game, const Name& to_layer );
@@ -62,7 +64,7 @@ public:
     virtual void update( float delta_time );
     
     //position , rotation, ect..
-    virtual void set_position( CCPoint pos );
+    virtual void set_position( cocos2d::CCPoint pos );
     virtual void set_rotation( float angle );
 protected:
     std::vector< SpriteComponent* > components;

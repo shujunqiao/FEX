@@ -13,7 +13,8 @@
 #include <vector>
 #include <functional>
 
-
+namespace FESimple
+{
 extern std::vector<class ClassInfo*> fe_classes;
 class ClassInfo
 {
@@ -38,7 +39,7 @@ public:
     std::vector<ClassInfo*>                         parent_classes;
     std::function<void*(const SpawnParams&)>        constructor;
 };
-
+}
 #define CLASS_INFO_OF(classname) (&classname::classinfo)
 
 #define DECLARE_CLASS_INFO(classname)\

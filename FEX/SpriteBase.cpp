@@ -22,7 +22,7 @@ SpriteBase::SpriteBase()
 {
 }
 
-SpriteBase::SpriteBase( const CCPoint& location, const std::shared_ptr<sprite_desc> desc )
+SpriteBase::SpriteBase( const cocos2d::CCPoint& location, const std::shared_ptr<sprite_desc> desc )
 {
 
 }
@@ -44,7 +44,7 @@ SpriteBase::SpriteBase( const SpawnParams& params )
     
 }
 
-SpriteBase::SpriteBase( const CCPoint& location, const SpawnParams& params )
+SpriteBase::SpriteBase( const cocos2d::CCPoint& location, const SpawnParams& params )
 :SpriteBase( location,
             ResourceManager::instance()->sprite_descs.item( params.find("sprite_desc")->second) )
 {
@@ -128,7 +128,7 @@ void SpriteBase::update( float delta_time )
 }
 
 //position , rotation, ect..
-void SpriteBase::set_position( CCPoint pos )
+void SpriteBase::set_position( cocos2d::CCPoint pos )
 {
     for( auto c : components )
     {

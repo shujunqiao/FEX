@@ -14,6 +14,7 @@
 #include "FE.h"
 #include "LevelBase.h"
 
+USING_NS_CC;
 FE_NS_BEGIN
 
 

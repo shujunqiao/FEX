@@ -14,7 +14,6 @@
 #include <memory>
 
 
-using namespace cocos2d;
 FE_NS_BEGIN
 class SpriteBase;
 struct animation
@@ -67,7 +66,7 @@ struct sprite_component_desc
 struct sprite_component_ref
 {
     Name    component_name;
-    CCPoint offset;
+    cocos2d::CCPoint offset;
 };
 
 struct sprite_joint_desc
@@ -138,7 +137,7 @@ public:
     
     //DECLARE_CLASS_INFO(SpriteComponent)
     
-    SpriteComponent( const CCPoint& location, const std::shared_ptr<sprite_component_desc> desc );
+    SpriteComponent( const cocos2d::CCPoint& location, const std::shared_ptr<sprite_component_desc> desc );
     virtual ~SpriteComponent();
     
     bool play_anim( const Name& anim );
@@ -146,22 +145,22 @@ public:
     
     //overrided
     void update(float delta_time);
-    void setPosition(const CCPoint& pos);
-    const CCPoint& getPosition();
+    void setPosition(const cocos2d::CCPoint& pos);
+    const cocos2d::CCPoint& getPosition();
     bool isDirty();
-    CCAffineTransform nodeToParentTransform();
+    cocos2d::CCAffineTransform nodeToParentTransform();
     
     //physics callback
     void begin_contact( class b2Contact* contact );
     void end_contact( class b2Contact* contact );
     //physics methods
-    void set_linear_velocity( const CCPoint& v );
+    void set_linear_velocity( const cocos2d::CCPoint& v );
     void set_linear_damping( float damping );
-    void apply_force( const CCPoint& v, const CCPoint& location );
-    void apply_force( const CCPoint& v );
+    void apply_force( const cocos2d::CCPoint& v, const cocos2d::CCPoint& location );
+    void apply_force( const cocos2d::CCPoint& v );
     void apply_torque( float q );
     void set_angular_damping( float damping );
-    void apply_linear_impulse( const CCPoint& v );
+    void apply_linear_impulse( const cocos2d::CCPoint& v );
     void apply_angular_impulse( float i );
     void wakeup();
     

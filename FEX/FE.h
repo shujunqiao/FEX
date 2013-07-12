@@ -22,11 +22,12 @@ class GameObjBase;
 typedef std::shared_ptr<GameObjBase> GameObjPtr;
 typedef std::string Name;
 typedef std::map<Name, std::string> SpawnParams;
-#include "ClassInfo.h"
 
 
 FE_NS_END
+#include "cocos2d.h"
 #include "ClassInfo.h"
+
 #include "GameObjFactory.h"
 
 #include "FEUtility.h"
