@@ -40,6 +40,10 @@ public:
     {
         return name;
     }
+    void set_name( const Name& n)
+    {
+        name = n;
+    }
     bool is_dead()
     {
         return dead;

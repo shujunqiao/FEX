@@ -21,8 +21,11 @@ class MyScene : public cocos2d::CCScene
 public:
     void update( float delta_time )
     {
-        get_game()->update(delta_time);
-        cocos2d::CCScene::update( delta_time );
+        if ( get_game() )
+        {
+            get_game()->update(delta_time);
+        }
+        cocos2d::CCScene::update( delta_time );        
     }
 };
 

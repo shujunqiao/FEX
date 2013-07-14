@@ -22,8 +22,19 @@ SpriteBase::SpriteBase()
 {
 }
 
-SpriteBase::SpriteBase( const cocos2d::CCPoint& location, const std::shared_ptr<sprite_desc> desc )
+void SpriteBase::init( const cocos2d::CCPoint& location, const std::shared_ptr<sprite_desc> desc )
 {
+    assert(desc);
+    SpriteComponent* spc;
+    for( auto &it : desc->components )
+    {
+        add_component(
+                      spc = new SpriteComponent( it.offset + location,
+                                                ResourceManager::instance()->
+                                                sprite_components.item(it.component_name))
+                      );
+        logger("memory ")<< spc->retainCount() << endl;
+    }
 
 }
 
@@ -32,27 +43,20 @@ SpriteBase::SpriteBase( const SpawnParams& params )
 {
     auto location = string_to_point(params.find("init_location")->second.c_str());
     auto desc = ResourceManager::instance()->sprite_descs.item( params.find("sprite_desc")->second);
-    assert(desc);
-    for( auto &it : desc->components )
-    {
-        add_component(
-                      new SpriteComponent( it.offset + location,
-                                          ResourceManager::instance()->
-                                          sprite_components.item(it.component_name))
-                      );
-    }
+    init( location, desc );
     
 }
 
 SpriteBase::SpriteBase( const cocos2d::CCPoint& location, const SpawnParams& params )
-:SpriteBase( location,
-            ResourceManager::instance()->sprite_descs.item( params.find("sprite_desc")->second) )
+:GameObjBase(params)
 {
-    
+    auto desc = ResourceManager::instance()->sprite_descs.item( params.find("sprite_desc")->second);
+    init( location, desc );
 }
 
 SpriteBase::~SpriteBase()
 {
+    logger("memory") << "SpriteBase Destroyed" << endl;
     removed_from_game( nullptr );
     remove_all_component();
 }
@@ -72,9 +76,8 @@ void SpriteBase::removed_from_game( GameBase* game )
     {
         if ( comp != nullptr )
         {
-            logger("tmp") << comp->retainCount() << endl;
             comp->removeFromParent();
-            comp->release();
+            logger("removed_from_game") << "component retaincount: " << comp->retainCount() << endl;
         }
     }
 }
@@ -84,7 +87,10 @@ void SpriteBase::remove_all_component()
 {
     for (auto c: components )
     {
+        logger("memory") << "component retaincount: " << c->retainCount() << endl;
         c->set_owner(std::shared_ptr<SpriteBase>(nullptr));
+        c->stopAllActions();
+        c->release();
     }
     components.clear();
 }

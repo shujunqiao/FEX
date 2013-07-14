@@ -41,6 +41,7 @@
 		04A627F9177BEDD200E1760D /* ResourceManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04A627E7177BEDD200E1760D /* ResourceManager.cpp */; };
 		04A627FA177BEDD200E1760D /* SpriteBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04A627E9177BEDD200E1760D /* SpriteBase.cpp */; };
 		04A627FB177BEDD200E1760D /* SpriteComponent.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04A627EB177BEDD200E1760D /* SpriteComponent.cpp */; };
+		04C3AF9617914F36005F9937 /* IOSTouchController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04C3AF9417914F35005F9937 /* IOSTouchController.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -111,6 +112,8 @@
 		04A627EA177BEDD200E1760D /* SpriteBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SpriteBase.h; path = FEX/SpriteBase.h; sourceTree = "<group>"; };
 		04A627EB177BEDD200E1760D /* SpriteComponent.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SpriteComponent.cpp; path = FEX/SpriteComponent.cpp; sourceTree = "<group>"; };
 		04A627EC177BEDD200E1760D /* SpriteComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SpriteComponent.h; path = FEX/SpriteComponent.h; sourceTree = "<group>"; };
+		04C3AF9417914F35005F9937 /* IOSTouchController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = IOSTouchController.cpp; path = FEX/IOSTouchController.cpp; sourceTree = "<group>"; };
+		04C3AF9517914F35005F9937 /* IOSTouchController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IOSTouchController.h; path = FEX/IOSTouchController.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,6 +173,8 @@
 		04A627CA177BEDC600E1760D /* Src */ = {
 			isa = PBXGroup;
 			children = (
+				04C3AF9417914F35005F9937 /* IOSTouchController.cpp */,
+				04C3AF9517914F35005F9937 /* IOSTouchController.h */,
 				04A627CB177BEDD200E1760D /* CCPhyDebugNode.cpp */,
 				04A627CC177BEDD200E1760D /* CCPhyDebugNode.h */,
 				04A627CD177BEDD200E1760D /* ClassInfo.h */,
@@ -325,6 +330,7 @@
 				04A627FA177BEDD200E1760D /* SpriteBase.cpp in Sources */,
 				04A627FB177BEDD200E1760D /* SpriteComponent.cpp in Sources */,
 				040A59E6177E6FA00010E979 /* CollisionListener.cpp in Sources */,
+				04C3AF9617914F36005F9937 /* IOSTouchController.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

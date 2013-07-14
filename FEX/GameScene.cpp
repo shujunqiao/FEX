@@ -38,7 +38,9 @@ GameLayer* GameScene::get_layer( std::string name )
     {
         if ( layer->get_name() == name )
             return layer;
+        logger("test") << layer->get_name() << endl;
     }
+    logger("warning") << "layer: \"" << name << "\" not found" << endl;
     return *layers.begin();//return first layer
 }
 

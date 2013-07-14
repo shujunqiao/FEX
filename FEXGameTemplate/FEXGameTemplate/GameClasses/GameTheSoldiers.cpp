@@ -7,7 +7,7 @@
 //
 
 #include "GameTheSoldiers.h"
-#include "IOSTcouchController.h"
+#include "IOSTouchController.h"
 
 GTS_NS_BEGIN
 GameTheSoldiers::GameTheSoldiers()

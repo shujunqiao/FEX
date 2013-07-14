@@ -49,12 +49,18 @@ cocos2d::CCPoint random_dir( float from_rad = 0, float to_rad = Pi*2 );
 class ControllerBase;
 struct GameInfo
 {
+    
+    void add_controller( ControllerBase* ctrl )
+    {
+        controllers.push_back(ctrl);
+    }
+    
     class GameBase*                         game;
     std::vector<ControllerBase*>      controllers;    
 };
 extern GameInfo    g_game_info;
 GameInfo* get_game_info();
-
+GameObjPtr make_gameobj_ptr( GameObjBase* p );
 
 FE_NS_END
 

@@ -21,14 +21,17 @@ FE_NS_BEGIN
 SpriteComponent::SpriteComponent(  const CCPoint& location, const std::shared_ptr<sprite_component_desc> desc )
 :CCSprite(),phy_body(nullptr)
 {
+
     CCSprite::init();
-    
+    logger("sprite component") << this << " created retaincount:" << retainCount() <<  endl;
     for ( auto anim_name : desc->animation_names )
     {
         auto anim = ResourceManager::instance()->animations.item(anim_name);
         animations.push_back( sprite_animation(CCRepeatForever::create(CCAnimate::create(anim->ccanimation)), anim->name ) );
     }
+    logger("sprite component") << this << " created retaincount:" << retainCount() <<  endl;
     play_anim("default");
+    logger("sprite component") << this << " created retaincount:" << retainCount() <<  endl;    
     //create physics body
     auto phy = ResourceManager::instance()->physic_descs.item(desc->physic_desc_name);
     if ( phy != nullptr )
@@ -42,11 +45,13 @@ SpriteComponent::SpriteComponent(  const CCPoint& location, const std::shared_pt
             phy_body->CreateFixture( dynamic_cast<b2FixtureDef*>(&fixdef) );
         }
     }
+
     //scheduleUpdate();
 }
 
 SpriteComponent::~SpriteComponent()
 {
+    logger("sprite component") << this << "destroyed" << endl;
     if (phy_body)
         get_game()->get_phy_world()->DestroyBody(phy_body);
 }

@@ -3438,50 +3438,76 @@ namespace Swig {
 /* -------- TYPES TABLE (BEGIN) -------- */
 
 #define SWIGTYPE_p_FESimple__ClassInfo swig_types[0]
-#define SWIGTYPE_p_FESimple__GameBase swig_types[1]
-#define SWIGTYPE_p_FESimple__GameInfo swig_types[2]
-#define SWIGTYPE_p_FESimple__GameObjBase swig_types[3]
-#define SWIGTYPE_p_FESimple__GameObjFactory swig_types[4]
-#define SWIGTYPE_p_FESimple__GameScene swig_types[5]
-#define SWIGTYPE_p_FESimple__LevelBase swig_types[6]
-#define SWIGTYPE_p_FESimple__LevelBound swig_types[7]
-#define SWIGTYPE_p_FESimple__LevelData swig_types[8]
-#define SWIGTYPE_p_FESimple__LevelTrigger swig_types[9]
-#define SWIGTYPE_p_FESimple__SpriteBase swig_types[10]
-#define SWIGTYPE_p_FESimple__SpriteComponent swig_types[11]
-#define SWIGTYPE_p_allocator_type swig_types[12]
-#define SWIGTYPE_p_b2BodyType swig_types[13]
-#define SWIGTYPE_p_b2Contact swig_types[14]
-#define SWIGTYPE_p_b2JointType swig_types[15]
-#define SWIGTYPE_p_b2Vec2 swig_types[16]
-#define SWIGTYPE_p_b2World swig_types[17]
-#define SWIGTYPE_p_bool swig_types[18]
-#define SWIGTYPE_p_char swig_types[19]
-#define SWIGTYPE_p_cocos2d__CCPoint swig_types[20]
-#define SWIGTYPE_p_cocos2d__CCRect swig_types[21]
-#define SWIGTYPE_p_difference_type swig_types[22]
-#define SWIGTYPE_p_key_type swig_types[23]
-#define SWIGTYPE_p_mapped_type swig_types[24]
-#define SWIGTYPE_p_p_PyObject swig_types[25]
-#define SWIGTYPE_p_size_type swig_types[26]
-#define SWIGTYPE_p_std__allocatorT_std__pairT_std__string_const_std__string_t_t swig_types[27]
-#define SWIGTYPE_p_std__functionT_void_pfstd__mapT_std__string_std__string_std__lessT_std__string_t_std__allocatorT_std__pairT_std__string_const_std__string_t_t_t_const_RF_t swig_types[28]
-#define SWIGTYPE_p_std__invalid_argument swig_types[29]
-#define SWIGTYPE_p_std__lessT_std__string_t swig_types[30]
-#define SWIGTYPE_p_std__mapT_std__string_std__string_std__lessT_std__string_t_std__allocatorT_std__pairT_std__string_const_std__string_t_t_t swig_types[31]
-#define SWIGTYPE_p_std__shared_ptrT_FESimple__GameObjBase_t swig_types[32]
-#define SWIGTYPE_p_std__shared_ptrT_sprite_desc_t swig_types[33]
-#define SWIGTYPE_p_std__string swig_types[34]
-#define SWIGTYPE_p_std__vectorT_ClassInfo_p_t swig_types[35]
-#define SWIGTYPE_p_std__vectorT_FESimple__ClassInfo_p_t swig_types[36]
-#define SWIGTYPE_p_std__vectorT_FESimple__ControllerBase_p_t swig_types[37]
-#define SWIGTYPE_p_std__vectorT_FESimple__LevelTrigger_t swig_types[38]
-#define SWIGTYPE_p_std__vectorT_float_t swig_types[39]
-#define SWIGTYPE_p_std__vectorT_std__string_t swig_types[40]
-#define SWIGTYPE_p_swig__SwigPyIterator swig_types[41]
-#define SWIGTYPE_p_value_type swig_types[42]
-static swig_type_info *swig_types[44];
-static swig_module_info swig_module = {swig_types, 43, 0, 0, 0, 0};
+#define SWIGTYPE_p_FESimple__ControllerBase swig_types[1]
+#define SWIGTYPE_p_FESimple__FixtureUserData swig_types[2]
+#define SWIGTYPE_p_FESimple__GameBase swig_types[3]
+#define SWIGTYPE_p_FESimple__GameInfo swig_types[4]
+#define SWIGTYPE_p_FESimple__GameObjBase swig_types[5]
+#define SWIGTYPE_p_FESimple__GameObjFactory swig_types[6]
+#define SWIGTYPE_p_FESimple__GameScene swig_types[7]
+#define SWIGTYPE_p_FESimple__IOSTouchController swig_types[8]
+#define SWIGTYPE_p_FESimple__LevelBase swig_types[9]
+#define SWIGTYPE_p_FESimple__LevelBound swig_types[10]
+#define SWIGTYPE_p_FESimple__LevelData swig_types[11]
+#define SWIGTYPE_p_FESimple__LevelTrigger swig_types[12]
+#define SWIGTYPE_p_FESimple__SpriteBase swig_types[13]
+#define SWIGTYPE_p_FESimple__SpriteComponent swig_types[14]
+#define SWIGTYPE_p_FESimple__animation swig_types[15]
+#define SWIGTYPE_p_FESimple__b2fixture_def swig_types[16]
+#define SWIGTYPE_p_FESimple__physic_desc swig_types[17]
+#define SWIGTYPE_p_FESimple__sprite_animation swig_types[18]
+#define SWIGTYPE_p_FESimple__sprite_component_desc swig_types[19]
+#define SWIGTYPE_p_FESimple__sprite_component_ref swig_types[20]
+#define SWIGTYPE_p_FESimple__sprite_desc swig_types[21]
+#define SWIGTYPE_p_FESimple__sprite_joint_desc swig_types[22]
+#define SWIGTYPE_p_allocator_type swig_types[23]
+#define SWIGTYPE_p_b2BodyDef swig_types[24]
+#define SWIGTYPE_p_b2BodyType swig_types[25]
+#define SWIGTYPE_p_b2Contact swig_types[26]
+#define SWIGTYPE_p_b2JointType swig_types[27]
+#define SWIGTYPE_p_b2Vec2 swig_types[28]
+#define SWIGTYPE_p_b2World swig_types[29]
+#define SWIGTYPE_p_bool swig_types[30]
+#define SWIGTYPE_p_char swig_types[31]
+#define SWIGTYPE_p_cocos2d__CCAction swig_types[32]
+#define SWIGTYPE_p_cocos2d__CCAffineTransform swig_types[33]
+#define SWIGTYPE_p_cocos2d__CCAnimation swig_types[34]
+#define SWIGTYPE_p_cocos2d__CCEvent swig_types[35]
+#define SWIGTYPE_p_cocos2d__CCPoint swig_types[36]
+#define SWIGTYPE_p_cocos2d__CCRect swig_types[37]
+#define SWIGTYPE_p_cocos2d__CCSize swig_types[38]
+#define SWIGTYPE_p_cocos2d__CCTouch swig_types[39]
+#define SWIGTYPE_p_const_reference swig_types[40]
+#define SWIGTYPE_p_difference_type swig_types[41]
+#define SWIGTYPE_p_key_type swig_types[42]
+#define SWIGTYPE_p_mapped_type swig_types[43]
+#define SWIGTYPE_p_p_PyObject swig_types[44]
+#define SWIGTYPE_p_reference swig_types[45]
+#define SWIGTYPE_p_size_type swig_types[46]
+#define SWIGTYPE_p_std__allocatorT_FESimple__ControllerBase_p_t swig_types[47]
+#define SWIGTYPE_p_std__allocatorT_std__pairT_std__string_const_std__string_t_t swig_types[48]
+#define SWIGTYPE_p_std__functionT_void_pfstd__mapT_std__string_std__string_std__lessT_std__string_t_std__allocatorT_std__pairT_std__string_const_std__string_t_t_t_const_RF_t swig_types[49]
+#define SWIGTYPE_p_std__invalid_argument swig_types[50]
+#define SWIGTYPE_p_std__lessT_std__string_t swig_types[51]
+#define SWIGTYPE_p_std__mapT_std__string_std__string_std__lessT_std__string_t_std__allocatorT_std__pairT_std__string_const_std__string_t_t_t swig_types[52]
+#define SWIGTYPE_p_std__shared_ptrT_FESimple__GameObjBase_t swig_types[53]
+#define SWIGTYPE_p_std__shared_ptrT_FESimple__sprite_component_desc_t swig_types[54]
+#define SWIGTYPE_p_std__string swig_types[55]
+#define SWIGTYPE_p_std__vectorT_ClassInfo_p_std__allocatorT_FESimple__ClassInfo_p_t_t swig_types[56]
+#define SWIGTYPE_p_std__vectorT_FESimple__ClassInfo_p_std__allocatorT_FESimple__ClassInfo_p_t_t swig_types[57]
+#define SWIGTYPE_p_std__vectorT_FESimple__ControllerBase_p_std__allocatorT_FESimple__ControllerBase_p_t_t swig_types[58]
+#define SWIGTYPE_p_std__vectorT_FESimple__LevelTrigger_std__allocatorT_FESimple__LevelTrigger_t_t swig_types[59]
+#define SWIGTYPE_p_std__vectorT_FESimple__b2fixture_def_std__allocatorT_FESimple__b2fixture_def_t_t swig_types[60]
+#define SWIGTYPE_p_std__vectorT_FESimple__sprite_component_ref_std__allocatorT_FESimple__sprite_component_ref_t_t swig_types[61]
+#define SWIGTYPE_p_std__vectorT_FESimple__sprite_joint_desc_std__allocatorT_FESimple__sprite_joint_desc_t_t swig_types[62]
+#define SWIGTYPE_p_std__vectorT__Tp_p__Alloc_t swig_types[63]
+#define SWIGTYPE_p_std__vectorT_float_std__allocatorT_float_t_t swig_types[64]
+#define SWIGTYPE_p_std__vectorT_std__string_std__allocatorT_std__string_t_t swig_types[65]
+#define SWIGTYPE_p_std__weak_ptrT_FESimple__SpriteBase_t swig_types[66]
+#define SWIGTYPE_p_swig__SwigPyIterator swig_types[67]
+#define SWIGTYPE_p_value_type swig_types[68]
+static swig_type_info *swig_types[70];
+static swig_module_info swig_module = {swig_types, 69, 0, 0, 0, 0};
 #define SWIG_TypeQuery(name) SWIG_TypeQueryModule(&swig_module, &swig_module, name)
 #define SWIG_MangledTypeQuery(name) SWIG_MangledTypeQueryModule(&swig_module, &swig_module, name)
 
@@ -3586,6 +3612,9 @@ namespace swig {
 #include "GameBase.h"
 #include "LevelBase.h"
 #include "SpriteComponent.h"
+#include "ControllerBase.h"
+#include "IOSTouchController.h"
+#include "cocos2d.h"
 
 
 #include <string>
@@ -3972,6 +4001,9 @@ SWIG_AsVal_ptrdiff_t (PyObject * obj, ptrdiff_t *val)
 #include <map>
 #include <algorithm>
 #include <stdexcept>
+
+
+#include <vector>
 
 
 SWIGINTERNINLINE PyObject*
@@ -5681,6 +5713,125 @@ SWIGINTERN PyObject *std_map_Sl_std_string_Sc_std_string_Sg__asdict(std::map< st
       return swig::traits_from< std::map<std::string,std::string,std::less< std::string >,std::allocator< std::pair< std::string const,std::string > > > >::asdict(*self);
     }
 
+  namespace swig {
+    template <>  struct traits<FESimple::ControllerBase > {
+      typedef pointer_category category;
+      static const char* type_name() { return"FESimple::ControllerBase"; }
+    };
+  }
+
+
+  namespace swig {
+    template <class T>
+    struct traits_asptr<std::vector<T> >  {
+      static int asptr(PyObject *obj, std::vector<T> **vec) {
+	return traits_asptr_stdseq<std::vector<T> >::asptr(obj, vec);
+      }
+    };
+    
+    template <class T>
+    struct traits_from<std::vector<T> > {
+      static PyObject *from(const std::vector<T>& vec) {
+	return traits_from_stdseq<std::vector<T> >::from(vec);
+      }
+    };
+  }
+
+
+      namespace swig {
+	template <>  struct traits<std::vector<FESimple::ControllerBase*, std::allocator< FESimple::ControllerBase * > > > {
+	  typedef value_category category;
+	  static const char* type_name() {
+	    return "std::vector<" "FESimple::ControllerBase" " *," "std::allocator< FESimple::ControllerBase * >" " >";
+	  }
+	};
+      }
+    
+SWIGINTERN swig::SwigPyIterator *std_vector_Sl_FESimple_ControllerBase_Sm__Sg__iterator(std::vector< FESimple::ControllerBase * > *self,PyObject **PYTHON_SELF){
+      return swig::make_output_iterator(self->begin(), self->begin(), self->end(), *PYTHON_SELF);
+    }
+SWIGINTERN bool std_vector_Sl_FESimple_ControllerBase_Sm__Sg____nonzero__(std::vector< FESimple::ControllerBase * > const *self){
+      return !(self->empty());
+    }
+SWIGINTERN bool std_vector_Sl_FESimple_ControllerBase_Sm__Sg____bool__(std::vector< FESimple::ControllerBase * > const *self){
+      return !(self->empty());
+    }
+SWIGINTERN std::vector< FESimple::ControllerBase * >::size_type std_vector_Sl_FESimple_ControllerBase_Sm__Sg____len__(std::vector< FESimple::ControllerBase * > const *self){
+      return self->size();
+    }
+SWIGINTERN std::vector< FESimple::ControllerBase * >::value_type std_vector_Sl_FESimple_ControllerBase_Sm__Sg__pop(std::vector< FESimple::ControllerBase * > *self){
+      if (self->size() == 0)
+	throw std::out_of_range("pop from empty container");
+      std::vector<FESimple::ControllerBase*,std::allocator< FESimple::ControllerBase * > >::value_type x = self->back();
+      self->pop_back();
+      return x;
+    }
+SWIGINTERN std::vector< FESimple::ControllerBase *,std::allocator< FESimple::ControllerBase * > > *std_vector_Sl_FESimple_ControllerBase_Sm__Sg____getslice__(std::vector< FESimple::ControllerBase * > *self,std::vector< FESimple::ControllerBase * >::difference_type i,std::vector< FESimple::ControllerBase * >::difference_type j){
+      return swig::getslice(self, i, j, 1);
+    }
+SWIGINTERN void std_vector_Sl_FESimple_ControllerBase_Sm__Sg____setslice____SWIG_0(std::vector< FESimple::ControllerBase * > *self,std::vector< FESimple::ControllerBase * >::difference_type i,std::vector< FESimple::ControllerBase * >::difference_type j,std::vector< FESimple::ControllerBase *,std::allocator< FESimple::ControllerBase * > > const &v=std::vector< FESimple::ControllerBase *,std::allocator< FESimple::ControllerBase * > >()){
+      swig::setslice(self, i, j, 1, v);
+    }
+SWIGINTERN void std_vector_Sl_FESimple_ControllerBase_Sm__Sg____delslice__(std::vector< FESimple::ControllerBase * > *self,std::vector< FESimple::ControllerBase * >::difference_type i,std::vector< FESimple::ControllerBase * >::difference_type j){
+      swig::delslice(self, i, j, 1);
+    }
+SWIGINTERN void std_vector_Sl_FESimple_ControllerBase_Sm__Sg____delitem____SWIG_0(std::vector< FESimple::ControllerBase * > *self,std::vector< FESimple::ControllerBase * >::difference_type i){
+      self->erase(swig::getpos(self,i));
+    }
+SWIGINTERN std::vector< FESimple::ControllerBase *,std::allocator< FESimple::ControllerBase * > > *std_vector_Sl_FESimple_ControllerBase_Sm__Sg____getitem____SWIG_0(std::vector< FESimple::ControllerBase * > *self,PySliceObject *slice){
+      Py_ssize_t i, j, step;
+      if( !PySlice_Check(slice) ) {
+        SWIG_Error(SWIG_TypeError, "Slice object expected.");
+        return NULL;
+      }
+      PySlice_GetIndices(SWIGPY_SLICE_ARG(slice), (Py_ssize_t)self->size(), &i, &j, &step);
+      std::vector<FESimple::ControllerBase*,std::allocator< FESimple::ControllerBase * > >::difference_type id = i;
+      std::vector<FESimple::ControllerBase*,std::allocator< FESimple::ControllerBase * > >::difference_type jd = j;
+      return swig::getslice(self, id, jd, step);
+    }
+SWIGINTERN void std_vector_Sl_FESimple_ControllerBase_Sm__Sg____setitem____SWIG_0(std::vector< FESimple::ControllerBase * > *self,PySliceObject *slice,std::vector< FESimple::ControllerBase *,std::allocator< FESimple::ControllerBase * > > const &v){
+      Py_ssize_t i, j, step;
+      if( !PySlice_Check(slice) ) {
+        SWIG_Error(SWIG_TypeError, "Slice object expected.");
+        return;
+      }
+      PySlice_GetIndices(SWIGPY_SLICE_ARG(slice), (Py_ssize_t)self->size(), &i, &j, &step);
+      std::vector<FESimple::ControllerBase*,std::allocator< FESimple::ControllerBase * > >::difference_type id = i;
+      std::vector<FESimple::ControllerBase*,std::allocator< FESimple::ControllerBase * > >::difference_type jd = j;
+      swig::setslice(self, id, jd, step, v);
+    }
+SWIGINTERN void std_vector_Sl_FESimple_ControllerBase_Sm__Sg____setitem____SWIG_1(std::vector< FESimple::ControllerBase * > *self,PySliceObject *slice){
+      Py_ssize_t i, j, step;
+      if( !PySlice_Check(slice) ) {
+        SWIG_Error(SWIG_TypeError, "Slice object expected.");
+        return;
+      }
+      PySlice_GetIndices(SWIGPY_SLICE_ARG(slice), (Py_ssize_t)self->size(), &i, &j, &step);
+      std::vector<FESimple::ControllerBase*,std::allocator< FESimple::ControllerBase * > >::difference_type id = i;
+      std::vector<FESimple::ControllerBase*,std::allocator< FESimple::ControllerBase * > >::difference_type jd = j;
+      swig::delslice(self, id, jd, step);
+    }
+SWIGINTERN void std_vector_Sl_FESimple_ControllerBase_Sm__Sg____delitem____SWIG_1(std::vector< FESimple::ControllerBase * > *self,PySliceObject *slice){
+      Py_ssize_t i, j, step;
+      if( !PySlice_Check(slice) ) {
+        SWIG_Error(SWIG_TypeError, "Slice object expected.");
+        return;
+      }
+      PySlice_GetIndices(SWIGPY_SLICE_ARG(slice), (Py_ssize_t)self->size(), &i, &j, &step);
+      std::vector<FESimple::ControllerBase*,std::allocator< FESimple::ControllerBase * > >::difference_type id = i;
+      std::vector<FESimple::ControllerBase*,std::allocator< FESimple::ControllerBase * > >::difference_type jd = j;
+      swig::delslice(self, id, jd, step);
+    }
+SWIGINTERN std::vector< FESimple::ControllerBase * >::value_type std_vector_Sl_FESimple_ControllerBase_Sm__Sg____getitem____SWIG_1(std::vector< FESimple::ControllerBase * > *self,std::vector< FESimple::ControllerBase * >::difference_type i){
+      return *(swig::cgetpos(self, i));
+    }
+SWIGINTERN void std_vector_Sl_FESimple_ControllerBase_Sm__Sg____setitem____SWIG_2(std::vector< FESimple::ControllerBase * > *self,std::vector< FESimple::ControllerBase * >::difference_type i,std::vector< FESimple::ControllerBase * >::value_type x){
+      *(swig::getpos(self,i)) = x;
+    }
+SWIGINTERN void std_vector_Sl_FESimple_ControllerBase_Sm__Sg__append(std::vector< FESimple::ControllerBase * > *self,std::vector< FESimple::ControllerBase * >::value_type x){
+      self->push_back(x);
+    }
+
 SWIGINTERN int
 SWIG_AsVal_float (PyObject * obj, float *val)
 {
@@ -5697,14 +5848,13 @@ SWIG_AsVal_float (PyObject * obj, float *val)
 }
 
 
-SWIGINTERN int
-SWIG_AsVal_bool (PyObject *obj, bool *val)
-{
-  int r = PyObject_IsTrue(obj);
-  if (r == -1)
-    return SWIG_ERROR;
-  if (val) *val = r ? true : false;
-  return SWIG_OK;
+  #define SWIG_From_double   PyFloat_FromDouble 
+
+
+SWIGINTERNINLINE PyObject *
+SWIG_From_float  (float value)
+{    
+  return SWIG_From_double  (value);
 }
 
 
@@ -5716,6 +5866,33 @@ SWIG_AsVal_bool (PyObject *obj, bool *val)
 #   define ULLONG_MAX (LLONG_MAX * 2ULL + 1ULL)
 # endif
 #endif
+
+
+SWIGINTERN int
+SWIG_AsVal_int (PyObject * obj, int *val)
+{
+  long v;
+  int res = SWIG_AsVal_long (obj, &v);
+  if (SWIG_IsOK(res)) {
+    if ((v < INT_MIN || v > INT_MAX)) {
+      return SWIG_OverflowError;
+    } else {
+      if (val) *val = static_cast< int >(v);
+    }
+  }  
+  return res;
+}
+
+
+SWIGINTERN int
+SWIG_AsVal_bool (PyObject *obj, bool *val)
+{
+  int r = PyObject_IsTrue(obj);
+  if (r == -1)
+    return SWIG_ERROR;
+  if (val) *val = r ? true : false;
+  return SWIG_OK;
+}
 
 
 SWIGINTERN int
@@ -5734,13 +5911,10 @@ SWIG_AsVal_unsigned_SS_int (PyObject * obj, unsigned int *val)
 }
 
 
-  #define SWIG_From_double   PyFloat_FromDouble 
-
-
-SWIGINTERNINLINE PyObject *
-SWIG_From_float  (float value)
-{    
-  return SWIG_From_double  (value);
+SWIGINTERNINLINE PyObject*
+  SWIG_From_unsigned_SS_int  (unsigned int value)
+{
+  return PyInt_FromSize_t((size_t) value);
 }
 
 
@@ -5753,6 +5927,540 @@ SWIG_From_float  (float value)
  * --------------------------------------------------- */
 
 #include "FEX_wrap.h"
+
+SwigDirector_GameObjBase::SwigDirector_GameObjBase(PyObject *self, FESimple::SpawnParams const &params): FESimple::GameObjBase(params), Swig::Director(self) {
+  SWIG_DIRECTOR_RGTR((FESimple::GameObjBase *)this, this); 
+}
+
+
+
+
+SwigDirector_GameObjBase::SwigDirector_GameObjBase(PyObject *self): FESimple::GameObjBase(), Swig::Director(self) {
+  SWIG_DIRECTOR_RGTR((FESimple::GameObjBase *)this, this); 
+}
+
+
+
+
+FESimple::ClassInfo *SwigDirector_GameObjBase::get_class_info() {
+  void *swig_argp ;
+  int swig_res ;
+  swig_owntype own ;
+  
+  FESimple::ClassInfo *c_result;
+  if (!swig_get_self()) {
+    Swig::DirectorException::raise("'self' uninitialized, maybe you forgot to call GameObjBase.__init__.");
+  }
+#if defined(SWIG_PYTHON_DIRECTOR_VTABLE)
+  const size_t swig_method_index = 0;
+  const char * const swig_method_name = "get_class_info";
+  PyObject* method = swig_get_method(swig_method_index, swig_method_name);
+  swig::SwigVar_PyObject result = PyObject_CallFunction(method, NULL, NULL);
+#else
+  swig::SwigVar_PyObject result = PyObject_CallMethod(swig_get_self(), (char *) "get_class_info", NULL);
+#endif
+  if (!result) {
+    PyObject *error = PyErr_Occurred();
+    if (error) {
+      Swig::DirectorMethodException::raise("Error detected when calling 'GameObjBase.get_class_info'");
+    }
+  }
+  swig_res = SWIG_ConvertPtrAndOwn(result, &swig_argp, SWIGTYPE_p_FESimple__ClassInfo,  0  | SWIG_POINTER_DISOWN, &own);
+  if (!SWIG_IsOK(swig_res)) {
+    Swig::DirectorTypeMismatchException::raise(SWIG_ErrorType(SWIG_ArgError(swig_res)), "in output value of type '""FESimple::ClassInfo *""'");
+  }
+  c_result = reinterpret_cast< FESimple::ClassInfo * >(swig_argp);
+  swig_acquire_ownership_obj(SWIG_as_voidptr(c_result), own /* & TODO: SWIG_POINTER_OWN */);
+  return (FESimple::ClassInfo *) c_result;
+}
+
+
+SwigDirector_GameObjBase::~SwigDirector_GameObjBase() {
+}
+
+void SwigDirector_GameObjBase::added_to_game(FESimple::GameBase *game, FESimple::Name const &to_layer) {
+  swig::SwigVar_PyObject obj0;
+  obj0 = SWIG_NewPointerObj(SWIG_as_voidptr(game), SWIGTYPE_p_FESimple__GameBase,  0 );
+  swig::SwigVar_PyObject obj1;
+  obj1 = SWIG_From_std_string(static_cast< std::string >(to_layer));
+  if (!swig_get_self()) {
+    Swig::DirectorException::raise("'self' uninitialized, maybe you forgot to call GameObjBase.__init__.");
+  }
+#if defined(SWIG_PYTHON_DIRECTOR_VTABLE)
+  const size_t swig_method_index = 1;
+  const char * const swig_method_name = "added_to_game";
+  PyObject* method = swig_get_method(swig_method_index, swig_method_name);
+  swig::SwigVar_PyObject result = PyObject_CallFunction(method, (char *)"(OO)" ,(PyObject *)obj0,(PyObject *)obj1);
+#else
+  swig::SwigVar_PyObject result = PyObject_CallMethod(swig_get_self(), (char *)"added_to_game", (char *)"(OO)" ,(PyObject *)obj0,(PyObject *)obj1);
+#endif
+  if (!result) {
+    PyObject *error = PyErr_Occurred();
+    if (error) {
+      Swig::DirectorMethodException::raise("Error detected when calling 'GameObjBase.added_to_game'");
+    }
+  }
+}
+
+
+void SwigDirector_GameObjBase::removed_from_game(FESimple::GameBase *game) {
+  swig::SwigVar_PyObject obj0;
+  obj0 = SWIG_NewPointerObj(SWIG_as_voidptr(game), SWIGTYPE_p_FESimple__GameBase,  0 );
+  if (!swig_get_self()) {
+    Swig::DirectorException::raise("'self' uninitialized, maybe you forgot to call GameObjBase.__init__.");
+  }
+#if defined(SWIG_PYTHON_DIRECTOR_VTABLE)
+  const size_t swig_method_index = 2;
+  const char * const swig_method_name = "removed_from_game";
+  PyObject* method = swig_get_method(swig_method_index, swig_method_name);
+  swig::SwigVar_PyObject result = PyObject_CallFunction(method, (char *)"(O)" ,(PyObject *)obj0);
+#else
+  swig::SwigVar_PyObject result = PyObject_CallMethod(swig_get_self(), (char *)"removed_from_game", (char *)"(O)" ,(PyObject *)obj0);
+#endif
+  if (!result) {
+    PyObject *error = PyErr_Occurred();
+    if (error) {
+      Swig::DirectorMethodException::raise("Error detected when calling 'GameObjBase.removed_from_game'");
+    }
+  }
+}
+
+
+void SwigDirector_GameObjBase::update(float delta_time) {
+  swig::SwigVar_PyObject obj0;
+  obj0 = SWIG_From_float(static_cast< float >(delta_time));
+  if (!swig_get_self()) {
+    Swig::DirectorException::raise("'self' uninitialized, maybe you forgot to call GameObjBase.__init__.");
+  }
+#if defined(SWIG_PYTHON_DIRECTOR_VTABLE)
+  const size_t swig_method_index = 3;
+  const char * const swig_method_name = "update";
+  PyObject* method = swig_get_method(swig_method_index, swig_method_name);
+  swig::SwigVar_PyObject result = PyObject_CallFunction(method, (char *)"(O)" ,(PyObject *)obj0);
+#else
+  swig::SwigVar_PyObject result = PyObject_CallMethod(swig_get_self(), (char *)"update", (char *)"(O)" ,(PyObject *)obj0);
+#endif
+  if (!result) {
+    PyObject *error = PyErr_Occurred();
+    if (error) {
+      Swig::DirectorMethodException::raise("Error detected when calling 'GameObjBase.update'");
+    }
+  }
+}
+
+
+SwigDirector_SpriteBase::SwigDirector_SpriteBase(PyObject *self): FESimple::SpriteBase(), Swig::Director(self) {
+  SWIG_DIRECTOR_RGTR((FESimple::SpriteBase *)this, this); 
+}
+
+
+
+
+SwigDirector_SpriteBase::SwigDirector_SpriteBase(PyObject *self, FESimple::SpawnParams const &params): FESimple::SpriteBase(params), Swig::Director(self) {
+  SWIG_DIRECTOR_RGTR((FESimple::SpriteBase *)this, this); 
+}
+
+
+
+
+SwigDirector_SpriteBase::SwigDirector_SpriteBase(PyObject *self, cocos2d::CCPoint const &location, FESimple::SpawnParams const &params): FESimple::SpriteBase(location, params), Swig::Director(self) {
+  SWIG_DIRECTOR_RGTR((FESimple::SpriteBase *)this, this); 
+}
+
+
+
+
+FESimple::ClassInfo *SwigDirector_SpriteBase::get_class_info() {
+  void *swig_argp ;
+  int swig_res ;
+  swig_owntype own ;
+  
+  FESimple::ClassInfo *c_result;
+  if (!swig_get_self()) {
+    Swig::DirectorException::raise("'self' uninitialized, maybe you forgot to call SpriteBase.__init__.");
+  }
+#if defined(SWIG_PYTHON_DIRECTOR_VTABLE)
+  const size_t swig_method_index = 0;
+  const char * const swig_method_name = "get_class_info";
+  PyObject* method = swig_get_method(swig_method_index, swig_method_name);
+  swig::SwigVar_PyObject result = PyObject_CallFunction(method, NULL, NULL);
+#else
+  swig::SwigVar_PyObject result = PyObject_CallMethod(swig_get_self(), (char *) "get_class_info", NULL);
+#endif
+  if (!result) {
+    PyObject *error = PyErr_Occurred();
+    if (error) {
+      Swig::DirectorMethodException::raise("Error detected when calling 'SpriteBase.get_class_info'");
+    }
+  }
+  swig_res = SWIG_ConvertPtrAndOwn(result, &swig_argp, SWIGTYPE_p_FESimple__ClassInfo,  0  | SWIG_POINTER_DISOWN, &own);
+  if (!SWIG_IsOK(swig_res)) {
+    Swig::DirectorTypeMismatchException::raise(SWIG_ErrorType(SWIG_ArgError(swig_res)), "in output value of type '""FESimple::ClassInfo *""'");
+  }
+  c_result = reinterpret_cast< FESimple::ClassInfo * >(swig_argp);
+  swig_acquire_ownership_obj(SWIG_as_voidptr(c_result), own /* & TODO: SWIG_POINTER_OWN */);
+  return (FESimple::ClassInfo *) c_result;
+}
+
+
+SwigDirector_SpriteBase::~SwigDirector_SpriteBase() {
+}
+
+void SwigDirector_SpriteBase::added_to_game(FESimple::GameBase *game, FESimple::Name const &to_layer) {
+  swig::SwigVar_PyObject obj0;
+  obj0 = SWIG_NewPointerObj(SWIG_as_voidptr(game), SWIGTYPE_p_FESimple__GameBase,  0 );
+  swig::SwigVar_PyObject obj1;
+  obj1 = SWIG_From_std_string(static_cast< std::string >(to_layer));
+  if (!swig_get_self()) {
+    Swig::DirectorException::raise("'self' uninitialized, maybe you forgot to call SpriteBase.__init__.");
+  }
+#if defined(SWIG_PYTHON_DIRECTOR_VTABLE)
+  const size_t swig_method_index = 1;
+  const char * const swig_method_name = "added_to_game";
+  PyObject* method = swig_get_method(swig_method_index, swig_method_name);
+  swig::SwigVar_PyObject result = PyObject_CallFunction(method, (char *)"(OO)" ,(PyObject *)obj0,(PyObject *)obj1);
+#else
+  swig::SwigVar_PyObject result = PyObject_CallMethod(swig_get_self(), (char *)"added_to_game", (char *)"(OO)" ,(PyObject *)obj0,(PyObject *)obj1);
+#endif
+  if (!result) {
+    PyObject *error = PyErr_Occurred();
+    if (error) {
+      Swig::DirectorMethodException::raise("Error detected when calling 'SpriteBase.added_to_game'");
+    }
+  }
+}
+
+
+void SwigDirector_SpriteBase::removed_from_game(FESimple::GameBase *game) {
+  swig::SwigVar_PyObject obj0;
+  obj0 = SWIG_NewPointerObj(SWIG_as_voidptr(game), SWIGTYPE_p_FESimple__GameBase,  0 );
+  if (!swig_get_self()) {
+    Swig::DirectorException::raise("'self' uninitialized, maybe you forgot to call SpriteBase.__init__.");
+  }
+#if defined(SWIG_PYTHON_DIRECTOR_VTABLE)
+  const size_t swig_method_index = 2;
+  const char * const swig_method_name = "removed_from_game";
+  PyObject* method = swig_get_method(swig_method_index, swig_method_name);
+  swig::SwigVar_PyObject result = PyObject_CallFunction(method, (char *)"(O)" ,(PyObject *)obj0);
+#else
+  swig::SwigVar_PyObject result = PyObject_CallMethod(swig_get_self(), (char *)"removed_from_game", (char *)"(O)" ,(PyObject *)obj0);
+#endif
+  if (!result) {
+    PyObject *error = PyErr_Occurred();
+    if (error) {
+      Swig::DirectorMethodException::raise("Error detected when calling 'SpriteBase.removed_from_game'");
+    }
+  }
+}
+
+
+void SwigDirector_SpriteBase::update(float delta_time) {
+  swig::SwigVar_PyObject obj0;
+  obj0 = SWIG_From_float(static_cast< float >(delta_time));
+  if (!swig_get_self()) {
+    Swig::DirectorException::raise("'self' uninitialized, maybe you forgot to call SpriteBase.__init__.");
+  }
+#if defined(SWIG_PYTHON_DIRECTOR_VTABLE)
+  const size_t swig_method_index = 3;
+  const char * const swig_method_name = "update";
+  PyObject* method = swig_get_method(swig_method_index, swig_method_name);
+  swig::SwigVar_PyObject result = PyObject_CallFunction(method, (char *)"(O)" ,(PyObject *)obj0);
+#else
+  swig::SwigVar_PyObject result = PyObject_CallMethod(swig_get_self(), (char *)"update", (char *)"(O)" ,(PyObject *)obj0);
+#endif
+  if (!result) {
+    PyObject *error = PyErr_Occurred();
+    if (error) {
+      Swig::DirectorMethodException::raise("Error detected when calling 'SpriteBase.update'");
+    }
+  }
+}
+
+
+void SwigDirector_SpriteBase::begin_contact(b2Contact *contact) {
+  swig::SwigVar_PyObject obj0;
+  obj0 = SWIG_NewPointerObj(SWIG_as_voidptr(contact), SWIGTYPE_p_b2Contact,  0 );
+  if (!swig_get_self()) {
+    Swig::DirectorException::raise("'self' uninitialized, maybe you forgot to call SpriteBase.__init__.");
+  }
+#if defined(SWIG_PYTHON_DIRECTOR_VTABLE)
+  const size_t swig_method_index = 4;
+  const char * const swig_method_name = "begin_contact";
+  PyObject* method = swig_get_method(swig_method_index, swig_method_name);
+  swig::SwigVar_PyObject result = PyObject_CallFunction(method, (char *)"(O)" ,(PyObject *)obj0);
+#else
+  swig::SwigVar_PyObject result = PyObject_CallMethod(swig_get_self(), (char *)"begin_contact", (char *)"(O)" ,(PyObject *)obj0);
+#endif
+  if (!result) {
+    PyObject *error = PyErr_Occurred();
+    if (error) {
+      Swig::DirectorMethodException::raise("Error detected when calling 'SpriteBase.begin_contact'");
+    }
+  }
+}
+
+
+void SwigDirector_SpriteBase::end_contact(b2Contact *contact) {
+  swig::SwigVar_PyObject obj0;
+  obj0 = SWIG_NewPointerObj(SWIG_as_voidptr(contact), SWIGTYPE_p_b2Contact,  0 );
+  if (!swig_get_self()) {
+    Swig::DirectorException::raise("'self' uninitialized, maybe you forgot to call SpriteBase.__init__.");
+  }
+#if defined(SWIG_PYTHON_DIRECTOR_VTABLE)
+  const size_t swig_method_index = 5;
+  const char * const swig_method_name = "end_contact";
+  PyObject* method = swig_get_method(swig_method_index, swig_method_name);
+  swig::SwigVar_PyObject result = PyObject_CallFunction(method, (char *)"(O)" ,(PyObject *)obj0);
+#else
+  swig::SwigVar_PyObject result = PyObject_CallMethod(swig_get_self(), (char *)"end_contact", (char *)"(O)" ,(PyObject *)obj0);
+#endif
+  if (!result) {
+    PyObject *error = PyErr_Occurred();
+    if (error) {
+      Swig::DirectorMethodException::raise("Error detected when calling 'SpriteBase.end_contact'");
+    }
+  }
+}
+
+
+void SwigDirector_SpriteBase::set_position(cocos2d::CCPoint pos) {
+  swig::SwigVar_PyObject obj0;
+  obj0 = SWIG_NewPointerObj(SWIG_as_voidptr(&pos), SWIGTYPE_p_cocos2d__CCPoint,  0 );
+  if (!swig_get_self()) {
+    Swig::DirectorException::raise("'self' uninitialized, maybe you forgot to call SpriteBase.__init__.");
+  }
+#if defined(SWIG_PYTHON_DIRECTOR_VTABLE)
+  const size_t swig_method_index = 6;
+  const char * const swig_method_name = "set_position";
+  PyObject* method = swig_get_method(swig_method_index, swig_method_name);
+  swig::SwigVar_PyObject result = PyObject_CallFunction(method, (char *)"(O)" ,(PyObject *)obj0);
+#else
+  swig::SwigVar_PyObject result = PyObject_CallMethod(swig_get_self(), (char *)"set_position", (char *)"(O)" ,(PyObject *)obj0);
+#endif
+  if (!result) {
+    PyObject *error = PyErr_Occurred();
+    if (error) {
+      Swig::DirectorMethodException::raise("Error detected when calling 'SpriteBase.set_position'");
+    }
+  }
+}
+
+
+void SwigDirector_SpriteBase::set_rotation(float angle) {
+  swig::SwigVar_PyObject obj0;
+  obj0 = SWIG_From_float(static_cast< float >(angle));
+  if (!swig_get_self()) {
+    Swig::DirectorException::raise("'self' uninitialized, maybe you forgot to call SpriteBase.__init__.");
+  }
+#if defined(SWIG_PYTHON_DIRECTOR_VTABLE)
+  const size_t swig_method_index = 7;
+  const char * const swig_method_name = "set_rotation";
+  PyObject* method = swig_get_method(swig_method_index, swig_method_name);
+  swig::SwigVar_PyObject result = PyObject_CallFunction(method, (char *)"(O)" ,(PyObject *)obj0);
+#else
+  swig::SwigVar_PyObject result = PyObject_CallMethod(swig_get_self(), (char *)"set_rotation", (char *)"(O)" ,(PyObject *)obj0);
+#endif
+  if (!result) {
+    PyObject *error = PyErr_Occurred();
+    if (error) {
+      Swig::DirectorMethodException::raise("Error detected when calling 'SpriteBase.set_rotation'");
+    }
+  }
+}
+
+
+SwigDirector_GameBase::SwigDirector_GameBase(PyObject *self): FESimple::GameBase(), Swig::Director(self) {
+  SWIG_DIRECTOR_RGTR((FESimple::GameBase *)this, this); 
+}
+
+
+
+
+SwigDirector_GameBase::~SwigDirector_GameBase() {
+}
+
+void SwigDirector_GameBase::update(float delta_time) {
+  swig::SwigVar_PyObject obj0;
+  obj0 = SWIG_From_float(static_cast< float >(delta_time));
+  if (!swig_get_self()) {
+    Swig::DirectorException::raise("'self' uninitialized, maybe you forgot to call GameBase.__init__.");
+  }
+#if defined(SWIG_PYTHON_DIRECTOR_VTABLE)
+  const size_t swig_method_index = 0;
+  const char * const swig_method_name = "update";
+  PyObject* method = swig_get_method(swig_method_index, swig_method_name);
+  swig::SwigVar_PyObject result = PyObject_CallFunction(method, (char *)"(O)" ,(PyObject *)obj0);
+#else
+  swig::SwigVar_PyObject result = PyObject_CallMethod(swig_get_self(), (char *)"update", (char *)"(O)" ,(PyObject *)obj0);
+#endif
+  if (!result) {
+    PyObject *error = PyErr_Occurred();
+    if (error) {
+      Swig::DirectorMethodException::raise("Error detected when calling 'GameBase.update'");
+    }
+  }
+}
+
+
+SwigDirector_IOSTouchController::SwigDirector_IOSTouchController(PyObject *self): FESimple::IOSTouchController(), Swig::Director(self) {
+  SWIG_DIRECTOR_RGTR((FESimple::IOSTouchController *)this, this); 
+}
+
+
+
+
+void SwigDirector_IOSTouchController::plug() {
+  if (!swig_get_self()) {
+    Swig::DirectorException::raise("'self' uninitialized, maybe you forgot to call IOSTouchController.__init__.");
+  }
+#if defined(SWIG_PYTHON_DIRECTOR_VTABLE)
+  const size_t swig_method_index = 0;
+  const char * const swig_method_name = "plug";
+  PyObject* method = swig_get_method(swig_method_index, swig_method_name);
+  swig::SwigVar_PyObject result = PyObject_CallFunction(method, NULL, NULL);
+#else
+  swig::SwigVar_PyObject result = PyObject_CallMethod(swig_get_self(), (char *) "plug", NULL);
+#endif
+  if (!result) {
+    PyObject *error = PyErr_Occurred();
+    if (error) {
+      Swig::DirectorMethodException::raise("Error detected when calling 'IOSTouchController.plug'");
+    }
+  }
+}
+
+
+void SwigDirector_IOSTouchController::unplug() {
+  if (!swig_get_self()) {
+    Swig::DirectorException::raise("'self' uninitialized, maybe you forgot to call IOSTouchController.__init__.");
+  }
+#if defined(SWIG_PYTHON_DIRECTOR_VTABLE)
+  const size_t swig_method_index = 1;
+  const char * const swig_method_name = "unplug";
+  PyObject* method = swig_get_method(swig_method_index, swig_method_name);
+  swig::SwigVar_PyObject result = PyObject_CallFunction(method, NULL, NULL);
+#else
+  swig::SwigVar_PyObject result = PyObject_CallMethod(swig_get_self(), (char *) "unplug", NULL);
+#endif
+  if (!result) {
+    PyObject *error = PyErr_Occurred();
+    if (error) {
+      Swig::DirectorMethodException::raise("Error detected when calling 'IOSTouchController.unplug'");
+    }
+  }
+}
+
+
+SwigDirector_IOSTouchController::~SwigDirector_IOSTouchController() {
+}
+
+bool SwigDirector_IOSTouchController::ccTouchBegan(cocos2d::CCTouch *pTouch, cocos2d::CCEvent *pEvent) {
+  bool c_result;
+  swig::SwigVar_PyObject obj0;
+  obj0 = SWIG_NewPointerObj(SWIG_as_voidptr(pTouch), SWIGTYPE_p_cocos2d__CCTouch,  0 );
+  swig::SwigVar_PyObject obj1;
+  obj1 = SWIG_NewPointerObj(SWIG_as_voidptr(pEvent), SWIGTYPE_p_cocos2d__CCEvent,  0 );
+  if (!swig_get_self()) {
+    Swig::DirectorException::raise("'self' uninitialized, maybe you forgot to call IOSTouchController.__init__.");
+  }
+#if defined(SWIG_PYTHON_DIRECTOR_VTABLE)
+  const size_t swig_method_index = 2;
+  const char * const swig_method_name = "ccTouchBegan";
+  PyObject* method = swig_get_method(swig_method_index, swig_method_name);
+  swig::SwigVar_PyObject result = PyObject_CallFunction(method, (char *)"(OO)" ,(PyObject *)obj0,(PyObject *)obj1);
+#else
+  swig::SwigVar_PyObject result = PyObject_CallMethod(swig_get_self(), (char *)"ccTouchBegan", (char *)"(OO)" ,(PyObject *)obj0,(PyObject *)obj1);
+#endif
+  if (!result) {
+    PyObject *error = PyErr_Occurred();
+    if (error) {
+      Swig::DirectorMethodException::raise("Error detected when calling 'IOSTouchController.ccTouchBegan'");
+    }
+  }
+  bool swig_val;
+  int swig_res = SWIG_AsVal_bool(result, &swig_val);
+  if (!SWIG_IsOK(swig_res)) {
+    Swig::DirectorTypeMismatchException::raise(SWIG_ErrorType(SWIG_ArgError(swig_res)), "in output value of type '""bool""'");
+  }
+  c_result = static_cast< bool >(swig_val);
+  return (bool) c_result;
+}
+
+
+void SwigDirector_IOSTouchController::ccTouchMoved(cocos2d::CCTouch *pTouch, cocos2d::CCEvent *pEvent) {
+  swig::SwigVar_PyObject obj0;
+  obj0 = SWIG_NewPointerObj(SWIG_as_voidptr(pTouch), SWIGTYPE_p_cocos2d__CCTouch,  0 );
+  swig::SwigVar_PyObject obj1;
+  obj1 = SWIG_NewPointerObj(SWIG_as_voidptr(pEvent), SWIGTYPE_p_cocos2d__CCEvent,  0 );
+  if (!swig_get_self()) {
+    Swig::DirectorException::raise("'self' uninitialized, maybe you forgot to call IOSTouchController.__init__.");
+  }
+#if defined(SWIG_PYTHON_DIRECTOR_VTABLE)
+  const size_t swig_method_index = 3;
+  const char * const swig_method_name = "ccTouchMoved";
+  PyObject* method = swig_get_method(swig_method_index, swig_method_name);
+  swig::SwigVar_PyObject result = PyObject_CallFunction(method, (char *)"(OO)" ,(PyObject *)obj0,(PyObject *)obj1);
+#else
+  swig::SwigVar_PyObject result = PyObject_CallMethod(swig_get_self(), (char *)"ccTouchMoved", (char *)"(OO)" ,(PyObject *)obj0,(PyObject *)obj1);
+#endif
+  if (!result) {
+    PyObject *error = PyErr_Occurred();
+    if (error) {
+      Swig::DirectorMethodException::raise("Error detected when calling 'IOSTouchController.ccTouchMoved'");
+    }
+  }
+}
+
+
+void SwigDirector_IOSTouchController::ccTouchEnded(cocos2d::CCTouch *pTouch, cocos2d::CCEvent *pEvent) {
+  swig::SwigVar_PyObject obj0;
+  obj0 = SWIG_NewPointerObj(SWIG_as_voidptr(pTouch), SWIGTYPE_p_cocos2d__CCTouch,  0 );
+  swig::SwigVar_PyObject obj1;
+  obj1 = SWIG_NewPointerObj(SWIG_as_voidptr(pEvent), SWIGTYPE_p_cocos2d__CCEvent,  0 );
+  if (!swig_get_self()) {
+    Swig::DirectorException::raise("'self' uninitialized, maybe you forgot to call IOSTouchController.__init__.");
+  }
+#if defined(SWIG_PYTHON_DIRECTOR_VTABLE)
+  const size_t swig_method_index = 4;
+  const char * const swig_method_name = "ccTouchEnded";
+  PyObject* method = swig_get_method(swig_method_index, swig_method_name);
+  swig::SwigVar_PyObject result = PyObject_CallFunction(method, (char *)"(OO)" ,(PyObject *)obj0,(PyObject *)obj1);
+#else
+  swig::SwigVar_PyObject result = PyObject_CallMethod(swig_get_self(), (char *)"ccTouchEnded", (char *)"(OO)" ,(PyObject *)obj0,(PyObject *)obj1);
+#endif
+  if (!result) {
+    PyObject *error = PyErr_Occurred();
+    if (error) {
+      Swig::DirectorMethodException::raise("Error detected when calling 'IOSTouchController.ccTouchEnded'");
+    }
+  }
+}
+
+
+void SwigDirector_IOSTouchController::ccTouchCancelled(cocos2d::CCTouch *pTouch, cocos2d::CCEvent *pEvent) {
+  swig::SwigVar_PyObject obj0;
+  obj0 = SWIG_NewPointerObj(SWIG_as_voidptr(pTouch), SWIGTYPE_p_cocos2d__CCTouch,  0 );
+  swig::SwigVar_PyObject obj1;
+  obj1 = SWIG_NewPointerObj(SWIG_as_voidptr(pEvent), SWIGTYPE_p_cocos2d__CCEvent,  0 );
+  if (!swig_get_self()) {
+    Swig::DirectorException::raise("'self' uninitialized, maybe you forgot to call IOSTouchController.__init__.");
+  }
+#if defined(SWIG_PYTHON_DIRECTOR_VTABLE)
+  const size_t swig_method_index = 5;
+  const char * const swig_method_name = "ccTouchCancelled";
+  PyObject* method = swig_get_method(swig_method_index, swig_method_name);
+  swig::SwigVar_PyObject result = PyObject_CallFunction(method, (char *)"(OO)" ,(PyObject *)obj0,(PyObject *)obj1);
+#else
+  swig::SwigVar_PyObject result = PyObject_CallMethod(swig_get_self(), (char *)"ccTouchCancelled", (char *)"(OO)" ,(PyObject *)obj0,(PyObject *)obj1);
+#endif
+  if (!result) {
+    PyObject *error = PyErr_Occurred();
+    if (error) {
+      Swig::DirectorMethodException::raise("Error detected when calling 'IOSTouchController.ccTouchCancelled'");
+    }
+  }
+}
+
 
 #ifdef __cplusplus
 extern "C" {
@@ -7825,18 +8533,3416 @@ SWIGINTERN PyObject *map_string_string_swigregister(PyObject *SWIGUNUSEDPARM(sel
   return SWIG_Py_Void();
 }
 
+SWIGINTERN PyObject *_wrap_vector_controller_iterator(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  std::vector< FESimple::ControllerBase * > *arg1 = (std::vector< FESimple::ControllerBase * > *) 0 ;
+  PyObject **arg2 = (PyObject **) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  swig::SwigPyIterator *result = 0 ;
+  
+  arg2 = &obj0;
+  if (!PyArg_ParseTuple(args,(char *)"O:vector_controller_iterator",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_std__vectorT_FESimple__ControllerBase_p_std__allocatorT_FESimple__ControllerBase_p_t_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "vector_controller_iterator" "', argument " "1"" of type '" "std::vector< FESimple::ControllerBase * > *""'"); 
+  }
+  arg1 = reinterpret_cast< std::vector< FESimple::ControllerBase * > * >(argp1);
+  result = (swig::SwigPyIterator *)std_vector_Sl_FESimple_ControllerBase_Sm__Sg__iterator(arg1,arg2);
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_swig__SwigPyIterator, SWIG_POINTER_OWN |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_vector_controller___nonzero__(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  std::vector< FESimple::ControllerBase * > *arg1 = (std::vector< FESimple::ControllerBase * > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  bool result;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:vector_controller___nonzero__",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_std__vectorT_FESimple__ControllerBase_p_std__allocatorT_FESimple__ControllerBase_p_t_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "vector_controller___nonzero__" "', argument " "1"" of type '" "std::vector< FESimple::ControllerBase * > const *""'"); 
+  }
+  arg1 = reinterpret_cast< std::vector< FESimple::ControllerBase * > * >(argp1);
+  result = (bool)std_vector_Sl_FESimple_ControllerBase_Sm__Sg____nonzero__((std::vector< FESimple::ControllerBase * > const *)arg1);
+  resultobj = SWIG_From_bool(static_cast< bool >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_vector_controller___bool__(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  std::vector< FESimple::ControllerBase * > *arg1 = (std::vector< FESimple::ControllerBase * > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  bool result;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:vector_controller___bool__",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_std__vectorT_FESimple__ControllerBase_p_std__allocatorT_FESimple__ControllerBase_p_t_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "vector_controller___bool__" "', argument " "1"" of type '" "std::vector< FESimple::ControllerBase * > const *""'"); 
+  }
+  arg1 = reinterpret_cast< std::vector< FESimple::ControllerBase * > * >(argp1);
+  result = (bool)std_vector_Sl_FESimple_ControllerBase_Sm__Sg____bool__((std::vector< FESimple::ControllerBase * > const *)arg1);
+  resultobj = SWIG_From_bool(static_cast< bool >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_vector_controller___len__(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  std::vector< FESimple::ControllerBase * > *arg1 = (std::vector< FESimple::ControllerBase * > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  std::vector< FESimple::ControllerBase * >::size_type result;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:vector_controller___len__",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_std__vectorT_FESimple__ControllerBase_p_std__allocatorT_FESimple__ControllerBase_p_t_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "vector_controller___len__" "', argument " "1"" of type '" "std::vector< FESimple::ControllerBase * > const *""'"); 
+  }
+  arg1 = reinterpret_cast< std::vector< FESimple::ControllerBase * > * >(argp1);
+  result = std_vector_Sl_FESimple_ControllerBase_Sm__Sg____len__((std::vector< FESimple::ControllerBase * > const *)arg1);
+  resultobj = SWIG_From_size_t(static_cast< size_t >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_vector_controller_pop(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  std::vector< FESimple::ControllerBase * > *arg1 = (std::vector< FESimple::ControllerBase * > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  std::vector< FESimple::ControllerBase * >::value_type result;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:vector_controller_pop",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_std__vectorT_FESimple__ControllerBase_p_std__allocatorT_FESimple__ControllerBase_p_t_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "vector_controller_pop" "', argument " "1"" of type '" "std::vector< FESimple::ControllerBase * > *""'"); 
+  }
+  arg1 = reinterpret_cast< std::vector< FESimple::ControllerBase * > * >(argp1);
+  try {
+    result = (std::vector< FESimple::ControllerBase * >::value_type)std_vector_Sl_FESimple_ControllerBase_Sm__Sg__pop(arg1);
+  }
+  catch(std::out_of_range &_e) {
+    SWIG_exception_fail(SWIG_IndexError, (&_e)->what());
+  }
+  
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_FESimple__ControllerBase, 0 |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_vector_controller___getslice__(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  std::vector< FESimple::ControllerBase * > *arg1 = (std::vector< FESimple::ControllerBase * > *) 0 ;
+  std::vector< FESimple::ControllerBase * >::difference_type arg2 ;
+  std::vector< FESimple::ControllerBase * >::difference_type arg3 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  ptrdiff_t val2 ;
+  int ecode2 = 0 ;
+  ptrdiff_t val3 ;
+  int ecode3 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  PyObject * obj2 = 0 ;
+  std::vector< FESimple::ControllerBase *,std::allocator< FESimple::ControllerBase * > > *result = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"OOO:vector_controller___getslice__",&obj0,&obj1,&obj2)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_std__vectorT_FESimple__ControllerBase_p_std__allocatorT_FESimple__ControllerBase_p_t_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "vector_controller___getslice__" "', argument " "1"" of type '" "std::vector< FESimple::ControllerBase * > *""'"); 
+  }
+  arg1 = reinterpret_cast< std::vector< FESimple::ControllerBase * > * >(argp1);
+  ecode2 = SWIG_AsVal_ptrdiff_t(obj1, &val2);
+  if (!SWIG_IsOK(ecode2)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "vector_controller___getslice__" "', argument " "2"" of type '" "std::vector< FESimple::ControllerBase * >::difference_type""'");
+  } 
+  arg2 = static_cast< std::vector< FESimple::ControllerBase * >::difference_type >(val2);
+  ecode3 = SWIG_AsVal_ptrdiff_t(obj2, &val3);
+  if (!SWIG_IsOK(ecode3)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode3), "in method '" "vector_controller___getslice__" "', argument " "3"" of type '" "std::vector< FESimple::ControllerBase * >::difference_type""'");
+  } 
+  arg3 = static_cast< std::vector< FESimple::ControllerBase * >::difference_type >(val3);
+  try {
+    result = (std::vector< FESimple::ControllerBase *,std::allocator< FESimple::ControllerBase * > > *)std_vector_Sl_FESimple_ControllerBase_Sm__Sg____getslice__(arg1,arg2,arg3);
+  }
+  catch(std::out_of_range &_e) {
+    SWIG_exception_fail(SWIG_IndexError, (&_e)->what());
+  }
+  catch(std::invalid_argument &_e) {
+    SWIG_exception_fail(SWIG_ValueError, (&_e)->what());
+  }
+  
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_std__vectorT_FESimple__ControllerBase_p_std__allocatorT_FESimple__ControllerBase_p_t_t, SWIG_POINTER_OWN |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_vector_controller___setslice____SWIG_0(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  std::vector< FESimple::ControllerBase * > *arg1 = (std::vector< FESimple::ControllerBase * > *) 0 ;
+  std::vector< FESimple::ControllerBase * >::difference_type arg2 ;
+  std::vector< FESimple::ControllerBase * >::difference_type arg3 ;
+  std::vector< FESimple::ControllerBase *,std::allocator< FESimple::ControllerBase * > > *arg4 = 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  ptrdiff_t val2 ;
+  int ecode2 = 0 ;
+  ptrdiff_t val3 ;
+  int ecode3 = 0 ;
+  int res4 = SWIG_OLDOBJ ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  PyObject * obj2 = 0 ;
+  PyObject * obj3 = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"OOOO:vector_controller___setslice__",&obj0,&obj1,&obj2,&obj3)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_std__vectorT_FESimple__ControllerBase_p_std__allocatorT_FESimple__ControllerBase_p_t_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "vector_controller___setslice__" "', argument " "1"" of type '" "std::vector< FESimple::ControllerBase * > *""'"); 
+  }
+  arg1 = reinterpret_cast< std::vector< FESimple::ControllerBase * > * >(argp1);
+  ecode2 = SWIG_AsVal_ptrdiff_t(obj1, &val2);
+  if (!SWIG_IsOK(ecode2)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "vector_controller___setslice__" "', argument " "2"" of type '" "std::vector< FESimple::ControllerBase * >::difference_type""'");
+  } 
+  arg2 = static_cast< std::vector< FESimple::ControllerBase * >::difference_type >(val2);
+  ecode3 = SWIG_AsVal_ptrdiff_t(obj2, &val3);
+  if (!SWIG_IsOK(ecode3)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode3), "in method '" "vector_controller___setslice__" "', argument " "3"" of type '" "std::vector< FESimple::ControllerBase * >::difference_type""'");
+  } 
+  arg3 = static_cast< std::vector< FESimple::ControllerBase * >::difference_type >(val3);
+  {
+    std::vector<FESimple::ControllerBase*,std::allocator< FESimple::ControllerBase * > > *ptr = (std::vector<FESimple::ControllerBase*,std::allocator< FESimple::ControllerBase * > > *)0;
+    res4 = swig::asptr(obj3, &ptr);
+    if (!SWIG_IsOK(res4)) {
+      SWIG_exception_fail(SWIG_ArgError(res4), "in method '" "vector_controller___setslice__" "', argument " "4"" of type '" "std::vector< FESimple::ControllerBase *,std::allocator< FESimple::ControllerBase * > > const &""'"); 
+    }
+    if (!ptr) {
+      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "vector_controller___setslice__" "', argument " "4"" of type '" "std::vector< FESimple::ControllerBase *,std::allocator< FESimple::ControllerBase * > > const &""'"); 
+    }
+    arg4 = ptr;
+  }
+  try {
+    std_vector_Sl_FESimple_ControllerBase_Sm__Sg____setslice____SWIG_0(arg1,arg2,arg3,(std::vector< FESimple::ControllerBase *,std::allocator< FESimple::ControllerBase * > > const &)*arg4);
+  }
+  catch(std::out_of_range &_e) {
+    SWIG_exception_fail(SWIG_IndexError, (&_e)->what());
+  }
+  catch(std::invalid_argument &_e) {
+    SWIG_exception_fail(SWIG_ValueError, (&_e)->what());
+  }
+  
+  resultobj = SWIG_Py_Void();
+  if (SWIG_IsNewObj(res4)) delete arg4;
+  return resultobj;
+fail:
+  if (SWIG_IsNewObj(res4)) delete arg4;
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_vector_controller___setslice____SWIG_1(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  std::vector< FESimple::ControllerBase * > *arg1 = (std::vector< FESimple::ControllerBase * > *) 0 ;
+  std::vector< FESimple::ControllerBase * >::difference_type arg2 ;
+  std::vector< FESimple::ControllerBase * >::difference_type arg3 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  ptrdiff_t val2 ;
+  int ecode2 = 0 ;
+  ptrdiff_t val3 ;
+  int ecode3 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  PyObject * obj2 = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"OOO:vector_controller___setslice__",&obj0,&obj1,&obj2)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_std__vectorT_FESimple__ControllerBase_p_std__allocatorT_FESimple__ControllerBase_p_t_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "vector_controller___setslice__" "', argument " "1"" of type '" "std::vector< FESimple::ControllerBase * > *""'"); 
+  }
+  arg1 = reinterpret_cast< std::vector< FESimple::ControllerBase * > * >(argp1);
+  ecode2 = SWIG_AsVal_ptrdiff_t(obj1, &val2);
+  if (!SWIG_IsOK(ecode2)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "vector_controller___setslice__" "', argument " "2"" of type '" "std::vector< FESimple::ControllerBase * >::difference_type""'");
+  } 
+  arg2 = static_cast< std::vector< FESimple::ControllerBase * >::difference_type >(val2);
+  ecode3 = SWIG_AsVal_ptrdiff_t(obj2, &val3);
+  if (!SWIG_IsOK(ecode3)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode3), "in method '" "vector_controller___setslice__" "', argument " "3"" of type '" "std::vector< FESimple::ControllerBase * >::difference_type""'");
+  } 
+  arg3 = static_cast< std::vector< FESimple::ControllerBase * >::difference_type >(val3);
+  try {
+    std_vector_Sl_FESimple_ControllerBase_Sm__Sg____setslice____SWIG_0(arg1,arg2,arg3);
+  }
+  catch(std::out_of_range &_e) {
+    SWIG_exception_fail(SWIG_IndexError, (&_e)->what());
+  }
+  catch(std::invalid_argument &_e) {
+    SWIG_exception_fail(SWIG_ValueError, (&_e)->what());
+  }
+  
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_vector_controller___setslice__(PyObject *self, PyObject *args) {
+  int argc;
+  PyObject *argv[5];
+  int ii;
+  
+  if (!PyTuple_Check(args)) SWIG_fail;
+  argc = args ? (int)PyObject_Length(args) : 0;
+  for (ii = 0; (ii < 4) && (ii < argc); ii++) {
+    argv[ii] = PyTuple_GET_ITEM(args,ii);
+  }
+  if (argc == 3) {
+    int _v;
+    int res = swig::asptr(argv[0], (std::vector<FESimple::ControllerBase*,std::allocator< FESimple::ControllerBase * > >**)(0));
+    _v = SWIG_CheckState(res);
+    if (_v) {
+      {
+        int res = SWIG_AsVal_ptrdiff_t(argv[1], NULL);
+        _v = SWIG_CheckState(res);
+      }
+      if (_v) {
+        {
+          int res = SWIG_AsVal_ptrdiff_t(argv[2], NULL);
+          _v = SWIG_CheckState(res);
+        }
+        if (_v) {
+          return _wrap_vector_controller___setslice____SWIG_1(self, args);
+        }
+      }
+    }
+  }
+  if (argc == 4) {
+    int _v;
+    int res = swig::asptr(argv[0], (std::vector<FESimple::ControllerBase*,std::allocator< FESimple::ControllerBase * > >**)(0));
+    _v = SWIG_CheckState(res);
+    if (_v) {
+      {
+        int res = SWIG_AsVal_ptrdiff_t(argv[1], NULL);
+        _v = SWIG_CheckState(res);
+      }
+      if (_v) {
+        {
+          int res = SWIG_AsVal_ptrdiff_t(argv[2], NULL);
+          _v = SWIG_CheckState(res);
+        }
+        if (_v) {
+          int res = swig::asptr(argv[3], (std::vector<FESimple::ControllerBase*,std::allocator< FESimple::ControllerBase * > >**)(0));
+          _v = SWIG_CheckState(res);
+          if (_v) {
+            return _wrap_vector_controller___setslice____SWIG_0(self, args);
+          }
+        }
+      }
+    }
+  }
+  
+fail:
+  SWIG_SetErrorMsg(PyExc_NotImplementedError,"Wrong number or type of arguments for overloaded function 'vector_controller___setslice__'.\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    std::vector< FESimple::ControllerBase * >::__setslice__(std::vector< FESimple::ControllerBase * >::difference_type,std::vector< FESimple::ControllerBase * >::difference_type,std::vector< FESimple::ControllerBase *,std::allocator< FESimple::ControllerBase * > > const &)\n"
+    "    std::vector< FESimple::ControllerBase * >::__setslice__(std::vector< FESimple::ControllerBase * >::difference_type,std::vector< FESimple::ControllerBase * >::difference_type)\n");
+  return 0;
+}
+
+
+SWIGINTERN PyObject *_wrap_vector_controller___delslice__(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  std::vector< FESimple::ControllerBase * > *arg1 = (std::vector< FESimple::ControllerBase * > *) 0 ;
+  std::vector< FESimple::ControllerBase * >::difference_type arg2 ;
+  std::vector< FESimple::ControllerBase * >::difference_type arg3 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  ptrdiff_t val2 ;
+  int ecode2 = 0 ;
+  ptrdiff_t val3 ;
+  int ecode3 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  PyObject * obj2 = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"OOO:vector_controller___delslice__",&obj0,&obj1,&obj2)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_std__vectorT_FESimple__ControllerBase_p_std__allocatorT_FESimple__ControllerBase_p_t_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "vector_controller___delslice__" "', argument " "1"" of type '" "std::vector< FESimple::ControllerBase * > *""'"); 
+  }
+  arg1 = reinterpret_cast< std::vector< FESimple::ControllerBase * > * >(argp1);
+  ecode2 = SWIG_AsVal_ptrdiff_t(obj1, &val2);
+  if (!SWIG_IsOK(ecode2)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "vector_controller___delslice__" "', argument " "2"" of type '" "std::vector< FESimple::ControllerBase * >::difference_type""'");
+  } 
+  arg2 = static_cast< std::vector< FESimple::ControllerBase * >::difference_type >(val2);
+  ecode3 = SWIG_AsVal_ptrdiff_t(obj2, &val3);
+  if (!SWIG_IsOK(ecode3)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode3), "in method '" "vector_controller___delslice__" "', argument " "3"" of type '" "std::vector< FESimple::ControllerBase * >::difference_type""'");
+  } 
+  arg3 = static_cast< std::vector< FESimple::ControllerBase * >::difference_type >(val3);
+  try {
+    std_vector_Sl_FESimple_ControllerBase_Sm__Sg____delslice__(arg1,arg2,arg3);
+  }
+  catch(std::out_of_range &_e) {
+    SWIG_exception_fail(SWIG_IndexError, (&_e)->what());
+  }
+  catch(std::invalid_argument &_e) {
+    SWIG_exception_fail(SWIG_ValueError, (&_e)->what());
+  }
+  
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_vector_controller___delitem____SWIG_0(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  std::vector< FESimple::ControllerBase * > *arg1 = (std::vector< FESimple::ControllerBase * > *) 0 ;
+  std::vector< FESimple::ControllerBase * >::difference_type arg2 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  ptrdiff_t val2 ;
+  int ecode2 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"OO:vector_controller___delitem__",&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_std__vectorT_FESimple__ControllerBase_p_std__allocatorT_FESimple__ControllerBase_p_t_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "vector_controller___delitem__" "', argument " "1"" of type '" "std::vector< FESimple::ControllerBase * > *""'"); 
+  }
+  arg1 = reinterpret_cast< std::vector< FESimple::ControllerBase * > * >(argp1);
+  ecode2 = SWIG_AsVal_ptrdiff_t(obj1, &val2);
+  if (!SWIG_IsOK(ecode2)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "vector_controller___delitem__" "', argument " "2"" of type '" "std::vector< FESimple::ControllerBase * >::difference_type""'");
+  } 
+  arg2 = static_cast< std::vector< FESimple::ControllerBase * >::difference_type >(val2);
+  try {
+    std_vector_Sl_FESimple_ControllerBase_Sm__Sg____delitem____SWIG_0(arg1,arg2);
+  }
+  catch(std::out_of_range &_e) {
+    SWIG_exception_fail(SWIG_IndexError, (&_e)->what());
+  }
+  
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_vector_controller___getitem____SWIG_0(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  std::vector< FESimple::ControllerBase * > *arg1 = (std::vector< FESimple::ControllerBase * > *) 0 ;
+  PySliceObject *arg2 = (PySliceObject *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  std::vector< FESimple::ControllerBase *,std::allocator< FESimple::ControllerBase * > > *result = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"OO:vector_controller___getitem__",&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_std__vectorT_FESimple__ControllerBase_p_std__allocatorT_FESimple__ControllerBase_p_t_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "vector_controller___getitem__" "', argument " "1"" of type '" "std::vector< FESimple::ControllerBase * > *""'"); 
+  }
+  arg1 = reinterpret_cast< std::vector< FESimple::ControllerBase * > * >(argp1);
+  {
+    if (!PySlice_Check(obj1)) {
+      SWIG_exception_fail(SWIG_ArgError(SWIG_TypeError), "in method '" "vector_controller___getitem__" "', argument " "2"" of type '" "PySliceObject *""'");
+    }
+    arg2 = (PySliceObject *) obj1;
+  }
+  try {
+    result = (std::vector< FESimple::ControllerBase *,std::allocator< FESimple::ControllerBase * > > *)std_vector_Sl_FESimple_ControllerBase_Sm__Sg____getitem____SWIG_0(arg1,arg2);
+  }
+  catch(std::out_of_range &_e) {
+    SWIG_exception_fail(SWIG_IndexError, (&_e)->what());
+  }
+  catch(std::invalid_argument &_e) {
+    SWIG_exception_fail(SWIG_ValueError, (&_e)->what());
+  }
+  
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_std__vectorT_FESimple__ControllerBase_p_std__allocatorT_FESimple__ControllerBase_p_t_t, SWIG_POINTER_OWN |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_vector_controller___setitem____SWIG_0(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  std::vector< FESimple::ControllerBase * > *arg1 = (std::vector< FESimple::ControllerBase * > *) 0 ;
+  PySliceObject *arg2 = (PySliceObject *) 0 ;
+  std::vector< FESimple::ControllerBase *,std::allocator< FESimple::ControllerBase * > > *arg3 = 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  int res3 = SWIG_OLDOBJ ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  PyObject * obj2 = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"OOO:vector_controller___setitem__",&obj0,&obj1,&obj2)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_std__vectorT_FESimple__ControllerBase_p_std__allocatorT_FESimple__ControllerBase_p_t_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "vector_controller___setitem__" "', argument " "1"" of type '" "std::vector< FESimple::ControllerBase * > *""'"); 
+  }
+  arg1 = reinterpret_cast< std::vector< FESimple::ControllerBase * > * >(argp1);
+  {
+    if (!PySlice_Check(obj1)) {
+      SWIG_exception_fail(SWIG_ArgError(SWIG_TypeError), "in method '" "vector_controller___setitem__" "', argument " "2"" of type '" "PySliceObject *""'");
+    }
+    arg2 = (PySliceObject *) obj1;
+  }
+  {
+    std::vector<FESimple::ControllerBase*,std::allocator< FESimple::ControllerBase * > > *ptr = (std::vector<FESimple::ControllerBase*,std::allocator< FESimple::ControllerBase * > > *)0;
+    res3 = swig::asptr(obj2, &ptr);
+    if (!SWIG_IsOK(res3)) {
+      SWIG_exception_fail(SWIG_ArgError(res3), "in method '" "vector_controller___setitem__" "', argument " "3"" of type '" "std::vector< FESimple::ControllerBase *,std::allocator< FESimple::ControllerBase * > > const &""'"); 
+    }
+    if (!ptr) {
+      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "vector_controller___setitem__" "', argument " "3"" of type '" "std::vector< FESimple::ControllerBase *,std::allocator< FESimple::ControllerBase * > > const &""'"); 
+    }
+    arg3 = ptr;
+  }
+  try {
+    std_vector_Sl_FESimple_ControllerBase_Sm__Sg____setitem____SWIG_0(arg1,arg2,(std::vector< FESimple::ControllerBase *,std::allocator< FESimple::ControllerBase * > > const &)*arg3);
+  }
+  catch(std::out_of_range &_e) {
+    SWIG_exception_fail(SWIG_IndexError, (&_e)->what());
+  }
+  catch(std::invalid_argument &_e) {
+    SWIG_exception_fail(SWIG_ValueError, (&_e)->what());
+  }
+  
+  resultobj = SWIG_Py_Void();
+  if (SWIG_IsNewObj(res3)) delete arg3;
+  return resultobj;
+fail:
+  if (SWIG_IsNewObj(res3)) delete arg3;
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_vector_controller___setitem____SWIG_1(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  std::vector< FESimple::ControllerBase * > *arg1 = (std::vector< FESimple::ControllerBase * > *) 0 ;
+  PySliceObject *arg2 = (PySliceObject *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"OO:vector_controller___setitem__",&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_std__vectorT_FESimple__ControllerBase_p_std__allocatorT_FESimple__ControllerBase_p_t_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "vector_controller___setitem__" "', argument " "1"" of type '" "std::vector< FESimple::ControllerBase * > *""'"); 
+  }
+  arg1 = reinterpret_cast< std::vector< FESimple::ControllerBase * > * >(argp1);
+  {
+    if (!PySlice_Check(obj1)) {
+      SWIG_exception_fail(SWIG_ArgError(SWIG_TypeError), "in method '" "vector_controller___setitem__" "', argument " "2"" of type '" "PySliceObject *""'");
+    }
+    arg2 = (PySliceObject *) obj1;
+  }
+  try {
+    std_vector_Sl_FESimple_ControllerBase_Sm__Sg____setitem____SWIG_1(arg1,arg2);
+  }
+  catch(std::out_of_range &_e) {
+    SWIG_exception_fail(SWIG_IndexError, (&_e)->what());
+  }
+  catch(std::invalid_argument &_e) {
+    SWIG_exception_fail(SWIG_ValueError, (&_e)->what());
+  }
+  
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_vector_controller___delitem____SWIG_1(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  std::vector< FESimple::ControllerBase * > *arg1 = (std::vector< FESimple::ControllerBase * > *) 0 ;
+  PySliceObject *arg2 = (PySliceObject *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"OO:vector_controller___delitem__",&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_std__vectorT_FESimple__ControllerBase_p_std__allocatorT_FESimple__ControllerBase_p_t_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "vector_controller___delitem__" "', argument " "1"" of type '" "std::vector< FESimple::ControllerBase * > *""'"); 
+  }
+  arg1 = reinterpret_cast< std::vector< FESimple::ControllerBase * > * >(argp1);
+  {
+    if (!PySlice_Check(obj1)) {
+      SWIG_exception_fail(SWIG_ArgError(SWIG_TypeError), "in method '" "vector_controller___delitem__" "', argument " "2"" of type '" "PySliceObject *""'");
+    }
+    arg2 = (PySliceObject *) obj1;
+  }
+  try {
+    std_vector_Sl_FESimple_ControllerBase_Sm__Sg____delitem____SWIG_1(arg1,arg2);
+  }
+  catch(std::out_of_range &_e) {
+    SWIG_exception_fail(SWIG_IndexError, (&_e)->what());
+  }
+  catch(std::invalid_argument &_e) {
+    SWIG_exception_fail(SWIG_ValueError, (&_e)->what());
+  }
+  
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_vector_controller___delitem__(PyObject *self, PyObject *args) {
+  int argc;
+  PyObject *argv[3];
+  int ii;
+  
+  if (!PyTuple_Check(args)) SWIG_fail;
+  argc = args ? (int)PyObject_Length(args) : 0;
+  for (ii = 0; (ii < 2) && (ii < argc); ii++) {
+    argv[ii] = PyTuple_GET_ITEM(args,ii);
+  }
+  if (argc == 2) {
+    int _v;
+    int res = swig::asptr(argv[0], (std::vector<FESimple::ControllerBase*,std::allocator< FESimple::ControllerBase * > >**)(0));
+    _v = SWIG_CheckState(res);
+    if (_v) {
+      {
+        _v = PySlice_Check(argv[1]);
+      }
+      if (_v) {
+        return _wrap_vector_controller___delitem____SWIG_1(self, args);
+      }
+    }
+  }
+  if (argc == 2) {
+    int _v;
+    int res = swig::asptr(argv[0], (std::vector<FESimple::ControllerBase*,std::allocator< FESimple::ControllerBase * > >**)(0));
+    _v = SWIG_CheckState(res);
+    if (_v) {
+      {
+        int res = SWIG_AsVal_ptrdiff_t(argv[1], NULL);
+        _v = SWIG_CheckState(res);
+      }
+      if (_v) {
+        return _wrap_vector_controller___delitem____SWIG_0(self, args);
+      }
+    }
+  }
+  
+fail:
+  SWIG_SetErrorMsg(PyExc_NotImplementedError,"Wrong number or type of arguments for overloaded function 'vector_controller___delitem__'.\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    std::vector< FESimple::ControllerBase * >::__delitem__(std::vector< FESimple::ControllerBase * >::difference_type)\n"
+    "    std::vector< FESimple::ControllerBase * >::__delitem__(PySliceObject *)\n");
+  return 0;
+}
+
+
+SWIGINTERN PyObject *_wrap_vector_controller___getitem____SWIG_1(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  std::vector< FESimple::ControllerBase * > *arg1 = (std::vector< FESimple::ControllerBase * > *) 0 ;
+  std::vector< FESimple::ControllerBase * >::difference_type arg2 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  ptrdiff_t val2 ;
+  int ecode2 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  std::vector< FESimple::ControllerBase * >::value_type result;
+  
+  if (!PyArg_ParseTuple(args,(char *)"OO:vector_controller___getitem__",&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_std__vectorT_FESimple__ControllerBase_p_std__allocatorT_FESimple__ControllerBase_p_t_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "vector_controller___getitem__" "', argument " "1"" of type '" "std::vector< FESimple::ControllerBase * > *""'"); 
+  }
+  arg1 = reinterpret_cast< std::vector< FESimple::ControllerBase * > * >(argp1);
+  ecode2 = SWIG_AsVal_ptrdiff_t(obj1, &val2);
+  if (!SWIG_IsOK(ecode2)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "vector_controller___getitem__" "', argument " "2"" of type '" "std::vector< FESimple::ControllerBase * >::difference_type""'");
+  } 
+  arg2 = static_cast< std::vector< FESimple::ControllerBase * >::difference_type >(val2);
+  try {
+    result = (std::vector< FESimple::ControllerBase * >::value_type)std_vector_Sl_FESimple_ControllerBase_Sm__Sg____getitem____SWIG_1(arg1,arg2);
+  }
+  catch(std::out_of_range &_e) {
+    SWIG_exception_fail(SWIG_IndexError, (&_e)->what());
+  }
+  
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_FESimple__ControllerBase, 0 |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_vector_controller___getitem__(PyObject *self, PyObject *args) {
+  int argc;
+  PyObject *argv[3];
+  int ii;
+  
+  if (!PyTuple_Check(args)) SWIG_fail;
+  argc = args ? (int)PyObject_Length(args) : 0;
+  for (ii = 0; (ii < 2) && (ii < argc); ii++) {
+    argv[ii] = PyTuple_GET_ITEM(args,ii);
+  }
+  if (argc == 2) {
+    int _v;
+    int res = swig::asptr(argv[0], (std::vector<FESimple::ControllerBase*,std::allocator< FESimple::ControllerBase * > >**)(0));
+    _v = SWIG_CheckState(res);
+    if (_v) {
+      {
+        _v = PySlice_Check(argv[1]);
+      }
+      if (_v) {
+        return _wrap_vector_controller___getitem____SWIG_0(self, args);
+      }
+    }
+  }
+  if (argc == 2) {
+    int _v;
+    int res = swig::asptr(argv[0], (std::vector<FESimple::ControllerBase*,std::allocator< FESimple::ControllerBase * > >**)(0));
+    _v = SWIG_CheckState(res);
+    if (_v) {
+      {
+        int res = SWIG_AsVal_ptrdiff_t(argv[1], NULL);
+        _v = SWIG_CheckState(res);
+      }
+      if (_v) {
+        return _wrap_vector_controller___getitem____SWIG_1(self, args);
+      }
+    }
+  }
+  
+fail:
+  SWIG_SetErrorMsg(PyExc_NotImplementedError,"Wrong number or type of arguments for overloaded function 'vector_controller___getitem__'.\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    std::vector< FESimple::ControllerBase * >::__getitem__(PySliceObject *)\n"
+    "    std::vector< FESimple::ControllerBase * >::__getitem__(std::vector< FESimple::ControllerBase * >::difference_type)\n");
+  return 0;
+}
+
+
+SWIGINTERN PyObject *_wrap_vector_controller___setitem____SWIG_2(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  std::vector< FESimple::ControllerBase * > *arg1 = (std::vector< FESimple::ControllerBase * > *) 0 ;
+  std::vector< FESimple::ControllerBase * >::difference_type arg2 ;
+  std::vector< FESimple::ControllerBase * >::value_type arg3 = (std::vector< FESimple::ControllerBase * >::value_type) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  ptrdiff_t val2 ;
+  int ecode2 = 0 ;
+  void *argp3 = 0 ;
+  int res3 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  PyObject * obj2 = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"OOO:vector_controller___setitem__",&obj0,&obj1,&obj2)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_std__vectorT_FESimple__ControllerBase_p_std__allocatorT_FESimple__ControllerBase_p_t_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "vector_controller___setitem__" "', argument " "1"" of type '" "std::vector< FESimple::ControllerBase * > *""'"); 
+  }
+  arg1 = reinterpret_cast< std::vector< FESimple::ControllerBase * > * >(argp1);
+  ecode2 = SWIG_AsVal_ptrdiff_t(obj1, &val2);
+  if (!SWIG_IsOK(ecode2)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "vector_controller___setitem__" "', argument " "2"" of type '" "std::vector< FESimple::ControllerBase * >::difference_type""'");
+  } 
+  arg2 = static_cast< std::vector< FESimple::ControllerBase * >::difference_type >(val2);
+  res3 = SWIG_ConvertPtr(obj2, &argp3,SWIGTYPE_p_FESimple__ControllerBase, 0 |  0 );
+  if (!SWIG_IsOK(res3)) {
+    SWIG_exception_fail(SWIG_ArgError(res3), "in method '" "vector_controller___setitem__" "', argument " "3"" of type '" "std::vector< FESimple::ControllerBase * >::value_type""'"); 
+  }
+  arg3 = reinterpret_cast< std::vector< FESimple::ControllerBase * >::value_type >(argp3);
+  try {
+    std_vector_Sl_FESimple_ControllerBase_Sm__Sg____setitem____SWIG_2(arg1,arg2,arg3);
+  }
+  catch(std::out_of_range &_e) {
+    SWIG_exception_fail(SWIG_IndexError, (&_e)->what());
+  }
+  
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_vector_controller___setitem__(PyObject *self, PyObject *args) {
+  int argc;
+  PyObject *argv[4];
+  int ii;
+  
+  if (!PyTuple_Check(args)) SWIG_fail;
+  argc = args ? (int)PyObject_Length(args) : 0;
+  for (ii = 0; (ii < 3) && (ii < argc); ii++) {
+    argv[ii] = PyTuple_GET_ITEM(args,ii);
+  }
+  if (argc == 2) {
+    int _v;
+    int res = swig::asptr(argv[0], (std::vector<FESimple::ControllerBase*,std::allocator< FESimple::ControllerBase * > >**)(0));
+    _v = SWIG_CheckState(res);
+    if (_v) {
+      {
+        _v = PySlice_Check(argv[1]);
+      }
+      if (_v) {
+        return _wrap_vector_controller___setitem____SWIG_1(self, args);
+      }
+    }
+  }
+  if (argc == 3) {
+    int _v;
+    int res = swig::asptr(argv[0], (std::vector<FESimple::ControllerBase*,std::allocator< FESimple::ControllerBase * > >**)(0));
+    _v = SWIG_CheckState(res);
+    if (_v) {
+      {
+        _v = PySlice_Check(argv[1]);
+      }
+      if (_v) {
+        int res = swig::asptr(argv[2], (std::vector<FESimple::ControllerBase*,std::allocator< FESimple::ControllerBase * > >**)(0));
+        _v = SWIG_CheckState(res);
+        if (_v) {
+          return _wrap_vector_controller___setitem____SWIG_0(self, args);
+        }
+      }
+    }
+  }
+  if (argc == 3) {
+    int _v;
+    int res = swig::asptr(argv[0], (std::vector<FESimple::ControllerBase*,std::allocator< FESimple::ControllerBase * > >**)(0));
+    _v = SWIG_CheckState(res);
+    if (_v) {
+      {
+        int res = SWIG_AsVal_ptrdiff_t(argv[1], NULL);
+        _v = SWIG_CheckState(res);
+      }
+      if (_v) {
+        void *vptr = 0;
+        int res = SWIG_ConvertPtr(argv[2], &vptr, SWIGTYPE_p_FESimple__ControllerBase, 0);
+        _v = SWIG_CheckState(res);
+        if (_v) {
+          return _wrap_vector_controller___setitem____SWIG_2(self, args);
+        }
+      }
+    }
+  }
+  
+fail:
+  SWIG_SetErrorMsg(PyExc_NotImplementedError,"Wrong number or type of arguments for overloaded function 'vector_controller___setitem__'.\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    std::vector< FESimple::ControllerBase * >::__setitem__(PySliceObject *,std::vector< FESimple::ControllerBase *,std::allocator< FESimple::ControllerBase * > > const &)\n"
+    "    std::vector< FESimple::ControllerBase * >::__setitem__(PySliceObject *)\n"
+    "    std::vector< FESimple::ControllerBase * >::__setitem__(std::vector< FESimple::ControllerBase * >::difference_type,std::vector< FESimple::ControllerBase * >::value_type)\n");
+  return 0;
+}
+
+
+SWIGINTERN PyObject *_wrap_vector_controller_append(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  std::vector< FESimple::ControllerBase * > *arg1 = (std::vector< FESimple::ControllerBase * > *) 0 ;
+  std::vector< FESimple::ControllerBase * >::value_type arg2 = (std::vector< FESimple::ControllerBase * >::value_type) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 = 0 ;
+  int res2 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"OO:vector_controller_append",&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_std__vectorT_FESimple__ControllerBase_p_std__allocatorT_FESimple__ControllerBase_p_t_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "vector_controller_append" "', argument " "1"" of type '" "std::vector< FESimple::ControllerBase * > *""'"); 
+  }
+  arg1 = reinterpret_cast< std::vector< FESimple::ControllerBase * > * >(argp1);
+  res2 = SWIG_ConvertPtr(obj1, &argp2,SWIGTYPE_p_FESimple__ControllerBase, 0 |  0 );
+  if (!SWIG_IsOK(res2)) {
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "vector_controller_append" "', argument " "2"" of type '" "std::vector< FESimple::ControllerBase * >::value_type""'"); 
+  }
+  arg2 = reinterpret_cast< std::vector< FESimple::ControllerBase * >::value_type >(argp2);
+  std_vector_Sl_FESimple_ControllerBase_Sm__Sg__append(arg1,arg2);
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_new_vector_controller__SWIG_0(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  std::vector< FESimple::ControllerBase * > *result = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)":new_vector_controller")) SWIG_fail;
+  result = (std::vector< FESimple::ControllerBase * > *)new std::vector< FESimple::ControllerBase * >();
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_std__vectorT_FESimple__ControllerBase_p_std__allocatorT_FESimple__ControllerBase_p_t_t, SWIG_POINTER_NEW |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_new_vector_controller__SWIG_1(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  std::vector< FESimple::ControllerBase * > *arg1 = 0 ;
+  int res1 = SWIG_OLDOBJ ;
+  PyObject * obj0 = 0 ;
+  std::vector< FESimple::ControllerBase * > *result = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:new_vector_controller",&obj0)) SWIG_fail;
+  {
+    std::vector<FESimple::ControllerBase*,std::allocator< FESimple::ControllerBase * > > *ptr = (std::vector<FESimple::ControllerBase*,std::allocator< FESimple::ControllerBase * > > *)0;
+    res1 = swig::asptr(obj0, &ptr);
+    if (!SWIG_IsOK(res1)) {
+      SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "new_vector_controller" "', argument " "1"" of type '" "std::vector< FESimple::ControllerBase * > const &""'"); 
+    }
+    if (!ptr) {
+      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "new_vector_controller" "', argument " "1"" of type '" "std::vector< FESimple::ControllerBase * > const &""'"); 
+    }
+    arg1 = ptr;
+  }
+  result = (std::vector< FESimple::ControllerBase * > *)new std::vector< FESimple::ControllerBase * >((std::vector< FESimple::ControllerBase * > const &)*arg1);
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_std__vectorT_FESimple__ControllerBase_p_std__allocatorT_FESimple__ControllerBase_p_t_t, SWIG_POINTER_NEW |  0 );
+  if (SWIG_IsNewObj(res1)) delete arg1;
+  return resultobj;
+fail:
+  if (SWIG_IsNewObj(res1)) delete arg1;
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_vector_controller_empty(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  std::vector< FESimple::ControllerBase * > *arg1 = (std::vector< FESimple::ControllerBase * > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  bool result;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:vector_controller_empty",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_std__vectorT_FESimple__ControllerBase_p_std__allocatorT_FESimple__ControllerBase_p_t_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "vector_controller_empty" "', argument " "1"" of type '" "std::vector< FESimple::ControllerBase * > const *""'"); 
+  }
+  arg1 = reinterpret_cast< std::vector< FESimple::ControllerBase * > * >(argp1);
+  result = (bool)((std::vector< FESimple::ControllerBase * > const *)arg1)->empty();
+  resultobj = SWIG_From_bool(static_cast< bool >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_vector_controller_size(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  std::vector< FESimple::ControllerBase * > *arg1 = (std::vector< FESimple::ControllerBase * > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  std::vector< FESimple::ControllerBase * >::size_type result;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:vector_controller_size",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_std__vectorT_FESimple__ControllerBase_p_std__allocatorT_FESimple__ControllerBase_p_t_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "vector_controller_size" "', argument " "1"" of type '" "std::vector< FESimple::ControllerBase * > const *""'"); 
+  }
+  arg1 = reinterpret_cast< std::vector< FESimple::ControllerBase * > * >(argp1);
+  result = ((std::vector< FESimple::ControllerBase * > const *)arg1)->size();
+  resultobj = SWIG_From_size_t(static_cast< size_t >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_vector_controller_clear(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  std::vector< FESimple::ControllerBase * > *arg1 = (std::vector< FESimple::ControllerBase * > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:vector_controller_clear",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_std__vectorT_FESimple__ControllerBase_p_std__allocatorT_FESimple__ControllerBase_p_t_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "vector_controller_clear" "', argument " "1"" of type '" "std::vector< FESimple::ControllerBase * > *""'"); 
+  }
+  arg1 = reinterpret_cast< std::vector< FESimple::ControllerBase * > * >(argp1);
+  (arg1)->clear();
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_vector_controller_swap(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  std::vector< FESimple::ControllerBase * > *arg1 = (std::vector< FESimple::ControllerBase * > *) 0 ;
+  std::vector< FESimple::ControllerBase * > *arg2 = 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 = 0 ;
+  int res2 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"OO:vector_controller_swap",&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_std__vectorT_FESimple__ControllerBase_p_std__allocatorT_FESimple__ControllerBase_p_t_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "vector_controller_swap" "', argument " "1"" of type '" "std::vector< FESimple::ControllerBase * > *""'"); 
+  }
+  arg1 = reinterpret_cast< std::vector< FESimple::ControllerBase * > * >(argp1);
+  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_std__vectorT_FESimple__ControllerBase_p_std__allocatorT_FESimple__ControllerBase_p_t_t,  0 );
+  if (!SWIG_IsOK(res2)) {
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "vector_controller_swap" "', argument " "2"" of type '" "std::vector< FESimple::ControllerBase * > &""'"); 
+  }
+  if (!argp2) {
+    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "vector_controller_swap" "', argument " "2"" of type '" "std::vector< FESimple::ControllerBase * > &""'"); 
+  }
+  arg2 = reinterpret_cast< std::vector< FESimple::ControllerBase * > * >(argp2);
+  (arg1)->swap(*arg2);
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_vector_controller_get_allocator(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  std::vector< FESimple::ControllerBase * > *arg1 = (std::vector< FESimple::ControllerBase * > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  SwigValueWrapper< std::allocator< FESimple::ControllerBase * > > result;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:vector_controller_get_allocator",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_std__vectorT_FESimple__ControllerBase_p_std__allocatorT_FESimple__ControllerBase_p_t_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "vector_controller_get_allocator" "', argument " "1"" of type '" "std::vector< FESimple::ControllerBase * > const *""'"); 
+  }
+  arg1 = reinterpret_cast< std::vector< FESimple::ControllerBase * > * >(argp1);
+  result = ((std::vector< FESimple::ControllerBase * > const *)arg1)->get_allocator();
+  resultobj = SWIG_NewPointerObj((new std::vector< FESimple::ControllerBase * >::allocator_type(static_cast< const std::vector< FESimple::ControllerBase * >::allocator_type& >(result))), SWIGTYPE_p_std__allocatorT_FESimple__ControllerBase_p_t, SWIG_POINTER_OWN |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_vector_controller_begin(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  std::vector< FESimple::ControllerBase * > *arg1 = (std::vector< FESimple::ControllerBase * > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  std::vector< FESimple::ControllerBase * >::iterator result;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:vector_controller_begin",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_std__vectorT_FESimple__ControllerBase_p_std__allocatorT_FESimple__ControllerBase_p_t_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "vector_controller_begin" "', argument " "1"" of type '" "std::vector< FESimple::ControllerBase * > *""'"); 
+  }
+  arg1 = reinterpret_cast< std::vector< FESimple::ControllerBase * > * >(argp1);
+  result = (arg1)->begin();
+  resultobj = SWIG_NewPointerObj(swig::make_output_iterator(static_cast< const std::vector< FESimple::ControllerBase * >::iterator & >(result)),
+    swig::SwigPyIterator::descriptor(),SWIG_POINTER_OWN);
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_vector_controller_end(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  std::vector< FESimple::ControllerBase * > *arg1 = (std::vector< FESimple::ControllerBase * > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  std::vector< FESimple::ControllerBase * >::iterator result;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:vector_controller_end",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_std__vectorT_FESimple__ControllerBase_p_std__allocatorT_FESimple__ControllerBase_p_t_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "vector_controller_end" "', argument " "1"" of type '" "std::vector< FESimple::ControllerBase * > *""'"); 
+  }
+  arg1 = reinterpret_cast< std::vector< FESimple::ControllerBase * > * >(argp1);
+  result = (arg1)->end();
+  resultobj = SWIG_NewPointerObj(swig::make_output_iterator(static_cast< const std::vector< FESimple::ControllerBase * >::iterator & >(result)),
+    swig::SwigPyIterator::descriptor(),SWIG_POINTER_OWN);
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_vector_controller_rbegin(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  std::vector< FESimple::ControllerBase * > *arg1 = (std::vector< FESimple::ControllerBase * > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  std::vector< FESimple::ControllerBase * >::reverse_iterator result;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:vector_controller_rbegin",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_std__vectorT_FESimple__ControllerBase_p_std__allocatorT_FESimple__ControllerBase_p_t_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "vector_controller_rbegin" "', argument " "1"" of type '" "std::vector< FESimple::ControllerBase * > *""'"); 
+  }
+  arg1 = reinterpret_cast< std::vector< FESimple::ControllerBase * > * >(argp1);
+  result = (arg1)->rbegin();
+  resultobj = SWIG_NewPointerObj(swig::make_output_iterator(static_cast< const std::vector< FESimple::ControllerBase * >::reverse_iterator & >(result)),
+    swig::SwigPyIterator::descriptor(),SWIG_POINTER_OWN);
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_vector_controller_rend(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  std::vector< FESimple::ControllerBase * > *arg1 = (std::vector< FESimple::ControllerBase * > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  std::vector< FESimple::ControllerBase * >::reverse_iterator result;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:vector_controller_rend",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_std__vectorT_FESimple__ControllerBase_p_std__allocatorT_FESimple__ControllerBase_p_t_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "vector_controller_rend" "', argument " "1"" of type '" "std::vector< FESimple::ControllerBase * > *""'"); 
+  }
+  arg1 = reinterpret_cast< std::vector< FESimple::ControllerBase * > * >(argp1);
+  result = (arg1)->rend();
+  resultobj = SWIG_NewPointerObj(swig::make_output_iterator(static_cast< const std::vector< FESimple::ControllerBase * >::reverse_iterator & >(result)),
+    swig::SwigPyIterator::descriptor(),SWIG_POINTER_OWN);
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_new_vector_controller__SWIG_2(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  std::vector< FESimple::ControllerBase * >::size_type arg1 ;
+  size_t val1 ;
+  int ecode1 = 0 ;
+  PyObject * obj0 = 0 ;
+  std::vector< FESimple::ControllerBase * > *result = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:new_vector_controller",&obj0)) SWIG_fail;
+  ecode1 = SWIG_AsVal_size_t(obj0, &val1);
+  if (!SWIG_IsOK(ecode1)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode1), "in method '" "new_vector_controller" "', argument " "1"" of type '" "std::vector< FESimple::ControllerBase * >::size_type""'");
+  } 
+  arg1 = static_cast< std::vector< FESimple::ControllerBase * >::size_type >(val1);
+  result = (std::vector< FESimple::ControllerBase * > *)new std::vector< FESimple::ControllerBase * >(arg1);
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_std__vectorT_FESimple__ControllerBase_p_std__allocatorT_FESimple__ControllerBase_p_t_t, SWIG_POINTER_NEW |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_vector_controller_pop_back(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  std::vector< FESimple::ControllerBase * > *arg1 = (std::vector< FESimple::ControllerBase * > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:vector_controller_pop_back",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_std__vectorT_FESimple__ControllerBase_p_std__allocatorT_FESimple__ControllerBase_p_t_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "vector_controller_pop_back" "', argument " "1"" of type '" "std::vector< FESimple::ControllerBase * > *""'"); 
+  }
+  arg1 = reinterpret_cast< std::vector< FESimple::ControllerBase * > * >(argp1);
+  (arg1)->pop_back();
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_vector_controller_resize__SWIG_0(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  std::vector< FESimple::ControllerBase * > *arg1 = (std::vector< FESimple::ControllerBase * > *) 0 ;
+  std::vector< FESimple::ControllerBase * >::size_type arg2 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  size_t val2 ;
+  int ecode2 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"OO:vector_controller_resize",&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_std__vectorT_FESimple__ControllerBase_p_std__allocatorT_FESimple__ControllerBase_p_t_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "vector_controller_resize" "', argument " "1"" of type '" "std::vector< FESimple::ControllerBase * > *""'"); 
+  }
+  arg1 = reinterpret_cast< std::vector< FESimple::ControllerBase * > * >(argp1);
+  ecode2 = SWIG_AsVal_size_t(obj1, &val2);
+  if (!SWIG_IsOK(ecode2)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "vector_controller_resize" "', argument " "2"" of type '" "std::vector< FESimple::ControllerBase * >::size_type""'");
+  } 
+  arg2 = static_cast< std::vector< FESimple::ControllerBase * >::size_type >(val2);
+  (arg1)->resize(arg2);
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_vector_controller_erase__SWIG_0(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  std::vector< FESimple::ControllerBase * > *arg1 = (std::vector< FESimple::ControllerBase * > *) 0 ;
+  std::vector< FESimple::ControllerBase * >::iterator arg2 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  swig::SwigPyIterator *iter2 = 0 ;
+  int res2 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  std::vector< FESimple::ControllerBase * >::iterator result;
+  
+  if (!PyArg_ParseTuple(args,(char *)"OO:vector_controller_erase",&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_std__vectorT_FESimple__ControllerBase_p_std__allocatorT_FESimple__ControllerBase_p_t_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "vector_controller_erase" "', argument " "1"" of type '" "std::vector< FESimple::ControllerBase * > *""'"); 
+  }
+  arg1 = reinterpret_cast< std::vector< FESimple::ControllerBase * > * >(argp1);
+  res2 = SWIG_ConvertPtr(obj1, SWIG_as_voidptrptr(&iter2), swig::SwigPyIterator::descriptor(), 0);
+  if (!SWIG_IsOK(res2) || !iter2) {
+    SWIG_exception_fail(SWIG_ArgError(SWIG_TypeError), "in method '" "vector_controller_erase" "', argument " "2"" of type '" "std::vector< FESimple::ControllerBase * >::iterator""'");
+  } else {
+    swig::SwigPyIterator_T<std::vector< FESimple::ControllerBase * >::iterator > *iter_t = dynamic_cast<swig::SwigPyIterator_T<std::vector< FESimple::ControllerBase * >::iterator > *>(iter2);
+    if (iter_t) {
+      arg2 = iter_t->get_current();
+    } else {
+      SWIG_exception_fail(SWIG_ArgError(SWIG_TypeError), "in method '" "vector_controller_erase" "', argument " "2"" of type '" "std::vector< FESimple::ControllerBase * >::iterator""'");
+    }
+  }
+  result = (arg1)->erase(arg2);
+  resultobj = SWIG_NewPointerObj(swig::make_output_iterator(static_cast< const std::vector< FESimple::ControllerBase * >::iterator & >(result)),
+    swig::SwigPyIterator::descriptor(),SWIG_POINTER_OWN);
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_vector_controller_erase__SWIG_1(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  std::vector< FESimple::ControllerBase * > *arg1 = (std::vector< FESimple::ControllerBase * > *) 0 ;
+  std::vector< FESimple::ControllerBase * >::iterator arg2 ;
+  std::vector< FESimple::ControllerBase * >::iterator arg3 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  swig::SwigPyIterator *iter2 = 0 ;
+  int res2 ;
+  swig::SwigPyIterator *iter3 = 0 ;
+  int res3 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  PyObject * obj2 = 0 ;
+  std::vector< FESimple::ControllerBase * >::iterator result;
+  
+  if (!PyArg_ParseTuple(args,(char *)"OOO:vector_controller_erase",&obj0,&obj1,&obj2)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_std__vectorT_FESimple__ControllerBase_p_std__allocatorT_FESimple__ControllerBase_p_t_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "vector_controller_erase" "', argument " "1"" of type '" "std::vector< FESimple::ControllerBase * > *""'"); 
+  }
+  arg1 = reinterpret_cast< std::vector< FESimple::ControllerBase * > * >(argp1);
+  res2 = SWIG_ConvertPtr(obj1, SWIG_as_voidptrptr(&iter2), swig::SwigPyIterator::descriptor(), 0);
+  if (!SWIG_IsOK(res2) || !iter2) {
+    SWIG_exception_fail(SWIG_ArgError(SWIG_TypeError), "in method '" "vector_controller_erase" "', argument " "2"" of type '" "std::vector< FESimple::ControllerBase * >::iterator""'");
+  } else {
+    swig::SwigPyIterator_T<std::vector< FESimple::ControllerBase * >::iterator > *iter_t = dynamic_cast<swig::SwigPyIterator_T<std::vector< FESimple::ControllerBase * >::iterator > *>(iter2);
+    if (iter_t) {
+      arg2 = iter_t->get_current();
+    } else {
+      SWIG_exception_fail(SWIG_ArgError(SWIG_TypeError), "in method '" "vector_controller_erase" "', argument " "2"" of type '" "std::vector< FESimple::ControllerBase * >::iterator""'");
+    }
+  }
+  res3 = SWIG_ConvertPtr(obj2, SWIG_as_voidptrptr(&iter3), swig::SwigPyIterator::descriptor(), 0);
+  if (!SWIG_IsOK(res3) || !iter3) {
+    SWIG_exception_fail(SWIG_ArgError(SWIG_TypeError), "in method '" "vector_controller_erase" "', argument " "3"" of type '" "std::vector< FESimple::ControllerBase * >::iterator""'");
+  } else {
+    swig::SwigPyIterator_T<std::vector< FESimple::ControllerBase * >::iterator > *iter_t = dynamic_cast<swig::SwigPyIterator_T<std::vector< FESimple::ControllerBase * >::iterator > *>(iter3);
+    if (iter_t) {
+      arg3 = iter_t->get_current();
+    } else {
+      SWIG_exception_fail(SWIG_ArgError(SWIG_TypeError), "in method '" "vector_controller_erase" "', argument " "3"" of type '" "std::vector< FESimple::ControllerBase * >::iterator""'");
+    }
+  }
+  result = (arg1)->erase(arg2,arg3);
+  resultobj = SWIG_NewPointerObj(swig::make_output_iterator(static_cast< const std::vector< FESimple::ControllerBase * >::iterator & >(result)),
+    swig::SwigPyIterator::descriptor(),SWIG_POINTER_OWN);
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_vector_controller_erase(PyObject *self, PyObject *args) {
+  int argc;
+  PyObject *argv[4];
+  int ii;
+  
+  if (!PyTuple_Check(args)) SWIG_fail;
+  argc = args ? (int)PyObject_Length(args) : 0;
+  for (ii = 0; (ii < 3) && (ii < argc); ii++) {
+    argv[ii] = PyTuple_GET_ITEM(args,ii);
+  }
+  if (argc == 2) {
+    int _v;
+    int res = swig::asptr(argv[0], (std::vector<FESimple::ControllerBase*,std::allocator< FESimple::ControllerBase * > >**)(0));
+    _v = SWIG_CheckState(res);
+    if (_v) {
+      swig::SwigPyIterator *iter = 0;
+      int res = SWIG_ConvertPtr(argv[1], SWIG_as_voidptrptr(&iter), swig::SwigPyIterator::descriptor(), 0);
+      _v = (SWIG_IsOK(res) && iter && (dynamic_cast<swig::SwigPyIterator_T<std::vector< FESimple::ControllerBase * >::iterator > *>(iter) != 0));
+      if (_v) {
+        return _wrap_vector_controller_erase__SWIG_0(self, args);
+      }
+    }
+  }
+  if (argc == 3) {
+    int _v;
+    int res = swig::asptr(argv[0], (std::vector<FESimple::ControllerBase*,std::allocator< FESimple::ControllerBase * > >**)(0));
+    _v = SWIG_CheckState(res);
+    if (_v) {
+      swig::SwigPyIterator *iter = 0;
+      int res = SWIG_ConvertPtr(argv[1], SWIG_as_voidptrptr(&iter), swig::SwigPyIterator::descriptor(), 0);
+      _v = (SWIG_IsOK(res) && iter && (dynamic_cast<swig::SwigPyIterator_T<std::vector< FESimple::ControllerBase * >::iterator > *>(iter) != 0));
+      if (_v) {
+        swig::SwigPyIterator *iter = 0;
+        int res = SWIG_ConvertPtr(argv[2], SWIG_as_voidptrptr(&iter), swig::SwigPyIterator::descriptor(), 0);
+        _v = (SWIG_IsOK(res) && iter && (dynamic_cast<swig::SwigPyIterator_T<std::vector< FESimple::ControllerBase * >::iterator > *>(iter) != 0));
+        if (_v) {
+          return _wrap_vector_controller_erase__SWIG_1(self, args);
+        }
+      }
+    }
+  }
+  
+fail:
+  SWIG_SetErrorMsg(PyExc_NotImplementedError,"Wrong number or type of arguments for overloaded function 'vector_controller_erase'.\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    std::vector< FESimple::ControllerBase * >::erase(std::vector< FESimple::ControllerBase * >::iterator)\n"
+    "    std::vector< FESimple::ControllerBase * >::erase(std::vector< FESimple::ControllerBase * >::iterator,std::vector< FESimple::ControllerBase * >::iterator)\n");
+  return 0;
+}
+
+
+SWIGINTERN PyObject *_wrap_new_vector_controller__SWIG_3(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  std::vector< FESimple::ControllerBase * >::size_type arg1 ;
+  std::vector< FESimple::ControllerBase * >::value_type arg2 = (std::vector< FESimple::ControllerBase * >::value_type) 0 ;
+  size_t val1 ;
+  int ecode1 = 0 ;
+  void *argp2 = 0 ;
+  int res2 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  std::vector< FESimple::ControllerBase * > *result = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"OO:new_vector_controller",&obj0,&obj1)) SWIG_fail;
+  ecode1 = SWIG_AsVal_size_t(obj0, &val1);
+  if (!SWIG_IsOK(ecode1)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode1), "in method '" "new_vector_controller" "', argument " "1"" of type '" "std::vector< FESimple::ControllerBase * >::size_type""'");
+  } 
+  arg1 = static_cast< std::vector< FESimple::ControllerBase * >::size_type >(val1);
+  res2 = SWIG_ConvertPtr(obj1, &argp2,SWIGTYPE_p_FESimple__ControllerBase, 0 |  0 );
+  if (!SWIG_IsOK(res2)) {
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "new_vector_controller" "', argument " "2"" of type '" "std::vector< FESimple::ControllerBase * >::value_type""'"); 
+  }
+  arg2 = reinterpret_cast< std::vector< FESimple::ControllerBase * >::value_type >(argp2);
+  result = (std::vector< FESimple::ControllerBase * > *)new std::vector< FESimple::ControllerBase * >(arg1,arg2);
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_std__vectorT_FESimple__ControllerBase_p_std__allocatorT_FESimple__ControllerBase_p_t_t, SWIG_POINTER_NEW |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_new_vector_controller(PyObject *self, PyObject *args) {
+  int argc;
+  PyObject *argv[3];
+  int ii;
+  
+  if (!PyTuple_Check(args)) SWIG_fail;
+  argc = args ? (int)PyObject_Length(args) : 0;
+  for (ii = 0; (ii < 2) && (ii < argc); ii++) {
+    argv[ii] = PyTuple_GET_ITEM(args,ii);
+  }
+  if (argc == 0) {
+    return _wrap_new_vector_controller__SWIG_0(self, args);
+  }
+  if (argc == 1) {
+    int _v;
+    {
+      int res = SWIG_AsVal_size_t(argv[0], NULL);
+      _v = SWIG_CheckState(res);
+    }
+    if (_v) {
+      return _wrap_new_vector_controller__SWIG_2(self, args);
+    }
+  }
+  if (argc == 1) {
+    int _v;
+    int res = swig::asptr(argv[0], (std::vector<FESimple::ControllerBase*,std::allocator< FESimple::ControllerBase * > >**)(0));
+    _v = SWIG_CheckState(res);
+    if (_v) {
+      return _wrap_new_vector_controller__SWIG_1(self, args);
+    }
+  }
+  if (argc == 2) {
+    int _v;
+    {
+      int res = SWIG_AsVal_size_t(argv[0], NULL);
+      _v = SWIG_CheckState(res);
+    }
+    if (_v) {
+      void *vptr = 0;
+      int res = SWIG_ConvertPtr(argv[1], &vptr, SWIGTYPE_p_FESimple__ControllerBase, 0);
+      _v = SWIG_CheckState(res);
+      if (_v) {
+        return _wrap_new_vector_controller__SWIG_3(self, args);
+      }
+    }
+  }
+  
+fail:
+  SWIG_SetErrorMsg(PyExc_NotImplementedError,"Wrong number or type of arguments for overloaded function 'new_vector_controller'.\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    std::vector< FESimple::ControllerBase * >::vector()\n"
+    "    std::vector< FESimple::ControllerBase * >::vector(std::vector< FESimple::ControllerBase * > const &)\n"
+    "    std::vector< FESimple::ControllerBase * >::vector(std::vector< FESimple::ControllerBase * >::size_type)\n"
+    "    std::vector< FESimple::ControllerBase * >::vector(std::vector< FESimple::ControllerBase * >::size_type,std::vector< FESimple::ControllerBase * >::value_type)\n");
+  return 0;
+}
+
+
+SWIGINTERN PyObject *_wrap_vector_controller_push_back(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  std::vector< FESimple::ControllerBase * > *arg1 = (std::vector< FESimple::ControllerBase * > *) 0 ;
+  std::vector< FESimple::ControllerBase * >::value_type arg2 = (std::vector< FESimple::ControllerBase * >::value_type) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 = 0 ;
+  int res2 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"OO:vector_controller_push_back",&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_std__vectorT_FESimple__ControllerBase_p_std__allocatorT_FESimple__ControllerBase_p_t_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "vector_controller_push_back" "', argument " "1"" of type '" "std::vector< FESimple::ControllerBase * > *""'"); 
+  }
+  arg1 = reinterpret_cast< std::vector< FESimple::ControllerBase * > * >(argp1);
+  res2 = SWIG_ConvertPtr(obj1, &argp2,SWIGTYPE_p_FESimple__ControllerBase, 0 |  0 );
+  if (!SWIG_IsOK(res2)) {
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "vector_controller_push_back" "', argument " "2"" of type '" "std::vector< FESimple::ControllerBase * >::value_type""'"); 
+  }
+  arg2 = reinterpret_cast< std::vector< FESimple::ControllerBase * >::value_type >(argp2);
+  (arg1)->push_back(arg2);
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_vector_controller_front(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  std::vector< FESimple::ControllerBase * > *arg1 = (std::vector< FESimple::ControllerBase * > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  std::vector< FESimple::ControllerBase * >::value_type result;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:vector_controller_front",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_std__vectorT_FESimple__ControllerBase_p_std__allocatorT_FESimple__ControllerBase_p_t_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "vector_controller_front" "', argument " "1"" of type '" "std::vector< FESimple::ControllerBase * > const *""'"); 
+  }
+  arg1 = reinterpret_cast< std::vector< FESimple::ControllerBase * > * >(argp1);
+  result = (std::vector< FESimple::ControllerBase * >::value_type)((std::vector< FESimple::ControllerBase * > const *)arg1)->front();
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_FESimple__ControllerBase, 0 |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_vector_controller_back(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  std::vector< FESimple::ControllerBase * > *arg1 = (std::vector< FESimple::ControllerBase * > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  std::vector< FESimple::ControllerBase * >::value_type result;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:vector_controller_back",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_std__vectorT_FESimple__ControllerBase_p_std__allocatorT_FESimple__ControllerBase_p_t_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "vector_controller_back" "', argument " "1"" of type '" "std::vector< FESimple::ControllerBase * > const *""'"); 
+  }
+  arg1 = reinterpret_cast< std::vector< FESimple::ControllerBase * > * >(argp1);
+  result = (std::vector< FESimple::ControllerBase * >::value_type)((std::vector< FESimple::ControllerBase * > const *)arg1)->back();
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_FESimple__ControllerBase, 0 |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_vector_controller_assign(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  std::vector< FESimple::ControllerBase * > *arg1 = (std::vector< FESimple::ControllerBase * > *) 0 ;
+  std::vector< FESimple::ControllerBase * >::size_type arg2 ;
+  std::vector< FESimple::ControllerBase * >::value_type arg3 = (std::vector< FESimple::ControllerBase * >::value_type) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  size_t val2 ;
+  int ecode2 = 0 ;
+  void *argp3 = 0 ;
+  int res3 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  PyObject * obj2 = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"OOO:vector_controller_assign",&obj0,&obj1,&obj2)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_std__vectorT_FESimple__ControllerBase_p_std__allocatorT_FESimple__ControllerBase_p_t_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "vector_controller_assign" "', argument " "1"" of type '" "std::vector< FESimple::ControllerBase * > *""'"); 
+  }
+  arg1 = reinterpret_cast< std::vector< FESimple::ControllerBase * > * >(argp1);
+  ecode2 = SWIG_AsVal_size_t(obj1, &val2);
+  if (!SWIG_IsOK(ecode2)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "vector_controller_assign" "', argument " "2"" of type '" "std::vector< FESimple::ControllerBase * >::size_type""'");
+  } 
+  arg2 = static_cast< std::vector< FESimple::ControllerBase * >::size_type >(val2);
+  res3 = SWIG_ConvertPtr(obj2, &argp3,SWIGTYPE_p_FESimple__ControllerBase, 0 |  0 );
+  if (!SWIG_IsOK(res3)) {
+    SWIG_exception_fail(SWIG_ArgError(res3), "in method '" "vector_controller_assign" "', argument " "3"" of type '" "std::vector< FESimple::ControllerBase * >::value_type""'"); 
+  }
+  arg3 = reinterpret_cast< std::vector< FESimple::ControllerBase * >::value_type >(argp3);
+  (arg1)->assign(arg2,arg3);
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_vector_controller_resize__SWIG_1(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  std::vector< FESimple::ControllerBase * > *arg1 = (std::vector< FESimple::ControllerBase * > *) 0 ;
+  std::vector< FESimple::ControllerBase * >::size_type arg2 ;
+  std::vector< FESimple::ControllerBase * >::value_type arg3 = (std::vector< FESimple::ControllerBase * >::value_type) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  size_t val2 ;
+  int ecode2 = 0 ;
+  void *argp3 = 0 ;
+  int res3 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  PyObject * obj2 = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"OOO:vector_controller_resize",&obj0,&obj1,&obj2)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_std__vectorT_FESimple__ControllerBase_p_std__allocatorT_FESimple__ControllerBase_p_t_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "vector_controller_resize" "', argument " "1"" of type '" "std::vector< FESimple::ControllerBase * > *""'"); 
+  }
+  arg1 = reinterpret_cast< std::vector< FESimple::ControllerBase * > * >(argp1);
+  ecode2 = SWIG_AsVal_size_t(obj1, &val2);
+  if (!SWIG_IsOK(ecode2)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "vector_controller_resize" "', argument " "2"" of type '" "std::vector< FESimple::ControllerBase * >::size_type""'");
+  } 
+  arg2 = static_cast< std::vector< FESimple::ControllerBase * >::size_type >(val2);
+  res3 = SWIG_ConvertPtr(obj2, &argp3,SWIGTYPE_p_FESimple__ControllerBase, 0 |  0 );
+  if (!SWIG_IsOK(res3)) {
+    SWIG_exception_fail(SWIG_ArgError(res3), "in method '" "vector_controller_resize" "', argument " "3"" of type '" "std::vector< FESimple::ControllerBase * >::value_type""'"); 
+  }
+  arg3 = reinterpret_cast< std::vector< FESimple::ControllerBase * >::value_type >(argp3);
+  (arg1)->resize(arg2,arg3);
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_vector_controller_resize(PyObject *self, PyObject *args) {
+  int argc;
+  PyObject *argv[4];
+  int ii;
+  
+  if (!PyTuple_Check(args)) SWIG_fail;
+  argc = args ? (int)PyObject_Length(args) : 0;
+  for (ii = 0; (ii < 3) && (ii < argc); ii++) {
+    argv[ii] = PyTuple_GET_ITEM(args,ii);
+  }
+  if (argc == 2) {
+    int _v;
+    int res = swig::asptr(argv[0], (std::vector<FESimple::ControllerBase*,std::allocator< FESimple::ControllerBase * > >**)(0));
+    _v = SWIG_CheckState(res);
+    if (_v) {
+      {
+        int res = SWIG_AsVal_size_t(argv[1], NULL);
+        _v = SWIG_CheckState(res);
+      }
+      if (_v) {
+        return _wrap_vector_controller_resize__SWIG_0(self, args);
+      }
+    }
+  }
+  if (argc == 3) {
+    int _v;
+    int res = swig::asptr(argv[0], (std::vector<FESimple::ControllerBase*,std::allocator< FESimple::ControllerBase * > >**)(0));
+    _v = SWIG_CheckState(res);
+    if (_v) {
+      {
+        int res = SWIG_AsVal_size_t(argv[1], NULL);
+        _v = SWIG_CheckState(res);
+      }
+      if (_v) {
+        void *vptr = 0;
+        int res = SWIG_ConvertPtr(argv[2], &vptr, SWIGTYPE_p_FESimple__ControllerBase, 0);
+        _v = SWIG_CheckState(res);
+        if (_v) {
+          return _wrap_vector_controller_resize__SWIG_1(self, args);
+        }
+      }
+    }
+  }
+  
+fail:
+  SWIG_SetErrorMsg(PyExc_NotImplementedError,"Wrong number or type of arguments for overloaded function 'vector_controller_resize'.\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    std::vector< FESimple::ControllerBase * >::resize(std::vector< FESimple::ControllerBase * >::size_type)\n"
+    "    std::vector< FESimple::ControllerBase * >::resize(std::vector< FESimple::ControllerBase * >::size_type,std::vector< FESimple::ControllerBase * >::value_type)\n");
+  return 0;
+}
+
+
+SWIGINTERN PyObject *_wrap_vector_controller_insert__SWIG_0(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  std::vector< FESimple::ControllerBase * > *arg1 = (std::vector< FESimple::ControllerBase * > *) 0 ;
+  std::vector< FESimple::ControllerBase * >::iterator arg2 ;
+  std::vector< FESimple::ControllerBase * >::value_type arg3 = (std::vector< FESimple::ControllerBase * >::value_type) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  swig::SwigPyIterator *iter2 = 0 ;
+  int res2 ;
+  void *argp3 = 0 ;
+  int res3 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  PyObject * obj2 = 0 ;
+  std::vector< FESimple::ControllerBase * >::iterator result;
+  
+  if (!PyArg_ParseTuple(args,(char *)"OOO:vector_controller_insert",&obj0,&obj1,&obj2)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_std__vectorT_FESimple__ControllerBase_p_std__allocatorT_FESimple__ControllerBase_p_t_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "vector_controller_insert" "', argument " "1"" of type '" "std::vector< FESimple::ControllerBase * > *""'"); 
+  }
+  arg1 = reinterpret_cast< std::vector< FESimple::ControllerBase * > * >(argp1);
+  res2 = SWIG_ConvertPtr(obj1, SWIG_as_voidptrptr(&iter2), swig::SwigPyIterator::descriptor(), 0);
+  if (!SWIG_IsOK(res2) || !iter2) {
+    SWIG_exception_fail(SWIG_ArgError(SWIG_TypeError), "in method '" "vector_controller_insert" "', argument " "2"" of type '" "std::vector< FESimple::ControllerBase * >::iterator""'");
+  } else {
+    swig::SwigPyIterator_T<std::vector< FESimple::ControllerBase * >::iterator > *iter_t = dynamic_cast<swig::SwigPyIterator_T<std::vector< FESimple::ControllerBase * >::iterator > *>(iter2);
+    if (iter_t) {
+      arg2 = iter_t->get_current();
+    } else {
+      SWIG_exception_fail(SWIG_ArgError(SWIG_TypeError), "in method '" "vector_controller_insert" "', argument " "2"" of type '" "std::vector< FESimple::ControllerBase * >::iterator""'");
+    }
+  }
+  res3 = SWIG_ConvertPtr(obj2, &argp3,SWIGTYPE_p_FESimple__ControllerBase, 0 |  0 );
+  if (!SWIG_IsOK(res3)) {
+    SWIG_exception_fail(SWIG_ArgError(res3), "in method '" "vector_controller_insert" "', argument " "3"" of type '" "std::vector< FESimple::ControllerBase * >::value_type""'"); 
+  }
+  arg3 = reinterpret_cast< std::vector< FESimple::ControllerBase * >::value_type >(argp3);
+  result = (arg1)->insert(arg2,arg3);
+  resultobj = SWIG_NewPointerObj(swig::make_output_iterator(static_cast< const std::vector< FESimple::ControllerBase * >::iterator & >(result)),
+    swig::SwigPyIterator::descriptor(),SWIG_POINTER_OWN);
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_vector_controller_insert__SWIG_1(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  std::vector< FESimple::ControllerBase * > *arg1 = (std::vector< FESimple::ControllerBase * > *) 0 ;
+  std::vector< FESimple::ControllerBase * >::iterator arg2 ;
+  std::vector< FESimple::ControllerBase * >::size_type arg3 ;
+  std::vector< FESimple::ControllerBase * >::value_type arg4 = (std::vector< FESimple::ControllerBase * >::value_type) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  swig::SwigPyIterator *iter2 = 0 ;
+  int res2 ;
+  size_t val3 ;
+  int ecode3 = 0 ;
+  void *argp4 = 0 ;
+  int res4 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  PyObject * obj2 = 0 ;
+  PyObject * obj3 = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"OOOO:vector_controller_insert",&obj0,&obj1,&obj2,&obj3)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_std__vectorT_FESimple__ControllerBase_p_std__allocatorT_FESimple__ControllerBase_p_t_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "vector_controller_insert" "', argument " "1"" of type '" "std::vector< FESimple::ControllerBase * > *""'"); 
+  }
+  arg1 = reinterpret_cast< std::vector< FESimple::ControllerBase * > * >(argp1);
+  res2 = SWIG_ConvertPtr(obj1, SWIG_as_voidptrptr(&iter2), swig::SwigPyIterator::descriptor(), 0);
+  if (!SWIG_IsOK(res2) || !iter2) {
+    SWIG_exception_fail(SWIG_ArgError(SWIG_TypeError), "in method '" "vector_controller_insert" "', argument " "2"" of type '" "std::vector< FESimple::ControllerBase * >::iterator""'");
+  } else {
+    swig::SwigPyIterator_T<std::vector< FESimple::ControllerBase * >::iterator > *iter_t = dynamic_cast<swig::SwigPyIterator_T<std::vector< FESimple::ControllerBase * >::iterator > *>(iter2);
+    if (iter_t) {
+      arg2 = iter_t->get_current();
+    } else {
+      SWIG_exception_fail(SWIG_ArgError(SWIG_TypeError), "in method '" "vector_controller_insert" "', argument " "2"" of type '" "std::vector< FESimple::ControllerBase * >::iterator""'");
+    }
+  }
+  ecode3 = SWIG_AsVal_size_t(obj2, &val3);
+  if (!SWIG_IsOK(ecode3)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode3), "in method '" "vector_controller_insert" "', argument " "3"" of type '" "std::vector< FESimple::ControllerBase * >::size_type""'");
+  } 
+  arg3 = static_cast< std::vector< FESimple::ControllerBase * >::size_type >(val3);
+  res4 = SWIG_ConvertPtr(obj3, &argp4,SWIGTYPE_p_FESimple__ControllerBase, 0 |  0 );
+  if (!SWIG_IsOK(res4)) {
+    SWIG_exception_fail(SWIG_ArgError(res4), "in method '" "vector_controller_insert" "', argument " "4"" of type '" "std::vector< FESimple::ControllerBase * >::value_type""'"); 
+  }
+  arg4 = reinterpret_cast< std::vector< FESimple::ControllerBase * >::value_type >(argp4);
+  (arg1)->insert(arg2,arg3,arg4);
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_vector_controller_insert(PyObject *self, PyObject *args) {
+  int argc;
+  PyObject *argv[5];
+  int ii;
+  
+  if (!PyTuple_Check(args)) SWIG_fail;
+  argc = args ? (int)PyObject_Length(args) : 0;
+  for (ii = 0; (ii < 4) && (ii < argc); ii++) {
+    argv[ii] = PyTuple_GET_ITEM(args,ii);
+  }
+  if (argc == 3) {
+    int _v;
+    int res = swig::asptr(argv[0], (std::vector<FESimple::ControllerBase*,std::allocator< FESimple::ControllerBase * > >**)(0));
+    _v = SWIG_CheckState(res);
+    if (_v) {
+      swig::SwigPyIterator *iter = 0;
+      int res = SWIG_ConvertPtr(argv[1], SWIG_as_voidptrptr(&iter), swig::SwigPyIterator::descriptor(), 0);
+      _v = (SWIG_IsOK(res) && iter && (dynamic_cast<swig::SwigPyIterator_T<std::vector< FESimple::ControllerBase * >::iterator > *>(iter) != 0));
+      if (_v) {
+        void *vptr = 0;
+        int res = SWIG_ConvertPtr(argv[2], &vptr, SWIGTYPE_p_FESimple__ControllerBase, 0);
+        _v = SWIG_CheckState(res);
+        if (_v) {
+          return _wrap_vector_controller_insert__SWIG_0(self, args);
+        }
+      }
+    }
+  }
+  if (argc == 4) {
+    int _v;
+    int res = swig::asptr(argv[0], (std::vector<FESimple::ControllerBase*,std::allocator< FESimple::ControllerBase * > >**)(0));
+    _v = SWIG_CheckState(res);
+    if (_v) {
+      swig::SwigPyIterator *iter = 0;
+      int res = SWIG_ConvertPtr(argv[1], SWIG_as_voidptrptr(&iter), swig::SwigPyIterator::descriptor(), 0);
+      _v = (SWIG_IsOK(res) && iter && (dynamic_cast<swig::SwigPyIterator_T<std::vector< FESimple::ControllerBase * >::iterator > *>(iter) != 0));
+      if (_v) {
+        {
+          int res = SWIG_AsVal_size_t(argv[2], NULL);
+          _v = SWIG_CheckState(res);
+        }
+        if (_v) {
+          void *vptr = 0;
+          int res = SWIG_ConvertPtr(argv[3], &vptr, SWIGTYPE_p_FESimple__ControllerBase, 0);
+          _v = SWIG_CheckState(res);
+          if (_v) {
+            return _wrap_vector_controller_insert__SWIG_1(self, args);
+          }
+        }
+      }
+    }
+  }
+  
+fail:
+  SWIG_SetErrorMsg(PyExc_NotImplementedError,"Wrong number or type of arguments for overloaded function 'vector_controller_insert'.\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    std::vector< FESimple::ControllerBase * >::insert(std::vector< FESimple::ControllerBase * >::iterator,std::vector< FESimple::ControllerBase * >::value_type)\n"
+    "    std::vector< FESimple::ControllerBase * >::insert(std::vector< FESimple::ControllerBase * >::iterator,std::vector< FESimple::ControllerBase * >::size_type,std::vector< FESimple::ControllerBase * >::value_type)\n");
+  return 0;
+}
+
+
+SWIGINTERN PyObject *_wrap_vector_controller_reserve(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  std::vector< FESimple::ControllerBase * > *arg1 = (std::vector< FESimple::ControllerBase * > *) 0 ;
+  std::vector< FESimple::ControllerBase * >::size_type arg2 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  size_t val2 ;
+  int ecode2 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"OO:vector_controller_reserve",&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_std__vectorT_FESimple__ControllerBase_p_std__allocatorT_FESimple__ControllerBase_p_t_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "vector_controller_reserve" "', argument " "1"" of type '" "std::vector< FESimple::ControllerBase * > *""'"); 
+  }
+  arg1 = reinterpret_cast< std::vector< FESimple::ControllerBase * > * >(argp1);
+  ecode2 = SWIG_AsVal_size_t(obj1, &val2);
+  if (!SWIG_IsOK(ecode2)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "vector_controller_reserve" "', argument " "2"" of type '" "std::vector< FESimple::ControllerBase * >::size_type""'");
+  } 
+  arg2 = static_cast< std::vector< FESimple::ControllerBase * >::size_type >(val2);
+  (arg1)->reserve(arg2);
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_vector_controller_capacity(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  std::vector< FESimple::ControllerBase * > *arg1 = (std::vector< FESimple::ControllerBase * > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  std::vector< FESimple::ControllerBase * >::size_type result;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:vector_controller_capacity",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_std__vectorT_FESimple__ControllerBase_p_std__allocatorT_FESimple__ControllerBase_p_t_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "vector_controller_capacity" "', argument " "1"" of type '" "std::vector< FESimple::ControllerBase * > const *""'"); 
+  }
+  arg1 = reinterpret_cast< std::vector< FESimple::ControllerBase * > * >(argp1);
+  result = ((std::vector< FESimple::ControllerBase * > const *)arg1)->capacity();
+  resultobj = SWIG_From_size_t(static_cast< size_t >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_delete_vector_controller(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  std::vector< FESimple::ControllerBase * > *arg1 = (std::vector< FESimple::ControllerBase * > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:delete_vector_controller",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_std__vectorT_FESimple__ControllerBase_p_std__allocatorT_FESimple__ControllerBase_p_t_t, SWIG_POINTER_DISOWN |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "delete_vector_controller" "', argument " "1"" of type '" "std::vector< FESimple::ControllerBase * > *""'"); 
+  }
+  arg1 = reinterpret_cast< std::vector< FESimple::ControllerBase * > * >(argp1);
+  delete arg1;
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *vector_controller_swigregister(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *obj;
+  if (!PyArg_ParseTuple(args,(char*)"O:swigregister", &obj)) return NULL;
+  SWIG_TypeNewClientData(SWIGTYPE_p_std__vectorT_FESimple__ControllerBase_p_std__allocatorT_FESimple__ControllerBase_p_t_t, SWIG_NewClientData(obj));
+  return SWIG_Py_Void();
+}
+
+SWIGINTERN PyObject *_wrap_new_gameobj_ptr(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  std::shared_ptr< FESimple::GameObjBase > *result = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)":new_gameobj_ptr")) SWIG_fail;
+  result = (std::shared_ptr< FESimple::GameObjBase > *)new std::shared_ptr< FESimple::GameObjBase >();
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_std__shared_ptrT_FESimple__GameObjBase_t, SWIG_POINTER_NEW |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_delete_gameobj_ptr(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  std::shared_ptr< FESimple::GameObjBase > *arg1 = (std::shared_ptr< FESimple::GameObjBase > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:delete_gameobj_ptr",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_std__shared_ptrT_FESimple__GameObjBase_t, SWIG_POINTER_DISOWN |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "delete_gameobj_ptr" "', argument " "1"" of type '" "std::shared_ptr< FESimple::GameObjBase > *""'"); 
+  }
+  arg1 = reinterpret_cast< std::shared_ptr< FESimple::GameObjBase > * >(argp1);
+  delete arg1;
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *gameobj_ptr_swigregister(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *obj;
+  if (!PyArg_ParseTuple(args,(char*)"O:swigregister", &obj)) return NULL;
+  SWIG_TypeNewClientData(SWIGTYPE_p_std__shared_ptrT_FESimple__GameObjBase_t, SWIG_NewClientData(obj));
+  return SWIG_Py_Void();
+}
+
+SWIGINTERN PyObject *_wrap_CCPoint_x_set(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  cocos2d::CCPoint *arg1 = (cocos2d::CCPoint *) 0 ;
+  float arg2 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  float val2 ;
+  int ecode2 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"OO:CCPoint_x_set",&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_cocos2d__CCPoint, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "CCPoint_x_set" "', argument " "1"" of type '" "cocos2d::CCPoint *""'"); 
+  }
+  arg1 = reinterpret_cast< cocos2d::CCPoint * >(argp1);
+  ecode2 = SWIG_AsVal_float(obj1, &val2);
+  if (!SWIG_IsOK(ecode2)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "CCPoint_x_set" "', argument " "2"" of type '" "float""'");
+  } 
+  arg2 = static_cast< float >(val2);
+  if (arg1) (arg1)->x = arg2;
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_CCPoint_x_get(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  cocos2d::CCPoint *arg1 = (cocos2d::CCPoint *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  float result;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:CCPoint_x_get",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_cocos2d__CCPoint, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "CCPoint_x_get" "', argument " "1"" of type '" "cocos2d::CCPoint *""'"); 
+  }
+  arg1 = reinterpret_cast< cocos2d::CCPoint * >(argp1);
+  result = (float) ((arg1)->x);
+  resultobj = SWIG_From_float(static_cast< float >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_CCPoint_y_set(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  cocos2d::CCPoint *arg1 = (cocos2d::CCPoint *) 0 ;
+  float arg2 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  float val2 ;
+  int ecode2 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"OO:CCPoint_y_set",&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_cocos2d__CCPoint, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "CCPoint_y_set" "', argument " "1"" of type '" "cocos2d::CCPoint *""'"); 
+  }
+  arg1 = reinterpret_cast< cocos2d::CCPoint * >(argp1);
+  ecode2 = SWIG_AsVal_float(obj1, &val2);
+  if (!SWIG_IsOK(ecode2)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "CCPoint_y_set" "', argument " "2"" of type '" "float""'");
+  } 
+  arg2 = static_cast< float >(val2);
+  if (arg1) (arg1)->y = arg2;
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_CCPoint_y_get(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  cocos2d::CCPoint *arg1 = (cocos2d::CCPoint *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  float result;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:CCPoint_y_get",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_cocos2d__CCPoint, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "CCPoint_y_get" "', argument " "1"" of type '" "cocos2d::CCPoint *""'"); 
+  }
+  arg1 = reinterpret_cast< cocos2d::CCPoint * >(argp1);
+  result = (float) ((arg1)->y);
+  resultobj = SWIG_From_float(static_cast< float >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_new_CCPoint__SWIG_0(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  cocos2d::CCPoint *result = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)":new_CCPoint")) SWIG_fail;
+  result = (cocos2d::CCPoint *)new cocos2d::CCPoint();
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_cocos2d__CCPoint, SWIG_POINTER_NEW |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_new_CCPoint__SWIG_1(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  float arg1 ;
+  float arg2 ;
+  float val1 ;
+  int ecode1 = 0 ;
+  float val2 ;
+  int ecode2 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  cocos2d::CCPoint *result = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"OO:new_CCPoint",&obj0,&obj1)) SWIG_fail;
+  ecode1 = SWIG_AsVal_float(obj0, &val1);
+  if (!SWIG_IsOK(ecode1)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode1), "in method '" "new_CCPoint" "', argument " "1"" of type '" "float""'");
+  } 
+  arg1 = static_cast< float >(val1);
+  ecode2 = SWIG_AsVal_float(obj1, &val2);
+  if (!SWIG_IsOK(ecode2)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "new_CCPoint" "', argument " "2"" of type '" "float""'");
+  } 
+  arg2 = static_cast< float >(val2);
+  result = (cocos2d::CCPoint *)new cocos2d::CCPoint(arg1,arg2);
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_cocos2d__CCPoint, SWIG_POINTER_NEW |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_new_CCPoint__SWIG_2(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  cocos2d::CCPoint *arg1 = 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  cocos2d::CCPoint *result = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:new_CCPoint",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1, SWIGTYPE_p_cocos2d__CCPoint,  0  | 0);
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "new_CCPoint" "', argument " "1"" of type '" "cocos2d::CCPoint const &""'"); 
+  }
+  if (!argp1) {
+    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "new_CCPoint" "', argument " "1"" of type '" "cocos2d::CCPoint const &""'"); 
+  }
+  arg1 = reinterpret_cast< cocos2d::CCPoint * >(argp1);
+  result = (cocos2d::CCPoint *)new cocos2d::CCPoint((cocos2d::CCPoint const &)*arg1);
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_cocos2d__CCPoint, SWIG_POINTER_NEW |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_new_CCPoint(PyObject *self, PyObject *args) {
+  int argc;
+  PyObject *argv[3];
+  int ii;
+  
+  if (!PyTuple_Check(args)) SWIG_fail;
+  argc = args ? (int)PyObject_Length(args) : 0;
+  for (ii = 0; (ii < 2) && (ii < argc); ii++) {
+    argv[ii] = PyTuple_GET_ITEM(args,ii);
+  }
+  if (argc == 0) {
+    return _wrap_new_CCPoint__SWIG_0(self, args);
+  }
+  if (argc == 1) {
+    int _v;
+    int res = SWIG_ConvertPtr(argv[0], 0, SWIGTYPE_p_cocos2d__CCPoint, 0);
+    _v = SWIG_CheckState(res);
+    if (_v) {
+      return _wrap_new_CCPoint__SWIG_2(self, args);
+    }
+  }
+  if (argc == 2) {
+    int _v;
+    {
+      int res = SWIG_AsVal_float(argv[0], NULL);
+      _v = SWIG_CheckState(res);
+    }
+    if (_v) {
+      {
+        int res = SWIG_AsVal_float(argv[1], NULL);
+        _v = SWIG_CheckState(res);
+      }
+      if (_v) {
+        return _wrap_new_CCPoint__SWIG_1(self, args);
+      }
+    }
+  }
+  
+fail:
+  SWIG_SetErrorMsg(PyExc_NotImplementedError,"Wrong number or type of arguments for overloaded function 'new_CCPoint'.\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    cocos2d::CCPoint::CCPoint()\n"
+    "    cocos2d::CCPoint::CCPoint(float,float)\n"
+    "    cocos2d::CCPoint::CCPoint(cocos2d::CCPoint const &)\n");
+  return 0;
+}
+
+
+SWIGINTERN PyObject *_wrap_CCPoint_setPoint(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  cocos2d::CCPoint *arg1 = (cocos2d::CCPoint *) 0 ;
+  float arg2 ;
+  float arg3 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  float val2 ;
+  int ecode2 = 0 ;
+  float val3 ;
+  int ecode3 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  PyObject * obj2 = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"OOO:CCPoint_setPoint",&obj0,&obj1,&obj2)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_cocos2d__CCPoint, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "CCPoint_setPoint" "', argument " "1"" of type '" "cocos2d::CCPoint *""'"); 
+  }
+  arg1 = reinterpret_cast< cocos2d::CCPoint * >(argp1);
+  ecode2 = SWIG_AsVal_float(obj1, &val2);
+  if (!SWIG_IsOK(ecode2)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "CCPoint_setPoint" "', argument " "2"" of type '" "float""'");
+  } 
+  arg2 = static_cast< float >(val2);
+  ecode3 = SWIG_AsVal_float(obj2, &val3);
+  if (!SWIG_IsOK(ecode3)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode3), "in method '" "CCPoint_setPoint" "', argument " "3"" of type '" "float""'");
+  } 
+  arg3 = static_cast< float >(val3);
+  (arg1)->setPoint(arg2,arg3);
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_CCPoint_equals(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  cocos2d::CCPoint *arg1 = (cocos2d::CCPoint *) 0 ;
+  cocos2d::CCPoint *arg2 = 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 = 0 ;
+  int res2 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  bool result;
+  
+  if (!PyArg_ParseTuple(args,(char *)"OO:CCPoint_equals",&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_cocos2d__CCPoint, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "CCPoint_equals" "', argument " "1"" of type '" "cocos2d::CCPoint const *""'"); 
+  }
+  arg1 = reinterpret_cast< cocos2d::CCPoint * >(argp1);
+  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_cocos2d__CCPoint,  0  | 0);
+  if (!SWIG_IsOK(res2)) {
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "CCPoint_equals" "', argument " "2"" of type '" "cocos2d::CCPoint const &""'"); 
+  }
+  if (!argp2) {
+    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "CCPoint_equals" "', argument " "2"" of type '" "cocos2d::CCPoint const &""'"); 
+  }
+  arg2 = reinterpret_cast< cocos2d::CCPoint * >(argp2);
+  result = (bool)((cocos2d::CCPoint const *)arg1)->equals((cocos2d::CCPoint const &)*arg2);
+  resultobj = SWIG_From_bool(static_cast< bool >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_delete_CCPoint(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  cocos2d::CCPoint *arg1 = (cocos2d::CCPoint *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:delete_CCPoint",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_cocos2d__CCPoint, SWIG_POINTER_DISOWN |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "delete_CCPoint" "', argument " "1"" of type '" "cocos2d::CCPoint *""'"); 
+  }
+  arg1 = reinterpret_cast< cocos2d::CCPoint * >(argp1);
+  delete arg1;
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *CCPoint_swigregister(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *obj;
+  if (!PyArg_ParseTuple(args,(char*)"O:swigregister", &obj)) return NULL;
+  SWIG_TypeNewClientData(SWIGTYPE_p_cocos2d__CCPoint, SWIG_NewClientData(obj));
+  return SWIG_Py_Void();
+}
+
+SWIGINTERN PyObject *_wrap_CCSize_width_set(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  cocos2d::CCSize *arg1 = (cocos2d::CCSize *) 0 ;
+  float arg2 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  float val2 ;
+  int ecode2 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"OO:CCSize_width_set",&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_cocos2d__CCSize, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "CCSize_width_set" "', argument " "1"" of type '" "cocos2d::CCSize *""'"); 
+  }
+  arg1 = reinterpret_cast< cocos2d::CCSize * >(argp1);
+  ecode2 = SWIG_AsVal_float(obj1, &val2);
+  if (!SWIG_IsOK(ecode2)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "CCSize_width_set" "', argument " "2"" of type '" "float""'");
+  } 
+  arg2 = static_cast< float >(val2);
+  if (arg1) (arg1)->width = arg2;
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_CCSize_width_get(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  cocos2d::CCSize *arg1 = (cocos2d::CCSize *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  float result;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:CCSize_width_get",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_cocos2d__CCSize, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "CCSize_width_get" "', argument " "1"" of type '" "cocos2d::CCSize *""'"); 
+  }
+  arg1 = reinterpret_cast< cocos2d::CCSize * >(argp1);
+  result = (float) ((arg1)->width);
+  resultobj = SWIG_From_float(static_cast< float >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_CCSize_height_set(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  cocos2d::CCSize *arg1 = (cocos2d::CCSize *) 0 ;
+  float arg2 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  float val2 ;
+  int ecode2 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"OO:CCSize_height_set",&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_cocos2d__CCSize, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "CCSize_height_set" "', argument " "1"" of type '" "cocos2d::CCSize *""'"); 
+  }
+  arg1 = reinterpret_cast< cocos2d::CCSize * >(argp1);
+  ecode2 = SWIG_AsVal_float(obj1, &val2);
+  if (!SWIG_IsOK(ecode2)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "CCSize_height_set" "', argument " "2"" of type '" "float""'");
+  } 
+  arg2 = static_cast< float >(val2);
+  if (arg1) (arg1)->height = arg2;
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_CCSize_height_get(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  cocos2d::CCSize *arg1 = (cocos2d::CCSize *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  float result;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:CCSize_height_get",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_cocos2d__CCSize, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "CCSize_height_get" "', argument " "1"" of type '" "cocos2d::CCSize *""'"); 
+  }
+  arg1 = reinterpret_cast< cocos2d::CCSize * >(argp1);
+  result = (float) ((arg1)->height);
+  resultobj = SWIG_From_float(static_cast< float >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_new_CCSize__SWIG_0(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  cocos2d::CCSize *result = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)":new_CCSize")) SWIG_fail;
+  result = (cocos2d::CCSize *)new cocos2d::CCSize();
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_cocos2d__CCSize, SWIG_POINTER_NEW |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_new_CCSize__SWIG_1(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  float arg1 ;
+  float arg2 ;
+  float val1 ;
+  int ecode1 = 0 ;
+  float val2 ;
+  int ecode2 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  cocos2d::CCSize *result = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"OO:new_CCSize",&obj0,&obj1)) SWIG_fail;
+  ecode1 = SWIG_AsVal_float(obj0, &val1);
+  if (!SWIG_IsOK(ecode1)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode1), "in method '" "new_CCSize" "', argument " "1"" of type '" "float""'");
+  } 
+  arg1 = static_cast< float >(val1);
+  ecode2 = SWIG_AsVal_float(obj1, &val2);
+  if (!SWIG_IsOK(ecode2)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "new_CCSize" "', argument " "2"" of type '" "float""'");
+  } 
+  arg2 = static_cast< float >(val2);
+  result = (cocos2d::CCSize *)new cocos2d::CCSize(arg1,arg2);
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_cocos2d__CCSize, SWIG_POINTER_NEW |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_new_CCSize__SWIG_2(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  cocos2d::CCSize *arg1 = 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  cocos2d::CCSize *result = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:new_CCSize",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1, SWIGTYPE_p_cocos2d__CCSize,  0  | 0);
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "new_CCSize" "', argument " "1"" of type '" "cocos2d::CCSize const &""'"); 
+  }
+  if (!argp1) {
+    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "new_CCSize" "', argument " "1"" of type '" "cocos2d::CCSize const &""'"); 
+  }
+  arg1 = reinterpret_cast< cocos2d::CCSize * >(argp1);
+  result = (cocos2d::CCSize *)new cocos2d::CCSize((cocos2d::CCSize const &)*arg1);
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_cocos2d__CCSize, SWIG_POINTER_NEW |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_new_CCSize(PyObject *self, PyObject *args) {
+  int argc;
+  PyObject *argv[3];
+  int ii;
+  
+  if (!PyTuple_Check(args)) SWIG_fail;
+  argc = args ? (int)PyObject_Length(args) : 0;
+  for (ii = 0; (ii < 2) && (ii < argc); ii++) {
+    argv[ii] = PyTuple_GET_ITEM(args,ii);
+  }
+  if (argc == 0) {
+    return _wrap_new_CCSize__SWIG_0(self, args);
+  }
+  if (argc == 1) {
+    int _v;
+    int res = SWIG_ConvertPtr(argv[0], 0, SWIGTYPE_p_cocos2d__CCSize, 0);
+    _v = SWIG_CheckState(res);
+    if (_v) {
+      return _wrap_new_CCSize__SWIG_2(self, args);
+    }
+  }
+  if (argc == 2) {
+    int _v;
+    {
+      int res = SWIG_AsVal_float(argv[0], NULL);
+      _v = SWIG_CheckState(res);
+    }
+    if (_v) {
+      {
+        int res = SWIG_AsVal_float(argv[1], NULL);
+        _v = SWIG_CheckState(res);
+      }
+      if (_v) {
+        return _wrap_new_CCSize__SWIG_1(self, args);
+      }
+    }
+  }
+  
+fail:
+  SWIG_SetErrorMsg(PyExc_NotImplementedError,"Wrong number or type of arguments for overloaded function 'new_CCSize'.\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    cocos2d::CCSize::CCSize()\n"
+    "    cocos2d::CCSize::CCSize(float,float)\n"
+    "    cocos2d::CCSize::CCSize(cocos2d::CCSize const &)\n");
+  return 0;
+}
+
+
+SWIGINTERN PyObject *_wrap_CCSize_setSize(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  cocos2d::CCSize *arg1 = (cocos2d::CCSize *) 0 ;
+  float arg2 ;
+  float arg3 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  float val2 ;
+  int ecode2 = 0 ;
+  float val3 ;
+  int ecode3 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  PyObject * obj2 = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"OOO:CCSize_setSize",&obj0,&obj1,&obj2)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_cocos2d__CCSize, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "CCSize_setSize" "', argument " "1"" of type '" "cocos2d::CCSize *""'"); 
+  }
+  arg1 = reinterpret_cast< cocos2d::CCSize * >(argp1);
+  ecode2 = SWIG_AsVal_float(obj1, &val2);
+  if (!SWIG_IsOK(ecode2)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "CCSize_setSize" "', argument " "2"" of type '" "float""'");
+  } 
+  arg2 = static_cast< float >(val2);
+  ecode3 = SWIG_AsVal_float(obj2, &val3);
+  if (!SWIG_IsOK(ecode3)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode3), "in method '" "CCSize_setSize" "', argument " "3"" of type '" "float""'");
+  } 
+  arg3 = static_cast< float >(val3);
+  (arg1)->setSize(arg2,arg3);
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_CCSize_equals(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  cocos2d::CCSize *arg1 = (cocos2d::CCSize *) 0 ;
+  cocos2d::CCSize *arg2 = 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 = 0 ;
+  int res2 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  bool result;
+  
+  if (!PyArg_ParseTuple(args,(char *)"OO:CCSize_equals",&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_cocos2d__CCSize, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "CCSize_equals" "', argument " "1"" of type '" "cocos2d::CCSize const *""'"); 
+  }
+  arg1 = reinterpret_cast< cocos2d::CCSize * >(argp1);
+  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_cocos2d__CCSize,  0  | 0);
+  if (!SWIG_IsOK(res2)) {
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "CCSize_equals" "', argument " "2"" of type '" "cocos2d::CCSize const &""'"); 
+  }
+  if (!argp2) {
+    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "CCSize_equals" "', argument " "2"" of type '" "cocos2d::CCSize const &""'"); 
+  }
+  arg2 = reinterpret_cast< cocos2d::CCSize * >(argp2);
+  result = (bool)((cocos2d::CCSize const *)arg1)->equals((cocos2d::CCSize const &)*arg2);
+  resultobj = SWIG_From_bool(static_cast< bool >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_delete_CCSize(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  cocos2d::CCSize *arg1 = (cocos2d::CCSize *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:delete_CCSize",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_cocos2d__CCSize, SWIG_POINTER_DISOWN |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "delete_CCSize" "', argument " "1"" of type '" "cocos2d::CCSize *""'"); 
+  }
+  arg1 = reinterpret_cast< cocos2d::CCSize * >(argp1);
+  delete arg1;
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *CCSize_swigregister(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *obj;
+  if (!PyArg_ParseTuple(args,(char*)"O:swigregister", &obj)) return NULL;
+  SWIG_TypeNewClientData(SWIGTYPE_p_cocos2d__CCSize, SWIG_NewClientData(obj));
+  return SWIG_Py_Void();
+}
+
+SWIGINTERN PyObject *_wrap_CCRect_origin_set(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  cocos2d::CCRect *arg1 = (cocos2d::CCRect *) 0 ;
+  cocos2d::CCPoint *arg2 = (cocos2d::CCPoint *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 = 0 ;
+  int res2 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"OO:CCRect_origin_set",&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_cocos2d__CCRect, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "CCRect_origin_set" "', argument " "1"" of type '" "cocos2d::CCRect *""'"); 
+  }
+  arg1 = reinterpret_cast< cocos2d::CCRect * >(argp1);
+  res2 = SWIG_ConvertPtr(obj1, &argp2,SWIGTYPE_p_cocos2d__CCPoint, 0 |  0 );
+  if (!SWIG_IsOK(res2)) {
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "CCRect_origin_set" "', argument " "2"" of type '" "cocos2d::CCPoint *""'"); 
+  }
+  arg2 = reinterpret_cast< cocos2d::CCPoint * >(argp2);
+  if (arg1) (arg1)->origin = *arg2;
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_CCRect_origin_get(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  cocos2d::CCRect *arg1 = (cocos2d::CCRect *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  cocos2d::CCPoint *result = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:CCRect_origin_get",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_cocos2d__CCRect, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "CCRect_origin_get" "', argument " "1"" of type '" "cocos2d::CCRect *""'"); 
+  }
+  arg1 = reinterpret_cast< cocos2d::CCRect * >(argp1);
+  result = (cocos2d::CCPoint *)& ((arg1)->origin);
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_cocos2d__CCPoint, 0 |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_CCRect_size_set(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  cocos2d::CCRect *arg1 = (cocos2d::CCRect *) 0 ;
+  cocos2d::CCSize *arg2 = (cocos2d::CCSize *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 = 0 ;
+  int res2 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"OO:CCRect_size_set",&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_cocos2d__CCRect, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "CCRect_size_set" "', argument " "1"" of type '" "cocos2d::CCRect *""'"); 
+  }
+  arg1 = reinterpret_cast< cocos2d::CCRect * >(argp1);
+  res2 = SWIG_ConvertPtr(obj1, &argp2,SWIGTYPE_p_cocos2d__CCSize, 0 |  0 );
+  if (!SWIG_IsOK(res2)) {
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "CCRect_size_set" "', argument " "2"" of type '" "cocos2d::CCSize *""'"); 
+  }
+  arg2 = reinterpret_cast< cocos2d::CCSize * >(argp2);
+  if (arg1) (arg1)->size = *arg2;
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_CCRect_size_get(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  cocos2d::CCRect *arg1 = (cocos2d::CCRect *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  cocos2d::CCSize *result = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:CCRect_size_get",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_cocos2d__CCRect, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "CCRect_size_get" "', argument " "1"" of type '" "cocos2d::CCRect *""'"); 
+  }
+  arg1 = reinterpret_cast< cocos2d::CCRect * >(argp1);
+  result = (cocos2d::CCSize *)& ((arg1)->size);
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_cocos2d__CCSize, 0 |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_new_CCRect__SWIG_0(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  cocos2d::CCRect *result = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)":new_CCRect")) SWIG_fail;
+  result = (cocos2d::CCRect *)new cocos2d::CCRect();
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_cocos2d__CCRect, SWIG_POINTER_NEW |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_new_CCRect__SWIG_1(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  float arg1 ;
+  float arg2 ;
+  float arg3 ;
+  float arg4 ;
+  float val1 ;
+  int ecode1 = 0 ;
+  float val2 ;
+  int ecode2 = 0 ;
+  float val3 ;
+  int ecode3 = 0 ;
+  float val4 ;
+  int ecode4 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  PyObject * obj2 = 0 ;
+  PyObject * obj3 = 0 ;
+  cocos2d::CCRect *result = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"OOOO:new_CCRect",&obj0,&obj1,&obj2,&obj3)) SWIG_fail;
+  ecode1 = SWIG_AsVal_float(obj0, &val1);
+  if (!SWIG_IsOK(ecode1)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode1), "in method '" "new_CCRect" "', argument " "1"" of type '" "float""'");
+  } 
+  arg1 = static_cast< float >(val1);
+  ecode2 = SWIG_AsVal_float(obj1, &val2);
+  if (!SWIG_IsOK(ecode2)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "new_CCRect" "', argument " "2"" of type '" "float""'");
+  } 
+  arg2 = static_cast< float >(val2);
+  ecode3 = SWIG_AsVal_float(obj2, &val3);
+  if (!SWIG_IsOK(ecode3)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode3), "in method '" "new_CCRect" "', argument " "3"" of type '" "float""'");
+  } 
+  arg3 = static_cast< float >(val3);
+  ecode4 = SWIG_AsVal_float(obj3, &val4);
+  if (!SWIG_IsOK(ecode4)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode4), "in method '" "new_CCRect" "', argument " "4"" of type '" "float""'");
+  } 
+  arg4 = static_cast< float >(val4);
+  result = (cocos2d::CCRect *)new cocos2d::CCRect(arg1,arg2,arg3,arg4);
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_cocos2d__CCRect, SWIG_POINTER_NEW |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_new_CCRect__SWIG_2(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  cocos2d::CCRect *arg1 = 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  cocos2d::CCRect *result = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:new_CCRect",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1, SWIGTYPE_p_cocos2d__CCRect,  0  | 0);
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "new_CCRect" "', argument " "1"" of type '" "cocos2d::CCRect const &""'"); 
+  }
+  if (!argp1) {
+    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "new_CCRect" "', argument " "1"" of type '" "cocos2d::CCRect const &""'"); 
+  }
+  arg1 = reinterpret_cast< cocos2d::CCRect * >(argp1);
+  result = (cocos2d::CCRect *)new cocos2d::CCRect((cocos2d::CCRect const &)*arg1);
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_cocos2d__CCRect, SWIG_POINTER_NEW |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_new_CCRect(PyObject *self, PyObject *args) {
+  int argc;
+  PyObject *argv[5];
+  int ii;
+  
+  if (!PyTuple_Check(args)) SWIG_fail;
+  argc = args ? (int)PyObject_Length(args) : 0;
+  for (ii = 0; (ii < 4) && (ii < argc); ii++) {
+    argv[ii] = PyTuple_GET_ITEM(args,ii);
+  }
+  if (argc == 0) {
+    return _wrap_new_CCRect__SWIG_0(self, args);
+  }
+  if (argc == 1) {
+    int _v;
+    int res = SWIG_ConvertPtr(argv[0], 0, SWIGTYPE_p_cocos2d__CCRect, 0);
+    _v = SWIG_CheckState(res);
+    if (_v) {
+      return _wrap_new_CCRect__SWIG_2(self, args);
+    }
+  }
+  if (argc == 4) {
+    int _v;
+    {
+      int res = SWIG_AsVal_float(argv[0], NULL);
+      _v = SWIG_CheckState(res);
+    }
+    if (_v) {
+      {
+        int res = SWIG_AsVal_float(argv[1], NULL);
+        _v = SWIG_CheckState(res);
+      }
+      if (_v) {
+        {
+          int res = SWIG_AsVal_float(argv[2], NULL);
+          _v = SWIG_CheckState(res);
+        }
+        if (_v) {
+          {
+            int res = SWIG_AsVal_float(argv[3], NULL);
+            _v = SWIG_CheckState(res);
+          }
+          if (_v) {
+            return _wrap_new_CCRect__SWIG_1(self, args);
+          }
+        }
+      }
+    }
+  }
+  
+fail:
+  SWIG_SetErrorMsg(PyExc_NotImplementedError,"Wrong number or type of arguments for overloaded function 'new_CCRect'.\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    cocos2d::CCRect::CCRect()\n"
+    "    cocos2d::CCRect::CCRect(float,float,float,float)\n"
+    "    cocos2d::CCRect::CCRect(cocos2d::CCRect const &)\n");
+  return 0;
+}
+
+
+SWIGINTERN PyObject *_wrap_CCRect_setRect(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  cocos2d::CCRect *arg1 = (cocos2d::CCRect *) 0 ;
+  float arg2 ;
+  float arg3 ;
+  float arg4 ;
+  float arg5 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  float val2 ;
+  int ecode2 = 0 ;
+  float val3 ;
+  int ecode3 = 0 ;
+  float val4 ;
+  int ecode4 = 0 ;
+  float val5 ;
+  int ecode5 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  PyObject * obj2 = 0 ;
+  PyObject * obj3 = 0 ;
+  PyObject * obj4 = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"OOOOO:CCRect_setRect",&obj0,&obj1,&obj2,&obj3,&obj4)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_cocos2d__CCRect, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "CCRect_setRect" "', argument " "1"" of type '" "cocos2d::CCRect *""'"); 
+  }
+  arg1 = reinterpret_cast< cocos2d::CCRect * >(argp1);
+  ecode2 = SWIG_AsVal_float(obj1, &val2);
+  if (!SWIG_IsOK(ecode2)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "CCRect_setRect" "', argument " "2"" of type '" "float""'");
+  } 
+  arg2 = static_cast< float >(val2);
+  ecode3 = SWIG_AsVal_float(obj2, &val3);
+  if (!SWIG_IsOK(ecode3)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode3), "in method '" "CCRect_setRect" "', argument " "3"" of type '" "float""'");
+  } 
+  arg3 = static_cast< float >(val3);
+  ecode4 = SWIG_AsVal_float(obj3, &val4);
+  if (!SWIG_IsOK(ecode4)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode4), "in method '" "CCRect_setRect" "', argument " "4"" of type '" "float""'");
+  } 
+  arg4 = static_cast< float >(val4);
+  ecode5 = SWIG_AsVal_float(obj4, &val5);
+  if (!SWIG_IsOK(ecode5)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode5), "in method '" "CCRect_setRect" "', argument " "5"" of type '" "float""'");
+  } 
+  arg5 = static_cast< float >(val5);
+  (arg1)->setRect(arg2,arg3,arg4,arg5);
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_CCRect_getMinX(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  cocos2d::CCRect *arg1 = (cocos2d::CCRect *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  float result;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:CCRect_getMinX",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_cocos2d__CCRect, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "CCRect_getMinX" "', argument " "1"" of type '" "cocos2d::CCRect const *""'"); 
+  }
+  arg1 = reinterpret_cast< cocos2d::CCRect * >(argp1);
+  result = (float)((cocos2d::CCRect const *)arg1)->getMinX();
+  resultobj = SWIG_From_float(static_cast< float >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_CCRect_getMidX(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  cocos2d::CCRect *arg1 = (cocos2d::CCRect *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  float result;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:CCRect_getMidX",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_cocos2d__CCRect, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "CCRect_getMidX" "', argument " "1"" of type '" "cocos2d::CCRect const *""'"); 
+  }
+  arg1 = reinterpret_cast< cocos2d::CCRect * >(argp1);
+  result = (float)((cocos2d::CCRect const *)arg1)->getMidX();
+  resultobj = SWIG_From_float(static_cast< float >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_CCRect_getMaxX(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  cocos2d::CCRect *arg1 = (cocos2d::CCRect *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  float result;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:CCRect_getMaxX",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_cocos2d__CCRect, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "CCRect_getMaxX" "', argument " "1"" of type '" "cocos2d::CCRect const *""'"); 
+  }
+  arg1 = reinterpret_cast< cocos2d::CCRect * >(argp1);
+  result = (float)((cocos2d::CCRect const *)arg1)->getMaxX();
+  resultobj = SWIG_From_float(static_cast< float >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_CCRect_getMinY(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  cocos2d::CCRect *arg1 = (cocos2d::CCRect *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  float result;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:CCRect_getMinY",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_cocos2d__CCRect, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "CCRect_getMinY" "', argument " "1"" of type '" "cocos2d::CCRect const *""'"); 
+  }
+  arg1 = reinterpret_cast< cocos2d::CCRect * >(argp1);
+  result = (float)((cocos2d::CCRect const *)arg1)->getMinY();
+  resultobj = SWIG_From_float(static_cast< float >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_CCRect_getMidY(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  cocos2d::CCRect *arg1 = (cocos2d::CCRect *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  float result;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:CCRect_getMidY",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_cocos2d__CCRect, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "CCRect_getMidY" "', argument " "1"" of type '" "cocos2d::CCRect const *""'"); 
+  }
+  arg1 = reinterpret_cast< cocos2d::CCRect * >(argp1);
+  result = (float)((cocos2d::CCRect const *)arg1)->getMidY();
+  resultobj = SWIG_From_float(static_cast< float >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_CCRect_getMaxY(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  cocos2d::CCRect *arg1 = (cocos2d::CCRect *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  float result;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:CCRect_getMaxY",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_cocos2d__CCRect, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "CCRect_getMaxY" "', argument " "1"" of type '" "cocos2d::CCRect const *""'"); 
+  }
+  arg1 = reinterpret_cast< cocos2d::CCRect * >(argp1);
+  result = (float)((cocos2d::CCRect const *)arg1)->getMaxY();
+  resultobj = SWIG_From_float(static_cast< float >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_CCRect_equals(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  cocos2d::CCRect *arg1 = (cocos2d::CCRect *) 0 ;
+  cocos2d::CCRect *arg2 = 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 = 0 ;
+  int res2 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  bool result;
+  
+  if (!PyArg_ParseTuple(args,(char *)"OO:CCRect_equals",&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_cocos2d__CCRect, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "CCRect_equals" "', argument " "1"" of type '" "cocos2d::CCRect const *""'"); 
+  }
+  arg1 = reinterpret_cast< cocos2d::CCRect * >(argp1);
+  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_cocos2d__CCRect,  0  | 0);
+  if (!SWIG_IsOK(res2)) {
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "CCRect_equals" "', argument " "2"" of type '" "cocos2d::CCRect const &""'"); 
+  }
+  if (!argp2) {
+    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "CCRect_equals" "', argument " "2"" of type '" "cocos2d::CCRect const &""'"); 
+  }
+  arg2 = reinterpret_cast< cocos2d::CCRect * >(argp2);
+  result = (bool)((cocos2d::CCRect const *)arg1)->equals((cocos2d::CCRect const &)*arg2);
+  resultobj = SWIG_From_bool(static_cast< bool >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_CCRect_containsPoint(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  cocos2d::CCRect *arg1 = (cocos2d::CCRect *) 0 ;
+  cocos2d::CCPoint *arg2 = 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 = 0 ;
+  int res2 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  bool result;
+  
+  if (!PyArg_ParseTuple(args,(char *)"OO:CCRect_containsPoint",&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_cocos2d__CCRect, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "CCRect_containsPoint" "', argument " "1"" of type '" "cocos2d::CCRect const *""'"); 
+  }
+  arg1 = reinterpret_cast< cocos2d::CCRect * >(argp1);
+  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_cocos2d__CCPoint,  0  | 0);
+  if (!SWIG_IsOK(res2)) {
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "CCRect_containsPoint" "', argument " "2"" of type '" "cocos2d::CCPoint const &""'"); 
+  }
+  if (!argp2) {
+    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "CCRect_containsPoint" "', argument " "2"" of type '" "cocos2d::CCPoint const &""'"); 
+  }
+  arg2 = reinterpret_cast< cocos2d::CCPoint * >(argp2);
+  result = (bool)((cocos2d::CCRect const *)arg1)->containsPoint((cocos2d::CCPoint const &)*arg2);
+  resultobj = SWIG_From_bool(static_cast< bool >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_CCRect_intersectsRect(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  cocos2d::CCRect *arg1 = (cocos2d::CCRect *) 0 ;
+  cocos2d::CCRect *arg2 = 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 = 0 ;
+  int res2 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  bool result;
+  
+  if (!PyArg_ParseTuple(args,(char *)"OO:CCRect_intersectsRect",&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_cocos2d__CCRect, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "CCRect_intersectsRect" "', argument " "1"" of type '" "cocos2d::CCRect const *""'"); 
+  }
+  arg1 = reinterpret_cast< cocos2d::CCRect * >(argp1);
+  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_cocos2d__CCRect,  0  | 0);
+  if (!SWIG_IsOK(res2)) {
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "CCRect_intersectsRect" "', argument " "2"" of type '" "cocos2d::CCRect const &""'"); 
+  }
+  if (!argp2) {
+    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "CCRect_intersectsRect" "', argument " "2"" of type '" "cocos2d::CCRect const &""'"); 
+  }
+  arg2 = reinterpret_cast< cocos2d::CCRect * >(argp2);
+  result = (bool)((cocos2d::CCRect const *)arg1)->intersectsRect((cocos2d::CCRect const &)*arg2);
+  resultobj = SWIG_From_bool(static_cast< bool >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_delete_CCRect(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  cocos2d::CCRect *arg1 = (cocos2d::CCRect *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:delete_CCRect",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_cocos2d__CCRect, SWIG_POINTER_DISOWN |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "delete_CCRect" "', argument " "1"" of type '" "cocos2d::CCRect *""'"); 
+  }
+  arg1 = reinterpret_cast< cocos2d::CCRect * >(argp1);
+  delete arg1;
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *CCRect_swigregister(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *obj;
+  if (!PyArg_ParseTuple(args,(char*)"O:swigregister", &obj)) return NULL;
+  SWIG_TypeNewClientData(SWIGTYPE_p_cocos2d__CCRect, SWIG_NewClientData(obj));
+  return SWIG_Py_Void();
+}
+
+SWIGINTERN PyObject *_wrap_new_CCTouch(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  cocos2d::CCTouch *result = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)":new_CCTouch")) SWIG_fail;
+  result = (cocos2d::CCTouch *)new cocos2d::CCTouch();
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_cocos2d__CCTouch, SWIG_POINTER_NEW |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_CCTouch_getLocation(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  cocos2d::CCTouch *arg1 = (cocos2d::CCTouch *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  cocos2d::CCPoint result;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:CCTouch_getLocation",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_cocos2d__CCTouch, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "CCTouch_getLocation" "', argument " "1"" of type '" "cocos2d::CCTouch const *""'"); 
+  }
+  arg1 = reinterpret_cast< cocos2d::CCTouch * >(argp1);
+  result = ((cocos2d::CCTouch const *)arg1)->getLocation();
+  resultobj = SWIG_NewPointerObj((new cocos2d::CCPoint(static_cast< const cocos2d::CCPoint& >(result))), SWIGTYPE_p_cocos2d__CCPoint, SWIG_POINTER_OWN |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_CCTouch_getPreviousLocation(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  cocos2d::CCTouch *arg1 = (cocos2d::CCTouch *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  cocos2d::CCPoint result;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:CCTouch_getPreviousLocation",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_cocos2d__CCTouch, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "CCTouch_getPreviousLocation" "', argument " "1"" of type '" "cocos2d::CCTouch const *""'"); 
+  }
+  arg1 = reinterpret_cast< cocos2d::CCTouch * >(argp1);
+  result = ((cocos2d::CCTouch const *)arg1)->getPreviousLocation();
+  resultobj = SWIG_NewPointerObj((new cocos2d::CCPoint(static_cast< const cocos2d::CCPoint& >(result))), SWIGTYPE_p_cocos2d__CCPoint, SWIG_POINTER_OWN |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_CCTouch_getStartLocation(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  cocos2d::CCTouch *arg1 = (cocos2d::CCTouch *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  cocos2d::CCPoint result;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:CCTouch_getStartLocation",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_cocos2d__CCTouch, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "CCTouch_getStartLocation" "', argument " "1"" of type '" "cocos2d::CCTouch const *""'"); 
+  }
+  arg1 = reinterpret_cast< cocos2d::CCTouch * >(argp1);
+  result = ((cocos2d::CCTouch const *)arg1)->getStartLocation();
+  resultobj = SWIG_NewPointerObj((new cocos2d::CCPoint(static_cast< const cocos2d::CCPoint& >(result))), SWIGTYPE_p_cocos2d__CCPoint, SWIG_POINTER_OWN |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_CCTouch_getDelta(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  cocos2d::CCTouch *arg1 = (cocos2d::CCTouch *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  cocos2d::CCPoint result;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:CCTouch_getDelta",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_cocos2d__CCTouch, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "CCTouch_getDelta" "', argument " "1"" of type '" "cocos2d::CCTouch const *""'"); 
+  }
+  arg1 = reinterpret_cast< cocos2d::CCTouch * >(argp1);
+  result = ((cocos2d::CCTouch const *)arg1)->getDelta();
+  resultobj = SWIG_NewPointerObj((new cocos2d::CCPoint(static_cast< const cocos2d::CCPoint& >(result))), SWIGTYPE_p_cocos2d__CCPoint, SWIG_POINTER_OWN |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_CCTouch_getLocationInView(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  cocos2d::CCTouch *arg1 = (cocos2d::CCTouch *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  cocos2d::CCPoint result;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:CCTouch_getLocationInView",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_cocos2d__CCTouch, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "CCTouch_getLocationInView" "', argument " "1"" of type '" "cocos2d::CCTouch const *""'"); 
+  }
+  arg1 = reinterpret_cast< cocos2d::CCTouch * >(argp1);
+  result = ((cocos2d::CCTouch const *)arg1)->getLocationInView();
+  resultobj = SWIG_NewPointerObj((new cocos2d::CCPoint(static_cast< const cocos2d::CCPoint& >(result))), SWIGTYPE_p_cocos2d__CCPoint, SWIG_POINTER_OWN |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_CCTouch_getPreviousLocationInView(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  cocos2d::CCTouch *arg1 = (cocos2d::CCTouch *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  cocos2d::CCPoint result;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:CCTouch_getPreviousLocationInView",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_cocos2d__CCTouch, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "CCTouch_getPreviousLocationInView" "', argument " "1"" of type '" "cocos2d::CCTouch const *""'"); 
+  }
+  arg1 = reinterpret_cast< cocos2d::CCTouch * >(argp1);
+  result = ((cocos2d::CCTouch const *)arg1)->getPreviousLocationInView();
+  resultobj = SWIG_NewPointerObj((new cocos2d::CCPoint(static_cast< const cocos2d::CCPoint& >(result))), SWIGTYPE_p_cocos2d__CCPoint, SWIG_POINTER_OWN |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_CCTouch_getStartLocationInView(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  cocos2d::CCTouch *arg1 = (cocos2d::CCTouch *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  cocos2d::CCPoint result;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:CCTouch_getStartLocationInView",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_cocos2d__CCTouch, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "CCTouch_getStartLocationInView" "', argument " "1"" of type '" "cocos2d::CCTouch const *""'"); 
+  }
+  arg1 = reinterpret_cast< cocos2d::CCTouch * >(argp1);
+  result = ((cocos2d::CCTouch const *)arg1)->getStartLocationInView();
+  resultobj = SWIG_NewPointerObj((new cocos2d::CCPoint(static_cast< const cocos2d::CCPoint& >(result))), SWIGTYPE_p_cocos2d__CCPoint, SWIG_POINTER_OWN |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_CCTouch_setTouchInfo(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  cocos2d::CCTouch *arg1 = (cocos2d::CCTouch *) 0 ;
+  int arg2 ;
+  float arg3 ;
+  float arg4 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  int val2 ;
+  int ecode2 = 0 ;
+  float val3 ;
+  int ecode3 = 0 ;
+  float val4 ;
+  int ecode4 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  PyObject * obj2 = 0 ;
+  PyObject * obj3 = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"OOOO:CCTouch_setTouchInfo",&obj0,&obj1,&obj2,&obj3)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_cocos2d__CCTouch, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "CCTouch_setTouchInfo" "', argument " "1"" of type '" "cocos2d::CCTouch *""'"); 
+  }
+  arg1 = reinterpret_cast< cocos2d::CCTouch * >(argp1);
+  ecode2 = SWIG_AsVal_int(obj1, &val2);
+  if (!SWIG_IsOK(ecode2)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "CCTouch_setTouchInfo" "', argument " "2"" of type '" "int""'");
+  } 
+  arg2 = static_cast< int >(val2);
+  ecode3 = SWIG_AsVal_float(obj2, &val3);
+  if (!SWIG_IsOK(ecode3)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode3), "in method '" "CCTouch_setTouchInfo" "', argument " "3"" of type '" "float""'");
+  } 
+  arg3 = static_cast< float >(val3);
+  ecode4 = SWIG_AsVal_float(obj3, &val4);
+  if (!SWIG_IsOK(ecode4)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode4), "in method '" "CCTouch_setTouchInfo" "', argument " "4"" of type '" "float""'");
+  } 
+  arg4 = static_cast< float >(val4);
+  (arg1)->setTouchInfo(arg2,arg3,arg4);
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_CCTouch_getID(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  cocos2d::CCTouch *arg1 = (cocos2d::CCTouch *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  int result;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:CCTouch_getID",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_cocos2d__CCTouch, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "CCTouch_getID" "', argument " "1"" of type '" "cocos2d::CCTouch const *""'"); 
+  }
+  arg1 = reinterpret_cast< cocos2d::CCTouch * >(argp1);
+  result = (int)((cocos2d::CCTouch const *)arg1)->getID();
+  resultobj = SWIG_From_int(static_cast< int >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_delete_CCTouch(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  cocos2d::CCTouch *arg1 = (cocos2d::CCTouch *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:delete_CCTouch",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_cocos2d__CCTouch, SWIG_POINTER_DISOWN |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "delete_CCTouch" "', argument " "1"" of type '" "cocos2d::CCTouch *""'"); 
+  }
+  arg1 = reinterpret_cast< cocos2d::CCTouch * >(argp1);
+  delete arg1;
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *CCTouch_swigregister(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *obj;
+  if (!PyArg_ParseTuple(args,(char*)"O:swigregister", &obj)) return NULL;
+  SWIG_TypeNewClientData(SWIGTYPE_p_cocos2d__CCTouch, SWIG_NewClientData(obj));
+  return SWIG_Py_Void();
+}
+
 SWIGINTERN int Swig_var_fe_classes_set(PyObject *_val) {
   {
     void *argp = 0;
-    int res = SWIG_ConvertPtr(_val, &argp, SWIGTYPE_p_std__vectorT_ClassInfo_p_t,  0  | 0);
+    int res = SWIG_ConvertPtr(_val, &argp, SWIGTYPE_p_std__vectorT_ClassInfo_p_std__allocatorT_FESimple__ClassInfo_p_t_t,  0  | 0);
     if (!SWIG_IsOK(res)) {
-      SWIG_exception_fail(SWIG_ArgError(res), "in variable '""FESimple::fe_classes""' of type '""std::vector< ClassInfo * >""'");
+      SWIG_exception_fail(SWIG_ArgError(res), "in variable '""FESimple::fe_classes""' of type '""std::vector< ClassInfo *,std::allocator< FESimple::ClassInfo * > >""'");
     }
     if (!argp) {
-      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in variable '""FESimple::fe_classes""' of type '""std::vector< ClassInfo * >""'");
+      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in variable '""FESimple::fe_classes""' of type '""std::vector< ClassInfo *,std::allocator< FESimple::ClassInfo * > >""'");
     } else {
-      std::vector< ClassInfo * > * temp;
-      temp  = reinterpret_cast< std::vector< ClassInfo * > * >(argp);
+      std::vector< ClassInfo *,std::allocator< FESimple::ClassInfo * > > * temp;
+      temp  = reinterpret_cast< std::vector< ClassInfo *,std::allocator< FESimple::ClassInfo * > > * >(argp);
       FESimple::fe_classes = *temp;
       if (SWIG_IsNewObj(res)) delete temp;
     }
@@ -7850,7 +11956,7 @@ fail:
 SWIGINTERN PyObject *Swig_var_fe_classes_get(void) {
   PyObject *pyobj = 0;
   
-  pyobj = SWIG_NewPointerObj(SWIG_as_voidptr(&FESimple::fe_classes), SWIGTYPE_p_std__vectorT_ClassInfo_p_t,  0 );
+  pyobj = SWIG_NewPointerObj(SWIG_as_voidptr(&FESimple::fe_classes), SWIGTYPE_p_std__vectorT_ClassInfo_p_std__allocatorT_FESimple__ClassInfo_p_t_t,  0 );
   return pyobj;
 }
 
@@ -7948,7 +12054,7 @@ fail:
 SWIGINTERN PyObject *_wrap_ClassInfo_parent_classes_set(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   FESimple::ClassInfo *arg1 = (FESimple::ClassInfo *) 0 ;
-  std::vector< FESimple::ClassInfo * > *arg2 = (std::vector< FESimple::ClassInfo * > *) 0 ;
+  std::vector< FESimple::ClassInfo *,std::allocator< FESimple::ClassInfo * > > *arg2 = (std::vector< FESimple::ClassInfo *,std::allocator< FESimple::ClassInfo * > > *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   void *argp2 = 0 ;
@@ -7962,11 +12068,11 @@ SWIGINTERN PyObject *_wrap_ClassInfo_parent_classes_set(PyObject *SWIGUNUSEDPARM
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "ClassInfo_parent_classes_set" "', argument " "1"" of type '" "FESimple::ClassInfo *""'"); 
   }
   arg1 = reinterpret_cast< FESimple::ClassInfo * >(argp1);
-  res2 = SWIG_ConvertPtr(obj1, &argp2,SWIGTYPE_p_std__vectorT_FESimple__ClassInfo_p_t, 0 |  0 );
+  res2 = SWIG_ConvertPtr(obj1, &argp2,SWIGTYPE_p_std__vectorT_FESimple__ClassInfo_p_std__allocatorT_FESimple__ClassInfo_p_t_t, 0 |  0 );
   if (!SWIG_IsOK(res2)) {
-    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "ClassInfo_parent_classes_set" "', argument " "2"" of type '" "std::vector< FESimple::ClassInfo * > *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "ClassInfo_parent_classes_set" "', argument " "2"" of type '" "std::vector< FESimple::ClassInfo *,std::allocator< FESimple::ClassInfo * > > *""'"); 
   }
-  arg2 = reinterpret_cast< std::vector< FESimple::ClassInfo * > * >(argp2);
+  arg2 = reinterpret_cast< std::vector< FESimple::ClassInfo *,std::allocator< FESimple::ClassInfo * > > * >(argp2);
   if (arg1) (arg1)->parent_classes = *arg2;
   resultobj = SWIG_Py_Void();
   return resultobj;
@@ -7981,7 +12087,7 @@ SWIGINTERN PyObject *_wrap_ClassInfo_parent_classes_get(PyObject *SWIGUNUSEDPARM
   void *argp1 = 0 ;
   int res1 = 0 ;
   PyObject * obj0 = 0 ;
-  std::vector< FESimple::ClassInfo * > *result = 0 ;
+  std::vector< FESimple::ClassInfo *,std::allocator< FESimple::ClassInfo * > > *result = 0 ;
   
   if (!PyArg_ParseTuple(args,(char *)"O:ClassInfo_parent_classes_get",&obj0)) SWIG_fail;
   res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_FESimple__ClassInfo, 0 |  0 );
@@ -7989,8 +12095,8 @@ SWIGINTERN PyObject *_wrap_ClassInfo_parent_classes_get(PyObject *SWIGUNUSEDPARM
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "ClassInfo_parent_classes_get" "', argument " "1"" of type '" "FESimple::ClassInfo *""'"); 
   }
   arg1 = reinterpret_cast< FESimple::ClassInfo * >(argp1);
-  result = (std::vector< FESimple::ClassInfo * > *)& ((arg1)->parent_classes);
-  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_std__vectorT_FESimple__ClassInfo_p_t, 0 |  0 );
+  result = (std::vector< FESimple::ClassInfo *,std::allocator< FESimple::ClassInfo * > > *)& ((arg1)->parent_classes);
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_std__vectorT_FESimple__ClassInfo_p_std__allocatorT_FESimple__ClassInfo_p_t_t, 0 |  0 );
   return resultobj;
 fail:
   return NULL;
@@ -8141,6 +12247,8 @@ SWIGINTERN PyObject *_wrap_GameObjBase_get_class_info(PyObject *SWIGUNUSEDPARM(s
   void *argp1 = 0 ;
   int res1 = 0 ;
   PyObject * obj0 = 0 ;
+  Swig::Director *director = 0;
+  bool upcall = false;
   FESimple::ClassInfo *result = 0 ;
   
   if (!PyArg_ParseTuple(args,(char *)"O:GameObjBase_get_class_info",&obj0)) SWIG_fail;
@@ -8149,8 +12257,21 @@ SWIGINTERN PyObject *_wrap_GameObjBase_get_class_info(PyObject *SWIGUNUSEDPARM(s
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "GameObjBase_get_class_info" "', argument " "1"" of type '" "FESimple::GameObjBase *""'"); 
   }
   arg1 = reinterpret_cast< FESimple::GameObjBase * >(argp1);
-  result = (FESimple::ClassInfo *)(arg1)->get_class_info();
+  director = SWIG_DIRECTOR_CAST(arg1);
+  upcall = (director && (director->swig_get_self()==obj0));
+  try {
+    if (upcall) {
+      result = (FESimple::ClassInfo *)(arg1)->FESimple::GameObjBase::get_class_info();
+    } else {
+      result = (FESimple::ClassInfo *)(arg1)->get_class_info();
+    }
+  } catch (Swig::DirectorException&) {
+    SWIG_fail;
+  }
   resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_FESimple__ClassInfo, 0 |  0 );
+  if (director) {
+    SWIG_AcquirePtr(resultobj, director->swig_release_ownership(SWIG_as_voidptr(result)));
+  }
   return resultobj;
 fail:
   return NULL;
@@ -8159,39 +12280,57 @@ fail:
 
 SWIGINTERN PyObject *_wrap_new_GameObjBase__SWIG_0(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
-  FESimple::SpawnParams *arg1 = 0 ;
-  int res1 = SWIG_OLDOBJ ;
+  PyObject *arg1 = (PyObject *) 0 ;
+  FESimple::SpawnParams *arg2 = 0 ;
+  int res2 = SWIG_OLDOBJ ;
   PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
   FESimple::GameObjBase *result = 0 ;
   
-  if (!PyArg_ParseTuple(args,(char *)"O:new_GameObjBase",&obj0)) SWIG_fail;
+  if (!PyArg_ParseTuple(args,(char *)"OO:new_GameObjBase",&obj0,&obj1)) SWIG_fail;
+  arg1 = obj0;
   {
     std::map<std::string,std::string,std::less< std::string >,std::allocator< std::pair< std::string const,std::string > > > *ptr = (std::map<std::string,std::string,std::less< std::string >,std::allocator< std::pair< std::string const,std::string > > > *)0;
-    res1 = swig::asptr(obj0, &ptr);
-    if (!SWIG_IsOK(res1)) {
-      SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "new_GameObjBase" "', argument " "1"" of type '" "FESimple::SpawnParams const &""'"); 
+    res2 = swig::asptr(obj1, &ptr);
+    if (!SWIG_IsOK(res2)) {
+      SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "new_GameObjBase" "', argument " "2"" of type '" "FESimple::SpawnParams const &""'"); 
     }
     if (!ptr) {
-      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "new_GameObjBase" "', argument " "1"" of type '" "FESimple::SpawnParams const &""'"); 
+      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "new_GameObjBase" "', argument " "2"" of type '" "FESimple::SpawnParams const &""'"); 
     }
-    arg1 = ptr;
+    arg2 = ptr;
   }
-  result = (FESimple::GameObjBase *)new FESimple::GameObjBase((FESimple::SpawnParams const &)*arg1);
+  if ( arg1 != Py_None ) {
+    /* subclassed */
+    result = (FESimple::GameObjBase *)new SwigDirector_GameObjBase(arg1,(FESimple::SpawnParams const &)*arg2); 
+  } else {
+    result = (FESimple::GameObjBase *)new FESimple::GameObjBase((FESimple::SpawnParams const &)*arg2); 
+  }
+  
   resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_FESimple__GameObjBase, SWIG_POINTER_NEW |  0 );
-  if (SWIG_IsNewObj(res1)) delete arg1;
+  if (SWIG_IsNewObj(res2)) delete arg2;
   return resultobj;
 fail:
-  if (SWIG_IsNewObj(res1)) delete arg1;
+  if (SWIG_IsNewObj(res2)) delete arg2;
   return NULL;
 }
 
 
 SWIGINTERN PyObject *_wrap_new_GameObjBase__SWIG_1(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
+  PyObject *arg1 = (PyObject *) 0 ;
+  PyObject * obj0 = 0 ;
   FESimple::GameObjBase *result = 0 ;
   
-  if (!PyArg_ParseTuple(args,(char *)":new_GameObjBase")) SWIG_fail;
-  result = (FESimple::GameObjBase *)new FESimple::GameObjBase();
+  if (!PyArg_ParseTuple(args,(char *)"O:new_GameObjBase",&obj0)) SWIG_fail;
+  arg1 = obj0;
+  if ( arg1 != Py_None ) {
+    /* subclassed */
+    result = (FESimple::GameObjBase *)new SwigDirector_GameObjBase(arg1); 
+  } else {
+    result = (FESimple::GameObjBase *)new FESimple::GameObjBase(); 
+  }
+  
   resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_FESimple__GameObjBase, SWIG_POINTER_NEW |  0 );
   return resultobj;
 fail:
@@ -8201,23 +12340,30 @@ fail:
 
 SWIGINTERN PyObject *_wrap_new_GameObjBase(PyObject *self, PyObject *args) {
   int argc;
-  PyObject *argv[2];
+  PyObject *argv[3];
   int ii;
   
   if (!PyTuple_Check(args)) SWIG_fail;
   argc = args ? (int)PyObject_Length(args) : 0;
-  for (ii = 0; (ii < 1) && (ii < argc); ii++) {
+  for (ii = 0; (ii < 2) && (ii < argc); ii++) {
     argv[ii] = PyTuple_GET_ITEM(args,ii);
-  }
-  if (argc == 0) {
-    return _wrap_new_GameObjBase__SWIG_1(self, args);
   }
   if (argc == 1) {
     int _v;
-    int res = swig::asptr(argv[0], (std::map<std::string,std::string,std::less< std::string >,std::allocator< std::pair< std::string const,std::string > > >**)(0));
-    _v = SWIG_CheckState(res);
+    _v = (argv[0] != 0);
     if (_v) {
-      return _wrap_new_GameObjBase__SWIG_0(self, args);
+      return _wrap_new_GameObjBase__SWIG_1(self, args);
+    }
+  }
+  if (argc == 2) {
+    int _v;
+    _v = (argv[0] != 0);
+    if (_v) {
+      int res = swig::asptr(argv[1], (std::map<std::string,std::string,std::less< std::string >,std::allocator< std::pair< std::string const,std::string > > >**)(0));
+      _v = SWIG_CheckState(res);
+      if (_v) {
+        return _wrap_new_GameObjBase__SWIG_0(self, args);
+      }
     }
   }
   
@@ -8225,7 +12371,7 @@ fail:
   SWIG_SetErrorMsg(PyExc_NotImplementedError,"Wrong number or type of arguments for overloaded function 'new_GameObjBase'.\n"
     "  Possible C/C++ prototypes are:\n"
     "    FESimple::GameObjBase::GameObjBase(FESimple::SpawnParams const &)\n"
-    "    FESimple::GameObjBase::GameObjBase()\n");
+    "    FESimple::GameObjBase::GameObjBase(PyObject *)\n");
   return 0;
 }
 
@@ -8264,6 +12410,8 @@ SWIGINTERN PyObject *_wrap_GameObjBase_added_to_game(PyObject *SWIGUNUSEDPARM(se
   PyObject * obj0 = 0 ;
   PyObject * obj1 = 0 ;
   PyObject * obj2 = 0 ;
+  Swig::Director *director = 0;
+  bool upcall = false;
   
   if (!PyArg_ParseTuple(args,(char *)"OOO:GameObjBase_added_to_game",&obj0,&obj1,&obj2)) SWIG_fail;
   res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_FESimple__GameObjBase, 0 |  0 );
@@ -8287,7 +12435,17 @@ SWIGINTERN PyObject *_wrap_GameObjBase_added_to_game(PyObject *SWIGUNUSEDPARM(se
     }
     arg3 = ptr;
   }
-  (arg1)->added_to_game(arg2,(FESimple::Name const &)*arg3);
+  director = SWIG_DIRECTOR_CAST(arg1);
+  upcall = (director && (director->swig_get_self()==obj0));
+  try {
+    if (upcall) {
+      (arg1)->FESimple::GameObjBase::added_to_game(arg2,(FESimple::Name const &)*arg3);
+    } else {
+      (arg1)->added_to_game(arg2,(FESimple::Name const &)*arg3);
+    }
+  } catch (Swig::DirectorException&) {
+    SWIG_fail;
+  }
   resultobj = SWIG_Py_Void();
   if (SWIG_IsNewObj(res3)) delete arg3;
   return resultobj;
@@ -8307,6 +12465,8 @@ SWIGINTERN PyObject *_wrap_GameObjBase_removed_from_game(PyObject *SWIGUNUSEDPAR
   int res2 = 0 ;
   PyObject * obj0 = 0 ;
   PyObject * obj1 = 0 ;
+  Swig::Director *director = 0;
+  bool upcall = false;
   
   if (!PyArg_ParseTuple(args,(char *)"OO:GameObjBase_removed_from_game",&obj0,&obj1)) SWIG_fail;
   res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_FESimple__GameObjBase, 0 |  0 );
@@ -8319,7 +12479,17 @@ SWIGINTERN PyObject *_wrap_GameObjBase_removed_from_game(PyObject *SWIGUNUSEDPAR
     SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "GameObjBase_removed_from_game" "', argument " "2"" of type '" "FESimple::GameBase *""'"); 
   }
   arg2 = reinterpret_cast< FESimple::GameBase * >(argp2);
-  (arg1)->removed_from_game(arg2);
+  director = SWIG_DIRECTOR_CAST(arg1);
+  upcall = (director && (director->swig_get_self()==obj0));
+  try {
+    if (upcall) {
+      (arg1)->FESimple::GameObjBase::removed_from_game(arg2);
+    } else {
+      (arg1)->removed_from_game(arg2);
+    }
+  } catch (Swig::DirectorException&) {
+    SWIG_fail;
+  }
   resultobj = SWIG_Py_Void();
   return resultobj;
 fail:
@@ -8337,6 +12507,8 @@ SWIGINTERN PyObject *_wrap_GameObjBase_update(PyObject *SWIGUNUSEDPARM(self), Py
   int ecode2 = 0 ;
   PyObject * obj0 = 0 ;
   PyObject * obj1 = 0 ;
+  Swig::Director *director = 0;
+  bool upcall = false;
   
   if (!PyArg_ParseTuple(args,(char *)"OO:GameObjBase_update",&obj0,&obj1)) SWIG_fail;
   res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_FESimple__GameObjBase, 0 |  0 );
@@ -8349,7 +12521,17 @@ SWIGINTERN PyObject *_wrap_GameObjBase_update(PyObject *SWIGUNUSEDPARM(self), Py
     SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "GameObjBase_update" "', argument " "2"" of type '" "float""'");
   } 
   arg2 = static_cast< float >(val2);
-  (arg1)->update(arg2);
+  director = SWIG_DIRECTOR_CAST(arg1);
+  upcall = (director && (director->swig_get_self()==obj0));
+  try {
+    if (upcall) {
+      (arg1)->FESimple::GameObjBase::update(arg2);
+    } else {
+      (arg1)->update(arg2);
+    }
+  } catch (Swig::DirectorException&) {
+    SWIG_fail;
+  }
   resultobj = SWIG_Py_Void();
   return resultobj;
 fail:
@@ -8375,6 +12557,43 @@ SWIGINTERN PyObject *_wrap_GameObjBase_get_name(PyObject *SWIGUNUSEDPARM(self), 
   resultobj = SWIG_From_std_string(static_cast< std::string >(*result));
   return resultobj;
 fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_GameObjBase_set_name(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  FESimple::GameObjBase *arg1 = (FESimple::GameObjBase *) 0 ;
+  FESimple::Name *arg2 = 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  int res2 = SWIG_OLDOBJ ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"OO:GameObjBase_set_name",&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_FESimple__GameObjBase, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "GameObjBase_set_name" "', argument " "1"" of type '" "FESimple::GameObjBase *""'"); 
+  }
+  arg1 = reinterpret_cast< FESimple::GameObjBase * >(argp1);
+  {
+    std::string *ptr = (std::string *)0;
+    res2 = SWIG_AsPtr_std_string(obj1, &ptr);
+    if (!SWIG_IsOK(res2)) {
+      SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "GameObjBase_set_name" "', argument " "2"" of type '" "FESimple::Name const &""'"); 
+    }
+    if (!ptr) {
+      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "GameObjBase_set_name" "', argument " "2"" of type '" "FESimple::Name const &""'"); 
+    }
+    arg2 = ptr;
+  }
+  (arg1)->set_name((FESimple::Name const &)*arg2);
+  resultobj = SWIG_Py_Void();
+  if (SWIG_IsNewObj(res2)) delete arg2;
+  return resultobj;
+fail:
+  if (SWIG_IsNewObj(res2)) delete arg2;
   return NULL;
 }
 
@@ -8424,6 +12643,31 @@ SWIGINTERN PyObject *_wrap_GameObjBase_set_dead(PyObject *SWIGUNUSEDPARM(self), 
   } 
   arg2 = static_cast< bool >(val2);
   (arg1)->set_dead(arg2);
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_disown_GameObjBase(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  FESimple::GameObjBase *arg1 = (FESimple::GameObjBase *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:disown_GameObjBase",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_FESimple__GameObjBase, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "disown_GameObjBase" "', argument " "1"" of type '" "FESimple::GameObjBase *""'"); 
+  }
+  arg1 = reinterpret_cast< FESimple::GameObjBase * >(argp1);
+  {
+    Swig::Director *director = SWIG_DIRECTOR_CAST(arg1);
+    if (director) director->swig_disown();
+  }
+  
   resultobj = SWIG_Py_Void();
   return resultobj;
 fail:
@@ -8489,6 +12733,8 @@ SWIGINTERN PyObject *_wrap_SpriteBase_get_class_info(PyObject *SWIGUNUSEDPARM(se
   void *argp1 = 0 ;
   int res1 = 0 ;
   PyObject * obj0 = 0 ;
+  Swig::Director *director = 0;
+  bool upcall = false;
   FESimple::ClassInfo *result = 0 ;
   
   if (!PyArg_ParseTuple(args,(char *)"O:SpriteBase_get_class_info",&obj0)) SWIG_fail;
@@ -8497,8 +12743,21 @@ SWIGINTERN PyObject *_wrap_SpriteBase_get_class_info(PyObject *SWIGUNUSEDPARM(se
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SpriteBase_get_class_info" "', argument " "1"" of type '" "FESimple::SpriteBase *""'"); 
   }
   arg1 = reinterpret_cast< FESimple::SpriteBase * >(argp1);
-  result = (FESimple::ClassInfo *)(arg1)->get_class_info();
+  director = SWIG_DIRECTOR_CAST(arg1);
+  upcall = (director && (director->swig_get_self()==obj0));
+  try {
+    if (upcall) {
+      result = (FESimple::ClassInfo *)(arg1)->FESimple::SpriteBase::get_class_info();
+    } else {
+      result = (FESimple::ClassInfo *)(arg1)->get_class_info();
+    }
+  } catch (Swig::DirectorException&) {
+    SWIG_fail;
+  }
   resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_FESimple__ClassInfo, 0 |  0 );
+  if (director) {
+    SWIG_AcquirePtr(resultobj, director->swig_release_ownership(SWIG_as_voidptr(result)));
+  }
   return resultobj;
 fail:
   return NULL;
@@ -8507,10 +12766,19 @@ fail:
 
 SWIGINTERN PyObject *_wrap_new_SpriteBase__SWIG_0(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
+  PyObject *arg1 = (PyObject *) 0 ;
+  PyObject * obj0 = 0 ;
   FESimple::SpriteBase *result = 0 ;
   
-  if (!PyArg_ParseTuple(args,(char *)":new_SpriteBase")) SWIG_fail;
-  result = (FESimple::SpriteBase *)new FESimple::SpriteBase();
+  if (!PyArg_ParseTuple(args,(char *)"O:new_SpriteBase",&obj0)) SWIG_fail;
+  arg1 = obj0;
+  if ( arg1 != Py_None ) {
+    /* subclassed */
+    result = (FESimple::SpriteBase *)new SwigDirector_SpriteBase(arg1); 
+  } else {
+    result = (FESimple::SpriteBase *)new FESimple::SpriteBase(); 
+  }
+  
   resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_FESimple__SpriteBase, SWIG_POINTER_NEW |  0 );
   return resultobj;
 fail:
@@ -8520,95 +12788,15 @@ fail:
 
 SWIGINTERN PyObject *_wrap_new_SpriteBase__SWIG_1(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
-  cocos2d::CCPoint *arg1 = 0 ;
-  SwigValueWrapper< std::shared_ptr< sprite_desc > > arg2 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  void *argp2 ;
-  int res2 = 0 ;
-  PyObject * obj0 = 0 ;
-  PyObject * obj1 = 0 ;
-  FESimple::SpriteBase *result = 0 ;
-  
-  if (!PyArg_ParseTuple(args,(char *)"OO:new_SpriteBase",&obj0,&obj1)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1, SWIGTYPE_p_cocos2d__CCPoint,  0  | 0);
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "new_SpriteBase" "', argument " "1"" of type '" "cocos2d::CCPoint const &""'"); 
-  }
-  if (!argp1) {
-    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "new_SpriteBase" "', argument " "1"" of type '" "cocos2d::CCPoint const &""'"); 
-  }
-  arg1 = reinterpret_cast< cocos2d::CCPoint * >(argp1);
-  {
-    res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_std__shared_ptrT_sprite_desc_t,  0  | 0);
-    if (!SWIG_IsOK(res2)) {
-      SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "new_SpriteBase" "', argument " "2"" of type '" "std::shared_ptr< sprite_desc > const""'"); 
-    }  
-    if (!argp2) {
-      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "new_SpriteBase" "', argument " "2"" of type '" "std::shared_ptr< sprite_desc > const""'");
-    } else {
-      std::shared_ptr< sprite_desc > * temp = reinterpret_cast< std::shared_ptr< sprite_desc > * >(argp2);
-      arg2 = *temp;
-      if (SWIG_IsNewObj(res2)) delete temp;
-    }
-  }
-  result = (FESimple::SpriteBase *)new FESimple::SpriteBase((cocos2d::CCPoint const &)*arg1,arg2);
-  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_FESimple__SpriteBase, SWIG_POINTER_NEW |  0 );
-  return resultobj;
-fail:
-  return NULL;
-}
-
-
-SWIGINTERN PyObject *_wrap_new_SpriteBase__SWIG_2(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
-  PyObject *resultobj = 0;
-  FESimple::SpawnParams *arg1 = 0 ;
-  int res1 = SWIG_OLDOBJ ;
-  PyObject * obj0 = 0 ;
-  FESimple::SpriteBase *result = 0 ;
-  
-  if (!PyArg_ParseTuple(args,(char *)"O:new_SpriteBase",&obj0)) SWIG_fail;
-  {
-    std::map<std::string,std::string,std::less< std::string >,std::allocator< std::pair< std::string const,std::string > > > *ptr = (std::map<std::string,std::string,std::less< std::string >,std::allocator< std::pair< std::string const,std::string > > > *)0;
-    res1 = swig::asptr(obj0, &ptr);
-    if (!SWIG_IsOK(res1)) {
-      SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "new_SpriteBase" "', argument " "1"" of type '" "FESimple::SpawnParams const &""'"); 
-    }
-    if (!ptr) {
-      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "new_SpriteBase" "', argument " "1"" of type '" "FESimple::SpawnParams const &""'"); 
-    }
-    arg1 = ptr;
-  }
-  result = (FESimple::SpriteBase *)new FESimple::SpriteBase((FESimple::SpawnParams const &)*arg1);
-  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_FESimple__SpriteBase, SWIG_POINTER_NEW |  0 );
-  if (SWIG_IsNewObj(res1)) delete arg1;
-  return resultobj;
-fail:
-  if (SWIG_IsNewObj(res1)) delete arg1;
-  return NULL;
-}
-
-
-SWIGINTERN PyObject *_wrap_new_SpriteBase__SWIG_3(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
-  PyObject *resultobj = 0;
-  cocos2d::CCPoint *arg1 = 0 ;
+  PyObject *arg1 = (PyObject *) 0 ;
   FESimple::SpawnParams *arg2 = 0 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
   int res2 = SWIG_OLDOBJ ;
   PyObject * obj0 = 0 ;
   PyObject * obj1 = 0 ;
   FESimple::SpriteBase *result = 0 ;
   
   if (!PyArg_ParseTuple(args,(char *)"OO:new_SpriteBase",&obj0,&obj1)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1, SWIGTYPE_p_cocos2d__CCPoint,  0  | 0);
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "new_SpriteBase" "', argument " "1"" of type '" "cocos2d::CCPoint const &""'"); 
-  }
-  if (!argp1) {
-    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "new_SpriteBase" "', argument " "1"" of type '" "cocos2d::CCPoint const &""'"); 
-  }
-  arg1 = reinterpret_cast< cocos2d::CCPoint * >(argp1);
+  arg1 = obj0;
   {
     std::map<std::string,std::string,std::less< std::string >,std::allocator< std::pair< std::string const,std::string > > > *ptr = (std::map<std::string,std::string,std::less< std::string >,std::allocator< std::pair< std::string const,std::string > > > *)0;
     res2 = swig::asptr(obj1, &ptr);
@@ -8620,7 +12808,13 @@ SWIGINTERN PyObject *_wrap_new_SpriteBase__SWIG_3(PyObject *SWIGUNUSEDPARM(self)
     }
     arg2 = ptr;
   }
-  result = (FESimple::SpriteBase *)new FESimple::SpriteBase((cocos2d::CCPoint const &)*arg1,(FESimple::SpawnParams const &)*arg2);
+  if ( arg1 != Py_None ) {
+    /* subclassed */
+    result = (FESimple::SpriteBase *)new SwigDirector_SpriteBase(arg1,(FESimple::SpawnParams const &)*arg2); 
+  } else {
+    result = (FESimple::SpriteBase *)new FESimple::SpriteBase((FESimple::SpawnParams const &)*arg2); 
+  }
+  
   resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_FESimple__SpriteBase, SWIG_POINTER_NEW |  0 );
   if (SWIG_IsNewObj(res2)) delete arg2;
   return resultobj;
@@ -8630,48 +12824,96 @@ fail:
 }
 
 
+SWIGINTERN PyObject *_wrap_new_SpriteBase__SWIG_2(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  PyObject *arg1 = (PyObject *) 0 ;
+  cocos2d::CCPoint *arg2 = 0 ;
+  FESimple::SpawnParams *arg3 = 0 ;
+  void *argp2 = 0 ;
+  int res2 = 0 ;
+  int res3 = SWIG_OLDOBJ ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  PyObject * obj2 = 0 ;
+  FESimple::SpriteBase *result = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"OOO:new_SpriteBase",&obj0,&obj1,&obj2)) SWIG_fail;
+  arg1 = obj0;
+  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_cocos2d__CCPoint,  0  | 0);
+  if (!SWIG_IsOK(res2)) {
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "new_SpriteBase" "', argument " "2"" of type '" "cocos2d::CCPoint const &""'"); 
+  }
+  if (!argp2) {
+    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "new_SpriteBase" "', argument " "2"" of type '" "cocos2d::CCPoint const &""'"); 
+  }
+  arg2 = reinterpret_cast< cocos2d::CCPoint * >(argp2);
+  {
+    std::map<std::string,std::string,std::less< std::string >,std::allocator< std::pair< std::string const,std::string > > > *ptr = (std::map<std::string,std::string,std::less< std::string >,std::allocator< std::pair< std::string const,std::string > > > *)0;
+    res3 = swig::asptr(obj2, &ptr);
+    if (!SWIG_IsOK(res3)) {
+      SWIG_exception_fail(SWIG_ArgError(res3), "in method '" "new_SpriteBase" "', argument " "3"" of type '" "FESimple::SpawnParams const &""'"); 
+    }
+    if (!ptr) {
+      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "new_SpriteBase" "', argument " "3"" of type '" "FESimple::SpawnParams const &""'"); 
+    }
+    arg3 = ptr;
+  }
+  if ( arg1 != Py_None ) {
+    /* subclassed */
+    result = (FESimple::SpriteBase *)new SwigDirector_SpriteBase(arg1,(cocos2d::CCPoint const &)*arg2,(FESimple::SpawnParams const &)*arg3); 
+  } else {
+    result = (FESimple::SpriteBase *)new FESimple::SpriteBase((cocos2d::CCPoint const &)*arg2,(FESimple::SpawnParams const &)*arg3); 
+  }
+  
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_FESimple__SpriteBase, SWIG_POINTER_NEW |  0 );
+  if (SWIG_IsNewObj(res3)) delete arg3;
+  return resultobj;
+fail:
+  if (SWIG_IsNewObj(res3)) delete arg3;
+  return NULL;
+}
+
+
 SWIGINTERN PyObject *_wrap_new_SpriteBase(PyObject *self, PyObject *args) {
   int argc;
-  PyObject *argv[3];
+  PyObject *argv[4];
   int ii;
   
   if (!PyTuple_Check(args)) SWIG_fail;
   argc = args ? (int)PyObject_Length(args) : 0;
-  for (ii = 0; (ii < 2) && (ii < argc); ii++) {
+  for (ii = 0; (ii < 3) && (ii < argc); ii++) {
     argv[ii] = PyTuple_GET_ITEM(args,ii);
-  }
-  if (argc == 0) {
-    return _wrap_new_SpriteBase__SWIG_0(self, args);
   }
   if (argc == 1) {
     int _v;
-    int res = swig::asptr(argv[0], (std::map<std::string,std::string,std::less< std::string >,std::allocator< std::pair< std::string const,std::string > > >**)(0));
-    _v = SWIG_CheckState(res);
+    _v = (argv[0] != 0);
     if (_v) {
-      return _wrap_new_SpriteBase__SWIG_2(self, args);
+      return _wrap_new_SpriteBase__SWIG_0(self, args);
     }
   }
   if (argc == 2) {
     int _v;
-    int res = SWIG_ConvertPtr(argv[0], 0, SWIGTYPE_p_cocos2d__CCPoint, 0);
-    _v = SWIG_CheckState(res);
+    _v = (argv[0] != 0);
     if (_v) {
-      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_std__shared_ptrT_sprite_desc_t, 0);
+      int res = swig::asptr(argv[1], (std::map<std::string,std::string,std::less< std::string >,std::allocator< std::pair< std::string const,std::string > > >**)(0));
       _v = SWIG_CheckState(res);
       if (_v) {
         return _wrap_new_SpriteBase__SWIG_1(self, args);
       }
     }
   }
-  if (argc == 2) {
+  if (argc == 3) {
     int _v;
-    int res = SWIG_ConvertPtr(argv[0], 0, SWIGTYPE_p_cocos2d__CCPoint, 0);
-    _v = SWIG_CheckState(res);
+    _v = (argv[0] != 0);
     if (_v) {
-      int res = swig::asptr(argv[1], (std::map<std::string,std::string,std::less< std::string >,std::allocator< std::pair< std::string const,std::string > > >**)(0));
+      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_cocos2d__CCPoint, 0);
       _v = SWIG_CheckState(res);
       if (_v) {
-        return _wrap_new_SpriteBase__SWIG_3(self, args);
+        int res = swig::asptr(argv[2], (std::map<std::string,std::string,std::less< std::string >,std::allocator< std::pair< std::string const,std::string > > >**)(0));
+        _v = SWIG_CheckState(res);
+        if (_v) {
+          return _wrap_new_SpriteBase__SWIG_2(self, args);
+        }
       }
     }
   }
@@ -8680,9 +12922,8 @@ fail:
   SWIG_SetErrorMsg(PyExc_NotImplementedError,"Wrong number or type of arguments for overloaded function 'new_SpriteBase'.\n"
     "  Possible C/C++ prototypes are:\n"
     "    FESimple::SpriteBase::SpriteBase()\n"
-    "    FESimple::SpriteBase::SpriteBase(cocos2d::CCPoint const &,std::shared_ptr< sprite_desc > const)\n"
     "    FESimple::SpriteBase::SpriteBase(FESimple::SpawnParams const &)\n"
-    "    FESimple::SpriteBase::SpriteBase(cocos2d::CCPoint const &,FESimple::SpawnParams const &)\n");
+    "    FESimple::SpriteBase::SpriteBase(PyObject *,cocos2d::CCPoint const &,FESimple::SpawnParams const &)\n");
   return 0;
 }
 
@@ -8721,6 +12962,8 @@ SWIGINTERN PyObject *_wrap_SpriteBase_added_to_game(PyObject *SWIGUNUSEDPARM(sel
   PyObject * obj0 = 0 ;
   PyObject * obj1 = 0 ;
   PyObject * obj2 = 0 ;
+  Swig::Director *director = 0;
+  bool upcall = false;
   
   if (!PyArg_ParseTuple(args,(char *)"OOO:SpriteBase_added_to_game",&obj0,&obj1,&obj2)) SWIG_fail;
   res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_FESimple__SpriteBase, 0 |  0 );
@@ -8744,7 +12987,17 @@ SWIGINTERN PyObject *_wrap_SpriteBase_added_to_game(PyObject *SWIGUNUSEDPARM(sel
     }
     arg3 = ptr;
   }
-  (arg1)->added_to_game(arg2,(FESimple::Name const &)*arg3);
+  director = SWIG_DIRECTOR_CAST(arg1);
+  upcall = (director && (director->swig_get_self()==obj0));
+  try {
+    if (upcall) {
+      (arg1)->FESimple::SpriteBase::added_to_game(arg2,(FESimple::Name const &)*arg3);
+    } else {
+      (arg1)->added_to_game(arg2,(FESimple::Name const &)*arg3);
+    }
+  } catch (Swig::DirectorException&) {
+    SWIG_fail;
+  }
   resultobj = SWIG_Py_Void();
   if (SWIG_IsNewObj(res3)) delete arg3;
   return resultobj;
@@ -8764,6 +13017,8 @@ SWIGINTERN PyObject *_wrap_SpriteBase_removed_from_game(PyObject *SWIGUNUSEDPARM
   int res2 = 0 ;
   PyObject * obj0 = 0 ;
   PyObject * obj1 = 0 ;
+  Swig::Director *director = 0;
+  bool upcall = false;
   
   if (!PyArg_ParseTuple(args,(char *)"OO:SpriteBase_removed_from_game",&obj0,&obj1)) SWIG_fail;
   res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_FESimple__SpriteBase, 0 |  0 );
@@ -8776,7 +13031,17 @@ SWIGINTERN PyObject *_wrap_SpriteBase_removed_from_game(PyObject *SWIGUNUSEDPARM
     SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "SpriteBase_removed_from_game" "', argument " "2"" of type '" "FESimple::GameBase *""'"); 
   }
   arg2 = reinterpret_cast< FESimple::GameBase * >(argp2);
-  (arg1)->removed_from_game(arg2);
+  director = SWIG_DIRECTOR_CAST(arg1);
+  upcall = (director && (director->swig_get_self()==obj0));
+  try {
+    if (upcall) {
+      (arg1)->FESimple::SpriteBase::removed_from_game(arg2);
+    } else {
+      (arg1)->removed_from_game(arg2);
+    }
+  } catch (Swig::DirectorException&) {
+    SWIG_fail;
+  }
   resultobj = SWIG_Py_Void();
   return resultobj;
 fail:
@@ -8896,6 +13161,28 @@ fail:
 }
 
 
+SWIGINTERN PyObject *_wrap_SpriteBase_component_count(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  FESimple::SpriteBase *arg1 = (FESimple::SpriteBase *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  unsigned int result;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:SpriteBase_component_count",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_FESimple__SpriteBase, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SpriteBase_component_count" "', argument " "1"" of type '" "FESimple::SpriteBase *""'"); 
+  }
+  arg1 = reinterpret_cast< FESimple::SpriteBase * >(argp1);
+  result = (unsigned int)(arg1)->component_count();
+  resultobj = SWIG_From_unsigned_SS_int(static_cast< unsigned int >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
 SWIGINTERN PyObject *_wrap_SpriteBase_begin_contact(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   FESimple::SpriteBase *arg1 = (FESimple::SpriteBase *) 0 ;
@@ -8906,6 +13193,8 @@ SWIGINTERN PyObject *_wrap_SpriteBase_begin_contact(PyObject *SWIGUNUSEDPARM(sel
   int res2 = 0 ;
   PyObject * obj0 = 0 ;
   PyObject * obj1 = 0 ;
+  Swig::Director *director = 0;
+  bool upcall = false;
   
   if (!PyArg_ParseTuple(args,(char *)"OO:SpriteBase_begin_contact",&obj0,&obj1)) SWIG_fail;
   res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_FESimple__SpriteBase, 0 |  0 );
@@ -8918,7 +13207,17 @@ SWIGINTERN PyObject *_wrap_SpriteBase_begin_contact(PyObject *SWIGUNUSEDPARM(sel
     SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "SpriteBase_begin_contact" "', argument " "2"" of type '" "b2Contact *""'"); 
   }
   arg2 = reinterpret_cast< b2Contact * >(argp2);
-  (arg1)->begin_contact(arg2);
+  director = SWIG_DIRECTOR_CAST(arg1);
+  upcall = (director && (director->swig_get_self()==obj0));
+  try {
+    if (upcall) {
+      (arg1)->FESimple::SpriteBase::begin_contact(arg2);
+    } else {
+      (arg1)->begin_contact(arg2);
+    }
+  } catch (Swig::DirectorException&) {
+    SWIG_fail;
+  }
   resultobj = SWIG_Py_Void();
   return resultobj;
 fail:
@@ -8936,6 +13235,8 @@ SWIGINTERN PyObject *_wrap_SpriteBase_end_contact(PyObject *SWIGUNUSEDPARM(self)
   int res2 = 0 ;
   PyObject * obj0 = 0 ;
   PyObject * obj1 = 0 ;
+  Swig::Director *director = 0;
+  bool upcall = false;
   
   if (!PyArg_ParseTuple(args,(char *)"OO:SpriteBase_end_contact",&obj0,&obj1)) SWIG_fail;
   res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_FESimple__SpriteBase, 0 |  0 );
@@ -8948,7 +13249,17 @@ SWIGINTERN PyObject *_wrap_SpriteBase_end_contact(PyObject *SWIGUNUSEDPARM(self)
     SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "SpriteBase_end_contact" "', argument " "2"" of type '" "b2Contact *""'"); 
   }
   arg2 = reinterpret_cast< b2Contact * >(argp2);
-  (arg1)->end_contact(arg2);
+  director = SWIG_DIRECTOR_CAST(arg1);
+  upcall = (director && (director->swig_get_self()==obj0));
+  try {
+    if (upcall) {
+      (arg1)->FESimple::SpriteBase::end_contact(arg2);
+    } else {
+      (arg1)->end_contact(arg2);
+    }
+  } catch (Swig::DirectorException&) {
+    SWIG_fail;
+  }
   resultobj = SWIG_Py_Void();
   return resultobj;
 fail:
@@ -8966,6 +13277,8 @@ SWIGINTERN PyObject *_wrap_SpriteBase_update(PyObject *SWIGUNUSEDPARM(self), PyO
   int ecode2 = 0 ;
   PyObject * obj0 = 0 ;
   PyObject * obj1 = 0 ;
+  Swig::Director *director = 0;
+  bool upcall = false;
   
   if (!PyArg_ParseTuple(args,(char *)"OO:SpriteBase_update",&obj0,&obj1)) SWIG_fail;
   res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_FESimple__SpriteBase, 0 |  0 );
@@ -8978,7 +13291,17 @@ SWIGINTERN PyObject *_wrap_SpriteBase_update(PyObject *SWIGUNUSEDPARM(self), PyO
     SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "SpriteBase_update" "', argument " "2"" of type '" "float""'");
   } 
   arg2 = static_cast< float >(val2);
-  (arg1)->update(arg2);
+  director = SWIG_DIRECTOR_CAST(arg1);
+  upcall = (director && (director->swig_get_self()==obj0));
+  try {
+    if (upcall) {
+      (arg1)->FESimple::SpriteBase::update(arg2);
+    } else {
+      (arg1)->update(arg2);
+    }
+  } catch (Swig::DirectorException&) {
+    SWIG_fail;
+  }
   resultobj = SWIG_Py_Void();
   return resultobj;
 fail:
@@ -8996,6 +13319,8 @@ SWIGINTERN PyObject *_wrap_SpriteBase_set_position(PyObject *SWIGUNUSEDPARM(self
   int res2 = 0 ;
   PyObject * obj0 = 0 ;
   PyObject * obj1 = 0 ;
+  Swig::Director *director = 0;
+  bool upcall = false;
   
   if (!PyArg_ParseTuple(args,(char *)"OO:SpriteBase_set_position",&obj0,&obj1)) SWIG_fail;
   res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_FESimple__SpriteBase, 0 |  0 );
@@ -9016,7 +13341,17 @@ SWIGINTERN PyObject *_wrap_SpriteBase_set_position(PyObject *SWIGUNUSEDPARM(self
       if (SWIG_IsNewObj(res2)) delete temp;
     }
   }
-  (arg1)->set_position(arg2);
+  director = SWIG_DIRECTOR_CAST(arg1);
+  upcall = (director && (director->swig_get_self()==obj0));
+  try {
+    if (upcall) {
+      (arg1)->FESimple::SpriteBase::set_position(arg2);
+    } else {
+      (arg1)->set_position(arg2);
+    }
+  } catch (Swig::DirectorException&) {
+    SWIG_fail;
+  }
   resultobj = SWIG_Py_Void();
   return resultobj;
 fail:
@@ -9034,6 +13369,8 @@ SWIGINTERN PyObject *_wrap_SpriteBase_set_rotation(PyObject *SWIGUNUSEDPARM(self
   int ecode2 = 0 ;
   PyObject * obj0 = 0 ;
   PyObject * obj1 = 0 ;
+  Swig::Director *director = 0;
+  bool upcall = false;
   
   if (!PyArg_ParseTuple(args,(char *)"OO:SpriteBase_set_rotation",&obj0,&obj1)) SWIG_fail;
   res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_FESimple__SpriteBase, 0 |  0 );
@@ -9046,7 +13383,42 @@ SWIGINTERN PyObject *_wrap_SpriteBase_set_rotation(PyObject *SWIGUNUSEDPARM(self
     SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "SpriteBase_set_rotation" "', argument " "2"" of type '" "float""'");
   } 
   arg2 = static_cast< float >(val2);
-  (arg1)->set_rotation(arg2);
+  director = SWIG_DIRECTOR_CAST(arg1);
+  upcall = (director && (director->swig_get_self()==obj0));
+  try {
+    if (upcall) {
+      (arg1)->FESimple::SpriteBase::set_rotation(arg2);
+    } else {
+      (arg1)->set_rotation(arg2);
+    }
+  } catch (Swig::DirectorException&) {
+    SWIG_fail;
+  }
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_disown_SpriteBase(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  FESimple::SpriteBase *arg1 = (FESimple::SpriteBase *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:disown_SpriteBase",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_FESimple__SpriteBase, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "disown_SpriteBase" "', argument " "1"" of type '" "FESimple::SpriteBase *""'"); 
+  }
+  arg1 = reinterpret_cast< FESimple::SpriteBase * >(argp1);
+  {
+    Swig::Director *director = SWIG_DIRECTOR_CAST(arg1);
+    if (director) director->swig_disown();
+  }
+  
   resultobj = SWIG_Py_Void();
   return resultobj;
 fail:
@@ -9063,10 +13435,19 @@ SWIGINTERN PyObject *SpriteBase_swigregister(PyObject *SWIGUNUSEDPARM(self), PyO
 
 SWIGINTERN PyObject *_wrap_new_GameBase(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
+  PyObject *arg1 = (PyObject *) 0 ;
+  PyObject * obj0 = 0 ;
   FESimple::GameBase *result = 0 ;
   
-  if (!PyArg_ParseTuple(args,(char *)":new_GameBase")) SWIG_fail;
-  result = (FESimple::GameBase *)new FESimple::GameBase();
+  if (!PyArg_ParseTuple(args,(char *)"O:new_GameBase",&obj0)) SWIG_fail;
+  arg1 = obj0;
+  if ( arg1 != Py_None ) {
+    /* subclassed */
+    result = (FESimple::GameBase *)new SwigDirector_GameBase(arg1); 
+  } else {
+    result = (FESimple::GameBase *)new FESimple::GameBase(); 
+  }
+  
   resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_FESimple__GameBase, SWIG_POINTER_NEW |  0 );
   return resultobj;
 fail:
@@ -9105,6 +13486,8 @@ SWIGINTERN PyObject *_wrap_GameBase_update(PyObject *SWIGUNUSEDPARM(self), PyObj
   int ecode2 = 0 ;
   PyObject * obj0 = 0 ;
   PyObject * obj1 = 0 ;
+  Swig::Director *director = 0;
+  bool upcall = false;
   
   if (!PyArg_ParseTuple(args,(char *)"OO:GameBase_update",&obj0,&obj1)) SWIG_fail;
   res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_FESimple__GameBase, 0 |  0 );
@@ -9117,7 +13500,17 @@ SWIGINTERN PyObject *_wrap_GameBase_update(PyObject *SWIGUNUSEDPARM(self), PyObj
     SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "GameBase_update" "', argument " "2"" of type '" "float""'");
   } 
   arg2 = static_cast< float >(val2);
-  (arg1)->update(arg2);
+  director = SWIG_DIRECTOR_CAST(arg1);
+  upcall = (director && (director->swig_get_self()==obj0));
+  try {
+    if (upcall) {
+      (arg1)->FESimple::GameBase::update(arg2);
+    } else {
+      (arg1)->update(arg2);
+    }
+  } catch (Swig::DirectorException&) {
+    SWIG_fail;
+  }
   resultobj = SWIG_Py_Void();
   return resultobj;
 fail:
@@ -9149,7 +13542,7 @@ fail:
 SWIGINTERN PyObject *_wrap_GameBase_add_game_object(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   FESimple::GameBase *arg1 = (FESimple::GameBase *) 0 ;
-  SwigValueWrapper< std::shared_ptr< FESimple::GameObjBase > > arg2 ;
+  FESimple::GameObjPtr arg2 ;
   FESimple::Name *arg3 = 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
@@ -9203,7 +13596,7 @@ fail:
 SWIGINTERN PyObject *_wrap_GameBase_remove_game_object(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   FESimple::GameBase *arg1 = (FESimple::GameBase *) 0 ;
-  SwigValueWrapper< std::shared_ptr< FESimple::GameObjBase > > arg2 ;
+  FESimple::GameObjPtr arg2 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   void *argp2 ;
@@ -9291,7 +13684,7 @@ SWIGINTERN PyObject *_wrap_GameBase_get_obj(PyObject *SWIGUNUSEDPARM(self), PyOb
   int res2 = SWIG_OLDOBJ ;
   PyObject * obj0 = 0 ;
   PyObject * obj1 = 0 ;
-  SwigValueWrapper< std::shared_ptr< FESimple::GameObjBase > > result;
+  FESimple::GameObjPtr result;
   
   if (!PyArg_ParseTuple(args,(char *)"OO:GameBase_get_obj",&obj0,&obj1)) SWIG_fail;
   res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_FESimple__GameBase, 0 |  0 );
@@ -9316,6 +13709,31 @@ SWIGINTERN PyObject *_wrap_GameBase_get_obj(PyObject *SWIGUNUSEDPARM(self), PyOb
   return resultobj;
 fail:
   if (SWIG_IsNewObj(res2)) delete arg2;
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_disown_GameBase(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  FESimple::GameBase *arg1 = (FESimple::GameBase *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:disown_GameBase",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_FESimple__GameBase, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "disown_GameBase" "', argument " "1"" of type '" "FESimple::GameBase *""'"); 
+  }
+  arg1 = reinterpret_cast< FESimple::GameBase * >(argp1);
+  {
+    Swig::Director *director = SWIG_DIRECTOR_CAST(arg1);
+    if (director) director->swig_disown();
+  }
+  
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
   return NULL;
 }
 
@@ -9475,10 +13893,10 @@ SWIGINTERN PyObject *LevelTrigger_swigregister(PyObject *SWIGUNUSEDPARM(self), P
 SWIGINTERN PyObject *_wrap_LevelBound_rect_set(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   FESimple::LevelBound *arg1 = (FESimple::LevelBound *) 0 ;
-  cocos2d::CCRect arg2 ;
+  cocos2d::CCRect *arg2 = (cocos2d::CCRect *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
-  void *argp2 ;
+  void *argp2 = 0 ;
   int res2 = 0 ;
   PyObject * obj0 = 0 ;
   PyObject * obj1 = 0 ;
@@ -9489,20 +13907,12 @@ SWIGINTERN PyObject *_wrap_LevelBound_rect_set(PyObject *SWIGUNUSEDPARM(self), P
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "LevelBound_rect_set" "', argument " "1"" of type '" "FESimple::LevelBound *""'"); 
   }
   arg1 = reinterpret_cast< FESimple::LevelBound * >(argp1);
-  {
-    res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_cocos2d__CCRect,  0  | 0);
-    if (!SWIG_IsOK(res2)) {
-      SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "LevelBound_rect_set" "', argument " "2"" of type '" "cocos2d::CCRect""'"); 
-    }  
-    if (!argp2) {
-      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "LevelBound_rect_set" "', argument " "2"" of type '" "cocos2d::CCRect""'");
-    } else {
-      cocos2d::CCRect * temp = reinterpret_cast< cocos2d::CCRect * >(argp2);
-      arg2 = *temp;
-      if (SWIG_IsNewObj(res2)) delete temp;
-    }
+  res2 = SWIG_ConvertPtr(obj1, &argp2,SWIGTYPE_p_cocos2d__CCRect, 0 |  0 );
+  if (!SWIG_IsOK(res2)) {
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "LevelBound_rect_set" "', argument " "2"" of type '" "cocos2d::CCRect *""'"); 
   }
-  if (arg1) (arg1)->rect = arg2;
+  arg2 = reinterpret_cast< cocos2d::CCRect * >(argp2);
+  if (arg1) (arg1)->rect = *arg2;
   resultobj = SWIG_Py_Void();
   return resultobj;
 fail:
@@ -9516,7 +13926,7 @@ SWIGINTERN PyObject *_wrap_LevelBound_rect_get(PyObject *SWIGUNUSEDPARM(self), P
   void *argp1 = 0 ;
   int res1 = 0 ;
   PyObject * obj0 = 0 ;
-  cocos2d::CCRect result;
+  cocos2d::CCRect *result = 0 ;
   
   if (!PyArg_ParseTuple(args,(char *)"O:LevelBound_rect_get",&obj0)) SWIG_fail;
   res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_FESimple__LevelBound, 0 |  0 );
@@ -9524,8 +13934,8 @@ SWIGINTERN PyObject *_wrap_LevelBound_rect_get(PyObject *SWIGUNUSEDPARM(self), P
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "LevelBound_rect_get" "', argument " "1"" of type '" "FESimple::LevelBound *""'"); 
   }
   arg1 = reinterpret_cast< FESimple::LevelBound * >(argp1);
-  result =  ((arg1)->rect);
-  resultobj = SWIG_NewPointerObj((new cocos2d::CCRect(static_cast< const cocos2d::CCRect& >(result))), SWIGTYPE_p_cocos2d__CCRect, SWIG_POINTER_OWN |  0 );
+  result = (cocos2d::CCRect *)& ((arg1)->rect);
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_cocos2d__CCRect, 0 |  0 );
   return resultobj;
 fail:
   return NULL;
@@ -9666,7 +14076,7 @@ fail:
 SWIGINTERN PyObject *_wrap_LevelData_triggers_set(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   FESimple::LevelData *arg1 = (FESimple::LevelData *) 0 ;
-  std::vector< FESimple::LevelTrigger > *arg2 = (std::vector< FESimple::LevelTrigger > *) 0 ;
+  std::vector< FESimple::LevelTrigger,std::allocator< FESimple::LevelTrigger > > *arg2 = (std::vector< FESimple::LevelTrigger,std::allocator< FESimple::LevelTrigger > > *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   void *argp2 = 0 ;
@@ -9680,11 +14090,11 @@ SWIGINTERN PyObject *_wrap_LevelData_triggers_set(PyObject *SWIGUNUSEDPARM(self)
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "LevelData_triggers_set" "', argument " "1"" of type '" "FESimple::LevelData *""'"); 
   }
   arg1 = reinterpret_cast< FESimple::LevelData * >(argp1);
-  res2 = SWIG_ConvertPtr(obj1, &argp2,SWIGTYPE_p_std__vectorT_FESimple__LevelTrigger_t, 0 |  0 );
+  res2 = SWIG_ConvertPtr(obj1, &argp2,SWIGTYPE_p_std__vectorT_FESimple__LevelTrigger_std__allocatorT_FESimple__LevelTrigger_t_t, 0 |  0 );
   if (!SWIG_IsOK(res2)) {
-    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "LevelData_triggers_set" "', argument " "2"" of type '" "std::vector< FESimple::LevelTrigger > *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "LevelData_triggers_set" "', argument " "2"" of type '" "std::vector< FESimple::LevelTrigger,std::allocator< FESimple::LevelTrigger > > *""'"); 
   }
-  arg2 = reinterpret_cast< std::vector< FESimple::LevelTrigger > * >(argp2);
+  arg2 = reinterpret_cast< std::vector< FESimple::LevelTrigger,std::allocator< FESimple::LevelTrigger > > * >(argp2);
   if (arg1) (arg1)->triggers = *arg2;
   resultobj = SWIG_Py_Void();
   return resultobj;
@@ -9699,7 +14109,7 @@ SWIGINTERN PyObject *_wrap_LevelData_triggers_get(PyObject *SWIGUNUSEDPARM(self)
   void *argp1 = 0 ;
   int res1 = 0 ;
   PyObject * obj0 = 0 ;
-  std::vector< FESimple::LevelTrigger > *result = 0 ;
+  std::vector< FESimple::LevelTrigger,std::allocator< FESimple::LevelTrigger > > *result = 0 ;
   
   if (!PyArg_ParseTuple(args,(char *)"O:LevelData_triggers_get",&obj0)) SWIG_fail;
   res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_FESimple__LevelData, 0 |  0 );
@@ -9707,8 +14117,8 @@ SWIGINTERN PyObject *_wrap_LevelData_triggers_get(PyObject *SWIGUNUSEDPARM(self)
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "LevelData_triggers_get" "', argument " "1"" of type '" "FESimple::LevelData *""'"); 
   }
   arg1 = reinterpret_cast< FESimple::LevelData * >(argp1);
-  result = (std::vector< FESimple::LevelTrigger > *)& ((arg1)->triggers);
-  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_std__vectorT_FESimple__LevelTrigger_t, 0 |  0 );
+  result = (std::vector< FESimple::LevelTrigger,std::allocator< FESimple::LevelTrigger > > *)& ((arg1)->triggers);
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_std__vectorT_FESimple__LevelTrigger_std__allocatorT_FESimple__LevelTrigger_t_t, 0 |  0 );
   return resultobj;
 fail:
   return NULL;
@@ -10005,7 +14415,7 @@ SWIGINTERN PyObject *_wrap_split_string(PyObject *SWIGUNUSEDPARM(self), PyObject
   int res2 = SWIG_OLDOBJ ;
   PyObject * obj0 = 0 ;
   PyObject * obj1 = 0 ;
-  SwigValueWrapper< std::vector< std::string > > result;
+  SwigValueWrapper< std::vector< std::string,std::allocator< std::string > > > result;
   
   if (!PyArg_ParseTuple(args,(char *)"OO:split_string",&obj0,&obj1)) SWIG_fail;
   {
@@ -10031,7 +14441,7 @@ SWIGINTERN PyObject *_wrap_split_string(PyObject *SWIGUNUSEDPARM(self), PyObject
     arg2 = ptr;
   }
   result = FESimple::split_string((std::string const &)*arg1,(std::string const &)*arg2);
-  resultobj = SWIG_NewPointerObj((new std::vector< std::string >(static_cast< const std::vector< std::string >& >(result))), SWIGTYPE_p_std__vectorT_std__string_t, SWIG_POINTER_OWN |  0 );
+  resultobj = SWIG_NewPointerObj((new std::vector< std::string,std::allocator< std::string > >(static_cast< const std::vector< std::string,std::allocator< std::string > >& >(result))), SWIGTYPE_p_std__vectorT_std__string_std__allocatorT_std__string_t_t, SWIG_POINTER_OWN |  0 );
   if (SWIG_IsNewObj(res1)) delete arg1;
   if (SWIG_IsNewObj(res2)) delete arg2;
   return resultobj;
@@ -10184,7 +14594,7 @@ SWIGINTERN PyObject *_wrap_string_to_floats(PyObject *SWIGUNUSEDPARM(self), PyOb
   std::string *arg1 = 0 ;
   int res1 = SWIG_OLDOBJ ;
   PyObject * obj0 = 0 ;
-  std::vector< float > result;
+  SwigValueWrapper< std::vector< float,std::allocator< float > > > result;
   
   if (!PyArg_ParseTuple(args,(char *)"O:string_to_floats",&obj0)) SWIG_fail;
   {
@@ -10199,7 +14609,7 @@ SWIGINTERN PyObject *_wrap_string_to_floats(PyObject *SWIGUNUSEDPARM(self), PyOb
     arg1 = ptr;
   }
   result = FESimple::string_to_floats((std::string const &)*arg1);
-  resultobj = SWIG_NewPointerObj((new std::vector< float >(static_cast< const std::vector< float >& >(result))), SWIGTYPE_p_std__vectorT_float_t, SWIG_POINTER_OWN |  0 );
+  resultobj = SWIG_NewPointerObj((new std::vector< float,std::allocator< float > >(static_cast< const std::vector< float,std::allocator< float > >& >(result))), SWIGTYPE_p_std__vectorT_float_std__allocatorT_float_t_t, SWIG_POINTER_OWN |  0 );
   if (SWIG_IsNewObj(res1)) delete arg1;
   return resultobj;
 fail:
@@ -10902,6 +15312,36 @@ fail:
 }
 
 
+SWIGINTERN PyObject *_wrap_GameInfo_add_controller(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  FESimple::GameInfo *arg1 = (FESimple::GameInfo *) 0 ;
+  FESimple::ControllerBase *arg2 = (FESimple::ControllerBase *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 = 0 ;
+  int res2 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"OO:GameInfo_add_controller",&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_FESimple__GameInfo, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "GameInfo_add_controller" "', argument " "1"" of type '" "FESimple::GameInfo *""'"); 
+  }
+  arg1 = reinterpret_cast< FESimple::GameInfo * >(argp1);
+  res2 = SWIG_ConvertPtr(obj1, &argp2,SWIGTYPE_p_FESimple__ControllerBase, 0 |  0 );
+  if (!SWIG_IsOK(res2)) {
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "GameInfo_add_controller" "', argument " "2"" of type '" "FESimple::ControllerBase *""'"); 
+  }
+  arg2 = reinterpret_cast< FESimple::ControllerBase * >(argp2);
+  (arg1)->add_controller(arg2);
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
 SWIGINTERN PyObject *_wrap_GameInfo_game_set(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   FESimple::GameInfo *arg1 = (FESimple::GameInfo *) 0 ;
@@ -10957,7 +15397,7 @@ fail:
 SWIGINTERN PyObject *_wrap_GameInfo_controllers_set(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   FESimple::GameInfo *arg1 = (FESimple::GameInfo *) 0 ;
-  std::vector< FESimple::ControllerBase * > *arg2 = (std::vector< FESimple::ControllerBase * > *) 0 ;
+  std::vector< FESimple::ControllerBase *,std::allocator< FESimple::ControllerBase * > > *arg2 = (std::vector< FESimple::ControllerBase *,std::allocator< FESimple::ControllerBase * > > *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   void *argp2 = 0 ;
@@ -10971,11 +15411,11 @@ SWIGINTERN PyObject *_wrap_GameInfo_controllers_set(PyObject *SWIGUNUSEDPARM(sel
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "GameInfo_controllers_set" "', argument " "1"" of type '" "FESimple::GameInfo *""'"); 
   }
   arg1 = reinterpret_cast< FESimple::GameInfo * >(argp1);
-  res2 = SWIG_ConvertPtr(obj1, &argp2,SWIGTYPE_p_std__vectorT_FESimple__ControllerBase_p_t, 0 |  0 );
+  res2 = SWIG_ConvertPtr(obj1, &argp2,SWIGTYPE_p_std__vectorT_FESimple__ControllerBase_p_std__allocatorT_FESimple__ControllerBase_p_t_t, 0 |  0 );
   if (!SWIG_IsOK(res2)) {
-    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "GameInfo_controllers_set" "', argument " "2"" of type '" "std::vector< FESimple::ControllerBase * > *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "GameInfo_controllers_set" "', argument " "2"" of type '" "std::vector< FESimple::ControllerBase *,std::allocator< FESimple::ControllerBase * > > *""'"); 
   }
-  arg2 = reinterpret_cast< std::vector< FESimple::ControllerBase * > * >(argp2);
+  arg2 = reinterpret_cast< std::vector< FESimple::ControllerBase *,std::allocator< FESimple::ControllerBase * > > * >(argp2);
   if (arg1) (arg1)->controllers = *arg2;
   resultobj = SWIG_Py_Void();
   return resultobj;
@@ -10990,7 +15430,7 @@ SWIGINTERN PyObject *_wrap_GameInfo_controllers_get(PyObject *SWIGUNUSEDPARM(sel
   void *argp1 = 0 ;
   int res1 = 0 ;
   PyObject * obj0 = 0 ;
-  std::vector< FESimple::ControllerBase * > *result = 0 ;
+  std::vector< FESimple::ControllerBase *,std::allocator< FESimple::ControllerBase * > > *result = 0 ;
   
   if (!PyArg_ParseTuple(args,(char *)"O:GameInfo_controllers_get",&obj0)) SWIG_fail;
   res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_FESimple__GameInfo, 0 |  0 );
@@ -10998,8 +15438,8 @@ SWIGINTERN PyObject *_wrap_GameInfo_controllers_get(PyObject *SWIGUNUSEDPARM(sel
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "GameInfo_controllers_get" "', argument " "1"" of type '" "FESimple::GameInfo *""'"); 
   }
   arg1 = reinterpret_cast< FESimple::GameInfo * >(argp1);
-  result = (std::vector< FESimple::ControllerBase * > *)& ((arg1)->controllers);
-  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_std__vectorT_FESimple__ControllerBase_p_t, 0 |  0 );
+  result = (std::vector< FESimple::ControllerBase *,std::allocator< FESimple::ControllerBase * > > *)& ((arg1)->controllers);
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_std__vectorT_FESimple__ControllerBase_p_std__allocatorT_FESimple__ControllerBase_p_t_t, 0 |  0 );
   return resultobj;
 fail:
   return NULL;
@@ -11090,6 +15530,28 @@ fail:
 }
 
 
+SWIGINTERN PyObject *_wrap_make_gameobj_ptr(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  FESimple::GameObjBase *arg1 = (FESimple::GameObjBase *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  FESimple::GameObjPtr result;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:make_gameobj_ptr",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_FESimple__GameObjBase, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "make_gameobj_ptr" "', argument " "1"" of type '" "FESimple::GameObjBase *""'"); 
+  }
+  arg1 = reinterpret_cast< FESimple::GameObjBase * >(argp1);
+  result = FESimple::make_gameobj_ptr(arg1);
+  resultobj = SWIG_NewPointerObj((new FESimple::GameObjPtr(static_cast< const FESimple::GameObjPtr& >(result))), SWIGTYPE_p_std__shared_ptrT_FESimple__GameObjBase_t, SWIG_POINTER_OWN |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
 SWIGINTERN PyObject *_wrap_GameObjFactory_construct_obj(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   FESimple::Name *arg1 = 0 ;
@@ -11098,7 +15560,7 @@ SWIGINTERN PyObject *_wrap_GameObjFactory_construct_obj(PyObject *SWIGUNUSEDPARM
   int res2 = SWIG_OLDOBJ ;
   PyObject * obj0 = 0 ;
   PyObject * obj1 = 0 ;
-  SwigValueWrapper< std::shared_ptr< FESimple::GameObjBase > > result;
+  FESimple::GameObjPtr result;
   
   if (!PyArg_ParseTuple(args,(char *)"OO:GameObjFactory_construct_obj",&obj0,&obj1)) SWIG_fail;
   {
@@ -11176,6 +15638,2592 @@ SWIGINTERN PyObject *GameObjFactory_swigregister(PyObject *SWIGUNUSEDPARM(self),
   return SWIG_Py_Void();
 }
 
+SWIGINTERN PyObject *_wrap_ControllerBase_plug(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  FESimple::ControllerBase *arg1 = (FESimple::ControllerBase *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:ControllerBase_plug",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_FESimple__ControllerBase, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "ControllerBase_plug" "', argument " "1"" of type '" "FESimple::ControllerBase *""'"); 
+  }
+  arg1 = reinterpret_cast< FESimple::ControllerBase * >(argp1);
+  (arg1)->plug();
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_ControllerBase_unplug(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  FESimple::ControllerBase *arg1 = (FESimple::ControllerBase *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:ControllerBase_unplug",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_FESimple__ControllerBase, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "ControllerBase_unplug" "', argument " "1"" of type '" "FESimple::ControllerBase *""'"); 
+  }
+  arg1 = reinterpret_cast< FESimple::ControllerBase * >(argp1);
+  (arg1)->unplug();
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_delete_ControllerBase(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  FESimple::ControllerBase *arg1 = (FESimple::ControllerBase *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:delete_ControllerBase",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_FESimple__ControllerBase, SWIG_POINTER_DISOWN |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "delete_ControllerBase" "', argument " "1"" of type '" "FESimple::ControllerBase *""'"); 
+  }
+  arg1 = reinterpret_cast< FESimple::ControllerBase * >(argp1);
+  delete arg1;
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *ControllerBase_swigregister(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *obj;
+  if (!PyArg_ParseTuple(args,(char*)"O:swigregister", &obj)) return NULL;
+  SWIG_TypeNewClientData(SWIGTYPE_p_FESimple__ControllerBase, SWIG_NewClientData(obj));
+  return SWIG_Py_Void();
+}
+
+SWIGINTERN PyObject *_wrap_new_IOSTouchController(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  PyObject *arg1 = (PyObject *) 0 ;
+  PyObject * obj0 = 0 ;
+  FESimple::IOSTouchController *result = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:new_IOSTouchController",&obj0)) SWIG_fail;
+  arg1 = obj0;
+  if ( arg1 != Py_None ) {
+    /* subclassed */
+    result = (FESimple::IOSTouchController *)new SwigDirector_IOSTouchController(arg1); 
+  } else {
+    result = (FESimple::IOSTouchController *)new FESimple::IOSTouchController(); 
+  }
+  
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_FESimple__IOSTouchController, SWIG_POINTER_NEW |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_delete_IOSTouchController(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  FESimple::IOSTouchController *arg1 = (FESimple::IOSTouchController *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:delete_IOSTouchController",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_FESimple__IOSTouchController, SWIG_POINTER_DISOWN |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "delete_IOSTouchController" "', argument " "1"" of type '" "FESimple::IOSTouchController *""'"); 
+  }
+  arg1 = reinterpret_cast< FESimple::IOSTouchController * >(argp1);
+  delete arg1;
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_IOSTouchController_ccTouchBegan(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  FESimple::IOSTouchController *arg1 = (FESimple::IOSTouchController *) 0 ;
+  cocos2d::CCTouch *arg2 = (cocos2d::CCTouch *) 0 ;
+  cocos2d::CCEvent *arg3 = (cocos2d::CCEvent *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 = 0 ;
+  int res2 = 0 ;
+  void *argp3 = 0 ;
+  int res3 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  PyObject * obj2 = 0 ;
+  Swig::Director *director = 0;
+  bool upcall = false;
+  bool result;
+  
+  if (!PyArg_ParseTuple(args,(char *)"OOO:IOSTouchController_ccTouchBegan",&obj0,&obj1,&obj2)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_FESimple__IOSTouchController, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "IOSTouchController_ccTouchBegan" "', argument " "1"" of type '" "FESimple::IOSTouchController *""'"); 
+  }
+  arg1 = reinterpret_cast< FESimple::IOSTouchController * >(argp1);
+  res2 = SWIG_ConvertPtr(obj1, &argp2,SWIGTYPE_p_cocos2d__CCTouch, 0 |  0 );
+  if (!SWIG_IsOK(res2)) {
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "IOSTouchController_ccTouchBegan" "', argument " "2"" of type '" "cocos2d::CCTouch *""'"); 
+  }
+  arg2 = reinterpret_cast< cocos2d::CCTouch * >(argp2);
+  res3 = SWIG_ConvertPtr(obj2, &argp3,SWIGTYPE_p_cocos2d__CCEvent, 0 |  0 );
+  if (!SWIG_IsOK(res3)) {
+    SWIG_exception_fail(SWIG_ArgError(res3), "in method '" "IOSTouchController_ccTouchBegan" "', argument " "3"" of type '" "cocos2d::CCEvent *""'"); 
+  }
+  arg3 = reinterpret_cast< cocos2d::CCEvent * >(argp3);
+  director = SWIG_DIRECTOR_CAST(arg1);
+  upcall = (director && (director->swig_get_self()==obj0));
+  try {
+    if (upcall) {
+      result = (bool)(arg1)->FESimple::IOSTouchController::ccTouchBegan(arg2,arg3);
+    } else {
+      result = (bool)(arg1)->ccTouchBegan(arg2,arg3);
+    }
+  } catch (Swig::DirectorException&) {
+    SWIG_fail;
+  }
+  resultobj = SWIG_From_bool(static_cast< bool >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_IOSTouchController_ccTouchMoved(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  FESimple::IOSTouchController *arg1 = (FESimple::IOSTouchController *) 0 ;
+  cocos2d::CCTouch *arg2 = (cocos2d::CCTouch *) 0 ;
+  cocos2d::CCEvent *arg3 = (cocos2d::CCEvent *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 = 0 ;
+  int res2 = 0 ;
+  void *argp3 = 0 ;
+  int res3 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  PyObject * obj2 = 0 ;
+  Swig::Director *director = 0;
+  bool upcall = false;
+  
+  if (!PyArg_ParseTuple(args,(char *)"OOO:IOSTouchController_ccTouchMoved",&obj0,&obj1,&obj2)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_FESimple__IOSTouchController, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "IOSTouchController_ccTouchMoved" "', argument " "1"" of type '" "FESimple::IOSTouchController *""'"); 
+  }
+  arg1 = reinterpret_cast< FESimple::IOSTouchController * >(argp1);
+  res2 = SWIG_ConvertPtr(obj1, &argp2,SWIGTYPE_p_cocos2d__CCTouch, 0 |  0 );
+  if (!SWIG_IsOK(res2)) {
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "IOSTouchController_ccTouchMoved" "', argument " "2"" of type '" "cocos2d::CCTouch *""'"); 
+  }
+  arg2 = reinterpret_cast< cocos2d::CCTouch * >(argp2);
+  res3 = SWIG_ConvertPtr(obj2, &argp3,SWIGTYPE_p_cocos2d__CCEvent, 0 |  0 );
+  if (!SWIG_IsOK(res3)) {
+    SWIG_exception_fail(SWIG_ArgError(res3), "in method '" "IOSTouchController_ccTouchMoved" "', argument " "3"" of type '" "cocos2d::CCEvent *""'"); 
+  }
+  arg3 = reinterpret_cast< cocos2d::CCEvent * >(argp3);
+  director = SWIG_DIRECTOR_CAST(arg1);
+  upcall = (director && (director->swig_get_self()==obj0));
+  try {
+    if (upcall) {
+      (arg1)->FESimple::IOSTouchController::ccTouchMoved(arg2,arg3);
+    } else {
+      (arg1)->ccTouchMoved(arg2,arg3);
+    }
+  } catch (Swig::DirectorException&) {
+    SWIG_fail;
+  }
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_IOSTouchController_ccTouchEnded(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  FESimple::IOSTouchController *arg1 = (FESimple::IOSTouchController *) 0 ;
+  cocos2d::CCTouch *arg2 = (cocos2d::CCTouch *) 0 ;
+  cocos2d::CCEvent *arg3 = (cocos2d::CCEvent *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 = 0 ;
+  int res2 = 0 ;
+  void *argp3 = 0 ;
+  int res3 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  PyObject * obj2 = 0 ;
+  Swig::Director *director = 0;
+  bool upcall = false;
+  
+  if (!PyArg_ParseTuple(args,(char *)"OOO:IOSTouchController_ccTouchEnded",&obj0,&obj1,&obj2)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_FESimple__IOSTouchController, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "IOSTouchController_ccTouchEnded" "', argument " "1"" of type '" "FESimple::IOSTouchController *""'"); 
+  }
+  arg1 = reinterpret_cast< FESimple::IOSTouchController * >(argp1);
+  res2 = SWIG_ConvertPtr(obj1, &argp2,SWIGTYPE_p_cocos2d__CCTouch, 0 |  0 );
+  if (!SWIG_IsOK(res2)) {
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "IOSTouchController_ccTouchEnded" "', argument " "2"" of type '" "cocos2d::CCTouch *""'"); 
+  }
+  arg2 = reinterpret_cast< cocos2d::CCTouch * >(argp2);
+  res3 = SWIG_ConvertPtr(obj2, &argp3,SWIGTYPE_p_cocos2d__CCEvent, 0 |  0 );
+  if (!SWIG_IsOK(res3)) {
+    SWIG_exception_fail(SWIG_ArgError(res3), "in method '" "IOSTouchController_ccTouchEnded" "', argument " "3"" of type '" "cocos2d::CCEvent *""'"); 
+  }
+  arg3 = reinterpret_cast< cocos2d::CCEvent * >(argp3);
+  director = SWIG_DIRECTOR_CAST(arg1);
+  upcall = (director && (director->swig_get_self()==obj0));
+  try {
+    if (upcall) {
+      (arg1)->FESimple::IOSTouchController::ccTouchEnded(arg2,arg3);
+    } else {
+      (arg1)->ccTouchEnded(arg2,arg3);
+    }
+  } catch (Swig::DirectorException&) {
+    SWIG_fail;
+  }
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_IOSTouchController_ccTouchCancelled(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  FESimple::IOSTouchController *arg1 = (FESimple::IOSTouchController *) 0 ;
+  cocos2d::CCTouch *arg2 = (cocos2d::CCTouch *) 0 ;
+  cocos2d::CCEvent *arg3 = (cocos2d::CCEvent *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 = 0 ;
+  int res2 = 0 ;
+  void *argp3 = 0 ;
+  int res3 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  PyObject * obj2 = 0 ;
+  Swig::Director *director = 0;
+  bool upcall = false;
+  
+  if (!PyArg_ParseTuple(args,(char *)"OOO:IOSTouchController_ccTouchCancelled",&obj0,&obj1,&obj2)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_FESimple__IOSTouchController, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "IOSTouchController_ccTouchCancelled" "', argument " "1"" of type '" "FESimple::IOSTouchController *""'"); 
+  }
+  arg1 = reinterpret_cast< FESimple::IOSTouchController * >(argp1);
+  res2 = SWIG_ConvertPtr(obj1, &argp2,SWIGTYPE_p_cocos2d__CCTouch, 0 |  0 );
+  if (!SWIG_IsOK(res2)) {
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "IOSTouchController_ccTouchCancelled" "', argument " "2"" of type '" "cocos2d::CCTouch *""'"); 
+  }
+  arg2 = reinterpret_cast< cocos2d::CCTouch * >(argp2);
+  res3 = SWIG_ConvertPtr(obj2, &argp3,SWIGTYPE_p_cocos2d__CCEvent, 0 |  0 );
+  if (!SWIG_IsOK(res3)) {
+    SWIG_exception_fail(SWIG_ArgError(res3), "in method '" "IOSTouchController_ccTouchCancelled" "', argument " "3"" of type '" "cocos2d::CCEvent *""'"); 
+  }
+  arg3 = reinterpret_cast< cocos2d::CCEvent * >(argp3);
+  director = SWIG_DIRECTOR_CAST(arg1);
+  upcall = (director && (director->swig_get_self()==obj0));
+  try {
+    if (upcall) {
+      (arg1)->FESimple::IOSTouchController::ccTouchCancelled(arg2,arg3);
+    } else {
+      (arg1)->ccTouchCancelled(arg2,arg3);
+    }
+  } catch (Swig::DirectorException&) {
+    SWIG_fail;
+  }
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_IOSTouchController_plug(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  FESimple::IOSTouchController *arg1 = (FESimple::IOSTouchController *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  Swig::Director *director = 0;
+  bool upcall = false;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:IOSTouchController_plug",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_FESimple__IOSTouchController, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "IOSTouchController_plug" "', argument " "1"" of type '" "FESimple::IOSTouchController *""'"); 
+  }
+  arg1 = reinterpret_cast< FESimple::IOSTouchController * >(argp1);
+  director = SWIG_DIRECTOR_CAST(arg1);
+  upcall = (director && (director->swig_get_self()==obj0));
+  try {
+    if (upcall) {
+      (arg1)->FESimple::IOSTouchController::plug();
+    } else {
+      (arg1)->plug();
+    }
+  } catch (Swig::DirectorException&) {
+    SWIG_fail;
+  }
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_IOSTouchController_unplug(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  FESimple::IOSTouchController *arg1 = (FESimple::IOSTouchController *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  Swig::Director *director = 0;
+  bool upcall = false;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:IOSTouchController_unplug",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_FESimple__IOSTouchController, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "IOSTouchController_unplug" "', argument " "1"" of type '" "FESimple::IOSTouchController *""'"); 
+  }
+  arg1 = reinterpret_cast< FESimple::IOSTouchController * >(argp1);
+  director = SWIG_DIRECTOR_CAST(arg1);
+  upcall = (director && (director->swig_get_self()==obj0));
+  try {
+    if (upcall) {
+      (arg1)->FESimple::IOSTouchController::unplug();
+    } else {
+      (arg1)->unplug();
+    }
+  } catch (Swig::DirectorException&) {
+    SWIG_fail;
+  }
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_disown_IOSTouchController(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  FESimple::IOSTouchController *arg1 = (FESimple::IOSTouchController *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:disown_IOSTouchController",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_FESimple__IOSTouchController, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "disown_IOSTouchController" "', argument " "1"" of type '" "FESimple::IOSTouchController *""'"); 
+  }
+  arg1 = reinterpret_cast< FESimple::IOSTouchController * >(argp1);
+  {
+    Swig::Director *director = SWIG_DIRECTOR_CAST(arg1);
+    if (director) director->swig_disown();
+  }
+  
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *IOSTouchController_swigregister(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *obj;
+  if (!PyArg_ParseTuple(args,(char*)"O:swigregister", &obj)) return NULL;
+  SWIG_TypeNewClientData(SWIGTYPE_p_FESimple__IOSTouchController, SWIG_NewClientData(obj));
+  return SWIG_Py_Void();
+}
+
+SWIGINTERN PyObject *_wrap_new_animation(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  FESimple::Name *arg1 = 0 ;
+  cocos2d::CCAnimation *arg2 = (cocos2d::CCAnimation *) 0 ;
+  int res1 = SWIG_OLDOBJ ;
+  void *argp2 = 0 ;
+  int res2 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  FESimple::animation *result = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"OO:new_animation",&obj0,&obj1)) SWIG_fail;
+  {
+    std::string *ptr = (std::string *)0;
+    res1 = SWIG_AsPtr_std_string(obj0, &ptr);
+    if (!SWIG_IsOK(res1)) {
+      SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "new_animation" "', argument " "1"" of type '" "FESimple::Name const &""'"); 
+    }
+    if (!ptr) {
+      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "new_animation" "', argument " "1"" of type '" "FESimple::Name const &""'"); 
+    }
+    arg1 = ptr;
+  }
+  res2 = SWIG_ConvertPtr(obj1, &argp2,SWIGTYPE_p_cocos2d__CCAnimation, 0 |  0 );
+  if (!SWIG_IsOK(res2)) {
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "new_animation" "', argument " "2"" of type '" "cocos2d::CCAnimation *""'"); 
+  }
+  arg2 = reinterpret_cast< cocos2d::CCAnimation * >(argp2);
+  result = (FESimple::animation *)new FESimple::animation((FESimple::Name const &)*arg1,arg2);
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_FESimple__animation, SWIG_POINTER_NEW |  0 );
+  if (SWIG_IsNewObj(res1)) delete arg1;
+  return resultobj;
+fail:
+  if (SWIG_IsNewObj(res1)) delete arg1;
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_delete_animation(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  FESimple::animation *arg1 = (FESimple::animation *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:delete_animation",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_FESimple__animation, SWIG_POINTER_DISOWN |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "delete_animation" "', argument " "1"" of type '" "FESimple::animation *""'"); 
+  }
+  arg1 = reinterpret_cast< FESimple::animation * >(argp1);
+  delete arg1;
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_animation_name_set(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  FESimple::animation *arg1 = (FESimple::animation *) 0 ;
+  FESimple::Name *arg2 = 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  int res2 = SWIG_OLDOBJ ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"OO:animation_name_set",&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_FESimple__animation, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "animation_name_set" "', argument " "1"" of type '" "FESimple::animation *""'"); 
+  }
+  arg1 = reinterpret_cast< FESimple::animation * >(argp1);
+  {
+    std::string *ptr = (std::string *)0;
+    res2 = SWIG_AsPtr_std_string(obj1, &ptr);
+    if (!SWIG_IsOK(res2)) {
+      SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "animation_name_set" "', argument " "2"" of type '" "FESimple::Name const &""'"); 
+    }
+    if (!ptr) {
+      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "animation_name_set" "', argument " "2"" of type '" "FESimple::Name const &""'"); 
+    }
+    arg2 = ptr;
+  }
+  if (arg1) (arg1)->name = *arg2;
+  resultobj = SWIG_Py_Void();
+  if (SWIG_IsNewObj(res2)) delete arg2;
+  return resultobj;
+fail:
+  if (SWIG_IsNewObj(res2)) delete arg2;
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_animation_name_get(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  FESimple::animation *arg1 = (FESimple::animation *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  FESimple::Name *result = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:animation_name_get",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_FESimple__animation, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "animation_name_get" "', argument " "1"" of type '" "FESimple::animation *""'"); 
+  }
+  arg1 = reinterpret_cast< FESimple::animation * >(argp1);
+  result = (FESimple::Name *) & ((arg1)->name);
+  resultobj = SWIG_From_std_string(static_cast< std::string >(*result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_animation_ccanimation_set(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  FESimple::animation *arg1 = (FESimple::animation *) 0 ;
+  cocos2d::CCAnimation *arg2 = (cocos2d::CCAnimation *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 = 0 ;
+  int res2 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"OO:animation_ccanimation_set",&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_FESimple__animation, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "animation_ccanimation_set" "', argument " "1"" of type '" "FESimple::animation *""'"); 
+  }
+  arg1 = reinterpret_cast< FESimple::animation * >(argp1);
+  res2 = SWIG_ConvertPtr(obj1, &argp2,SWIGTYPE_p_cocos2d__CCAnimation, SWIG_POINTER_DISOWN |  0 );
+  if (!SWIG_IsOK(res2)) {
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "animation_ccanimation_set" "', argument " "2"" of type '" "cocos2d::CCAnimation *""'"); 
+  }
+  arg2 = reinterpret_cast< cocos2d::CCAnimation * >(argp2);
+  if (arg1) (arg1)->ccanimation = arg2;
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_animation_ccanimation_get(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  FESimple::animation *arg1 = (FESimple::animation *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  cocos2d::CCAnimation *result = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:animation_ccanimation_get",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_FESimple__animation, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "animation_ccanimation_get" "', argument " "1"" of type '" "FESimple::animation *""'"); 
+  }
+  arg1 = reinterpret_cast< FESimple::animation * >(argp1);
+  result = (cocos2d::CCAnimation *) ((arg1)->ccanimation);
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_cocos2d__CCAnimation, 0 |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *animation_swigregister(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *obj;
+  if (!PyArg_ParseTuple(args,(char*)"O:swigregister", &obj)) return NULL;
+  SWIG_TypeNewClientData(SWIGTYPE_p_FESimple__animation, SWIG_NewClientData(obj));
+  return SWIG_Py_Void();
+}
+
+SWIGINTERN PyObject *_wrap_new_b2fixture_def(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  FESimple::b2fixture_def *result = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)":new_b2fixture_def")) SWIG_fail;
+  result = (FESimple::b2fixture_def *)new FESimple::b2fixture_def();
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_FESimple__b2fixture_def, SWIG_POINTER_NEW |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_b2fixture_def_identity_set(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  FESimple::b2fixture_def *arg1 = (FESimple::b2fixture_def *) 0 ;
+  int arg2 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  int val2 ;
+  int ecode2 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"OO:b2fixture_def_identity_set",&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_FESimple__b2fixture_def, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "b2fixture_def_identity_set" "', argument " "1"" of type '" "FESimple::b2fixture_def *""'"); 
+  }
+  arg1 = reinterpret_cast< FESimple::b2fixture_def * >(argp1);
+  ecode2 = SWIG_AsVal_int(obj1, &val2);
+  if (!SWIG_IsOK(ecode2)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "b2fixture_def_identity_set" "', argument " "2"" of type '" "int""'");
+  } 
+  arg2 = static_cast< int >(val2);
+  if (arg1) (arg1)->identity = arg2;
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_b2fixture_def_identity_get(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  FESimple::b2fixture_def *arg1 = (FESimple::b2fixture_def *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  int result;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:b2fixture_def_identity_get",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_FESimple__b2fixture_def, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "b2fixture_def_identity_get" "', argument " "1"" of type '" "FESimple::b2fixture_def *""'"); 
+  }
+  arg1 = reinterpret_cast< FESimple::b2fixture_def * >(argp1);
+  result = (int) ((arg1)->identity);
+  resultobj = SWIG_From_int(static_cast< int >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_delete_b2fixture_def(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  FESimple::b2fixture_def *arg1 = (FESimple::b2fixture_def *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:delete_b2fixture_def",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_FESimple__b2fixture_def, SWIG_POINTER_DISOWN |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "delete_b2fixture_def" "', argument " "1"" of type '" "FESimple::b2fixture_def *""'"); 
+  }
+  arg1 = reinterpret_cast< FESimple::b2fixture_def * >(argp1);
+  delete arg1;
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *b2fixture_def_swigregister(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *obj;
+  if (!PyArg_ParseTuple(args,(char*)"O:swigregister", &obj)) return NULL;
+  SWIG_TypeNewClientData(SWIGTYPE_p_FESimple__b2fixture_def, SWIG_NewClientData(obj));
+  return SWIG_Py_Void();
+}
+
+SWIGINTERN PyObject *_wrap_delete_physic_desc(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  FESimple::physic_desc *arg1 = (FESimple::physic_desc *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:delete_physic_desc",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_FESimple__physic_desc, SWIG_POINTER_DISOWN |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "delete_physic_desc" "', argument " "1"" of type '" "FESimple::physic_desc *""'"); 
+  }
+  arg1 = reinterpret_cast< FESimple::physic_desc * >(argp1);
+  delete arg1;
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_physic_desc_body_def_set(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  FESimple::physic_desc *arg1 = (FESimple::physic_desc *) 0 ;
+  b2BodyDef arg2 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 ;
+  int res2 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"OO:physic_desc_body_def_set",&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_FESimple__physic_desc, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "physic_desc_body_def_set" "', argument " "1"" of type '" "FESimple::physic_desc *""'"); 
+  }
+  arg1 = reinterpret_cast< FESimple::physic_desc * >(argp1);
+  {
+    res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_b2BodyDef,  0  | 0);
+    if (!SWIG_IsOK(res2)) {
+      SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "physic_desc_body_def_set" "', argument " "2"" of type '" "b2BodyDef""'"); 
+    }  
+    if (!argp2) {
+      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "physic_desc_body_def_set" "', argument " "2"" of type '" "b2BodyDef""'");
+    } else {
+      b2BodyDef * temp = reinterpret_cast< b2BodyDef * >(argp2);
+      arg2 = *temp;
+      if (SWIG_IsNewObj(res2)) delete temp;
+    }
+  }
+  if (arg1) (arg1)->body_def = arg2;
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_physic_desc_body_def_get(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  FESimple::physic_desc *arg1 = (FESimple::physic_desc *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  b2BodyDef result;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:physic_desc_body_def_get",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_FESimple__physic_desc, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "physic_desc_body_def_get" "', argument " "1"" of type '" "FESimple::physic_desc *""'"); 
+  }
+  arg1 = reinterpret_cast< FESimple::physic_desc * >(argp1);
+  result =  ((arg1)->body_def);
+  resultobj = SWIG_NewPointerObj((new b2BodyDef(static_cast< const b2BodyDef& >(result))), SWIGTYPE_p_b2BodyDef, SWIG_POINTER_OWN |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_physic_desc_fixture_defs_set(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  FESimple::physic_desc *arg1 = (FESimple::physic_desc *) 0 ;
+  std::vector< FESimple::b2fixture_def,std::allocator< FESimple::b2fixture_def > > *arg2 = (std::vector< FESimple::b2fixture_def,std::allocator< FESimple::b2fixture_def > > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 = 0 ;
+  int res2 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"OO:physic_desc_fixture_defs_set",&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_FESimple__physic_desc, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "physic_desc_fixture_defs_set" "', argument " "1"" of type '" "FESimple::physic_desc *""'"); 
+  }
+  arg1 = reinterpret_cast< FESimple::physic_desc * >(argp1);
+  res2 = SWIG_ConvertPtr(obj1, &argp2,SWIGTYPE_p_std__vectorT_FESimple__b2fixture_def_std__allocatorT_FESimple__b2fixture_def_t_t, 0 |  0 );
+  if (!SWIG_IsOK(res2)) {
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "physic_desc_fixture_defs_set" "', argument " "2"" of type '" "std::vector< FESimple::b2fixture_def,std::allocator< FESimple::b2fixture_def > > *""'"); 
+  }
+  arg2 = reinterpret_cast< std::vector< FESimple::b2fixture_def,std::allocator< FESimple::b2fixture_def > > * >(argp2);
+  if (arg1) (arg1)->fixture_defs = *arg2;
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_physic_desc_fixture_defs_get(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  FESimple::physic_desc *arg1 = (FESimple::physic_desc *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  std::vector< FESimple::b2fixture_def,std::allocator< FESimple::b2fixture_def > > *result = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:physic_desc_fixture_defs_get",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_FESimple__physic_desc, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "physic_desc_fixture_defs_get" "', argument " "1"" of type '" "FESimple::physic_desc *""'"); 
+  }
+  arg1 = reinterpret_cast< FESimple::physic_desc * >(argp1);
+  result = (std::vector< FESimple::b2fixture_def,std::allocator< FESimple::b2fixture_def > > *)& ((arg1)->fixture_defs);
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_std__vectorT_FESimple__b2fixture_def_std__allocatorT_FESimple__b2fixture_def_t_t, 0 |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_new_physic_desc(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  FESimple::physic_desc *result = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)":new_physic_desc")) SWIG_fail;
+  result = (FESimple::physic_desc *)new FESimple::physic_desc();
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_FESimple__physic_desc, SWIG_POINTER_NEW |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *physic_desc_swigregister(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *obj;
+  if (!PyArg_ParseTuple(args,(char*)"O:swigregister", &obj)) return NULL;
+  SWIG_TypeNewClientData(SWIGTYPE_p_FESimple__physic_desc, SWIG_NewClientData(obj));
+  return SWIG_Py_Void();
+}
+
+SWIGINTERN PyObject *_wrap_sprite_component_desc_physic_desc_name_set(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  FESimple::sprite_component_desc *arg1 = (FESimple::sprite_component_desc *) 0 ;
+  FESimple::Name *arg2 = 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  int res2 = SWIG_OLDOBJ ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"OO:sprite_component_desc_physic_desc_name_set",&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_FESimple__sprite_component_desc, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "sprite_component_desc_physic_desc_name_set" "', argument " "1"" of type '" "FESimple::sprite_component_desc *""'"); 
+  }
+  arg1 = reinterpret_cast< FESimple::sprite_component_desc * >(argp1);
+  {
+    std::string *ptr = (std::string *)0;
+    res2 = SWIG_AsPtr_std_string(obj1, &ptr);
+    if (!SWIG_IsOK(res2)) {
+      SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "sprite_component_desc_physic_desc_name_set" "', argument " "2"" of type '" "FESimple::Name const &""'"); 
+    }
+    if (!ptr) {
+      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "sprite_component_desc_physic_desc_name_set" "', argument " "2"" of type '" "FESimple::Name const &""'"); 
+    }
+    arg2 = ptr;
+  }
+  if (arg1) (arg1)->physic_desc_name = *arg2;
+  resultobj = SWIG_Py_Void();
+  if (SWIG_IsNewObj(res2)) delete arg2;
+  return resultobj;
+fail:
+  if (SWIG_IsNewObj(res2)) delete arg2;
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_sprite_component_desc_physic_desc_name_get(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  FESimple::sprite_component_desc *arg1 = (FESimple::sprite_component_desc *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  FESimple::Name *result = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:sprite_component_desc_physic_desc_name_get",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_FESimple__sprite_component_desc, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "sprite_component_desc_physic_desc_name_get" "', argument " "1"" of type '" "FESimple::sprite_component_desc *""'"); 
+  }
+  arg1 = reinterpret_cast< FESimple::sprite_component_desc * >(argp1);
+  result = (FESimple::Name *) & ((arg1)->physic_desc_name);
+  resultobj = SWIG_From_std_string(static_cast< std::string >(*result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_sprite_component_desc_animation_names_set(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  FESimple::sprite_component_desc *arg1 = (FESimple::sprite_component_desc *) 0 ;
+  std::vector< std::string,std::allocator< std::string > > *arg2 = (std::vector< std::string,std::allocator< std::string > > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 = 0 ;
+  int res2 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"OO:sprite_component_desc_animation_names_set",&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_FESimple__sprite_component_desc, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "sprite_component_desc_animation_names_set" "', argument " "1"" of type '" "FESimple::sprite_component_desc *""'"); 
+  }
+  arg1 = reinterpret_cast< FESimple::sprite_component_desc * >(argp1);
+  res2 = SWIG_ConvertPtr(obj1, &argp2,SWIGTYPE_p_std__vectorT_std__string_std__allocatorT_std__string_t_t, 0 |  0 );
+  if (!SWIG_IsOK(res2)) {
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "sprite_component_desc_animation_names_set" "', argument " "2"" of type '" "std::vector< std::string,std::allocator< std::string > > *""'"); 
+  }
+  arg2 = reinterpret_cast< std::vector< std::string,std::allocator< std::string > > * >(argp2);
+  if (arg1) (arg1)->animation_names = *arg2;
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_sprite_component_desc_animation_names_get(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  FESimple::sprite_component_desc *arg1 = (FESimple::sprite_component_desc *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  std::vector< std::string,std::allocator< std::string > > *result = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:sprite_component_desc_animation_names_get",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_FESimple__sprite_component_desc, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "sprite_component_desc_animation_names_get" "', argument " "1"" of type '" "FESimple::sprite_component_desc *""'"); 
+  }
+  arg1 = reinterpret_cast< FESimple::sprite_component_desc * >(argp1);
+  result = (std::vector< std::string,std::allocator< std::string > > *)& ((arg1)->animation_names);
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_std__vectorT_std__string_std__allocatorT_std__string_t_t, 0 |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_new_sprite_component_desc(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  FESimple::sprite_component_desc *result = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)":new_sprite_component_desc")) SWIG_fail;
+  result = (FESimple::sprite_component_desc *)new FESimple::sprite_component_desc();
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_FESimple__sprite_component_desc, SWIG_POINTER_NEW |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_delete_sprite_component_desc(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  FESimple::sprite_component_desc *arg1 = (FESimple::sprite_component_desc *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:delete_sprite_component_desc",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_FESimple__sprite_component_desc, SWIG_POINTER_DISOWN |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "delete_sprite_component_desc" "', argument " "1"" of type '" "FESimple::sprite_component_desc *""'"); 
+  }
+  arg1 = reinterpret_cast< FESimple::sprite_component_desc * >(argp1);
+  delete arg1;
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *sprite_component_desc_swigregister(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *obj;
+  if (!PyArg_ParseTuple(args,(char*)"O:swigregister", &obj)) return NULL;
+  SWIG_TypeNewClientData(SWIGTYPE_p_FESimple__sprite_component_desc, SWIG_NewClientData(obj));
+  return SWIG_Py_Void();
+}
+
+SWIGINTERN PyObject *_wrap_sprite_component_ref_component_name_set(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  FESimple::sprite_component_ref *arg1 = (FESimple::sprite_component_ref *) 0 ;
+  FESimple::Name *arg2 = 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  int res2 = SWIG_OLDOBJ ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"OO:sprite_component_ref_component_name_set",&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_FESimple__sprite_component_ref, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "sprite_component_ref_component_name_set" "', argument " "1"" of type '" "FESimple::sprite_component_ref *""'"); 
+  }
+  arg1 = reinterpret_cast< FESimple::sprite_component_ref * >(argp1);
+  {
+    std::string *ptr = (std::string *)0;
+    res2 = SWIG_AsPtr_std_string(obj1, &ptr);
+    if (!SWIG_IsOK(res2)) {
+      SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "sprite_component_ref_component_name_set" "', argument " "2"" of type '" "FESimple::Name const &""'"); 
+    }
+    if (!ptr) {
+      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "sprite_component_ref_component_name_set" "', argument " "2"" of type '" "FESimple::Name const &""'"); 
+    }
+    arg2 = ptr;
+  }
+  if (arg1) (arg1)->component_name = *arg2;
+  resultobj = SWIG_Py_Void();
+  if (SWIG_IsNewObj(res2)) delete arg2;
+  return resultobj;
+fail:
+  if (SWIG_IsNewObj(res2)) delete arg2;
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_sprite_component_ref_component_name_get(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  FESimple::sprite_component_ref *arg1 = (FESimple::sprite_component_ref *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  FESimple::Name *result = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:sprite_component_ref_component_name_get",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_FESimple__sprite_component_ref, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "sprite_component_ref_component_name_get" "', argument " "1"" of type '" "FESimple::sprite_component_ref *""'"); 
+  }
+  arg1 = reinterpret_cast< FESimple::sprite_component_ref * >(argp1);
+  result = (FESimple::Name *) & ((arg1)->component_name);
+  resultobj = SWIG_From_std_string(static_cast< std::string >(*result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_sprite_component_ref_offset_set(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  FESimple::sprite_component_ref *arg1 = (FESimple::sprite_component_ref *) 0 ;
+  cocos2d::CCPoint *arg2 = (cocos2d::CCPoint *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 = 0 ;
+  int res2 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"OO:sprite_component_ref_offset_set",&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_FESimple__sprite_component_ref, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "sprite_component_ref_offset_set" "', argument " "1"" of type '" "FESimple::sprite_component_ref *""'"); 
+  }
+  arg1 = reinterpret_cast< FESimple::sprite_component_ref * >(argp1);
+  res2 = SWIG_ConvertPtr(obj1, &argp2,SWIGTYPE_p_cocos2d__CCPoint, 0 |  0 );
+  if (!SWIG_IsOK(res2)) {
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "sprite_component_ref_offset_set" "', argument " "2"" of type '" "cocos2d::CCPoint *""'"); 
+  }
+  arg2 = reinterpret_cast< cocos2d::CCPoint * >(argp2);
+  if (arg1) (arg1)->offset = *arg2;
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_sprite_component_ref_offset_get(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  FESimple::sprite_component_ref *arg1 = (FESimple::sprite_component_ref *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  cocos2d::CCPoint *result = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:sprite_component_ref_offset_get",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_FESimple__sprite_component_ref, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "sprite_component_ref_offset_get" "', argument " "1"" of type '" "FESimple::sprite_component_ref *""'"); 
+  }
+  arg1 = reinterpret_cast< FESimple::sprite_component_ref * >(argp1);
+  result = (cocos2d::CCPoint *)& ((arg1)->offset);
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_cocos2d__CCPoint, 0 |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_new_sprite_component_ref(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  FESimple::sprite_component_ref *result = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)":new_sprite_component_ref")) SWIG_fail;
+  result = (FESimple::sprite_component_ref *)new FESimple::sprite_component_ref();
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_FESimple__sprite_component_ref, SWIG_POINTER_NEW |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_delete_sprite_component_ref(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  FESimple::sprite_component_ref *arg1 = (FESimple::sprite_component_ref *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:delete_sprite_component_ref",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_FESimple__sprite_component_ref, SWIG_POINTER_DISOWN |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "delete_sprite_component_ref" "', argument " "1"" of type '" "FESimple::sprite_component_ref *""'"); 
+  }
+  arg1 = reinterpret_cast< FESimple::sprite_component_ref * >(argp1);
+  delete arg1;
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *sprite_component_ref_swigregister(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *obj;
+  if (!PyArg_ParseTuple(args,(char*)"O:swigregister", &obj)) return NULL;
+  SWIG_TypeNewClientData(SWIGTYPE_p_FESimple__sprite_component_ref, SWIG_NewClientData(obj));
+  return SWIG_Py_Void();
+}
+
+SWIGINTERN PyObject *_wrap_new_sprite_joint_desc(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  FESimple::sprite_joint_desc *result = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)":new_sprite_joint_desc")) SWIG_fail;
+  result = (FESimple::sprite_joint_desc *)new FESimple::sprite_joint_desc();
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_FESimple__sprite_joint_desc, SWIG_POINTER_NEW |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_delete_sprite_joint_desc(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  FESimple::sprite_joint_desc *arg1 = (FESimple::sprite_joint_desc *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:delete_sprite_joint_desc",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_FESimple__sprite_joint_desc, SWIG_POINTER_DISOWN |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "delete_sprite_joint_desc" "', argument " "1"" of type '" "FESimple::sprite_joint_desc *""'"); 
+  }
+  arg1 = reinterpret_cast< FESimple::sprite_joint_desc * >(argp1);
+  delete arg1;
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_sprite_joint_desc_component_a_set(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  FESimple::sprite_joint_desc *arg1 = (FESimple::sprite_joint_desc *) 0 ;
+  unsigned int arg2 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  unsigned int val2 ;
+  int ecode2 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"OO:sprite_joint_desc_component_a_set",&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_FESimple__sprite_joint_desc, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "sprite_joint_desc_component_a_set" "', argument " "1"" of type '" "FESimple::sprite_joint_desc *""'"); 
+  }
+  arg1 = reinterpret_cast< FESimple::sprite_joint_desc * >(argp1);
+  ecode2 = SWIG_AsVal_unsigned_SS_int(obj1, &val2);
+  if (!SWIG_IsOK(ecode2)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "sprite_joint_desc_component_a_set" "', argument " "2"" of type '" "unsigned int""'");
+  } 
+  arg2 = static_cast< unsigned int >(val2);
+  if (arg1) (arg1)->component_a = arg2;
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_sprite_joint_desc_component_a_get(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  FESimple::sprite_joint_desc *arg1 = (FESimple::sprite_joint_desc *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  unsigned int result;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:sprite_joint_desc_component_a_get",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_FESimple__sprite_joint_desc, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "sprite_joint_desc_component_a_get" "', argument " "1"" of type '" "FESimple::sprite_joint_desc *""'"); 
+  }
+  arg1 = reinterpret_cast< FESimple::sprite_joint_desc * >(argp1);
+  result = (unsigned int) ((arg1)->component_a);
+  resultobj = SWIG_From_unsigned_SS_int(static_cast< unsigned int >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_sprite_joint_desc_component_b_set(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  FESimple::sprite_joint_desc *arg1 = (FESimple::sprite_joint_desc *) 0 ;
+  unsigned int arg2 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  unsigned int val2 ;
+  int ecode2 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"OO:sprite_joint_desc_component_b_set",&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_FESimple__sprite_joint_desc, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "sprite_joint_desc_component_b_set" "', argument " "1"" of type '" "FESimple::sprite_joint_desc *""'"); 
+  }
+  arg1 = reinterpret_cast< FESimple::sprite_joint_desc * >(argp1);
+  ecode2 = SWIG_AsVal_unsigned_SS_int(obj1, &val2);
+  if (!SWIG_IsOK(ecode2)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "sprite_joint_desc_component_b_set" "', argument " "2"" of type '" "unsigned int""'");
+  } 
+  arg2 = static_cast< unsigned int >(val2);
+  if (arg1) (arg1)->component_b = arg2;
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_sprite_joint_desc_component_b_get(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  FESimple::sprite_joint_desc *arg1 = (FESimple::sprite_joint_desc *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  unsigned int result;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:sprite_joint_desc_component_b_get",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_FESimple__sprite_joint_desc, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "sprite_joint_desc_component_b_get" "', argument " "1"" of type '" "FESimple::sprite_joint_desc *""'"); 
+  }
+  arg1 = reinterpret_cast< FESimple::sprite_joint_desc * >(argp1);
+  result = (unsigned int) ((arg1)->component_b);
+  resultobj = SWIG_From_unsigned_SS_int(static_cast< unsigned int >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_sprite_joint_desc_joint_type_set(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  FESimple::sprite_joint_desc *arg1 = (FESimple::sprite_joint_desc *) 0 ;
+  unsigned int arg2 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  unsigned int val2 ;
+  int ecode2 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"OO:sprite_joint_desc_joint_type_set",&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_FESimple__sprite_joint_desc, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "sprite_joint_desc_joint_type_set" "', argument " "1"" of type '" "FESimple::sprite_joint_desc *""'"); 
+  }
+  arg1 = reinterpret_cast< FESimple::sprite_joint_desc * >(argp1);
+  ecode2 = SWIG_AsVal_unsigned_SS_int(obj1, &val2);
+  if (!SWIG_IsOK(ecode2)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "sprite_joint_desc_joint_type_set" "', argument " "2"" of type '" "unsigned int""'");
+  } 
+  arg2 = static_cast< unsigned int >(val2);
+  if (arg1) (arg1)->joint_type = arg2;
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_sprite_joint_desc_joint_type_get(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  FESimple::sprite_joint_desc *arg1 = (FESimple::sprite_joint_desc *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  unsigned int result;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:sprite_joint_desc_joint_type_get",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_FESimple__sprite_joint_desc, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "sprite_joint_desc_joint_type_get" "', argument " "1"" of type '" "FESimple::sprite_joint_desc *""'"); 
+  }
+  arg1 = reinterpret_cast< FESimple::sprite_joint_desc * >(argp1);
+  result = (unsigned int) ((arg1)->joint_type);
+  resultobj = SWIG_From_unsigned_SS_int(static_cast< unsigned int >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *sprite_joint_desc_swigregister(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *obj;
+  if (!PyArg_ParseTuple(args,(char*)"O:swigregister", &obj)) return NULL;
+  SWIG_TypeNewClientData(SWIGTYPE_p_FESimple__sprite_joint_desc, SWIG_NewClientData(obj));
+  return SWIG_Py_Void();
+}
+
+SWIGINTERN PyObject *_wrap_sprite_desc_components_set(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  FESimple::sprite_desc *arg1 = (FESimple::sprite_desc *) 0 ;
+  std::vector< FESimple::sprite_component_ref,std::allocator< FESimple::sprite_component_ref > > *arg2 = (std::vector< FESimple::sprite_component_ref,std::allocator< FESimple::sprite_component_ref > > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 = 0 ;
+  int res2 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"OO:sprite_desc_components_set",&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_FESimple__sprite_desc, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "sprite_desc_components_set" "', argument " "1"" of type '" "FESimple::sprite_desc *""'"); 
+  }
+  arg1 = reinterpret_cast< FESimple::sprite_desc * >(argp1);
+  res2 = SWIG_ConvertPtr(obj1, &argp2,SWIGTYPE_p_std__vectorT_FESimple__sprite_component_ref_std__allocatorT_FESimple__sprite_component_ref_t_t, 0 |  0 );
+  if (!SWIG_IsOK(res2)) {
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "sprite_desc_components_set" "', argument " "2"" of type '" "std::vector< FESimple::sprite_component_ref,std::allocator< FESimple::sprite_component_ref > > *""'"); 
+  }
+  arg2 = reinterpret_cast< std::vector< FESimple::sprite_component_ref,std::allocator< FESimple::sprite_component_ref > > * >(argp2);
+  if (arg1) (arg1)->components = *arg2;
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_sprite_desc_components_get(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  FESimple::sprite_desc *arg1 = (FESimple::sprite_desc *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  std::vector< FESimple::sprite_component_ref,std::allocator< FESimple::sprite_component_ref > > *result = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:sprite_desc_components_get",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_FESimple__sprite_desc, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "sprite_desc_components_get" "', argument " "1"" of type '" "FESimple::sprite_desc *""'"); 
+  }
+  arg1 = reinterpret_cast< FESimple::sprite_desc * >(argp1);
+  result = (std::vector< FESimple::sprite_component_ref,std::allocator< FESimple::sprite_component_ref > > *)& ((arg1)->components);
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_std__vectorT_FESimple__sprite_component_ref_std__allocatorT_FESimple__sprite_component_ref_t_t, 0 |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_sprite_desc_joints_set(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  FESimple::sprite_desc *arg1 = (FESimple::sprite_desc *) 0 ;
+  std::vector< FESimple::sprite_joint_desc,std::allocator< FESimple::sprite_joint_desc > > *arg2 = (std::vector< FESimple::sprite_joint_desc,std::allocator< FESimple::sprite_joint_desc > > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 = 0 ;
+  int res2 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"OO:sprite_desc_joints_set",&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_FESimple__sprite_desc, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "sprite_desc_joints_set" "', argument " "1"" of type '" "FESimple::sprite_desc *""'"); 
+  }
+  arg1 = reinterpret_cast< FESimple::sprite_desc * >(argp1);
+  res2 = SWIG_ConvertPtr(obj1, &argp2,SWIGTYPE_p_std__vectorT_FESimple__sprite_joint_desc_std__allocatorT_FESimple__sprite_joint_desc_t_t, 0 |  0 );
+  if (!SWIG_IsOK(res2)) {
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "sprite_desc_joints_set" "', argument " "2"" of type '" "std::vector< FESimple::sprite_joint_desc,std::allocator< FESimple::sprite_joint_desc > > *""'"); 
+  }
+  arg2 = reinterpret_cast< std::vector< FESimple::sprite_joint_desc,std::allocator< FESimple::sprite_joint_desc > > * >(argp2);
+  if (arg1) (arg1)->joints = *arg2;
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_sprite_desc_joints_get(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  FESimple::sprite_desc *arg1 = (FESimple::sprite_desc *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  std::vector< FESimple::sprite_joint_desc,std::allocator< FESimple::sprite_joint_desc > > *result = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:sprite_desc_joints_get",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_FESimple__sprite_desc, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "sprite_desc_joints_get" "', argument " "1"" of type '" "FESimple::sprite_desc *""'"); 
+  }
+  arg1 = reinterpret_cast< FESimple::sprite_desc * >(argp1);
+  result = (std::vector< FESimple::sprite_joint_desc,std::allocator< FESimple::sprite_joint_desc > > *)& ((arg1)->joints);
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_std__vectorT_FESimple__sprite_joint_desc_std__allocatorT_FESimple__sprite_joint_desc_t_t, 0 |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_new_sprite_desc(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  FESimple::sprite_desc *result = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)":new_sprite_desc")) SWIG_fail;
+  result = (FESimple::sprite_desc *)new FESimple::sprite_desc();
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_FESimple__sprite_desc, SWIG_POINTER_NEW |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_delete_sprite_desc(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  FESimple::sprite_desc *arg1 = (FESimple::sprite_desc *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:delete_sprite_desc",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_FESimple__sprite_desc, SWIG_POINTER_DISOWN |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "delete_sprite_desc" "', argument " "1"" of type '" "FESimple::sprite_desc *""'"); 
+  }
+  arg1 = reinterpret_cast< FESimple::sprite_desc * >(argp1);
+  delete arg1;
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *sprite_desc_swigregister(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *obj;
+  if (!PyArg_ParseTuple(args,(char*)"O:swigregister", &obj)) return NULL;
+  SWIG_TypeNewClientData(SWIGTYPE_p_FESimple__sprite_desc, SWIG_NewClientData(obj));
+  return SWIG_Py_Void();
+}
+
+SWIGINTERN PyObject *_wrap_new_sprite_animation__SWIG_0(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  cocos2d::CCAction *arg1 = (cocos2d::CCAction *) 0 ;
+  FESimple::Name *arg2 = 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  int res2 = SWIG_OLDOBJ ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  FESimple::sprite_animation *result = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"OO:new_sprite_animation",&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_cocos2d__CCAction, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "new_sprite_animation" "', argument " "1"" of type '" "cocos2d::CCAction *""'"); 
+  }
+  arg1 = reinterpret_cast< cocos2d::CCAction * >(argp1);
+  {
+    std::string *ptr = (std::string *)0;
+    res2 = SWIG_AsPtr_std_string(obj1, &ptr);
+    if (!SWIG_IsOK(res2)) {
+      SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "new_sprite_animation" "', argument " "2"" of type '" "FESimple::Name const &""'"); 
+    }
+    if (!ptr) {
+      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "new_sprite_animation" "', argument " "2"" of type '" "FESimple::Name const &""'"); 
+    }
+    arg2 = ptr;
+  }
+  result = (FESimple::sprite_animation *)new FESimple::sprite_animation(arg1,(FESimple::Name const &)*arg2);
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_FESimple__sprite_animation, SWIG_POINTER_NEW |  0 );
+  if (SWIG_IsNewObj(res2)) delete arg2;
+  return resultobj;
+fail:
+  if (SWIG_IsNewObj(res2)) delete arg2;
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_delete_sprite_animation(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  FESimple::sprite_animation *arg1 = (FESimple::sprite_animation *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:delete_sprite_animation",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_FESimple__sprite_animation, SWIG_POINTER_DISOWN |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "delete_sprite_animation" "', argument " "1"" of type '" "FESimple::sprite_animation *""'"); 
+  }
+  arg1 = reinterpret_cast< FESimple::sprite_animation * >(argp1);
+  delete arg1;
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_new_sprite_animation__SWIG_1(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  FESimple::sprite_animation *arg1 = 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  FESimple::sprite_animation *result = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:new_sprite_animation",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1, SWIGTYPE_p_FESimple__sprite_animation,  0  | 0);
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "new_sprite_animation" "', argument " "1"" of type '" "FESimple::sprite_animation const &""'"); 
+  }
+  if (!argp1) {
+    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "new_sprite_animation" "', argument " "1"" of type '" "FESimple::sprite_animation const &""'"); 
+  }
+  arg1 = reinterpret_cast< FESimple::sprite_animation * >(argp1);
+  result = (FESimple::sprite_animation *)new FESimple::sprite_animation((FESimple::sprite_animation const &)*arg1);
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_FESimple__sprite_animation, SWIG_POINTER_NEW |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_new_sprite_animation(PyObject *self, PyObject *args) {
+  int argc;
+  PyObject *argv[3];
+  int ii;
+  
+  if (!PyTuple_Check(args)) SWIG_fail;
+  argc = args ? (int)PyObject_Length(args) : 0;
+  for (ii = 0; (ii < 2) && (ii < argc); ii++) {
+    argv[ii] = PyTuple_GET_ITEM(args,ii);
+  }
+  if (argc == 1) {
+    int _v;
+    int res = SWIG_ConvertPtr(argv[0], 0, SWIGTYPE_p_FESimple__sprite_animation, 0);
+    _v = SWIG_CheckState(res);
+    if (_v) {
+      return _wrap_new_sprite_animation__SWIG_1(self, args);
+    }
+  }
+  if (argc == 2) {
+    int _v;
+    void *vptr = 0;
+    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_cocos2d__CCAction, 0);
+    _v = SWIG_CheckState(res);
+    if (_v) {
+      int res = SWIG_AsPtr_std_string(argv[1], (std::string**)(0));
+      _v = SWIG_CheckState(res);
+      if (_v) {
+        return _wrap_new_sprite_animation__SWIG_0(self, args);
+      }
+    }
+  }
+  
+fail:
+  SWIG_SetErrorMsg(PyExc_NotImplementedError,"Wrong number or type of arguments for overloaded function 'new_sprite_animation'.\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    FESimple::sprite_animation::sprite_animation(cocos2d::CCAction *,FESimple::Name const &)\n"
+    "    FESimple::sprite_animation::sprite_animation(FESimple::sprite_animation const &)\n");
+  return 0;
+}
+
+
+SWIGINTERN PyObject *_wrap_sprite_animation_animation_set(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  FESimple::sprite_animation *arg1 = (FESimple::sprite_animation *) 0 ;
+  cocos2d::CCAction *arg2 = (cocos2d::CCAction *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 = 0 ;
+  int res2 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"OO:sprite_animation_animation_set",&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_FESimple__sprite_animation, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "sprite_animation_animation_set" "', argument " "1"" of type '" "FESimple::sprite_animation *""'"); 
+  }
+  arg1 = reinterpret_cast< FESimple::sprite_animation * >(argp1);
+  res2 = SWIG_ConvertPtr(obj1, &argp2,SWIGTYPE_p_cocos2d__CCAction, SWIG_POINTER_DISOWN |  0 );
+  if (!SWIG_IsOK(res2)) {
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "sprite_animation_animation_set" "', argument " "2"" of type '" "cocos2d::CCAction *""'"); 
+  }
+  arg2 = reinterpret_cast< cocos2d::CCAction * >(argp2);
+  if (arg1) (arg1)->animation = arg2;
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_sprite_animation_animation_get(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  FESimple::sprite_animation *arg1 = (FESimple::sprite_animation *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  cocos2d::CCAction *result = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:sprite_animation_animation_get",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_FESimple__sprite_animation, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "sprite_animation_animation_get" "', argument " "1"" of type '" "FESimple::sprite_animation *""'"); 
+  }
+  arg1 = reinterpret_cast< FESimple::sprite_animation * >(argp1);
+  result = (cocos2d::CCAction *) ((arg1)->animation);
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_cocos2d__CCAction, 0 |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_sprite_animation_name_set(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  FESimple::sprite_animation *arg1 = (FESimple::sprite_animation *) 0 ;
+  FESimple::Name *arg2 = 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  int res2 = SWIG_OLDOBJ ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"OO:sprite_animation_name_set",&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_FESimple__sprite_animation, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "sprite_animation_name_set" "', argument " "1"" of type '" "FESimple::sprite_animation *""'"); 
+  }
+  arg1 = reinterpret_cast< FESimple::sprite_animation * >(argp1);
+  {
+    std::string *ptr = (std::string *)0;
+    res2 = SWIG_AsPtr_std_string(obj1, &ptr);
+    if (!SWIG_IsOK(res2)) {
+      SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "sprite_animation_name_set" "', argument " "2"" of type '" "FESimple::Name const &""'"); 
+    }
+    if (!ptr) {
+      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "sprite_animation_name_set" "', argument " "2"" of type '" "FESimple::Name const &""'"); 
+    }
+    arg2 = ptr;
+  }
+  if (arg1) (arg1)->name = *arg2;
+  resultobj = SWIG_Py_Void();
+  if (SWIG_IsNewObj(res2)) delete arg2;
+  return resultobj;
+fail:
+  if (SWIG_IsNewObj(res2)) delete arg2;
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_sprite_animation_name_get(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  FESimple::sprite_animation *arg1 = (FESimple::sprite_animation *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  FESimple::Name *result = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:sprite_animation_name_get",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_FESimple__sprite_animation, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "sprite_animation_name_get" "', argument " "1"" of type '" "FESimple::sprite_animation *""'"); 
+  }
+  arg1 = reinterpret_cast< FESimple::sprite_animation * >(argp1);
+  result = (FESimple::Name *) & ((arg1)->name);
+  resultobj = SWIG_From_std_string(static_cast< std::string >(*result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *sprite_animation_swigregister(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *obj;
+  if (!PyArg_ParseTuple(args,(char*)"O:swigregister", &obj)) return NULL;
+  SWIG_TypeNewClientData(SWIGTYPE_p_FESimple__sprite_animation, SWIG_NewClientData(obj));
+  return SWIG_Py_Void();
+}
+
+SWIGINTERN PyObject *_wrap_FixtureUserData_sprite_component_set(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  FESimple::FixtureUserData *arg1 = (FESimple::FixtureUserData *) 0 ;
+  FESimple::SpriteComponent *arg2 = (FESimple::SpriteComponent *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 = 0 ;
+  int res2 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"OO:FixtureUserData_sprite_component_set",&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_FESimple__FixtureUserData, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "FixtureUserData_sprite_component_set" "', argument " "1"" of type '" "FESimple::FixtureUserData *""'"); 
+  }
+  arg1 = reinterpret_cast< FESimple::FixtureUserData * >(argp1);
+  res2 = SWIG_ConvertPtr(obj1, &argp2,SWIGTYPE_p_FESimple__SpriteComponent, SWIG_POINTER_DISOWN |  0 );
+  if (!SWIG_IsOK(res2)) {
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "FixtureUserData_sprite_component_set" "', argument " "2"" of type '" "FESimple::SpriteComponent *""'"); 
+  }
+  arg2 = reinterpret_cast< FESimple::SpriteComponent * >(argp2);
+  if (arg1) (arg1)->sprite_component = arg2;
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_FixtureUserData_sprite_component_get(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  FESimple::FixtureUserData *arg1 = (FESimple::FixtureUserData *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  FESimple::SpriteComponent *result = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:FixtureUserData_sprite_component_get",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_FESimple__FixtureUserData, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "FixtureUserData_sprite_component_get" "', argument " "1"" of type '" "FESimple::FixtureUserData *""'"); 
+  }
+  arg1 = reinterpret_cast< FESimple::FixtureUserData * >(argp1);
+  result = (FESimple::SpriteComponent *) ((arg1)->sprite_component);
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_FESimple__SpriteComponent, 0 |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_FixtureUserData_identity_set(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  FESimple::FixtureUserData *arg1 = (FESimple::FixtureUserData *) 0 ;
+  int arg2 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  int val2 ;
+  int ecode2 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"OO:FixtureUserData_identity_set",&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_FESimple__FixtureUserData, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "FixtureUserData_identity_set" "', argument " "1"" of type '" "FESimple::FixtureUserData *""'"); 
+  }
+  arg1 = reinterpret_cast< FESimple::FixtureUserData * >(argp1);
+  ecode2 = SWIG_AsVal_int(obj1, &val2);
+  if (!SWIG_IsOK(ecode2)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "FixtureUserData_identity_set" "', argument " "2"" of type '" "int""'");
+  } 
+  arg2 = static_cast< int >(val2);
+  if (arg1) (arg1)->identity = arg2;
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_FixtureUserData_identity_get(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  FESimple::FixtureUserData *arg1 = (FESimple::FixtureUserData *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  int result;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:FixtureUserData_identity_get",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_FESimple__FixtureUserData, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "FixtureUserData_identity_get" "', argument " "1"" of type '" "FESimple::FixtureUserData *""'"); 
+  }
+  arg1 = reinterpret_cast< FESimple::FixtureUserData * >(argp1);
+  result = (int) ((arg1)->identity);
+  resultobj = SWIG_From_int(static_cast< int >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_new_FixtureUserData(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  FESimple::FixtureUserData *result = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)":new_FixtureUserData")) SWIG_fail;
+  result = (FESimple::FixtureUserData *)new FESimple::FixtureUserData();
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_FESimple__FixtureUserData, SWIG_POINTER_NEW |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_delete_FixtureUserData(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  FESimple::FixtureUserData *arg1 = (FESimple::FixtureUserData *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:delete_FixtureUserData",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_FESimple__FixtureUserData, SWIG_POINTER_DISOWN |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "delete_FixtureUserData" "', argument " "1"" of type '" "FESimple::FixtureUserData *""'"); 
+  }
+  arg1 = reinterpret_cast< FESimple::FixtureUserData * >(argp1);
+  delete arg1;
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *FixtureUserData_swigregister(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *obj;
+  if (!PyArg_ParseTuple(args,(char*)"O:swigregister", &obj)) return NULL;
+  SWIG_TypeNewClientData(SWIGTYPE_p_FESimple__FixtureUserData, SWIG_NewClientData(obj));
+  return SWIG_Py_Void();
+}
+
+SWIGINTERN PyObject *_wrap_new_SpriteComponent(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  cocos2d::CCPoint *arg1 = 0 ;
+  SwigValueWrapper< std::shared_ptr< FESimple::sprite_component_desc > > arg2 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 ;
+  int res2 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  FESimple::SpriteComponent *result = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"OO:new_SpriteComponent",&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1, SWIGTYPE_p_cocos2d__CCPoint,  0  | 0);
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "new_SpriteComponent" "', argument " "1"" of type '" "cocos2d::CCPoint const &""'"); 
+  }
+  if (!argp1) {
+    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "new_SpriteComponent" "', argument " "1"" of type '" "cocos2d::CCPoint const &""'"); 
+  }
+  arg1 = reinterpret_cast< cocos2d::CCPoint * >(argp1);
+  {
+    res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_std__shared_ptrT_FESimple__sprite_component_desc_t,  0  | 0);
+    if (!SWIG_IsOK(res2)) {
+      SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "new_SpriteComponent" "', argument " "2"" of type '" "std::shared_ptr< FESimple::sprite_component_desc > const""'"); 
+    }  
+    if (!argp2) {
+      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "new_SpriteComponent" "', argument " "2"" of type '" "std::shared_ptr< FESimple::sprite_component_desc > const""'");
+    } else {
+      std::shared_ptr< FESimple::sprite_component_desc > * temp = reinterpret_cast< std::shared_ptr< FESimple::sprite_component_desc > * >(argp2);
+      arg2 = *temp;
+      if (SWIG_IsNewObj(res2)) delete temp;
+    }
+  }
+  result = (FESimple::SpriteComponent *)new FESimple::SpriteComponent((cocos2d::CCPoint const &)*arg1,arg2);
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_FESimple__SpriteComponent, SWIG_POINTER_NEW |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_delete_SpriteComponent(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  FESimple::SpriteComponent *arg1 = (FESimple::SpriteComponent *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:delete_SpriteComponent",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_FESimple__SpriteComponent, SWIG_POINTER_DISOWN |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "delete_SpriteComponent" "', argument " "1"" of type '" "FESimple::SpriteComponent *""'"); 
+  }
+  arg1 = reinterpret_cast< FESimple::SpriteComponent * >(argp1);
+  delete arg1;
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_SpriteComponent_play_anim(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  FESimple::SpriteComponent *arg1 = (FESimple::SpriteComponent *) 0 ;
+  FESimple::Name *arg2 = 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  int res2 = SWIG_OLDOBJ ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  bool result;
+  
+  if (!PyArg_ParseTuple(args,(char *)"OO:SpriteComponent_play_anim",&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_FESimple__SpriteComponent, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SpriteComponent_play_anim" "', argument " "1"" of type '" "FESimple::SpriteComponent *""'"); 
+  }
+  arg1 = reinterpret_cast< FESimple::SpriteComponent * >(argp1);
+  {
+    std::string *ptr = (std::string *)0;
+    res2 = SWIG_AsPtr_std_string(obj1, &ptr);
+    if (!SWIG_IsOK(res2)) {
+      SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "SpriteComponent_play_anim" "', argument " "2"" of type '" "FESimple::Name const &""'"); 
+    }
+    if (!ptr) {
+      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "SpriteComponent_play_anim" "', argument " "2"" of type '" "FESimple::Name const &""'"); 
+    }
+    arg2 = ptr;
+  }
+  result = (bool)(arg1)->play_anim((FESimple::Name const &)*arg2);
+  resultobj = SWIG_From_bool(static_cast< bool >(result));
+  if (SWIG_IsNewObj(res2)) delete arg2;
+  return resultobj;
+fail:
+  if (SWIG_IsNewObj(res2)) delete arg2;
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_SpriteComponent_draw(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  FESimple::SpriteComponent *arg1 = (FESimple::SpriteComponent *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:SpriteComponent_draw",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_FESimple__SpriteComponent, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SpriteComponent_draw" "', argument " "1"" of type '" "FESimple::SpriteComponent *""'"); 
+  }
+  arg1 = reinterpret_cast< FESimple::SpriteComponent * >(argp1);
+  (arg1)->draw();
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_SpriteComponent_update(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  FESimple::SpriteComponent *arg1 = (FESimple::SpriteComponent *) 0 ;
+  float arg2 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  float val2 ;
+  int ecode2 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"OO:SpriteComponent_update",&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_FESimple__SpriteComponent, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SpriteComponent_update" "', argument " "1"" of type '" "FESimple::SpriteComponent *""'"); 
+  }
+  arg1 = reinterpret_cast< FESimple::SpriteComponent * >(argp1);
+  ecode2 = SWIG_AsVal_float(obj1, &val2);
+  if (!SWIG_IsOK(ecode2)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "SpriteComponent_update" "', argument " "2"" of type '" "float""'");
+  } 
+  arg2 = static_cast< float >(val2);
+  (arg1)->update(arg2);
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_SpriteComponent_setPosition(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  FESimple::SpriteComponent *arg1 = (FESimple::SpriteComponent *) 0 ;
+  cocos2d::CCPoint *arg2 = 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 = 0 ;
+  int res2 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"OO:SpriteComponent_setPosition",&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_FESimple__SpriteComponent, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SpriteComponent_setPosition" "', argument " "1"" of type '" "FESimple::SpriteComponent *""'"); 
+  }
+  arg1 = reinterpret_cast< FESimple::SpriteComponent * >(argp1);
+  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_cocos2d__CCPoint,  0  | 0);
+  if (!SWIG_IsOK(res2)) {
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "SpriteComponent_setPosition" "', argument " "2"" of type '" "cocos2d::CCPoint const &""'"); 
+  }
+  if (!argp2) {
+    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "SpriteComponent_setPosition" "', argument " "2"" of type '" "cocos2d::CCPoint const &""'"); 
+  }
+  arg2 = reinterpret_cast< cocos2d::CCPoint * >(argp2);
+  (arg1)->setPosition((cocos2d::CCPoint const &)*arg2);
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_SpriteComponent_getPosition(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  FESimple::SpriteComponent *arg1 = (FESimple::SpriteComponent *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  cocos2d::CCPoint *result = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:SpriteComponent_getPosition",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_FESimple__SpriteComponent, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SpriteComponent_getPosition" "', argument " "1"" of type '" "FESimple::SpriteComponent *""'"); 
+  }
+  arg1 = reinterpret_cast< FESimple::SpriteComponent * >(argp1);
+  result = (cocos2d::CCPoint *) &(arg1)->getPosition();
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_cocos2d__CCPoint, 0 |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_SpriteComponent_isDirty(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  FESimple::SpriteComponent *arg1 = (FESimple::SpriteComponent *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  bool result;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:SpriteComponent_isDirty",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_FESimple__SpriteComponent, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SpriteComponent_isDirty" "', argument " "1"" of type '" "FESimple::SpriteComponent *""'"); 
+  }
+  arg1 = reinterpret_cast< FESimple::SpriteComponent * >(argp1);
+  result = (bool)(arg1)->isDirty();
+  resultobj = SWIG_From_bool(static_cast< bool >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_SpriteComponent_nodeToParentTransform(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  FESimple::SpriteComponent *arg1 = (FESimple::SpriteComponent *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  cocos2d::CCAffineTransform result;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:SpriteComponent_nodeToParentTransform",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_FESimple__SpriteComponent, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SpriteComponent_nodeToParentTransform" "', argument " "1"" of type '" "FESimple::SpriteComponent *""'"); 
+  }
+  arg1 = reinterpret_cast< FESimple::SpriteComponent * >(argp1);
+  result = (arg1)->nodeToParentTransform();
+  resultobj = SWIG_NewPointerObj((new cocos2d::CCAffineTransform(static_cast< const cocos2d::CCAffineTransform& >(result))), SWIGTYPE_p_cocos2d__CCAffineTransform, SWIG_POINTER_OWN |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_SpriteComponent_begin_contact(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  FESimple::SpriteComponent *arg1 = (FESimple::SpriteComponent *) 0 ;
+  b2Contact *arg2 = (b2Contact *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 = 0 ;
+  int res2 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"OO:SpriteComponent_begin_contact",&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_FESimple__SpriteComponent, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SpriteComponent_begin_contact" "', argument " "1"" of type '" "FESimple::SpriteComponent *""'"); 
+  }
+  arg1 = reinterpret_cast< FESimple::SpriteComponent * >(argp1);
+  res2 = SWIG_ConvertPtr(obj1, &argp2,SWIGTYPE_p_b2Contact, 0 |  0 );
+  if (!SWIG_IsOK(res2)) {
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "SpriteComponent_begin_contact" "', argument " "2"" of type '" "b2Contact *""'"); 
+  }
+  arg2 = reinterpret_cast< b2Contact * >(argp2);
+  (arg1)->begin_contact(arg2);
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_SpriteComponent_end_contact(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  FESimple::SpriteComponent *arg1 = (FESimple::SpriteComponent *) 0 ;
+  b2Contact *arg2 = (b2Contact *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 = 0 ;
+  int res2 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"OO:SpriteComponent_end_contact",&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_FESimple__SpriteComponent, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SpriteComponent_end_contact" "', argument " "1"" of type '" "FESimple::SpriteComponent *""'"); 
+  }
+  arg1 = reinterpret_cast< FESimple::SpriteComponent * >(argp1);
+  res2 = SWIG_ConvertPtr(obj1, &argp2,SWIGTYPE_p_b2Contact, 0 |  0 );
+  if (!SWIG_IsOK(res2)) {
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "SpriteComponent_end_contact" "', argument " "2"" of type '" "b2Contact *""'"); 
+  }
+  arg2 = reinterpret_cast< b2Contact * >(argp2);
+  (arg1)->end_contact(arg2);
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_SpriteComponent_set_linear_velocity(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  FESimple::SpriteComponent *arg1 = (FESimple::SpriteComponent *) 0 ;
+  cocos2d::CCPoint *arg2 = 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 = 0 ;
+  int res2 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"OO:SpriteComponent_set_linear_velocity",&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_FESimple__SpriteComponent, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SpriteComponent_set_linear_velocity" "', argument " "1"" of type '" "FESimple::SpriteComponent *""'"); 
+  }
+  arg1 = reinterpret_cast< FESimple::SpriteComponent * >(argp1);
+  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_cocos2d__CCPoint,  0  | 0);
+  if (!SWIG_IsOK(res2)) {
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "SpriteComponent_set_linear_velocity" "', argument " "2"" of type '" "cocos2d::CCPoint const &""'"); 
+  }
+  if (!argp2) {
+    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "SpriteComponent_set_linear_velocity" "', argument " "2"" of type '" "cocos2d::CCPoint const &""'"); 
+  }
+  arg2 = reinterpret_cast< cocos2d::CCPoint * >(argp2);
+  (arg1)->set_linear_velocity((cocos2d::CCPoint const &)*arg2);
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_SpriteComponent_set_linear_damping(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  FESimple::SpriteComponent *arg1 = (FESimple::SpriteComponent *) 0 ;
+  float arg2 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  float val2 ;
+  int ecode2 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"OO:SpriteComponent_set_linear_damping",&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_FESimple__SpriteComponent, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SpriteComponent_set_linear_damping" "', argument " "1"" of type '" "FESimple::SpriteComponent *""'"); 
+  }
+  arg1 = reinterpret_cast< FESimple::SpriteComponent * >(argp1);
+  ecode2 = SWIG_AsVal_float(obj1, &val2);
+  if (!SWIG_IsOK(ecode2)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "SpriteComponent_set_linear_damping" "', argument " "2"" of type '" "float""'");
+  } 
+  arg2 = static_cast< float >(val2);
+  (arg1)->set_linear_damping(arg2);
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_SpriteComponent_apply_force__SWIG_0(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  FESimple::SpriteComponent *arg1 = (FESimple::SpriteComponent *) 0 ;
+  cocos2d::CCPoint *arg2 = 0 ;
+  cocos2d::CCPoint *arg3 = 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 = 0 ;
+  int res2 = 0 ;
+  void *argp3 = 0 ;
+  int res3 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  PyObject * obj2 = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"OOO:SpriteComponent_apply_force",&obj0,&obj1,&obj2)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_FESimple__SpriteComponent, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SpriteComponent_apply_force" "', argument " "1"" of type '" "FESimple::SpriteComponent *""'"); 
+  }
+  arg1 = reinterpret_cast< FESimple::SpriteComponent * >(argp1);
+  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_cocos2d__CCPoint,  0  | 0);
+  if (!SWIG_IsOK(res2)) {
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "SpriteComponent_apply_force" "', argument " "2"" of type '" "cocos2d::CCPoint const &""'"); 
+  }
+  if (!argp2) {
+    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "SpriteComponent_apply_force" "', argument " "2"" of type '" "cocos2d::CCPoint const &""'"); 
+  }
+  arg2 = reinterpret_cast< cocos2d::CCPoint * >(argp2);
+  res3 = SWIG_ConvertPtr(obj2, &argp3, SWIGTYPE_p_cocos2d__CCPoint,  0  | 0);
+  if (!SWIG_IsOK(res3)) {
+    SWIG_exception_fail(SWIG_ArgError(res3), "in method '" "SpriteComponent_apply_force" "', argument " "3"" of type '" "cocos2d::CCPoint const &""'"); 
+  }
+  if (!argp3) {
+    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "SpriteComponent_apply_force" "', argument " "3"" of type '" "cocos2d::CCPoint const &""'"); 
+  }
+  arg3 = reinterpret_cast< cocos2d::CCPoint * >(argp3);
+  (arg1)->apply_force((cocos2d::CCPoint const &)*arg2,(cocos2d::CCPoint const &)*arg3);
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_SpriteComponent_apply_force__SWIG_1(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  FESimple::SpriteComponent *arg1 = (FESimple::SpriteComponent *) 0 ;
+  cocos2d::CCPoint *arg2 = 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 = 0 ;
+  int res2 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"OO:SpriteComponent_apply_force",&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_FESimple__SpriteComponent, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SpriteComponent_apply_force" "', argument " "1"" of type '" "FESimple::SpriteComponent *""'"); 
+  }
+  arg1 = reinterpret_cast< FESimple::SpriteComponent * >(argp1);
+  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_cocos2d__CCPoint,  0  | 0);
+  if (!SWIG_IsOK(res2)) {
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "SpriteComponent_apply_force" "', argument " "2"" of type '" "cocos2d::CCPoint const &""'"); 
+  }
+  if (!argp2) {
+    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "SpriteComponent_apply_force" "', argument " "2"" of type '" "cocos2d::CCPoint const &""'"); 
+  }
+  arg2 = reinterpret_cast< cocos2d::CCPoint * >(argp2);
+  (arg1)->apply_force((cocos2d::CCPoint const &)*arg2);
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_SpriteComponent_apply_force(PyObject *self, PyObject *args) {
+  int argc;
+  PyObject *argv[4];
+  int ii;
+  
+  if (!PyTuple_Check(args)) SWIG_fail;
+  argc = args ? (int)PyObject_Length(args) : 0;
+  for (ii = 0; (ii < 3) && (ii < argc); ii++) {
+    argv[ii] = PyTuple_GET_ITEM(args,ii);
+  }
+  if (argc == 2) {
+    int _v;
+    void *vptr = 0;
+    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_FESimple__SpriteComponent, 0);
+    _v = SWIG_CheckState(res);
+    if (_v) {
+      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_cocos2d__CCPoint, 0);
+      _v = SWIG_CheckState(res);
+      if (_v) {
+        return _wrap_SpriteComponent_apply_force__SWIG_1(self, args);
+      }
+    }
+  }
+  if (argc == 3) {
+    int _v;
+    void *vptr = 0;
+    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_FESimple__SpriteComponent, 0);
+    _v = SWIG_CheckState(res);
+    if (_v) {
+      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_cocos2d__CCPoint, 0);
+      _v = SWIG_CheckState(res);
+      if (_v) {
+        int res = SWIG_ConvertPtr(argv[2], 0, SWIGTYPE_p_cocos2d__CCPoint, 0);
+        _v = SWIG_CheckState(res);
+        if (_v) {
+          return _wrap_SpriteComponent_apply_force__SWIG_0(self, args);
+        }
+      }
+    }
+  }
+  
+fail:
+  SWIG_SetErrorMsg(PyExc_NotImplementedError,"Wrong number or type of arguments for overloaded function 'SpriteComponent_apply_force'.\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    FESimple::SpriteComponent::apply_force(cocos2d::CCPoint const &,cocos2d::CCPoint const &)\n"
+    "    FESimple::SpriteComponent::apply_force(cocos2d::CCPoint const &)\n");
+  return 0;
+}
+
+
+SWIGINTERN PyObject *_wrap_SpriteComponent_apply_torque(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  FESimple::SpriteComponent *arg1 = (FESimple::SpriteComponent *) 0 ;
+  float arg2 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  float val2 ;
+  int ecode2 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"OO:SpriteComponent_apply_torque",&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_FESimple__SpriteComponent, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SpriteComponent_apply_torque" "', argument " "1"" of type '" "FESimple::SpriteComponent *""'"); 
+  }
+  arg1 = reinterpret_cast< FESimple::SpriteComponent * >(argp1);
+  ecode2 = SWIG_AsVal_float(obj1, &val2);
+  if (!SWIG_IsOK(ecode2)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "SpriteComponent_apply_torque" "', argument " "2"" of type '" "float""'");
+  } 
+  arg2 = static_cast< float >(val2);
+  (arg1)->apply_torque(arg2);
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_SpriteComponent_set_angular_damping(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  FESimple::SpriteComponent *arg1 = (FESimple::SpriteComponent *) 0 ;
+  float arg2 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  float val2 ;
+  int ecode2 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"OO:SpriteComponent_set_angular_damping",&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_FESimple__SpriteComponent, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SpriteComponent_set_angular_damping" "', argument " "1"" of type '" "FESimple::SpriteComponent *""'"); 
+  }
+  arg1 = reinterpret_cast< FESimple::SpriteComponent * >(argp1);
+  ecode2 = SWIG_AsVal_float(obj1, &val2);
+  if (!SWIG_IsOK(ecode2)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "SpriteComponent_set_angular_damping" "', argument " "2"" of type '" "float""'");
+  } 
+  arg2 = static_cast< float >(val2);
+  (arg1)->set_angular_damping(arg2);
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_SpriteComponent_apply_linear_impulse(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  FESimple::SpriteComponent *arg1 = (FESimple::SpriteComponent *) 0 ;
+  cocos2d::CCPoint *arg2 = 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 = 0 ;
+  int res2 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"OO:SpriteComponent_apply_linear_impulse",&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_FESimple__SpriteComponent, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SpriteComponent_apply_linear_impulse" "', argument " "1"" of type '" "FESimple::SpriteComponent *""'"); 
+  }
+  arg1 = reinterpret_cast< FESimple::SpriteComponent * >(argp1);
+  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_cocos2d__CCPoint,  0  | 0);
+  if (!SWIG_IsOK(res2)) {
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "SpriteComponent_apply_linear_impulse" "', argument " "2"" of type '" "cocos2d::CCPoint const &""'"); 
+  }
+  if (!argp2) {
+    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "SpriteComponent_apply_linear_impulse" "', argument " "2"" of type '" "cocos2d::CCPoint const &""'"); 
+  }
+  arg2 = reinterpret_cast< cocos2d::CCPoint * >(argp2);
+  (arg1)->apply_linear_impulse((cocos2d::CCPoint const &)*arg2);
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_SpriteComponent_apply_angular_impulse(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  FESimple::SpriteComponent *arg1 = (FESimple::SpriteComponent *) 0 ;
+  float arg2 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  float val2 ;
+  int ecode2 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"OO:SpriteComponent_apply_angular_impulse",&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_FESimple__SpriteComponent, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SpriteComponent_apply_angular_impulse" "', argument " "1"" of type '" "FESimple::SpriteComponent *""'"); 
+  }
+  arg1 = reinterpret_cast< FESimple::SpriteComponent * >(argp1);
+  ecode2 = SWIG_AsVal_float(obj1, &val2);
+  if (!SWIG_IsOK(ecode2)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "SpriteComponent_apply_angular_impulse" "', argument " "2"" of type '" "float""'");
+  } 
+  arg2 = static_cast< float >(val2);
+  (arg1)->apply_angular_impulse(arg2);
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_SpriteComponent_wakeup(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  FESimple::SpriteComponent *arg1 = (FESimple::SpriteComponent *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:SpriteComponent_wakeup",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_FESimple__SpriteComponent, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SpriteComponent_wakeup" "', argument " "1"" of type '" "FESimple::SpriteComponent *""'"); 
+  }
+  arg1 = reinterpret_cast< FESimple::SpriteComponent * >(argp1);
+  (arg1)->wakeup();
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_SpriteComponent_set_owner(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  FESimple::SpriteComponent *arg1 = (FESimple::SpriteComponent *) 0 ;
+  SwigValueWrapper< std::weak_ptr< FESimple::SpriteBase > > arg2 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 ;
+  int res2 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"OO:SpriteComponent_set_owner",&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_FESimple__SpriteComponent, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SpriteComponent_set_owner" "', argument " "1"" of type '" "FESimple::SpriteComponent *""'"); 
+  }
+  arg1 = reinterpret_cast< FESimple::SpriteComponent * >(argp1);
+  {
+    res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_std__weak_ptrT_FESimple__SpriteBase_t,  0  | 0);
+    if (!SWIG_IsOK(res2)) {
+      SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "SpriteComponent_set_owner" "', argument " "2"" of type '" "std::weak_ptr< FESimple::SpriteBase >""'"); 
+    }  
+    if (!argp2) {
+      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "SpriteComponent_set_owner" "', argument " "2"" of type '" "std::weak_ptr< FESimple::SpriteBase >""'");
+    } else {
+      std::weak_ptr< FESimple::SpriteBase > * temp = reinterpret_cast< std::weak_ptr< FESimple::SpriteBase > * >(argp2);
+      arg2 = *temp;
+      if (SWIG_IsNewObj(res2)) delete temp;
+    }
+  }
+  (arg1)->set_owner(arg2);
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_SpriteComponent_get_owner(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  FESimple::SpriteComponent *arg1 = (FESimple::SpriteComponent *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  SwigValueWrapper< std::weak_ptr< FESimple::SpriteBase > > result;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:SpriteComponent_get_owner",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_FESimple__SpriteComponent, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SpriteComponent_get_owner" "', argument " "1"" of type '" "FESimple::SpriteComponent *""'"); 
+  }
+  arg1 = reinterpret_cast< FESimple::SpriteComponent * >(argp1);
+  result = (arg1)->get_owner();
+  resultobj = SWIG_NewPointerObj((new std::weak_ptr< FESimple::SpriteBase >(static_cast< const std::weak_ptr< FESimple::SpriteBase >& >(result))), SWIGTYPE_p_std__weak_ptrT_FESimple__SpriteBase_t, SWIG_POINTER_OWN |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *SpriteComponent_swigregister(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *obj;
+  if (!PyArg_ParseTuple(args,(char*)"O:swigregister", &obj)) return NULL;
+  SWIG_TypeNewClientData(SWIGTYPE_p_FESimple__SpriteComponent, SWIG_NewClientData(obj));
+  return SWIG_Py_Void();
+}
+
 static PyMethodDef SwigMethods[] = {
 	 { (char *)"SWIG_PyInstanceMethod_New", (PyCFunction)SWIG_PyInstanceMethod_New, METH_O, NULL},
 	 { (char *)"delete_SwigPyIterator", _wrap_delete_SwigPyIterator, METH_VARARGS, NULL},
@@ -11228,6 +18276,90 @@ static PyMethodDef SwigMethods[] = {
 	 { (char *)"map_string_string_upper_bound", _wrap_map_string_string_upper_bound, METH_VARARGS, NULL},
 	 { (char *)"delete_map_string_string", _wrap_delete_map_string_string, METH_VARARGS, NULL},
 	 { (char *)"map_string_string_swigregister", map_string_string_swigregister, METH_VARARGS, NULL},
+	 { (char *)"vector_controller_iterator", _wrap_vector_controller_iterator, METH_VARARGS, NULL},
+	 { (char *)"vector_controller___nonzero__", _wrap_vector_controller___nonzero__, METH_VARARGS, NULL},
+	 { (char *)"vector_controller___bool__", _wrap_vector_controller___bool__, METH_VARARGS, NULL},
+	 { (char *)"vector_controller___len__", _wrap_vector_controller___len__, METH_VARARGS, NULL},
+	 { (char *)"vector_controller_pop", _wrap_vector_controller_pop, METH_VARARGS, NULL},
+	 { (char *)"vector_controller___getslice__", _wrap_vector_controller___getslice__, METH_VARARGS, NULL},
+	 { (char *)"vector_controller___setslice__", _wrap_vector_controller___setslice__, METH_VARARGS, NULL},
+	 { (char *)"vector_controller___delslice__", _wrap_vector_controller___delslice__, METH_VARARGS, NULL},
+	 { (char *)"vector_controller___delitem__", _wrap_vector_controller___delitem__, METH_VARARGS, NULL},
+	 { (char *)"vector_controller___getitem__", _wrap_vector_controller___getitem__, METH_VARARGS, NULL},
+	 { (char *)"vector_controller___setitem__", _wrap_vector_controller___setitem__, METH_VARARGS, NULL},
+	 { (char *)"vector_controller_append", _wrap_vector_controller_append, METH_VARARGS, NULL},
+	 { (char *)"vector_controller_empty", _wrap_vector_controller_empty, METH_VARARGS, NULL},
+	 { (char *)"vector_controller_size", _wrap_vector_controller_size, METH_VARARGS, NULL},
+	 { (char *)"vector_controller_clear", _wrap_vector_controller_clear, METH_VARARGS, NULL},
+	 { (char *)"vector_controller_swap", _wrap_vector_controller_swap, METH_VARARGS, NULL},
+	 { (char *)"vector_controller_get_allocator", _wrap_vector_controller_get_allocator, METH_VARARGS, NULL},
+	 { (char *)"vector_controller_begin", _wrap_vector_controller_begin, METH_VARARGS, NULL},
+	 { (char *)"vector_controller_end", _wrap_vector_controller_end, METH_VARARGS, NULL},
+	 { (char *)"vector_controller_rbegin", _wrap_vector_controller_rbegin, METH_VARARGS, NULL},
+	 { (char *)"vector_controller_rend", _wrap_vector_controller_rend, METH_VARARGS, NULL},
+	 { (char *)"vector_controller_pop_back", _wrap_vector_controller_pop_back, METH_VARARGS, NULL},
+	 { (char *)"vector_controller_erase", _wrap_vector_controller_erase, METH_VARARGS, NULL},
+	 { (char *)"new_vector_controller", _wrap_new_vector_controller, METH_VARARGS, NULL},
+	 { (char *)"vector_controller_push_back", _wrap_vector_controller_push_back, METH_VARARGS, NULL},
+	 { (char *)"vector_controller_front", _wrap_vector_controller_front, METH_VARARGS, NULL},
+	 { (char *)"vector_controller_back", _wrap_vector_controller_back, METH_VARARGS, NULL},
+	 { (char *)"vector_controller_assign", _wrap_vector_controller_assign, METH_VARARGS, NULL},
+	 { (char *)"vector_controller_resize", _wrap_vector_controller_resize, METH_VARARGS, NULL},
+	 { (char *)"vector_controller_insert", _wrap_vector_controller_insert, METH_VARARGS, NULL},
+	 { (char *)"vector_controller_reserve", _wrap_vector_controller_reserve, METH_VARARGS, NULL},
+	 { (char *)"vector_controller_capacity", _wrap_vector_controller_capacity, METH_VARARGS, NULL},
+	 { (char *)"delete_vector_controller", _wrap_delete_vector_controller, METH_VARARGS, NULL},
+	 { (char *)"vector_controller_swigregister", vector_controller_swigregister, METH_VARARGS, NULL},
+	 { (char *)"new_gameobj_ptr", _wrap_new_gameobj_ptr, METH_VARARGS, NULL},
+	 { (char *)"delete_gameobj_ptr", _wrap_delete_gameobj_ptr, METH_VARARGS, NULL},
+	 { (char *)"gameobj_ptr_swigregister", gameobj_ptr_swigregister, METH_VARARGS, NULL},
+	 { (char *)"CCPoint_x_set", _wrap_CCPoint_x_set, METH_VARARGS, NULL},
+	 { (char *)"CCPoint_x_get", _wrap_CCPoint_x_get, METH_VARARGS, NULL},
+	 { (char *)"CCPoint_y_set", _wrap_CCPoint_y_set, METH_VARARGS, NULL},
+	 { (char *)"CCPoint_y_get", _wrap_CCPoint_y_get, METH_VARARGS, NULL},
+	 { (char *)"new_CCPoint", _wrap_new_CCPoint, METH_VARARGS, NULL},
+	 { (char *)"CCPoint_setPoint", _wrap_CCPoint_setPoint, METH_VARARGS, NULL},
+	 { (char *)"CCPoint_equals", _wrap_CCPoint_equals, METH_VARARGS, NULL},
+	 { (char *)"delete_CCPoint", _wrap_delete_CCPoint, METH_VARARGS, NULL},
+	 { (char *)"CCPoint_swigregister", CCPoint_swigregister, METH_VARARGS, NULL},
+	 { (char *)"CCSize_width_set", _wrap_CCSize_width_set, METH_VARARGS, NULL},
+	 { (char *)"CCSize_width_get", _wrap_CCSize_width_get, METH_VARARGS, NULL},
+	 { (char *)"CCSize_height_set", _wrap_CCSize_height_set, METH_VARARGS, NULL},
+	 { (char *)"CCSize_height_get", _wrap_CCSize_height_get, METH_VARARGS, NULL},
+	 { (char *)"new_CCSize", _wrap_new_CCSize, METH_VARARGS, NULL},
+	 { (char *)"CCSize_setSize", _wrap_CCSize_setSize, METH_VARARGS, NULL},
+	 { (char *)"CCSize_equals", _wrap_CCSize_equals, METH_VARARGS, NULL},
+	 { (char *)"delete_CCSize", _wrap_delete_CCSize, METH_VARARGS, NULL},
+	 { (char *)"CCSize_swigregister", CCSize_swigregister, METH_VARARGS, NULL},
+	 { (char *)"CCRect_origin_set", _wrap_CCRect_origin_set, METH_VARARGS, NULL},
+	 { (char *)"CCRect_origin_get", _wrap_CCRect_origin_get, METH_VARARGS, NULL},
+	 { (char *)"CCRect_size_set", _wrap_CCRect_size_set, METH_VARARGS, NULL},
+	 { (char *)"CCRect_size_get", _wrap_CCRect_size_get, METH_VARARGS, NULL},
+	 { (char *)"new_CCRect", _wrap_new_CCRect, METH_VARARGS, NULL},
+	 { (char *)"CCRect_setRect", _wrap_CCRect_setRect, METH_VARARGS, NULL},
+	 { (char *)"CCRect_getMinX", _wrap_CCRect_getMinX, METH_VARARGS, NULL},
+	 { (char *)"CCRect_getMidX", _wrap_CCRect_getMidX, METH_VARARGS, NULL},
+	 { (char *)"CCRect_getMaxX", _wrap_CCRect_getMaxX, METH_VARARGS, NULL},
+	 { (char *)"CCRect_getMinY", _wrap_CCRect_getMinY, METH_VARARGS, NULL},
+	 { (char *)"CCRect_getMidY", _wrap_CCRect_getMidY, METH_VARARGS, NULL},
+	 { (char *)"CCRect_getMaxY", _wrap_CCRect_getMaxY, METH_VARARGS, NULL},
+	 { (char *)"CCRect_equals", _wrap_CCRect_equals, METH_VARARGS, NULL},
+	 { (char *)"CCRect_containsPoint", _wrap_CCRect_containsPoint, METH_VARARGS, NULL},
+	 { (char *)"CCRect_intersectsRect", _wrap_CCRect_intersectsRect, METH_VARARGS, NULL},
+	 { (char *)"delete_CCRect", _wrap_delete_CCRect, METH_VARARGS, NULL},
+	 { (char *)"CCRect_swigregister", CCRect_swigregister, METH_VARARGS, NULL},
+	 { (char *)"new_CCTouch", _wrap_new_CCTouch, METH_VARARGS, NULL},
+	 { (char *)"CCTouch_getLocation", _wrap_CCTouch_getLocation, METH_VARARGS, NULL},
+	 { (char *)"CCTouch_getPreviousLocation", _wrap_CCTouch_getPreviousLocation, METH_VARARGS, NULL},
+	 { (char *)"CCTouch_getStartLocation", _wrap_CCTouch_getStartLocation, METH_VARARGS, NULL},
+	 { (char *)"CCTouch_getDelta", _wrap_CCTouch_getDelta, METH_VARARGS, NULL},
+	 { (char *)"CCTouch_getLocationInView", _wrap_CCTouch_getLocationInView, METH_VARARGS, NULL},
+	 { (char *)"CCTouch_getPreviousLocationInView", _wrap_CCTouch_getPreviousLocationInView, METH_VARARGS, NULL},
+	 { (char *)"CCTouch_getStartLocationInView", _wrap_CCTouch_getStartLocationInView, METH_VARARGS, NULL},
+	 { (char *)"CCTouch_setTouchInfo", _wrap_CCTouch_setTouchInfo, METH_VARARGS, NULL},
+	 { (char *)"CCTouch_getID", _wrap_CCTouch_getID, METH_VARARGS, NULL},
+	 { (char *)"delete_CCTouch", _wrap_delete_CCTouch, METH_VARARGS, NULL},
+	 { (char *)"CCTouch_swigregister", CCTouch_swigregister, METH_VARARGS, NULL},
 	 { (char *)"ClassInfo_is_kind_of", _wrap_ClassInfo_is_kind_of, METH_VARARGS, NULL},
 	 { (char *)"ClassInfo_name_set", _wrap_ClassInfo_name_set, METH_VARARGS, NULL},
 	 { (char *)"ClassInfo_name_get", _wrap_ClassInfo_name_get, METH_VARARGS, NULL},
@@ -11247,8 +18379,10 @@ static PyMethodDef SwigMethods[] = {
 	 { (char *)"GameObjBase_removed_from_game", _wrap_GameObjBase_removed_from_game, METH_VARARGS, NULL},
 	 { (char *)"GameObjBase_update", _wrap_GameObjBase_update, METH_VARARGS, NULL},
 	 { (char *)"GameObjBase_get_name", _wrap_GameObjBase_get_name, METH_VARARGS, NULL},
+	 { (char *)"GameObjBase_set_name", _wrap_GameObjBase_set_name, METH_VARARGS, NULL},
 	 { (char *)"GameObjBase_is_dead", _wrap_GameObjBase_is_dead, METH_VARARGS, NULL},
 	 { (char *)"GameObjBase_set_dead", _wrap_GameObjBase_set_dead, METH_VARARGS, NULL},
+	 { (char *)"disown_GameObjBase", _wrap_disown_GameObjBase, METH_VARARGS, NULL},
 	 { (char *)"GameObjBase_swigregister", GameObjBase_swigregister, METH_VARARGS, NULL},
 	 { (char *)"SpriteBase_classinfo_get", _wrap_SpriteBase_classinfo_get, METH_VARARGS, NULL},
 	 { (char *)"SpriteBase_classinfo_set", _wrap_SpriteBase_classinfo_set, METH_VARARGS, NULL},
@@ -11261,11 +18395,13 @@ static PyMethodDef SwigMethods[] = {
 	 { (char *)"SpriteBase_add_component", _wrap_SpriteBase_add_component, METH_VARARGS, NULL},
 	 { (char *)"SpriteBase_remove_component", _wrap_SpriteBase_remove_component, METH_VARARGS, NULL},
 	 { (char *)"SpriteBase_component", _wrap_SpriteBase_component, METH_VARARGS, NULL},
+	 { (char *)"SpriteBase_component_count", _wrap_SpriteBase_component_count, METH_VARARGS, NULL},
 	 { (char *)"SpriteBase_begin_contact", _wrap_SpriteBase_begin_contact, METH_VARARGS, NULL},
 	 { (char *)"SpriteBase_end_contact", _wrap_SpriteBase_end_contact, METH_VARARGS, NULL},
 	 { (char *)"SpriteBase_update", _wrap_SpriteBase_update, METH_VARARGS, NULL},
 	 { (char *)"SpriteBase_set_position", _wrap_SpriteBase_set_position, METH_VARARGS, NULL},
 	 { (char *)"SpriteBase_set_rotation", _wrap_SpriteBase_set_rotation, METH_VARARGS, NULL},
+	 { (char *)"disown_SpriteBase", _wrap_disown_SpriteBase, METH_VARARGS, NULL},
 	 { (char *)"SpriteBase_swigregister", SpriteBase_swigregister, METH_VARARGS, NULL},
 	 { (char *)"new_GameBase", _wrap_new_GameBase, METH_VARARGS, NULL},
 	 { (char *)"delete_GameBase", _wrap_delete_GameBase, METH_VARARGS, NULL},
@@ -11276,6 +18412,7 @@ static PyMethodDef SwigMethods[] = {
 	 { (char *)"GameBase_get_scene", _wrap_GameBase_get_scene, METH_VARARGS, NULL},
 	 { (char *)"GameBase_get_phy_world", _wrap_GameBase_get_phy_world, METH_VARARGS, NULL},
 	 { (char *)"GameBase_get_obj", _wrap_GameBase_get_obj, METH_VARARGS, NULL},
+	 { (char *)"disown_GameBase", _wrap_disown_GameBase, METH_VARARGS, NULL},
 	 { (char *)"GameBase_swigregister", GameBase_swigregister, METH_VARARGS, NULL},
 	 { (char *)"LevelTrigger_progress_set", _wrap_LevelTrigger_progress_set, METH_VARARGS, NULL},
 	 { (char *)"LevelTrigger_progress_get", _wrap_LevelTrigger_progress_get, METH_VARARGS, NULL},
@@ -11327,6 +18464,7 @@ static PyMethodDef SwigMethods[] = {
 	 { (char *)"rad_to_angle", _wrap_rad_to_angle, METH_VARARGS, NULL},
 	 { (char *)"random", _wrap_random, METH_VARARGS, NULL},
 	 { (char *)"random_dir", _wrap_random_dir, METH_VARARGS, NULL},
+	 { (char *)"GameInfo_add_controller", _wrap_GameInfo_add_controller, METH_VARARGS, NULL},
 	 { (char *)"GameInfo_game_set", _wrap_GameInfo_game_set, METH_VARARGS, NULL},
 	 { (char *)"GameInfo_game_get", _wrap_GameInfo_game_get, METH_VARARGS, NULL},
 	 { (char *)"GameInfo_controllers_set", _wrap_GameInfo_controllers_set, METH_VARARGS, NULL},
@@ -11335,10 +18473,110 @@ static PyMethodDef SwigMethods[] = {
 	 { (char *)"delete_GameInfo", _wrap_delete_GameInfo, METH_VARARGS, NULL},
 	 { (char *)"GameInfo_swigregister", GameInfo_swigregister, METH_VARARGS, NULL},
 	 { (char *)"get_game_info", _wrap_get_game_info, METH_VARARGS, NULL},
+	 { (char *)"make_gameobj_ptr", _wrap_make_gameobj_ptr, METH_VARARGS, NULL},
 	 { (char *)"GameObjFactory_construct_obj", _wrap_GameObjFactory_construct_obj, METH_VARARGS, NULL},
 	 { (char *)"new_GameObjFactory", _wrap_new_GameObjFactory, METH_VARARGS, NULL},
 	 { (char *)"delete_GameObjFactory", _wrap_delete_GameObjFactory, METH_VARARGS, NULL},
 	 { (char *)"GameObjFactory_swigregister", GameObjFactory_swigregister, METH_VARARGS, NULL},
+	 { (char *)"ControllerBase_plug", _wrap_ControllerBase_plug, METH_VARARGS, NULL},
+	 { (char *)"ControllerBase_unplug", _wrap_ControllerBase_unplug, METH_VARARGS, NULL},
+	 { (char *)"delete_ControllerBase", _wrap_delete_ControllerBase, METH_VARARGS, NULL},
+	 { (char *)"ControllerBase_swigregister", ControllerBase_swigregister, METH_VARARGS, NULL},
+	 { (char *)"new_IOSTouchController", _wrap_new_IOSTouchController, METH_VARARGS, NULL},
+	 { (char *)"delete_IOSTouchController", _wrap_delete_IOSTouchController, METH_VARARGS, NULL},
+	 { (char *)"IOSTouchController_ccTouchBegan", _wrap_IOSTouchController_ccTouchBegan, METH_VARARGS, NULL},
+	 { (char *)"IOSTouchController_ccTouchMoved", _wrap_IOSTouchController_ccTouchMoved, METH_VARARGS, NULL},
+	 { (char *)"IOSTouchController_ccTouchEnded", _wrap_IOSTouchController_ccTouchEnded, METH_VARARGS, NULL},
+	 { (char *)"IOSTouchController_ccTouchCancelled", _wrap_IOSTouchController_ccTouchCancelled, METH_VARARGS, NULL},
+	 { (char *)"IOSTouchController_plug", _wrap_IOSTouchController_plug, METH_VARARGS, NULL},
+	 { (char *)"IOSTouchController_unplug", _wrap_IOSTouchController_unplug, METH_VARARGS, NULL},
+	 { (char *)"disown_IOSTouchController", _wrap_disown_IOSTouchController, METH_VARARGS, NULL},
+	 { (char *)"IOSTouchController_swigregister", IOSTouchController_swigregister, METH_VARARGS, NULL},
+	 { (char *)"new_animation", _wrap_new_animation, METH_VARARGS, NULL},
+	 { (char *)"delete_animation", _wrap_delete_animation, METH_VARARGS, NULL},
+	 { (char *)"animation_name_set", _wrap_animation_name_set, METH_VARARGS, NULL},
+	 { (char *)"animation_name_get", _wrap_animation_name_get, METH_VARARGS, NULL},
+	 { (char *)"animation_ccanimation_set", _wrap_animation_ccanimation_set, METH_VARARGS, NULL},
+	 { (char *)"animation_ccanimation_get", _wrap_animation_ccanimation_get, METH_VARARGS, NULL},
+	 { (char *)"animation_swigregister", animation_swigregister, METH_VARARGS, NULL},
+	 { (char *)"new_b2fixture_def", _wrap_new_b2fixture_def, METH_VARARGS, NULL},
+	 { (char *)"b2fixture_def_identity_set", _wrap_b2fixture_def_identity_set, METH_VARARGS, NULL},
+	 { (char *)"b2fixture_def_identity_get", _wrap_b2fixture_def_identity_get, METH_VARARGS, NULL},
+	 { (char *)"delete_b2fixture_def", _wrap_delete_b2fixture_def, METH_VARARGS, NULL},
+	 { (char *)"b2fixture_def_swigregister", b2fixture_def_swigregister, METH_VARARGS, NULL},
+	 { (char *)"delete_physic_desc", _wrap_delete_physic_desc, METH_VARARGS, NULL},
+	 { (char *)"physic_desc_body_def_set", _wrap_physic_desc_body_def_set, METH_VARARGS, NULL},
+	 { (char *)"physic_desc_body_def_get", _wrap_physic_desc_body_def_get, METH_VARARGS, NULL},
+	 { (char *)"physic_desc_fixture_defs_set", _wrap_physic_desc_fixture_defs_set, METH_VARARGS, NULL},
+	 { (char *)"physic_desc_fixture_defs_get", _wrap_physic_desc_fixture_defs_get, METH_VARARGS, NULL},
+	 { (char *)"new_physic_desc", _wrap_new_physic_desc, METH_VARARGS, NULL},
+	 { (char *)"physic_desc_swigregister", physic_desc_swigregister, METH_VARARGS, NULL},
+	 { (char *)"sprite_component_desc_physic_desc_name_set", _wrap_sprite_component_desc_physic_desc_name_set, METH_VARARGS, NULL},
+	 { (char *)"sprite_component_desc_physic_desc_name_get", _wrap_sprite_component_desc_physic_desc_name_get, METH_VARARGS, NULL},
+	 { (char *)"sprite_component_desc_animation_names_set", _wrap_sprite_component_desc_animation_names_set, METH_VARARGS, NULL},
+	 { (char *)"sprite_component_desc_animation_names_get", _wrap_sprite_component_desc_animation_names_get, METH_VARARGS, NULL},
+	 { (char *)"new_sprite_component_desc", _wrap_new_sprite_component_desc, METH_VARARGS, NULL},
+	 { (char *)"delete_sprite_component_desc", _wrap_delete_sprite_component_desc, METH_VARARGS, NULL},
+	 { (char *)"sprite_component_desc_swigregister", sprite_component_desc_swigregister, METH_VARARGS, NULL},
+	 { (char *)"sprite_component_ref_component_name_set", _wrap_sprite_component_ref_component_name_set, METH_VARARGS, NULL},
+	 { (char *)"sprite_component_ref_component_name_get", _wrap_sprite_component_ref_component_name_get, METH_VARARGS, NULL},
+	 { (char *)"sprite_component_ref_offset_set", _wrap_sprite_component_ref_offset_set, METH_VARARGS, NULL},
+	 { (char *)"sprite_component_ref_offset_get", _wrap_sprite_component_ref_offset_get, METH_VARARGS, NULL},
+	 { (char *)"new_sprite_component_ref", _wrap_new_sprite_component_ref, METH_VARARGS, NULL},
+	 { (char *)"delete_sprite_component_ref", _wrap_delete_sprite_component_ref, METH_VARARGS, NULL},
+	 { (char *)"sprite_component_ref_swigregister", sprite_component_ref_swigregister, METH_VARARGS, NULL},
+	 { (char *)"new_sprite_joint_desc", _wrap_new_sprite_joint_desc, METH_VARARGS, NULL},
+	 { (char *)"delete_sprite_joint_desc", _wrap_delete_sprite_joint_desc, METH_VARARGS, NULL},
+	 { (char *)"sprite_joint_desc_component_a_set", _wrap_sprite_joint_desc_component_a_set, METH_VARARGS, NULL},
+	 { (char *)"sprite_joint_desc_component_a_get", _wrap_sprite_joint_desc_component_a_get, METH_VARARGS, NULL},
+	 { (char *)"sprite_joint_desc_component_b_set", _wrap_sprite_joint_desc_component_b_set, METH_VARARGS, NULL},
+	 { (char *)"sprite_joint_desc_component_b_get", _wrap_sprite_joint_desc_component_b_get, METH_VARARGS, NULL},
+	 { (char *)"sprite_joint_desc_joint_type_set", _wrap_sprite_joint_desc_joint_type_set, METH_VARARGS, NULL},
+	 { (char *)"sprite_joint_desc_joint_type_get", _wrap_sprite_joint_desc_joint_type_get, METH_VARARGS, NULL},
+	 { (char *)"sprite_joint_desc_swigregister", sprite_joint_desc_swigregister, METH_VARARGS, NULL},
+	 { (char *)"sprite_desc_components_set", _wrap_sprite_desc_components_set, METH_VARARGS, NULL},
+	 { (char *)"sprite_desc_components_get", _wrap_sprite_desc_components_get, METH_VARARGS, NULL},
+	 { (char *)"sprite_desc_joints_set", _wrap_sprite_desc_joints_set, METH_VARARGS, NULL},
+	 { (char *)"sprite_desc_joints_get", _wrap_sprite_desc_joints_get, METH_VARARGS, NULL},
+	 { (char *)"new_sprite_desc", _wrap_new_sprite_desc, METH_VARARGS, NULL},
+	 { (char *)"delete_sprite_desc", _wrap_delete_sprite_desc, METH_VARARGS, NULL},
+	 { (char *)"sprite_desc_swigregister", sprite_desc_swigregister, METH_VARARGS, NULL},
+	 { (char *)"delete_sprite_animation", _wrap_delete_sprite_animation, METH_VARARGS, NULL},
+	 { (char *)"new_sprite_animation", _wrap_new_sprite_animation, METH_VARARGS, NULL},
+	 { (char *)"sprite_animation_animation_set", _wrap_sprite_animation_animation_set, METH_VARARGS, NULL},
+	 { (char *)"sprite_animation_animation_get", _wrap_sprite_animation_animation_get, METH_VARARGS, NULL},
+	 { (char *)"sprite_animation_name_set", _wrap_sprite_animation_name_set, METH_VARARGS, NULL},
+	 { (char *)"sprite_animation_name_get", _wrap_sprite_animation_name_get, METH_VARARGS, NULL},
+	 { (char *)"sprite_animation_swigregister", sprite_animation_swigregister, METH_VARARGS, NULL},
+	 { (char *)"FixtureUserData_sprite_component_set", _wrap_FixtureUserData_sprite_component_set, METH_VARARGS, NULL},
+	 { (char *)"FixtureUserData_sprite_component_get", _wrap_FixtureUserData_sprite_component_get, METH_VARARGS, NULL},
+	 { (char *)"FixtureUserData_identity_set", _wrap_FixtureUserData_identity_set, METH_VARARGS, NULL},
+	 { (char *)"FixtureUserData_identity_get", _wrap_FixtureUserData_identity_get, METH_VARARGS, NULL},
+	 { (char *)"new_FixtureUserData", _wrap_new_FixtureUserData, METH_VARARGS, NULL},
+	 { (char *)"delete_FixtureUserData", _wrap_delete_FixtureUserData, METH_VARARGS, NULL},
+	 { (char *)"FixtureUserData_swigregister", FixtureUserData_swigregister, METH_VARARGS, NULL},
+	 { (char *)"new_SpriteComponent", _wrap_new_SpriteComponent, METH_VARARGS, NULL},
+	 { (char *)"delete_SpriteComponent", _wrap_delete_SpriteComponent, METH_VARARGS, NULL},
+	 { (char *)"SpriteComponent_play_anim", _wrap_SpriteComponent_play_anim, METH_VARARGS, NULL},
+	 { (char *)"SpriteComponent_draw", _wrap_SpriteComponent_draw, METH_VARARGS, NULL},
+	 { (char *)"SpriteComponent_update", _wrap_SpriteComponent_update, METH_VARARGS, NULL},
+	 { (char *)"SpriteComponent_setPosition", _wrap_SpriteComponent_setPosition, METH_VARARGS, NULL},
+	 { (char *)"SpriteComponent_getPosition", _wrap_SpriteComponent_getPosition, METH_VARARGS, NULL},
+	 { (char *)"SpriteComponent_isDirty", _wrap_SpriteComponent_isDirty, METH_VARARGS, NULL},
+	 { (char *)"SpriteComponent_nodeToParentTransform", _wrap_SpriteComponent_nodeToParentTransform, METH_VARARGS, NULL},
+	 { (char *)"SpriteComponent_begin_contact", _wrap_SpriteComponent_begin_contact, METH_VARARGS, NULL},
+	 { (char *)"SpriteComponent_end_contact", _wrap_SpriteComponent_end_contact, METH_VARARGS, NULL},
+	 { (char *)"SpriteComponent_set_linear_velocity", _wrap_SpriteComponent_set_linear_velocity, METH_VARARGS, NULL},
+	 { (char *)"SpriteComponent_set_linear_damping", _wrap_SpriteComponent_set_linear_damping, METH_VARARGS, NULL},
+	 { (char *)"SpriteComponent_apply_force", _wrap_SpriteComponent_apply_force, METH_VARARGS, NULL},
+	 { (char *)"SpriteComponent_apply_torque", _wrap_SpriteComponent_apply_torque, METH_VARARGS, NULL},
+	 { (char *)"SpriteComponent_set_angular_damping", _wrap_SpriteComponent_set_angular_damping, METH_VARARGS, NULL},
+	 { (char *)"SpriteComponent_apply_linear_impulse", _wrap_SpriteComponent_apply_linear_impulse, METH_VARARGS, NULL},
+	 { (char *)"SpriteComponent_apply_angular_impulse", _wrap_SpriteComponent_apply_angular_impulse, METH_VARARGS, NULL},
+	 { (char *)"SpriteComponent_wakeup", _wrap_SpriteComponent_wakeup, METH_VARARGS, NULL},
+	 { (char *)"SpriteComponent_set_owner", _wrap_SpriteComponent_set_owner, METH_VARARGS, NULL},
+	 { (char *)"SpriteComponent_get_owner", _wrap_SpriteComponent_get_owner, METH_VARARGS, NULL},
+	 { (char *)"SpriteComponent_swigregister", SpriteComponent_swigregister, METH_VARARGS, NULL},
 	 { NULL, NULL, 0, NULL }
 };
 
@@ -11348,19 +18586,34 @@ static PyMethodDef SwigMethods[] = {
 static void *_p_FESimple__SpriteBaseTo_p_FESimple__GameObjBase(void *x, int *SWIGUNUSEDPARM(newmemory)) {
     return (void *)((FESimple::GameObjBase *)  ((FESimple::SpriteBase *) x));
 }
+static void *_p_FESimple__IOSTouchControllerTo_p_FESimple__ControllerBase(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((FESimple::ControllerBase *)  ((FESimple::IOSTouchController *) x));
+}
 static swig_type_info _swigt__p_FESimple__ClassInfo = {"_p_FESimple__ClassInfo", "FESimple::ClassInfo *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_FESimple__ControllerBase = {"_p_FESimple__ControllerBase", "FESimple::ControllerBase *|std::vector< FESimple::ControllerBase * >::value_type", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_FESimple__FixtureUserData = {"_p_FESimple__FixtureUserData", "FESimple::FixtureUserData *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_FESimple__GameBase = {"_p_FESimple__GameBase", "FESimple::GameBase *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_FESimple__GameInfo = {"_p_FESimple__GameInfo", "FESimple::GameInfo *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_FESimple__GameObjBase = {"_p_FESimple__GameObjBase", "FESimple::GameObjBase *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_FESimple__GameObjFactory = {"_p_FESimple__GameObjFactory", "FESimple::GameObjFactory *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_FESimple__GameScene = {"_p_FESimple__GameScene", "FESimple::GameScene *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_FESimple__IOSTouchController = {"_p_FESimple__IOSTouchController", "FESimple::IOSTouchController *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_FESimple__LevelBase = {"_p_FESimple__LevelBase", "FESimple::LevelBase *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_FESimple__LevelBound = {"_p_FESimple__LevelBound", "FESimple::LevelBound *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_FESimple__LevelData = {"_p_FESimple__LevelData", "FESimple::LevelData *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_FESimple__LevelTrigger = {"_p_FESimple__LevelTrigger", "FESimple::LevelTrigger *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_FESimple__SpriteBase = {"_p_FESimple__SpriteBase", "FESimple::SpriteBase *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_FESimple__SpriteComponent = {"_p_FESimple__SpriteComponent", "FESimple::SpriteComponent *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_FESimple__animation = {"_p_FESimple__animation", "FESimple::animation *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_FESimple__b2fixture_def = {"_p_FESimple__b2fixture_def", "FESimple::b2fixture_def *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_FESimple__physic_desc = {"_p_FESimple__physic_desc", "FESimple::physic_desc *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_FESimple__sprite_animation = {"_p_FESimple__sprite_animation", "FESimple::sprite_animation *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_FESimple__sprite_component_desc = {"_p_FESimple__sprite_component_desc", "FESimple::sprite_component_desc *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_FESimple__sprite_component_ref = {"_p_FESimple__sprite_component_ref", "FESimple::sprite_component_ref *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_FESimple__sprite_desc = {"_p_FESimple__sprite_desc", "FESimple::sprite_desc *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_FESimple__sprite_joint_desc = {"_p_FESimple__sprite_joint_desc", "FESimple::sprite_joint_desc *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_allocator_type = {"_p_allocator_type", "allocator_type *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_b2BodyDef = {"_p_b2BodyDef", "b2BodyDef *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_b2BodyType = {"_p_b2BodyType", "b2BodyType *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_b2Contact = {"_p_b2Contact", "b2Contact *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_b2JointType = {"_p_b2JointType", "b2JointType *", 0, 0, (void*)0, 0};
@@ -11368,44 +18621,70 @@ static swig_type_info _swigt__p_b2Vec2 = {"_p_b2Vec2", "b2Vec2 *", 0, 0, (void*)
 static swig_type_info _swigt__p_b2World = {"_p_b2World", "b2World *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_bool = {"_p_bool", "bool *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_char = {"_p_char", "char *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_cocos2d__CCAction = {"_p_cocos2d__CCAction", "cocos2d::CCAction *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_cocos2d__CCAffineTransform = {"_p_cocos2d__CCAffineTransform", "cocos2d::CCAffineTransform *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_cocos2d__CCAnimation = {"_p_cocos2d__CCAnimation", "cocos2d::CCAnimation *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_cocos2d__CCEvent = {"_p_cocos2d__CCEvent", "cocos2d::CCEvent *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_cocos2d__CCPoint = {"_p_cocos2d__CCPoint", "cocos2d::CCPoint *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_cocos2d__CCRect = {"_p_cocos2d__CCRect", "cocos2d::CCRect *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_cocos2d__CCSize = {"_p_cocos2d__CCSize", "cocos2d::CCSize *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_cocos2d__CCTouch = {"_p_cocos2d__CCTouch", "cocos2d::CCTouch *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_const_reference = {"_p_const_reference", "const_reference *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_difference_type = {"_p_difference_type", "difference_type *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_key_type = {"_p_key_type", "key_type *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_mapped_type = {"_p_mapped_type", "mapped_type *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_p_PyObject = {"_p_p_PyObject", "PyObject **", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_reference = {"_p_reference", "reference *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_size_type = {"_p_size_type", "size_type *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_std__allocatorT_FESimple__ControllerBase_p_t = {"_p_std__allocatorT_FESimple__ControllerBase_p_t", "std::vector< FESimple::ControllerBase * >::allocator_type *|std::allocator< FESimple::ControllerBase * > *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_std__allocatorT_std__pairT_std__string_const_std__string_t_t = {"_p_std__allocatorT_std__pairT_std__string_const_std__string_t_t", "std::map< std::string,std::string >::allocator_type *|std::allocator< std::pair< std::string const,std::string > > *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_std__functionT_void_pfstd__mapT_std__string_std__string_std__lessT_std__string_t_std__allocatorT_std__pairT_std__string_const_std__string_t_t_t_const_RF_t = {"_p_std__functionT_void_pfstd__mapT_std__string_std__string_std__lessT_std__string_t_std__allocatorT_std__pairT_std__string_const_std__string_t_t_t_const_RF_t", "std::function< void *(std::map< std::string,std::string,std::less< std::string >,std::allocator< std::pair< std::string const,std::string > > > const &) > *|std::function< void *(FESimple::SpawnParams const &) > *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_std__invalid_argument = {"_p_std__invalid_argument", "std::invalid_argument *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_std__lessT_std__string_t = {"_p_std__lessT_std__string_t", "std::less< std::string > *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_std__mapT_std__string_std__string_std__lessT_std__string_t_std__allocatorT_std__pairT_std__string_const_std__string_t_t_t = {"_p_std__mapT_std__string_std__string_std__lessT_std__string_t_std__allocatorT_std__pairT_std__string_const_std__string_t_t_t", "FESimple::SpawnParams *|std::map< std::string,std::string,std::less< std::string >,std::allocator< std::pair< std::string const,std::string > > > *|std::map< std::string,std::string > *|std::map< FESimple::Name,std::string,std::less< FESimple::Name >,std::allocator< std::pair< FESimple::Name const,std::string > > > *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_std__shared_ptrT_FESimple__GameObjBase_t = {"_p_std__shared_ptrT_FESimple__GameObjBase_t", "FESimple::GameObjPtr *|std::shared_ptr< FESimple::GameObjBase > *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_std__shared_ptrT_sprite_desc_t = {"_p_std__shared_ptrT_sprite_desc_t", "std::shared_ptr< sprite_desc > *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_std__shared_ptrT_FESimple__sprite_component_desc_t = {"_p_std__shared_ptrT_FESimple__sprite_component_desc_t", "std::shared_ptr< FESimple::sprite_component_desc > *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_std__string = {"_p_std__string", "FESimple::Name *|std::string *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_std__vectorT_ClassInfo_p_t = {"_p_std__vectorT_ClassInfo_p_t", "std::vector< ClassInfo * > *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_std__vectorT_FESimple__ClassInfo_p_t = {"_p_std__vectorT_FESimple__ClassInfo_p_t", "std::vector< FESimple::ClassInfo * > *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_std__vectorT_FESimple__ControllerBase_p_t = {"_p_std__vectorT_FESimple__ControllerBase_p_t", "std::vector< FESimple::ControllerBase * > *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_std__vectorT_FESimple__LevelTrigger_t = {"_p_std__vectorT_FESimple__LevelTrigger_t", "std::vector< FESimple::LevelTrigger > *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_std__vectorT_float_t = {"_p_std__vectorT_float_t", "std::vector< float > *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_std__vectorT_std__string_t = {"_p_std__vectorT_std__string_t", "std::vector< std::string > *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_std__vectorT_ClassInfo_p_std__allocatorT_FESimple__ClassInfo_p_t_t = {"_p_std__vectorT_ClassInfo_p_std__allocatorT_FESimple__ClassInfo_p_t_t", "std::vector< ClassInfo *,std::allocator< FESimple::ClassInfo * > > *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_std__vectorT_FESimple__ClassInfo_p_std__allocatorT_FESimple__ClassInfo_p_t_t = {"_p_std__vectorT_FESimple__ClassInfo_p_std__allocatorT_FESimple__ClassInfo_p_t_t", "std::vector< FESimple::ClassInfo *,std::allocator< FESimple::ClassInfo * > > *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_std__vectorT_FESimple__ControllerBase_p_std__allocatorT_FESimple__ControllerBase_p_t_t = {"_p_std__vectorT_FESimple__ControllerBase_p_std__allocatorT_FESimple__ControllerBase_p_t_t", "std::vector< FESimple::ControllerBase * > *|std::vector< FESimple::ControllerBase *,std::allocator< FESimple::ControllerBase * > > *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_std__vectorT_FESimple__LevelTrigger_std__allocatorT_FESimple__LevelTrigger_t_t = {"_p_std__vectorT_FESimple__LevelTrigger_std__allocatorT_FESimple__LevelTrigger_t_t", "std::vector< FESimple::LevelTrigger,std::allocator< FESimple::LevelTrigger > > *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_std__vectorT_FESimple__b2fixture_def_std__allocatorT_FESimple__b2fixture_def_t_t = {"_p_std__vectorT_FESimple__b2fixture_def_std__allocatorT_FESimple__b2fixture_def_t_t", "std::vector< FESimple::b2fixture_def,std::allocator< FESimple::b2fixture_def > > *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_std__vectorT_FESimple__sprite_component_ref_std__allocatorT_FESimple__sprite_component_ref_t_t = {"_p_std__vectorT_FESimple__sprite_component_ref_std__allocatorT_FESimple__sprite_component_ref_t_t", "std::vector< FESimple::sprite_component_ref,std::allocator< FESimple::sprite_component_ref > > *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_std__vectorT_FESimple__sprite_joint_desc_std__allocatorT_FESimple__sprite_joint_desc_t_t = {"_p_std__vectorT_FESimple__sprite_joint_desc_std__allocatorT_FESimple__sprite_joint_desc_t_t", "std::vector< FESimple::sprite_joint_desc,std::allocator< FESimple::sprite_joint_desc > > *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_std__vectorT__Tp_p__Alloc_t = {"_p_std__vectorT__Tp_p__Alloc_t", "std::vector< _Tp *,_Alloc > *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_std__vectorT_float_std__allocatorT_float_t_t = {"_p_std__vectorT_float_std__allocatorT_float_t_t", "std::vector< float,std::allocator< float > > *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_std__vectorT_std__string_std__allocatorT_std__string_t_t = {"_p_std__vectorT_std__string_std__allocatorT_std__string_t_t", "std::vector< std::string,std::allocator< std::string > > *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_std__weak_ptrT_FESimple__SpriteBase_t = {"_p_std__weak_ptrT_FESimple__SpriteBase_t", "std::weak_ptr< FESimple::SpriteBase > *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_swig__SwigPyIterator = {"_p_swig__SwigPyIterator", "swig::SwigPyIterator *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_value_type = {"_p_value_type", "value_type *", 0, 0, (void*)0, 0};
 
 static swig_type_info *swig_type_initial[] = {
   &_swigt__p_FESimple__ClassInfo,
+  &_swigt__p_FESimple__ControllerBase,
+  &_swigt__p_FESimple__FixtureUserData,
   &_swigt__p_FESimple__GameBase,
   &_swigt__p_FESimple__GameInfo,
   &_swigt__p_FESimple__GameObjBase,
   &_swigt__p_FESimple__GameObjFactory,
   &_swigt__p_FESimple__GameScene,
+  &_swigt__p_FESimple__IOSTouchController,
   &_swigt__p_FESimple__LevelBase,
   &_swigt__p_FESimple__LevelBound,
   &_swigt__p_FESimple__LevelData,
   &_swigt__p_FESimple__LevelTrigger,
   &_swigt__p_FESimple__SpriteBase,
   &_swigt__p_FESimple__SpriteComponent,
+  &_swigt__p_FESimple__animation,
+  &_swigt__p_FESimple__b2fixture_def,
+  &_swigt__p_FESimple__physic_desc,
+  &_swigt__p_FESimple__sprite_animation,
+  &_swigt__p_FESimple__sprite_component_desc,
+  &_swigt__p_FESimple__sprite_component_ref,
+  &_swigt__p_FESimple__sprite_desc,
+  &_swigt__p_FESimple__sprite_joint_desc,
   &_swigt__p_allocator_type,
+  &_swigt__p_b2BodyDef,
   &_swigt__p_b2BodyType,
   &_swigt__p_b2Contact,
   &_swigt__p_b2JointType,
@@ -11413,44 +18692,70 @@ static swig_type_info *swig_type_initial[] = {
   &_swigt__p_b2World,
   &_swigt__p_bool,
   &_swigt__p_char,
+  &_swigt__p_cocos2d__CCAction,
+  &_swigt__p_cocos2d__CCAffineTransform,
+  &_swigt__p_cocos2d__CCAnimation,
+  &_swigt__p_cocos2d__CCEvent,
   &_swigt__p_cocos2d__CCPoint,
   &_swigt__p_cocos2d__CCRect,
+  &_swigt__p_cocos2d__CCSize,
+  &_swigt__p_cocos2d__CCTouch,
+  &_swigt__p_const_reference,
   &_swigt__p_difference_type,
   &_swigt__p_key_type,
   &_swigt__p_mapped_type,
   &_swigt__p_p_PyObject,
+  &_swigt__p_reference,
   &_swigt__p_size_type,
+  &_swigt__p_std__allocatorT_FESimple__ControllerBase_p_t,
   &_swigt__p_std__allocatorT_std__pairT_std__string_const_std__string_t_t,
   &_swigt__p_std__functionT_void_pfstd__mapT_std__string_std__string_std__lessT_std__string_t_std__allocatorT_std__pairT_std__string_const_std__string_t_t_t_const_RF_t,
   &_swigt__p_std__invalid_argument,
   &_swigt__p_std__lessT_std__string_t,
   &_swigt__p_std__mapT_std__string_std__string_std__lessT_std__string_t_std__allocatorT_std__pairT_std__string_const_std__string_t_t_t,
   &_swigt__p_std__shared_ptrT_FESimple__GameObjBase_t,
-  &_swigt__p_std__shared_ptrT_sprite_desc_t,
+  &_swigt__p_std__shared_ptrT_FESimple__sprite_component_desc_t,
   &_swigt__p_std__string,
-  &_swigt__p_std__vectorT_ClassInfo_p_t,
-  &_swigt__p_std__vectorT_FESimple__ClassInfo_p_t,
-  &_swigt__p_std__vectorT_FESimple__ControllerBase_p_t,
-  &_swigt__p_std__vectorT_FESimple__LevelTrigger_t,
-  &_swigt__p_std__vectorT_float_t,
-  &_swigt__p_std__vectorT_std__string_t,
+  &_swigt__p_std__vectorT_ClassInfo_p_std__allocatorT_FESimple__ClassInfo_p_t_t,
+  &_swigt__p_std__vectorT_FESimple__ClassInfo_p_std__allocatorT_FESimple__ClassInfo_p_t_t,
+  &_swigt__p_std__vectorT_FESimple__ControllerBase_p_std__allocatorT_FESimple__ControllerBase_p_t_t,
+  &_swigt__p_std__vectorT_FESimple__LevelTrigger_std__allocatorT_FESimple__LevelTrigger_t_t,
+  &_swigt__p_std__vectorT_FESimple__b2fixture_def_std__allocatorT_FESimple__b2fixture_def_t_t,
+  &_swigt__p_std__vectorT_FESimple__sprite_component_ref_std__allocatorT_FESimple__sprite_component_ref_t_t,
+  &_swigt__p_std__vectorT_FESimple__sprite_joint_desc_std__allocatorT_FESimple__sprite_joint_desc_t_t,
+  &_swigt__p_std__vectorT__Tp_p__Alloc_t,
+  &_swigt__p_std__vectorT_float_std__allocatorT_float_t_t,
+  &_swigt__p_std__vectorT_std__string_std__allocatorT_std__string_t_t,
+  &_swigt__p_std__weak_ptrT_FESimple__SpriteBase_t,
   &_swigt__p_swig__SwigPyIterator,
   &_swigt__p_value_type,
 };
 
 static swig_cast_info _swigc__p_FESimple__ClassInfo[] = {  {&_swigt__p_FESimple__ClassInfo, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_FESimple__ControllerBase[] = {  {&_swigt__p_FESimple__ControllerBase, 0, 0, 0},  {&_swigt__p_FESimple__IOSTouchController, _p_FESimple__IOSTouchControllerTo_p_FESimple__ControllerBase, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_FESimple__FixtureUserData[] = {  {&_swigt__p_FESimple__FixtureUserData, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_FESimple__GameBase[] = {  {&_swigt__p_FESimple__GameBase, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_FESimple__GameInfo[] = {  {&_swigt__p_FESimple__GameInfo, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_FESimple__GameObjBase[] = {  {&_swigt__p_FESimple__GameObjBase, 0, 0, 0},  {&_swigt__p_FESimple__SpriteBase, _p_FESimple__SpriteBaseTo_p_FESimple__GameObjBase, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_FESimple__GameObjFactory[] = {  {&_swigt__p_FESimple__GameObjFactory, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_FESimple__GameScene[] = {  {&_swigt__p_FESimple__GameScene, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_FESimple__IOSTouchController[] = {  {&_swigt__p_FESimple__IOSTouchController, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_FESimple__LevelBase[] = {  {&_swigt__p_FESimple__LevelBase, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_FESimple__LevelBound[] = {  {&_swigt__p_FESimple__LevelBound, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_FESimple__LevelData[] = {  {&_swigt__p_FESimple__LevelData, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_FESimple__LevelTrigger[] = {  {&_swigt__p_FESimple__LevelTrigger, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_FESimple__SpriteBase[] = {  {&_swigt__p_FESimple__SpriteBase, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_FESimple__SpriteComponent[] = {  {&_swigt__p_FESimple__SpriteComponent, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_FESimple__animation[] = {  {&_swigt__p_FESimple__animation, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_FESimple__b2fixture_def[] = {  {&_swigt__p_FESimple__b2fixture_def, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_FESimple__physic_desc[] = {  {&_swigt__p_FESimple__physic_desc, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_FESimple__sprite_animation[] = {  {&_swigt__p_FESimple__sprite_animation, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_FESimple__sprite_component_desc[] = {  {&_swigt__p_FESimple__sprite_component_desc, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_FESimple__sprite_component_ref[] = {  {&_swigt__p_FESimple__sprite_component_ref, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_FESimple__sprite_desc[] = {  {&_swigt__p_FESimple__sprite_desc, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_FESimple__sprite_joint_desc[] = {  {&_swigt__p_FESimple__sprite_joint_desc, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_allocator_type[] = {  {&_swigt__p_allocator_type, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_b2BodyDef[] = {  {&_swigt__p_b2BodyDef, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_b2BodyType[] = {  {&_swigt__p_b2BodyType, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_b2Contact[] = {  {&_swigt__p_b2Contact, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_b2JointType[] = {  {&_swigt__p_b2JointType, 0, 0, 0},{0, 0, 0, 0}};
@@ -11458,44 +18763,70 @@ static swig_cast_info _swigc__p_b2Vec2[] = {  {&_swigt__p_b2Vec2, 0, 0, 0},{0, 0
 static swig_cast_info _swigc__p_b2World[] = {  {&_swigt__p_b2World, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_bool[] = {  {&_swigt__p_bool, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_char[] = {  {&_swigt__p_char, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_cocos2d__CCAction[] = {  {&_swigt__p_cocos2d__CCAction, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_cocos2d__CCAffineTransform[] = {  {&_swigt__p_cocos2d__CCAffineTransform, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_cocos2d__CCAnimation[] = {  {&_swigt__p_cocos2d__CCAnimation, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_cocos2d__CCEvent[] = {  {&_swigt__p_cocos2d__CCEvent, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_cocos2d__CCPoint[] = {  {&_swigt__p_cocos2d__CCPoint, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_cocos2d__CCRect[] = {  {&_swigt__p_cocos2d__CCRect, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_cocos2d__CCSize[] = {  {&_swigt__p_cocos2d__CCSize, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_cocos2d__CCTouch[] = {  {&_swigt__p_cocos2d__CCTouch, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_const_reference[] = {  {&_swigt__p_const_reference, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_difference_type[] = {  {&_swigt__p_difference_type, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_key_type[] = {  {&_swigt__p_key_type, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_mapped_type[] = {  {&_swigt__p_mapped_type, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_p_PyObject[] = {  {&_swigt__p_p_PyObject, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_reference[] = {  {&_swigt__p_reference, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_size_type[] = {  {&_swigt__p_size_type, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_std__allocatorT_FESimple__ControllerBase_p_t[] = {  {&_swigt__p_std__allocatorT_FESimple__ControllerBase_p_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_std__allocatorT_std__pairT_std__string_const_std__string_t_t[] = {  {&_swigt__p_std__allocatorT_std__pairT_std__string_const_std__string_t_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_std__functionT_void_pfstd__mapT_std__string_std__string_std__lessT_std__string_t_std__allocatorT_std__pairT_std__string_const_std__string_t_t_t_const_RF_t[] = {  {&_swigt__p_std__functionT_void_pfstd__mapT_std__string_std__string_std__lessT_std__string_t_std__allocatorT_std__pairT_std__string_const_std__string_t_t_t_const_RF_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_std__invalid_argument[] = {  {&_swigt__p_std__invalid_argument, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_std__lessT_std__string_t[] = {  {&_swigt__p_std__lessT_std__string_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_std__mapT_std__string_std__string_std__lessT_std__string_t_std__allocatorT_std__pairT_std__string_const_std__string_t_t_t[] = {  {&_swigt__p_std__mapT_std__string_std__string_std__lessT_std__string_t_std__allocatorT_std__pairT_std__string_const_std__string_t_t_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_std__shared_ptrT_FESimple__GameObjBase_t[] = {  {&_swigt__p_std__shared_ptrT_FESimple__GameObjBase_t, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_std__shared_ptrT_sprite_desc_t[] = {  {&_swigt__p_std__shared_ptrT_sprite_desc_t, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_std__shared_ptrT_FESimple__sprite_component_desc_t[] = {  {&_swigt__p_std__shared_ptrT_FESimple__sprite_component_desc_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_std__string[] = {  {&_swigt__p_std__string, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_std__vectorT_ClassInfo_p_t[] = {  {&_swigt__p_std__vectorT_ClassInfo_p_t, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_std__vectorT_FESimple__ClassInfo_p_t[] = {  {&_swigt__p_std__vectorT_FESimple__ClassInfo_p_t, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_std__vectorT_FESimple__ControllerBase_p_t[] = {  {&_swigt__p_std__vectorT_FESimple__ControllerBase_p_t, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_std__vectorT_FESimple__LevelTrigger_t[] = {  {&_swigt__p_std__vectorT_FESimple__LevelTrigger_t, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_std__vectorT_float_t[] = {  {&_swigt__p_std__vectorT_float_t, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_std__vectorT_std__string_t[] = {  {&_swigt__p_std__vectorT_std__string_t, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_std__vectorT_ClassInfo_p_std__allocatorT_FESimple__ClassInfo_p_t_t[] = {  {&_swigt__p_std__vectorT_ClassInfo_p_std__allocatorT_FESimple__ClassInfo_p_t_t, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_std__vectorT_FESimple__ClassInfo_p_std__allocatorT_FESimple__ClassInfo_p_t_t[] = {  {&_swigt__p_std__vectorT_FESimple__ClassInfo_p_std__allocatorT_FESimple__ClassInfo_p_t_t, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_std__vectorT_FESimple__ControllerBase_p_std__allocatorT_FESimple__ControllerBase_p_t_t[] = {  {&_swigt__p_std__vectorT_FESimple__ControllerBase_p_std__allocatorT_FESimple__ControllerBase_p_t_t, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_std__vectorT_FESimple__LevelTrigger_std__allocatorT_FESimple__LevelTrigger_t_t[] = {  {&_swigt__p_std__vectorT_FESimple__LevelTrigger_std__allocatorT_FESimple__LevelTrigger_t_t, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_std__vectorT_FESimple__b2fixture_def_std__allocatorT_FESimple__b2fixture_def_t_t[] = {  {&_swigt__p_std__vectorT_FESimple__b2fixture_def_std__allocatorT_FESimple__b2fixture_def_t_t, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_std__vectorT_FESimple__sprite_component_ref_std__allocatorT_FESimple__sprite_component_ref_t_t[] = {  {&_swigt__p_std__vectorT_FESimple__sprite_component_ref_std__allocatorT_FESimple__sprite_component_ref_t_t, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_std__vectorT_FESimple__sprite_joint_desc_std__allocatorT_FESimple__sprite_joint_desc_t_t[] = {  {&_swigt__p_std__vectorT_FESimple__sprite_joint_desc_std__allocatorT_FESimple__sprite_joint_desc_t_t, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_std__vectorT__Tp_p__Alloc_t[] = {  {&_swigt__p_std__vectorT__Tp_p__Alloc_t, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_std__vectorT_float_std__allocatorT_float_t_t[] = {  {&_swigt__p_std__vectorT_float_std__allocatorT_float_t_t, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_std__vectorT_std__string_std__allocatorT_std__string_t_t[] = {  {&_swigt__p_std__vectorT_std__string_std__allocatorT_std__string_t_t, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_std__weak_ptrT_FESimple__SpriteBase_t[] = {  {&_swigt__p_std__weak_ptrT_FESimple__SpriteBase_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_swig__SwigPyIterator[] = {  {&_swigt__p_swig__SwigPyIterator, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_value_type[] = {  {&_swigt__p_value_type, 0, 0, 0},{0, 0, 0, 0}};
 
 static swig_cast_info *swig_cast_initial[] = {
   _swigc__p_FESimple__ClassInfo,
+  _swigc__p_FESimple__ControllerBase,
+  _swigc__p_FESimple__FixtureUserData,
   _swigc__p_FESimple__GameBase,
   _swigc__p_FESimple__GameInfo,
   _swigc__p_FESimple__GameObjBase,
   _swigc__p_FESimple__GameObjFactory,
   _swigc__p_FESimple__GameScene,
+  _swigc__p_FESimple__IOSTouchController,
   _swigc__p_FESimple__LevelBase,
   _swigc__p_FESimple__LevelBound,
   _swigc__p_FESimple__LevelData,
   _swigc__p_FESimple__LevelTrigger,
   _swigc__p_FESimple__SpriteBase,
   _swigc__p_FESimple__SpriteComponent,
+  _swigc__p_FESimple__animation,
+  _swigc__p_FESimple__b2fixture_def,
+  _swigc__p_FESimple__physic_desc,
+  _swigc__p_FESimple__sprite_animation,
+  _swigc__p_FESimple__sprite_component_desc,
+  _swigc__p_FESimple__sprite_component_ref,
+  _swigc__p_FESimple__sprite_desc,
+  _swigc__p_FESimple__sprite_joint_desc,
   _swigc__p_allocator_type,
+  _swigc__p_b2BodyDef,
   _swigc__p_b2BodyType,
   _swigc__p_b2Contact,
   _swigc__p_b2JointType,
@@ -11503,27 +18834,41 @@ static swig_cast_info *swig_cast_initial[] = {
   _swigc__p_b2World,
   _swigc__p_bool,
   _swigc__p_char,
+  _swigc__p_cocos2d__CCAction,
+  _swigc__p_cocos2d__CCAffineTransform,
+  _swigc__p_cocos2d__CCAnimation,
+  _swigc__p_cocos2d__CCEvent,
   _swigc__p_cocos2d__CCPoint,
   _swigc__p_cocos2d__CCRect,
+  _swigc__p_cocos2d__CCSize,
+  _swigc__p_cocos2d__CCTouch,
+  _swigc__p_const_reference,
   _swigc__p_difference_type,
   _swigc__p_key_type,
   _swigc__p_mapped_type,
   _swigc__p_p_PyObject,
+  _swigc__p_reference,
   _swigc__p_size_type,
+  _swigc__p_std__allocatorT_FESimple__ControllerBase_p_t,
   _swigc__p_std__allocatorT_std__pairT_std__string_const_std__string_t_t,
   _swigc__p_std__functionT_void_pfstd__mapT_std__string_std__string_std__lessT_std__string_t_std__allocatorT_std__pairT_std__string_const_std__string_t_t_t_const_RF_t,
   _swigc__p_std__invalid_argument,
   _swigc__p_std__lessT_std__string_t,
   _swigc__p_std__mapT_std__string_std__string_std__lessT_std__string_t_std__allocatorT_std__pairT_std__string_const_std__string_t_t_t,
   _swigc__p_std__shared_ptrT_FESimple__GameObjBase_t,
-  _swigc__p_std__shared_ptrT_sprite_desc_t,
+  _swigc__p_std__shared_ptrT_FESimple__sprite_component_desc_t,
   _swigc__p_std__string,
-  _swigc__p_std__vectorT_ClassInfo_p_t,
-  _swigc__p_std__vectorT_FESimple__ClassInfo_p_t,
-  _swigc__p_std__vectorT_FESimple__ControllerBase_p_t,
-  _swigc__p_std__vectorT_FESimple__LevelTrigger_t,
-  _swigc__p_std__vectorT_float_t,
-  _swigc__p_std__vectorT_std__string_t,
+  _swigc__p_std__vectorT_ClassInfo_p_std__allocatorT_FESimple__ClassInfo_p_t_t,
+  _swigc__p_std__vectorT_FESimple__ClassInfo_p_std__allocatorT_FESimple__ClassInfo_p_t_t,
+  _swigc__p_std__vectorT_FESimple__ControllerBase_p_std__allocatorT_FESimple__ControllerBase_p_t_t,
+  _swigc__p_std__vectorT_FESimple__LevelTrigger_std__allocatorT_FESimple__LevelTrigger_t_t,
+  _swigc__p_std__vectorT_FESimple__b2fixture_def_std__allocatorT_FESimple__b2fixture_def_t_t,
+  _swigc__p_std__vectorT_FESimple__sprite_component_ref_std__allocatorT_FESimple__sprite_component_ref_t_t,
+  _swigc__p_std__vectorT_FESimple__sprite_joint_desc_std__allocatorT_FESimple__sprite_joint_desc_t_t,
+  _swigc__p_std__vectorT__Tp_p__Alloc_t,
+  _swigc__p_std__vectorT_float_std__allocatorT_float_t_t,
+  _swigc__p_std__vectorT_std__string_std__allocatorT_std__string_t_t,
+  _swigc__p_std__weak_ptrT_FESimple__SpriteBase_t,
   _swigc__p_swig__SwigPyIterator,
   _swigc__p_value_type,
 };

@@ -226,5 +226,9 @@ GameInfo* get_game_info()
     return &g_game_info;
 }
 
+GameObjPtr make_gameobj_ptr( GameObjBase* p )
+{
+    return GameObjPtr(p);
+}
 FE_NS_END
 

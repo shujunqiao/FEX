@@ -1,0 +1,271 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		04F0CB96179048BF00321D88 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04F0CB95179048BF00321D88 /* Foundation.framework */; };
+		04F0CBA517904A1A00321D88 /* Hero.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04F0CBA317904A1A00321D88 /* Hero.cpp */; };
+		04F0CBAB17904B3E00321D88 /* IOSTcouchController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04F0CBA917904B3E00321D88 /* IOSTcouchController.cpp */; };
+		04F0CBAE17904BA900321D88 /* GameSAD.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04F0CBAC17904BA900321D88 /* GameSAD.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		04F0CB90179048BF00321D88 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/${PRODUCT_NAME}";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		04F0CB92179048BF00321D88 /* libGameSADLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libGameSADLib.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		04F0CB95179048BF00321D88 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		04F0CB99179048BF00321D88 /* GameSADLib-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "GameSADLib-Prefix.pch"; path = "GameSADLib/GameSADLib-Prefix.pch"; sourceTree = "<group>"; };
+		04F0CBA317904A1A00321D88 /* Hero.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Hero.cpp; sourceTree = "<group>"; };
+		04F0CBA417904A1A00321D88 /* Hero.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Hero.h; sourceTree = "<group>"; };
+		04F0CBA917904B3E00321D88 /* IOSTcouchController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IOSTcouchController.cpp; sourceTree = "<group>"; };
+		04F0CBAA17904B3E00321D88 /* IOSTcouchController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOSTcouchController.h; sourceTree = "<group>"; };
+		04F0CBAC17904BA900321D88 /* GameSAD.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameSAD.cpp; sourceTree = "<group>"; };
+		04F0CBAD17904BA900321D88 /* GameSAD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameSAD.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		04F0CB8F179048BF00321D88 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04F0CB96179048BF00321D88 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		04F0CB89179048BF00321D88 = {
+			isa = PBXGroup;
+			children = (
+				04F0CB99179048BF00321D88 /* GameSADLib-Prefix.pch */,
+				04F0CB97179048BF00321D88 /* GameSADLib */,
+				04F0CB94179048BF00321D88 /* Frameworks */,
+				04F0CB93179048BF00321D88 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		04F0CB93179048BF00321D88 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				04F0CB92179048BF00321D88 /* libGameSADLib.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		04F0CB94179048BF00321D88 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				04F0CB95179048BF00321D88 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		04F0CB97179048BF00321D88 /* GameSADLib */ = {
+			isa = PBXGroup;
+			children = (
+				04F0CBA917904B3E00321D88 /* IOSTcouchController.cpp */,
+				04F0CBAA17904B3E00321D88 /* IOSTcouchController.h */,
+				04F0CBA317904A1A00321D88 /* Hero.cpp */,
+				04F0CBA417904A1A00321D88 /* Hero.h */,
+				04F0CBAC17904BA900321D88 /* GameSAD.cpp */,
+				04F0CBAD17904BA900321D88 /* GameSAD.h */,
+			);
+			path = GameSADLib;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		04F0CB91179048BF00321D88 /* GameSADLib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04F0CBA0179048BF00321D88 /* Build configuration list for PBXNativeTarget "GameSADLib" */;
+			buildPhases = (
+				04F0CB8E179048BF00321D88 /* Sources */,
+				04F0CB8F179048BF00321D88 /* Frameworks */,
+				04F0CB90179048BF00321D88 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GameSADLib;
+			productName = GameSADLib;
+			productReference = 04F0CB92179048BF00321D88 /* libGameSADLib.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		04F0CB8A179048BF00321D88 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = Fancyzero;
+			};
+			buildConfigurationList = 04F0CB8D179048BF00321D88 /* Build configuration list for PBXProject "GameSADLib" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 04F0CB89179048BF00321D88;
+			productRefGroup = 04F0CB93179048BF00321D88 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				04F0CB91179048BF00321D88 /* GameSADLib */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		04F0CB8E179048BF00321D88 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04F0CBA517904A1A00321D88 /* Hero.cpp in Sources */,
+				04F0CBAB17904B3E00321D88 /* IOSTcouchController.cpp in Sources */,
+				04F0CBAE17904BA900321D88 /* GameSAD.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		04F0CB9E179048BF00321D88 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		04F0CB9F179048BF00321D88 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		04F0CBA1179048BF00321D88 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/GameSADLib.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GameSADLib/GameSADLib-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"\"../libs/cocos2dx/kazmath/include\"",
+					"\"../libs/cocos2dx\"",
+					"\"../libs/CocosDenshion/include\"",
+					"\"../libs/extensions\"",
+					"\"../libs/cocos2dx/include\"",
+					"\"../libs/cocos2dx/platform/third_party/ios\"",
+					"\"../libs/cocos2dx/platform/ios\"",
+					"\"../libs/external\"",
+					../FEX,
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		04F0CBA2179048BF00321D88 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/GameSADLib.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GameSADLib/GameSADLib-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"\"../libs/cocos2dx/kazmath/include\"",
+					"\"../libs/cocos2dx\"",
+					"\"../libs/CocosDenshion/include\"",
+					"\"../libs/extensions\"",
+					"\"../libs/cocos2dx/include\"",
+					"\"../libs/cocos2dx/platform/third_party/ios\"",
+					"\"../libs/cocos2dx/platform/ios\"",
+					"\"../libs/external\"",
+					../FEX,
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		04F0CB8D179048BF00321D88 /* Build configuration list for PBXProject "GameSADLib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04F0CB9E179048BF00321D88 /* Debug */,
+				04F0CB9F179048BF00321D88 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04F0CBA0179048BF00321D88 /* Build configuration list for PBXNativeTarget "GameSADLib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04F0CBA1179048BF00321D88 /* Debug */,
+				04F0CBA2179048BF00321D88 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 04F0CB8A179048BF00321D88 /* Project object */;
+}
