@@ -177,9 +177,15 @@ protected:
     std::vector<sprite_animation>   animations;
     b2Body*                         phy_body;
     
+    
+    
 };
 
-
+template <typename ...Args>
+void proxycall( Args &&... args)
+{
+        printf("",args...);
+}
 
 FE_NS_END
 #endif /* defined(__FEX__Sprite__) */

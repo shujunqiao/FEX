@@ -33,6 +33,9 @@
 %feature("director") FESimple::IOSTouchController;
 %feature("unref") std::shared_ptr<FESimple::GameObjBase> "delete $this;//nimei"
 
+//%feature("ref") FESimple::SpriteComponent "$this->retain();"
+%feature("unref") FESimple::SpriteComponent "$this->release();"
+
 namespace cocos2d
 {
     

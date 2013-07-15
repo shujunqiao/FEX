@@ -85,6 +85,12 @@ bool AppDelegate::applicationDidFinishLaunching()
     //game->add_game_object( GameObjPtr(new GameLayer()), "root");
 
 
+    PyRun_SimpleString("import sys");
+    std::string cmd = "sys.path.append(\"";
+    cmd += CCFileUtils::sharedFileUtils()->getWritablePath() + "\")";
+    PyRun_SimpleString(cmd.c_str());
+    PyRun_SimpleString("print sys.path");
+//    
     PyRun_SimpleString("import FEX");
     PyRun_SimpleString("import GameLib");
     PyRun_SimpleString("GameLib.run_game()");

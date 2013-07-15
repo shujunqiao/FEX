@@ -17566,7 +17566,7 @@ SWIGINTERN PyObject *_wrap_delete_SpriteComponent(PyObject *SWIGUNUSEDPARM(self)
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "delete_SpriteComponent" "', argument " "1"" of type '" "FESimple::SpriteComponent *""'"); 
   }
   arg1 = reinterpret_cast< FESimple::SpriteComponent * >(argp1);
-  delete arg1;
+  arg1->release();
   resultobj = SWIG_Py_Void();
   return resultobj;
 fail:

@@ -24,6 +24,7 @@ IOSTouchController::IOSTouchController()
 IOSTouchController::~IOSTouchController()
 {
     logger("IOSTouchController") <<"destroyed" << endl;
+    unplug();
 }
 bool IOSTouchController::ccTouchBegan(CCTouch *pTouch, CCEvent *pEvent)
 {
