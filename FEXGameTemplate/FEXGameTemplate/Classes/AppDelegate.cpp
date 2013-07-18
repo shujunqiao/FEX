@@ -28,6 +28,7 @@
 
 #include "FEX_wrap.cxx"
 #include "FEX_wrap.h"
+extern "C" void initzlib(void);
 
 USING_NS_CC;
 USING_NS_CC_EXT;
@@ -61,7 +62,7 @@ bool AppDelegate::applicationDidFinishLaunching()
     strcpy(pypath, full_path("python").c_str());
     Py_SetPythonHome(pypath);
     Py_Initialize();
-
+    initzlib();
     init_FEX();
     
 //    GameTheSoldiers* game = new GameTheSoldiers();
@@ -88,6 +89,10 @@ bool AppDelegate::applicationDidFinishLaunching()
     PyRun_SimpleString("import sys");
     std::string cmd = "sys.path.append(\"";
     cmd += CCFileUtils::sharedFileUtils()->getWritablePath() + "\")";
+    
+
+    PyRun_SimpleString(cmd.c_str());
+    cmd = std::string("sys.path.append(\"") + full_path("python") + "/python.zip\")";
     PyRun_SimpleString(cmd.c_str());
     PyRun_SimpleString("print sys.path");
 //    

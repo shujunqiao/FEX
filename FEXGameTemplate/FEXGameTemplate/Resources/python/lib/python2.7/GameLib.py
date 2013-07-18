@@ -6,9 +6,13 @@ game = None
 
 
 def create_sprite( x, y ):
-    dot = FEX.SpriteBase(FEX.CCPoint(x*60+200, y*60 + 100) ,FEX.map_string_string({ "sprite_desc" : "saw"}) )
+    dot = Dot(FEX.CCPoint(x*60+200, y*60 + 100) )
     FEX.get_game().add_game_object( make_shared_ptr(dot), "root" )
     return dot
+
+class Dot(FEX.SpriteBase):
+    def __init__(self, point):
+        FEX.SpriteBase.__init__( self, point ,FEX.map_string_string({ "sprite_desc" : "saw"}) )
 
 class GameDot(FEX.GameBase):
 
@@ -20,7 +24,7 @@ class GameDot(FEX.GameBase):
         self.dots = []
         for i in range(0,8*8):
             self.dots.append(create_sprite(i%8, i/8))
-    
+
     def get_dot( self, pt ):
         x = pt.x
         y = pt.y
@@ -32,21 +36,31 @@ class GameDot(FEX.GameBase):
         if ( x >= 0 and x < 8 and y >=0 and y < 8 ):
             return self.dots[x + y*8]
         return None
+    
+    def select_dot( self, pt )
+        
+    
     def update(self, *args):
         FEX.GameBase.update(self, *args)
 
 class HeroController(FEX.IOSTouchController):
+
     def __init__(self):
         FEX.IOSTouchController.__init__(self)
 
     
     def ccTouchBegan(self, touch, event):
         global game
-        game.get_dot( touch.getLocation() ).set_position(FEX.CCPoint(1000,1000))
+
+        dot = game.get_dot( touch.getLocation() ):
+        if ( dot ):
+            dot.selected()
 
         return True
     def ccTouchMoved(self, touch, event):
-        game.get_dot( touch.getLocation() ).set_position(FEX.CCPoint(1000,1000))
+        dot = game.get_dot( touch.getLocation() ):
+        if ( dot ):
+            dot.selected()
         return
 
 class Hero(FEX.SpriteBase):

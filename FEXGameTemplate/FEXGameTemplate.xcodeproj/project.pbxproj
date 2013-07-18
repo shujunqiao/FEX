@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		040917661794DCC200283684 /* zlibmodule.c in Sources */ = {isa = PBXBuildFile; fileRef = 040917651794DCC200283684 /* zlibmodule.c */; };
+		040917681794FA5600283684 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 040917671794FA5600283684 /* Default-568h@2x.png */; };
 		040A59E9177ECE3F0010E979 /* GameTheSoldiers.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 040A59E7177ECE3F0010E979 /* GameTheSoldiers.cpp */; };
 		043C4F50177FCEFF00A55BD9 /* python2.7.all.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 043C4F4F177FCEFF00A55BD9 /* python2.7.all.a */; };
 		043C4F52177FDEEA00A55BD9 /* python in Resources */ = {isa = PBXBuildFile; fileRef = 043C4F51177FDEEA00A55BD9 /* python */; };
@@ -53,6 +55,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		040917651794DCC200283684 /* zlibmodule.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = zlibmodule.c; sourceTree = "<group>"; };
+		040917671794FA5600283684 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		040A59E7177ECE3F0010E979 /* GameTheSoldiers.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GameTheSoldiers.cpp; path = GameClasses/GameTheSoldiers.cpp; sourceTree = "<group>"; };
 		040A59E8177ECE3F0010E979 /* GameTheSoldiers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameTheSoldiers.h; path = GameClasses/GameTheSoldiers.h; sourceTree = "<group>"; };
 		040A59EF177F233A0010E979 /* Python-ast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Python-ast.h"; sourceTree = "<group>"; };
@@ -341,6 +345,7 @@
 		04A63027177C5AC800E1760D = {
 			isa = PBXGroup;
 			children = (
+				040917671794FA5600283684 /* Default-568h@2x.png */,
 				046D5D601780873E00919167 /* libBox2D.a */,
 				046D5D5E1780873A00919167 /* libCocosDenshion.a */,
 				046D5D5C1780873700919167 /* libcocos2dx.a */,
@@ -441,6 +446,7 @@
 		04A633A1177C5ACF00E1760D /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				040917651794DCC200283684 /* zlibmodule.c */,
 				04C3AF9717919B41005F9937 /* FEX_wrap.h */,
 				045FF19517899563007A338D /* FEX_wrap.cxx */,
 				045FF18E17894295007A338D /* example.cpp */,
@@ -522,6 +528,7 @@
 				04A633C9177C5C9000E1760D /* sprite_components in Resources */,
 				04A633CA177C5C9000E1760D /* sprites in Resources */,
 				043C4F52177FDEEA00A55BD9 /* python in Resources */,
+				040917681794FA5600283684 /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -540,6 +547,7 @@
 				04E11FA4178179B7009E1847 /* WarZone.cpp in Sources */,
 				04E11FA7178179E3009E1847 /* GameTheSoldiersCommon.cpp in Sources */,
 				045FF19017894295007A338D /* example.cpp in Sources */,
+				040917661794DCC200283684 /* zlibmodule.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -571,7 +579,7 @@
 					"\"$(PROJECT_NAME)/libs/cocos2dx/platform/third_party/ios\"",
 					"\"$(PROJECT_NAME)/libs/cocos2dx/platform/ios\"",
 				);
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -599,7 +607,7 @@
 					"\"$(PROJECT_NAME)/libs/cocos2dx/platform/third_party/ios\"",
 					"\"$(PROJECT_NAME)/libs/cocos2dx/platform/ios\"",
 				);
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -631,7 +639,7 @@
 					../FEX,
 				);
 				INFOPLIST_FILE = FEXGameTemplate/Resources/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../libs/python2.7/libs\"",
@@ -673,7 +681,7 @@
 					../FEX,
 				);
 				INFOPLIST_FILE = FEXGameTemplate/Resources/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../libs/python2.7/libs\"",
