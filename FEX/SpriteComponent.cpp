@@ -211,4 +211,16 @@ void SpriteComponent::wakeup()
         phy_body->SetAwake(true);
 }
 
+void SpriteComponent::color_mask( const cocos2d::ccColor4F& color, float time )
+{
+}
+
+void SpriteComponent::color_tint( const cocos2d::ccColor4F& color, float time )
+{
+}
+
+void SpriteComponent::set_shader( const Name& shader_name )
+{
+}
+
 FE_NS_END

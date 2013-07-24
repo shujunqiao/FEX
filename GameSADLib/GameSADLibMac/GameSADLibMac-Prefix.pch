@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'GameSADLibMac' target in the 'GameSADLibMac' project
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+#endif

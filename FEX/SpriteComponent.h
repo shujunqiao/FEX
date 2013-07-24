@@ -163,8 +163,9 @@ public:
     void apply_linear_impulse( const cocos2d::CCPoint& v );
     void apply_angular_impulse( float i );
     void wakeup();
-    void set_color_override( const cocos2d::ccColor4F& color );
-    
+    void color_mask( const cocos2d::ccColor4F& color, float time );
+    void color_tint( const cocos2d::ccColor4F& color, float time );
+    void set_shader( const Name& shader_name );
     void set_owner(std::weak_ptr<SpriteBase> s)
     {
         owner = s;

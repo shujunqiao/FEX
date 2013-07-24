@@ -28,15 +28,18 @@
 #import "EAGLView.h"
 
 @interface AppController : NSObject <NSApplicationDelegate>
-	{
-		NSWindow *window;
-		EAGLView *glView;
-	}
+{
+    NSWindow *window;
+    EAGLView *glView;
+    NSPanel *property_window;
+}
+@property (assign) IBOutlet NSPanel *property_window;
 
-	@property (nonatomic, assign) IBOutlet NSWindow* window;
-	@property (nonatomic, assign) IBOutlet EAGLView* glView;
+@property (nonatomic, assign) IBOutlet NSWindow* window;
+@property (nonatomic, assign) IBOutlet EAGLView* glView;
 
-	-(IBAction) toggleFullScreen:(id)sender;
-	-(IBAction) exitFullScreen:(id)sender;
+-(IBAction) openDocument:(id)sender;
+-(IBAction) toggleFullScreen:(id)sender;
+-(IBAction) exitFullScreen:(id)sender;
 
 @end

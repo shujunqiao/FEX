@@ -11,6 +11,7 @@
 		041CA87E178EFEE50030FBCB /* libcocos2dx.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 041CA87A178EFEE50030FBCB /* libcocos2dx.a */; };
 		041CA87F178EFEE50030FBCB /* libCocosDenshion.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 041CA87B178EFEE50030FBCB /* libCocosDenshion.a */; };
 		041CA880178EFEE50030FBCB /* libFEXMac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 041CA87C178EFEE50030FBCB /* libFEXMac.a */; };
+		04249B46179E43C000AE59D4 /* libGameSADLibMac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 04249B45179E43C000AE59D4 /* libGameSADLibMac.a */; };
 		045FF181178926D9007A338D /* AppDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 045FF17D178926D9007A338D /* AppDelegate.cpp */; };
 		15C64823165F391E007D4F18 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15C64822165F391E007D4F18 /* Cocoa.framework */; };
 		15C64825165F3934007D4F18 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15C64824165F3934007D4F18 /* OpenGL.framework */; };
@@ -31,8 +32,9 @@
 /* Begin PBXFileReference section */
 		041CA879178EFEE50030FBCB /* libBox2D.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; name = libBox2D.a; path = ../../../../../../../../dev/FEX/libs/external/Box2D/proj.mac/build/Release/libBox2D.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		041CA87A178EFEE50030FBCB /* libcocos2dx.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcocos2dx.a; path = "../../../Library/Developer/Xcode/DerivedData/FEXMacWorkspace-dflqantggihhcrbvstfjzqrdkjos/Build/Products/Debug/libcocos2dx.a"; sourceTree = "<group>"; };
-		041CA87B178EFEE50030FBCB /* libCocosDenshion.a */ = {isa = PBXFileReference; lastKnownFileType = file; name = libCocosDenshion.a; path = ../libs/CocosDenshion/proj.mac/build/Release/libCocosDenshion.a; sourceTree = "<group>"; };
-		041CA87C178EFEE50030FBCB /* libFEXMac.a */ = {isa = PBXFileReference; lastKnownFileType = file; name = libFEXMac.a; path = ../build/Release/libFEXMac.a; sourceTree = "<group>"; };
+		041CA87B178EFEE50030FBCB /* libCocosDenshion.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libCocosDenshion.a; path = ../libs/CocosDenshion/proj.mac/build/Release/libCocosDenshion.a; sourceTree = "<group>"; };
+		041CA87C178EFEE50030FBCB /* libFEXMac.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libFEXMac.a; path = ../build/Release/libFEXMac.a; sourceTree = "<group>"; };
+		04249B45179E43C000AE59D4 /* libGameSADLibMac.a */ = {isa = PBXFileReference; lastKnownFileType = file; name = libGameSADLibMac.a; path = ../GameSADLib/build/Release/libGameSADLibMac.a; sourceTree = "<group>"; };
 		045FF17D178926D9007A338D /* AppDelegate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AppDelegate.cpp; sourceTree = "<group>"; };
 		045FF17E178926D9007A338D /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		15C64822165F391E007D4F18 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
@@ -61,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04249B46179E43C000AE59D4 /* libGameSADLibMac.a in Frameworks */,
 				041CA87D178EFEE50030FBCB /* libBox2D.a in Frameworks */,
 				041CA87E178EFEE50030FBCB /* libcocos2dx.a in Frameworks */,
 				041CA87F178EFEE50030FBCB /* libCocosDenshion.a in Frameworks */,
@@ -100,6 +103,7 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				04249B45179E43C000AE59D4 /* libGameSADLibMac.a */,
 				041CA879178EFEE50030FBCB /* libBox2D.a */,
 				041CA87A178EFEE50030FBCB /* libcocos2dx.a */,
 				041CA87B178EFEE50030FBCB /* libCocosDenshion.a */,
@@ -275,7 +279,8 @@
 					USE_FILE32API,
 					CC_TARGET_OS_MAC,
 					"COCOS2D_DEBUG=1",
-					CC_ENABLE_CHIPMUNK_INTEGRATION,
+					"CC_ENABLE_CHIPMUNK_INTEGRATION=0",
+					"CC_ENABLE_BOX2D_INTEGRATION=1",
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_VERSION = "";
@@ -287,7 +292,8 @@
 					"\"$(SRCROOT)/../libs/cocos2dx\"",
 					"\"$(SRCROOT)/../libs/cocos2dx/include\"",
 					"\"$(SRCROOT)/../libs/cocos2dx/platform/mac\"",
-					"\"$(SRCROOT)/../FEX",
+					"\"$(SRCROOT)/../FEX\"",
+					"\"$(SRCROOT)/../GameSADLib\"",
 				);
 				INFOPLIST_FILE = Info.plist;
 				LIBRARY_SEARCH_PATHS = (
@@ -318,9 +324,11 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Prefix.pch;
 				GCC_PREPROCESSOR_DEFINITIONS = (
+					NDEBUG,
 					CC_TARGET_OS_MAC,
 					USE_FILE32API,
-					CC_ENABLE_CHIPMUNK_INTEGRATION,
+					"CC_ENABLE_CHIPMUNK_INTEGRATION=0",
+					"CC_ENABLE_BOX2D_INTEGRATION=1",
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_VERSION = "";
@@ -332,7 +340,8 @@
 					"\"$(SRCROOT)/../libs/cocos2dx\"",
 					"\"$(SRCROOT)/../libs/cocos2dx/include\"",
 					"\"$(SRCROOT)/../libs/cocos2dx/platform/mac\"",
-					"\"$(SRCROOT)/../FEX",
+					"\"$(SRCROOT)/../FEX\"",
+					"\"$(SRCROOT)/../GameSADLib\"",
 				);
 				INFOPLIST_FILE = Info.plist;
 				LIBRARY_SEARCH_PATHS = (

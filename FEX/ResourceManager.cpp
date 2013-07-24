@@ -198,15 +198,14 @@ void ResourceManager::load_sprite_component_desc( const std::string& filename )
     
 }
 
-std::shared_ptr<LevelData> ResourceManager::get_level_data( const Name& name )
+std::shared_ptr<LevelData> ResourceManager::get_level_data( const std::string& filename )
 {
-    if ( levels.item( name ) == nullptr )
+    if ( levels.item( filename ) == nullptr )
     {
-        LevelData* lvl = new LevelData();
-        lvl->load( name );
-        levels[name] = std::shared_ptr<LevelData>(lvl);
+        LevelData* lvl = new LevelData(filename);
+        levels[filename] = std::shared_ptr<LevelData>(lvl);
     }
-    return levels.item( name );
+    return levels.item( filename );
 }
 
 FE_NS_END

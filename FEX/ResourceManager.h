@@ -40,7 +40,7 @@ public:
     void load_sprite_desc( const std::string& filename );
     void load_physic_desc( const std::string& filename );
     void load_sprite_component_desc( const std::string& filename );
-    std::shared_ptr<LevelData> get_level_data( const Name& name );
+    std::shared_ptr<LevelData> get_level_data( const std::string& filename );
     
     SharedReourceMap<sprite_desc>              sprite_descs;
     SharedReourceMap<physic_desc>              physic_descs;

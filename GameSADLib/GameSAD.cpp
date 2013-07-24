@@ -7,3 +7,8 @@
 //
 
 #include "GameSAD.h"
+#include "GameSADLevel.h"
+GameSAD::GameSAD()
+{
+    level.reset(new GameSADLevel());
+}

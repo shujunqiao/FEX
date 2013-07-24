@@ -4,6 +4,7 @@
 #include "Box2D/Box2D.h"
 #include "GameLayer.h"
 #include "cocos2d.h"
+#include "LevelBase.h"
 FE_NS_BEGIN
 
 
@@ -33,11 +34,13 @@ GameBase::~GameBase()
 
 void GameBase::update(float delta_time)
 {
+    set_current_time(current_time()+delta_time);
     if ( phy_world )
     {
         phy_world->Step( delta_time, 4, 8);
     }
-    
+    if ( level )
+        level->update(delta_time);
     for ( auto c : objects )
     {
         c->update( delta_time );

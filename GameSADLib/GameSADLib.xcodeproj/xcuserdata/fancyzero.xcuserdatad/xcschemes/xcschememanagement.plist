@@ -7,11 +7,21 @@
 		<key>GameSADLib.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
+			<integer>6</integer>
+		</dict>
+		<key>GameSADLibMac.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
 			<integer>7</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>04249B2E179E238800AE59D4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>04F0CB91179048BF00321D88</key>
 		<dict>
 			<key>primary</key>

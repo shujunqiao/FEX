@@ -38,6 +38,15 @@ public:
 float Pi2 = Pi<100>::value;
  */
 float Pi = 3.14159265359f;
+float curtime = 0;
+float current_time()
+{
+    return curtime;
+}
+void set_current_time(float time)
+{
+    curtime = time;
+}
 
 cocos2d::CCPoint string_to_point( const char* str )
 {

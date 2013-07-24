@@ -21,73 +21,110 @@
  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  THE SOFTWARE.
  ****************************************************************************/
- 
+
 #import "AppController.h"
 #import "AppDelegate.h"
+#import "FE.h"
+#import "GameBase.h"
+#import "LevelBase.h"
+#import "GameSADEditor.h"
 
+using namespace FESimple;
 @implementation AppController
+@synthesize property_window;
 
-	static AppDelegate s_sharedApplication;
+static AppDelegate s_sharedApplication;
 
-	@synthesize window, glView;
+@synthesize window, glView;
 
-	-(void) applicationDidFinishLaunching:(NSNotification *)aNotification
-	{
-		// create the window
-		// note that using NSResizableWindowMask causes the window to be a little
-		// smaller and therefore ipad graphics are not loaded
-        NSRect rect = NSMakeRect(200, 200, 480, 320);
-		window = [[NSWindow alloc] initWithContentRect:rect
-			styleMask:( NSClosableWindowMask | NSTitledWindowMask )
-			backing:NSBackingStoreBuffered
-			defer:YES];
-        
-        NSOpenGLPixelFormatAttribute attributes[] = {
-            NSOpenGLPFADoubleBuffer,
-            NSOpenGLPFADepthSize, 24,
-            NSOpenGLPFAStencilSize, 8,
-            0
-        };
-        
-        NSOpenGLPixelFormat *pixelFormat = [[[NSOpenGLPixelFormat alloc] initWithAttributes:attributes] autorelease];
-		
-		// allocate our GL view
-		// (isn't there already a shared EAGLView?)
-		glView = [[EAGLView alloc] initWithFrame:rect pixelFormat:pixelFormat];
+-(void) applicationDidFinishLaunching:(NSNotification *)aNotification
+{
+    // create the window
+    // note that using NSResizableWindowMask causes the window to be a little
+    // smaller and therefore ipad graphics are not loaded
+    NSRect rect = NSMakeRect(200, 200, 480, 320);
+    window = [[NSWindow alloc] initWithContentRect:rect
+                                         styleMask:( NSResizableWindowMask | NSClosableWindowMask | NSTitledWindowMask )
+                                           backing:NSBackingStoreBuffered
+                                             defer:YES];
 
-		// set window parameters
-		[window becomeFirstResponder];
-		[window setContentView:glView];
-		[window setTitle:@"HelloCpp"];
-		[window makeKeyAndOrderFront:self];
-		[window setAcceptsMouseMovedEvents:NO];
+    [window center];
+    
+    NSOpenGLPixelFormatAttribute attributes[] = {
+        NSOpenGLPFADoubleBuffer,
+        NSOpenGLPFADepthSize, 24,
+        NSOpenGLPFAStencilSize, 8,
+        0
+    };
+    
+    NSOpenGLPixelFormat *pixelFormat = [[[NSOpenGLPixelFormat alloc] initWithAttributes:attributes] autorelease];
+    
+    // allocate our GL view
+    // (isn't there already a shared EAGLView?)
+    glView = [[EAGLView alloc] initWithFrame:rect pixelFormat:pixelFormat];
 
-		cocos2d::CCApplication::sharedApplication()->run();
-	}
+    // set window parameters
+    [window becomeFirstResponder];
+    [window setContentView:glView];
+    [window setTitle:@"HelloCpp"];
+    [window makeKeyAndOrderFront:self];
+    [window setAcceptsMouseMovedEvents:NO];
+    
+    cocos2d::CCApplication::sharedApplication()->run();
+}
 
-	-(BOOL) applicationShouldTerminateAfterLastWindowClosed:(NSApplication*)theApplication
-	{
-		return YES;
-	}
+-(BOOL) applicationShouldTerminateAfterLastWindowClosed:(NSApplication*)theApplication
+{
+    return YES;
+}
 
-	-(void) dealloc
-	{
-		cocos2d::CCDirector::sharedDirector()->end();
-		[super dealloc];
-	}
+-(void) dealloc
+{
+    cocos2d::CCDirector::sharedDirector()->end();
+    [super dealloc];
+}
 
 #pragma mark -
 #pragma mark IB Actions
 
-	-(IBAction) toggleFullScreen:(id)sender
-	{
-		EAGLView* pView = [EAGLView sharedEGLView];
-		[pView setFullScreen:!pView.isFullScreen];
-	}
 
-	-(IBAction) exitFullScreen:(id)sender
-	{
-		[[EAGLView sharedEGLView] setFullScreen:NO];
-	}
+-(IBAction) toggleFullScreen:(id)sender
+{
+    EAGLView* pView = [EAGLView sharedEGLView];
+    [pView setFullScreen:!pView.isFullScreen];
+}
 
+-(IBAction) exitFullScreen:(id)sender
+{
+    [[EAGLView sharedEGLView] setFullScreen:NO];
+}
+
+-(IBAction)openDocument:(id)sender
+{
+	NSOpenPanel* openDlg = [NSOpenPanel openPanel];
+	
+    // Enable the selection of files in the dialog.
+    [openDlg setCanChooseFiles:YES];
+	
+    // Enable the selection of directories in the dialog.
+    [openDlg setCanChooseDirectories:YES];
+    
+	
+    // Display the dialog.  If the OK button was pressed,
+    // process the files.
+    if ( [openDlg runModal ] == NSOKButton )
+    {
+		[openDlg close];
+        // Get an array containing the full filenames of all
+        // files and directories selected.
+		NSURL* url = [openDlg URL];
+		NSString* str = [url path];
+        FESimple::GameBase* game = FESimple::get_game();
+        FESimple::LevelData ld( [str UTF8String] );
+
+        game->get_level()->reset();
+        game->get_level()->attach(&ld);
+    }
+
+}
 @end

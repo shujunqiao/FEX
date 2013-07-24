@@ -8,7 +8,17 @@
 
 #include "LevelBase.h"
 #include "pugixml.hpp"
+#include "GameObjFactory.h"
 FE_NS_BEGIN
+LevelData::LevelData( const std::string& filename )
+{
+    load(filename);
+}
+
+void LevelData::clear()
+{
+    triggers.clear();
+}
 
 bool LevelData::load( const std::string& filename )
 {
@@ -55,9 +65,41 @@ bool LevelData::load( const std::string& filename )
     return true;
 }
 
+bool LevelBase::attach( const LevelData* data )
+{
+    level_data.bound = data->bound;
+    level_data.triggers.insert(level_data.triggers.end(), data->triggers.begin(), data->triggers.end());
+    return true;
+}
+
+void LevelBase::reset()
+{
+    current_trigger = 0;
+    level_data.clear();
+    start_time = current_time();
+}
+
+void LevelBase::triggering_trigger( LevelTrigger& trigger )
+{
+    if (trigger.params["act"] == "add_obj" )
+    {
+        GameObjPtr object = GameObjFactory::construct_obj(trigger.params["class"], trigger.params);
+        //object->set_trigger_id(trigger["id"]);
+        if (object)
+            get_game()->add_game_object(object, trigger.params["layer"]);
+	}
+}
+
 void LevelBase::update( float delta_time )
 {
-    
+    while( current_trigger < level_data.triggers.size() )
+    {
+        if ( current_time() - start_time > level_data.triggers[current_trigger].progress )
+            break;
+        triggering_trigger( level_data.triggers[current_trigger] );
+        current_trigger++;
+
+    }
 }
 
 FE_NS_END

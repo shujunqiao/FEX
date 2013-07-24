@@ -1,6 +1,8 @@
 #include "AppDelegate.h"
 #include "FE.h"
 #include "GameScene.h"
+#include "GameSADEditor.h"
+#include "GameSADEditorLevel.h"
 
 USING_NS_CC;
 
@@ -26,7 +28,8 @@ bool AppDelegate::applicationDidFinishLaunching() {
     pDirector->setAnimationInterval(1.0 / 60);
 
     // create a scene. it's an autorelease object
-    FESimple::GameBase* game = new FESimple::GameBase();
+    FESimple::GameBase* game = new GameSADEditor();
+    
     FESimple::set_game(game);
 
     // run

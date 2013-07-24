@@ -62,6 +62,7 @@ public:
 //            (i->*mf)();
 //    }
 //#endif
+    
     virtual void begin_contact( b2Contact* contact );
     virtual void end_contact( b2Contact* contact );
     

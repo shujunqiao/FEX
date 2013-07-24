@@ -17,6 +17,8 @@
 
 FE_NS_BEGIN
 extern float Pi;
+float current_time();
+void set_current_time(float time);
 cocos2d::CCPoint string_to_point( const char* str );
 cocos2d::CCRect string_to_rect( const char* str );
 std::vector<std::string> split_string( const std::string& str, const std::string& split_by );

@@ -16,9 +16,6 @@ class GameSAD : public GameBase
 {
 public:
     GameSAD();
-    
-protected:
-    std::unique_ptr<class LevelBase> level;
 };
 
 

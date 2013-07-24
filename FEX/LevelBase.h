@@ -42,7 +42,11 @@ struct LevelBound
 
 struct LevelData
 {
+    LevelData(){}
+    LevelData( const std::string& filename );
     bool load( const std::string& filename );
+    void clear();
+    
     LevelBound                  bound;
     std::vector<LevelTrigger>   triggers;
 };
@@ -50,16 +54,19 @@ struct LevelData
 class LevelBase
 {
 public:
-    virtual bool attach( const Name& leveldata_name ){return false;};  //附加关卡，不删除现有内容
-    virtual void reset( const Name& leveldata_name ){return;};   //重置关卡，删除所有游戏对象
+    virtual bool attach( const LevelData* data );  //附加关卡，不删除现有内容
+    virtual void reset();   //重置关卡，删除所有游戏对象
+    virtual void triggering_trigger( LevelTrigger& trigger );
     void update( float delta_time );
 
     LevelBound& get_bound()
     {
-        return bound;
+        return level_data.bound;
     }
 protected:
-    LevelBound bound;
+    unsigned int current_trigger;
+    float       start_time;
+    LevelData   level_data;
     
 };
 FE_NS_END

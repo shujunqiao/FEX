@@ -14,6 +14,7 @@
 #include <algorithm>
 class b2World;
 FE_NS_BEGIN
+class LevelBase;
 class GameWorld;
 class GameScene;
 class GameObjBase;
@@ -40,6 +41,11 @@ public:
         return phy_world.get();
     }
     
+    LevelBase* get_level()
+    {
+        return level.get();
+    }
+    
     template<class _Predicate>
     GameObjPtr find_obj_if( _Predicate predicate )
     {
@@ -61,8 +67,8 @@ public:
     }
     
     GameObjPtr get_obj( const Name& name );
-    
 protected:
+    std::unique_ptr<LevelBase>              level;
     std::unique_ptr<GameScene>              scene;       // visible world
     std::unique_ptr<b2World>                phy_world;
     std::list<GameObjPtr>                   objects;
