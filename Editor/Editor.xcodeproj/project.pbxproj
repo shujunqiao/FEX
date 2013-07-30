@@ -7,12 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0405DC5017A8049C008DD5B9 /* libpython2.7-mac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0405DC4F17A8049C008DD5B9 /* libpython2.7-mac.a */; };
 		041CA87D178EFEE50030FBCB /* libBox2D.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 041CA879178EFEE50030FBCB /* libBox2D.a */; };
 		041CA87E178EFEE50030FBCB /* libcocos2dx.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 041CA87A178EFEE50030FBCB /* libcocos2dx.a */; };
 		041CA87F178EFEE50030FBCB /* libCocosDenshion.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 041CA87B178EFEE50030FBCB /* libCocosDenshion.a */; };
-		041CA880178EFEE50030FBCB /* libFEXMac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 041CA87C178EFEE50030FBCB /* libFEXMac.a */; };
 		04249B46179E43C000AE59D4 /* libGameSADLibMac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 04249B45179E43C000AE59D4 /* libGameSADLibMac.a */; };
 		045FF181178926D9007A338D /* AppDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 045FF17D178926D9007A338D /* AppDelegate.cpp */; };
+		049E6CD217A4355D00CA4D43 /* libFEXMac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 049E6CD117A4355D00CA4D43 /* libFEXMac.a */; };
 		15C64823165F391E007D4F18 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15C64822165F391E007D4F18 /* Cocoa.framework */; };
 		15C64825165F3934007D4F18 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15C64824165F3934007D4F18 /* OpenGL.framework */; };
 		15C64827165F394E007D4F18 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15C64826165F394E007D4F18 /* QuartzCore.framework */; };
@@ -30,13 +31,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0405DC4F17A8049C008DD5B9 /* libpython2.7-mac.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libpython2.7-mac.a"; path = "../libs/python2.7/libs/libpython2.7-mac.a"; sourceTree = "<group>"; };
 		041CA879178EFEE50030FBCB /* libBox2D.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; name = libBox2D.a; path = ../../../../../../../../dev/FEX/libs/external/Box2D/proj.mac/build/Release/libBox2D.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		041CA87A178EFEE50030FBCB /* libcocos2dx.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcocos2dx.a; path = "../../../Library/Developer/Xcode/DerivedData/FEXMacWorkspace-dflqantggihhcrbvstfjzqrdkjos/Build/Products/Debug/libcocos2dx.a"; sourceTree = "<group>"; };
 		041CA87B178EFEE50030FBCB /* libCocosDenshion.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libCocosDenshion.a; path = ../libs/CocosDenshion/proj.mac/build/Release/libCocosDenshion.a; sourceTree = "<group>"; };
-		041CA87C178EFEE50030FBCB /* libFEXMac.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libFEXMac.a; path = ../build/Release/libFEXMac.a; sourceTree = "<group>"; };
-		04249B45179E43C000AE59D4 /* libGameSADLibMac.a */ = {isa = PBXFileReference; lastKnownFileType = file; name = libGameSADLibMac.a; path = ../GameSADLib/build/Release/libGameSADLibMac.a; sourceTree = "<group>"; };
+		04249B45179E43C000AE59D4 /* libGameSADLibMac.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libGameSADLibMac.a; path = ../GameSADLib/build/Release/libGameSADLibMac.a; sourceTree = "<group>"; };
 		045FF17D178926D9007A338D /* AppDelegate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AppDelegate.cpp; sourceTree = "<group>"; };
 		045FF17E178926D9007A338D /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		049E6CD117A4355D00CA4D43 /* libFEXMac.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libFEXMac.a; path = "../../../Library/Developer/Xcode/DerivedData/FEXMacWorkspace-dflqantggihhcrbvstfjzqrdkjos/Build/Products/Debug/libFEXMac.a"; sourceTree = "<group>"; };
 		15C64822165F391E007D4F18 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
 		15C64824165F3934007D4F18 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/OpenGL.framework; sourceTree = DEVELOPER_DIR; };
 		15C64826165F394E007D4F18 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
@@ -63,11 +65,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0405DC5017A8049C008DD5B9 /* libpython2.7-mac.a in Frameworks */,
 				04249B46179E43C000AE59D4 /* libGameSADLibMac.a in Frameworks */,
 				041CA87D178EFEE50030FBCB /* libBox2D.a in Frameworks */,
 				041CA87E178EFEE50030FBCB /* libcocos2dx.a in Frameworks */,
 				041CA87F178EFEE50030FBCB /* libCocosDenshion.a in Frameworks */,
-				041CA880178EFEE50030FBCB /* libFEXMac.a in Frameworks */,
+				049E6CD217A4355D00CA4D43 /* libFEXMac.a in Frameworks */,
 				15C64833165F3AFD007D4F18 /* Foundation.framework in Frameworks */,
 				15C64831165F39AB007D4F18 /* libxml2.dylib in Frameworks */,
 				15C6482F165F399D007D4F18 /* libz.dylib in Frameworks */,
@@ -103,11 +106,12 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				0405DC4F17A8049C008DD5B9 /* libpython2.7-mac.a */,
+				049E6CD117A4355D00CA4D43 /* libFEXMac.a */,
 				04249B45179E43C000AE59D4 /* libGameSADLibMac.a */,
 				041CA879178EFEE50030FBCB /* libBox2D.a */,
 				041CA87A178EFEE50030FBCB /* libcocos2dx.a */,
 				041CA87B178EFEE50030FBCB /* libCocosDenshion.a */,
-				041CA87C178EFEE50030FBCB /* libFEXMac.a */,
 				045FF17C178926D9007A338D /* Classes */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				41BC70D815BF818D006A0A6C /* mac */,
@@ -296,11 +300,9 @@
 					"\"$(SRCROOT)/../GameSADLib\"",
 				);
 				INFOPLIST_FILE = Info.plist;
-				LIBRARY_SEARCH_PATHS = (
-					"\"$(SRCROOT)/../../../cocos2dx/platform/third_party/mac/libraries\"",
-					"\"$(SRCROOT)/../../../Library/Developer/Xcode/DerivedData/FEXMacWorkspace-dflqantggihhcrbvstfjzqrdkjos/Build/Products/Debug\"",
-				);
+				LIBRARY_SEARCH_PATHS = "\"$(SRCROOT)/../libs/python2.7/libs\"";
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
 				OTHER_CFLAGS = "-O2";
 				PRODUCT_NAME = Editor;
 				SDKROOT = macosx;
@@ -344,11 +346,9 @@
 					"\"$(SRCROOT)/../GameSADLib\"",
 				);
 				INFOPLIST_FILE = Info.plist;
-				LIBRARY_SEARCH_PATHS = (
-					"\"$(SRCROOT)/../../../cocos2dx/platform/third_party/mac/libraries\"",
-					"\"$(SRCROOT)/../../../Library/Developer/Xcode/DerivedData/FEXMacWorkspace-dflqantggihhcrbvstfjzqrdkjos/Build/Products/Debug\"",
-				);
+				LIBRARY_SEARCH_PATHS = "\"$(SRCROOT)/../libs/python2.7/libs\"";
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = Editor;
 				SDKROOT = macosx;
 				USER_HEADER_SEARCH_PATHS = "";

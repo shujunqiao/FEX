@@ -439,6 +439,7 @@ class GameBase(_object):
     def remove_game_object(self, *args): return _FEX.GameBase_remove_game_object(self, *args)
     def get_scene(self): return _FEX.GameBase_get_scene(self)
     def get_phy_world(self): return _FEX.GameBase_get_phy_world(self)
+    def get_level(self): return _FEX.GameBase_get_level(self)
     def get_obj(self, *args): return _FEX.GameBase_get_obj(self, *args)
     def __disown__(self):
         self.this.disown()
@@ -492,17 +493,18 @@ class LevelData(_object):
     __swig_getmethods__ = {}
     __getattr__ = lambda self, name: _swig_getattr(self, LevelData, name)
     __repr__ = _swig_repr
+    def __init__(self, *args): 
+        this = _FEX.new_LevelData(*args)
+        try: self.this.append(this)
+        except: self.this = this
     def load(self, *args): return _FEX.LevelData_load(self, *args)
+    def clear(self): return _FEX.LevelData_clear(self)
     __swig_setmethods__["bound"] = _FEX.LevelData_bound_set
     __swig_getmethods__["bound"] = _FEX.LevelData_bound_get
     if _newclass:bound = _swig_property(_FEX.LevelData_bound_get, _FEX.LevelData_bound_set)
     __swig_setmethods__["triggers"] = _FEX.LevelData_triggers_set
     __swig_getmethods__["triggers"] = _FEX.LevelData_triggers_get
     if _newclass:triggers = _swig_property(_FEX.LevelData_triggers_get, _FEX.LevelData_triggers_set)
-    def __init__(self): 
-        this = _FEX.new_LevelData()
-        try: self.this.append(this)
-        except: self.this = this
     __swig_destroy__ = _FEX.delete_LevelData
     __del__ = lambda self : None;
 LevelData_swigregister = _FEX.LevelData_swigregister
@@ -515,7 +517,8 @@ class LevelBase(_object):
     __getattr__ = lambda self, name: _swig_getattr(self, LevelBase, name)
     __repr__ = _swig_repr
     def attach(self, *args): return _FEX.LevelBase_attach(self, *args)
-    def reset(self, *args): return _FEX.LevelBase_reset(self, *args)
+    def reset(self): return _FEX.LevelBase_reset(self)
+    def triggering_trigger(self, *args): return _FEX.LevelBase_triggering_trigger(self, *args)
     def update(self, *args): return _FEX.LevelBase_update(self, *args)
     def get_bound(self): return _FEX.LevelBase_get_bound(self)
     def __init__(self): 
@@ -527,6 +530,14 @@ class LevelBase(_object):
 LevelBase_swigregister = _FEX.LevelBase_swigregister
 LevelBase_swigregister(LevelBase)
 
+
+def current_time():
+  return _FEX.current_time()
+current_time = _FEX.current_time
+
+def set_current_time(*args):
+  return _FEX.set_current_time(*args)
+set_current_time = _FEX.set_current_time
 
 def string_to_point(*args):
   return _FEX.string_to_point(*args)
@@ -649,6 +660,10 @@ get_game_info = _FEX.get_game_info
 def make_gameobj_ptr(*args):
   return _FEX.make_gameobj_ptr(*args)
 make_gameobj_ptr = _FEX.make_gameobj_ptr
+
+def init_python():
+  return _FEX.init_python()
+init_python = _FEX.init_python
 class GameObjFactory(_object):
     __swig_setmethods__ = {}
     __setattr__ = lambda self, name, value: _swig_setattr(self, GameObjFactory, name, value)
@@ -933,6 +948,9 @@ class SpriteComponent(_object):
     def apply_linear_impulse(self, *args): return _FEX.SpriteComponent_apply_linear_impulse(self, *args)
     def apply_angular_impulse(self, *args): return _FEX.SpriteComponent_apply_angular_impulse(self, *args)
     def wakeup(self): return _FEX.SpriteComponent_wakeup(self)
+    def color_mask(self, *args): return _FEX.SpriteComponent_color_mask(self, *args)
+    def color_tint(self, *args): return _FEX.SpriteComponent_color_tint(self, *args)
+    def set_shader(self, *args): return _FEX.SpriteComponent_set_shader(self, *args)
     def set_owner(self, *args): return _FEX.SpriteComponent_set_owner(self, *args)
     def get_owner(self): return _FEX.SpriteComponent_get_owner(self)
 SpriteComponent_swigregister = _FEX.SpriteComponent_swigregister

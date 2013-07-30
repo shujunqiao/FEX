@@ -3477,37 +3477,38 @@ namespace Swig {
 #define SWIGTYPE_p_cocos2d__CCRect swig_types[37]
 #define SWIGTYPE_p_cocos2d__CCSize swig_types[38]
 #define SWIGTYPE_p_cocos2d__CCTouch swig_types[39]
-#define SWIGTYPE_p_const_reference swig_types[40]
-#define SWIGTYPE_p_difference_type swig_types[41]
-#define SWIGTYPE_p_key_type swig_types[42]
-#define SWIGTYPE_p_mapped_type swig_types[43]
-#define SWIGTYPE_p_p_PyObject swig_types[44]
-#define SWIGTYPE_p_reference swig_types[45]
-#define SWIGTYPE_p_size_type swig_types[46]
-#define SWIGTYPE_p_std__allocatorT_FESimple__ControllerBase_p_t swig_types[47]
-#define SWIGTYPE_p_std__allocatorT_std__pairT_std__string_const_std__string_t_t swig_types[48]
-#define SWIGTYPE_p_std__functionT_void_pfstd__mapT_std__string_std__string_std__lessT_std__string_t_std__allocatorT_std__pairT_std__string_const_std__string_t_t_t_const_RF_t swig_types[49]
-#define SWIGTYPE_p_std__invalid_argument swig_types[50]
-#define SWIGTYPE_p_std__lessT_std__string_t swig_types[51]
-#define SWIGTYPE_p_std__mapT_std__string_std__string_std__lessT_std__string_t_std__allocatorT_std__pairT_std__string_const_std__string_t_t_t swig_types[52]
-#define SWIGTYPE_p_std__shared_ptrT_FESimple__GameObjBase_t swig_types[53]
-#define SWIGTYPE_p_std__shared_ptrT_FESimple__sprite_component_desc_t swig_types[54]
-#define SWIGTYPE_p_std__string swig_types[55]
-#define SWIGTYPE_p_std__vectorT_ClassInfo_p_std__allocatorT_FESimple__ClassInfo_p_t_t swig_types[56]
-#define SWIGTYPE_p_std__vectorT_FESimple__ClassInfo_p_std__allocatorT_FESimple__ClassInfo_p_t_t swig_types[57]
-#define SWIGTYPE_p_std__vectorT_FESimple__ControllerBase_p_std__allocatorT_FESimple__ControllerBase_p_t_t swig_types[58]
-#define SWIGTYPE_p_std__vectorT_FESimple__LevelTrigger_std__allocatorT_FESimple__LevelTrigger_t_t swig_types[59]
-#define SWIGTYPE_p_std__vectorT_FESimple__b2fixture_def_std__allocatorT_FESimple__b2fixture_def_t_t swig_types[60]
-#define SWIGTYPE_p_std__vectorT_FESimple__sprite_component_ref_std__allocatorT_FESimple__sprite_component_ref_t_t swig_types[61]
-#define SWIGTYPE_p_std__vectorT_FESimple__sprite_joint_desc_std__allocatorT_FESimple__sprite_joint_desc_t_t swig_types[62]
-#define SWIGTYPE_p_std__vectorT__Tp_p__Alloc_t swig_types[63]
-#define SWIGTYPE_p_std__vectorT_float_std__allocatorT_float_t_t swig_types[64]
-#define SWIGTYPE_p_std__vectorT_std__string_std__allocatorT_std__string_t_t swig_types[65]
-#define SWIGTYPE_p_std__weak_ptrT_FESimple__SpriteBase_t swig_types[66]
-#define SWIGTYPE_p_swig__SwigPyIterator swig_types[67]
-#define SWIGTYPE_p_value_type swig_types[68]
-static swig_type_info *swig_types[70];
-static swig_module_info swig_module = {swig_types, 69, 0, 0, 0, 0};
+#define SWIGTYPE_p_cocos2d__ccColor4F swig_types[40]
+#define SWIGTYPE_p_const_reference swig_types[41]
+#define SWIGTYPE_p_difference_type swig_types[42]
+#define SWIGTYPE_p_key_type swig_types[43]
+#define SWIGTYPE_p_mapped_type swig_types[44]
+#define SWIGTYPE_p_p_PyObject swig_types[45]
+#define SWIGTYPE_p_reference swig_types[46]
+#define SWIGTYPE_p_size_type swig_types[47]
+#define SWIGTYPE_p_std__allocatorT_FESimple__ControllerBase_p_t swig_types[48]
+#define SWIGTYPE_p_std__allocatorT_std__pairT_std__string_const_std__string_t_t swig_types[49]
+#define SWIGTYPE_p_std__functionT_void_pfstd__mapT_std__string_std__string_std__lessT_std__string_t_std__allocatorT_std__pairT_std__string_const_std__string_t_t_t_const_RF_t swig_types[50]
+#define SWIGTYPE_p_std__invalid_argument swig_types[51]
+#define SWIGTYPE_p_std__lessT_std__string_t swig_types[52]
+#define SWIGTYPE_p_std__mapT_std__string_std__string_std__lessT_std__string_t_std__allocatorT_std__pairT_std__string_const_std__string_t_t_t swig_types[53]
+#define SWIGTYPE_p_std__shared_ptrT_FESimple__GameObjBase_t swig_types[54]
+#define SWIGTYPE_p_std__shared_ptrT_FESimple__sprite_component_desc_t swig_types[55]
+#define SWIGTYPE_p_std__string swig_types[56]
+#define SWIGTYPE_p_std__vectorT_ClassInfo_p_std__allocatorT_FESimple__ClassInfo_p_t_t swig_types[57]
+#define SWIGTYPE_p_std__vectorT_FESimple__ClassInfo_p_std__allocatorT_FESimple__ClassInfo_p_t_t swig_types[58]
+#define SWIGTYPE_p_std__vectorT_FESimple__ControllerBase_p_std__allocatorT_FESimple__ControllerBase_p_t_t swig_types[59]
+#define SWIGTYPE_p_std__vectorT_FESimple__LevelTrigger_std__allocatorT_FESimple__LevelTrigger_t_t swig_types[60]
+#define SWIGTYPE_p_std__vectorT_FESimple__b2fixture_def_std__allocatorT_FESimple__b2fixture_def_t_t swig_types[61]
+#define SWIGTYPE_p_std__vectorT_FESimple__sprite_component_ref_std__allocatorT_FESimple__sprite_component_ref_t_t swig_types[62]
+#define SWIGTYPE_p_std__vectorT_FESimple__sprite_joint_desc_std__allocatorT_FESimple__sprite_joint_desc_t_t swig_types[63]
+#define SWIGTYPE_p_std__vectorT__Tp_p__Alloc_t swig_types[64]
+#define SWIGTYPE_p_std__vectorT_float_std__allocatorT_float_t_t swig_types[65]
+#define SWIGTYPE_p_std__vectorT_std__string_std__allocatorT_std__string_t_t swig_types[66]
+#define SWIGTYPE_p_std__weak_ptrT_FESimple__SpriteBase_t swig_types[67]
+#define SWIGTYPE_p_swig__SwigPyIterator swig_types[68]
+#define SWIGTYPE_p_value_type swig_types[69]
+static swig_type_info *swig_types[71];
+static swig_module_info swig_module = {swig_types, 70, 0, 0, 0, 0};
 #define SWIG_TypeQuery(name) SWIG_TypeQueryModule(&swig_module, &swig_module, name)
 #define SWIG_MangledTypeQuery(name) SWIG_MangledTypeQueryModule(&swig_module, &swig_module, name)
 
@@ -13675,6 +13676,28 @@ fail:
 }
 
 
+SWIGINTERN PyObject *_wrap_GameBase_get_level(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  FESimple::GameBase *arg1 = (FESimple::GameBase *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  FESimple::LevelBase *result = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:GameBase_get_level",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_FESimple__GameBase, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "GameBase_get_level" "', argument " "1"" of type '" "FESimple::GameBase *""'"); 
+  }
+  arg1 = reinterpret_cast< FESimple::GameBase * >(argp1);
+  result = (FESimple::LevelBase *)(arg1)->get_level();
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_FESimple__LevelBase, 0 |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
 SWIGINTERN PyObject *_wrap_GameBase_get_obj(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   FESimple::GameBase *arg1 = (FESimple::GameBase *) 0 ;
@@ -13983,6 +14006,79 @@ SWIGINTERN PyObject *LevelBound_swigregister(PyObject *SWIGUNUSEDPARM(self), PyO
   return SWIG_Py_Void();
 }
 
+SWIGINTERN PyObject *_wrap_new_LevelData__SWIG_0(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  FESimple::LevelData *result = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)":new_LevelData")) SWIG_fail;
+  result = (FESimple::LevelData *)new FESimple::LevelData();
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_FESimple__LevelData, SWIG_POINTER_NEW |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_new_LevelData__SWIG_1(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  std::string *arg1 = 0 ;
+  int res1 = SWIG_OLDOBJ ;
+  PyObject * obj0 = 0 ;
+  FESimple::LevelData *result = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:new_LevelData",&obj0)) SWIG_fail;
+  {
+    std::string *ptr = (std::string *)0;
+    res1 = SWIG_AsPtr_std_string(obj0, &ptr);
+    if (!SWIG_IsOK(res1)) {
+      SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "new_LevelData" "', argument " "1"" of type '" "std::string const &""'"); 
+    }
+    if (!ptr) {
+      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "new_LevelData" "', argument " "1"" of type '" "std::string const &""'"); 
+    }
+    arg1 = ptr;
+  }
+  result = (FESimple::LevelData *)new FESimple::LevelData((std::string const &)*arg1);
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_FESimple__LevelData, SWIG_POINTER_NEW |  0 );
+  if (SWIG_IsNewObj(res1)) delete arg1;
+  return resultobj;
+fail:
+  if (SWIG_IsNewObj(res1)) delete arg1;
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_new_LevelData(PyObject *self, PyObject *args) {
+  int argc;
+  PyObject *argv[2];
+  int ii;
+  
+  if (!PyTuple_Check(args)) SWIG_fail;
+  argc = args ? (int)PyObject_Length(args) : 0;
+  for (ii = 0; (ii < 1) && (ii < argc); ii++) {
+    argv[ii] = PyTuple_GET_ITEM(args,ii);
+  }
+  if (argc == 0) {
+    return _wrap_new_LevelData__SWIG_0(self, args);
+  }
+  if (argc == 1) {
+    int _v;
+    int res = SWIG_AsPtr_std_string(argv[0], (std::string**)(0));
+    _v = SWIG_CheckState(res);
+    if (_v) {
+      return _wrap_new_LevelData__SWIG_1(self, args);
+    }
+  }
+  
+fail:
+  SWIG_SetErrorMsg(PyExc_NotImplementedError,"Wrong number or type of arguments for overloaded function 'new_LevelData'.\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    FESimple::LevelData::LevelData()\n"
+    "    FESimple::LevelData::LevelData(std::string const &)\n");
+  return 0;
+}
+
+
 SWIGINTERN PyObject *_wrap_LevelData_load(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   FESimple::LevelData *arg1 = (FESimple::LevelData *) 0 ;
@@ -14017,6 +14113,27 @@ SWIGINTERN PyObject *_wrap_LevelData_load(PyObject *SWIGUNUSEDPARM(self), PyObje
   return resultobj;
 fail:
   if (SWIG_IsNewObj(res2)) delete arg2;
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_LevelData_clear(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  FESimple::LevelData *arg1 = (FESimple::LevelData *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:LevelData_clear",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_FESimple__LevelData, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "LevelData_clear" "', argument " "1"" of type '" "FESimple::LevelData *""'"); 
+  }
+  arg1 = reinterpret_cast< FESimple::LevelData * >(argp1);
+  (arg1)->clear();
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
   return NULL;
 }
 
@@ -14125,19 +14242,6 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_new_LevelData(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
-  PyObject *resultobj = 0;
-  FESimple::LevelData *result = 0 ;
-  
-  if (!PyArg_ParseTuple(args,(char *)":new_LevelData")) SWIG_fail;
-  result = (FESimple::LevelData *)new FESimple::LevelData();
-  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_FESimple__LevelData, SWIG_POINTER_NEW |  0 );
-  return resultobj;
-fail:
-  return NULL;
-}
-
-
 SWIGINTERN PyObject *_wrap_delete_LevelData(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   FESimple::LevelData *arg1 = (FESimple::LevelData *) 0 ;
@@ -14169,10 +14273,11 @@ SWIGINTERN PyObject *LevelData_swigregister(PyObject *SWIGUNUSEDPARM(self), PyOb
 SWIGINTERN PyObject *_wrap_LevelBase_attach(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   FESimple::LevelBase *arg1 = (FESimple::LevelBase *) 0 ;
-  FESimple::Name *arg2 = 0 ;
+  FESimple::LevelData *arg2 = (FESimple::LevelData *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
-  int res2 = SWIG_OLDOBJ ;
+  void *argp2 = 0 ;
+  int res2 = 0 ;
   PyObject * obj0 = 0 ;
   PyObject * obj1 = 0 ;
   bool result;
@@ -14183,23 +14288,15 @@ SWIGINTERN PyObject *_wrap_LevelBase_attach(PyObject *SWIGUNUSEDPARM(self), PyOb
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "LevelBase_attach" "', argument " "1"" of type '" "FESimple::LevelBase *""'"); 
   }
   arg1 = reinterpret_cast< FESimple::LevelBase * >(argp1);
-  {
-    std::string *ptr = (std::string *)0;
-    res2 = SWIG_AsPtr_std_string(obj1, &ptr);
-    if (!SWIG_IsOK(res2)) {
-      SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "LevelBase_attach" "', argument " "2"" of type '" "FESimple::Name const &""'"); 
-    }
-    if (!ptr) {
-      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "LevelBase_attach" "', argument " "2"" of type '" "FESimple::Name const &""'"); 
-    }
-    arg2 = ptr;
+  res2 = SWIG_ConvertPtr(obj1, &argp2,SWIGTYPE_p_FESimple__LevelData, 0 |  0 );
+  if (!SWIG_IsOK(res2)) {
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "LevelBase_attach" "', argument " "2"" of type '" "FESimple::LevelData const *""'"); 
   }
-  result = (bool)(arg1)->attach((FESimple::Name const &)*arg2);
+  arg2 = reinterpret_cast< FESimple::LevelData * >(argp2);
+  result = (bool)(arg1)->attach((FESimple::LevelData const *)arg2);
   resultobj = SWIG_From_bool(static_cast< bool >(result));
-  if (SWIG_IsNewObj(res2)) delete arg2;
   return resultobj;
 fail:
-  if (SWIG_IsNewObj(res2)) delete arg2;
   return NULL;
 }
 
@@ -14207,36 +14304,53 @@ fail:
 SWIGINTERN PyObject *_wrap_LevelBase_reset(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   FESimple::LevelBase *arg1 = (FESimple::LevelBase *) 0 ;
-  FESimple::Name *arg2 = 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
-  int res2 = SWIG_OLDOBJ ;
   PyObject * obj0 = 0 ;
-  PyObject * obj1 = 0 ;
   
-  if (!PyArg_ParseTuple(args,(char *)"OO:LevelBase_reset",&obj0,&obj1)) SWIG_fail;
+  if (!PyArg_ParseTuple(args,(char *)"O:LevelBase_reset",&obj0)) SWIG_fail;
   res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_FESimple__LevelBase, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "LevelBase_reset" "', argument " "1"" of type '" "FESimple::LevelBase *""'"); 
   }
   arg1 = reinterpret_cast< FESimple::LevelBase * >(argp1);
-  {
-    std::string *ptr = (std::string *)0;
-    res2 = SWIG_AsPtr_std_string(obj1, &ptr);
-    if (!SWIG_IsOK(res2)) {
-      SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "LevelBase_reset" "', argument " "2"" of type '" "FESimple::Name const &""'"); 
-    }
-    if (!ptr) {
-      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "LevelBase_reset" "', argument " "2"" of type '" "FESimple::Name const &""'"); 
-    }
-    arg2 = ptr;
-  }
-  (arg1)->reset((FESimple::Name const &)*arg2);
+  (arg1)->reset();
   resultobj = SWIG_Py_Void();
-  if (SWIG_IsNewObj(res2)) delete arg2;
   return resultobj;
 fail:
-  if (SWIG_IsNewObj(res2)) delete arg2;
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_LevelBase_triggering_trigger(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  FESimple::LevelBase *arg1 = (FESimple::LevelBase *) 0 ;
+  FESimple::LevelTrigger *arg2 = 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 = 0 ;
+  int res2 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"OO:LevelBase_triggering_trigger",&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_FESimple__LevelBase, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "LevelBase_triggering_trigger" "', argument " "1"" of type '" "FESimple::LevelBase *""'"); 
+  }
+  arg1 = reinterpret_cast< FESimple::LevelBase * >(argp1);
+  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_FESimple__LevelTrigger,  0 );
+  if (!SWIG_IsOK(res2)) {
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "LevelBase_triggering_trigger" "', argument " "2"" of type '" "FESimple::LevelTrigger &""'"); 
+  }
+  if (!argp2) {
+    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "LevelBase_triggering_trigger" "', argument " "2"" of type '" "FESimple::LevelTrigger &""'"); 
+  }
+  arg2 = reinterpret_cast< FESimple::LevelTrigger * >(argp2);
+  (arg1)->triggering_trigger(*arg2);
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
   return NULL;
 }
 
@@ -14354,6 +14468,40 @@ SWIGINTERN PyObject *Swig_var_Pi_get(void) {
   
   pyobj = SWIG_From_float(static_cast< float >(FESimple::Pi));
   return pyobj;
+}
+
+
+SWIGINTERN PyObject *_wrap_current_time(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  float result;
+  
+  if (!PyArg_ParseTuple(args,(char *)":current_time")) SWIG_fail;
+  result = (float)FESimple::current_time();
+  resultobj = SWIG_From_float(static_cast< float >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_set_current_time(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  float arg1 ;
+  float val1 ;
+  int ecode1 = 0 ;
+  PyObject * obj0 = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:set_current_time",&obj0)) SWIG_fail;
+  ecode1 = SWIG_AsVal_float(obj0, &val1);
+  if (!SWIG_IsOK(ecode1)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode1), "in method '" "set_current_time" "', argument " "1"" of type '" "float""'");
+  } 
+  arg1 = static_cast< float >(val1);
+  FESimple::set_current_time(arg1);
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
 }
 
 
@@ -15546,6 +15694,19 @@ SWIGINTERN PyObject *_wrap_make_gameobj_ptr(PyObject *SWIGUNUSEDPARM(self), PyOb
   arg1 = reinterpret_cast< FESimple::GameObjBase * >(argp1);
   result = FESimple::make_gameobj_ptr(arg1);
   resultobj = SWIG_NewPointerObj((new FESimple::GameObjPtr(static_cast< const FESimple::GameObjPtr& >(result))), SWIGTYPE_p_std__shared_ptrT_FESimple__GameObjBase_t, SWIG_POINTER_OWN |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_init_python(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  bool result;
+  
+  if (!PyArg_ParseTuple(args,(char *)":init_python")) SWIG_fail;
+  result = (bool)FESimple::init_python();
+  resultobj = SWIG_From_bool(static_cast< bool >(result));
   return resultobj;
 fail:
   return NULL;
@@ -18157,6 +18318,127 @@ fail:
 }
 
 
+SWIGINTERN PyObject *_wrap_SpriteComponent_color_mask(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  FESimple::SpriteComponent *arg1 = (FESimple::SpriteComponent *) 0 ;
+  cocos2d::ccColor4F *arg2 = 0 ;
+  float arg3 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 = 0 ;
+  int res2 = 0 ;
+  float val3 ;
+  int ecode3 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  PyObject * obj2 = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"OOO:SpriteComponent_color_mask",&obj0,&obj1,&obj2)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_FESimple__SpriteComponent, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SpriteComponent_color_mask" "', argument " "1"" of type '" "FESimple::SpriteComponent *""'"); 
+  }
+  arg1 = reinterpret_cast< FESimple::SpriteComponent * >(argp1);
+  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_cocos2d__ccColor4F,  0  | 0);
+  if (!SWIG_IsOK(res2)) {
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "SpriteComponent_color_mask" "', argument " "2"" of type '" "cocos2d::ccColor4F const &""'"); 
+  }
+  if (!argp2) {
+    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "SpriteComponent_color_mask" "', argument " "2"" of type '" "cocos2d::ccColor4F const &""'"); 
+  }
+  arg2 = reinterpret_cast< cocos2d::ccColor4F * >(argp2);
+  ecode3 = SWIG_AsVal_float(obj2, &val3);
+  if (!SWIG_IsOK(ecode3)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode3), "in method '" "SpriteComponent_color_mask" "', argument " "3"" of type '" "float""'");
+  } 
+  arg3 = static_cast< float >(val3);
+  (arg1)->color_mask((cocos2d::ccColor4F const &)*arg2,arg3);
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_SpriteComponent_color_tint(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  FESimple::SpriteComponent *arg1 = (FESimple::SpriteComponent *) 0 ;
+  cocos2d::ccColor4F *arg2 = 0 ;
+  float arg3 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 = 0 ;
+  int res2 = 0 ;
+  float val3 ;
+  int ecode3 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  PyObject * obj2 = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"OOO:SpriteComponent_color_tint",&obj0,&obj1,&obj2)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_FESimple__SpriteComponent, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SpriteComponent_color_tint" "', argument " "1"" of type '" "FESimple::SpriteComponent *""'"); 
+  }
+  arg1 = reinterpret_cast< FESimple::SpriteComponent * >(argp1);
+  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_cocos2d__ccColor4F,  0  | 0);
+  if (!SWIG_IsOK(res2)) {
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "SpriteComponent_color_tint" "', argument " "2"" of type '" "cocos2d::ccColor4F const &""'"); 
+  }
+  if (!argp2) {
+    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "SpriteComponent_color_tint" "', argument " "2"" of type '" "cocos2d::ccColor4F const &""'"); 
+  }
+  arg2 = reinterpret_cast< cocos2d::ccColor4F * >(argp2);
+  ecode3 = SWIG_AsVal_float(obj2, &val3);
+  if (!SWIG_IsOK(ecode3)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode3), "in method '" "SpriteComponent_color_tint" "', argument " "3"" of type '" "float""'");
+  } 
+  arg3 = static_cast< float >(val3);
+  (arg1)->color_tint((cocos2d::ccColor4F const &)*arg2,arg3);
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_SpriteComponent_set_shader(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  FESimple::SpriteComponent *arg1 = (FESimple::SpriteComponent *) 0 ;
+  FESimple::Name *arg2 = 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  int res2 = SWIG_OLDOBJ ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"OO:SpriteComponent_set_shader",&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_FESimple__SpriteComponent, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SpriteComponent_set_shader" "', argument " "1"" of type '" "FESimple::SpriteComponent *""'"); 
+  }
+  arg1 = reinterpret_cast< FESimple::SpriteComponent * >(argp1);
+  {
+    std::string *ptr = (std::string *)0;
+    res2 = SWIG_AsPtr_std_string(obj1, &ptr);
+    if (!SWIG_IsOK(res2)) {
+      SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "SpriteComponent_set_shader" "', argument " "2"" of type '" "FESimple::Name const &""'"); 
+    }
+    if (!ptr) {
+      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "SpriteComponent_set_shader" "', argument " "2"" of type '" "FESimple::Name const &""'"); 
+    }
+    arg2 = ptr;
+  }
+  (arg1)->set_shader((FESimple::Name const &)*arg2);
+  resultobj = SWIG_Py_Void();
+  if (SWIG_IsNewObj(res2)) delete arg2;
+  return resultobj;
+fail:
+  if (SWIG_IsNewObj(res2)) delete arg2;
+  return NULL;
+}
+
+
 SWIGINTERN PyObject *_wrap_SpriteComponent_set_owner(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   FESimple::SpriteComponent *arg1 = (FESimple::SpriteComponent *) 0 ;
@@ -18411,6 +18693,7 @@ static PyMethodDef SwigMethods[] = {
 	 { (char *)"GameBase_remove_game_object", _wrap_GameBase_remove_game_object, METH_VARARGS, NULL},
 	 { (char *)"GameBase_get_scene", _wrap_GameBase_get_scene, METH_VARARGS, NULL},
 	 { (char *)"GameBase_get_phy_world", _wrap_GameBase_get_phy_world, METH_VARARGS, NULL},
+	 { (char *)"GameBase_get_level", _wrap_GameBase_get_level, METH_VARARGS, NULL},
 	 { (char *)"GameBase_get_obj", _wrap_GameBase_get_obj, METH_VARARGS, NULL},
 	 { (char *)"disown_GameBase", _wrap_disown_GameBase, METH_VARARGS, NULL},
 	 { (char *)"GameBase_swigregister", GameBase_swigregister, METH_VARARGS, NULL},
@@ -18426,21 +18709,25 @@ static PyMethodDef SwigMethods[] = {
 	 { (char *)"new_LevelBound", _wrap_new_LevelBound, METH_VARARGS, NULL},
 	 { (char *)"delete_LevelBound", _wrap_delete_LevelBound, METH_VARARGS, NULL},
 	 { (char *)"LevelBound_swigregister", LevelBound_swigregister, METH_VARARGS, NULL},
+	 { (char *)"new_LevelData", _wrap_new_LevelData, METH_VARARGS, NULL},
 	 { (char *)"LevelData_load", _wrap_LevelData_load, METH_VARARGS, NULL},
+	 { (char *)"LevelData_clear", _wrap_LevelData_clear, METH_VARARGS, NULL},
 	 { (char *)"LevelData_bound_set", _wrap_LevelData_bound_set, METH_VARARGS, NULL},
 	 { (char *)"LevelData_bound_get", _wrap_LevelData_bound_get, METH_VARARGS, NULL},
 	 { (char *)"LevelData_triggers_set", _wrap_LevelData_triggers_set, METH_VARARGS, NULL},
 	 { (char *)"LevelData_triggers_get", _wrap_LevelData_triggers_get, METH_VARARGS, NULL},
-	 { (char *)"new_LevelData", _wrap_new_LevelData, METH_VARARGS, NULL},
 	 { (char *)"delete_LevelData", _wrap_delete_LevelData, METH_VARARGS, NULL},
 	 { (char *)"LevelData_swigregister", LevelData_swigregister, METH_VARARGS, NULL},
 	 { (char *)"LevelBase_attach", _wrap_LevelBase_attach, METH_VARARGS, NULL},
 	 { (char *)"LevelBase_reset", _wrap_LevelBase_reset, METH_VARARGS, NULL},
+	 { (char *)"LevelBase_triggering_trigger", _wrap_LevelBase_triggering_trigger, METH_VARARGS, NULL},
 	 { (char *)"LevelBase_update", _wrap_LevelBase_update, METH_VARARGS, NULL},
 	 { (char *)"LevelBase_get_bound", _wrap_LevelBase_get_bound, METH_VARARGS, NULL},
 	 { (char *)"new_LevelBase", _wrap_new_LevelBase, METH_VARARGS, NULL},
 	 { (char *)"delete_LevelBase", _wrap_delete_LevelBase, METH_VARARGS, NULL},
 	 { (char *)"LevelBase_swigregister", LevelBase_swigregister, METH_VARARGS, NULL},
+	 { (char *)"current_time", _wrap_current_time, METH_VARARGS, NULL},
+	 { (char *)"set_current_time", _wrap_set_current_time, METH_VARARGS, NULL},
 	 { (char *)"string_to_point", _wrap_string_to_point, METH_VARARGS, NULL},
 	 { (char *)"string_to_rect", _wrap_string_to_rect, METH_VARARGS, NULL},
 	 { (char *)"split_string", _wrap_split_string, METH_VARARGS, NULL},
@@ -18474,6 +18761,7 @@ static PyMethodDef SwigMethods[] = {
 	 { (char *)"GameInfo_swigregister", GameInfo_swigregister, METH_VARARGS, NULL},
 	 { (char *)"get_game_info", _wrap_get_game_info, METH_VARARGS, NULL},
 	 { (char *)"make_gameobj_ptr", _wrap_make_gameobj_ptr, METH_VARARGS, NULL},
+	 { (char *)"init_python", _wrap_init_python, METH_VARARGS, NULL},
 	 { (char *)"GameObjFactory_construct_obj", _wrap_GameObjFactory_construct_obj, METH_VARARGS, NULL},
 	 { (char *)"new_GameObjFactory", _wrap_new_GameObjFactory, METH_VARARGS, NULL},
 	 { (char *)"delete_GameObjFactory", _wrap_delete_GameObjFactory, METH_VARARGS, NULL},
@@ -18574,6 +18862,9 @@ static PyMethodDef SwigMethods[] = {
 	 { (char *)"SpriteComponent_apply_linear_impulse", _wrap_SpriteComponent_apply_linear_impulse, METH_VARARGS, NULL},
 	 { (char *)"SpriteComponent_apply_angular_impulse", _wrap_SpriteComponent_apply_angular_impulse, METH_VARARGS, NULL},
 	 { (char *)"SpriteComponent_wakeup", _wrap_SpriteComponent_wakeup, METH_VARARGS, NULL},
+	 { (char *)"SpriteComponent_color_mask", _wrap_SpriteComponent_color_mask, METH_VARARGS, NULL},
+	 { (char *)"SpriteComponent_color_tint", _wrap_SpriteComponent_color_tint, METH_VARARGS, NULL},
+	 { (char *)"SpriteComponent_set_shader", _wrap_SpriteComponent_set_shader, METH_VARARGS, NULL},
 	 { (char *)"SpriteComponent_set_owner", _wrap_SpriteComponent_set_owner, METH_VARARGS, NULL},
 	 { (char *)"SpriteComponent_get_owner", _wrap_SpriteComponent_get_owner, METH_VARARGS, NULL},
 	 { (char *)"SpriteComponent_swigregister", SpriteComponent_swigregister, METH_VARARGS, NULL},
@@ -18629,6 +18920,7 @@ static swig_type_info _swigt__p_cocos2d__CCPoint = {"_p_cocos2d__CCPoint", "coco
 static swig_type_info _swigt__p_cocos2d__CCRect = {"_p_cocos2d__CCRect", "cocos2d::CCRect *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_cocos2d__CCSize = {"_p_cocos2d__CCSize", "cocos2d::CCSize *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_cocos2d__CCTouch = {"_p_cocos2d__CCTouch", "cocos2d::CCTouch *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_cocos2d__ccColor4F = {"_p_cocos2d__ccColor4F", "cocos2d::ccColor4F *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_const_reference = {"_p_const_reference", "const_reference *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_difference_type = {"_p_difference_type", "difference_type *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_key_type = {"_p_key_type", "key_type *", 0, 0, (void*)0, 0};
@@ -18700,6 +18992,7 @@ static swig_type_info *swig_type_initial[] = {
   &_swigt__p_cocos2d__CCRect,
   &_swigt__p_cocos2d__CCSize,
   &_swigt__p_cocos2d__CCTouch,
+  &_swigt__p_cocos2d__ccColor4F,
   &_swigt__p_const_reference,
   &_swigt__p_difference_type,
   &_swigt__p_key_type,
@@ -18771,6 +19064,7 @@ static swig_cast_info _swigc__p_cocos2d__CCPoint[] = {  {&_swigt__p_cocos2d__CCP
 static swig_cast_info _swigc__p_cocos2d__CCRect[] = {  {&_swigt__p_cocos2d__CCRect, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_cocos2d__CCSize[] = {  {&_swigt__p_cocos2d__CCSize, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_cocos2d__CCTouch[] = {  {&_swigt__p_cocos2d__CCTouch, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_cocos2d__ccColor4F[] = {  {&_swigt__p_cocos2d__ccColor4F, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_const_reference[] = {  {&_swigt__p_const_reference, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_difference_type[] = {  {&_swigt__p_difference_type, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_key_type[] = {  {&_swigt__p_key_type, 0, 0, 0},{0, 0, 0, 0}};
@@ -18842,6 +19136,7 @@ static swig_cast_info *swig_cast_initial[] = {
   _swigc__p_cocos2d__CCRect,
   _swigc__p_cocos2d__CCSize,
   _swigc__p_cocos2d__CCTouch,
+  _swigc__p_cocos2d__ccColor4F,
   _swigc__p_const_reference,
   _swigc__p_difference_type,
   _swigc__p_key_type,

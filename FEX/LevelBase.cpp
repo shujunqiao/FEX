@@ -91,10 +91,11 @@ void LevelBase::triggering_trigger( LevelTrigger& trigger )
 }
 
 void LevelBase::update( float delta_time )
-{
+{    
     while( current_trigger < level_data.triggers.size() )
     {
-        if ( current_time() - start_time > level_data.triggers[current_trigger].progress )
+
+        if ( current_time() - start_time < level_data.triggers[current_trigger].progress )
             break;
         triggering_trigger( level_data.triggers[current_trigger] );
         current_trigger++;

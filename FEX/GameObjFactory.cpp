@@ -27,7 +27,7 @@ GameObjPtr GameObjFactory::construct_obj( const Name& classname, const SpawnPara
     auto it = std::find_if(fe_classes.begin(), fe_classes.end(), [&](ClassInfo* i){if (i->name == classname) return true;else return false; });
     if ( it != fe_classes.end() )
         return GameObjPtr((GameObjBase*)(*it)->constructor(params));
-    logger("GameObjFactory") << "constructor of class:<" << classname <<"> not found.";
+    logger("GameObjFactory") << "constructor of class:<" << classname <<"> not found." << endl;
     return GameObjPtr(nullptr);
 }
 

@@ -13,29 +13,33 @@
 #include <random>
 #include "FE.h"
 #include "GameBase.h"
+using namespace FESimple;
+#include "FEX_wrap.cxx"
+#include "FEX_wrap.h"
 
+extern "C" void initzlib(void);
 
 FE_NS_BEGIN
 
 std::random_device rd;
 std::mt19937    mt_random_engine(rd());
 /*
-template<int n>
-struct Pi
-{
-public:
-    constexpr const static float value = 4 *pow(-1, n+1)/(2*n-1) + Pi<n-1>::value;
-};
-
-
-template<>
-struct Pi<1>
-{
-public:
-    constexpr const static float value = 4.0f;
-};
-
-float Pi2 = Pi<100>::value;
+ template<int n>
+ struct Pi
+ {
+ public:
+ constexpr const static float value = 4 *pow(-1, n+1)/(2*n-1) + Pi<n-1>::value;
+ };
+ 
+ 
+ template<>
+ struct Pi<1>
+ {
+ public:
+ constexpr const static float value = 4.0f;
+ };
+ 
+ float Pi2 = Pi<100>::value;
  */
 float Pi = 3.14159265359f;
 float curtime = 0;
@@ -239,5 +243,16 @@ GameObjPtr make_gameobj_ptr( GameObjBase* p )
 {
     return GameObjPtr(p);
 }
+
+bool init_python(const std::string& python_home)
+{
+    char path[1024];
+    Py_SetPythonHome(path);
+    Py_Initialize();
+    initzlib();
+    init_FEX();
+    
+}
+
 FE_NS_END
 

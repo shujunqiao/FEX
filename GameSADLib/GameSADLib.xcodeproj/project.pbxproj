@@ -305,6 +305,7 @@
 					"\"$(SRCROOT)/../FEX",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 			};
@@ -340,6 +341,7 @@
 					"\"$(SRCROOT)/../FEX",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 			};
@@ -449,6 +451,7 @@
 				04249B3E179E238800AE59D4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		04F0CB8D179048BF00321D88 /* Build configuration list for PBXProject "GameSADLib" */ = {
 			isa = XCConfigurationList;

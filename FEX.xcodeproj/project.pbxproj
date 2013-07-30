@@ -7,7 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0405DC5117A81CF5008DD5B9 /* IOSTouchController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04C3AF9417914F35005F9937 /* IOSTouchController.cpp */; };
 		040A59E6177E6FA00010E979 /* CollisionListener.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 040A59E4177E6FA00010E979 /* CollisionListener.cpp */; };
+		045E880917A545E200C99DB7 /* FEX_wrap.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 045E880617A545E200C99DB7 /* FEX_wrap.cxx */; };
+		045E880A17A545E200C99DB7 /* FEX_wrap.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 045E880617A545E200C99DB7 /* FEX_wrap.cxx */; };
+		045E880B17A545E200C99DB7 /* zlibmodule.c in Sources */ = {isa = PBXBuildFile; fileRef = 045E880817A545E200C99DB7 /* zlibmodule.c */; };
+		045E880C17A545E200C99DB7 /* zlibmodule.c in Sources */ = {isa = PBXBuildFile; fileRef = 045E880817A545E200C99DB7 /* zlibmodule.c */; };
 		045FF16517892196007A338D /* CCPhyDebugNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04A627CB177BEDD200E1760D /* CCPhyDebugNode.cpp */; };
 		045FF16617892196007A338D /* ControllerBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04A627CE177BEDD200E1760D /* ControllerBase.cpp */; };
 		045FF16717892196007A338D /* FE.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04A627D0177BEDD200E1760D /* FE.cpp */; };
@@ -68,6 +73,9 @@
 /* Begin PBXFileReference section */
 		040A59E4177E6FA00010E979 /* CollisionListener.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CollisionListener.cpp; path = FEX/CollisionListener.cpp; sourceTree = "<group>"; };
 		040A59E5177E6FA00010E979 /* CollisionListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CollisionListener.h; path = FEX/CollisionListener.h; sourceTree = "<group>"; };
+		045E880617A545E200C99DB7 /* FEX_wrap.cxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FEX_wrap.cxx; path = FEX/FEX_wrap.cxx; sourceTree = "<group>"; };
+		045E880717A545E200C99DB7 /* FEX_wrap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FEX_wrap.h; path = FEX/FEX_wrap.h; sourceTree = "<group>"; };
+		045E880817A545E200C99DB7 /* zlibmodule.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = zlibmodule.c; path = FEX/zlibmodule.c; sourceTree = "<group>"; };
 		045FF17B17892196007A338D /* libFEXMac.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libFEXMac.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		04713BCC1760C81900443B48 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		04713BCE1760C81900443B48 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
@@ -173,6 +181,9 @@
 		04A627CA177BEDC600E1760D /* Src */ = {
 			isa = PBXGroup;
 			children = (
+				045E880617A545E200C99DB7 /* FEX_wrap.cxx */,
+				045E880717A545E200C99DB7 /* FEX_wrap.h */,
+				045E880817A545E200C99DB7 /* zlibmodule.c */,
 				04C3AF9417914F35005F9937 /* IOSTouchController.cpp */,
 				04C3AF9517914F35005F9937 /* IOSTouchController.h */,
 				04A627CB177BEDD200E1760D /* CCPhyDebugNode.cpp */,
@@ -291,6 +302,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0405DC5117A81CF5008DD5B9 /* IOSTouchController.cpp in Sources */,
 				045FF16517892196007A338D /* CCPhyDebugNode.cpp in Sources */,
 				045FF16617892196007A338D /* ControllerBase.cpp in Sources */,
 				045FF16717892196007A338D /* FE.cpp in Sources */,
@@ -307,6 +319,8 @@
 				045FF17217892196007A338D /* SpriteBase.cpp in Sources */,
 				045FF17317892196007A338D /* SpriteComponent.cpp in Sources */,
 				045FF17417892196007A338D /* CollisionListener.cpp in Sources */,
+				045E880A17A545E200C99DB7 /* FEX_wrap.cxx in Sources */,
+				045E880C17A545E200C99DB7 /* zlibmodule.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -331,6 +345,8 @@
 				04A627FB177BEDD200E1760D /* SpriteComponent.cpp in Sources */,
 				040A59E6177E6FA00010E979 /* CollisionListener.cpp in Sources */,
 				04C3AF9617914F36005F9937 /* IOSTouchController.cpp in Sources */,
+				045E880917A545E200C99DB7 /* FEX_wrap.cxx in Sources */,
+				045E880B17A545E200C99DB7 /* zlibmodule.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +357,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
@@ -348,6 +365,7 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=*]" = "";
 				COPY_PHASE_STRIP = NO;
 				DSTROOT = /tmp/FEX.dst;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -368,13 +386,13 @@
 					"\"libs/cocos2dx/platform/third_party/mac\"",
 					"\"libs/cocos2dx/platform/mac\"",
 					"\"libs/external\"",
+					"\"libs/python2.7\"",
 				);
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
-				ONLY_ACTIVE_ARCH = NO;
+				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = FEXMac;
-				SDKROOT = macosx;
+				SDKROOT = macosx10.7;
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -383,6 +401,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
@@ -390,6 +409,7 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=*]" = "";
 				COPY_PHASE_STRIP = YES;
 				DSTROOT = /tmp/FEX.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -411,13 +431,13 @@
 					"\"libs/cocos2dx/platform/third_party/mac\"",
 					"\"libs/cocos2dx/platform/mac\"",
 					"\"libs/external\"",
+					"\"libs/python2.7\"",
 				);
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
-				ONLY_ACTIVE_ARCH = NO;
+				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = FEXMac;
-				SDKROOT = macosx;
+				SDKROOT = macosx10.7;
 				SKIP_INSTALL = YES;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -427,7 +447,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=*]" = "iPhone Developer";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -449,9 +469,7 @@
 					"\"$(PROJECT_NAME)/libs/cocos2dx/platform/third_party/ios\"",
 					"\"$(PROJECT_NAME)/libs/cocos2dx/platform/ios\"",
 				);
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				SDKROOT = "";
 			};
 			name = Debug;
 		};
@@ -459,7 +477,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=*]" = "iPhone Developer";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					NDEBUG,
@@ -479,10 +497,7 @@
 					"\"$(PROJECT_NAME)/libs/cocos2dx/platform/third_party/ios\"",
 					"\"$(PROJECT_NAME)/libs/cocos2dx/platform/ios\"",
 				);
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
-				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				SDKROOT = "";
 			};
 			name = Release;
 		};
@@ -497,6 +512,8 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=*]" = "";
 				COPY_PHASE_STRIP = NO;
 				DSTROOT = /tmp/FEX.dst;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -522,6 +539,7 @@
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -537,6 +555,8 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=*]" = "";
 				COPY_PHASE_STRIP = YES;
 				DSTROOT = /tmp/FEX.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -563,6 +583,7 @@
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				VALIDATE_PRODUCT = YES;
 			};

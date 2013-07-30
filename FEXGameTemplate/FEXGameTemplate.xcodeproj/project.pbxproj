@@ -643,7 +643,6 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../libs/python2.7/libs\"",
-					"\"$(SRCROOT)/../../../Library/Developer/Xcode/DerivedData/FETemplate-bwkxjubalbhtkretxzgqqgetelpu/Build/Products/Debug-iphoneos\"",
 				);
 				OTHER_LDFLAGS = (
 					"-lxml2",
@@ -685,7 +684,6 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../libs/python2.7/libs\"",
-					"\"$(SRCROOT)/../../../Library/Developer/Xcode/DerivedData/FETemplate-bwkxjubalbhtkretxzgqqgetelpu/Build/Products/Debug-iphoneos\"",
 				);
 				OTHER_LDFLAGS = (
 					"-lxml2",

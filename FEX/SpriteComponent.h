@@ -183,11 +183,5 @@ protected:
     
 };
 
-template <typename ...Args>
-void proxycall( Args &&... args)
-{
-        printf("",args...);
-}
-
 FE_NS_END
 #endif /* defined(__FEX__Sprite__) */

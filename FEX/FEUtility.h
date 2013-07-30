@@ -63,7 +63,7 @@ struct GameInfo
 extern GameInfo    g_game_info;
 GameInfo* get_game_info();
 GameObjPtr make_gameobj_ptr( GameObjBase* p );
-
+bool init_python(const std::string& python_home);
 FE_NS_END
 
 
