@@ -7,13 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		041AB4F417A9F42800181E05 /* GameSADLevel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 041AB4F217A9F42800181E05 /* GameSADLevel.cpp */; };
+		041AB4F517A9F42800181E05 /* GameSADLevel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 041AB4F217A9F42800181E05 /* GameSADLevel.cpp */; };
+		041AB4F617A9F42800181E05 /* GameSADLevel.h in Headers */ = {isa = PBXBuildFile; fileRef = 041AB4F317A9F42800181E05 /* GameSADLevel.h */; };
 		04249B23179E227C00AE59D4 /* GameSADEditor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04249B21179E227C00AE59D4 /* GameSADEditor.cpp */; };
-		04249B26179E229000AE59D4 /* GameSADLevel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04249B24179E229000AE59D4 /* GameSADLevel.cpp */; };
 		04249B29179E22A500AE59D4 /* GameSADEditorLevel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04249B27179E22A500AE59D4 /* GameSADEditorLevel.cpp */; };
 		04249B31179E238800AE59D4 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04249B30179E238800AE59D4 /* Cocoa.framework */; };
 		04249B3F179E24FF00AE59D4 /* GameSADEditorLevel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04249B27179E22A500AE59D4 /* GameSADEditorLevel.cpp */; };
 		04249B40179E24FF00AE59D4 /* GameSADEditor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04249B21179E227C00AE59D4 /* GameSADEditor.cpp */; };
-		04249B41179E24FF00AE59D4 /* GameSADLevel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04249B24179E229000AE59D4 /* GameSADLevel.cpp */; };
 		04249B4B179E756300AE59D4 /* Hero.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04249B47179E756300AE59D4 /* Hero.cpp */; };
 		04249B4C179E756300AE59D4 /* IOSTcouchController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04249B49179E756300AE59D4 /* IOSTcouchController.cpp */; };
 		04249B51179E778000AE59D4 /* GameSAD.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04249B4D179E778000AE59D4 /* GameSAD.cpp */; };
@@ -36,10 +37,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		041AB4F217A9F42800181E05 /* GameSADLevel.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameSADLevel.cpp; sourceTree = SOURCE_ROOT; };
+		041AB4F317A9F42800181E05 /* GameSADLevel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameSADLevel.h; sourceTree = SOURCE_ROOT; };
 		04249B21179E227C00AE59D4 /* GameSADEditor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameSADEditor.cpp; sourceTree = "<group>"; };
 		04249B22179E227C00AE59D4 /* GameSADEditor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameSADEditor.h; sourceTree = "<group>"; };
-		04249B24179E229000AE59D4 /* GameSADLevel.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GameSADLevel.cpp; path = ../GameSADLevel.cpp; sourceTree = "<group>"; };
-		04249B25179E229000AE59D4 /* GameSADLevel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameSADLevel.h; path = ../GameSADLevel.h; sourceTree = "<group>"; };
 		04249B27179E22A500AE59D4 /* GameSADEditorLevel.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameSADEditorLevel.cpp; sourceTree = "<group>"; };
 		04249B28179E22A500AE59D4 /* GameSADEditorLevel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameSADEditorLevel.h; sourceTree = "<group>"; };
 		04249B2F179E238800AE59D4 /* libGameSADLibMac.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libGameSADLibMac.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -116,20 +117,12 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		04249B50179E778000AE59D4 /* GameSADLib */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = GameSADLib;
-			sourceTree = "<group>";
-		};
 		04F0CB89179048BF00321D88 = {
 			isa = PBXGroup;
 			children = (
 				04249B4D179E778000AE59D4 /* GameSAD.cpp */,
 				04249B4E179E778000AE59D4 /* GameSAD.h */,
 				04249B4F179E778000AE59D4 /* GameSADLib-Prefix.pch */,
-				04249B50179E778000AE59D4 /* GameSADLib */,
 				04249B2A179E22B300AE59D4 /* Editor */,
 				04F0CB97179048BF00321D88 /* GameSADLib */,
 				04249B36179E238800AE59D4 /* GameSADLibMac */,
@@ -160,12 +153,12 @@
 		04F0CB97179048BF00321D88 /* GameSADLib */ = {
 			isa = PBXGroup;
 			children = (
+				041AB4F217A9F42800181E05 /* GameSADLevel.cpp */,
+				041AB4F317A9F42800181E05 /* GameSADLevel.h */,
 				04249B47179E756300AE59D4 /* Hero.cpp */,
 				04249B48179E756300AE59D4 /* Hero.h */,
 				04249B49179E756300AE59D4 /* IOSTcouchController.cpp */,
 				04249B4A179E756300AE59D4 /* IOSTcouchController.h */,
-				04249B24179E229000AE59D4 /* GameSADLevel.cpp */,
-				04249B25179E229000AE59D4 /* GameSADLevel.h */,
 			);
 			path = GameSADLib;
 			sourceTree = "<group>";
@@ -177,6 +170,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				041AB4F617A9F42800181E05 /* GameSADLevel.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,7 +248,7 @@
 				04249B54179E79C800AE59D4 /* IOSTcouchController.cpp in Sources */,
 				04249B3F179E24FF00AE59D4 /* GameSADEditorLevel.cpp in Sources */,
 				04249B40179E24FF00AE59D4 /* GameSADEditor.cpp in Sources */,
-				04249B41179E24FF00AE59D4 /* GameSADLevel.cpp in Sources */,
+				041AB4F517A9F42800181E05 /* GameSADLevel.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,11 +257,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				04249B23179E227C00AE59D4 /* GameSADEditor.cpp in Sources */,
-				04249B26179E229000AE59D4 /* GameSADLevel.cpp in Sources */,
 				04249B29179E22A500AE59D4 /* GameSADEditorLevel.cpp in Sources */,
 				04249B4B179E756300AE59D4 /* Hero.cpp in Sources */,
 				04249B4C179E756300AE59D4 /* IOSTcouchController.cpp in Sources */,
 				04249B51179E778000AE59D4 /* GameSAD.cpp in Sources */,
+				041AB4F417A9F42800181E05 /* GameSADLevel.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,6 +302,7 @@
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
+				SYMROOT = build;
 			};
 			name = Debug;
 		};
@@ -344,6 +339,7 @@
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
+				SYMROOT = build;
 			};
 			name = Release;
 		};
