@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<sprites>
+    <sprite name="earth_1" >
+		<components>
+			<component desc="earth_1" />
+		</components>
+    </sprite>
+    <sprite name="earth_2" >
+		<components>
+			<component desc="earth_2" />
+		</components>
+    </sprite>
+    <sprite name="earth_3" >
+		<components>
+			<component desc="earth_3" />
+		</components>
+    </sprite>
+    <sprite name="earth_4" >
+		<components>
+			<component desc="earth_4" />
+		</components>
+    </sprite>
+    
+    <sprite name="ninja" >
+		<components>
+			<component desc="ninja" />
+		</components>
+    </sprite>
+    
+    <sprite name="bg1" >
+		<components>
+			<component desc="bg1" />
+		</components>
+    </sprite>
+    <sprite name="saw" >
+		<components>
+			<component desc="saw" />
+		</components>
+    </sprite>
+    <sprite name="ball" >
+		<components>
+			<component desc="ball" />
+		</components>
+    </sprite>
+    
+    <sprite name="rock_1" >
+		<components>
+			<component desc="rock_1" />
+		</components>
+    </sprite>
+    <sprite name="rock_2" >
+		<components>
+			<component desc="rock_2" />
+		</components>
+    </sprite>
+    <sprite name="rock_3" >
+		<components>
+			<component desc="rock_3" />
+		</components>
+    </sprite>
+    
+    <sprite name="spike" >
+		<components>
+			<component desc="spike" />
+		</components>
+    </sprite>
+    
+    <sprite name="coin">
+		<components>
+			<component desc="coin" />
+		</components>
+    </sprite>
+    <sprite name="coin1">
+		<components>
+			<component desc="coin1" />
+		</components>
+    </sprite>
+    <sprite name="magnet">
+		<components>
+			<component desc="magnet" />
+		</components>
+    </sprite>
+    <sprite name="god_portion">
+		<components>
+			<component desc="god_portion" />
+		</components>
+    </sprite>
+    <sprite name="excellent">
+		<components>
+			<component desc="excellent" />
+		</components>
+    </sprite>
+</sprites>

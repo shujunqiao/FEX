@@ -70,6 +70,7 @@ static AppDelegate s_sharedApplication;
     [window makeKeyAndOrderFront:self];
     [window setAcceptsMouseMovedEvents:NO];
     
+    
     cocos2d::CCApplication::sharedApplication()->run();
 }
 

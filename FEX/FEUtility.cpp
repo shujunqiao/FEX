@@ -247,11 +247,17 @@ GameObjPtr make_gameobj_ptr( GameObjBase* p )
 bool init_python(const std::string& python_home)
 {
     char path[1024];
+    strcpy(path,python_home.c_str());
     Py_SetPythonHome(path);
     Py_Initialize();
+    
     initzlib();
     init_FEX();
-    
+    PyRun_SimpleString("import sys");
+    std::string cmd = std::string("sys.path.append(\"") + full_path("python") + "/python.zip\")";
+    PyRun_SimpleString(cmd.c_str());
+    PyRun_SimpleString("print sys.path");
+    return true;
 }
 
 FE_NS_END
