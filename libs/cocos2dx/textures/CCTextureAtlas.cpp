@@ -262,6 +262,11 @@ void CCTextureAtlas::setupVBOandVAO()
     glEnableVertexAttribArray(kCCVertexAttrib_Color);
     glVertexAttribPointer(kCCVertexAttrib_Color, 4, GL_UNSIGNED_BYTE, GL_TRUE, kQuadSize, (GLvoid*) offsetof( ccV3F_C4B_T2F, colors));
 
+    
+    // colors
+    glEnableVertexAttribArray(kCCVertexAttrib_MaskColor);
+    glVertexAttribPointer(kCCVertexAttrib_MaskColor, 4, GL_UNSIGNED_BYTE, GL_TRUE, kQuadSize, (GLvoid*) offsetof( ccV3F_C4B_T2F, mask_colors));
+    
     // tex coords
     glEnableVertexAttribArray(kCCVertexAttrib_TexCoords);
     glVertexAttribPointer(kCCVertexAttrib_TexCoords, 2, GL_FLOAT, GL_FALSE, kQuadSize, (GLvoid*) offsetof( ccV3F_C4B_T2F, texCoords));
@@ -664,6 +669,10 @@ void CCTextureAtlas::drawNumberOfQuads(unsigned int n, unsigned int start)
     // tex coords
     glVertexAttribPointer(kCCVertexAttrib_TexCoords, 2, GL_FLOAT, GL_FALSE, kQuadSize, (GLvoid*) offsetof(ccV3F_C4B_T2F, texCoords));
 
+    // tex coords
+    glVertexAttribPointer(kCCVertexAttrib_MaskColor, 4, GL_UNSIGNED_BYTE, GL_TRUE, kQuadSize, (GLvoid*) offsetof(ccV3F_C4B_T2F, mask_colors));
+    
+    
     glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, m_pBuffersVBO[1]);
 
 #if CC_TEXTURE_ATLAS_USE_TRIANGLE_STRIP

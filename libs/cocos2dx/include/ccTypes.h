@@ -246,6 +246,10 @@ typedef struct _ccV3F_C4B_T2F
 
     // tex coords (2F)
     ccTex2F            texCoords;            // 8 bytes
+
+    //added by fancyzero >>>
+    ccColor4B       mask_colors;
+    //added by fancyzero <<<
 } ccV3F_C4B_T2F;
 
 //! A Triangle of ccV2F_C4B_T2F

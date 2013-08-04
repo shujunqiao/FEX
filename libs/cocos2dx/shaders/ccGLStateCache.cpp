@@ -39,7 +39,7 @@ static GLuint      s_uCurrentProjectionMatrix = -1;
 static bool        s_bVertexAttribPosition = false;
 static bool        s_bVertexAttribColor = false;
 static bool        s_bVertexAttribTexCoords = false;
-
+static bool        s_bVertexAttribMaskColor = false;
 
 #if CC_ENABLE_GL_STATE_CACHE
 
@@ -249,6 +249,18 @@ void ccGLEnableVertexAttribs( unsigned int flags )
             glDisableVertexAttribArray( kCCVertexAttrib_Color );
 
         s_bVertexAttribColor = enableColor;
+    }
+    
+    /* Mask Color */
+    bool enableMaskColor = (flags & kCCVertexAttribFlag_MaskColor) != 0 ? true : false;
+    
+    if( enableMaskColor != s_bVertexAttribMaskColor ) {
+        if( enableMaskColor )
+            glEnableVertexAttribArray( kCCVertexAttrib_MaskColor );
+        else
+            glDisableVertexAttribArray( kCCVertexAttrib_MaskColor );
+        
+        s_bVertexAttribMaskColor = enableMaskColor;
     }
 
     /* Tex Coords */

@@ -44,7 +44,9 @@ enum {
     kCCVertexAttrib_Position,
     kCCVertexAttrib_Color,
     kCCVertexAttrib_TexCoords,
-
+    //added by fancyzero >>>
+    kCCVertexAttrib_MaskColor,
+    //added by fancyzero <<<    
     kCCVertexAttrib_MAX,
 };
 
@@ -85,6 +87,8 @@ enum {
 #define    kCCAttributeNameColor           "a_color"
 #define    kCCAttributeNamePosition        "a_position"
 #define    kCCAttributeNameTexCoord        "a_texCoord"
+//added by fancyzero
+#define    kCCAttributeNameMaskColor       "a_mask_color"
 
 struct _hashUniformEntry;
 
