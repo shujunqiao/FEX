@@ -1,24 +1,24 @@
 <sprites>
 	<sprite name="ui_button">
-		<sprite_components>
-			<sprite_component desc="sprite_components/base.xml:controller_dir_button"/>
-		</sprite_components>
+		<components>
+			<component desc="controller_dir_button"/>
+		</components>
 	</sprite>
 	
 	<sprite name="ui_bg">
-		<sprite_components>
-			<sprite_component desc="sprite_components/base.xml:controller_bg_landscape"/>
-		</sprite_components>
+		<components>
+			<component desc="controller_bg_landscape"/>
+		</components>
 	</sprite>
 	
 	<sprite name="fluffy_bear">
-		<sprite_components>
-			<sprite_component name="left_arm" desc="sprite_components/base.xml:fluffy_bear_lh" offset="-10,4" collision_cat="1" collision_filter="2"/>
-			<sprite_component name="right_arm" desc="sprite_components/base.xml:fluffy_bear_rh" offset="11,5" collision_cat="1" collision_filter="2"/>
-			<sprite_component name="left_leg" desc="sprite_components/base.xml:fluffy_bear_ll" offset="-6,-16" collision_cat="1" collision_filter="2"/>
-			<sprite_component name="right_leg" desc="sprite_components/base.xml:fluffy_bear_rl" offset="6,-14" collision_cat="1" collision_filter="2"/>
-			<sprite_component name="body" desc="sprite_components/base.xml:fluffy_bear_body" offset="0,0" collision_cat="1" collision_filter="2"/>
-		</sprite_components>
+		<components>
+			<component name="left_arm" desc="fluffy_bear_lh" offset="-10,4" collision_cat="1" collision_filter="2"/>
+			<component name="right_arm" desc="fluffy_bear_rh" offset="11,5" collision_cat="1" collision_filter="2"/>
+			<component name="left_leg" desc="fluffy_bear_ll" offset="-6,-16" collision_cat="1" collision_filter="2"/>
+			<component name="right_leg" desc="fluffy_bear_rl" offset="6,-14" collision_cat="1" collision_filter="2"/>
+			<component name="body" desc="fluffy_bear_body" offset="0,0" collision_cat="1" collision_filter="2"/>
+		</components>
 		<joints>
 			<joint type="revolute" component_a="4" component_b="1" enable_limit="true" up_limit="15" low_limit="-15"/>
 			<joint type="revolute" component_a="4" component_b="2" enable_limit="true" up_limit="15" low_limit="-15"/>
@@ -27,246 +27,246 @@
 		</joints>
 	</sprite>
 	<sprite name="robot">
-		<sprite_components>
-			<sprite_component name="left_hand" desc="sprite_components/base.xml:toy_robot_left_hand" offset="-100,-60" collision_cat="1" collision_filter="2"/>
-			<sprite_component name="right_hand" desc="sprite_components/base.xml:toy_robot_right_hand" offset="105,-60" collision_cat="1" collision_filter="2"/>
-			<sprite_component name="left_arm" desc="sprite_components/base.xml:toy_robot_left_arm" offset="-100,10" collision_cat="1" collision_filter="2"/>
-			<sprite_component name="right_arm" desc="sprite_components/base.xml:toy_robot_right_arm" offset="100,10" collision_cat="1" collision_filter="2"/>
-			<sprite_component name="left_leg" desc="sprite_components/base.xml:toy_robot_left_leg" offset="-40,-170" collision_cat="1" collision_filter="2"/>
-			<sprite_component name="right_leg" desc="sprite_components/base.xml:toy_robot_right_leg" offset="50,-170" collision_cat="1" collision_filter="2"/>
-			<sprite_component name="body" desc="sprite_components/base.xml:toy_robot_body"  collision_cat="1" collision_filter="2"/>
-			<sprite_component name="head" desc="sprite_components/base.xml:toy_robot_head"  offset="0,48" collision_cat="1" collision_filter="2"/>			
-		</sprite_components>
+		<components>
+			<component name="left_hand" desc="toy_robot_left_hand" offset="-100,-60" collision_cat="1" collision_filter="2"/>
+			<component name="right_hand" desc="toy_robot_right_hand" offset="105,-60" collision_cat="1" collision_filter="2"/>
+			<component name="left_arm" desc="toy_robot_left_arm" offset="-100,10" collision_cat="1" collision_filter="2"/>
+			<component name="right_arm" desc="toy_robot_right_arm" offset="100,10" collision_cat="1" collision_filter="2"/>
+			<component name="left_leg" desc="toy_robot_left_leg" offset="-40,-170" collision_cat="1" collision_filter="2"/>
+			<component name="right_leg" desc="toy_robot_right_leg" offset="50,-170" collision_cat="1" collision_filter="2"/>
+			<component name="body" desc="toy_robot_body"  collision_cat="1" collision_filter="2"/>
+			<component name="head" desc="toy_robot_head"  offset="0,48" collision_cat="1" collision_filter="2"/>			
+		</components>
 		<joints>
 			<joint type="fixed" component_a="0" component_b="3"/>
 		</joints>
 	</sprite>
 	<sprite name="hero">
-		<sprite_components>
-			<sprite_component desc="sprite_components/base.xml:x32"  collision_cat="1" collision_filter="2"/>
-		</sprite_components>
+		<components>
+			<component desc="x32"  collision_cat="1" collision_filter="2"/>
+		</components>
 	</sprite>
 
 	<sprite name="bullet1">
-		<sprite_components>
-			<sprite_component desc="sprite_components/base.xml:bullet1" />
-		</sprite_components>
+		<components>
+			<component desc="bullet1" />
+		</components>
 	</sprite>
 	<sprite name="bullet2">
-		<sprite_components>
-			<sprite_component desc="sprite_components/base.xml:bullet2" />
-		</sprite_components>
+		<components>
+			<component desc="bullet2" />
+		</components>
 	</sprite>
 	<sprite name="bullet3">
-		<sprite_components>
-			<sprite_component desc="sprite_components/base.xml:bullet3" />
-		</sprite_components>
+		<components>
+			<component desc="bullet3" />
+		</components>
 	</sprite>
 	<sprite name="bullet4">
-		<sprite_components>
-			<sprite_component desc="sprite_components/base.xml:bullet4" />
-		</sprite_components>
+		<components>
+			<component desc="bullet4" />
+		</components>
 	</sprite>
 	<sprite name="laser1">
-		<sprite_components>
-			<sprite_component desc="sprite_components/base.xml:laser1" />
-		</sprite_components>
+		<components>
+			<component desc="laser1" />
+		</components>
 	</sprite>
 	<sprite name="toy_bigball1">
-		<sprite_components>
-			<sprite_component desc="sprite_components/base.xml:toy_bigball1"  />
-		</sprite_components>
+		<components>
+			<component desc="toy_bigball1"  />
+		</components>
 	</sprite>
 	<sprite name="toy_bigball2">
-		<sprite_components>
-			<sprite_component desc="sprite_components/base.xml:toy_bigball2"  />
-		</sprite_components>
+		<components>
+			<component desc="toy_bigball2"  />
+		</components>
 	</sprite>
 	<sprite name="toy_bigball3">
-		<sprite_components>
-			<sprite_component desc="sprite_components/base.xml:toy_bigball3"  />
-		</sprite_components>
+		<components>
+			<component desc="toy_bigball3"  />
+		</components>
 	</sprite>
 	<sprite name="craft_drone1">
-		<sprite_components>
-			<sprite_component desc="sprite_components/base.xml:craft_drone1"  />
-		</sprite_components>
+		<components>
+			<component desc="craft_drone1"  />
+		</components>
 	</sprite>
 	<sprite name="craft_drone2">
-		<sprite_components>
-			<sprite_component desc="sprite_components/base.xml:craft_drone2"  />
-		</sprite_components>
+		<components>
+			<component desc="craft_drone2"  />
+		</components>
 	</sprite>
 	<sprite name="toy_toybox">
-		<sprite_components>
-			<sprite_component desc="sprite_components/base.xml:toy_toybox"  />
-		</sprite_components>
+		<components>
+			<component desc="toy_toybox"  />
+		</components>
 	</sprite>
 	<sprite name="toy_diskship1">
-		<sprite_components>
-			<sprite_component desc="sprite_components/base.xml:toy_diskship1"  />
-		</sprite_components>
+		<components>
+			<component desc="toy_diskship1"  />
+		</components>
 	</sprite>
 	<sprite name="toy_diskship2">
-		<sprite_components>
-			<sprite_component desc="sprite_components/base.xml:toy_diskship2"  />
-		</sprite_components>
+		<components>
+			<component desc="toy_diskship2"  />
+		</components>
 	</sprite>
 
 	<sprite name="starry_bg">
-		<sprite_components>
-			<sprite_component desc="sprite_components/base.xml:starry_bg"  />
-		</sprite_components>
+		<components>
+			<component desc="starry_bg"  />
+		</components>
 	</sprite>
 	<sprite name="starry_bg2">
-		<sprite_components>
-			<sprite_component desc="sprite_components/base.xml:starry_bg2"  />
-		</sprite_components>
+		<components>
+			<component desc="starry_bg2"  />
+		</components>
 	</sprite>
 	<sprite name="toy_bear">
-		<sprite_components>
-			<sprite_component desc="sprite_components/base.xml:toy_bear"  />
-		</sprite_components>
+		<components>
+			<component desc="toy_bear"  />
+		</components>
 	</sprite>
 	
 	
 	<sprite name="toy_football">
-		<sprite_components>
-			<sprite_component desc="sprite_components/base.xml:toy_football"  />
-		</sprite_components>
+		<components>
+			<component desc="toy_football"  />
+		</components>
 	</sprite>
 
 	<sprite name="toy_barsketball">
-		<sprite_components>
-			<sprite_component desc="sprite_components/base.xml:toy_barsketball"  />
-		</sprite_components>
+		<components>
+			<component desc="toy_barsketball"  />
+		</components>
 	</sprite>
 	
 	<sprite name="pickup_heal">
-		<sprite_components>
-			<sprite_component desc="sprite_components/base.xml:pickup_heal"  />
-		</sprite_components>
+		<components>
+			<component desc="pickup_heal"  />
+		</components>
 	</sprite>
 	<sprite name="pickup_s_gun">
-		<sprite_components>
-			<sprite_component desc="sprite_components/base.xml:pickup_s_gun"  />
-		</sprite_components>
+		<components>
+			<component desc="pickup_s_gun"  />
+		</components>
 	</sprite>
 	<sprite name="pickup_bomb">
-		<sprite_components>
-			<sprite_component desc="sprite_components/base.xml:pickup_bomb"  />
-		</sprite_components>
+		<components>
+			<component desc="pickup_bomb"  />
+		</components>
 	</sprite>
 	<sprite name="pickup_weapon_boost">
-		<sprite_components>
-			<sprite_component desc="sprite_components/base.xml:pickup_weapon_boost"  />
-		</sprite_components>
+		<components>
+			<component desc="pickup_weapon_boost"  />
+		</components>
 	</sprite>
 	<sprite name="pickup_weapon_overpower">
-		<sprite_components>
-			<sprite_component desc="sprite_components/base.xml:pickup_weapon_overpower"  />
-		</sprite_components>
+		<components>
+			<component desc="pickup_weapon_overpower"  />
+		</components>
 	</sprite>
     
 	<sprite name="pickup_l_gun">
-		<sprite_components>
-			<sprite_component desc="sprite_components/base.xml:pickup_l_gun"  />
-		</sprite_components>
+		<components>
+			<component desc="pickup_l_gun"  />
+		</components>
 	</sprite>
 	
 	<sprite name="pickup_b_gun">
-		<sprite_components>
-			<sprite_component desc="sprite_components/base.xml:pickup_b_gun"  />
-		</sprite_components>
+		<components>
+			<component desc="pickup_b_gun"  />
+		</components>
 	</sprite>
 	
 	<sprite name="toy_marble1">
-		<sprite_components>
-			<sprite_component desc="sprite_components/base.xml:toy_marble1"  />
-		</sprite_components>
+		<components>
+			<component desc="toy_marble1"  />
+		</components>
 	</sprite>
 	
 	<sprite name="toy_marble2">
-		<sprite_components>
-			<sprite_component desc="sprite_components/base.xml:toy_marble2" />
-		</sprite_components>
+		<components>
+			<component desc="toy_marble2" />
+		</components>
 	</sprite>
 	<sprite name="toy_brick1">
-		<sprite_components>
-			<sprite_component desc="sprite_components/base.xml:toy_brick1" />
-		</sprite_components>
+		<components>
+			<component desc="toy_brick1" />
+		</components>
 	</sprite>
 	<sprite name="toy_brick2">
-		<sprite_components>
-			<sprite_component desc="sprite_components/base.xml:toy_brick2" />
-		</sprite_components>
+		<components>
+			<component desc="toy_brick2" />
+		</components>
 	</sprite>
 	<sprite name="toy_brick3">
-		<sprite_components>
-			<sprite_component desc="sprite_components/base.xml:toy_brick3" />
-		</sprite_components>
+		<components>
+			<component desc="toy_brick3" />
+		</components>
 	</sprite>
 	<sprite name="toy_brick4">
-		<sprite_components>
-			<sprite_component desc="sprite_components/base.xml:toy_brick4" />
-		</sprite_components>
+		<components>
+			<component desc="toy_brick4" />
+		</components>
 	</sprite>
 	<sprite name="toy_tesla">
-		<sprite_components>
-			<sprite_component desc="sprite_components/base.xml:toy_tesla" />
-		</sprite_components>
+		<components>
+			<component desc="toy_tesla" />
+		</components>
 	</sprite>
 	<sprite name="wave_bullet1">
-		<sprite_components>
-			<sprite_component desc="sprite_components/base.xml:wave_bullet1" />
-		</sprite_components>
+		<components>
+			<component desc="wave_bullet1" />
+		</components>
 	</sprite>
 	
 	<sprite name="toy_hot_tube">
-		<sprite_components>
-			<sprite_component desc="sprite_components/base.xml:toy_hot_tube" />
-		</sprite_components>
+		<components>
+			<component desc="toy_hot_tube" />
+		</components>
 	</sprite>
 	
 	<sprite name="toy_clown">
-		<sprite_components>
-			<sprite_component desc="sprite_components/base.xml:toy_clown" />
-		</sprite_components>
+		<components>
+			<component desc="toy_clown" />
+		</components>
 	</sprite>
     
     <sprite name="circle_r1">
-		<sprite_components>
-			<sprite_component desc="sprite_components/base.xml:circle_r1" />
-		</sprite_components>
+		<components>
+			<component desc="circle_r1" />
+		</components>
 	</sprite>
     <sprite name="laser_expo">
-		<sprite_components>
-			<sprite_component desc="sprite_components/base.xml:laser_expo" />
-		</sprite_components>
+		<components>
+			<component desc="laser_expo" />
+		</components>
 	</sprite>
     <sprite name="laser_charge">
-		<sprite_components>
-			<sprite_component desc="sprite_components/base.xml:laser_charge" />
-		</sprite_components>
+		<components>
+			<component desc="laser_charge" />
+		</components>
 	</sprite>
     <sprite name="planet1">
-		<sprite_components>
-			<sprite_component desc="sprite_components/base.xml:planet1" />
-		</sprite_components>
+		<components>
+			<component desc="planet1" />
+		</components>
 	</sprite>
     <sprite name="planet2">
-		<sprite_components>
-			<sprite_component desc="sprite_components/base.xml:planet2" />
-		</sprite_components>
+		<components>
+			<component desc="planet2" />
+		</components>
 	</sprite>
     <sprite name="bosskim">
-		<sprite_components>
-			<sprite_component desc="sprite_components/base.xml:bosskim_body" />
-		</sprite_components>
+		<components>
+			<component desc="bosskim_body" />
+		</components>
     </sprite>
     <sprite name="missile" >
-		<sprite_components>
-			<sprite_component desc="sprite_components/base.xml:missile" />
-		</sprite_components>
+		<components>
+			<component desc="missile" />
+		</components>
     </sprite>
 </sprites>

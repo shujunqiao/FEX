@@ -8,7 +8,10 @@
 
 #include "GameSADEditor.h"
 #include "GameSADEditorLevel.h"
+#include "DesktopInput.h"
 GameSADEditor::GameSADEditor()
 {
-
+    EditorController* tc = new EditorController();
+    tc->plug();
+    get_game_info()->add_controller(tc);
 }

@@ -144,8 +144,17 @@ void ResourceManager::load_sprite_component_desc( const std::string& filename )
                 continue;
             
             std::vector<std::string> frame_names = split_string(animit.attribute("frames").as_string(), ",");
-            //add all frames in plistfile
-            CCSpriteFrameCache::sharedSpriteFrameCache()->addSpriteFramesWithFile(animit.attribute("texture").as_string());
+            std::string texture = animit.attribute("texture").as_string();
+            if ( ends_with( texture,".plist") )
+            {
+                //add all frames in plistfile
+                CCSpriteFrameCache::sharedSpriteFrameCache()->addSpriteFramesWithFile(texture.c_str());
+            }
+            else
+            {
+               // CCSpriteFrameCache::sharedSpriteFrameCache()->addSpriteFramesWithFile(texture.c_str());
+                
+            }
             CCArray* array_frames = CCArray::create();//array to create ccanimation
             float frame_speed = animit.attribute("frame_speed").as_float();
             //unsigned int loop = animit.attribute("loop_count").as_uint();
@@ -173,6 +182,7 @@ void ResourceManager::load_sprite_component_desc( const std::string& filename )
 
             //as a resource , animation should be cached as well
             animations[unique_anim_name] = std::shared_ptr<animation>( new animation({anim_name,ccanim}));
+            logger("debug") << "add anim name: "<< unique_anim_name;
             desc->animation_names.push_back(unique_anim_name);
         }
         pugi::xml_node body_node = it.child("physics_def").child("body");

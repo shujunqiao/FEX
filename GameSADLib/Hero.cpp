@@ -7,3 +7,15 @@
 //
 
 #include "Hero.h"
+
+IMPLEMENT_CLASS_INFO(Hero, {&SpriteBase::classinfo});
+
+Hero::Hero( const SpawnParams& params )
+:SpriteBase( params )
+{
+}
+
+void Hero::update( float delta_time )
+{
+    SpriteBase::update(delta_time);
+}

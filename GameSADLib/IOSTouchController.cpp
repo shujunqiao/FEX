@@ -6,28 +6,28 @@
 //
 //
 
-#include "IOSTcouchController.h"
+#include "IOSTouchController.h"
 #include "FEUtility.h"
 #include "SpriteBase.h"
 #include "GameBase.h"
-
 #include <memory>
 #include "cocos2d.h"
+FE_NS_BEGIN
 
-using namespace cocos2d;
-FE_NS_USING
-
+USING_NS_CC;
 
 IOSTouchController::IOSTouchController()
 :CCTargetedTouchDelegate(),ControllerBase()
 {
 
 }
-
+IOSTouchController::~IOSTouchController()
+{
+    logger("IOSTouchController") <<"destroyed" << endl;
+    unplug();
+}
 bool IOSTouchController::ccTouchBegan(CCTouch *pTouch, CCEvent *pEvent)
 {
-    auto pt = pTouch->getLocation();
-
     return true;
 }
 void IOSTouchController::ccTouchMoved(CCTouch *pTouch, CCEvent *pEvent)
@@ -39,3 +39,14 @@ void IOSTouchController::ccTouchEnded(CCTouch *pTouch, CCEvent *pEvent)
 void IOSTouchController::ccTouchCancelled(CCTouch *pTouch, CCEvent *pEvent)
 {
 }
+
+void IOSTouchController::plug()
+{
+    CCDirector::sharedDirector()->getTouchDispatcher()->addTargetedDelegate(this, 0, false);
+}
+void IOSTouchController::unplug()
+{
+    CCDirector::sharedDirector()->getTouchDispatcher()->removeDelegate(this);
+}
+
+FE_NS_END

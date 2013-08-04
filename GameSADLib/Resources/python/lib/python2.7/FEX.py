@@ -340,7 +340,6 @@ class ClassInfo(_object):
     __del__ = lambda self : None;
 ClassInfo_swigregister = _FEX.ClassInfo_swigregister
 ClassInfo_swigregister(ClassInfo)
-cvar = _FEX.cvar
 
 class GameObjBase(_object):
     __swig_setmethods__ = {}
@@ -375,6 +374,7 @@ class GameObjBase(_object):
         return weakref_proxy(self)
 GameObjBase_swigregister = _FEX.GameObjBase_swigregister
 GameObjBase_swigregister(GameObjBase)
+cvar = _FEX.cvar
 
 class SpriteBase(GameObjBase):
     __swig_setmethods__ = {}
@@ -661,8 +661,8 @@ def make_gameobj_ptr(*args):
   return _FEX.make_gameobj_ptr(*args)
 make_gameobj_ptr = _FEX.make_gameobj_ptr
 
-def init_python():
-  return _FEX.init_python()
+def init_python(*args):
+  return _FEX.init_python(*args)
 init_python = _FEX.init_python
 class GameObjFactory(_object):
     __swig_setmethods__ = {}
@@ -672,6 +672,10 @@ class GameObjFactory(_object):
     __repr__ = _swig_repr
     __swig_getmethods__["construct_obj"] = lambda x: _FEX.GameObjFactory_construct_obj
     if _newclass:construct_obj = staticmethod(_FEX.GameObjFactory_construct_obj)
+    __swig_getmethods__["get_all_classes"] = lambda x: _FEX.GameObjFactory_get_all_classes
+    if _newclass:get_all_classes = staticmethod(_FEX.GameObjFactory_get_all_classes)
+    __swig_getmethods__["add_class_info"] = lambda x: _FEX.GameObjFactory_add_class_info
+    if _newclass:add_class_info = staticmethod(_FEX.GameObjFactory_add_class_info)
     def __init__(self): 
         this = _FEX.new_GameObjFactory()
         try: self.this.append(this)
@@ -684,6 +688,14 @@ GameObjFactory_swigregister(GameObjFactory)
 def GameObjFactory_construct_obj(*args):
   return _FEX.GameObjFactory_construct_obj(*args)
 GameObjFactory_construct_obj = _FEX.GameObjFactory_construct_obj
+
+def GameObjFactory_get_all_classes():
+  return _FEX.GameObjFactory_get_all_classes()
+GameObjFactory_get_all_classes = _FEX.GameObjFactory_get_all_classes
+
+def GameObjFactory_add_class_info(*args):
+  return _FEX.GameObjFactory_add_class_info(*args)
+GameObjFactory_add_class_info = _FEX.GameObjFactory_add_class_info
 
 class ControllerBase(_object):
     __swig_setmethods__ = {}
@@ -931,6 +943,7 @@ class SpriteComponent(_object):
         except: self.this = this
     __swig_destroy__ = _FEX.delete_SpriteComponent
     __del__ = lambda self : None;
+    def init_shader(self): return _FEX.SpriteComponent_init_shader(self)
     def play_anim(self, *args): return _FEX.SpriteComponent_play_anim(self, *args)
     def draw(self): return _FEX.SpriteComponent_draw(self)
     def update(self, *args): return _FEX.SpriteComponent_update(self, *args)

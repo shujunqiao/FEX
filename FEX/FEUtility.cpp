@@ -63,6 +63,13 @@ cocos2d::CCPoint string_to_point( const char* str )
     return pt;
 }
 
+std::string point_to_string( const cocos2d::CCPoint pt )
+{
+    char ret[1024];
+    sprintf(ret, "%f,%f", pt.x, pt.y);
+    return ret;
+}
+
 cocos2d::CCRect string_to_rect( const char* str )
 {
     cocos2d::CCRect rc;
@@ -258,6 +265,12 @@ bool init_python(const std::string& python_home)
     PyRun_SimpleString(cmd.c_str());
     PyRun_SimpleString("print sys.path");
     return true;
+}
+
+bool ends_with( const std::string& bigger_str, const std::string& smaller_str )
+{
+    std::string::size_type pos = bigger_str.find_last_of(smaller_str);
+    return pos+1 == bigger_str.length();
 }
 
 FE_NS_END

@@ -20,6 +20,7 @@ extern float Pi;
 float current_time();
 void set_current_time(float time);
 cocos2d::CCPoint string_to_point( const char* str );
+std::string point_to_string( const cocos2d::CCPoint pt );
 cocos2d::CCRect string_to_rect( const char* str );
 std::vector<std::string> split_string( const std::string& str, const std::string& split_by );
 b2JointType str_to_joint_type( const char* str );
@@ -64,6 +65,9 @@ extern GameInfo    g_game_info;
 GameInfo* get_game_info();
 GameObjPtr make_gameobj_ptr( GameObjBase* p );
 bool init_python(const std::string& python_home);
+
+
+bool ends_with( const std::string& bigger_str, const std::string& smaller_str );
 FE_NS_END
 
 

@@ -15,7 +15,7 @@
 
 namespace FESimple
 {
-extern std::vector<class ClassInfo*> fe_classes;
+
 class ClassInfo
 {
 public:

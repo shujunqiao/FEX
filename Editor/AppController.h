@@ -26,15 +26,17 @@
 
 #import "cocos2d.h"
 #import "EAGLView.h"
-
+#import "DataSources.h"
 @interface AppController : NSObject <NSApplicationDelegate>
 {
     NSWindow *window;
     EAGLView *glView;
     NSPanel *property_window;
+    SpriteClassDataSource *sprite_class_datasource;
 }
 @property (assign) IBOutlet NSPanel *property_window;
 
+@property (assign) IBOutlet SpriteClassDataSource *sprite_class_datasource;
 @property (nonatomic, assign) IBOutlet NSWindow* window;
 @property (nonatomic, assign) IBOutlet EAGLView* glView;
 

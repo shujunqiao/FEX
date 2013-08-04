@@ -14,6 +14,9 @@
 FE_NS_USING;
 class Hero : public SpriteBase
 {
+public:
+    DECLARE_CLASS_INFO(Hero)
+    Hero( const SpawnParams& params );
     void update( float delta_time );
 };
 

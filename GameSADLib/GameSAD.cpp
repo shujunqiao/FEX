@@ -8,13 +8,19 @@
 
 #include "GameSAD.h"
 #include "GameSADLevel.h"
+#include "IOSTouchController.h"
+#include "ResourceManager.h"
 using namespace cocos2d;
 
 GameSAD::GameSAD()
 {
     init_shaders();
-    level.reset(new GameSADLevel());
+    ResourceManager::instance()->load_sprite_component_desc(full_path("sprite_components/base.xml"));
+    ResourceManager::instance()->load_sprite_desc(full_path("sprites/base.xml"));
+    ResourceManager::instance()->load_physic_desc(full_path("pdb/bullets.xml"));
+    ResourceManager::instance()->load_physic_desc(full_path("pdb/crafts1.xml"));
 
+    level.reset(new GameSADLevel());
 }
 
 bool GameSAD::init_shaders()

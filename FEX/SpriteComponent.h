@@ -139,7 +139,7 @@ public:
     
     SpriteComponent( const cocos2d::CCPoint& location, const std::shared_ptr<sprite_component_desc> desc );
     virtual ~SpriteComponent();
-    
+    bool init_shader();
     bool play_anim( const Name& anim );
     virtual void draw();
     

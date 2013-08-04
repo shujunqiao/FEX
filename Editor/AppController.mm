@@ -32,6 +32,7 @@
 using namespace FESimple;
 @implementation AppController
 @synthesize property_window;
+@synthesize sprite_class_datasource;
 
 static AppDelegate s_sharedApplication;
 
@@ -72,6 +73,7 @@ static AppDelegate s_sharedApplication;
     
     
     cocos2d::CCApplication::sharedApplication()->run();
+    [self.sprite_class_datasource collect_classes];
 }
 
 -(BOOL) applicationShouldTerminateAfterLastWindowClosed:(NSApplication*)theApplication

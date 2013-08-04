@@ -3,6 +3,7 @@
 #include "GameScene.h"
 #include "GameSADEditor.h"
 #include "GameSADEditorLevel.h"
+#include "GameSADCommon.h"
 
 USING_NS_CC;
 
@@ -28,6 +29,7 @@ bool AppDelegate::applicationDidFinishLaunching() {
     pDirector->setAnimationInterval(1.0 / 60);
 
     // create a scene. it's an autorelease object
+    register_GameSAD_classes();
     FESimple::logger("ss") << CCFileUtils::sharedFileUtils()->fullPathForFilename("python")<<endl;
     FESimple::init_python(CCFileUtils::sharedFileUtils()->fullPathForFilename("python"));
     FESimple::GameBase* game = new GameSADEditor();
