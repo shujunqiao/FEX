@@ -23,7 +23,7 @@ SpriteComponent::SpriteComponent(  const CCPoint& location, const std::shared_pt
 {
 
     CCSprite::init();
-    //init_shader();
+    init_shader();
     for ( auto anim_name : desc->animation_names )
     {
         auto anim = ResourceManager::instance()->animations.item(anim_name);
@@ -121,7 +121,6 @@ void SpriteComponent::draw()
     
     CHECK_GL_ERROR_DEBUG();
     
-#define CC_SPRITE_DEBUG_DRAW 1
 #if CC_SPRITE_DEBUG_DRAW == 1
     // draw bounding box
     CCPoint vertices[4]={

@@ -176,9 +176,9 @@ void ResourceManager::load_sprite_component_desc( const std::string& filename )
             //array_frame will be autoreleased, and CCAnimation will make a copy inside
             CCAnimation* ccanim;
             if ( frame_speed > 0 )
-                ccanim = CCAnimation::createWithSpriteFrames(array_frames, 1.0f/frame_speed);
+                ccanim = CCAnimation::createWithSpriteFrames(array_frames, frame_speed);
             else
-                ccanim = CCAnimation::createWithSpriteFrames(array_frames,1.0f/99999999.0f);
+                ccanim = CCAnimation::createWithSpriteFrames(array_frames, 99999999.0f);
 
             //as a resource , animation should be cached as well
             animations[unique_anim_name] = std::shared_ptr<animation>( new animation({anim_name,ccanim}));
