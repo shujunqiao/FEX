@@ -1,0 +1,27 @@
+<xml>
+	<level map_width="12240" map_height="1500" init_acting_range="1024,800">
+        <acting_range>
+			
+			
+            <keyframe progress="0" pos="0,0" size="1024,800"/>
+            <keyframe progress="10" pos="2000,0" size="1024,800"/>
+			<keyframe progress="163" pos="2000,0" size="1024,800"/>
+			<keyframe progress="180" pos="9216,0" size="1024,800"/>
+			<keyframe progress="180.1" pos="9216,0" size="1500,1500"/>
+			<keyframe progress="100000" pos="9216,0" size="1500,1500"/>
+        </acting_range>
+		<global_actions><!-- 每次reset 都会被执行，无视checkpoint!-->
+			
+		</global_actions>
+		<actions>
+			
+			<action progress="0" act="add_obj" class="SSceneStaticObj" init_position="0,0"	init_scale="1" layer="bg1" init_zorder="1"	sprite_desc="sprites/base.xml:starry_bg"/>
+
+				<action progress="0" act="add_obj" class="SSceneStaticObj" init_position="200,0"	init_scale="1" layer="bg1" init_zorder="1"	sprite_desc="sprites/base.xml:starry_bg"/>
+						<action progress="0" act="add_obj" class="SSceneStaticObj" init_position="400,0"	init_scale="1" layer="bg1" init_zorder="1"	sprite_desc="sprites/base.xml:starry_bg"/>
+						<action progress="0" act="add_obj" class="SSceneStaticObj" init_position="600,0"	init_scale="1" layer="bg1" init_zorder="1"	sprite_desc="sprites/base.xml:starry_bg"/>
+			 
+			
+		</actions>
+	</level>
+</xml>

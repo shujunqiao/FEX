@@ -16,6 +16,8 @@ class GameSAD : public GameBase
 {
 public:
     GameSAD();
+
+    bool init_shaders();
 };
 
 
