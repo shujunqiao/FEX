@@ -15,6 +15,8 @@
 #include "ResourceManager.h"
 FE_NS_BEGIN
 
+
+
 IMPLEMENT_CLASS_INFO(SpriteBase,{&GameObjBase::classinfo})
 
 SpriteBase::SpriteBase()
@@ -25,6 +27,11 @@ SpriteBase::SpriteBase()
 void SpriteBase::init( const cocos2d::CCPoint& location, const std::shared_ptr<sprite_desc> desc )
 {
     assert(desc);
+    if ( get_game()->is_editor() )
+    {
+        editor_proxy.reset( new EditorProxy() );
+        editor_proxy->set_sprite( std::dynamic_pointer_cast<SpriteBase>( this->shared_from_this()));
+    }
     SpriteComponent* spc;
     for( auto &it : desc->components )
     {
@@ -115,6 +122,11 @@ SpriteComponent* SpriteBase::component( unsigned int index )
         return nullptr;
 }
 
+std::vector< SpriteComponent* >& SpriteBase::get_components()
+{
+    return components;
+}
+
 //std::vector< SpriteComponent* > SpriteBase::all_components()
 //{
 //    return components;
@@ -148,6 +160,26 @@ void SpriteBase::set_rotation( float angle )
     {
         c->setRotation( angle );
     }
+}
+
+void EditorProxy::set_sprite( std::weak_ptr<SpriteBase> spr )
+{
+    sprite = spr;
+}
+
+bool EditorProxy::hit_test( const cocos2d::CCPoint& pt )
+{
+    for ( auto& i : sprite.lock()->get_components() )
+    {
+        if ( i->boundingBox().containsPoint(pt) )
+            return true;
+    }
+    return false;
+}
+
+void EditorProxy::set_selected( bool _selected )
+{
+    selected = _selected;
 }
 
 FE_NS_END

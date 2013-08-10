@@ -31,17 +31,31 @@
 {
     NSWindow *window;
     EAGLView *glView;
-    NSPanel *property_window;
     SpriteClassDataSource *sprite_class_datasource;
+    SpriteSpawnParamsDataSource *sprite_spawnparams_datasource;
+    SpriteDescDataSource *sprite_desc_data_source;
+    MyTableViewDelegate *table_view_delegate;
+    NSTableView *table_view_spawn_params;
+    NSPanel *property_window;
 }
+
 @property (assign) IBOutlet NSPanel *property_window;
 
 @property (assign) IBOutlet SpriteClassDataSource *sprite_class_datasource;
 @property (nonatomic, assign) IBOutlet NSWindow* window;
 @property (nonatomic, assign) IBOutlet EAGLView* glView;
 
+@property (assign) IBOutlet SpriteSpawnParamsDataSource *sprite_spawnparams_datasource;
+@property (assign) IBOutlet SpriteDescDataSource *sprite_desc_data_source;
+@property (assign) IBOutlet MyTableViewDelegate *table_view_delegate;
+@property (assign) IBOutlet NSTableView *table_view_spawn_params;
+
+-(IBAction) classChanged:(NSComboBox*)sender;
+-(IBAction) switchEditMode:(NSSegmentedControl*)sender;
 -(IBAction) openDocument:(id)sender;
 -(IBAction) toggleFullScreen:(id)sender;
 -(IBAction) exitFullScreen:(id)sender;
+- (IBAction)addProperty:(id)sender;
+- (IBAction)removeProperty:(id)sender;
 
 @end

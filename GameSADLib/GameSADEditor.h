@@ -14,10 +14,31 @@
 #include "GameSAD.h"
 FE_NS_USING;
 
+
 class GameSADEditor :public GameSAD
 {
 public:
     GameSADEditor();
+    
+    enum EditMode
+    {
+        edit,
+        add
+    };
+    
+    void set_editmode( EditMode mode );
+    EditMode get_editmode();
+    virtual bool is_editor()
+    {
+        return true;
+    }
+    
+protected:
+    EditMode edit_mode;
+    std::shared_ptr<ControllerBase> editing_controller;
+    std::shared_ptr<ControllerBase> add_controller;
 };
+
+GameSADEditor* get_editor();
 
 #endif /* defined(__GameSADLib__GameSADEditor__) */

@@ -28,7 +28,7 @@ public:
 
     GameObjBase( const SpawnParams& params );
     GameObjBase();
-    virtual ~GameObjBase();
+    virtual ~GameObjBase() throw();
     //triggers
     virtual void added_to_game( GameBase* game, const Name& to_layer ){};
     virtual void removed_from_game(GameBase* game ){};

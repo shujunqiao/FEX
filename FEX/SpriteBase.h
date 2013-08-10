@@ -20,8 +20,10 @@
 
 
 FE_NS_BEGIN
-class SpriteComponent;
 
+class SpriteBase;
+class SpriteComponent;
+class EditorProxy;
 class SpriteBase :public GameObjBase
 {
 public:
@@ -45,6 +47,7 @@ public:
     {
         return components.size();
     }
+    std::vector< SpriteComponent* >& get_components();
     
 //#if !defined SWIG_ING
 //    template <typename T, typename ...ArgsA , typename ...ArgsB>//,
@@ -72,11 +75,44 @@ public:
     virtual void set_position( cocos2d::CCPoint pos );
     virtual void set_rotation( float angle );
     
+    int get_trigger_id()
+    {
+        return trigger_id;
+    }
+    void set_trigger_id( int id )
+    {
+        trigger_id = id;
+    }
+    void create_editor_proxy();
+    EditorProxy* get_editor_proxy()
+    {
+        return editor_proxy.get();
+    }
 protected:
     void init( const cocos2d::CCPoint& location, const std::shared_ptr<sprite_desc> desc );
 protected:
+    std::unique_ptr<EditorProxy> editor_proxy;
+    int trigger_id;//the trigger that spawned this sprite
     std::vector< SpriteComponent* > components;
 };
+
+class EditorProxy
+{
+public:
+    EditorProxy()
+    :selected(false)
+    {
+        
+    }
+public:
+    bool hit_test( const cocos2d::CCPoint& pt );
+    void set_selected(bool selected);
+    void set_sprite( std::weak_ptr<SpriteBase> spr );
+protected:
+    std::weak_ptr<SpriteBase> sprite;
+    bool selected;
+};
+
 FE_NS_END
 
 #endif /* defined(__FEX__SpriteBase__) */

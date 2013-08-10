@@ -28,9 +28,14 @@
 #import "GameBase.h"
 #import "LevelBase.h"
 #import "GameSADEditor.h"
+#import "GameSADEditorLevel.h"
 
 using namespace FESimple;
 @implementation AppController
+@synthesize sprite_spawnparams_datasource;
+@synthesize sprite_desc_data_source;
+@synthesize table_view_delegate;
+@synthesize table_view_spawn_params;
 @synthesize property_window;
 @synthesize sprite_class_datasource;
 
@@ -43,11 +48,12 @@ static AppDelegate s_sharedApplication;
     // create the window
     // note that using NSResizableWindowMask causes the window to be a little
     // smaller and therefore ipad graphics are not loaded
-    NSRect rect = NSMakeRect(200, 200, 480, 320);
+    NSRect rect = NSMakeRect(200, 200, 800 , 600);
     window = [[NSWindow alloc] initWithContentRect:rect
                                          styleMask:( NSResizableWindowMask | NSClosableWindowMask | NSTitledWindowMask )
                                            backing:NSBackingStoreBuffered
                                              defer:YES];
+
 
     [window center];
     
@@ -100,6 +106,52 @@ static AppDelegate s_sharedApplication;
 -(IBAction) exitFullScreen:(id)sender
 {
     [[EAGLView sharedEGLView] setFullScreen:NO];
+}
+
+-(IBAction) addProperty:(id)sender
+{
+    SpawnParams& params = get_editor_level()->get_current_trigger().params;
+    int i = 0;
+    char param_name[256];
+    do
+    {
+        sprintf(param_name, "new param %d", i);
+        i++;
+    }while(params.find(param_name) != params.end());
+    params[param_name]="";
+    [table_view_spawn_params reloadData];    
+}
+
+-(IBAction) removeProperty:(id)sender
+{
+}
+
+-(IBAction) classChanged:(NSComboBox*)sender
+{
+    NSLog(@"called");
+    if ( get_editor_level() )
+    {
+        if ( [sender.identifier isEqualToString: @"prop_class"] )
+            get_editor_level()->get_template_trigger().params["class"] = [[sender stringValue] UTF8String];
+        if ( [sender.identifier isEqualToString: @"prop_sprite_desc"] )
+            get_editor_level()->get_template_trigger().params["sprite_desc"] = [[sender stringValue] UTF8String];
+        
+        [table_view_spawn_params reloadData];
+    }
+}
+
+- (IBAction)switchEditMode:(NSSegmentedControl*)sender
+{
+    GameSADEditor* editor = dynamic_cast<GameSADEditor*>(get_game());
+    switch ([sender selectedSegment]) {
+        case 0:
+            editor->set_editmode(GameSADEditor::edit);
+            break;
+        case 1:
+            editor->set_editmode(GameSADEditor::add);
+    }
+    [table_view_spawn_params reloadData];
+
 }
 
 -(IBAction)openDocument:(id)sender

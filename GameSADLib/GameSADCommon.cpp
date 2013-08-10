@@ -9,6 +9,7 @@
 #include "GameSADCommon.h"
 #include "FE.h"
 #include "Hero.h"
+
 void register_GameSAD_classes()
 {
     FESimple::GameObjFactory::add_class_info( CLASS_INFO_OF(Hero) );

@@ -66,7 +66,15 @@ public:
         std::for_each( objects.begin(), objects.end(), predicate);
     }
     
+    virtual bool is_editor()
+    {
+        return false;
+    }
     GameObjPtr get_obj( const Name& name );
+    std::list<GameObjPtr>& get_objects()
+    {
+        return objects;
+    }
 protected:
     std::unique_ptr<LevelBase>              level;
     std::unique_ptr<GameScene>              scene;       // visible world

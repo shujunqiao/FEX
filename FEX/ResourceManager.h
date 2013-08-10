@@ -16,7 +16,7 @@ FE_NS_BEGIN
 
 struct LevelData;
 template<class T>
-class SharedReourceMap : public std::map<Name,std::shared_ptr<T>>
+class SharedReourceMap : public std::map<Name,std::shared_ptr<T> >
 {
 public:
     std::shared_ptr<T> item(const Name& name)

@@ -11,6 +11,7 @@
 #include "ControllerBase.h"
 #include "IOSTouchController.h"
 #include "cocos2d.h"
+#include "FEX/ResourceManager.h"
 %}
 %define SWIG_ING
 %enddef
@@ -21,6 +22,8 @@
 %include "std_map.i"
 %include "std_vector.i"
 %include "std_shared_ptr.i"
+
+%ignore FESimple::SharedReourceMap;
 
 %template(map_string_string) std::map<std::string, std::string>;
 %template(vector_controller) std::vector<FESimple::ControllerBase*>;
@@ -154,3 +157,4 @@ namespace cocos2d
 %include "../FEX/ControllerBase.h"
 %include "../FEX/IOSTouchController.h"
 %include "../FEX/SpriteComponent.h"
+%include "../FEX/ResourceManager.h"

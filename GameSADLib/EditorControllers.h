@@ -14,7 +14,7 @@
 
 FE_NS_USING;
 
-class EditorController : public ControllerBase, public cocos2d::CCTargetedTouchDelegate
+class EditingController : public ControllerBase, public cocos2d::CCTargetedTouchDelegate
 {
 public:
     virtual bool ccTouchBegan(cocos2d::CCTouch *pTouch,     cocos2d::CCEvent *pEvent);
@@ -24,5 +24,17 @@ public:
     virtual void plug();
     virtual void unplug();    
 };
+
+class AddController : public ControllerBase, public cocos2d::CCTargetedTouchDelegate
+{
+public:
+    virtual bool ccTouchBegan(cocos2d::CCTouch *pTouch,     cocos2d::CCEvent *pEvent);
+    virtual void ccTouchMoved(cocos2d::CCTouch *pTouch,     cocos2d::CCEvent *pEvent);
+    virtual void ccTouchEnded(cocos2d::CCTouch *pTouch,     cocos2d::CCEvent *pEvent);
+    virtual void ccTouchCancelled(cocos2d::CCTouch *pTouch, cocos2d::CCEvent *pEvent);
+    virtual void plug();
+    virtual void unplug();
+};
+
 
 #endif /* defined(__GameSADLib__DesktopInput__) */

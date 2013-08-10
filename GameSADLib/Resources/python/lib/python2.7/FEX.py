@@ -543,6 +543,10 @@ def string_to_point(*args):
   return _FEX.string_to_point(*args)
 string_to_point = _FEX.string_to_point
 
+def point_to_string(*args):
+  return _FEX.point_to_string(*args)
+point_to_string = _FEX.point_to_string
+
 def string_to_rect(*args):
   return _FEX.string_to_rect(*args)
 string_to_rect = _FEX.string_to_rect
@@ -664,6 +668,10 @@ make_gameobj_ptr = _FEX.make_gameobj_ptr
 def init_python(*args):
   return _FEX.init_python(*args)
 init_python = _FEX.init_python
+
+def ends_with(*args):
+  return _FEX.ends_with(*args)
+ends_with = _FEX.ends_with
 class GameObjFactory(_object):
     __swig_setmethods__ = {}
     __setattr__ = lambda self, name, value: _swig_setattr(self, GameObjFactory, name, value)
@@ -968,6 +976,46 @@ class SpriteComponent(_object):
     def get_owner(self): return _FEX.SpriteComponent_get_owner(self)
 SpriteComponent_swigregister = _FEX.SpriteComponent_swigregister
 SpriteComponent_swigregister(SpriteComponent)
+
+class ResourceManager(_object):
+    __swig_setmethods__ = {}
+    __setattr__ = lambda self, name, value: _swig_setattr(self, ResourceManager, name, value)
+    __swig_getmethods__ = {}
+    __getattr__ = lambda self, name: _swig_getattr(self, ResourceManager, name)
+    __repr__ = _swig_repr
+    __swig_getmethods__["instance"] = lambda x: _FEX.ResourceManager_instance
+    if _newclass:instance = staticmethod(_FEX.ResourceManager_instance)
+    def load_sprite_desc(self, *args): return _FEX.ResourceManager_load_sprite_desc(self, *args)
+    def load_physic_desc(self, *args): return _FEX.ResourceManager_load_physic_desc(self, *args)
+    def load_sprite_component_desc(self, *args): return _FEX.ResourceManager_load_sprite_component_desc(self, *args)
+    def get_level_data(self, *args): return _FEX.ResourceManager_get_level_data(self, *args)
+    __swig_setmethods__["sprite_descs"] = _FEX.ResourceManager_sprite_descs_set
+    __swig_getmethods__["sprite_descs"] = _FEX.ResourceManager_sprite_descs_get
+    if _newclass:sprite_descs = _swig_property(_FEX.ResourceManager_sprite_descs_get, _FEX.ResourceManager_sprite_descs_set)
+    __swig_setmethods__["physic_descs"] = _FEX.ResourceManager_physic_descs_set
+    __swig_getmethods__["physic_descs"] = _FEX.ResourceManager_physic_descs_get
+    if _newclass:physic_descs = _swig_property(_FEX.ResourceManager_physic_descs_get, _FEX.ResourceManager_physic_descs_set)
+    __swig_setmethods__["sprite_components"] = _FEX.ResourceManager_sprite_components_set
+    __swig_getmethods__["sprite_components"] = _FEX.ResourceManager_sprite_components_get
+    if _newclass:sprite_components = _swig_property(_FEX.ResourceManager_sprite_components_get, _FEX.ResourceManager_sprite_components_set)
+    __swig_setmethods__["animations"] = _FEX.ResourceManager_animations_set
+    __swig_getmethods__["animations"] = _FEX.ResourceManager_animations_get
+    if _newclass:animations = _swig_property(_FEX.ResourceManager_animations_get, _FEX.ResourceManager_animations_set)
+    __swig_setmethods__["levels"] = _FEX.ResourceManager_levels_set
+    __swig_getmethods__["levels"] = _FEX.ResourceManager_levels_get
+    if _newclass:levels = _swig_property(_FEX.ResourceManager_levels_get, _FEX.ResourceManager_levels_set)
+    def __init__(self): 
+        this = _FEX.new_ResourceManager()
+        try: self.this.append(this)
+        except: self.this = this
+    __swig_destroy__ = _FEX.delete_ResourceManager
+    __del__ = lambda self : None;
+ResourceManager_swigregister = _FEX.ResourceManager_swigregister
+ResourceManager_swigregister(ResourceManager)
+
+def ResourceManager_instance():
+  return _FEX.ResourceManager_instance()
+ResourceManager_instance = _FEX.ResourceManager_instance
 
 # This file is compatible with both classic and new-style classes.
 

@@ -22,8 +22,8 @@
 		044332FD17AE2E03007EF907 /* GameSADCommon.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 044332FB17AE2E03007EF907 /* GameSADCommon.cpp */; };
 		044332FE17AE2E03007EF907 /* GameSADCommon.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 044332FB17AE2E03007EF907 /* GameSADCommon.cpp */; };
 		044332FF17AE2E03007EF907 /* GameSADCommon.h in Headers */ = {isa = PBXBuildFile; fileRef = 044332FC17AE2E03007EF907 /* GameSADCommon.h */; };
-		0443330317AE5DA8007EF907 /* DesktopInput.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0443330017AE5DA8007EF907 /* DesktopInput.cpp */; };
-		0443330417AE5DA8007EF907 /* DesktopInput.h in Headers */ = {isa = PBXBuildFile; fileRef = 0443330117AE5DA8007EF907 /* DesktopInput.h */; };
+		0443330317AE5DA8007EF907 /* EditorControllers.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0443330017AE5DA8007EF907 /* EditorControllers.cpp */; };
+		0443330417AE5DA8007EF907 /* EditorControllers.h in Headers */ = {isa = PBXBuildFile; fileRef = 0443330117AE5DA8007EF907 /* EditorControllers.h */; };
 		0443330617AE5FCB007EF907 /* IOSTouchController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0443330517AE5FCB007EF907 /* IOSTouchController.cpp */; };
 		0443330717AE5FCB007EF907 /* IOSTouchController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0443330517AE5FCB007EF907 /* IOSTouchController.cpp */; };
 		0443330917AE5FD2007EF907 /* IOSTouchController.h in Headers */ = {isa = PBXBuildFile; fileRef = 0443330817AE5FD2007EF907 /* IOSTouchController.h */; };
@@ -62,8 +62,8 @@
 		04249B4F179E778000AE59D4 /* GameSADLib-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GameSADLib-Prefix.pch"; sourceTree = "<group>"; };
 		044332FB17AE2E03007EF907 /* GameSADCommon.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameSADCommon.cpp; sourceTree = "<group>"; };
 		044332FC17AE2E03007EF907 /* GameSADCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameSADCommon.h; sourceTree = "<group>"; };
-		0443330017AE5DA8007EF907 /* DesktopInput.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DesktopInput.cpp; sourceTree = "<group>"; };
-		0443330117AE5DA8007EF907 /* DesktopInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DesktopInput.h; sourceTree = "<group>"; };
+		0443330017AE5DA8007EF907 /* EditorControllers.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = EditorControllers.cpp; sourceTree = "<group>"; };
+		0443330117AE5DA8007EF907 /* EditorControllers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditorControllers.h; sourceTree = "<group>"; };
 		0443330517AE5FCB007EF907 /* IOSTouchController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IOSTouchController.cpp; sourceTree = SOURCE_ROOT; };
 		0443330817AE5FD2007EF907 /* IOSTouchController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOSTouchController.h; sourceTree = SOURCE_ROOT; };
 		04F0CB92179048BF00321D88 /* libGameSADLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libGameSADLib.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -97,8 +97,8 @@
 				04249B28179E22A500AE59D4 /* GameSADEditorLevel.h */,
 				04249B21179E227C00AE59D4 /* GameSADEditor.cpp */,
 				04249B22179E227C00AE59D4 /* GameSADEditor.h */,
-				0443330017AE5DA8007EF907 /* DesktopInput.cpp */,
-				0443330117AE5DA8007EF907 /* DesktopInput.h */,
+				0443330017AE5DA8007EF907 /* EditorControllers.cpp */,
+				0443330117AE5DA8007EF907 /* EditorControllers.h */,
 			);
 			name = Editor;
 			sourceTree = "<group>";
@@ -186,7 +186,7 @@
 			files = (
 				041AB4F617A9F42800181E05 /* GameSADLevel.h in Headers */,
 				044332FF17AE2E03007EF907 /* GameSADCommon.h in Headers */,
-				0443330417AE5DA8007EF907 /* DesktopInput.h in Headers */,
+				0443330417AE5DA8007EF907 /* EditorControllers.h in Headers */,
 				0443330917AE5FD2007EF907 /* IOSTouchController.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -266,7 +266,7 @@
 				04249B40179E24FF00AE59D4 /* GameSADEditor.cpp in Sources */,
 				041AB4F517A9F42800181E05 /* GameSADLevel.cpp in Sources */,
 				044332FE17AE2E03007EF907 /* GameSADCommon.cpp in Sources */,
-				0443330317AE5DA8007EF907 /* DesktopInput.cpp in Sources */,
+				0443330317AE5DA8007EF907 /* EditorControllers.cpp in Sources */,
 				0443330717AE5FCB007EF907 /* IOSTouchController.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

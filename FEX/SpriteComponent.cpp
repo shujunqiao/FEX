@@ -186,6 +186,8 @@ bool SpriteComponent::isDirty()
 // returns the transform matrix according the Box2D Body values
 CCAffineTransform SpriteComponent::nodeToParentTransform()
 {
+    if ( phy_body == nullptr )
+        return CCSprite::nodeToParentTransform();
     b2Vec2 pos  = phy_body->GetPosition();
 	
 	float x = pos.x * ptm_ratio();

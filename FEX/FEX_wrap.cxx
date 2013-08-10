@@ -3450,65 +3450,72 @@ namespace Swig {
 #define SWIGTYPE_p_FESimple__LevelBound swig_types[10]
 #define SWIGTYPE_p_FESimple__LevelData swig_types[11]
 #define SWIGTYPE_p_FESimple__LevelTrigger swig_types[12]
-#define SWIGTYPE_p_FESimple__SpriteBase swig_types[13]
-#define SWIGTYPE_p_FESimple__SpriteComponent swig_types[14]
-#define SWIGTYPE_p_FESimple__animation swig_types[15]
-#define SWIGTYPE_p_FESimple__b2fixture_def swig_types[16]
-#define SWIGTYPE_p_FESimple__physic_desc swig_types[17]
-#define SWIGTYPE_p_FESimple__sprite_animation swig_types[18]
-#define SWIGTYPE_p_FESimple__sprite_component_desc swig_types[19]
-#define SWIGTYPE_p_FESimple__sprite_component_ref swig_types[20]
-#define SWIGTYPE_p_FESimple__sprite_desc swig_types[21]
-#define SWIGTYPE_p_FESimple__sprite_joint_desc swig_types[22]
-#define SWIGTYPE_p_allocator_type swig_types[23]
-#define SWIGTYPE_p_b2BodyDef swig_types[24]
-#define SWIGTYPE_p_b2BodyType swig_types[25]
-#define SWIGTYPE_p_b2Contact swig_types[26]
-#define SWIGTYPE_p_b2JointType swig_types[27]
-#define SWIGTYPE_p_b2Vec2 swig_types[28]
-#define SWIGTYPE_p_b2World swig_types[29]
-#define SWIGTYPE_p_bool swig_types[30]
-#define SWIGTYPE_p_char swig_types[31]
-#define SWIGTYPE_p_cocos2d__CCAction swig_types[32]
-#define SWIGTYPE_p_cocos2d__CCAffineTransform swig_types[33]
-#define SWIGTYPE_p_cocos2d__CCAnimation swig_types[34]
-#define SWIGTYPE_p_cocos2d__CCEvent swig_types[35]
-#define SWIGTYPE_p_cocos2d__CCPoint swig_types[36]
-#define SWIGTYPE_p_cocos2d__CCRect swig_types[37]
-#define SWIGTYPE_p_cocos2d__CCSize swig_types[38]
-#define SWIGTYPE_p_cocos2d__CCTouch swig_types[39]
-#define SWIGTYPE_p_cocos2d__ccColor4F swig_types[40]
-#define SWIGTYPE_p_const_reference swig_types[41]
-#define SWIGTYPE_p_difference_type swig_types[42]
-#define SWIGTYPE_p_key_type swig_types[43]
-#define SWIGTYPE_p_mapped_type swig_types[44]
-#define SWIGTYPE_p_p_PyObject swig_types[45]
-#define SWIGTYPE_p_reference swig_types[46]
-#define SWIGTYPE_p_size_type swig_types[47]
-#define SWIGTYPE_p_std__allocatorT_FESimple__ControllerBase_p_t swig_types[48]
-#define SWIGTYPE_p_std__allocatorT_std__pairT_std__string_const_std__string_t_t swig_types[49]
-#define SWIGTYPE_p_std__functionT_void_pfstd__mapT_std__string_std__string_std__lessT_std__string_t_std__allocatorT_std__pairT_std__string_const_std__string_t_t_t_const_RF_t swig_types[50]
-#define SWIGTYPE_p_std__invalid_argument swig_types[51]
-#define SWIGTYPE_p_std__lessT_std__string_t swig_types[52]
-#define SWIGTYPE_p_std__mapT_std__string_std__string_std__lessT_std__string_t_std__allocatorT_std__pairT_std__string_const_std__string_t_t_t swig_types[53]
-#define SWIGTYPE_p_std__shared_ptrT_FESimple__GameObjBase_t swig_types[54]
-#define SWIGTYPE_p_std__shared_ptrT_FESimple__sprite_component_desc_t swig_types[55]
-#define SWIGTYPE_p_std__string swig_types[56]
-#define SWIGTYPE_p_std__vectorT_FESimple__ClassInfo_const_p_std__allocatorT_FESimple__ClassInfo_const_p_t_t swig_types[57]
-#define SWIGTYPE_p_std__vectorT_FESimple__ClassInfo_p_std__allocatorT_FESimple__ClassInfo_p_t_t swig_types[58]
-#define SWIGTYPE_p_std__vectorT_FESimple__ControllerBase_p_std__allocatorT_FESimple__ControllerBase_p_t_t swig_types[59]
-#define SWIGTYPE_p_std__vectorT_FESimple__LevelTrigger_std__allocatorT_FESimple__LevelTrigger_t_t swig_types[60]
-#define SWIGTYPE_p_std__vectorT_FESimple__b2fixture_def_std__allocatorT_FESimple__b2fixture_def_t_t swig_types[61]
-#define SWIGTYPE_p_std__vectorT_FESimple__sprite_component_ref_std__allocatorT_FESimple__sprite_component_ref_t_t swig_types[62]
-#define SWIGTYPE_p_std__vectorT_FESimple__sprite_joint_desc_std__allocatorT_FESimple__sprite_joint_desc_t_t swig_types[63]
-#define SWIGTYPE_p_std__vectorT__Tp_p__Alloc_t swig_types[64]
-#define SWIGTYPE_p_std__vectorT_float_std__allocatorT_float_t_t swig_types[65]
-#define SWIGTYPE_p_std__vectorT_std__string_std__allocatorT_std__string_t_t swig_types[66]
-#define SWIGTYPE_p_std__weak_ptrT_FESimple__SpriteBase_t swig_types[67]
-#define SWIGTYPE_p_swig__SwigPyIterator swig_types[68]
-#define SWIGTYPE_p_value_type swig_types[69]
-static swig_type_info *swig_types[71];
-static swig_module_info swig_module = {swig_types, 70, 0, 0, 0, 0};
+#define SWIGTYPE_p_FESimple__ResourceManager swig_types[13]
+#define SWIGTYPE_p_FESimple__SharedReourceMapT_FESimple__LevelData_t swig_types[14]
+#define SWIGTYPE_p_FESimple__SharedReourceMapT_FESimple__animation_t swig_types[15]
+#define SWIGTYPE_p_FESimple__SharedReourceMapT_FESimple__physic_desc_t swig_types[16]
+#define SWIGTYPE_p_FESimple__SharedReourceMapT_FESimple__sprite_component_desc_t swig_types[17]
+#define SWIGTYPE_p_FESimple__SharedReourceMapT_FESimple__sprite_desc_t swig_types[18]
+#define SWIGTYPE_p_FESimple__SpriteBase swig_types[19]
+#define SWIGTYPE_p_FESimple__SpriteComponent swig_types[20]
+#define SWIGTYPE_p_FESimple__animation swig_types[21]
+#define SWIGTYPE_p_FESimple__b2fixture_def swig_types[22]
+#define SWIGTYPE_p_FESimple__physic_desc swig_types[23]
+#define SWIGTYPE_p_FESimple__sprite_animation swig_types[24]
+#define SWIGTYPE_p_FESimple__sprite_component_desc swig_types[25]
+#define SWIGTYPE_p_FESimple__sprite_component_ref swig_types[26]
+#define SWIGTYPE_p_FESimple__sprite_desc swig_types[27]
+#define SWIGTYPE_p_FESimple__sprite_joint_desc swig_types[28]
+#define SWIGTYPE_p_allocator_type swig_types[29]
+#define SWIGTYPE_p_b2BodyDef swig_types[30]
+#define SWIGTYPE_p_b2BodyType swig_types[31]
+#define SWIGTYPE_p_b2Contact swig_types[32]
+#define SWIGTYPE_p_b2JointType swig_types[33]
+#define SWIGTYPE_p_b2Vec2 swig_types[34]
+#define SWIGTYPE_p_b2World swig_types[35]
+#define SWIGTYPE_p_bool swig_types[36]
+#define SWIGTYPE_p_char swig_types[37]
+#define SWIGTYPE_p_cocos2d__CCAction swig_types[38]
+#define SWIGTYPE_p_cocos2d__CCAffineTransform swig_types[39]
+#define SWIGTYPE_p_cocos2d__CCAnimation swig_types[40]
+#define SWIGTYPE_p_cocos2d__CCEvent swig_types[41]
+#define SWIGTYPE_p_cocos2d__CCPoint swig_types[42]
+#define SWIGTYPE_p_cocos2d__CCRect swig_types[43]
+#define SWIGTYPE_p_cocos2d__CCSize swig_types[44]
+#define SWIGTYPE_p_cocos2d__CCTouch swig_types[45]
+#define SWIGTYPE_p_cocos2d__ccColor4F swig_types[46]
+#define SWIGTYPE_p_const_reference swig_types[47]
+#define SWIGTYPE_p_difference_type swig_types[48]
+#define SWIGTYPE_p_key_type swig_types[49]
+#define SWIGTYPE_p_mapped_type swig_types[50]
+#define SWIGTYPE_p_p_PyObject swig_types[51]
+#define SWIGTYPE_p_reference swig_types[52]
+#define SWIGTYPE_p_size_type swig_types[53]
+#define SWIGTYPE_p_std__allocatorT_FESimple__ControllerBase_p_t swig_types[54]
+#define SWIGTYPE_p_std__allocatorT_std__pairT_std__string_const_std__string_t_t swig_types[55]
+#define SWIGTYPE_p_std__functionT_void_pfstd__mapT_std__string_std__string_std__lessT_std__string_t_std__allocatorT_std__pairT_std__string_const_std__string_t_t_t_const_RF_t swig_types[56]
+#define SWIGTYPE_p_std__invalid_argument swig_types[57]
+#define SWIGTYPE_p_std__lessT_std__string_t swig_types[58]
+#define SWIGTYPE_p_std__mapT_std__string_std__string_std__lessT_std__string_t_std__allocatorT_std__pairT_std__string_const_std__string_t_t_t swig_types[59]
+#define SWIGTYPE_p_std__shared_ptrT_FESimple__GameObjBase_t swig_types[60]
+#define SWIGTYPE_p_std__shared_ptrT_FESimple__LevelData_t swig_types[61]
+#define SWIGTYPE_p_std__shared_ptrT_FESimple__sprite_component_desc_t swig_types[62]
+#define SWIGTYPE_p_std__string swig_types[63]
+#define SWIGTYPE_p_std__vectorT_FESimple__ClassInfo_const_p_std__allocatorT_FESimple__ClassInfo_const_p_t_t swig_types[64]
+#define SWIGTYPE_p_std__vectorT_FESimple__ClassInfo_p_std__allocatorT_FESimple__ClassInfo_p_t_t swig_types[65]
+#define SWIGTYPE_p_std__vectorT_FESimple__ControllerBase_p_std__allocatorT_FESimple__ControllerBase_p_t_t swig_types[66]
+#define SWIGTYPE_p_std__vectorT_FESimple__LevelTrigger_std__allocatorT_FESimple__LevelTrigger_t_t swig_types[67]
+#define SWIGTYPE_p_std__vectorT_FESimple__b2fixture_def_std__allocatorT_FESimple__b2fixture_def_t_t swig_types[68]
+#define SWIGTYPE_p_std__vectorT_FESimple__sprite_component_ref_std__allocatorT_FESimple__sprite_component_ref_t_t swig_types[69]
+#define SWIGTYPE_p_std__vectorT_FESimple__sprite_joint_desc_std__allocatorT_FESimple__sprite_joint_desc_t_t swig_types[70]
+#define SWIGTYPE_p_std__vectorT__Tp_p__Alloc_t swig_types[71]
+#define SWIGTYPE_p_std__vectorT_float_std__allocatorT_float_t_t swig_types[72]
+#define SWIGTYPE_p_std__vectorT_std__string_std__allocatorT_std__string_t_t swig_types[73]
+#define SWIGTYPE_p_std__weak_ptrT_FESimple__SpriteBase_t swig_types[74]
+#define SWIGTYPE_p_swig__SwigPyIterator swig_types[75]
+#define SWIGTYPE_p_value_type swig_types[76]
+static swig_type_info *swig_types[78];
+static swig_module_info swig_module = {swig_types, 77, 0, 0, 0, 0};
 #define SWIG_TypeQuery(name) SWIG_TypeQueryModule(&swig_module, &swig_module, name)
 #define SWIG_MangledTypeQuery(name) SWIG_MangledTypeQueryModule(&swig_module, &swig_module, name)
 
@@ -3616,6 +3623,7 @@ namespace swig {
 #include "ControllerBase.h"
 #include "IOSTouchController.h"
 #include "cocos2d.h"
+#include "ResourceManager.h"
 
 
 #include <string>
@@ -14500,6 +14508,36 @@ fail:
 }
 
 
+SWIGINTERN PyObject *_wrap_point_to_string(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  cocos2d::CCPoint arg1 ;
+  void *argp1 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  std::string result;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:point_to_string",&obj0)) SWIG_fail;
+  {
+    res1 = SWIG_ConvertPtr(obj0, &argp1, SWIGTYPE_p_cocos2d__CCPoint,  0  | 0);
+    if (!SWIG_IsOK(res1)) {
+      SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "point_to_string" "', argument " "1"" of type '" "cocos2d::CCPoint const""'"); 
+    }  
+    if (!argp1) {
+      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "point_to_string" "', argument " "1"" of type '" "cocos2d::CCPoint const""'");
+    } else {
+      cocos2d::CCPoint * temp = reinterpret_cast< cocos2d::CCPoint * >(argp1);
+      arg1 = *temp;
+      if (SWIG_IsNewObj(res1)) delete temp;
+    }
+  }
+  result = FESimple::point_to_string(arg1);
+  resultobj = SWIG_From_std_string(static_cast< std::string >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
 SWIGINTERN PyObject *_wrap_string_to_rect(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   char *arg1 = (char *) 0 ;
@@ -15695,6 +15733,51 @@ SWIGINTERN PyObject *_wrap_init_python(PyObject *SWIGUNUSEDPARM(self), PyObject 
   return resultobj;
 fail:
   if (SWIG_IsNewObj(res1)) delete arg1;
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_ends_with(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  std::string *arg1 = 0 ;
+  std::string *arg2 = 0 ;
+  int res1 = SWIG_OLDOBJ ;
+  int res2 = SWIG_OLDOBJ ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  bool result;
+  
+  if (!PyArg_ParseTuple(args,(char *)"OO:ends_with",&obj0,&obj1)) SWIG_fail;
+  {
+    std::string *ptr = (std::string *)0;
+    res1 = SWIG_AsPtr_std_string(obj0, &ptr);
+    if (!SWIG_IsOK(res1)) {
+      SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "ends_with" "', argument " "1"" of type '" "std::string const &""'"); 
+    }
+    if (!ptr) {
+      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "ends_with" "', argument " "1"" of type '" "std::string const &""'"); 
+    }
+    arg1 = ptr;
+  }
+  {
+    std::string *ptr = (std::string *)0;
+    res2 = SWIG_AsPtr_std_string(obj1, &ptr);
+    if (!SWIG_IsOK(res2)) {
+      SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "ends_with" "', argument " "2"" of type '" "std::string const &""'"); 
+    }
+    if (!ptr) {
+      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "ends_with" "', argument " "2"" of type '" "std::string const &""'"); 
+    }
+    arg2 = ptr;
+  }
+  result = (bool)FESimple::ends_with((std::string const &)*arg1,(std::string const &)*arg2);
+  resultobj = SWIG_From_bool(static_cast< bool >(result));
+  if (SWIG_IsNewObj(res1)) delete arg1;
+  if (SWIG_IsNewObj(res2)) delete arg2;
+  return resultobj;
+fail:
+  if (SWIG_IsNewObj(res1)) delete arg1;
+  if (SWIG_IsNewObj(res2)) delete arg2;
   return NULL;
 }
 
@@ -18548,6 +18631,469 @@ SWIGINTERN PyObject *SpriteComponent_swigregister(PyObject *SWIGUNUSEDPARM(self)
   return SWIG_Py_Void();
 }
 
+SWIGINTERN PyObject *_wrap_ResourceManager_instance(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  FESimple::ResourceManager *result = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)":ResourceManager_instance")) SWIG_fail;
+  result = (FESimple::ResourceManager *)FESimple::ResourceManager::instance();
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_FESimple__ResourceManager, 0 |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_ResourceManager_load_sprite_desc(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  FESimple::ResourceManager *arg1 = (FESimple::ResourceManager *) 0 ;
+  std::string *arg2 = 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  int res2 = SWIG_OLDOBJ ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"OO:ResourceManager_load_sprite_desc",&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_FESimple__ResourceManager, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "ResourceManager_load_sprite_desc" "', argument " "1"" of type '" "FESimple::ResourceManager *""'"); 
+  }
+  arg1 = reinterpret_cast< FESimple::ResourceManager * >(argp1);
+  {
+    std::string *ptr = (std::string *)0;
+    res2 = SWIG_AsPtr_std_string(obj1, &ptr);
+    if (!SWIG_IsOK(res2)) {
+      SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "ResourceManager_load_sprite_desc" "', argument " "2"" of type '" "std::string const &""'"); 
+    }
+    if (!ptr) {
+      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "ResourceManager_load_sprite_desc" "', argument " "2"" of type '" "std::string const &""'"); 
+    }
+    arg2 = ptr;
+  }
+  (arg1)->load_sprite_desc((std::string const &)*arg2);
+  resultobj = SWIG_Py_Void();
+  if (SWIG_IsNewObj(res2)) delete arg2;
+  return resultobj;
+fail:
+  if (SWIG_IsNewObj(res2)) delete arg2;
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_ResourceManager_load_physic_desc(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  FESimple::ResourceManager *arg1 = (FESimple::ResourceManager *) 0 ;
+  std::string *arg2 = 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  int res2 = SWIG_OLDOBJ ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"OO:ResourceManager_load_physic_desc",&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_FESimple__ResourceManager, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "ResourceManager_load_physic_desc" "', argument " "1"" of type '" "FESimple::ResourceManager *""'"); 
+  }
+  arg1 = reinterpret_cast< FESimple::ResourceManager * >(argp1);
+  {
+    std::string *ptr = (std::string *)0;
+    res2 = SWIG_AsPtr_std_string(obj1, &ptr);
+    if (!SWIG_IsOK(res2)) {
+      SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "ResourceManager_load_physic_desc" "', argument " "2"" of type '" "std::string const &""'"); 
+    }
+    if (!ptr) {
+      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "ResourceManager_load_physic_desc" "', argument " "2"" of type '" "std::string const &""'"); 
+    }
+    arg2 = ptr;
+  }
+  (arg1)->load_physic_desc((std::string const &)*arg2);
+  resultobj = SWIG_Py_Void();
+  if (SWIG_IsNewObj(res2)) delete arg2;
+  return resultobj;
+fail:
+  if (SWIG_IsNewObj(res2)) delete arg2;
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_ResourceManager_load_sprite_component_desc(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  FESimple::ResourceManager *arg1 = (FESimple::ResourceManager *) 0 ;
+  std::string *arg2 = 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  int res2 = SWIG_OLDOBJ ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"OO:ResourceManager_load_sprite_component_desc",&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_FESimple__ResourceManager, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "ResourceManager_load_sprite_component_desc" "', argument " "1"" of type '" "FESimple::ResourceManager *""'"); 
+  }
+  arg1 = reinterpret_cast< FESimple::ResourceManager * >(argp1);
+  {
+    std::string *ptr = (std::string *)0;
+    res2 = SWIG_AsPtr_std_string(obj1, &ptr);
+    if (!SWIG_IsOK(res2)) {
+      SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "ResourceManager_load_sprite_component_desc" "', argument " "2"" of type '" "std::string const &""'"); 
+    }
+    if (!ptr) {
+      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "ResourceManager_load_sprite_component_desc" "', argument " "2"" of type '" "std::string const &""'"); 
+    }
+    arg2 = ptr;
+  }
+  (arg1)->load_sprite_component_desc((std::string const &)*arg2);
+  resultobj = SWIG_Py_Void();
+  if (SWIG_IsNewObj(res2)) delete arg2;
+  return resultobj;
+fail:
+  if (SWIG_IsNewObj(res2)) delete arg2;
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_ResourceManager_get_level_data(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  FESimple::ResourceManager *arg1 = (FESimple::ResourceManager *) 0 ;
+  std::string *arg2 = 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  int res2 = SWIG_OLDOBJ ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  SwigValueWrapper< std::shared_ptr< FESimple::LevelData > > result;
+  
+  if (!PyArg_ParseTuple(args,(char *)"OO:ResourceManager_get_level_data",&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_FESimple__ResourceManager, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "ResourceManager_get_level_data" "', argument " "1"" of type '" "FESimple::ResourceManager *""'"); 
+  }
+  arg1 = reinterpret_cast< FESimple::ResourceManager * >(argp1);
+  {
+    std::string *ptr = (std::string *)0;
+    res2 = SWIG_AsPtr_std_string(obj1, &ptr);
+    if (!SWIG_IsOK(res2)) {
+      SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "ResourceManager_get_level_data" "', argument " "2"" of type '" "std::string const &""'"); 
+    }
+    if (!ptr) {
+      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "ResourceManager_get_level_data" "', argument " "2"" of type '" "std::string const &""'"); 
+    }
+    arg2 = ptr;
+  }
+  result = (arg1)->get_level_data((std::string const &)*arg2);
+  resultobj = SWIG_NewPointerObj((new std::shared_ptr< FESimple::LevelData >(static_cast< const std::shared_ptr< FESimple::LevelData >& >(result))), SWIGTYPE_p_std__shared_ptrT_FESimple__LevelData_t, SWIG_POINTER_OWN |  0 );
+  if (SWIG_IsNewObj(res2)) delete arg2;
+  return resultobj;
+fail:
+  if (SWIG_IsNewObj(res2)) delete arg2;
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_ResourceManager_sprite_descs_set(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  FESimple::ResourceManager *arg1 = (FESimple::ResourceManager *) 0 ;
+  FESimple::SharedReourceMap< FESimple::sprite_desc > *arg2 = (FESimple::SharedReourceMap< FESimple::sprite_desc > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 = 0 ;
+  int res2 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"OO:ResourceManager_sprite_descs_set",&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_FESimple__ResourceManager, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "ResourceManager_sprite_descs_set" "', argument " "1"" of type '" "FESimple::ResourceManager *""'"); 
+  }
+  arg1 = reinterpret_cast< FESimple::ResourceManager * >(argp1);
+  res2 = SWIG_ConvertPtr(obj1, &argp2,SWIGTYPE_p_FESimple__SharedReourceMapT_FESimple__sprite_desc_t, 0 |  0 );
+  if (!SWIG_IsOK(res2)) {
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "ResourceManager_sprite_descs_set" "', argument " "2"" of type '" "FESimple::SharedReourceMap< FESimple::sprite_desc > *""'"); 
+  }
+  arg2 = reinterpret_cast< FESimple::SharedReourceMap< FESimple::sprite_desc > * >(argp2);
+  if (arg1) (arg1)->sprite_descs = *arg2;
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_ResourceManager_sprite_descs_get(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  FESimple::ResourceManager *arg1 = (FESimple::ResourceManager *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  FESimple::SharedReourceMap< FESimple::sprite_desc > *result = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:ResourceManager_sprite_descs_get",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_FESimple__ResourceManager, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "ResourceManager_sprite_descs_get" "', argument " "1"" of type '" "FESimple::ResourceManager *""'"); 
+  }
+  arg1 = reinterpret_cast< FESimple::ResourceManager * >(argp1);
+  result = (FESimple::SharedReourceMap< FESimple::sprite_desc > *)& ((arg1)->sprite_descs);
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_FESimple__SharedReourceMapT_FESimple__sprite_desc_t, 0 |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_ResourceManager_physic_descs_set(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  FESimple::ResourceManager *arg1 = (FESimple::ResourceManager *) 0 ;
+  FESimple::SharedReourceMap< FESimple::physic_desc > *arg2 = (FESimple::SharedReourceMap< FESimple::physic_desc > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 = 0 ;
+  int res2 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"OO:ResourceManager_physic_descs_set",&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_FESimple__ResourceManager, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "ResourceManager_physic_descs_set" "', argument " "1"" of type '" "FESimple::ResourceManager *""'"); 
+  }
+  arg1 = reinterpret_cast< FESimple::ResourceManager * >(argp1);
+  res2 = SWIG_ConvertPtr(obj1, &argp2,SWIGTYPE_p_FESimple__SharedReourceMapT_FESimple__physic_desc_t, 0 |  0 );
+  if (!SWIG_IsOK(res2)) {
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "ResourceManager_physic_descs_set" "', argument " "2"" of type '" "FESimple::SharedReourceMap< FESimple::physic_desc > *""'"); 
+  }
+  arg2 = reinterpret_cast< FESimple::SharedReourceMap< FESimple::physic_desc > * >(argp2);
+  if (arg1) (arg1)->physic_descs = *arg2;
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_ResourceManager_physic_descs_get(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  FESimple::ResourceManager *arg1 = (FESimple::ResourceManager *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  FESimple::SharedReourceMap< FESimple::physic_desc > *result = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:ResourceManager_physic_descs_get",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_FESimple__ResourceManager, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "ResourceManager_physic_descs_get" "', argument " "1"" of type '" "FESimple::ResourceManager *""'"); 
+  }
+  arg1 = reinterpret_cast< FESimple::ResourceManager * >(argp1);
+  result = (FESimple::SharedReourceMap< FESimple::physic_desc > *)& ((arg1)->physic_descs);
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_FESimple__SharedReourceMapT_FESimple__physic_desc_t, 0 |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_ResourceManager_sprite_components_set(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  FESimple::ResourceManager *arg1 = (FESimple::ResourceManager *) 0 ;
+  FESimple::SharedReourceMap< FESimple::sprite_component_desc > *arg2 = (FESimple::SharedReourceMap< FESimple::sprite_component_desc > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 = 0 ;
+  int res2 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"OO:ResourceManager_sprite_components_set",&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_FESimple__ResourceManager, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "ResourceManager_sprite_components_set" "', argument " "1"" of type '" "FESimple::ResourceManager *""'"); 
+  }
+  arg1 = reinterpret_cast< FESimple::ResourceManager * >(argp1);
+  res2 = SWIG_ConvertPtr(obj1, &argp2,SWIGTYPE_p_FESimple__SharedReourceMapT_FESimple__sprite_component_desc_t, 0 |  0 );
+  if (!SWIG_IsOK(res2)) {
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "ResourceManager_sprite_components_set" "', argument " "2"" of type '" "FESimple::SharedReourceMap< FESimple::sprite_component_desc > *""'"); 
+  }
+  arg2 = reinterpret_cast< FESimple::SharedReourceMap< FESimple::sprite_component_desc > * >(argp2);
+  if (arg1) (arg1)->sprite_components = *arg2;
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_ResourceManager_sprite_components_get(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  FESimple::ResourceManager *arg1 = (FESimple::ResourceManager *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  FESimple::SharedReourceMap< FESimple::sprite_component_desc > *result = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:ResourceManager_sprite_components_get",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_FESimple__ResourceManager, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "ResourceManager_sprite_components_get" "', argument " "1"" of type '" "FESimple::ResourceManager *""'"); 
+  }
+  arg1 = reinterpret_cast< FESimple::ResourceManager * >(argp1);
+  result = (FESimple::SharedReourceMap< FESimple::sprite_component_desc > *)& ((arg1)->sprite_components);
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_FESimple__SharedReourceMapT_FESimple__sprite_component_desc_t, 0 |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_ResourceManager_animations_set(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  FESimple::ResourceManager *arg1 = (FESimple::ResourceManager *) 0 ;
+  FESimple::SharedReourceMap< FESimple::animation > *arg2 = (FESimple::SharedReourceMap< FESimple::animation > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 = 0 ;
+  int res2 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"OO:ResourceManager_animations_set",&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_FESimple__ResourceManager, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "ResourceManager_animations_set" "', argument " "1"" of type '" "FESimple::ResourceManager *""'"); 
+  }
+  arg1 = reinterpret_cast< FESimple::ResourceManager * >(argp1);
+  res2 = SWIG_ConvertPtr(obj1, &argp2,SWIGTYPE_p_FESimple__SharedReourceMapT_FESimple__animation_t, 0 |  0 );
+  if (!SWIG_IsOK(res2)) {
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "ResourceManager_animations_set" "', argument " "2"" of type '" "FESimple::SharedReourceMap< FESimple::animation > *""'"); 
+  }
+  arg2 = reinterpret_cast< FESimple::SharedReourceMap< FESimple::animation > * >(argp2);
+  if (arg1) (arg1)->animations = *arg2;
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_ResourceManager_animations_get(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  FESimple::ResourceManager *arg1 = (FESimple::ResourceManager *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  FESimple::SharedReourceMap< FESimple::animation > *result = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:ResourceManager_animations_get",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_FESimple__ResourceManager, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "ResourceManager_animations_get" "', argument " "1"" of type '" "FESimple::ResourceManager *""'"); 
+  }
+  arg1 = reinterpret_cast< FESimple::ResourceManager * >(argp1);
+  result = (FESimple::SharedReourceMap< FESimple::animation > *)& ((arg1)->animations);
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_FESimple__SharedReourceMapT_FESimple__animation_t, 0 |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_ResourceManager_levels_set(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  FESimple::ResourceManager *arg1 = (FESimple::ResourceManager *) 0 ;
+  FESimple::SharedReourceMap< FESimple::LevelData > *arg2 = (FESimple::SharedReourceMap< FESimple::LevelData > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 = 0 ;
+  int res2 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"OO:ResourceManager_levels_set",&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_FESimple__ResourceManager, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "ResourceManager_levels_set" "', argument " "1"" of type '" "FESimple::ResourceManager *""'"); 
+  }
+  arg1 = reinterpret_cast< FESimple::ResourceManager * >(argp1);
+  res2 = SWIG_ConvertPtr(obj1, &argp2,SWIGTYPE_p_FESimple__SharedReourceMapT_FESimple__LevelData_t, 0 |  0 );
+  if (!SWIG_IsOK(res2)) {
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "ResourceManager_levels_set" "', argument " "2"" of type '" "FESimple::SharedReourceMap< FESimple::LevelData > *""'"); 
+  }
+  arg2 = reinterpret_cast< FESimple::SharedReourceMap< FESimple::LevelData > * >(argp2);
+  if (arg1) (arg1)->levels = *arg2;
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_ResourceManager_levels_get(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  FESimple::ResourceManager *arg1 = (FESimple::ResourceManager *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  FESimple::SharedReourceMap< FESimple::LevelData > *result = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:ResourceManager_levels_get",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_FESimple__ResourceManager, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "ResourceManager_levels_get" "', argument " "1"" of type '" "FESimple::ResourceManager *""'"); 
+  }
+  arg1 = reinterpret_cast< FESimple::ResourceManager * >(argp1);
+  result = (FESimple::SharedReourceMap< FESimple::LevelData > *)& ((arg1)->levels);
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_FESimple__SharedReourceMapT_FESimple__LevelData_t, 0 |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_new_ResourceManager(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  FESimple::ResourceManager *result = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)":new_ResourceManager")) SWIG_fail;
+  result = (FESimple::ResourceManager *)new FESimple::ResourceManager();
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_FESimple__ResourceManager, SWIG_POINTER_NEW |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_delete_ResourceManager(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  FESimple::ResourceManager *arg1 = (FESimple::ResourceManager *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:delete_ResourceManager",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_FESimple__ResourceManager, SWIG_POINTER_DISOWN |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "delete_ResourceManager" "', argument " "1"" of type '" "FESimple::ResourceManager *""'"); 
+  }
+  arg1 = reinterpret_cast< FESimple::ResourceManager * >(argp1);
+  delete arg1;
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *ResourceManager_swigregister(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *obj;
+  if (!PyArg_ParseTuple(args,(char*)"O:swigregister", &obj)) return NULL;
+  SWIG_TypeNewClientData(SWIGTYPE_p_FESimple__ResourceManager, SWIG_NewClientData(obj));
+  return SWIG_Py_Void();
+}
+
 static PyMethodDef SwigMethods[] = {
 	 { (char *)"SWIG_PyInstanceMethod_New", (PyCFunction)SWIG_PyInstanceMethod_New, METH_O, NULL},
 	 { (char *)"delete_SwigPyIterator", _wrap_delete_SwigPyIterator, METH_VARARGS, NULL},
@@ -18771,6 +19317,7 @@ static PyMethodDef SwigMethods[] = {
 	 { (char *)"current_time", _wrap_current_time, METH_VARARGS, NULL},
 	 { (char *)"set_current_time", _wrap_set_current_time, METH_VARARGS, NULL},
 	 { (char *)"string_to_point", _wrap_string_to_point, METH_VARARGS, NULL},
+	 { (char *)"point_to_string", _wrap_point_to_string, METH_VARARGS, NULL},
 	 { (char *)"string_to_rect", _wrap_string_to_rect, METH_VARARGS, NULL},
 	 { (char *)"split_string", _wrap_split_string, METH_VARARGS, NULL},
 	 { (char *)"str_to_joint_type", _wrap_str_to_joint_type, METH_VARARGS, NULL},
@@ -18804,6 +19351,7 @@ static PyMethodDef SwigMethods[] = {
 	 { (char *)"get_game_info", _wrap_get_game_info, METH_VARARGS, NULL},
 	 { (char *)"make_gameobj_ptr", _wrap_make_gameobj_ptr, METH_VARARGS, NULL},
 	 { (char *)"init_python", _wrap_init_python, METH_VARARGS, NULL},
+	 { (char *)"ends_with", _wrap_ends_with, METH_VARARGS, NULL},
 	 { (char *)"GameObjFactory_construct_obj", _wrap_GameObjFactory_construct_obj, METH_VARARGS, NULL},
 	 { (char *)"GameObjFactory_get_all_classes", _wrap_GameObjFactory_get_all_classes, METH_VARARGS, NULL},
 	 { (char *)"GameObjFactory_add_class_info", _wrap_GameObjFactory_add_class_info, METH_VARARGS, NULL},
@@ -18913,6 +19461,24 @@ static PyMethodDef SwigMethods[] = {
 	 { (char *)"SpriteComponent_set_owner", _wrap_SpriteComponent_set_owner, METH_VARARGS, NULL},
 	 { (char *)"SpriteComponent_get_owner", _wrap_SpriteComponent_get_owner, METH_VARARGS, NULL},
 	 { (char *)"SpriteComponent_swigregister", SpriteComponent_swigregister, METH_VARARGS, NULL},
+	 { (char *)"ResourceManager_instance", _wrap_ResourceManager_instance, METH_VARARGS, NULL},
+	 { (char *)"ResourceManager_load_sprite_desc", _wrap_ResourceManager_load_sprite_desc, METH_VARARGS, NULL},
+	 { (char *)"ResourceManager_load_physic_desc", _wrap_ResourceManager_load_physic_desc, METH_VARARGS, NULL},
+	 { (char *)"ResourceManager_load_sprite_component_desc", _wrap_ResourceManager_load_sprite_component_desc, METH_VARARGS, NULL},
+	 { (char *)"ResourceManager_get_level_data", _wrap_ResourceManager_get_level_data, METH_VARARGS, NULL},
+	 { (char *)"ResourceManager_sprite_descs_set", _wrap_ResourceManager_sprite_descs_set, METH_VARARGS, NULL},
+	 { (char *)"ResourceManager_sprite_descs_get", _wrap_ResourceManager_sprite_descs_get, METH_VARARGS, NULL},
+	 { (char *)"ResourceManager_physic_descs_set", _wrap_ResourceManager_physic_descs_set, METH_VARARGS, NULL},
+	 { (char *)"ResourceManager_physic_descs_get", _wrap_ResourceManager_physic_descs_get, METH_VARARGS, NULL},
+	 { (char *)"ResourceManager_sprite_components_set", _wrap_ResourceManager_sprite_components_set, METH_VARARGS, NULL},
+	 { (char *)"ResourceManager_sprite_components_get", _wrap_ResourceManager_sprite_components_get, METH_VARARGS, NULL},
+	 { (char *)"ResourceManager_animations_set", _wrap_ResourceManager_animations_set, METH_VARARGS, NULL},
+	 { (char *)"ResourceManager_animations_get", _wrap_ResourceManager_animations_get, METH_VARARGS, NULL},
+	 { (char *)"ResourceManager_levels_set", _wrap_ResourceManager_levels_set, METH_VARARGS, NULL},
+	 { (char *)"ResourceManager_levels_get", _wrap_ResourceManager_levels_get, METH_VARARGS, NULL},
+	 { (char *)"new_ResourceManager", _wrap_new_ResourceManager, METH_VARARGS, NULL},
+	 { (char *)"delete_ResourceManager", _wrap_delete_ResourceManager, METH_VARARGS, NULL},
+	 { (char *)"ResourceManager_swigregister", ResourceManager_swigregister, METH_VARARGS, NULL},
 	 { NULL, NULL, 0, NULL }
 };
 
@@ -18938,6 +19504,12 @@ static swig_type_info _swigt__p_FESimple__LevelBase = {"_p_FESimple__LevelBase",
 static swig_type_info _swigt__p_FESimple__LevelBound = {"_p_FESimple__LevelBound", "FESimple::LevelBound *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_FESimple__LevelData = {"_p_FESimple__LevelData", "FESimple::LevelData *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_FESimple__LevelTrigger = {"_p_FESimple__LevelTrigger", "FESimple::LevelTrigger *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_FESimple__ResourceManager = {"_p_FESimple__ResourceManager", "FESimple::ResourceManager *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_FESimple__SharedReourceMapT_FESimple__LevelData_t = {"_p_FESimple__SharedReourceMapT_FESimple__LevelData_t", "FESimple::SharedReourceMap< FESimple::LevelData > *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_FESimple__SharedReourceMapT_FESimple__animation_t = {"_p_FESimple__SharedReourceMapT_FESimple__animation_t", "FESimple::SharedReourceMap< FESimple::animation > *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_FESimple__SharedReourceMapT_FESimple__physic_desc_t = {"_p_FESimple__SharedReourceMapT_FESimple__physic_desc_t", "FESimple::SharedReourceMap< FESimple::physic_desc > *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_FESimple__SharedReourceMapT_FESimple__sprite_component_desc_t = {"_p_FESimple__SharedReourceMapT_FESimple__sprite_component_desc_t", "FESimple::SharedReourceMap< FESimple::sprite_component_desc > *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_FESimple__SharedReourceMapT_FESimple__sprite_desc_t = {"_p_FESimple__SharedReourceMapT_FESimple__sprite_desc_t", "FESimple::SharedReourceMap< FESimple::sprite_desc > *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_FESimple__SpriteBase = {"_p_FESimple__SpriteBase", "FESimple::SpriteBase *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_FESimple__SpriteComponent = {"_p_FESimple__SpriteComponent", "FESimple::SpriteComponent *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_FESimple__animation = {"_p_FESimple__animation", "FESimple::animation *", 0, 0, (void*)0, 0};
@@ -18980,6 +19552,7 @@ static swig_type_info _swigt__p_std__invalid_argument = {"_p_std__invalid_argume
 static swig_type_info _swigt__p_std__lessT_std__string_t = {"_p_std__lessT_std__string_t", "std::less< std::string > *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_std__mapT_std__string_std__string_std__lessT_std__string_t_std__allocatorT_std__pairT_std__string_const_std__string_t_t_t = {"_p_std__mapT_std__string_std__string_std__lessT_std__string_t_std__allocatorT_std__pairT_std__string_const_std__string_t_t_t", "FESimple::SpawnParams *|std::map< std::string,std::string,std::less< std::string >,std::allocator< std::pair< std::string const,std::string > > > *|std::map< std::string,std::string > *|std::map< FESimple::Name,std::string,std::less< FESimple::Name >,std::allocator< std::pair< FESimple::Name const,std::string > > > *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_std__shared_ptrT_FESimple__GameObjBase_t = {"_p_std__shared_ptrT_FESimple__GameObjBase_t", "FESimple::GameObjPtr *|std::shared_ptr< FESimple::GameObjBase > *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_std__shared_ptrT_FESimple__LevelData_t = {"_p_std__shared_ptrT_FESimple__LevelData_t", "std::shared_ptr< FESimple::LevelData > *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_std__shared_ptrT_FESimple__sprite_component_desc_t = {"_p_std__shared_ptrT_FESimple__sprite_component_desc_t", "std::shared_ptr< FESimple::sprite_component_desc > *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_std__string = {"_p_std__string", "FESimple::Name *|std::string *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_std__vectorT_FESimple__ClassInfo_const_p_std__allocatorT_FESimple__ClassInfo_const_p_t_t = {"_p_std__vectorT_FESimple__ClassInfo_const_p_std__allocatorT_FESimple__ClassInfo_const_p_t_t", "std::vector< FESimple::ClassInfo const *,std::allocator< FESimple::ClassInfo const * > > *", 0, 0, (void*)0, 0};
@@ -19010,6 +19583,12 @@ static swig_type_info *swig_type_initial[] = {
   &_swigt__p_FESimple__LevelBound,
   &_swigt__p_FESimple__LevelData,
   &_swigt__p_FESimple__LevelTrigger,
+  &_swigt__p_FESimple__ResourceManager,
+  &_swigt__p_FESimple__SharedReourceMapT_FESimple__LevelData_t,
+  &_swigt__p_FESimple__SharedReourceMapT_FESimple__animation_t,
+  &_swigt__p_FESimple__SharedReourceMapT_FESimple__physic_desc_t,
+  &_swigt__p_FESimple__SharedReourceMapT_FESimple__sprite_component_desc_t,
+  &_swigt__p_FESimple__SharedReourceMapT_FESimple__sprite_desc_t,
   &_swigt__p_FESimple__SpriteBase,
   &_swigt__p_FESimple__SpriteComponent,
   &_swigt__p_FESimple__animation,
@@ -19052,6 +19631,7 @@ static swig_type_info *swig_type_initial[] = {
   &_swigt__p_std__lessT_std__string_t,
   &_swigt__p_std__mapT_std__string_std__string_std__lessT_std__string_t_std__allocatorT_std__pairT_std__string_const_std__string_t_t_t,
   &_swigt__p_std__shared_ptrT_FESimple__GameObjBase_t,
+  &_swigt__p_std__shared_ptrT_FESimple__LevelData_t,
   &_swigt__p_std__shared_ptrT_FESimple__sprite_component_desc_t,
   &_swigt__p_std__string,
   &_swigt__p_std__vectorT_FESimple__ClassInfo_const_p_std__allocatorT_FESimple__ClassInfo_const_p_t_t,
@@ -19082,6 +19662,12 @@ static swig_cast_info _swigc__p_FESimple__LevelBase[] = {  {&_swigt__p_FESimple_
 static swig_cast_info _swigc__p_FESimple__LevelBound[] = {  {&_swigt__p_FESimple__LevelBound, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_FESimple__LevelData[] = {  {&_swigt__p_FESimple__LevelData, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_FESimple__LevelTrigger[] = {  {&_swigt__p_FESimple__LevelTrigger, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_FESimple__ResourceManager[] = {  {&_swigt__p_FESimple__ResourceManager, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_FESimple__SharedReourceMapT_FESimple__LevelData_t[] = {  {&_swigt__p_FESimple__SharedReourceMapT_FESimple__LevelData_t, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_FESimple__SharedReourceMapT_FESimple__animation_t[] = {  {&_swigt__p_FESimple__SharedReourceMapT_FESimple__animation_t, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_FESimple__SharedReourceMapT_FESimple__physic_desc_t[] = {  {&_swigt__p_FESimple__SharedReourceMapT_FESimple__physic_desc_t, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_FESimple__SharedReourceMapT_FESimple__sprite_component_desc_t[] = {  {&_swigt__p_FESimple__SharedReourceMapT_FESimple__sprite_component_desc_t, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_FESimple__SharedReourceMapT_FESimple__sprite_desc_t[] = {  {&_swigt__p_FESimple__SharedReourceMapT_FESimple__sprite_desc_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_FESimple__SpriteBase[] = {  {&_swigt__p_FESimple__SpriteBase, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_FESimple__SpriteComponent[] = {  {&_swigt__p_FESimple__SpriteComponent, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_FESimple__animation[] = {  {&_swigt__p_FESimple__animation, 0, 0, 0},{0, 0, 0, 0}};
@@ -19124,6 +19710,7 @@ static swig_cast_info _swigc__p_std__invalid_argument[] = {  {&_swigt__p_std__in
 static swig_cast_info _swigc__p_std__lessT_std__string_t[] = {  {&_swigt__p_std__lessT_std__string_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_std__mapT_std__string_std__string_std__lessT_std__string_t_std__allocatorT_std__pairT_std__string_const_std__string_t_t_t[] = {  {&_swigt__p_std__mapT_std__string_std__string_std__lessT_std__string_t_std__allocatorT_std__pairT_std__string_const_std__string_t_t_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_std__shared_ptrT_FESimple__GameObjBase_t[] = {  {&_swigt__p_std__shared_ptrT_FESimple__GameObjBase_t, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_std__shared_ptrT_FESimple__LevelData_t[] = {  {&_swigt__p_std__shared_ptrT_FESimple__LevelData_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_std__shared_ptrT_FESimple__sprite_component_desc_t[] = {  {&_swigt__p_std__shared_ptrT_FESimple__sprite_component_desc_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_std__string[] = {  {&_swigt__p_std__string, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_std__vectorT_FESimple__ClassInfo_const_p_std__allocatorT_FESimple__ClassInfo_const_p_t_t[] = {  {&_swigt__p_std__vectorT_FESimple__ClassInfo_const_p_std__allocatorT_FESimple__ClassInfo_const_p_t_t, 0, 0, 0},{0, 0, 0, 0}};
@@ -19154,6 +19741,12 @@ static swig_cast_info *swig_cast_initial[] = {
   _swigc__p_FESimple__LevelBound,
   _swigc__p_FESimple__LevelData,
   _swigc__p_FESimple__LevelTrigger,
+  _swigc__p_FESimple__ResourceManager,
+  _swigc__p_FESimple__SharedReourceMapT_FESimple__LevelData_t,
+  _swigc__p_FESimple__SharedReourceMapT_FESimple__animation_t,
+  _swigc__p_FESimple__SharedReourceMapT_FESimple__physic_desc_t,
+  _swigc__p_FESimple__SharedReourceMapT_FESimple__sprite_component_desc_t,
+  _swigc__p_FESimple__SharedReourceMapT_FESimple__sprite_desc_t,
   _swigc__p_FESimple__SpriteBase,
   _swigc__p_FESimple__SpriteComponent,
   _swigc__p_FESimple__animation,
@@ -19196,6 +19789,7 @@ static swig_cast_info *swig_cast_initial[] = {
   _swigc__p_std__lessT_std__string_t,
   _swigc__p_std__mapT_std__string_std__string_std__lessT_std__string_t_std__allocatorT_std__pairT_std__string_const_std__string_t_t_t,
   _swigc__p_std__shared_ptrT_FESimple__GameObjBase_t,
+  _swigc__p_std__shared_ptrT_FESimple__LevelData_t,
   _swigc__p_std__shared_ptrT_FESimple__sprite_component_desc_t,
   _swigc__p_std__string,
   _swigc__p_std__vectorT_FESimple__ClassInfo_const_p_std__allocatorT_FESimple__ClassInfo_const_p_t_t,
