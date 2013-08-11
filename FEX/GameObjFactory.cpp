@@ -14,29 +14,43 @@
 FE_NS_BEGIN
 
 
-std::vector<const ClassInfo*> fe_classes=
+std::map<std::string,const ClassInfo*> fe_classes;
+
+void register_FEX_classes()
 {
-    CLASS_INFO_OF(GameObjBase),
-    CLASS_INFO_OF(SpriteBase),
-    CLASS_INFO_OF(GameScene),
-    CLASS_INFO_OF(GameLayer)
-};
+    fe_classes["GameObjBase"] = CLASS_INFO_OF(GameObjBase);
+    fe_classes["SpriteBase"] = CLASS_INFO_OF(SpriteBase);
+    fe_classes["GameScene"] = CLASS_INFO_OF(GameScene);
+    fe_classes["GameLayer"] = CLASS_INFO_OF(GameLayer);
+
+}
 
 GameObjPtr GameObjFactory::construct_obj( const Name& classname, const SpawnParams& params )
 {
-    auto it = std::find_if(fe_classes.begin(), fe_classes.end(), [&](const ClassInfo* i){if (i->name == classname) return true;else return false; });
+    GameObjPtr obj;
+    
+    auto it = fe_classes.find(classname);
     if ( it != fe_classes.end() )
-        return GameObjPtr((GameObjBase*)(*it)->constructor(params));
+    {
+        obj.reset(((GameObjBase*)it->second->constructor(params)));
+        if ( get_game() && get_game()->is_editor() )
+        {
+            obj->set_editor_proxy(new EditorProxy());
+            obj->get_editor_proxy()->set_object(obj);
+        }
+        obj->set_class_info(it->second);
+        return obj;
+    }
     logger("GameObjFactory") << "constructor of class:<" << classname <<"> not found." << endl;
     return GameObjPtr(nullptr);
 }
-const std::vector<const ClassInfo*>& GameObjFactory::get_all_classes()
+const std::map<std::string, const ClassInfo*>& GameObjFactory::get_all_classes()
 {
     return fe_classes;
 }
 
 void GameObjFactory::add_class_info(const ClassInfo* info)
 {
-    fe_classes.push_back(info);
+    fe_classes[info->name] = info;
 }
 FE_NS_END

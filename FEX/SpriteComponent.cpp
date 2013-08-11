@@ -156,6 +156,8 @@ void SpriteComponent::update(float fDelta)
 //        CCSprite::setRotation(rad_to_angle(phy_body->GetAngle()));
 //    }
     CCSprite::update( fDelta );
+    if ( current_time() > color_mask_expire_time )
+        color_mask(ccc4f(0, 0, 0, 0), 0);
 }
 
 void SpriteComponent::setPosition(const CCPoint& pos)
@@ -288,10 +290,23 @@ void SpriteComponent::wakeup()
 
 void SpriteComponent::color_mask( const cocos2d::ccColor4F& color, float time )
 {
+
+    ccColor4B cc4b;
+    if ( time > 0 )
+        cc4b = ccc4BFromccc4F( color );
+    else
+        cc4b = ccc4(0, 0, 0, 0);
+    m_sQuad.bl.mask_colors = cc4b;
+    m_sQuad.br.mask_colors = cc4b;
+    m_sQuad.tl.mask_colors = cc4b;
+    m_sQuad.tr.mask_colors = cc4b;
+    color_mask_expire_time = current_time() + time;
 }
 
 void SpriteComponent::color_tint( const cocos2d::ccColor4F& color, float time )
 {
+    setColor(ccc3(color.r*255, color.g*255, color.b*255));
+
 }
 
 void SpriteComponent::set_shader( const Name& shader_name )

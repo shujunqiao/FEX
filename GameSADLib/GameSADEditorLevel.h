@@ -35,6 +35,8 @@ public:
         }
     }
     void pick_object( const cocos2d::CCPoint& pos );
+    void select_object( GameObjPtr obj );
+    void unselect_object( GameObjPtr obj );
 protected:
     LevelTrigger dummy_trigger;
     LevelTrigger template_trigger;//trigger use to add new object

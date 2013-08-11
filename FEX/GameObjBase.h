@@ -13,11 +13,31 @@
 #include <string>
 #include <map>
 #include <memory>
+#include "ClassInfo.h"
 FE_NS_BEGIN
 
 class GameWorld;
 class GameBase;
-
+class GameObjBase;
+class EditorProxy
+{
+public:
+    EditorProxy()
+    :selected(false)
+    {
+        
+    }
+public:
+    bool hit_test( const cocos2d::CCPoint& pt );
+    void set_selected(bool selected);
+    void set_object( std::weak_ptr<GameObjBase> obj )
+    {
+        object = obj;
+    }
+protected:
+    std::weak_ptr<GameObjBase> object;
+    bool selected;
+};
 class GameObjBase : public std::enable_shared_from_this<GameObjBase>
 {
 
@@ -52,9 +72,32 @@ public:
     {
         dead = b;
     }
+    EditorProxy* get_editor_proxy()
+    {
+        return editor_proxy.get();
+    }
+    void set_editor_proxy( EditorProxy* proxy )
+    {
+        editor_proxy.reset(proxy);
+    }
+    int get_trigger_id()
+    {
+        return trigger_id;
+    }
+    void set_trigger_id( int id )
+    {
+        trigger_id = id;
+    }
+    
+    void set_class_info( const ClassInfo* info )
+    {
+        class_info = info;
+    }
 protected:
+    const ClassInfo* class_info;
+    int         trigger_id;//the trigger that spawned this sprite    
     bool        dead;
-
+    std::unique_ptr<EditorProxy> editor_proxy;
     std::string name;
 };
 

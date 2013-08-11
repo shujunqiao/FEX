@@ -341,6 +341,24 @@ class ClassInfo(_object):
 ClassInfo_swigregister = _FEX.ClassInfo_swigregister
 ClassInfo_swigregister(ClassInfo)
 
+class EditorProxy(_object):
+    __swig_setmethods__ = {}
+    __setattr__ = lambda self, name, value: _swig_setattr(self, EditorProxy, name, value)
+    __swig_getmethods__ = {}
+    __getattr__ = lambda self, name: _swig_getattr(self, EditorProxy, name)
+    __repr__ = _swig_repr
+    def __init__(self): 
+        this = _FEX.new_EditorProxy()
+        try: self.this.append(this)
+        except: self.this = this
+    def hit_test(self, *args): return _FEX.EditorProxy_hit_test(self, *args)
+    def set_selected(self, *args): return _FEX.EditorProxy_set_selected(self, *args)
+    def set_object(self, *args): return _FEX.EditorProxy_set_object(self, *args)
+    __swig_destroy__ = _FEX.delete_EditorProxy
+    __del__ = lambda self : None;
+EditorProxy_swigregister = _FEX.EditorProxy_swigregister
+EditorProxy_swigregister(EditorProxy)
+
 class GameObjBase(_object):
     __swig_setmethods__ = {}
     __setattr__ = lambda self, name, value: _swig_setattr(self, GameObjBase, name, value)
@@ -368,6 +386,11 @@ class GameObjBase(_object):
     def set_name(self, *args): return _FEX.GameObjBase_set_name(self, *args)
     def is_dead(self): return _FEX.GameObjBase_is_dead(self)
     def set_dead(self, *args): return _FEX.GameObjBase_set_dead(self, *args)
+    def get_editor_proxy(self): return _FEX.GameObjBase_get_editor_proxy(self)
+    def set_editor_proxy(self, *args): return _FEX.GameObjBase_set_editor_proxy(self, *args)
+    def get_trigger_id(self): return _FEX.GameObjBase_get_trigger_id(self)
+    def set_trigger_id(self, *args): return _FEX.GameObjBase_set_trigger_id(self, *args)
+    def set_class_info(self, *args): return _FEX.GameObjBase_set_class_info(self, *args)
     def __disown__(self):
         self.this.disown()
         _FEX.disown_GameObjBase(self)
@@ -405,6 +428,7 @@ class SpriteBase(GameObjBase):
     def remove_component(self, *args): return _FEX.SpriteBase_remove_component(self, *args)
     def component(self, *args): return _FEX.SpriteBase_component(self, *args)
     def component_count(self): return _FEX.SpriteBase_component_count(self)
+    def get_components(self): return _FEX.SpriteBase_get_components(self)
     def begin_contact(self, *args): return _FEX.SpriteBase_begin_contact(self, *args)
     def end_contact(self, *args): return _FEX.SpriteBase_end_contact(self, *args)
     def update(self, *args): return _FEX.SpriteBase_update(self, *args)
@@ -440,7 +464,9 @@ class GameBase(_object):
     def get_scene(self): return _FEX.GameBase_get_scene(self)
     def get_phy_world(self): return _FEX.GameBase_get_phy_world(self)
     def get_level(self): return _FEX.GameBase_get_level(self)
+    def is_editor(self): return _FEX.GameBase_is_editor(self)
     def get_obj(self, *args): return _FEX.GameBase_get_obj(self, *args)
+    def get_objects(self): return _FEX.GameBase_get_objects(self)
     def __disown__(self):
         self.this.disown()
         _FEX.disown_GameBase(self)
@@ -672,6 +698,10 @@ init_python = _FEX.init_python
 def ends_with(*args):
   return _FEX.ends_with(*args)
 ends_with = _FEX.ends_with
+
+def register_FEX_classes():
+  return _FEX.register_FEX_classes()
+register_FEX_classes = _FEX.register_FEX_classes
 class GameObjFactory(_object):
     __swig_setmethods__ = {}
     __setattr__ = lambda self, name, value: _swig_setattr(self, GameObjFactory, name, value)

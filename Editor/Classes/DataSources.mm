@@ -46,7 +46,7 @@
     auto classes = FESimple::GameObjFactory::get_all_classes();
     for ( auto i : classes )
     {
-        [sprite_classes addObject: [NSString stringWithUTF8String: i->name.c_str()]];
+        [sprite_classes addObject: [NSString stringWithUTF8String: i.second->name.c_str()]];
     }
 }
 

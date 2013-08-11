@@ -130,6 +130,18 @@ struct FixtureUserData
 /*
 可渲染，可具有物理模型的一种SpriteComponent 
 */
+template<typename T>
+struct TimedValue
+{
+public:
+    TimedValue( const T& expired_value )
+    :expired_value(expired_value)
+    {
+    }
+    T expired_value;
+    T current_value;
+    float expire_time;
+};
 
 class SpriteComponent :public cocos2d::CCSprite
 {
@@ -175,6 +187,7 @@ public:
         return owner;
     }
 protected:
+    float                           color_mask_expire_time;
     std::weak_ptr<SpriteBase>       owner;
     std::vector<sprite_animation>   animations;
     b2Body*                         phy_body;

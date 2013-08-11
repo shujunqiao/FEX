@@ -8,8 +8,9 @@
  * interface file instead. 
  * ----------------------------------------------------------------------------- */
 
-#define SWIGPYTHON
-#define SWIG_PYTHON_DIRECTOR_NO_VTABLE
+#define SWIGLUA
+#define SWIG_LUA_TARGET SWIG_LUA_FLAVOR_LUA
+#define SWIG_LUA_MODULE_GLOBAL
 
 
 #ifdef __cplusplus
@@ -143,10 +144,6 @@ template <typename T> T SwigValueInit() {
 # define _SCL_SECURE_NO_DEPRECATE
 #endif
 
-
-
-/* Python.h has to appear first */
-#include <Python.h>
 
 /* -----------------------------------------------------------------------------
  * swigrun.swg
@@ -721,2414 +718,1007 @@ SWIG_UnpackDataName(const char *c, void *ptr, size_t sz, const char *name) {
 }
 #endif
 
-/*  Errors in SWIG */
-#define  SWIG_UnknownError    	   -1 
-#define  SWIG_IOError        	   -2 
-#define  SWIG_RuntimeError   	   -3 
-#define  SWIG_IndexError     	   -4 
-#define  SWIG_TypeError      	   -5 
-#define  SWIG_DivisionByZero 	   -6 
-#define  SWIG_OverflowError  	   -7 
-#define  SWIG_SyntaxError    	   -8 
-#define  SWIG_ValueError     	   -9 
-#define  SWIG_SystemError    	   -10
-#define  SWIG_AttributeError 	   -11
-#define  SWIG_MemoryError    	   -12 
-#define  SWIG_NullReferenceError   -13
-
-
-
-/* Compatibility macros for Python 3 */
-#if PY_VERSION_HEX >= 0x03000000
-
-#define PyClass_Check(obj) PyObject_IsInstance(obj, (PyObject *)&PyType_Type)
-#define PyInt_Check(x) PyLong_Check(x)
-#define PyInt_AsLong(x) PyLong_AsLong(x)
-#define PyInt_FromLong(x) PyLong_FromLong(x)
-#define PyInt_FromSize_t(x) PyLong_FromSize_t(x)
-#define PyString_Check(name) PyBytes_Check(name)
-#define PyString_FromString(x) PyUnicode_FromString(x)
-#define PyString_Format(fmt, args)  PyUnicode_Format(fmt, args)
-#define PyString_AsString(str) PyBytes_AsString(str)
-#define PyString_Size(str) PyBytes_Size(str)	
-#define PyString_InternFromString(key) PyUnicode_InternFromString(key)
-#define Py_TPFLAGS_HAVE_CLASS Py_TPFLAGS_BASETYPE
-#define PyString_AS_STRING(x) PyUnicode_AS_STRING(x)
-#define _PyLong_FromSsize_t(x) PyLong_FromSsize_t(x)
-
-#endif
-
-#ifndef Py_TYPE
-#  define Py_TYPE(op) ((op)->ob_type)
-#endif
-
-/* SWIG APIs for compatibility of both Python 2 & 3 */
-
-#if PY_VERSION_HEX >= 0x03000000
-#  define SWIG_Python_str_FromFormat PyUnicode_FromFormat
-#else
-#  define SWIG_Python_str_FromFormat PyString_FromFormat
-#endif
-
-
-/* Warning: This function will allocate a new string in Python 3,
- * so please call SWIG_Python_str_DelForPy3(x) to free the space.
- */
-SWIGINTERN char*
-SWIG_Python_str_AsChar(PyObject *str)
-{
-#if PY_VERSION_HEX >= 0x03000000
-  char *cstr;
-  char *newstr;
-  Py_ssize_t len;
-  str = PyUnicode_AsUTF8String(str);
-  PyBytes_AsStringAndSize(str, &cstr, &len);
-  newstr = (char *) malloc(len+1);
-  memcpy(newstr, cstr, len+1);
-  Py_XDECREF(str);
-  return newstr;
-#else
-  return PyString_AsString(str);
-#endif
-}
-
-#if PY_VERSION_HEX >= 0x03000000
-#  define SWIG_Python_str_DelForPy3(x) free( (void*) (x) )
-#else
-#  define SWIG_Python_str_DelForPy3(x) 
-#endif
-
-
-SWIGINTERN PyObject*
-SWIG_Python_str_FromChar(const char *c)
-{
-#if PY_VERSION_HEX >= 0x03000000
-  return PyUnicode_FromString(c); 
-#else
-  return PyString_FromString(c);
-#endif
-}
-
-/* Add PyOS_snprintf for old Pythons */
-#if PY_VERSION_HEX < 0x02020000
-# if defined(_MSC_VER) || defined(__BORLANDC__) || defined(_WATCOM)
-#  define PyOS_snprintf _snprintf
-# else
-#  define PyOS_snprintf snprintf
-# endif
-#endif
-
-/* A crude PyString_FromFormat implementation for old Pythons */
-#if PY_VERSION_HEX < 0x02020000
-
-#ifndef SWIG_PYBUFFER_SIZE
-# define SWIG_PYBUFFER_SIZE 1024
-#endif
-
-static PyObject *
-PyString_FromFormat(const char *fmt, ...) {
-  va_list ap;
-  char buf[SWIG_PYBUFFER_SIZE * 2];
-  int res;
-  va_start(ap, fmt);
-  res = vsnprintf(buf, sizeof(buf), fmt, ap);
-  va_end(ap);
-  return (res < 0 || res >= (int)sizeof(buf)) ? 0 : PyString_FromString(buf);
-}
-#endif
-
-/* Add PyObject_Del for old Pythons */
-#if PY_VERSION_HEX < 0x01060000
-# define PyObject_Del(op) PyMem_DEL((op))
-#endif
-#ifndef PyObject_DEL
-# define PyObject_DEL PyObject_Del
-#endif
-
-/* A crude PyExc_StopIteration exception for old Pythons */
-#if PY_VERSION_HEX < 0x02020000
-# ifndef PyExc_StopIteration
-#  define PyExc_StopIteration PyExc_RuntimeError
-# endif
-# ifndef PyObject_GenericGetAttr
-#  define PyObject_GenericGetAttr 0
-# endif
-#endif
-
-/* Py_NotImplemented is defined in 2.1 and up. */
-#if PY_VERSION_HEX < 0x02010000
-# ifndef Py_NotImplemented
-#  define Py_NotImplemented PyExc_RuntimeError
-# endif
-#endif
-
-/* A crude PyString_AsStringAndSize implementation for old Pythons */
-#if PY_VERSION_HEX < 0x02010000
-# ifndef PyString_AsStringAndSize
-#  define PyString_AsStringAndSize(obj, s, len) {*s = PyString_AsString(obj); *len = *s ? strlen(*s) : 0;}
-# endif
-#endif
-
-/* PySequence_Size for old Pythons */
-#if PY_VERSION_HEX < 0x02000000
-# ifndef PySequence_Size
-#  define PySequence_Size PySequence_Length
-# endif
-#endif
-
-/* PyBool_FromLong for old Pythons */
-#if PY_VERSION_HEX < 0x02030000
-static
-PyObject *PyBool_FromLong(long ok)
-{
-  PyObject *result = ok ? Py_True : Py_False;
-  Py_INCREF(result);
-  return result;
-}
-#endif
-
-/* Py_ssize_t for old Pythons */
-/* This code is as recommended by: */
-/* http://www.python.org/dev/peps/pep-0353/#conversion-guidelines */
-#if PY_VERSION_HEX < 0x02050000 && !defined(PY_SSIZE_T_MIN)
-typedef int Py_ssize_t;
-# define PY_SSIZE_T_MAX INT_MAX
-# define PY_SSIZE_T_MIN INT_MIN
-typedef inquiry lenfunc;
-typedef intargfunc ssizeargfunc;
-typedef intintargfunc ssizessizeargfunc;
-typedef intobjargproc ssizeobjargproc;
-typedef intintobjargproc ssizessizeobjargproc;
-typedef getreadbufferproc readbufferproc;
-typedef getwritebufferproc writebufferproc;
-typedef getsegcountproc segcountproc;
-typedef getcharbufferproc charbufferproc;
-static long PyNumber_AsSsize_t (PyObject *x, void *SWIGUNUSEDPARM(exc))
-{
-  long result = 0;
-  PyObject *i = PyNumber_Int(x);
-  if (i) {
-    result = PyInt_AsLong(i);
-    Py_DECREF(i);
-  }
-  return result;
-}
-#endif
-
-#if PY_VERSION_HEX < 0x02050000
-#define PyInt_FromSize_t(x) PyInt_FromLong((long)x)
-#endif
-
-#if PY_VERSION_HEX < 0x02040000
-#define Py_VISIT(op)				\
-  do { 						\
-    if (op) {					\
-      int vret = visit((op), arg);		\
-      if (vret)					\
-        return vret;				\
-    }						\
-  } while (0)
-#endif
-
-#if PY_VERSION_HEX < 0x02030000
-typedef struct {
-  PyTypeObject type;
-  PyNumberMethods as_number;
-  PyMappingMethods as_mapping;
-  PySequenceMethods as_sequence;
-  PyBufferProcs as_buffer;
-  PyObject *name, *slots;
-} PyHeapTypeObject;
-#endif
-
-#if PY_VERSION_HEX < 0x02030000
-typedef destructor freefunc;
-#endif
-
-#if ((PY_MAJOR_VERSION == 2 && PY_MINOR_VERSION > 6) || \
-     (PY_MAJOR_VERSION == 3 && PY_MINOR_VERSION > 0) || \
-     (PY_MAJOR_VERSION > 3))
-# define SWIGPY_USE_CAPSULE
-# define SWIGPY_CAPSULE_NAME ((char*)"swig_runtime_data" SWIG_RUNTIME_VERSION ".type_pointer_capsule" SWIG_TYPE_TABLE_NAME)
-#endif
-
-#if PY_VERSION_HEX < 0x03020000
-#define PyDescr_TYPE(x) (((PyDescrObject *)(x))->d_type)
-#define PyDescr_NAME(x) (((PyDescrObject *)(x))->d_name)
-#endif
-
 /* -----------------------------------------------------------------------------
- * error manipulation
- * ----------------------------------------------------------------------------- */
-
-SWIGRUNTIME PyObject*
-SWIG_Python_ErrorType(int code) {
-  PyObject* type = 0;
-  switch(code) {
-  case SWIG_MemoryError:
-    type = PyExc_MemoryError;
-    break;
-  case SWIG_IOError:
-    type = PyExc_IOError;
-    break;
-  case SWIG_RuntimeError:
-    type = PyExc_RuntimeError;
-    break;
-  case SWIG_IndexError:
-    type = PyExc_IndexError;
-    break;
-  case SWIG_TypeError:
-    type = PyExc_TypeError;
-    break;
-  case SWIG_DivisionByZero:
-    type = PyExc_ZeroDivisionError;
-    break;
-  case SWIG_OverflowError:
-    type = PyExc_OverflowError;
-    break;
-  case SWIG_SyntaxError:
-    type = PyExc_SyntaxError;
-    break;
-  case SWIG_ValueError:
-    type = PyExc_ValueError;
-    break;
-  case SWIG_SystemError:
-    type = PyExc_SystemError;
-    break;
-  case SWIG_AttributeError:
-    type = PyExc_AttributeError;
-    break;
-  default:
-    type = PyExc_RuntimeError;
-  }
-  return type;
-}
-
-
-SWIGRUNTIME void
-SWIG_Python_AddErrorMsg(const char* mesg)
-{
-  PyObject *type = 0;
-  PyObject *value = 0;
-  PyObject *traceback = 0;
-
-  if (PyErr_Occurred()) PyErr_Fetch(&type, &value, &traceback);
-  if (value) {
-    char *tmp;
-    PyObject *old_str = PyObject_Str(value);
-    PyErr_Clear();
-    Py_XINCREF(type);
-
-    PyErr_Format(type, "%s %s", tmp = SWIG_Python_str_AsChar(old_str), mesg);
-    SWIG_Python_str_DelForPy3(tmp);
-    Py_DECREF(old_str);
-    Py_DECREF(value);
-  } else {
-    PyErr_SetString(PyExc_RuntimeError, mesg);
-  }
-}
-
-#if defined(SWIG_PYTHON_NO_THREADS)
-#  if defined(SWIG_PYTHON_THREADS)
-#    undef SWIG_PYTHON_THREADS
-#  endif
-#endif
-#if defined(SWIG_PYTHON_THREADS) /* Threading support is enabled */
-#  if !defined(SWIG_PYTHON_USE_GIL) && !defined(SWIG_PYTHON_NO_USE_GIL)
-#    if (PY_VERSION_HEX >= 0x02030000) /* For 2.3 or later, use the PyGILState calls */
-#      define SWIG_PYTHON_USE_GIL
-#    endif
-#  endif
-#  if defined(SWIG_PYTHON_USE_GIL) /* Use PyGILState threads calls */
-#    ifndef SWIG_PYTHON_INITIALIZE_THREADS
-#     define SWIG_PYTHON_INITIALIZE_THREADS  PyEval_InitThreads() 
-#    endif
-#    ifdef __cplusplus /* C++ code */
-       class SWIG_Python_Thread_Block {
-         bool status;
-         PyGILState_STATE state;
-       public:
-         void end() { if (status) { PyGILState_Release(state); status = false;} }
-         SWIG_Python_Thread_Block() : status(true), state(PyGILState_Ensure()) {}
-         ~SWIG_Python_Thread_Block() { end(); }
-       };
-       class SWIG_Python_Thread_Allow {
-         bool status;
-         PyThreadState *save;
-       public:
-         void end() { if (status) { PyEval_RestoreThread(save); status = false; }}
-         SWIG_Python_Thread_Allow() : status(true), save(PyEval_SaveThread()) {}
-         ~SWIG_Python_Thread_Allow() { end(); }
-       };
-#      define SWIG_PYTHON_THREAD_BEGIN_BLOCK   SWIG_Python_Thread_Block _swig_thread_block
-#      define SWIG_PYTHON_THREAD_END_BLOCK     _swig_thread_block.end()
-#      define SWIG_PYTHON_THREAD_BEGIN_ALLOW   SWIG_Python_Thread_Allow _swig_thread_allow
-#      define SWIG_PYTHON_THREAD_END_ALLOW     _swig_thread_allow.end()
-#    else /* C code */
-#      define SWIG_PYTHON_THREAD_BEGIN_BLOCK   PyGILState_STATE _swig_thread_block = PyGILState_Ensure()
-#      define SWIG_PYTHON_THREAD_END_BLOCK     PyGILState_Release(_swig_thread_block)
-#      define SWIG_PYTHON_THREAD_BEGIN_ALLOW   PyThreadState *_swig_thread_allow = PyEval_SaveThread()
-#      define SWIG_PYTHON_THREAD_END_ALLOW     PyEval_RestoreThread(_swig_thread_allow)
-#    endif
-#  else /* Old thread way, not implemented, user must provide it */
-#    if !defined(SWIG_PYTHON_INITIALIZE_THREADS)
-#      define SWIG_PYTHON_INITIALIZE_THREADS
-#    endif
-#    if !defined(SWIG_PYTHON_THREAD_BEGIN_BLOCK)
-#      define SWIG_PYTHON_THREAD_BEGIN_BLOCK
-#    endif
-#    if !defined(SWIG_PYTHON_THREAD_END_BLOCK)
-#      define SWIG_PYTHON_THREAD_END_BLOCK
-#    endif
-#    if !defined(SWIG_PYTHON_THREAD_BEGIN_ALLOW)
-#      define SWIG_PYTHON_THREAD_BEGIN_ALLOW
-#    endif
-#    if !defined(SWIG_PYTHON_THREAD_END_ALLOW)
-#      define SWIG_PYTHON_THREAD_END_ALLOW
-#    endif
-#  endif
-#else /* No thread support */
-#  define SWIG_PYTHON_INITIALIZE_THREADS
-#  define SWIG_PYTHON_THREAD_BEGIN_BLOCK
-#  define SWIG_PYTHON_THREAD_END_BLOCK
-#  define SWIG_PYTHON_THREAD_BEGIN_ALLOW
-#  define SWIG_PYTHON_THREAD_END_ALLOW
-#endif
-
-/* -----------------------------------------------------------------------------
- * Python API portion that goes into the runtime
- * ----------------------------------------------------------------------------- */
-
-#ifdef __cplusplus
-extern "C" {
-#endif
-
-/* -----------------------------------------------------------------------------
- * Constant declarations
- * ----------------------------------------------------------------------------- */
-
-/* Constant Types */
-#define SWIG_PY_POINTER 4
-#define SWIG_PY_BINARY  5
-
-/* Constant information structure */
-typedef struct swig_const_info {
-  int type;
-  char *name;
-  long lvalue;
-  double dvalue;
-  void   *pvalue;
-  swig_type_info **ptype;
-} swig_const_info;
-
-
-/* -----------------------------------------------------------------------------
- * Wrapper of PyInstanceMethod_New() used in Python 3
- * It is exported to the generated module, used for -fastproxy
- * ----------------------------------------------------------------------------- */
-#if PY_VERSION_HEX >= 0x03000000
-SWIGRUNTIME PyObject* SWIG_PyInstanceMethod_New(PyObject *SWIGUNUSEDPARM(self), PyObject *func)
-{
-  return PyInstanceMethod_New(func);
-}
-#else
-SWIGRUNTIME PyObject* SWIG_PyInstanceMethod_New(PyObject *SWIGUNUSEDPARM(self), PyObject *SWIGUNUSEDPARM(func))
-{
-  return NULL;
-}
-#endif
-
-#ifdef __cplusplus
-}
-#endif
-
-
-/* -----------------------------------------------------------------------------
- * pyrun.swg
+ * luarun.swg
  *
- * This file contains the runtime support for Python modules
+ * This file contains the runtime support for Lua modules
  * and includes code for managing global variables and pointer
  * type checking.
- *
  * ----------------------------------------------------------------------------- */
-
-/* Common SWIG API */
-
-/* for raw pointers */
-#define SWIG_Python_ConvertPtr(obj, pptr, type, flags)  SWIG_Python_ConvertPtrAndOwn(obj, pptr, type, flags, 0)
-#define SWIG_ConvertPtr(obj, pptr, type, flags)         SWIG_Python_ConvertPtr(obj, pptr, type, flags)
-#define SWIG_ConvertPtrAndOwn(obj,pptr,type,flags,own)  SWIG_Python_ConvertPtrAndOwn(obj, pptr, type, flags, own)
-
-#ifdef SWIGPYTHON_BUILTIN
-#define SWIG_NewPointerObj(ptr, type, flags)            SWIG_Python_NewPointerObj(self, ptr, type, flags)
-#else
-#define SWIG_NewPointerObj(ptr, type, flags)            SWIG_Python_NewPointerObj(NULL, ptr, type, flags)
-#endif
-
-#define SWIG_InternalNewPointerObj(ptr, type, flags)	SWIG_Python_NewPointerObj(NULL, ptr, type, flags)
-
-#define SWIG_CheckImplicit(ty)                          SWIG_Python_CheckImplicit(ty) 
-#define SWIG_AcquirePtr(ptr, src)                       SWIG_Python_AcquirePtr(ptr, src)
-#define swig_owntype                                    int
-
-/* for raw packed data */
-#define SWIG_ConvertPacked(obj, ptr, sz, ty)            SWIG_Python_ConvertPacked(obj, ptr, sz, ty)
-#define SWIG_NewPackedObj(ptr, sz, type)                SWIG_Python_NewPackedObj(ptr, sz, type)
-
-/* for class or struct pointers */
-#define SWIG_ConvertInstance(obj, pptr, type, flags)    SWIG_ConvertPtr(obj, pptr, type, flags)
-#define SWIG_NewInstanceObj(ptr, type, flags)           SWIG_NewPointerObj(ptr, type, flags)
-
-/* for C or C++ function pointers */
-#define SWIG_ConvertFunctionPtr(obj, pptr, type)        SWIG_Python_ConvertFunctionPtr(obj, pptr, type)
-#define SWIG_NewFunctionPtrObj(ptr, type)               SWIG_Python_NewPointerObj(NULL, ptr, type, 0)
-
-/* for C++ member pointers, ie, member methods */
-#define SWIG_ConvertMember(obj, ptr, sz, ty)            SWIG_Python_ConvertPacked(obj, ptr, sz, ty)
-#define SWIG_NewMemberObj(ptr, sz, type)                SWIG_Python_NewPackedObj(ptr, sz, type)
-
-
-/* Runtime API */
-
-#define SWIG_GetModule(clientdata)                      SWIG_Python_GetModule(clientdata)
-#define SWIG_SetModule(clientdata, pointer)             SWIG_Python_SetModule(pointer)
-#define SWIG_NewClientData(obj)                         SwigPyClientData_New(obj)
-
-#define SWIG_SetErrorObj                                SWIG_Python_SetErrorObj                            
-#define SWIG_SetErrorMsg                        	SWIG_Python_SetErrorMsg				   
-#define SWIG_ErrorType(code)                    	SWIG_Python_ErrorType(code)                        
-#define SWIG_Error(code, msg)            		SWIG_Python_SetErrorMsg(SWIG_ErrorType(code), msg) 
-#define SWIG_fail                        		goto fail					   
-
-
-/* Runtime API implementation */
-
-/* Error manipulation */
-
-SWIGINTERN void 
-SWIG_Python_SetErrorObj(PyObject *errtype, PyObject *obj) {
-  SWIG_PYTHON_THREAD_BEGIN_BLOCK; 
-  PyErr_SetObject(errtype, obj);
-  Py_DECREF(obj);
-  SWIG_PYTHON_THREAD_END_BLOCK;
-}
-
-SWIGINTERN void 
-SWIG_Python_SetErrorMsg(PyObject *errtype, const char *msg) {
-  SWIG_PYTHON_THREAD_BEGIN_BLOCK;
-  PyErr_SetString(errtype, msg);
-  SWIG_PYTHON_THREAD_END_BLOCK;
-}
-
-#define SWIG_Python_Raise(obj, type, desc)  SWIG_Python_SetErrorObj(SWIG_Python_ExceptionType(desc), obj)
-
-/* Set a constant value */
-
-#if defined(SWIGPYTHON_BUILTIN)
-
-SWIGINTERN void
-SwigPyBuiltin_AddPublicSymbol(PyObject *seq, const char *key) {
-  PyObject *s = PyString_InternFromString(key);
-  PyList_Append(seq, s);
-  Py_DECREF(s);
-}
-
-SWIGINTERN void
-SWIG_Python_SetConstant(PyObject *d, PyObject *public_interface, const char *name, PyObject *obj) {   
-#if PY_VERSION_HEX < 0x02030000
-  PyDict_SetItemString(d, (char *)name, obj);
-#else
-  PyDict_SetItemString(d, name, obj);
-#endif
-  Py_DECREF(obj);
-  if (public_interface)
-    SwigPyBuiltin_AddPublicSymbol(public_interface, name);
-}
-
-#else
-
-SWIGINTERN void
-SWIG_Python_SetConstant(PyObject *d, const char *name, PyObject *obj) {   
-#if PY_VERSION_HEX < 0x02030000
-  PyDict_SetItemString(d, (char *)name, obj);
-#else
-  PyDict_SetItemString(d, name, obj);
-#endif
-  Py_DECREF(obj);                            
-}
-
-#endif
-
-/* Append a value to the result obj */
-
-SWIGINTERN PyObject*
-SWIG_Python_AppendOutput(PyObject* result, PyObject* obj) {
-#if !defined(SWIG_PYTHON_OUTPUT_TUPLE)
-  if (!result) {
-    result = obj;
-  } else if (result == Py_None) {
-    Py_DECREF(result);
-    result = obj;
-  } else {
-    if (!PyList_Check(result)) {
-      PyObject *o2 = result;
-      result = PyList_New(1);
-      PyList_SetItem(result, 0, o2);
-    }
-    PyList_Append(result,obj);
-    Py_DECREF(obj);
-  }
-  return result;
-#else
-  PyObject*   o2;
-  PyObject*   o3;
-  if (!result) {
-    result = obj;
-  } else if (result == Py_None) {
-    Py_DECREF(result);
-    result = obj;
-  } else {
-    if (!PyTuple_Check(result)) {
-      o2 = result;
-      result = PyTuple_New(1);
-      PyTuple_SET_ITEM(result, 0, o2);
-    }
-    o3 = PyTuple_New(1);
-    PyTuple_SET_ITEM(o3, 0, obj);
-    o2 = result;
-    result = PySequence_Concat(o2, o3);
-    Py_DECREF(o2);
-    Py_DECREF(o3);
-  }
-  return result;
-#endif
-}
-
-/* Unpack the argument tuple */
-
-SWIGINTERN int
-SWIG_Python_UnpackTuple(PyObject *args, const char *name, Py_ssize_t min, Py_ssize_t max, PyObject **objs)
-{
-  if (!args) {
-    if (!min && !max) {
-      return 1;
-    } else {
-      PyErr_Format(PyExc_TypeError, "%s expected %s%d arguments, got none", 
-		   name, (min == max ? "" : "at least "), (int)min);
-      return 0;
-    }
-  }  
-  if (!PyTuple_Check(args)) {
-    if (min <= 1 && max >= 1) {
-      register int i;
-      objs[0] = args;
-      for (i = 1; i < max; ++i) {
-	objs[i] = 0;
-      }
-      return 2;
-    }
-    PyErr_SetString(PyExc_SystemError, "UnpackTuple() argument list is not a tuple");
-    return 0;
-  } else {
-    register Py_ssize_t l = PyTuple_GET_SIZE(args);
-    if (l < min) {
-      PyErr_Format(PyExc_TypeError, "%s expected %s%d arguments, got %d", 
-		   name, (min == max ? "" : "at least "), (int)min, (int)l);
-      return 0;
-    } else if (l > max) {
-      PyErr_Format(PyExc_TypeError, "%s expected %s%d arguments, got %d", 
-		   name, (min == max ? "" : "at most "), (int)max, (int)l);
-      return 0;
-    } else {
-      register int i;
-      for (i = 0; i < l; ++i) {
-	objs[i] = PyTuple_GET_ITEM(args, i);
-      }
-      for (; l < max; ++l) {
-	objs[l] = 0;
-      }
-      return i + 1;
-    }    
-  }
-}
-
-/* A functor is a function object with one single object argument */
-#if PY_VERSION_HEX >= 0x02020000
-#define SWIG_Python_CallFunctor(functor, obj)	        PyObject_CallFunctionObjArgs(functor, obj, NULL);
-#else
-#define SWIG_Python_CallFunctor(functor, obj)	        PyObject_CallFunction(functor, "O", obj);
-#endif
-
-/*
-  Helper for static pointer initialization for both C and C++ code, for example
-  static PyObject *SWIG_STATIC_POINTER(MyVar) = NewSomething(...);
-*/
-#ifdef __cplusplus
-#define SWIG_STATIC_POINTER(var)  var
-#else
-#define SWIG_STATIC_POINTER(var)  var = 0; if (!var) var
-#endif
-
-/* -----------------------------------------------------------------------------
- * Pointer declarations
- * ----------------------------------------------------------------------------- */
-
-/* Flags for new pointer objects */
-#define SWIG_POINTER_NOSHADOW       (SWIG_POINTER_OWN      << 1)
-#define SWIG_POINTER_NEW            (SWIG_POINTER_NOSHADOW | SWIG_POINTER_OWN)
-
-#define SWIG_POINTER_IMPLICIT_CONV  (SWIG_POINTER_DISOWN   << 1)
-
-#define SWIG_BUILTIN_TP_INIT	    (SWIG_POINTER_OWN << 2)
-#define SWIG_BUILTIN_INIT	    (SWIG_BUILTIN_TP_INIT | SWIG_POINTER_OWN)
 
 #ifdef __cplusplus
 extern "C" {
 #endif
 
-/*  How to access Py_None */
-#if defined(_WIN32) || defined(__WIN32__) || defined(__CYGWIN__)
-#  ifndef SWIG_PYTHON_NO_BUILD_NONE
-#    ifndef SWIG_PYTHON_BUILD_NONE
-#      define SWIG_PYTHON_BUILD_NONE
-#    endif
-#  endif
+#include "lua.h"
+#include "lauxlib.h"
+#include <stdlib.h>  /* for malloc */
+#include <assert.h>  /* for a few sanity tests */
+
+/* -----------------------------------------------------------------------------
+ * Lua flavors
+ * ----------------------------------------------------------------------------- */
+
+#define SWIG_LUA_FLAVOR_LUA 1
+#define SWIG_LUA_FLAVOR_ELUA 2
+#define SWIG_LUA_FLAVOR_ELUAC 3
+
+#if !defined(SWIG_LUA_TARGET)
+# error SWIG_LUA_TARGET not defined
 #endif
 
-#ifdef SWIG_PYTHON_BUILD_NONE
-#  ifdef Py_None
-#   undef Py_None
-#   define Py_None SWIG_Py_None()
-#  endif
-SWIGRUNTIMEINLINE PyObject * 
-_SWIG_Py_None(void)
-{
-  PyObject *none = Py_BuildValue((char*)"");
-  Py_DECREF(none);
-  return none;
-}
-SWIGRUNTIME PyObject * 
-SWIG_Py_None(void)
-{
-  static PyObject *SWIG_STATIC_POINTER(none) = _SWIG_Py_None();
-  return none;
-}
+#if (SWIG_LUA_TARGET == SWIG_LUA_FLAVOR_ELUA) || (SWIG_LUA_TARGET == SWIG_LUA_FLAVOR_ELUAC)
+#  define SWIG_LUA_CONSTTAB_INT(B, C) LSTRKEY(B), LNUMVAL(C)
+#  define SWIG_LUA_CONSTTAB_FLOAT(B, C) LSTRKEY(B), LNUMVAL(C)
+#  define SWIG_LUA_CONSTTAB_STRING(B, C) LSTRKEY(B), LSTRVAL(C)
+#  define SWIG_LUA_CONSTTAB_CHAR(B, C) LSTRKEY(B), LNUMVAL(C)
+#else /* SWIG_LUA_FLAVOR_LUA */
+#  define SWIG_LUA_CONSTTAB_INT(B, C) SWIG_LUA_INT, (char *)B, (long)C, 0, 0, 0
+#  define SWIG_LUA_CONSTTAB_FLOAT(B, C) SWIG_LUA_FLOAT, (char *)B, 0, (double)C, 0, 0
+#  define SWIG_LUA_CONSTTAB_STRING(B, C) SWIG_LUA_STRING, (char *)B, 0, 0, (void *)C, 0
+#  define SWIG_LUA_CONSTTAB_CHAR(B, C) SWIG_LUA_CHAR, (char *)B, (long)C, 0, 0, 0
 #endif
 
-/* The python void return value */
+#if (SWIG_LUA_TARGET == SWIG_LUA_FLAVOR_ELUA) || (SWIG_LUA_TARGET == SWIG_LUA_FLAVOR_ELUAC)
+#  define LRO_STRVAL(v) {{.p = (char *) v}, LUA_TSTRING}
+#  define LSTRVAL LRO_STRVAL
+#endif
 
-SWIGRUNTIMEINLINE PyObject * 
-SWIG_Py_Void(void)
-{
-  PyObject *none = Py_None;
-  Py_INCREF(none);
-  return none;
-}
+/* -----------------------------------------------------------------------------
+ * compatibility defines
+ * ----------------------------------------------------------------------------- */
 
-/* SwigPyClientData */
+/* History of Lua C API length functions:  In Lua 5.0 (and before?)
+   there was "lua_strlen".  In Lua 5.1, this was renamed "lua_objlen",
+   but a compatibility define of "lua_strlen" was added.  In Lua 5.2,
+   this function was again renamed, to "lua_rawlen" (to emphasize that
+   it doesn't call the "__len" metamethod), and the compatibility
+   define of lua_strlen was removed.  All SWIG uses have been updated
+   to "lua_rawlen", and we add our own defines of that here for older
+   versions of Lua.  */
+#if !defined(LUA_VERSION_NUM) || LUA_VERSION_NUM < 501
+# define lua_rawlen lua_strlen
+#elif LUA_VERSION_NUM == 501
+# define lua_rawlen lua_objlen
+#endif
+
+
+/* lua_pushglobaltable is the recommended "future-proof" way to get
+   the global table for Lua 5.2 and later.  Here we define
+   lua_pushglobaltable ourselves for Lua versions before 5.2.  */
+#if !defined(LUA_VERSION_NUM) || LUA_VERSION_NUM < 502
+# define lua_pushglobaltable(L) lua_pushvalue(L, LUA_GLOBALSINDEX)
+#endif
+
+
+/* -----------------------------------------------------------------------------
+ * global swig types
+ * ----------------------------------------------------------------------------- */
+/* Constant table */
+#define SWIG_LUA_INT     1
+#define SWIG_LUA_FLOAT   2
+#define SWIG_LUA_STRING  3
+#define SWIG_LUA_POINTER 4
+#define SWIG_LUA_BINARY  5
+#define SWIG_LUA_CHAR    6
+
+/* Structure for variable linking table */
+typedef struct {
+  const char *name;
+  lua_CFunction get;
+  lua_CFunction set;
+} swig_lua_var_info;
+
+/* Constant information structure */
+typedef struct {
+    int type;
+    char *name;
+    long lvalue;
+    double dvalue;
+    void   *pvalue;
+    swig_type_info **ptype;
+} swig_lua_const_info;
 
 typedef struct {
-  PyObject *klass;
-  PyObject *newraw;
-  PyObject *newargs;
-  PyObject *destroy;
-  int delargs;
-  int implicitconv;
-  PyTypeObject *pytype;
-} SwigPyClientData;
-
-SWIGRUNTIMEINLINE int 
-SWIG_Python_CheckImplicit(swig_type_info *ty)
-{
-  SwigPyClientData *data = (SwigPyClientData *)ty->clientdata;
-  return data ? data->implicitconv : 0;
-}
-
-SWIGRUNTIMEINLINE PyObject *
-SWIG_Python_ExceptionType(swig_type_info *desc) {
-  SwigPyClientData *data = desc ? (SwigPyClientData *) desc->clientdata : 0;
-  PyObject *klass = data ? data->klass : 0;
-  return (klass ? klass : PyExc_RuntimeError);
-}
-
-
-SWIGRUNTIME SwigPyClientData * 
-SwigPyClientData_New(PyObject* obj)
-{
-  if (!obj) {
-    return 0;
-  } else {
-    SwigPyClientData *data = (SwigPyClientData *)malloc(sizeof(SwigPyClientData));
-    /* the klass element */
-    data->klass = obj;
-    Py_INCREF(data->klass);
-    /* the newraw method and newargs arguments used to create a new raw instance */
-    if (PyClass_Check(obj)) {
-      data->newraw = 0;
-      data->newargs = obj;
-      Py_INCREF(obj);
-    } else {
-#if (PY_VERSION_HEX < 0x02020000)
-      data->newraw = 0;
-#else
-      data->newraw = PyObject_GetAttrString(data->klass, (char *)"__new__");
-#endif
-      if (data->newraw) {
-	Py_INCREF(data->newraw);
-	data->newargs = PyTuple_New(1);
-	PyTuple_SetItem(data->newargs, 0, obj);
-      } else {
-	data->newargs = obj;
-      }
-      Py_INCREF(data->newargs);
-    }
-    /* the destroy method, aka as the C++ delete method */
-    data->destroy = PyObject_GetAttrString(data->klass, (char *)"__swig_destroy__");
-    if (PyErr_Occurred()) {
-      PyErr_Clear();
-      data->destroy = 0;
-    }
-    if (data->destroy) {
-      int flags;
-      Py_INCREF(data->destroy);
-      flags = PyCFunction_GET_FLAGS(data->destroy);
-#ifdef METH_O
-      data->delargs = !(flags & (METH_O));
-#else
-      data->delargs = 0;
-#endif
-    } else {
-      data->delargs = 0;
-    }
-    data->implicitconv = 0;
-    data->pytype = 0;
-    return data;
-  }
-}
-
-SWIGRUNTIME void 
-SwigPyClientData_Del(SwigPyClientData *data) {
-  Py_XDECREF(data->newraw);
-  Py_XDECREF(data->newargs);
-  Py_XDECREF(data->destroy);
-}
-
-/* =============== SwigPyObject =====================*/
+  const char     *name;
+  lua_CFunction   method;
+} swig_lua_method;
 
 typedef struct {
-  PyObject_HEAD
-  void *ptr;
-  swig_type_info *ty;
-  int own;
-  PyObject *next;
-#ifdef SWIGPYTHON_BUILTIN
-  PyObject *dict;
-#endif
-} SwigPyObject;
+  const char     *name;
+  lua_CFunction   getmethod;
+  lua_CFunction   setmethod;
+} swig_lua_attribute;
 
-SWIGRUNTIME PyObject *
-SwigPyObject_long(SwigPyObject *v)
-{
-  return PyLong_FromVoidPtr(v->ptr);
-}
+typedef struct swig_lua_class {
+  const char    *name;
+  swig_type_info   **type;
+  lua_CFunction  constructor;
+  void    (*destructor)(void *);
+  swig_lua_method   *methods;
+  swig_lua_attribute     *attributes;
+  struct swig_lua_class **bases;
+  const char **base_names;
+} swig_lua_class;
 
-SWIGRUNTIME PyObject *
-SwigPyObject_format(const char* fmt, SwigPyObject *v)
-{
-  PyObject *res = NULL;
-  PyObject *args = PyTuple_New(1);
-  if (args) {
-    if (PyTuple_SetItem(args, 0, SwigPyObject_long(v)) == 0) {
-      PyObject *ofmt = SWIG_Python_str_FromChar(fmt);
-      if (ofmt) {
-#if PY_VERSION_HEX >= 0x03000000
-	res = PyUnicode_Format(ofmt,args);
-#else
-	res = PyString_Format(ofmt,args);
-#endif
-	Py_DECREF(ofmt);
-      }
-      Py_DECREF(args);
-    }
-  }
-  return res;
-}
+/* this is the struct for wrapping all pointers in SwigLua
+*/
+typedef struct {
+  swig_type_info   *type;
+  int     own;  /* 1 if owned & must be destroyed */
+  void        *ptr;
+} swig_lua_userdata;
 
-SWIGRUNTIME PyObject *
-SwigPyObject_oct(SwigPyObject *v)
-{
-  return SwigPyObject_format("%o",v);
-}
+/* this is the struct for wrapping arbitrary packed binary data
+(currently it is only used for member function pointers)
+the data ordering is similar to swig_lua_userdata, but it is currently not possible
+to tell the two structures apart within SWIG, other than by looking at the type
+*/
+typedef struct {
+  swig_type_info   *type;
+  int     own;  /* 1 if owned & must be destroyed */
+  char data[1];       /* arbitary amount of data */    
+} swig_lua_rawdata;
 
-SWIGRUNTIME PyObject *
-SwigPyObject_hex(SwigPyObject *v)
-{
-  return SwigPyObject_format("%x",v);
-}
+/* Common SWIG API */
+#define SWIG_NewPointerObj(L, ptr, type, owner)       SWIG_Lua_NewPointerObj(L, (void *)ptr, type, owner)
+#define SWIG_ConvertPtr(L,idx, ptr, type, flags)    SWIG_Lua_ConvertPtr(L,idx,ptr,type,flags)
+#define SWIG_MustGetPtr(L,idx, type,flags, argnum,fnname)  SWIG_Lua_MustGetPtr(L,idx, type,flags, argnum,fnname)
+/* for C++ member pointers, ie, member methods */
+#define SWIG_ConvertMember(L, idx, ptr, sz, ty)       SWIG_Lua_ConvertPacked(L, idx, ptr, sz, ty)
+#define SWIG_NewMemberObj(L, ptr, sz, type)      SWIG_Lua_NewPackedObj(L, ptr, sz, type)
 
-SWIGRUNTIME PyObject *
-#ifdef METH_NOARGS
-SwigPyObject_repr(SwigPyObject *v)
-#else
-SwigPyObject_repr(SwigPyObject *v, PyObject *args)
-#endif
-{
-  const char *name = SWIG_TypePrettyName(v->ty);
-  PyObject *repr = SWIG_Python_str_FromFormat("<Swig Object of type '%s' at %p>", (name ? name : "unknown"), (void *)v);
-  if (v->next) {
-# ifdef METH_NOARGS
-    PyObject *nrep = SwigPyObject_repr((SwigPyObject *)v->next);
-# else
-    PyObject *nrep = SwigPyObject_repr((SwigPyObject *)v->next, args);
-# endif
-# if PY_VERSION_HEX >= 0x03000000
-    PyObject *joined = PyUnicode_Concat(repr, nrep);
-    Py_DecRef(repr);
-    Py_DecRef(nrep);
-    repr = joined;
-# else
-    PyString_ConcatAndDel(&repr,nrep);
-# endif
-  }
-  return repr;  
-}
+/* Runtime API */
+#define SWIG_GetModule(clientdata) SWIG_Lua_GetModule((lua_State*)(clientdata))
+#define SWIG_SetModule(clientdata, pointer) SWIG_Lua_SetModule((lua_State*) (clientdata), pointer)
+#define SWIG_MODULE_CLIENTDATA_TYPE lua_State*
 
-SWIGRUNTIME int
-SwigPyObject_print(SwigPyObject *v, FILE *fp, int SWIGUNUSEDPARM(flags))
-{
-  char *str;
-#ifdef METH_NOARGS
-  PyObject *repr = SwigPyObject_repr(v);
-#else
-  PyObject *repr = SwigPyObject_repr(v, NULL);
-#endif
-  if (repr) {
-    str = SWIG_Python_str_AsChar(repr); 
-    fputs(str, fp);
-    SWIG_Python_str_DelForPy3(str);
-    Py_DECREF(repr);
-    return 0; 
-  } else {
-    return 1; 
-  }
-}
+/* Contract support */
+#define SWIG_contract_assert(expr, msg)  \
+  if (!(expr)) { lua_pushstring(L, (char *) msg); goto fail; } else
 
-SWIGRUNTIME PyObject *
-SwigPyObject_str(SwigPyObject *v)
-{
-  char result[SWIG_BUFFER_SIZE];
-  return SWIG_PackVoidPtr(result, v->ptr, v->ty->name, sizeof(result)) ?
-    SWIG_Python_str_FromChar(result) : 0;
-}
-
-SWIGRUNTIME int
-SwigPyObject_compare(SwigPyObject *v, SwigPyObject *w)
-{
-  void *i = v->ptr;
-  void *j = w->ptr;
-  return (i < j) ? -1 : ((i > j) ? 1 : 0);
-}
-
-/* Added for Python 3.x, would it also be useful for Python 2.x? */
-SWIGRUNTIME PyObject*
-SwigPyObject_richcompare(SwigPyObject *v, SwigPyObject *w, int op)
-{
-  PyObject* res;
-  if( op != Py_EQ && op != Py_NE ) {
-    Py_INCREF(Py_NotImplemented);
-    return Py_NotImplemented;
-  }
-  res = PyBool_FromLong( (SwigPyObject_compare(v, w)==0) == (op == Py_EQ) ? 1 : 0);
-  return res;  
-}
+/* helper #defines */
+#define SWIG_fail {goto fail;}
+#define SWIG_fail_arg(func_name,argnum,type) \
+  {lua_pushfstring(L,"Error in %s (arg %d), expected '%s' got '%s'",\
+  func_name,argnum,type,SWIG_Lua_typename(L,argnum));\
+  goto fail;}
+#define SWIG_fail_ptr(func_name,argnum,type) \
+  SWIG_fail_arg(func_name,argnum,(type && type->str)?type->str:"void*")
+#define SWIG_check_num_args(func_name,a,b) \
+  if (lua_gettop(L)<a || lua_gettop(L)>b) \
+  {lua_pushfstring(L,"Error in %s expected %d..%d args, got %d",func_name,a,b,lua_gettop(L));\
+  goto fail;}
 
 
-SWIGRUNTIME PyTypeObject* SwigPyObject_TypeOnce(void);
+#define SWIG_Lua_get_table(L,n) \
+  (lua_pushstring(L, n), lua_rawget(L,-2))
 
-#ifdef SWIGPYTHON_BUILTIN
-static swig_type_info *SwigPyObject_stype = 0;
-SWIGRUNTIME PyTypeObject*
-SwigPyObject_type(void) {
-    SwigPyClientData *cd;
-    assert(SwigPyObject_stype);
-    cd = (SwigPyClientData*) SwigPyObject_stype->clientdata;
-    assert(cd);
-    assert(cd->pytype);
-    return cd->pytype;
-}
-#else
-SWIGRUNTIME PyTypeObject*
-SwigPyObject_type(void) {
-  static PyTypeObject *SWIG_STATIC_POINTER(type) = SwigPyObject_TypeOnce();
-  return type;
-}
+#define SWIG_Lua_add_function(L,n,f) \
+  (lua_pushstring(L, n), \
+      lua_pushcfunction(L, f), \
+      lua_rawset(L,-3))
+
+/* special helper for allowing 'nil' for usertypes */
+#define SWIG_isptrtype(L,I) (lua_isuserdata(L,I) || lua_isnil(L,I))
+
+#ifdef __cplusplus
+/* Special helper for member function pointers 
+it gets the address, casts it, then dereferences it */
+//#define SWIG_mem_fn_as_voidptr(a)  (*((char**)&(a)))
 #endif
 
-SWIGRUNTIMEINLINE int
-SwigPyObject_Check(PyObject *op) {
-#ifdef SWIGPYTHON_BUILTIN
-  PyTypeObject *target_tp = SwigPyObject_type();
-  if (PyType_IsSubtype(op->ob_type, target_tp))
-    return 1;
-  return (strcmp(op->ob_type->tp_name, "SwigPyObject") == 0);
-#else
-  return (Py_TYPE(op) == SwigPyObject_type())
-    || (strcmp(Py_TYPE(op)->tp_name,"SwigPyObject") == 0);
-#endif
+/* storing/access of swig_module_info */
+SWIGRUNTIME swig_module_info *
+SWIG_Lua_GetModule(lua_State* L) {
+  swig_module_info *ret = 0;
+  lua_pushstring(L,"swig_runtime_data_type_pointer" SWIG_RUNTIME_VERSION SWIG_TYPE_TABLE_NAME);
+  lua_rawget(L,LUA_REGISTRYINDEX);
+  if (lua_islightuserdata(L,-1))
+    ret=(swig_module_info*)lua_touserdata(L,-1);
+  lua_pop(L,1);  /* tidy */
+  return ret;
 }
-
-SWIGRUNTIME PyObject *
-SwigPyObject_New(void *ptr, swig_type_info *ty, int own);
 
 SWIGRUNTIME void
-SwigPyObject_dealloc(PyObject *v)
+SWIG_Lua_SetModule(lua_State* L, swig_module_info *module) {
+  /* add this all into the Lua registry: */
+  lua_pushstring(L,"swig_runtime_data_type_pointer" SWIG_RUNTIME_VERSION SWIG_TYPE_TABLE_NAME);
+  lua_pushlightuserdata(L,(void*)module);
+  lua_rawset(L,LUA_REGISTRYINDEX);
+}
+
+/* -----------------------------------------------------------------------------
+ * global variable support code: modules
+ * ----------------------------------------------------------------------------- */
+
+/* this function is called when trying to set an immutable.
+default action is to print an error.
+This can removed with a compile flag SWIGLUA_IGNORE_SET_IMMUTABLE */
+SWIGINTERN int SWIG_Lua_set_immutable(lua_State* L)
 {
-  SwigPyObject *sobj = (SwigPyObject *) v;
-  PyObject *next = sobj->next;
-  if (sobj->own == SWIG_POINTER_OWN) {
-    swig_type_info *ty = sobj->ty;
-    SwigPyClientData *data = ty ? (SwigPyClientData *) ty->clientdata : 0;
-    PyObject *destroy = data ? data->destroy : 0;
-    if (destroy) {
-      /* destroy is always a VARARGS method */
-      PyObject *res;
-      if (data->delargs) {
-	/* we need to create a temporary object to carry the destroy operation */
-	PyObject *tmp = SwigPyObject_New(sobj->ptr, ty, 0);
-	res = SWIG_Python_CallFunctor(destroy, tmp);
-	Py_DECREF(tmp);
-      } else {
-	PyCFunction meth = PyCFunction_GET_FUNCTION(destroy);
-	PyObject *mself = PyCFunction_GET_SELF(destroy);
-	res = ((*meth)(mself, v));
-      }
-      Py_XDECREF(res);
-    } 
-#if !defined(SWIG_PYTHON_SILENT_MEMLEAK)
+/*  there should be 1 param passed in: the new value */
+#ifndef SWIGLUA_IGNORE_SET_IMMUTABLE
+  lua_pop(L,1);  /* remove it */
+  lua_pushstring(L,"This variable is immutable");
+  lua_error(L);
+#endif
+    return 0;   /* should not return anything */
+}
+
+/* the module.get method used for getting linked data */
+SWIGINTERN int SWIG_Lua_module_get(lua_State* L)
+{
+/*  there should be 2 params passed in
+  (1) table (not the meta table)
+  (2) string name of the attribute
+  printf("SWIG_Lua_module_get %p(%s) '%s'\n",
+   lua_topointer(L,1),lua_typename(L,lua_type(L,1)),
+   lua_tostring(L,2));
+*/
+  /* get the metatable */
+#if ((SWIG_LUA_TARGET == SWIG_LUA_FLAVOR_ELUA) || (SWIG_LUA_TARGET == SWIG_LUA_FLAVOR_ELUAC))
+  assert(lua_isrotable(L,1)); /* just in case */
+#else
+  assert(lua_istable(L,1)); /* default Lua action */
+#endif
+  lua_getmetatable(L,1);  /* get the metatable */
+#if ((SWIG_LUA_TARGET == SWIG_LUA_FLAVOR_ELUA) || (SWIG_LUA_TARGET == SWIG_LUA_FLAVOR_ELUAC))
+  assert(lua_isrotable(L,-1));  /* just in case */
+#else
+  assert(lua_istable(L,-1));
+#endif
+  SWIG_Lua_get_table(L,".get");  /* get the .get table */
+  lua_remove(L,3);  /* remove metatable */
+#if ((SWIG_LUA_TARGET == SWIG_LUA_FLAVOR_ELUA) || (SWIG_LUA_TARGET == SWIG_LUA_FLAVOR_ELUAC))
+  if (lua_isrotable(L,-1))
+#else
+  if (lua_istable(L,-1))
+#endif
+  {
+    /* look for the key in the .get table */
+    lua_pushvalue(L,2);  /* key */
+    lua_rawget(L,-2);
+    lua_remove(L,3);  /* remove .get */
+    if (lua_iscfunction(L,-1))
+    {  /* found it so call the fn & return its value */
+      lua_call(L,0,1);
+      return 1;
+    }
+    lua_pop(L,1);  /* remove the top */
+  }
+  lua_pop(L,1);  /* remove the .get */
+  lua_pushnil(L);  /* return a nil */
+  return 1;
+}
+
+/* the module.set method used for setting linked data */
+SWIGINTERN int SWIG_Lua_module_set(lua_State* L)
+{
+/*  there should be 3 params passed in
+  (1) table (not the meta table)
+  (2) string name of the attribute
+  (3) any for the new value
+*/
+  /* get the metatable */
+#if ((SWIG_LUA_TARGET == SWIG_LUA_FLAVOR_ELUA) || (SWIG_LUA_TARGET == SWIG_LUA_FLAVOR_ELUAC))
+  assert(lua_isrotable(L,1));  /* just in case */
+#else
+  assert(lua_istable(L,1)); /* default Lua action */
+#endif
+  lua_getmetatable(L,1);  /* get the metatable */
+#if ((SWIG_LUA_TARGET == SWIG_LUA_FLAVOR_ELUA) || (SWIG_LUA_TARGET == SWIG_LUA_FLAVOR_ELUAC))
+  assert(lua_isrotable(L,-1));  /* just in case */
+#else
+  assert(lua_istable(L,-1));
+#endif
+  SWIG_Lua_get_table(L,".set");  /* get the .set table */
+  lua_remove(L,4);  /* remove metatable */
+#if ((SWIG_LUA_TARGET == SWIG_LUA_FLAVOR_ELUA) || (SWIG_LUA_TARGET == SWIG_LUA_FLAVOR_ELUAC))
+  if (lua_isrotable(L,-1))
+#else
+  if (lua_istable(L,-1))
+#endif
+  {
+    /* look for the key in the .set table */
+    lua_pushvalue(L,2);  /* key */
+    lua_rawget(L,-2);
+    lua_remove(L,4);  /* remove .set */
+    if (lua_iscfunction(L,-1))
+    {  /* found it so call the fn & return its value */
+      lua_pushvalue(L,3);  /* value */
+      lua_call(L,1,0);
+      return 0;
+    }
+#if (SWIG_LUA_TARGET == SWIG_LUA_FLAVOR_ELUA) 
     else {
-      const char *name = SWIG_TypePrettyName(ty);
-      printf("swig/python detected a memory leak of type '%s', no destructor found.\n", (name ? name : "unknown"));
+      return 0; // Exits stoically if an invalid key is initialized.
     }
 #endif
-  } 
-  Py_XDECREF(next);
-  PyObject_DEL(v);
-}
-
-SWIGRUNTIME PyObject* 
-SwigPyObject_append(PyObject* v, PyObject* next)
-{
-  SwigPyObject *sobj = (SwigPyObject *) v;
-#ifndef METH_O
-  PyObject *tmp = 0;
-  if (!PyArg_ParseTuple(next,(char *)"O:append", &tmp)) return NULL;
-  next = tmp;
-#endif
-  if (!SwigPyObject_Check(next)) {
-    return NULL;
   }
-  sobj->next = next;
-  Py_INCREF(next);
-  return SWIG_Py_Void();
+  lua_settop(L,3);  /* reset back to start */
+  /* we now have the table, key & new value, so just set directly */
+  lua_rawset(L,1);  /* add direct */
+  return 0;
 }
 
-SWIGRUNTIME PyObject* 
-#ifdef METH_NOARGS
-SwigPyObject_next(PyObject* v)
-#else
-SwigPyObject_next(PyObject* v, PyObject *SWIGUNUSEDPARM(args))
-#endif
+#if ((SWIG_LUA_TARGET != SWIG_LUA_FLAVOR_ELUA) && (SWIG_LUA_TARGET != SWIG_LUA_FLAVOR_ELUAC))
+/* registering a module in lua. Pushes the module table on the stack. */
+SWIGINTERN void  SWIG_Lua_module_begin(lua_State* L,const char* name)
 {
-  SwigPyObject *sobj = (SwigPyObject *) v;
-  if (sobj->next) {    
-    Py_INCREF(sobj->next);
-    return sobj->next;
-  } else {
-    return SWIG_Py_Void();
+  assert(lua_istable(L,-1));  /* just in case */
+  lua_pushstring(L,name);
+  lua_newtable(L);   /* the table */
+  /* add meta table */
+  lua_newtable(L);    /* the meta table */
+  SWIG_Lua_add_function(L,"__index",SWIG_Lua_module_get);
+  SWIG_Lua_add_function(L,"__newindex",SWIG_Lua_module_set);
+  lua_pushstring(L,".get");
+  lua_newtable(L);    /* the .get table */
+  lua_rawset(L,-3);  /* add .get into metatable */
+  lua_pushstring(L,".set");
+  lua_newtable(L);    /* the .set table */
+  lua_rawset(L,-3);  /* add .set into metatable */
+  lua_setmetatable(L,-2);  /* sets meta table in module */
+#ifdef SWIG_LUA_MODULE_GLOBAL
+  /* If requested, install the module directly into the global namespace. */
+  lua_rawset(L,-3);        /* add module into parent */
+  SWIG_Lua_get_table(L,name);   /* get the table back out */
+#else
+  /* Do not install the module table as global name. The stack top has
+     the module table with the name below. We pop the top and replace
+     the name with it. */
+  lua_replace(L,-2);
+#endif
+}
+
+/* ending the register */
+SWIGINTERN void  SWIG_Lua_module_end(lua_State* L)
+{
+  lua_pop(L,1);       /* tidy stack (remove module) */
+}
+
+/* adding a linked variable to the module */
+SWIGINTERN void SWIG_Lua_module_add_variable(lua_State* L,const char* name,lua_CFunction getFn,lua_CFunction setFn)
+{
+  assert(lua_istable(L,-1));  /* just in case */
+  lua_getmetatable(L,-1);  /* get the metatable */
+  assert(lua_istable(L,-1));  /* just in case */
+  SWIG_Lua_get_table(L,".get"); /* find the .get table */
+  assert(lua_istable(L,-1));  /* should be a table: */
+  SWIG_Lua_add_function(L,name,getFn);
+  lua_pop(L,1);       /* tidy stack (remove table) */
+  if (setFn)  /* if there is a set fn */
+  {
+    SWIG_Lua_get_table(L,".set"); /* find the .set table */
+    assert(lua_istable(L,-1));  /* should be a table: */
+    SWIG_Lua_add_function(L,name,setFn);
+    lua_pop(L,1);       /* tidy stack (remove table) */
   }
+  lua_pop(L,1);       /* tidy stack (remove meta) */
 }
-
-SWIGINTERN PyObject*
-#ifdef METH_NOARGS
-SwigPyObject_disown(PyObject *v)
-#else
-SwigPyObject_disown(PyObject* v, PyObject *SWIGUNUSEDPARM(args))
 #endif
+
+/* adding a function module */
+SWIGINTERN void  SWIG_Lua_module_add_function(lua_State* L,const char* name,lua_CFunction fn)
 {
-  SwigPyObject *sobj = (SwigPyObject *)v;
-  sobj->own = 0;
-  return SWIG_Py_Void();
-}
-
-SWIGINTERN PyObject*
-#ifdef METH_NOARGS
-SwigPyObject_acquire(PyObject *v)
-#else
-SwigPyObject_acquire(PyObject* v, PyObject *SWIGUNUSEDPARM(args))
-#endif
-{
-  SwigPyObject *sobj = (SwigPyObject *)v;
-  sobj->own = SWIG_POINTER_OWN;
-  return SWIG_Py_Void();
-}
-
-SWIGINTERN PyObject*
-SwigPyObject_own(PyObject *v, PyObject *args)
-{
-  PyObject *val = 0;
-#if (PY_VERSION_HEX < 0x02020000)
-  if (!PyArg_ParseTuple(args,(char *)"|O:own",&val))
-#elif (PY_VERSION_HEX < 0x02050000)
-  if (!PyArg_UnpackTuple(args, (char *)"own", 0, 1, &val)) 
-#else
-  if (!PyArg_UnpackTuple(args, "own", 0, 1, &val)) 
-#endif
-    {
-      return NULL;
-    } 
-  else
-    {
-      SwigPyObject *sobj = (SwigPyObject *)v;
-      PyObject *obj = PyBool_FromLong(sobj->own);
-      if (val) {
-#ifdef METH_NOARGS
-	if (PyObject_IsTrue(val)) {
-	  SwigPyObject_acquire(v);
-	} else {
-	  SwigPyObject_disown(v);
-	}
-#else
-	if (PyObject_IsTrue(val)) {
-	  SwigPyObject_acquire(v,args);
-	} else {
-	  SwigPyObject_disown(v,args);
-	}
-#endif
-      } 
-      return obj;
-    }
-}
-
-#ifdef METH_O
-static PyMethodDef
-swigobject_methods[] = {
-  {(char *)"disown",  (PyCFunction)SwigPyObject_disown,  METH_NOARGS,  (char *)"releases ownership of the pointer"},
-  {(char *)"acquire", (PyCFunction)SwigPyObject_acquire, METH_NOARGS,  (char *)"acquires ownership of the pointer"},
-  {(char *)"own",     (PyCFunction)SwigPyObject_own,     METH_VARARGS, (char *)"returns/sets ownership of the pointer"},
-  {(char *)"append",  (PyCFunction)SwigPyObject_append,  METH_O,       (char *)"appends another 'this' object"},
-  {(char *)"next",    (PyCFunction)SwigPyObject_next,    METH_NOARGS,  (char *)"returns the next 'this' object"},
-  {(char *)"__repr__",(PyCFunction)SwigPyObject_repr,    METH_NOARGS,  (char *)"returns object representation"},
-  {0, 0, 0, 0}  
-};
-#else
-static PyMethodDef
-swigobject_methods[] = {
-  {(char *)"disown",  (PyCFunction)SwigPyObject_disown,  METH_VARARGS,  (char *)"releases ownership of the pointer"},
-  {(char *)"acquire", (PyCFunction)SwigPyObject_acquire, METH_VARARGS,  (char *)"aquires ownership of the pointer"},
-  {(char *)"own",     (PyCFunction)SwigPyObject_own,     METH_VARARGS,  (char *)"returns/sets ownership of the pointer"},
-  {(char *)"append",  (PyCFunction)SwigPyObject_append,  METH_VARARGS,  (char *)"appends another 'this' object"},
-  {(char *)"next",    (PyCFunction)SwigPyObject_next,    METH_VARARGS,  (char *)"returns the next 'this' object"},
-  {(char *)"__repr__",(PyCFunction)SwigPyObject_repr,   METH_VARARGS,  (char *)"returns object representation"},
-  {0, 0, 0, 0}  
-};
-#endif
-
-#if PY_VERSION_HEX < 0x02020000
-SWIGINTERN PyObject *
-SwigPyObject_getattr(SwigPyObject *sobj,char *name)
-{
-  return Py_FindMethod(swigobject_methods, (PyObject *)sobj, name);
-}
-#endif
-
-SWIGRUNTIME PyTypeObject*
-SwigPyObject_TypeOnce(void) {
-  static char swigobject_doc[] = "Swig object carries a C/C++ instance pointer";
-
-  static PyNumberMethods SwigPyObject_as_number = {
-    (binaryfunc)0, /*nb_add*/
-    (binaryfunc)0, /*nb_subtract*/
-    (binaryfunc)0, /*nb_multiply*/
-    /* nb_divide removed in Python 3 */
-#if PY_VERSION_HEX < 0x03000000
-    (binaryfunc)0, /*nb_divide*/
-#endif
-    (binaryfunc)0, /*nb_remainder*/
-    (binaryfunc)0, /*nb_divmod*/
-    (ternaryfunc)0,/*nb_power*/
-    (unaryfunc)0,  /*nb_negative*/
-    (unaryfunc)0,  /*nb_positive*/
-    (unaryfunc)0,  /*nb_absolute*/
-    (inquiry)0,    /*nb_nonzero*/
-    0,		   /*nb_invert*/
-    0,		   /*nb_lshift*/
-    0,		   /*nb_rshift*/
-    0,		   /*nb_and*/
-    0,		   /*nb_xor*/
-    0,		   /*nb_or*/
-#if PY_VERSION_HEX < 0x03000000
-    0,   /*nb_coerce*/
-#endif
-    (unaryfunc)SwigPyObject_long, /*nb_int*/
-#if PY_VERSION_HEX < 0x03000000
-    (unaryfunc)SwigPyObject_long, /*nb_long*/
-#else
-    0, /*nb_reserved*/
-#endif
-    (unaryfunc)0,                 /*nb_float*/
-#if PY_VERSION_HEX < 0x03000000
-    (unaryfunc)SwigPyObject_oct,  /*nb_oct*/
-    (unaryfunc)SwigPyObject_hex,  /*nb_hex*/
-#endif
-#if PY_VERSION_HEX >= 0x03000000 /* 3.0 */
-    0,0,0,0,0,0,0,0,0,0,0,0,0,0,0 /* nb_inplace_add -> nb_index, nb_inplace_divide removed */
-#elif PY_VERSION_HEX >= 0x02050000 /* 2.5.0 */
-    0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0 /* nb_inplace_add -> nb_index */
-#elif PY_VERSION_HEX >= 0x02020000 /* 2.2.0 */
-    0,0,0,0,0,0,0,0,0,0,0,0,0,0,0 /* nb_inplace_add -> nb_inplace_true_divide */
-#elif PY_VERSION_HEX >= 0x02000000 /* 2.0.0 */
-    0,0,0,0,0,0,0,0,0,0,0 /* nb_inplace_add -> nb_inplace_or */
-#endif
-  };
-
-  static PyTypeObject swigpyobject_type;
-  static int type_init = 0;
-  if (!type_init) {
-    const PyTypeObject tmp = {
-      /* PyObject header changed in Python 3 */
-#if PY_VERSION_HEX >= 0x03000000
-      PyVarObject_HEAD_INIT(NULL, 0)
-#else
-      PyObject_HEAD_INIT(NULL)
-      0,                                    /* ob_size */
-#endif
-      (char *)"SwigPyObject",               /* tp_name */
-      sizeof(SwigPyObject),                 /* tp_basicsize */
-      0,                                    /* tp_itemsize */
-      (destructor)SwigPyObject_dealloc,     /* tp_dealloc */
-      (printfunc)SwigPyObject_print,        /* tp_print */
-#if PY_VERSION_HEX < 0x02020000
-      (getattrfunc)SwigPyObject_getattr,    /* tp_getattr */
-#else
-      (getattrfunc)0,                       /* tp_getattr */
-#endif
-      (setattrfunc)0,                       /* tp_setattr */
-#if PY_VERSION_HEX >= 0x03000000
-    0, /* tp_reserved in 3.0.1, tp_compare in 3.0.0 but not used */
-#else
-      (cmpfunc)SwigPyObject_compare,        /* tp_compare */
-#endif
-      (reprfunc)SwigPyObject_repr,          /* tp_repr */
-      &SwigPyObject_as_number,              /* tp_as_number */
-      0,                                    /* tp_as_sequence */
-      0,                                    /* tp_as_mapping */
-      (hashfunc)0,                          /* tp_hash */
-      (ternaryfunc)0,                       /* tp_call */
-      (reprfunc)SwigPyObject_str,           /* tp_str */
-      PyObject_GenericGetAttr,              /* tp_getattro */
-      0,                                    /* tp_setattro */
-      0,                                    /* tp_as_buffer */
-      Py_TPFLAGS_DEFAULT,                   /* tp_flags */
-      swigobject_doc,                       /* tp_doc */
-      0,                                    /* tp_traverse */
-      0,                                    /* tp_clear */
-      (richcmpfunc)SwigPyObject_richcompare,/* tp_richcompare */
-      0,                                    /* tp_weaklistoffset */
-#if PY_VERSION_HEX >= 0x02020000
-      0,                                    /* tp_iter */
-      0,                                    /* tp_iternext */
-      swigobject_methods,                   /* tp_methods */
-      0,                                    /* tp_members */
-      0,                                    /* tp_getset */
-      0,                                    /* tp_base */
-      0,                                    /* tp_dict */
-      0,                                    /* tp_descr_get */
-      0,                                    /* tp_descr_set */
-      0,                                    /* tp_dictoffset */
-      0,                                    /* tp_init */
-      0,                                    /* tp_alloc */
-      0,                                    /* tp_new */
-      0,                                    /* tp_free */
-      0,                                    /* tp_is_gc */
-      0,                                    /* tp_bases */
-      0,                                    /* tp_mro */
-      0,                                    /* tp_cache */
-      0,                                    /* tp_subclasses */
-      0,                                    /* tp_weaklist */
-#endif
-#if PY_VERSION_HEX >= 0x02030000
-      0,                                    /* tp_del */
-#endif
-#if PY_VERSION_HEX >= 0x02060000
-      0,                                    /* tp_version */
-#endif
-#ifdef COUNT_ALLOCS
-      0,0,0,0                               /* tp_alloc -> tp_next */
-#endif
-    };
-    swigpyobject_type = tmp;
-    type_init = 1;
-#if PY_VERSION_HEX < 0x02020000
-    swigpyobject_type.ob_type = &PyType_Type;
-#else
-    if (PyType_Ready(&swigpyobject_type) < 0)
-      return NULL;
-#endif
-  }
-  return &swigpyobject_type;
-}
-
-SWIGRUNTIME PyObject *
-SwigPyObject_New(void *ptr, swig_type_info *ty, int own)
-{
-  SwigPyObject *sobj = PyObject_NEW(SwigPyObject, SwigPyObject_type());
-  if (sobj) {
-    sobj->ptr  = ptr;
-    sobj->ty   = ty;
-    sobj->own  = own;
-    sobj->next = 0;
-  }
-  return (PyObject *)sobj;
+  SWIG_Lua_add_function(L,name,fn);
 }
 
 /* -----------------------------------------------------------------------------
- * Implements a simple Swig Packed type, and use it instead of string
+ * global variable support code: classes
  * ----------------------------------------------------------------------------- */
 
-typedef struct {
-  PyObject_HEAD
-  void *pack;
-  swig_type_info *ty;
-  size_t size;
-} SwigPyPacked;
-
-SWIGRUNTIME int
-SwigPyPacked_print(SwigPyPacked *v, FILE *fp, int SWIGUNUSEDPARM(flags))
+/* the class.get method, performs the lookup of class attributes */
+SWIGINTERN int  SWIG_Lua_class_get(lua_State* L)
 {
-  char result[SWIG_BUFFER_SIZE];
-  fputs("<Swig Packed ", fp); 
-  if (SWIG_PackDataName(result, v->pack, v->size, 0, sizeof(result))) {
-    fputs("at ", fp); 
-    fputs(result, fp); 
+/*  there should be 2 params passed in
+  (1) userdata (not the meta table)
+  (2) string name of the attribute
+*/
+  assert(lua_isuserdata(L,-2));  /* just in case */
+  lua_getmetatable(L,-2);    /* get the meta table */
+  assert(lua_istable(L,-1));  /* just in case */
+  SWIG_Lua_get_table(L,".get"); /* find the .get table */
+  assert(lua_istable(L,-1));  /* just in case */
+  /* look for the key in the .get table */
+  lua_pushvalue(L,2);  /* key */
+  lua_rawget(L,-2);
+  lua_remove(L,-2); /* stack tidy, remove .get table */
+  if (lua_iscfunction(L,-1))
+  {  /* found it so call the fn & return its value */
+    lua_pushvalue(L,1);  /* the userdata */
+    lua_call(L,1,1);  /* 1 value in (userdata),1 out (result) */
+    lua_remove(L,-2); /* stack tidy, remove metatable */
+    return 1;
   }
-  fputs(v->ty->name,fp); 
-  fputs(">", fp);
-  return 0; 
-}
-  
-SWIGRUNTIME PyObject *
-SwigPyPacked_repr(SwigPyPacked *v)
-{
-  char result[SWIG_BUFFER_SIZE];
-  if (SWIG_PackDataName(result, v->pack, v->size, 0, sizeof(result))) {
-    return SWIG_Python_str_FromFormat("<Swig Packed at %s%s>", result, v->ty->name);
-  } else {
-    return SWIG_Python_str_FromFormat("<Swig Packed %s>", v->ty->name);
-  }  
-}
-
-SWIGRUNTIME PyObject *
-SwigPyPacked_str(SwigPyPacked *v)
-{
-  char result[SWIG_BUFFER_SIZE];
-  if (SWIG_PackDataName(result, v->pack, v->size, 0, sizeof(result))){
-    return SWIG_Python_str_FromFormat("%s%s", result, v->ty->name);
-  } else {
-    return SWIG_Python_str_FromChar(v->ty->name);
-  }  
-}
-
-SWIGRUNTIME int
-SwigPyPacked_compare(SwigPyPacked *v, SwigPyPacked *w)
-{
-  size_t i = v->size;
-  size_t j = w->size;
-  int s = (i < j) ? -1 : ((i > j) ? 1 : 0);
-  return s ? s : strncmp((char *)v->pack, (char *)w->pack, 2*v->size);
-}
-
-SWIGRUNTIME PyTypeObject* SwigPyPacked_TypeOnce(void);
-
-SWIGRUNTIME PyTypeObject*
-SwigPyPacked_type(void) {
-  static PyTypeObject *SWIG_STATIC_POINTER(type) = SwigPyPacked_TypeOnce();
-  return type;
-}
-
-SWIGRUNTIMEINLINE int
-SwigPyPacked_Check(PyObject *op) {
-  return ((op)->ob_type == SwigPyPacked_TypeOnce()) 
-    || (strcmp((op)->ob_type->tp_name,"SwigPyPacked") == 0);
-}
-
-SWIGRUNTIME void
-SwigPyPacked_dealloc(PyObject *v)
-{
-  if (SwigPyPacked_Check(v)) {
-    SwigPyPacked *sobj = (SwigPyPacked *) v;
-    free(sobj->pack);
+  lua_pop(L,1);  /* remove whatever was there */
+  /* ok, so try the .fn table */
+  SWIG_Lua_get_table(L,".fn"); /* find the .get table */
+  assert(lua_istable(L,-1));  /* just in case */
+  lua_pushvalue(L,2);  /* key */
+  lua_rawget(L,-2);  /* look for the fn */
+  lua_remove(L,-2); /* stack tidy, remove .fn table */
+  if (lua_isfunction(L,-1)) /* note: if its a C function or lua function */
+  {  /* found it so return the fn & let lua call it */
+    lua_remove(L,-2); /* stack tidy, remove metatable */
+    return 1;
   }
-  PyObject_DEL(v);
-}
-
-SWIGRUNTIME PyTypeObject*
-SwigPyPacked_TypeOnce(void) {
-  static char swigpacked_doc[] = "Swig object carries a C/C++ instance pointer";
-  static PyTypeObject swigpypacked_type;
-  static int type_init = 0;
-  if (!type_init) {
-    const PyTypeObject tmp = {
-      /* PyObject header changed in Python 3 */
-#if PY_VERSION_HEX>=0x03000000
-      PyVarObject_HEAD_INIT(NULL, 0)
-#else
-      PyObject_HEAD_INIT(NULL)
-      0,                                    /* ob_size */
-#endif
-      (char *)"SwigPyPacked",               /* tp_name */
-      sizeof(SwigPyPacked),                 /* tp_basicsize */
-      0,                                    /* tp_itemsize */
-      (destructor)SwigPyPacked_dealloc,     /* tp_dealloc */
-      (printfunc)SwigPyPacked_print,        /* tp_print */
-      (getattrfunc)0,                       /* tp_getattr */
-      (setattrfunc)0,                       /* tp_setattr */
-#if PY_VERSION_HEX>=0x03000000
-      0, /* tp_reserved in 3.0.1 */
-#else
-      (cmpfunc)SwigPyPacked_compare,        /* tp_compare */
-#endif
-      (reprfunc)SwigPyPacked_repr,          /* tp_repr */
-      0,                                    /* tp_as_number */
-      0,                                    /* tp_as_sequence */
-      0,                                    /* tp_as_mapping */
-      (hashfunc)0,                          /* tp_hash */
-      (ternaryfunc)0,                       /* tp_call */
-      (reprfunc)SwigPyPacked_str,           /* tp_str */
-      PyObject_GenericGetAttr,              /* tp_getattro */
-      0,                                    /* tp_setattro */
-      0,                                    /* tp_as_buffer */
-      Py_TPFLAGS_DEFAULT,                   /* tp_flags */
-      swigpacked_doc,                       /* tp_doc */
-      0,                                    /* tp_traverse */
-      0,                                    /* tp_clear */
-      0,                                    /* tp_richcompare */
-      0,                                    /* tp_weaklistoffset */
-#if PY_VERSION_HEX >= 0x02020000
-      0,                                    /* tp_iter */
-      0,                                    /* tp_iternext */
-      0,                                    /* tp_methods */
-      0,                                    /* tp_members */
-      0,                                    /* tp_getset */
-      0,                                    /* tp_base */
-      0,                                    /* tp_dict */
-      0,                                    /* tp_descr_get */
-      0,                                    /* tp_descr_set */
-      0,                                    /* tp_dictoffset */
-      0,                                    /* tp_init */
-      0,                                    /* tp_alloc */
-      0,                                    /* tp_new */
-      0,                                    /* tp_free */
-      0,                                    /* tp_is_gc */
-      0,                                    /* tp_bases */
-      0,                                    /* tp_mro */
-      0,                                    /* tp_cache */
-      0,                                    /* tp_subclasses */
-      0,                                    /* tp_weaklist */
-#endif
-#if PY_VERSION_HEX >= 0x02030000
-      0,                                    /* tp_del */
-#endif
-#if PY_VERSION_HEX >= 0x02060000
-      0,                                    /* tp_version */
-#endif
-#ifdef COUNT_ALLOCS
-      0,0,0,0                               /* tp_alloc -> tp_next */
-#endif
-    };
-    swigpypacked_type = tmp;
-    type_init = 1;
-#if PY_VERSION_HEX < 0x02020000
-    swigpypacked_type.ob_type = &PyType_Type;
-#else
-    if (PyType_Ready(&swigpypacked_type) < 0)
-      return NULL;
-#endif
+  lua_pop(L,1);  /* remove whatever was there */
+  /* NEW: looks for the __getitem() fn
+  this is a user provided get fn */
+  SWIG_Lua_get_table(L,"__getitem"); /* find the __getitem fn */
+  if (lua_iscfunction(L,-1))  /* if its there */
+  {  /* found it so call the fn & return its value */
+    lua_pushvalue(L,1);  /* the userdata */
+    lua_pushvalue(L,2);  /* the parameter */
+    lua_call(L,2,1);  /* 2 value in (userdata),1 out (result) */
+    lua_remove(L,-2); /* stack tidy, remove metatable */
+    return 1;
   }
-  return &swigpypacked_type;
+  return 0;  /* sorry not known */
 }
 
-SWIGRUNTIME PyObject *
-SwigPyPacked_New(void *ptr, size_t size, swig_type_info *ty)
+/* the class.set method, performs the lookup of class attributes */
+SWIGINTERN int  SWIG_Lua_class_set(lua_State* L)
 {
-  SwigPyPacked *sobj = PyObject_NEW(SwigPyPacked, SwigPyPacked_type());
-  if (sobj) {
-    void *pack = malloc(size);
-    if (pack) {
-      memcpy(pack, ptr, size);
-      sobj->pack = pack;
-      sobj->ty   = ty;
-      sobj->size = size;
-    } else {
-      PyObject_DEL((PyObject *) sobj);
-      sobj = 0;
+/*  there should be 3 params passed in
+  (1) table (not the meta table)
+  (2) string name of the attribute
+  (3) any for the new value
+printf("SWIG_Lua_class_set %p(%s) '%s' %p(%s)\n",
+      lua_topointer(L,1),lua_typename(L,lua_type(L,1)),
+      lua_tostring(L,2),
+      lua_topointer(L,3),lua_typename(L,lua_type(L,3)));*/
+
+  assert(lua_isuserdata(L,1));  /* just in case */
+  lua_getmetatable(L,1);    /* get the meta table */
+  assert(lua_istable(L,-1));  /* just in case */
+
+  SWIG_Lua_get_table(L,".set"); /* find the .set table */
+  if (lua_istable(L,-1))
+  {
+    /* look for the key in the .set table */
+    lua_pushvalue(L,2);  /* key */
+    lua_rawget(L,-2);
+    if (lua_iscfunction(L,-1))
+    {  /* found it so call the fn & return its value */
+      lua_pushvalue(L,1);  /* userdata */
+      lua_pushvalue(L,3);  /* value */
+      lua_call(L,2,0);
+      return 0;
     }
+    lua_pop(L,1);  /* remove the value */
   }
-  return (PyObject *) sobj;
+  lua_pop(L,1);  /* remove the value .set table */
+  /* NEW: looks for the __setitem() fn
+  this is a user provided set fn */
+  SWIG_Lua_get_table(L,"__setitem"); /* find the fn */
+  if (lua_iscfunction(L,-1))  /* if its there */
+  {  /* found it so call the fn & return its value */
+    lua_pushvalue(L,1);  /* the userdata */
+    lua_pushvalue(L,2);  /* the parameter */
+    lua_pushvalue(L,3);  /* the value */
+    lua_call(L,3,0);  /* 3 values in ,0 out */
+    lua_remove(L,-2); /* stack tidy, remove metatable */
+    return 1;
+  }
+  return 0;
 }
 
-SWIGRUNTIME swig_type_info *
-SwigPyPacked_UnpackData(PyObject *obj, void *ptr, size_t size)
+/* the class.destruct method called by the interpreter */
+SWIGINTERN int  SWIG_Lua_class_destruct(lua_State* L)
 {
-  if (SwigPyPacked_Check(obj)) {
-    SwigPyPacked *sobj = (SwigPyPacked *)obj;
-    if (sobj->size != size) return 0;
-    memcpy(ptr, sobj->pack, size);
-    return sobj->ty;
-  } else {
-    return 0;
-  }
-}
-
-/* -----------------------------------------------------------------------------
- * pointers/data manipulation
- * ----------------------------------------------------------------------------- */
-
-SWIGRUNTIMEINLINE PyObject *
-_SWIG_This(void)
-{
-    return SWIG_Python_str_FromChar("this");
-}
-
-static PyObject *swig_this = NULL;
-
-SWIGRUNTIME PyObject *
-SWIG_This(void)
-{
-  if (swig_this == NULL)
-    swig_this = _SWIG_This();
-  return swig_this;
-}
-
-/* #define SWIG_PYTHON_SLOW_GETSET_THIS */
-
-/* TODO: I don't know how to implement the fast getset in Python 3 right now */
-#if PY_VERSION_HEX>=0x03000000
-#define SWIG_PYTHON_SLOW_GETSET_THIS 
-#endif
-
-SWIGRUNTIME SwigPyObject *
-SWIG_Python_GetSwigThis(PyObject *pyobj) 
-{
-  PyObject *obj;
-
-  if (SwigPyObject_Check(pyobj))
-    return (SwigPyObject *) pyobj;
-
-#ifdef SWIGPYTHON_BUILTIN
-  (void)obj;
-# ifdef PyWeakref_CheckProxy
-  if (PyWeakref_CheckProxy(pyobj)) {
-    pyobj = PyWeakref_GET_OBJECT(pyobj);
-    if (pyobj && SwigPyObject_Check(pyobj))
-      return (SwigPyObject*) pyobj;
-  }
-# endif
-  return NULL;
-#else
-
-  obj = 0;
-
-#if (!defined(SWIG_PYTHON_SLOW_GETSET_THIS) && (PY_VERSION_HEX >= 0x02030000))
-  if (PyInstance_Check(pyobj)) {
-    obj = _PyInstance_Lookup(pyobj, SWIG_This());      
-  } else {
-    PyObject **dictptr = _PyObject_GetDictPtr(pyobj);
-    if (dictptr != NULL) {
-      PyObject *dict = *dictptr;
-      obj = dict ? PyDict_GetItem(dict, SWIG_This()) : 0;
-    } else {
-#ifdef PyWeakref_CheckProxy
-      if (PyWeakref_CheckProxy(pyobj)) {
-	PyObject *wobj = PyWeakref_GET_OBJECT(pyobj);
-	return wobj ? SWIG_Python_GetSwigThis(wobj) : 0;
-      }
-#endif
-      obj = PyObject_GetAttr(pyobj,SWIG_This());
-      if (obj) {
-	Py_DECREF(obj);
-      } else {
-	if (PyErr_Occurred()) PyErr_Clear();
-	return 0;
-      }
-    }
-  }
-#else
-  obj = PyObject_GetAttr(pyobj,SWIG_This());
-  if (obj) {
-    Py_DECREF(obj);
-  } else {
-    if (PyErr_Occurred()) PyErr_Clear();
-    return 0;
-  }
-#endif
-  if (obj && !SwigPyObject_Check(obj)) {
-    /* a PyObject is called 'this', try to get the 'real this'
-       SwigPyObject from it */ 
-    return SWIG_Python_GetSwigThis(obj);
-  }
-  return (SwigPyObject *)obj;
-#endif
-}
-
-/* Acquire a pointer value */
-
-SWIGRUNTIME int
-SWIG_Python_AcquirePtr(PyObject *obj, int own) {
-  if (own == SWIG_POINTER_OWN) {
-    SwigPyObject *sobj = SWIG_Python_GetSwigThis(obj);
-    if (sobj) {
-      int oldown = sobj->own;
-      sobj->own = own;
-      return oldown;
+/*  there should be 1 params passed in
+  (1) userdata (not the meta table) */
+  swig_lua_userdata* usr;
+  swig_lua_class* clss;
+  assert(lua_isuserdata(L,-1));  /* just in case */
+  usr=(swig_lua_userdata*)lua_touserdata(L,-1);  /* get it */
+  /* if must be destroyed & has a destructor */
+  if (usr->own) /* if must be destroyed */
+  {
+    clss=(swig_lua_class*)usr->type->clientdata;  /* get the class */
+    if (clss && clss->destructor)  /* there is a destroy fn */
+    {
+      clss->destructor(usr->ptr);  /* bye bye */
     }
   }
   return 0;
 }
 
-/* Convert a pointer value */
-
-SWIGRUNTIME int
-SWIG_Python_ConvertPtrAndOwn(PyObject *obj, void **ptr, swig_type_info *ty, int flags, int *own) {
-  int res;
-  SwigPyObject *sobj;
-
-  if (!obj)
-    return SWIG_ERROR;
-  if (obj == Py_None) {
-    if (ptr)
-      *ptr = 0;
-    return SWIG_OK;
-  }
-
-  res = SWIG_ERROR;
-
-  sobj = SWIG_Python_GetSwigThis(obj);
-  if (own)
-    *own = 0;
-  while (sobj) {
-    void *vptr = sobj->ptr;
-    if (ty) {
-      swig_type_info *to = sobj->ty;
-      if (to == ty) {
-        /* no type cast needed */
-        if (ptr) *ptr = vptr;
-        break;
-      } else {
-        swig_cast_info *tc = SWIG_TypeCheck(to->name,ty);
-        if (!tc) {
-          sobj = (SwigPyObject *)sobj->next;
-        } else {
-          if (ptr) {
-            int newmemory = 0;
-            *ptr = SWIG_TypeCast(tc,vptr,&newmemory);
-            if (newmemory == SWIG_CAST_NEW_MEMORY) {
-              assert(own); /* badly formed typemap which will lead to a memory leak - it must set and use own to delete *ptr */
-              if (own)
-                *own = *own | SWIG_CAST_NEW_MEMORY;
-            }
-          }
-          break;
-        }
-      }
-    } else {
-      if (ptr) *ptr = vptr;
-      break;
-    }
-  }
-  if (sobj) {
-    if (own)
-      *own = *own | sobj->own;
-    if (flags & SWIG_POINTER_DISOWN) {
-      sobj->own = 0;
-    }
-    res = SWIG_OK;
-  } else {
-    if (flags & SWIG_POINTER_IMPLICIT_CONV) {
-      SwigPyClientData *data = ty ? (SwigPyClientData *) ty->clientdata : 0;
-      if (data && !data->implicitconv) {
-        PyObject *klass = data->klass;
-        if (klass) {
-          PyObject *impconv;
-          data->implicitconv = 1; /* avoid recursion and call 'explicit' constructors*/
-          impconv = SWIG_Python_CallFunctor(klass, obj);
-          data->implicitconv = 0;
-          if (PyErr_Occurred()) {
-            PyErr_Clear();
-            impconv = 0;
-          }
-          if (impconv) {
-            SwigPyObject *iobj = SWIG_Python_GetSwigThis(impconv);
-            if (iobj) {
-              void *vptr;
-              res = SWIG_Python_ConvertPtrAndOwn((PyObject*)iobj, &vptr, ty, 0, 0);
-              if (SWIG_IsOK(res)) {
-                if (ptr) {
-                  *ptr = vptr;
-                  /* transfer the ownership to 'ptr' */
-                  iobj->own = 0;
-                  res = SWIG_AddCast(res);
-                  res = SWIG_AddNewMask(res);
-                } else {
-                  res = SWIG_AddCast(res);		    
-                }
-              }
-            }
-            Py_DECREF(impconv);
-          }
-        }
-      }
-    }
-  }
-  return res;
+/* the class.__tostring method called by the interpreter and print */
+SWIGINTERN int  SWIG_Lua_class_tostring(lua_State* L)
+{
+/*  there should be 1 param passed in
+  (1) userdata (not the metatable) */
+  assert(lua_isuserdata(L,1));  /* just in case */
+  unsigned long userData = (unsigned long)lua_touserdata(L,1); /* get the userdata address for later */
+  lua_getmetatable(L,1);    /* get the meta table */
+  assert(lua_istable(L,-1));  /* just in case */
+  
+  lua_getfield(L, -1, ".type");
+  const char* className = lua_tostring(L, -1);
+  
+  char output[256];
+  sprintf(output, "<%s userdata: %lX>", className, userData);
+  
+  lua_pushstring(L, (const char*)output);
+  return 1;
 }
 
-/* Convert a function ptr value */
+/* to manually disown some userdata */
+SWIGINTERN int  SWIG_Lua_class_disown(lua_State* L)
+{
+/*  there should be 1 params passed in
+  (1) userdata (not the meta table) */
+  swig_lua_userdata* usr;
+  assert(lua_isuserdata(L,-1));  /* just in case */
+  usr=(swig_lua_userdata*)lua_touserdata(L,-1);  /* get it */
+  
+  usr->own = 0; /* clear our ownership */
+  return 0;
+}
 
-SWIGRUNTIME int
-SWIG_Python_ConvertFunctionPtr(PyObject *obj, void **ptr, swig_type_info *ty) {
-  if (!PyCFunction_Check(obj)) {
-    return SWIG_ConvertPtr(obj, ptr, ty, 0);
-  } else {
-    void *vptr = 0;
-    
-    /* here we get the method pointer for callbacks */
-    const char *doc = (((PyCFunctionObject *)obj) -> m_ml -> ml_doc);
-    const char *desc = doc ? strstr(doc, "swig_ptr: ") : 0;
-    if (desc)
-      desc = ty ? SWIG_UnpackVoidPtr(desc + 10, &vptr, ty->name) : 0;
-    if (!desc) 
-      return SWIG_ERROR;
-    if (ty) {
-      swig_cast_info *tc = SWIG_TypeCheck(desc,ty);
-      if (tc) {
-        int newmemory = 0;
-        *ptr = SWIG_TypeCast(tc,vptr,&newmemory);
-        assert(!newmemory); /* newmemory handling not yet implemented */
-      } else {
-        return SWIG_ERROR;
-      }
-    } else {
-      *ptr = vptr;
-    }
-    return SWIG_OK;
+/* gets the swig class registry (or creates it) */
+SWIGINTERN void  SWIG_Lua_get_class_registry(lua_State* L)
+{
+  /* add this all into the swig registry: */
+  lua_pushstring(L,"SWIG");
+  lua_rawget(L,LUA_REGISTRYINDEX);  /* get the registry */
+  if (!lua_istable(L,-1))  /* not there */
+  {  /* must be first time, so add it */
+    lua_pop(L,1);  /* remove the result */
+    lua_pushstring(L,"SWIG");
+    lua_newtable(L);
+    lua_rawset(L,LUA_REGISTRYINDEX);
+    /* then get it */
+    lua_pushstring(L,"SWIG");
+    lua_rawget(L,LUA_REGISTRYINDEX);
   }
 }
 
-/* Convert a packed value value */
+/* helper fn to get the classes metatable from the register */
+SWIGINTERN void  SWIG_Lua_get_class_metatable(lua_State* L,const char* cname)
+{
+  SWIG_Lua_get_class_registry(L);  /* get the registry */
+  lua_pushstring(L,cname);  /* get the name */
+  lua_rawget(L,-2);    /* get it */
+  lua_remove(L,-2);    /* tidy up (remove registry) */
+}
 
-SWIGRUNTIME int
-SWIG_Python_ConvertPacked(PyObject *obj, void *ptr, size_t sz, swig_type_info *ty) {
-  swig_type_info *to = SwigPyPacked_UnpackData(obj, ptr, sz);
-  if (!to) return SWIG_ERROR;
-  if (ty) {
-    if (to != ty) {
-      /* check type cast? */
-      swig_cast_info *tc = SWIG_TypeCheck(to->name,ty);
-      if (!tc) return SWIG_ERROR;
+/* helper add a variable to a registered class */
+SWIGINTERN void  SWIG_Lua_add_class_variable(lua_State* L,const char* name,lua_CFunction getFn,lua_CFunction setFn)
+{
+  assert(lua_istable(L,-1));  /* just in case */
+  SWIG_Lua_get_table(L,".get"); /* find the .get table */
+  assert(lua_istable(L,-1));  /* just in case */
+  SWIG_Lua_add_function(L,name,getFn);
+  lua_pop(L,1);       /* tidy stack (remove table) */
+  if (setFn)
+  {
+    SWIG_Lua_get_table(L,".set"); /* find the .set table */
+    assert(lua_istable(L,-1));  /* just in case */
+    SWIG_Lua_add_function(L,name,setFn);
+    lua_pop(L,1);       /* tidy stack (remove table) */
+  }
+}
+
+/* helper to recursively add class details (attributes & operations) */
+SWIGINTERN void  SWIG_Lua_add_class_details(lua_State* L,swig_lua_class* clss)
+{
+  int i;
+  /* call all the base classes first: we can then override these later: */
+  for(i=0;clss->bases[i];i++)
+  {
+    SWIG_Lua_add_class_details(L,clss->bases[i]);
+  }
+  /* add fns */
+  for(i=0;clss->attributes[i].name;i++){
+    SWIG_Lua_add_class_variable(L,clss->attributes[i].name,clss->attributes[i].getmethod,clss->attributes[i].setmethod);
+  }
+  /* add methods to the metatable */
+  SWIG_Lua_get_table(L,".fn"); /* find the .fn table */
+  assert(lua_istable(L,-1));  /* just in case */
+  for(i=0;clss->methods[i].name;i++){
+    SWIG_Lua_add_function(L,clss->methods[i].name,clss->methods[i].method);
+  }
+  lua_pop(L,1);       /* tidy stack (remove table) */
+  /*   add operator overloads
+    these look ANY method which start with "__" and assume they
+    are operator overloads & add them to the metatable
+    (this might mess up is someone defines a method __gc (the destructor)*/
+  for(i=0;clss->methods[i].name;i++){
+    if (clss->methods[i].name[0]=='_' && clss->methods[i].name[1]=='_'){
+      SWIG_Lua_add_function(L,clss->methods[i].name,clss->methods[i].method);
     }
   }
-  return SWIG_OK;
-}  
+}
+
+/* set up the base classes pointers.
+Each class structure has a list of pointers to the base class structures.
+This function fills them.
+It cannot be done at compile time, as this will not work with hireachies
+spread over more than one swig file. 
+Therefore it must be done at runtime, querying the SWIG type system.
+*/
+SWIGINTERN void SWIG_Lua_init_base_class(lua_State* L,swig_lua_class* clss)
+{
+  int i=0;
+  swig_module_info* module=SWIG_GetModule(L);
+  for(i=0;clss->base_names[i];i++)
+  {
+    if (clss->bases[i]==0) /* not found yet */
+    {
+      /* lookup and cache the base class */
+      swig_type_info *info = SWIG_TypeQueryModule(module,module,clss->base_names[i]);
+      if (info) clss->bases[i] = (swig_lua_class *) info->clientdata;
+    }
+  }
+}
+
+/* performs the entire class registration process */
+SWIGINTERN void  SWIG_Lua_class_register(lua_State* L,swig_lua_class* clss)
+{
+  /*  add its constructor to module with the name of the class
+  so you can do MyClass(...) as well as new_MyClass(...)
+  BUT only if a constructor is defined
+  (this overcomes the problem of pure virtual classes without constructors)*/
+  if (clss->constructor)
+    SWIG_Lua_add_function(L,clss->name,clss->constructor);
+
+  SWIG_Lua_get_class_registry(L);  /* get the registry */
+  lua_pushstring(L,clss->name);  /* get the name */
+  lua_newtable(L);    /* create the metatable */
+  /* add string of class name called ".type" */
+  lua_pushstring(L,".type");
+  lua_pushstring(L,clss->name);
+  lua_rawset(L,-3);
+  /* add a table called ".get" */
+  lua_pushstring(L,".get");
+  lua_newtable(L);
+  lua_rawset(L,-3);
+  /* add a table called ".set" */
+  lua_pushstring(L,".set");
+  lua_newtable(L);
+  lua_rawset(L,-3);
+  /* add a table called ".fn" */
+  lua_pushstring(L,".fn");
+  lua_newtable(L);
+  /* add manual disown method */
+  SWIG_Lua_add_function(L,"__disown",SWIG_Lua_class_disown);
+  lua_rawset(L,-3);
+  /* add accessor fns for using the .get,.set&.fn */
+  SWIG_Lua_add_function(L,"__index",SWIG_Lua_class_get);
+  SWIG_Lua_add_function(L,"__newindex",SWIG_Lua_class_set);
+  SWIG_Lua_add_function(L,"__gc",SWIG_Lua_class_destruct);
+  /* add tostring method for better output */
+  SWIG_Lua_add_function(L,"__tostring",SWIG_Lua_class_tostring);
+  /* add it */
+  lua_rawset(L,-3);  /* metatable into registry */
+  lua_pop(L,1);      /* tidy stack (remove registry) */
+
+  SWIG_Lua_get_class_metatable(L,clss->name);
+  SWIG_Lua_add_class_details(L,clss);  /* recursive adding of details (atts & ops) */
+  lua_pop(L,1);      /* tidy stack (remove class metatable) */
+}
 
 /* -----------------------------------------------------------------------------
- * Create a new pointer object
+ * Class/structure conversion fns
  * ----------------------------------------------------------------------------- */
 
-/*
-  Create a new instance object, without calling __init__, and set the
-  'this' attribute.
-*/
-
-SWIGRUNTIME PyObject* 
-SWIG_Python_NewShadowInstance(SwigPyClientData *data, PyObject *swig_this)
+/* helper to add metatable to new lua object */
+SWIGINTERN void _SWIG_Lua_AddMetatable(lua_State* L,swig_type_info *type)
 {
-#if (PY_VERSION_HEX >= 0x02020000)
-  PyObject *inst = 0;
-  PyObject *newraw = data->newraw;
-  if (newraw) {
-    inst = PyObject_Call(newraw, data->newargs, NULL);
-    if (inst) {
-#if !defined(SWIG_PYTHON_SLOW_GETSET_THIS)
-      PyObject **dictptr = _PyObject_GetDictPtr(inst);
-      if (dictptr != NULL) {
-	PyObject *dict = *dictptr;
-	if (dict == NULL) {
-	  dict = PyDict_New();
-	  *dictptr = dict;
-	  PyDict_SetItem(dict, SWIG_This(), swig_this);
-	}
-      }
-#else
-      PyObject *key = SWIG_This();
-      PyObject_SetAttr(inst, key, swig_this);
-#endif
-    }
-  } else {
-#if PY_VERSION_HEX >= 0x03000000
-    inst = PyBaseObject_Type.tp_new((PyTypeObject*) data->newargs, Py_None, Py_None);
-    if (inst) {
-      PyObject_SetAttr(inst, SWIG_This(), swig_this);
-      Py_TYPE(inst)->tp_flags &= ~Py_TPFLAGS_VALID_VERSION_TAG;
-    }
-#else
-    PyObject *dict = PyDict_New();
-    if (dict) {
-      PyDict_SetItem(dict, SWIG_This(), swig_this);
-      inst = PyInstance_NewRaw(data->newargs, dict);
-      Py_DECREF(dict);
-    }
-#endif
-  }
-  return inst;
-#else
-#if (PY_VERSION_HEX >= 0x02010000)
-  PyObject *inst = 0;
-  PyObject *dict = PyDict_New();
-  if (dict) {
-    PyDict_SetItem(dict, SWIG_This(), swig_this);
-    inst = PyInstance_NewRaw(data->newargs, dict);
-    Py_DECREF(dict);
-  }
-  return (PyObject *) inst;
-#else
-  PyInstanceObject *inst = PyObject_NEW(PyInstanceObject, &PyInstance_Type);
-  if (inst == NULL) {
-    return NULL;
-  }
-  inst->in_class = (PyClassObject *)data->newargs;
-  Py_INCREF(inst->in_class);
-  inst->in_dict = PyDict_New();
-  if (inst->in_dict == NULL) {
-    Py_DECREF(inst);
-    return NULL;
-  }
-#ifdef Py_TPFLAGS_HAVE_WEAKREFS
-  inst->in_weakreflist = NULL;
-#endif
-#ifdef Py_TPFLAGS_GC
-  PyObject_GC_Init(inst);
-#endif
-  PyDict_SetItem(inst->in_dict, SWIG_This(), swig_this);
-  return (PyObject *) inst;
-#endif
-#endif
-}
-
-SWIGRUNTIME void
-SWIG_Python_SetSwigThis(PyObject *inst, PyObject *swig_this)
-{
- PyObject *dict;
-#if (PY_VERSION_HEX >= 0x02020000) && !defined(SWIG_PYTHON_SLOW_GETSET_THIS)
- PyObject **dictptr = _PyObject_GetDictPtr(inst);
- if (dictptr != NULL) {
-   dict = *dictptr;
-   if (dict == NULL) {
-     dict = PyDict_New();
-     *dictptr = dict;
-   }
-   PyDict_SetItem(dict, SWIG_This(), swig_this);
-   return;
- }
-#endif
- dict = PyObject_GetAttrString(inst, (char*)"__dict__");
- PyDict_SetItem(dict, SWIG_This(), swig_this);
- Py_DECREF(dict);
-} 
-
-
-SWIGINTERN PyObject *
-SWIG_Python_InitShadowInstance(PyObject *args) {
-  PyObject *obj[2];
-  if (!SWIG_Python_UnpackTuple(args, "swiginit", 2, 2, obj)) {
-    return NULL;
-  } else {
-    SwigPyObject *sthis = SWIG_Python_GetSwigThis(obj[0]);
-    if (sthis) {
-      SwigPyObject_append((PyObject*) sthis, obj[1]);
-    } else {
-      SWIG_Python_SetSwigThis(obj[0], obj[1]);
-    }
-    return SWIG_Py_Void();
-  }
-}
-
-/* Create a new pointer object */
-
-SWIGRUNTIME PyObject *
-SWIG_Python_NewPointerObj(PyObject *self, void *ptr, swig_type_info *type, int flags) {
-  SwigPyClientData *clientdata;
-  PyObject * robj;
-  int own;
-
-  if (!ptr)
-    return SWIG_Py_Void();
-
-  clientdata = type ? (SwigPyClientData *)(type->clientdata) : 0;
-  own = (flags & SWIG_POINTER_OWN) ? SWIG_POINTER_OWN : 0;
-  if (clientdata && clientdata->pytype) {
-    SwigPyObject *newobj;
-    if (flags & SWIG_BUILTIN_TP_INIT) {
-      newobj = (SwigPyObject*) self;
-      if (newobj->ptr) {
-        PyObject *next_self = clientdata->pytype->tp_alloc(clientdata->pytype, 0);
-        while (newobj->next)
-	  newobj = (SwigPyObject *) newobj->next;
-        newobj->next = next_self;
-        newobj = (SwigPyObject *)next_self;
-      }
-    } else {
-      newobj = PyObject_New(SwigPyObject, clientdata->pytype);
-    }
-    if (newobj) {
-      newobj->ptr = ptr;
-      newobj->ty = type;
-      newobj->own = own;
-      newobj->next = 0;
-#ifdef SWIGPYTHON_BUILTIN
-      newobj->dict = 0;
-#endif
-      return (PyObject*) newobj;
-    }
-    return SWIG_Py_Void();
-  }
-
-  assert(!(flags & SWIG_BUILTIN_TP_INIT));
-
-  robj = SwigPyObject_New(ptr, type, own);
-  if (robj && clientdata && !(flags & SWIG_POINTER_NOSHADOW)) {
-    PyObject *inst = SWIG_Python_NewShadowInstance(clientdata, robj);
-    Py_DECREF(robj);
-    robj = inst;
-  }
-  return robj;
-}
-
-/* Create a new packed object */
-
-SWIGRUNTIMEINLINE PyObject *
-SWIG_Python_NewPackedObj(void *ptr, size_t sz, swig_type_info *type) {
-  return ptr ? SwigPyPacked_New((void *) ptr, sz, type) : SWIG_Py_Void();
-}
-
-/* -----------------------------------------------------------------------------*
- *  Get type list 
- * -----------------------------------------------------------------------------*/
-
-#ifdef SWIG_LINK_RUNTIME
-void *SWIG_ReturnGlobalTypeList(void *);
-#endif
-
-SWIGRUNTIME swig_module_info *
-SWIG_Python_GetModule(void *SWIGUNUSEDPARM(clientdata)) {
-  static void *type_pointer = (void *)0;
-  /* first check if module already created */
-  if (!type_pointer) {
-#ifdef SWIG_LINK_RUNTIME
-    type_pointer = SWIG_ReturnGlobalTypeList((void *)0);
-#else
-# ifdef SWIGPY_USE_CAPSULE
-    type_pointer = PyCapsule_Import(SWIGPY_CAPSULE_NAME, 0);
-# else
-    type_pointer = PyCObject_Import((char*)"swig_runtime_data" SWIG_RUNTIME_VERSION,
-				    (char*)"type_pointer" SWIG_TYPE_TABLE_NAME);
-# endif
-    if (PyErr_Occurred()) {
-      PyErr_Clear();
-      type_pointer = (void *)0;
-    }
-#endif
-  }
-  return (swig_module_info *) type_pointer;
-}
-
-#if PY_MAJOR_VERSION < 2
-/* PyModule_AddObject function was introduced in Python 2.0.  The following function
-   is copied out of Python/modsupport.c in python version 2.3.4 */
-SWIGINTERN int
-PyModule_AddObject(PyObject *m, char *name, PyObject *o)
-{
-  PyObject *dict;
-  if (!PyModule_Check(m)) {
-    PyErr_SetString(PyExc_TypeError,
-		    "PyModule_AddObject() needs module as first arg");
-    return SWIG_ERROR;
-  }
-  if (!o) {
-    PyErr_SetString(PyExc_TypeError,
-		    "PyModule_AddObject() needs non-NULL value");
-    return SWIG_ERROR;
-  }
-  
-  dict = PyModule_GetDict(m);
-  if (dict == NULL) {
-    /* Internal error -- modules must have a dict! */
-    PyErr_Format(PyExc_SystemError, "module '%s' has no __dict__",
-		 PyModule_GetName(m));
-    return SWIG_ERROR;
-  }
-  if (PyDict_SetItemString(dict, name, o))
-    return SWIG_ERROR;
-  Py_DECREF(o);
-  return SWIG_OK;
-}
-#endif
-
-SWIGRUNTIME void
-#ifdef SWIGPY_USE_CAPSULE
-SWIG_Python_DestroyModule(PyObject *obj)
-#else
-SWIG_Python_DestroyModule(void *vptr)
-#endif
-{
-#ifdef SWIGPY_USE_CAPSULE
-  swig_module_info *swig_module = (swig_module_info *) PyCapsule_GetPointer(obj, SWIGPY_CAPSULE_NAME);
-#else
-  swig_module_info *swig_module = (swig_module_info *) vptr;
-#endif
-  swig_type_info **types = swig_module->types;
-  size_t i;
-  for (i =0; i < swig_module->size; ++i) {
-    swig_type_info *ty = types[i];
-    if (ty->owndata) {
-      SwigPyClientData *data = (SwigPyClientData *) ty->clientdata;
-      if (data) SwigPyClientData_Del(data);
-    }
-  }
-  Py_DECREF(SWIG_This());
-  swig_this = NULL;
-}
-
-SWIGRUNTIME void
-SWIG_Python_SetModule(swig_module_info *swig_module) {
-#if PY_VERSION_HEX >= 0x03000000
- /* Add a dummy module object into sys.modules */
-  PyObject *module = PyImport_AddModule((char*)"swig_runtime_data" SWIG_RUNTIME_VERSION);
-#else
-  static PyMethodDef swig_empty_runtime_method_table[] = { {NULL, NULL, 0, NULL} }; /* Sentinel */
-  PyObject *module = Py_InitModule((char*)"swig_runtime_data" SWIG_RUNTIME_VERSION, swig_empty_runtime_method_table);
-#endif
-#ifdef SWIGPY_USE_CAPSULE
-  PyObject *pointer = PyCapsule_New((void *) swig_module, SWIGPY_CAPSULE_NAME, SWIG_Python_DestroyModule);
-  if (pointer && module) {
-    PyModule_AddObject(module, (char*)"type_pointer_capsule" SWIG_TYPE_TABLE_NAME, pointer);
-  } else {
-    Py_XDECREF(pointer);
-  }
-#else
-  PyObject *pointer = PyCObject_FromVoidPtr((void *) swig_module, SWIG_Python_DestroyModule);
-  if (pointer && module) {
-    PyModule_AddObject(module, (char*)"type_pointer" SWIG_TYPE_TABLE_NAME, pointer);
-  } else {
-    Py_XDECREF(pointer);
-  }
-#endif
-}
-
-/* The python cached type query */
-SWIGRUNTIME PyObject *
-SWIG_Python_TypeCache(void) {
-  static PyObject *SWIG_STATIC_POINTER(cache) = PyDict_New();
-  return cache;
-}
-
-SWIGRUNTIME swig_type_info *
-SWIG_Python_TypeQuery(const char *type)
-{
-  PyObject *cache = SWIG_Python_TypeCache();
-  PyObject *key = SWIG_Python_str_FromChar(type); 
-  PyObject *obj = PyDict_GetItem(cache, key);
-  swig_type_info *descriptor;
-  if (obj) {
-#ifdef SWIGPY_USE_CAPSULE
-    descriptor = (swig_type_info *) PyCapsule_GetPointer(obj, NULL);
-#else
-    descriptor = (swig_type_info *) PyCObject_AsVoidPtr(obj);
-#endif
-  } else {
-    swig_module_info *swig_module = SWIG_GetModule(0);
-    descriptor = SWIG_TypeQueryModule(swig_module, swig_module, type);
-    if (descriptor) {
-#ifdef SWIGPY_USE_CAPSULE
-      obj = PyCapsule_New((void*) descriptor, NULL, NULL);
-#else
-      obj = PyCObject_FromVoidPtr(descriptor, NULL);
-#endif
-      PyDict_SetItem(cache, key, obj);
-      Py_DECREF(obj);
-    }
-  }
-  Py_DECREF(key);
-  return descriptor;
-}
-
-/* 
-   For backward compatibility only
-*/
-#define SWIG_POINTER_EXCEPTION  0
-#define SWIG_arg_fail(arg)      SWIG_Python_ArgFail(arg)
-#define SWIG_MustGetPtr(p, type, argnum, flags)  SWIG_Python_MustGetPtr(p, type, argnum, flags)
-
-SWIGRUNTIME int
-SWIG_Python_AddErrMesg(const char* mesg, int infront)
-{  
-  if (PyErr_Occurred()) {
-    PyObject *type = 0;
-    PyObject *value = 0;
-    PyObject *traceback = 0;
-    PyErr_Fetch(&type, &value, &traceback);
-    if (value) {
-      char *tmp;
-      PyObject *old_str = PyObject_Str(value);
-      Py_XINCREF(type);
-      PyErr_Clear();
-      if (infront) {
-	PyErr_Format(type, "%s %s", mesg, tmp = SWIG_Python_str_AsChar(old_str));
-      } else {
-	PyErr_Format(type, "%s %s", tmp = SWIG_Python_str_AsChar(old_str), mesg);
-      }
-      SWIG_Python_str_DelForPy3(tmp);
-      Py_DECREF(old_str);
-    }
-    return 1;
-  } else {
-    return 0;
-  }
-}
-  
-SWIGRUNTIME int
-SWIG_Python_ArgFail(int argnum)
-{
-  if (PyErr_Occurred()) {
-    /* add information about failing argument */
-    char mesg[256];
-    PyOS_snprintf(mesg, sizeof(mesg), "argument number %d:", argnum);
-    return SWIG_Python_AddErrMesg(mesg, 1);
-  } else {
-    return 0;
-  }
-}
-
-SWIGRUNTIMEINLINE const char *
-SwigPyObject_GetDesc(PyObject *self)
-{
-  SwigPyObject *v = (SwigPyObject *)self;
-  swig_type_info *ty = v ? v->ty : 0;
-  return ty ? ty->str : "";
-}
-
-SWIGRUNTIME void
-SWIG_Python_TypeError(const char *type, PyObject *obj)
-{
-  if (type) {
-#if defined(SWIG_COBJECT_TYPES)
-    if (obj && SwigPyObject_Check(obj)) {
-      const char *otype = (const char *) SwigPyObject_GetDesc(obj);
-      if (otype) {
-	PyErr_Format(PyExc_TypeError, "a '%s' is expected, 'SwigPyObject(%s)' is received",
-		     type, otype);
-	return;
-      }
-    } else 
-#endif      
+  if (type->clientdata)  /* there is clientdata: so add the metatable */
+  {
+    SWIG_Lua_get_class_metatable(L,((swig_lua_class*)(type->clientdata))->name);
+    if (lua_istable(L,-1))
     {
-      const char *otype = (obj ? obj->ob_type->tp_name : 0); 
-      if (otype) {
-	PyObject *str = PyObject_Str(obj);
-	const char *cstr = str ? SWIG_Python_str_AsChar(str) : 0;
-	if (cstr) {
-	  PyErr_Format(PyExc_TypeError, "a '%s' is expected, '%s(%s)' is received",
-		       type, otype, cstr);
-          SWIG_Python_str_DelForPy3(cstr);
-	} else {
-	  PyErr_Format(PyExc_TypeError, "a '%s' is expected, '%s' is received",
-		       type, otype);
-	}
-	Py_XDECREF(str);
-	return;
-      }
-    }   
-    PyErr_Format(PyExc_TypeError, "a '%s' is expected", type);
-  } else {
-    PyErr_Format(PyExc_TypeError, "unexpected type is received");
+      lua_setmetatable(L,-2);
+    }
+    else
+    {
+      lua_pop(L,1);
+    }
   }
 }
 
-
-/* Convert a pointer value, signal an exception on a type mismatch */
-SWIGRUNTIME void *
-SWIG_Python_MustGetPtr(PyObject *obj, swig_type_info *ty, int SWIGUNUSEDPARM(argnum), int flags) {
-  void *result;
-  if (SWIG_Python_ConvertPtr(obj, &result, ty, flags) == -1) {
-    PyErr_Clear();
-#if SWIG_POINTER_EXCEPTION
-    if (flags) {
-      SWIG_Python_TypeError(SWIG_TypePrettyName(ty), obj);
-      SWIG_Python_ArgFail(argnum);
-    }
+/* pushes a new object into the lua stack */
+SWIGRUNTIME void SWIG_Lua_NewPointerObj(lua_State* L,void* ptr,swig_type_info *type, int own)
+{
+  swig_lua_userdata* usr;
+  if (!ptr){
+    lua_pushnil(L);
+    return;
+  }
+  usr=(swig_lua_userdata*)lua_newuserdata(L,sizeof(swig_lua_userdata));  /* get data */
+  usr->ptr=ptr;  /* set the ptr */
+  usr->type=type;
+  usr->own=own;
+#if (SWIG_LUA_TARGET != SWIG_LUA_FLAVOR_ELUAC)
+  _SWIG_Lua_AddMetatable(L,type); /* add metatable */
 #endif
+}
+
+/* takes a object from the lua stack & converts it into an object of the correct type
+ (if possible) */
+SWIGRUNTIME int  SWIG_Lua_ConvertPtr(lua_State* L,int index,void** ptr,swig_type_info *type,int flags)
+{
+  swig_lua_userdata* usr;
+  swig_cast_info *cast;
+  if (lua_isnil(L,index)){*ptr=0; return SWIG_OK;}    /* special case: lua nil => NULL pointer */
+  usr=(swig_lua_userdata*)lua_touserdata(L,index);  /* get data */
+  if (usr)
+  {
+    if (flags & SWIG_POINTER_DISOWN) /* must disown the object */
+    {
+        usr->own=0;
+    }
+    if (!type)            /* special cast void*, no casting fn */
+    {
+      *ptr=usr->ptr;
+      return SWIG_OK; /* ok */
+    }
+    cast=SWIG_TypeCheckStruct(usr->type,type); /* performs normal type checking */
+    if (cast)
+    {
+      int newmemory = 0;
+      *ptr=SWIG_TypeCast(cast,usr->ptr,&newmemory);
+      assert(!newmemory); /* newmemory handling not yet implemented */
+      return SWIG_OK;  /* ok */
+    }
+  }
+  return SWIG_ERROR;  /* error */
+}
+
+SWIGRUNTIME void* SWIG_Lua_MustGetPtr(lua_State* L,int index,swig_type_info *type,int flags,
+       int argnum,const char* func_name){
+  void* result;
+  if (!SWIG_IsOK(SWIG_ConvertPtr(L,index,&result,type,flags))){
+    lua_pushfstring(L,"Error in %s, expected a %s at argument number %d\n",
+      func_name,(type && type->str)?type->str:"void*",argnum);
+    lua_error(L);
   }
   return result;
 }
 
-#ifdef SWIGPYTHON_BUILTIN
-SWIGRUNTIME int
-SWIG_Python_NonDynamicSetAttr(PyObject *obj, PyObject *name, PyObject *value) {
-  PyTypeObject *tp = obj->ob_type;
-  PyObject *descr;
-  PyObject *encoded_name;
-  descrsetfunc f;
-  int res;
-
-# ifdef Py_USING_UNICODE
-  if (PyString_Check(name)) {
-    name = PyUnicode_Decode(PyString_AsString(name), PyString_Size(name), NULL, NULL);
-    if (!name)
-      return -1;
-  } else if (!PyUnicode_Check(name))
-# else
-  if (!PyString_Check(name))
-# endif
+/* pushes a packed userdata. user for member fn pointers only */
+SWIGRUNTIME void SWIG_Lua_NewPackedObj(lua_State* L,void* ptr,size_t size,swig_type_info *type)
+{
+  swig_lua_rawdata* raw;
+  assert(ptr); /* not acceptable to pass in a NULL value */
+  raw=(swig_lua_rawdata*)lua_newuserdata(L,sizeof(swig_lua_rawdata)-1+size);  /* alloc data */
+  raw->type=type;
+  raw->own=0;
+  memcpy(raw->data,ptr,size); /* copy the data */
+  _SWIG_Lua_AddMetatable(L,type); /* add metatable */
+}
+    
+/* converts a packed userdata. user for member fn pointers only */
+SWIGRUNTIME int  SWIG_Lua_ConvertPacked(lua_State* L,int index,void* ptr,size_t size,swig_type_info *type)
+{
+  swig_lua_rawdata* raw;
+  raw=(swig_lua_rawdata*)lua_touserdata(L,index);  /* get data */
+  if (!raw) return SWIG_ERROR;  /* error */
+  if (type==0 || type==raw->type) /* void* or identical type */
   {
-    PyErr_Format(PyExc_TypeError, "attribute name must be string, not '%.200s'", name->ob_type->tp_name);
-    return -1;
-  } else {
-    Py_INCREF(name);
+    memcpy(ptr,raw->data,size); /* copy it */
+    return SWIG_OK; /* ok */
   }
+  return SWIG_ERROR;  /* error */
+}
 
-  if (!tp->tp_dict) {
-    if (PyType_Ready(tp) < 0)
-      goto done;
+/* a function to get the typestring of a piece of data */
+SWIGRUNTIME const char *SWIG_Lua_typename(lua_State *L, int tp)
+{
+  swig_lua_userdata* usr;
+  if (lua_isuserdata(L,tp))
+  {
+    usr=(swig_lua_userdata*)lua_touserdata(L,tp);  /* get data */
+    if (usr && usr->type && usr->type->str)
+      return usr->type->str;
+    return "userdata (unknown type)";
   }
+  return lua_typename(L,lua_type(L,tp));
+}
 
-  res = -1;
-  descr = _PyType_Lookup(tp, name);
-  f = NULL;
-  if (descr != NULL)
-    f = descr->ob_type->tp_descr_set;
-  if (!f) {
-    if (PyString_Check(name)) {
-      encoded_name = name;
-      Py_INCREF(name);
-    } else {
-      encoded_name = PyUnicode_AsUTF8String(name);
+/* lua callable function to get the userdata's type */
+SWIGRUNTIME int SWIG_Lua_type(lua_State* L)
+{
+  lua_pushstring(L,SWIG_Lua_typename(L,1));
+  return 1;
+}
+
+/* lua callable function to compare userdata's value
+the issue is that two userdata may point to the same thing
+but to lua, they are different objects */
+SWIGRUNTIME int SWIG_Lua_equal(lua_State* L)
+{
+  int result;
+  swig_lua_userdata *usr1,*usr2;
+  if (!lua_isuserdata(L,1) || !lua_isuserdata(L,2))  /* just in case */
+    return 0;  /* nil reply */
+  usr1=(swig_lua_userdata*)lua_touserdata(L,1);  /* get data */
+  usr2=(swig_lua_userdata*)lua_touserdata(L,2);  /* get data */
+  /*result=(usr1->ptr==usr2->ptr && usr1->type==usr2->type); only works if type is the same*/
+  result=(usr1->ptr==usr2->ptr);
+   lua_pushboolean(L,result);
+  return 1;
+}
+
+/* -----------------------------------------------------------------------------
+ * global variable support code: class/struct typemap functions
+ * ----------------------------------------------------------------------------- */
+
+#if ((SWIG_LUA_TARGET != SWIG_LUA_FLAVOR_ELUA) && (SWIG_LUA_TARGET != SWIG_LUA_FLAVOR_ELUAC))
+/* Install Constants */
+SWIGINTERN void
+SWIG_Lua_InstallConstants(lua_State* L, swig_lua_const_info constants[]) {
+  int i;
+  for (i = 0; constants[i].type; i++) {
+    switch(constants[i].type) {
+    case SWIG_LUA_INT:
+      lua_pushstring(L,constants[i].name);
+      lua_pushnumber(L,(lua_Number)constants[i].lvalue);
+      lua_rawset(L,-3);
+      break;
+    case SWIG_LUA_FLOAT:
+      lua_pushstring(L,constants[i].name);
+      lua_pushnumber(L,(lua_Number)constants[i].dvalue);
+      lua_rawset(L,-3);
+      break;
+    case SWIG_LUA_CHAR:
+      lua_pushstring(L,constants[i].name);
+      lua_pushfstring(L,"%c",(char)constants[i].lvalue);
+      lua_rawset(L,-3);
+      break;
+    case SWIG_LUA_STRING:
+      lua_pushstring(L,constants[i].name);
+      lua_pushstring(L,(char *) constants[i].pvalue);
+      lua_rawset(L,-3);
+      break;
+    case SWIG_LUA_POINTER:
+      lua_pushstring(L,constants[i].name);
+      SWIG_NewPointerObj(L,constants[i].pvalue, *(constants[i]).ptype,0);
+      lua_rawset(L,-3);
+      break;
+    case SWIG_LUA_BINARY:
+      lua_pushstring(L,constants[i].name);
+      SWIG_NewMemberObj(L,constants[i].pvalue,constants[i].lvalue,*(constants[i]).ptype);
+      lua_rawset(L,-3);
+      break;
+    default:
+      break;
     }
-    PyErr_Format(PyExc_AttributeError, "'%.100s' object has no attribute '%.200s'", tp->tp_name, PyString_AsString(encoded_name));
-    Py_DECREF(encoded_name);
-  } else {
-    res = f(descr, obj, value);
   }
-  
-  done:
-  Py_DECREF(name);
-  return res;
 }
 #endif
 
+/* -----------------------------------------------------------------------------
+ * executing lua code from within the wrapper
+ * ----------------------------------------------------------------------------- */
+
+#ifndef SWIG_DOSTRING_FAIL /* Allows redefining of error function */
+#define SWIG_DOSTRING_FAIL(S) fprintf(stderr,"%s\n",S)
+#endif
+/* Executes a C string in Lua which is a really simple way of calling lua from C
+Unfortunately lua keeps changing its APIs, so we need a conditional compile
+In lua 5.0.X its lua_dostring()
+In lua 5.1.X its luaL_dostring()
+*/
+SWIGINTERN int 
+SWIG_Lua_dostring(lua_State *L, const char* str) {
+  int ok,top;
+  if (str==0 || str[0]==0) return 0; /* nothing to do */
+  top=lua_gettop(L); /* save stack */
+#if (defined(LUA_VERSION_NUM) && (LUA_VERSION_NUM>=501))
+  ok=luaL_dostring(L,str);	/* looks like this is lua 5.1.X or later, good */
+#else
+  ok=lua_dostring(L,str);	/* might be lua 5.0.x, using lua_dostring */
+#endif
+  if (ok!=0) {
+    SWIG_DOSTRING_FAIL(lua_tostring(L,-1));
+  }
+  lua_settop(L,top); /* restore the stack */
+  return ok;
+}    
 
 #ifdef __cplusplus
 }
 #endif
 
-
-
-#define SWIG_exception_fail(code, msg) do { SWIG_Error(code, msg); SWIG_fail; } while(0) 
-
-#define SWIG_contract_assert(expr, msg) if (!(expr)) { SWIG_Error(SWIG_RuntimeError, msg); SWIG_fail; } else 
-
+/* ------------------------------ end luarun.swg  ------------------------------ */
 
 
 /* -------- TYPES TABLE (BEGIN) -------- */
 
-#define SWIGTYPE_p_A swig_types[0]
-#define SWIGTYPE_p_char swig_types[1]
-static swig_type_info *swig_types[3];
-static swig_module_info swig_module = {swig_types, 2, 0, 0, 0, 0};
+#define SWIGTYPE_p_SpriteComponent swig_types[0]
+static swig_type_info *swig_types[2];
+static swig_module_info swig_module = {swig_types, 1, 0, 0, 0, 0};
 #define SWIG_TypeQuery(name) SWIG_TypeQueryModule(&swig_module, &swig_module, name)
 #define SWIG_MangledTypeQuery(name) SWIG_MangledTypeQueryModule(&swig_module, &swig_module, name)
 
 /* -------- TYPES TABLE (END) -------- */
 
-#if (PY_VERSION_HEX <= 0x02000000)
-# if !defined(SWIG_PYTHON_CLASSIC)
-#  error "This python version requires swig to be run with the '-classic' option"
-# endif
-#endif
+#define SWIG_name      "FEX"
+#define SWIG_init      luaopen_FEX
+#define SWIG_init_user luaopen_FEX_user
 
-/*-----------------------------------------------
-              @(target):= _FEX.so
-  ------------------------------------------------*/
-#if PY_VERSION_HEX >= 0x03000000
-#  define SWIG_init    PyInit__FEX
-
-#else
-#  define SWIG_init    init_FEX
-
-#endif
-#define SWIG_name    "_FEX"
-
-#define SWIGVERSION 0x020010 
-#define SWIG_VERSION SWIGVERSION
-
-
-#define SWIG_as_voidptr(a) const_cast< void * >(static_cast< const void * >(a)) 
-#define SWIG_as_voidptrptr(a) ((void)SWIG_as_voidptr(*a),reinterpret_cast< void** >(a)) 
-
-
-#include <stdexcept>
-
+#define SWIG_LUACODE   luaopen_FEX_luacode
 
 namespace swig {
-  class SwigPtr_PyObject {
-  protected:
-    PyObject *_obj;
-
-  public:
-    SwigPtr_PyObject() :_obj(0)
-    {
-    }
-
-    SwigPtr_PyObject(const SwigPtr_PyObject& item) : _obj(item._obj)
-    {
-      Py_XINCREF(_obj);      
-    }
-    
-    SwigPtr_PyObject(PyObject *obj, bool initial_ref = true) :_obj(obj)
-    {
-      if (initial_ref) {
-        Py_XINCREF(_obj);
-      }
-    }
-    
-    SwigPtr_PyObject & operator=(const SwigPtr_PyObject& item) 
-    {
-      Py_XINCREF(item._obj);
-      Py_XDECREF(_obj);
-      _obj = item._obj;
-      return *this;      
-    }
-    
-    ~SwigPtr_PyObject() 
-    {
-      Py_XDECREF(_obj);
-    }
-    
-    operator PyObject *() const
-    {
-      return _obj;
-    }
-
-    PyObject *operator->() const
-    {
-      return _obj;
-    }
-  };
-}
-
-
-namespace swig {
-  struct SwigVar_PyObject : SwigPtr_PyObject {
-    SwigVar_PyObject(PyObject* obj = 0) : SwigPtr_PyObject(obj, false) { }
-    
-    SwigVar_PyObject & operator = (PyObject* obj)
-    {
-      Py_XDECREF(_obj);
-      _obj = obj;
-      return *this;      
-    }
-  };
+typedef struct{} LANGUAGE_OBJ;
 }
 
 #ifdef __cplusplus
 extern "C" {
 #endif
-SWIGINTERN PyObject *_wrap_new_A(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
-  PyObject *resultobj = 0;
-  A *result = 0 ;
+static int _wrap_new_SpriteComponent(lua_State* L) {
+  int SWIG_arg = 0;
+  SpriteComponent *result = 0 ;
   
-  if (!PyArg_ParseTuple(args,(char *)":new_A")) SWIG_fail;
-  result = (A *)new A();
-  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_A, SWIG_POINTER_NEW |  0 );
+  SWIG_check_num_args("SpriteComponent::SpriteComponent",0,0)
+  result = (SpriteComponent *)new SpriteComponent();
+  SWIG_NewPointerObj(L,result,SWIGTYPE_p_SpriteComponent,1); SWIG_arg++; 
   nimei;result->retain();
-  return resultobj;
-fail:
-  return NULL;
-}
-
-
-SWIGINTERN PyObject *_wrap_delete_A(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
-  PyObject *resultobj = 0;
-  A *arg1 = (A *) 0 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  PyObject * obj0 = 0 ;
+  return SWIG_arg;
   
-  if (!PyArg_ParseTuple(args,(char *)"O:delete_A",&obj0)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_A, SWIG_POINTER_DISOWN |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "delete_A" "', argument " "1"" of type '" "A *""'"); 
-  }
-  arg1 = reinterpret_cast< A * >(argp1);
-  nimei;arg1->release();
-  resultobj = SWIG_Py_Void();
-  return resultobj;
+  if(0) SWIG_fail;
+  
 fail:
-  return NULL;
+  lua_error(L);
+  return SWIG_arg;
 }
 
 
-SWIGINTERN PyObject *A_swigregister(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
-  PyObject *obj;
-  if (!PyArg_ParseTuple(args,(char*)"O:swigregister", &obj)) return NULL;
-  SWIG_TypeNewClientData(SWIGTYPE_p_A, SWIG_NewClientData(obj));
-  return SWIG_Py_Void();
+static void swig_delete_SpriteComponent(void *obj) {
+SpriteComponent *arg1 = (SpriteComponent *) obj;
+nimei;arg1->release();
 }
+static swig_lua_method swig_SpriteComponent_methods[] = {
+    {0,0}
+};
+static swig_lua_attribute swig_SpriteComponent_attributes[] = {
+    {0,0,0}
+};
+static swig_lua_class *swig_SpriteComponent_bases[] = {0};
+static const char *swig_SpriteComponent_base_names[] = {0};
+static swig_lua_class _wrap_class_SpriteComponent = { "SpriteComponent", &SWIGTYPE_p_SpriteComponent,_wrap_new_SpriteComponent, swig_delete_SpriteComponent, swig_SpriteComponent_methods, swig_SpriteComponent_attributes, swig_SpriteComponent_bases, swig_SpriteComponent_base_names };
 
-static PyMethodDef SwigMethods[] = {
-	 { (char *)"SWIG_PyInstanceMethod_New", (PyCFunction)SWIG_PyInstanceMethod_New, METH_O, NULL},
-	 { (char *)"new_A", _wrap_new_A, METH_VARARGS, NULL},
-	 { (char *)"delete_A", _wrap_delete_A, METH_VARARGS, NULL},
-	 { (char *)"A_swigregister", A_swigregister, METH_VARARGS, NULL},
-	 { NULL, NULL, 0, NULL }
+#ifdef __cplusplus
+}
+#endif
+
+static const struct luaL_Reg swig_commands[] = {
+    {0,0}
 };
 
+static swig_lua_var_info swig_variables[] = {
+    {0,0,0}
+};
+
+static swig_lua_const_info swig_constants[] = {
+    {0,0,0,0,0,0}
+};
 
 /* -------- TYPE CONVERSION AND EQUIVALENCE RULES (BEGIN) -------- */
 
-static swig_type_info _swigt__p_A = {"_p_A", "A *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_char = {"_p_char", "char *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_SpriteComponent = {"_p_SpriteComponent", "SpriteComponent *", 0, 0, (void*)&_wrap_class_SpriteComponent, 0};
 
 static swig_type_info *swig_type_initial[] = {
-  &_swigt__p_A,
-  &_swigt__p_char,
+  &_swigt__p_SpriteComponent,
 };
 
-static swig_cast_info _swigc__p_A[] = {  {&_swigt__p_A, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_char[] = {  {&_swigt__p_char, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_SpriteComponent[] = {  {&_swigt__p_SpriteComponent, 0, 0, 0},{0, 0, 0, 0}};
 
 static swig_cast_info *swig_cast_initial[] = {
-  _swigc__p_A,
-  _swigc__p_char,
+  _swigc__p_SpriteComponent,
 };
 
 
 /* -------- TYPE CONVERSION AND EQUIVALENCE RULES (END) -------- */
 
-static swig_const_info swig_const_table[] = {
-{0, 0, 0, 0.0, 0, 0}};
-
-#ifdef __cplusplus
-}
-#endif
 /* -----------------------------------------------------------------------------
  * Type initialization:
  * This problem is tough by the requirement that no dynamic 
@@ -3187,7 +1777,7 @@ SWIG_InitializeModule(void *clientdata) {
   size_t i;
   swig_module_info *module_head, *iter;
   int found, init;
-  
+
   /* check to see if the circular list has been setup, if not, set it up */
   if (swig_module.next==0) {
     /* Initialize the swig_module */
@@ -3198,7 +1788,7 @@ SWIG_InitializeModule(void *clientdata) {
   } else {
     init = 0;
   }
-  
+
   /* Try and load any already created modules */
   module_head = SWIG_GetModule(clientdata);
   if (!module_head) {
@@ -3217,20 +1807,20 @@ SWIG_InitializeModule(void *clientdata) {
       }
       iter=iter->next;
     } while (iter!= module_head);
-    
+
     /* if the is found in the list, then all is done and we may leave */
     if (found) return;
     /* otherwise we must add out module into the list */
     swig_module.next = module_head->next;
     module_head->next = &swig_module;
   }
-  
+
   /* When multiple interpeters are used, a module could have already been initialized in
-       a different interpreter, but not yet have a pointer in this interpreter.
-       In this case, we do not want to continue adding types... everything should be
-       set up already */
+     a different interpreter, but not yet have a pointer in this interpreter.
+     In this case, we do not want to continue adding types... everything should be
+     set up already */
   if (init == 0) return;
-  
+
   /* Now work on filling in swig_module.types */
 #ifdef SWIGRUNTIME_DEBUG
   printf("SWIG_InitializeModule: size %d\n", swig_module.size);
@@ -3239,11 +1829,11 @@ SWIG_InitializeModule(void *clientdata) {
     swig_type_info *type = 0;
     swig_type_info *ret;
     swig_cast_info *cast;
-    
+  
 #ifdef SWIGRUNTIME_DEBUG
     printf("SWIG_InitializeModule: type %d %s\n", i, swig_module.type_initial[i]->name);
 #endif
-    
+
     /* if there is another module already loaded */
     if (swig_module.next != &swig_module) {
       type = SWIG_MangledTypeQueryModule(swig_module.next, &swig_module, swig_module.type_initial[i]->name);
@@ -3254,18 +1844,19 @@ SWIG_InitializeModule(void *clientdata) {
       printf("SWIG_InitializeModule: found type %s\n", type->name);
 #endif
       if (swig_module.type_initial[i]->clientdata) {
-        type->clientdata = swig_module.type_initial[i]->clientdata;
+	type->clientdata = swig_module.type_initial[i]->clientdata;
 #ifdef SWIGRUNTIME_DEBUG
-        printf("SWIG_InitializeModule: found and overwrite type %s \n", type->name);
+      printf("SWIG_InitializeModule: found and overwrite type %s \n", type->name);
 #endif
       }
     } else {
       type = swig_module.type_initial[i];
     }
-    
+
     /* Insert casting types */
     cast = swig_module.cast_initial[i];
     while (cast->type) {
+    
       /* Don't need to add information already in the list */
       ret = 0;
 #ifdef SWIGRUNTIME_DEBUG
@@ -3274,29 +1865,29 @@ SWIG_InitializeModule(void *clientdata) {
       if (swig_module.next != &swig_module) {
         ret = SWIG_MangledTypeQueryModule(swig_module.next, &swig_module, cast->type->name);
 #ifdef SWIGRUNTIME_DEBUG
-        if (ret) printf("SWIG_InitializeModule: found cast %s\n", ret->name);
+	if (ret) printf("SWIG_InitializeModule: found cast %s\n", ret->name);
 #endif
       }
       if (ret) {
-        if (type == swig_module.type_initial[i]) {
+	if (type == swig_module.type_initial[i]) {
 #ifdef SWIGRUNTIME_DEBUG
-          printf("SWIG_InitializeModule: skip old type %s\n", ret->name);
+	  printf("SWIG_InitializeModule: skip old type %s\n", ret->name);
 #endif
-          cast->type = ret;
-          ret = 0;
-        } else {
-          /* Check for casting already in the list */
-          swig_cast_info *ocast = SWIG_TypeCheck(ret->name, type);
+	  cast->type = ret;
+	  ret = 0;
+	} else {
+	  /* Check for casting already in the list */
+	  swig_cast_info *ocast = SWIG_TypeCheck(ret->name, type);
 #ifdef SWIGRUNTIME_DEBUG
-          if (ocast) printf("SWIG_InitializeModule: skip old cast %s\n", ret->name);
+	  if (ocast) printf("SWIG_InitializeModule: skip old cast %s\n", ret->name);
 #endif
-          if (!ocast) ret = 0;
-        }
+	  if (!ocast) ret = 0;
+	}
       }
-      
+
       if (!ret) {
 #ifdef SWIGRUNTIME_DEBUG
-        printf("SWIG_InitializeModule: adding cast %s\n", cast->type->name);
+	printf("SWIG_InitializeModule: adding cast %s\n", cast->type->name);
 #endif
         if (type->cast) {
           type->cast->prev = cast;
@@ -3310,7 +1901,7 @@ SWIG_InitializeModule(void *clientdata) {
     swig_module.types[i] = type;
   }
   swig_module.types[i] = 0;
-  
+
 #ifdef SWIGRUNTIME_DEBUG
   printf("**** SWIG_InitializeModule: Cast List ******\n");
   for (i = 0; i < swig_module.size; ++i) {
@@ -3322,7 +1913,7 @@ SWIG_InitializeModule(void *clientdata) {
       cast++;
       ++j;
     }
-    printf("---- Total casts: %d\n",j);
+  printf("---- Total casts: %d\n",j);
   }
   printf("**** SWIG_InitializeModule: Cast List ******\n");
 #endif
@@ -3338,17 +1929,17 @@ SWIG_PropagateClientData(void) {
   size_t i;
   swig_cast_info *equiv;
   static int init_run = 0;
-  
+
   if (init_run) return;
   init_run = 1;
-  
+
   for (i = 0; i < swig_module.size; i++) {
     if (swig_module.types[i]->clientdata) {
       equiv = swig_module.types[i]->cast;
       while (equiv) {
         if (!equiv->converter) {
           if (equiv->type && !equiv->type->clientdata)
-          SWIG_TypeClientData(equiv->type, swig_module.types[i]->clientdata);
+            SWIG_TypeClientData(equiv->type, swig_module.types[i]->clientdata);
         }
         equiv = equiv->next;
       }
@@ -3358,454 +1949,98 @@ SWIG_PropagateClientData(void) {
 
 #ifdef __cplusplus
 #if 0
-{
-  /* c-mode */
+{ /* c-mode */
 #endif
 }
 #endif
 
 
 
+/* Forward declaration of where the user's %init{} gets inserted */
+void SWIG_init_user(lua_State* L );
+    
 #ifdef __cplusplus
 extern "C" {
 #endif
-  
-  /* Python-specific SWIG API */
-#define SWIG_newvarlink()                             SWIG_Python_newvarlink()
-#define SWIG_addvarlink(p, name, get_attr, set_attr)  SWIG_Python_addvarlink(p, name, get_attr, set_attr)
-#define SWIG_InstallConstants(d, constants)           SWIG_Python_InstallConstants(d, constants)
-  
-  /* -----------------------------------------------------------------------------
-   * global variable support code.
-   * ----------------------------------------------------------------------------- */
-  
-  typedef struct swig_globalvar {
-    char       *name;                  /* Name of global variable */
-    PyObject *(*get_attr)(void);       /* Return the current value */
-    int       (*set_attr)(PyObject *); /* Set the value */
-    struct swig_globalvar *next;
-  } swig_globalvar;
-  
-  typedef struct swig_varlinkobject {
-    PyObject_HEAD
-    swig_globalvar *vars;
-  } swig_varlinkobject;
-  
-  SWIGINTERN PyObject *
-  swig_varlink_repr(swig_varlinkobject *SWIGUNUSEDPARM(v)) {
-#if PY_VERSION_HEX >= 0x03000000
-    return PyUnicode_InternFromString("<Swig global variables>");
+/* this is the initialization function
+  added at the very end of the code
+  the function is always called SWIG_init, but an earlier #define will rename it
+*/
+#if ((SWIG_LUA_TARGET == SWIG_LUA_FLAVOR_ELUA) || (SWIG_LUA_TARGET == SWIG_LUA_FLAVOR_ELUAC))
+LUALIB_API int SWIG_init(lua_State* L)
 #else
-    return PyString_FromString("<Swig global variables>");
+SWIGEXPORT int SWIG_init(lua_State* L) /* default Lua action */
 #endif
+{
+#if (SWIG_LUA_TARGET != SWIG_LUA_FLAVOR_ELUAC) /* valid for both Lua and eLua */
+  int i;
+  /* start with global table */
+  lua_pushglobaltable (L);
+  /* SWIG's internal initalisation */
+  SWIG_InitializeModule((void*)L);
+  SWIG_PropagateClientData();
+#endif
+
+#if ((SWIG_LUA_TARGET != SWIG_LUA_FLAVOR_ELUA) && (SWIG_LUA_TARGET != SWIG_LUA_FLAVOR_ELUAC))
+  /* add a global fn */
+  SWIG_Lua_add_function(L,"swig_type",SWIG_Lua_type);
+  SWIG_Lua_add_function(L,"swig_equals",SWIG_Lua_equal);
+  /* begin the module (its a table with the same name as the module) */
+  SWIG_Lua_module_begin(L,SWIG_name);
+  /* add commands/functions */
+  for (i = 0; swig_commands[i].name; i++){
+    SWIG_Lua_module_add_function(L,swig_commands[i].name,swig_commands[i].func);
   }
-  
-  SWIGINTERN PyObject *
-  swig_varlink_str(swig_varlinkobject *v) {
-#if PY_VERSION_HEX >= 0x03000000
-    PyObject *str = PyUnicode_InternFromString("(");
-    PyObject *tail;
-    PyObject *joined;
-    swig_globalvar *var;
-    for (var = v->vars; var; var=var->next) {
-      tail = PyUnicode_FromString(var->name);
-      joined = PyUnicode_Concat(str, tail);
-      Py_DecRef(str);
-      Py_DecRef(tail);
-      str = joined;
-      if (var->next) {
-        tail = PyUnicode_InternFromString(", ");
-        joined = PyUnicode_Concat(str, tail);
-        Py_DecRef(str);
-        Py_DecRef(tail);
-        str = joined;
-      }
+  /* add variables */
+  for (i = 0; swig_variables[i].name; i++){
+    SWIG_Lua_module_add_variable(L,swig_variables[i].name,swig_variables[i].get,swig_variables[i].set);
+  }
+#endif
+
+#if (SWIG_LUA_TARGET != SWIG_LUA_FLAVOR_ELUAC)
+  /* set up base class pointers (the hierarchy) */
+  for (i = 0; swig_types[i]; i++){
+    if (swig_types[i]->clientdata){
+      SWIG_Lua_init_base_class(L,(swig_lua_class*)(swig_types[i]->clientdata));
     }
-    tail = PyUnicode_InternFromString(")");
-    joined = PyUnicode_Concat(str, tail);
-    Py_DecRef(str);
-    Py_DecRef(tail);
-    str = joined;
+  }
+  /* additional registration structs & classes in lua */
+  for (i = 0; swig_types[i]; i++){
+    if (swig_types[i]->clientdata){
+      SWIG_Lua_class_register(L,(swig_lua_class*)(swig_types[i]->clientdata));
+    }
+  }
+#endif
+
+#if ((SWIG_LUA_TARGET != SWIG_LUA_FLAVOR_ELUA) && (SWIG_LUA_TARGET != SWIG_LUA_FLAVOR_ELUAC))
+  /* constants */
+  SWIG_Lua_InstallConstants(L,swig_constants);
+#endif
+
+#if (SWIG_LUA_TARGET != SWIG_LUA_FLAVOR_ELUAC)
+  /* invoke user-specific initialization */
+  SWIG_init_user(L);
+  /* end module */
+  /* Note: We do not clean up the stack here (Lua will do this for us). At this
+     point, we have the globals table and out module table on the stack. Returning
+     one value makes the module table the result of the require command. */
+  return 1;
 #else
-    PyObject *str = PyString_FromString("(");
-    swig_globalvar *var;
-    for (var = v->vars; var; var=var->next) {
-      PyString_ConcatAndDel(&str,PyString_FromString(var->name));
-      if (var->next) PyString_ConcatAndDel(&str,PyString_FromString(", "));
-    }
-    PyString_ConcatAndDel(&str,PyString_FromString(")"));
+  return 0;
 #endif
-    return str;
-  }
-  
-  SWIGINTERN int
-  swig_varlink_print(swig_varlinkobject *v, FILE *fp, int SWIGUNUSEDPARM(flags)) {
-    char *tmp;
-    PyObject *str = swig_varlink_str(v);
-    fprintf(fp,"Swig global variables ");
-    fprintf(fp,"%s\n", tmp = SWIG_Python_str_AsChar(str));
-    SWIG_Python_str_DelForPy3(tmp);
-    Py_DECREF(str);
-    return 0;
-  }
-  
-  SWIGINTERN void
-  swig_varlink_dealloc(swig_varlinkobject *v) {
-    swig_globalvar *var = v->vars;
-    while (var) {
-      swig_globalvar *n = var->next;
-      free(var->name);
-      free(var);
-      var = n;
-    }
-  }
-  
-  SWIGINTERN PyObject *
-  swig_varlink_getattr(swig_varlinkobject *v, char *n) {
-    PyObject *res = NULL;
-    swig_globalvar *var = v->vars;
-    while (var) {
-      if (strcmp(var->name,n) == 0) {
-        res = (*var->get_attr)();
-        break;
-      }
-      var = var->next;
-    }
-    if (res == NULL && !PyErr_Occurred()) {
-      PyErr_SetString(PyExc_NameError,"Unknown C global variable");
-    }
-    return res;
-  }
-  
-  SWIGINTERN int
-  swig_varlink_setattr(swig_varlinkobject *v, char *n, PyObject *p) {
-    int res = 1;
-    swig_globalvar *var = v->vars;
-    while (var) {
-      if (strcmp(var->name,n) == 0) {
-        res = (*var->set_attr)(p);
-        break;
-      }
-      var = var->next;
-    }
-    if (res == 1 && !PyErr_Occurred()) {
-      PyErr_SetString(PyExc_NameError,"Unknown C global variable");
-    }
-    return res;
-  }
-  
-  SWIGINTERN PyTypeObject*
-  swig_varlink_type(void) {
-    static char varlink__doc__[] = "Swig var link object";
-    static PyTypeObject varlink_type;
-    static int type_init = 0;
-    if (!type_init) {
-      const PyTypeObject tmp = {
-        /* PyObject header changed in Python 3 */
-#if PY_VERSION_HEX >= 0x03000000
-        PyVarObject_HEAD_INIT(NULL, 0)
-#else
-        PyObject_HEAD_INIT(NULL)
-        0,                                  /* ob_size */
-#endif
-        (char *)"swigvarlink",              /* tp_name */
-        sizeof(swig_varlinkobject),         /* tp_basicsize */
-        0,                                  /* tp_itemsize */
-        (destructor) swig_varlink_dealloc,  /* tp_dealloc */
-        (printfunc) swig_varlink_print,     /* tp_print */
-        (getattrfunc) swig_varlink_getattr, /* tp_getattr */
-        (setattrfunc) swig_varlink_setattr, /* tp_setattr */
-        0,                                  /* tp_compare */
-        (reprfunc) swig_varlink_repr,       /* tp_repr */
-        0,                                  /* tp_as_number */
-        0,                                  /* tp_as_sequence */
-        0,                                  /* tp_as_mapping */
-        0,                                  /* tp_hash */
-        0,                                  /* tp_call */
-        (reprfunc) swig_varlink_str,        /* tp_str */
-        0,                                  /* tp_getattro */
-        0,                                  /* tp_setattro */
-        0,                                  /* tp_as_buffer */
-        0,                                  /* tp_flags */
-        varlink__doc__,                     /* tp_doc */
-        0,                                  /* tp_traverse */
-        0,                                  /* tp_clear */
-        0,                                  /* tp_richcompare */
-        0,                                  /* tp_weaklistoffset */
-#if PY_VERSION_HEX >= 0x02020000
-        0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0, /* tp_iter -> tp_weaklist */
-#endif
-#if PY_VERSION_HEX >= 0x02030000
-        0,                                  /* tp_del */
-#endif
-#if PY_VERSION_HEX >= 0x02060000
-        0,                                  /* tp_version */
-#endif
-#ifdef COUNT_ALLOCS
-        0,0,0,0                             /* tp_alloc -> tp_next */
-#endif
-      };
-      varlink_type = tmp;
-      type_init = 1;
-#if PY_VERSION_HEX < 0x02020000
-      varlink_type.ob_type = &PyType_Type;
-#else
-      if (PyType_Ready(&varlink_type) < 0)
-      return NULL;
-#endif
-    }
-    return &varlink_type;
-  }
-  
-  /* Create a variable linking object for use later */
-  SWIGINTERN PyObject *
-  SWIG_Python_newvarlink(void) {
-    swig_varlinkobject *result = PyObject_NEW(swig_varlinkobject, swig_varlink_type());
-    if (result) {
-      result->vars = 0;
-    }
-    return ((PyObject*) result);
-  }
-  
-  SWIGINTERN void 
-  SWIG_Python_addvarlink(PyObject *p, char *name, PyObject *(*get_attr)(void), int (*set_attr)(PyObject *p)) {
-    swig_varlinkobject *v = (swig_varlinkobject *) p;
-    swig_globalvar *gv = (swig_globalvar *) malloc(sizeof(swig_globalvar));
-    if (gv) {
-      size_t size = strlen(name)+1;
-      gv->name = (char *)malloc(size);
-      if (gv->name) {
-        strncpy(gv->name,name,size);
-        gv->get_attr = get_attr;
-        gv->set_attr = set_attr;
-        gv->next = v->vars;
-      }
-    }
-    v->vars = gv;
-  }
-  
-  SWIGINTERN PyObject *
-  SWIG_globals(void) {
-    static PyObject *_SWIG_globals = 0; 
-    if (!_SWIG_globals) _SWIG_globals = SWIG_newvarlink();  
-    return _SWIG_globals;
-  }
-  
-  /* -----------------------------------------------------------------------------
-   * constants/methods manipulation
-   * ----------------------------------------------------------------------------- */
-  
-  /* Install Constants */
-  SWIGINTERN void
-  SWIG_Python_InstallConstants(PyObject *d, swig_const_info constants[]) {
-    PyObject *obj = 0;
-    size_t i;
-    for (i = 0; constants[i].type; ++i) {
-      switch(constants[i].type) {
-      case SWIG_PY_POINTER:
-        obj = SWIG_InternalNewPointerObj(constants[i].pvalue, *(constants[i]).ptype,0);
-        break;
-      case SWIG_PY_BINARY:
-        obj = SWIG_NewPackedObj(constants[i].pvalue, constants[i].lvalue, *(constants[i].ptype));
-        break;
-      default:
-        obj = 0;
-        break;
-      }
-      if (obj) {
-        PyDict_SetItemString(d, constants[i].name, obj);
-        Py_DECREF(obj);
-      }
-    }
-  }
-  
-  /* -----------------------------------------------------------------------------*/
-  /* Fix SwigMethods to carry the callback ptrs when needed */
-  /* -----------------------------------------------------------------------------*/
-  
-  SWIGINTERN void
-  SWIG_Python_FixMethods(PyMethodDef *methods,
-    swig_const_info *const_table,
-    swig_type_info **types,
-    swig_type_info **types_initial) {
-    size_t i;
-    for (i = 0; methods[i].ml_name; ++i) {
-      const char *c = methods[i].ml_doc;
-      if (c && (c = strstr(c, "swig_ptr: "))) {
-        int j;
-        swig_const_info *ci = 0;
-        const char *name = c + 10;
-        for (j = 0; const_table[j].type; ++j) {
-          if (strncmp(const_table[j].name, name, 
-              strlen(const_table[j].name)) == 0) {
-            ci = &(const_table[j]);
-            break;
-          }
-        }
-        if (ci) {
-          void *ptr = (ci->type == SWIG_PY_POINTER) ? ci->pvalue : 0;
-          if (ptr) {
-            size_t shift = (ci->ptype) - types;
-            swig_type_info *ty = types_initial[shift];
-            size_t ldoc = (c - methods[i].ml_doc);
-            size_t lptr = strlen(ty->name)+2*sizeof(void*)+2;
-            char *ndoc = (char*)malloc(ldoc + lptr + 10);
-            if (ndoc) {
-              char *buff = ndoc;
-              strncpy(buff, methods[i].ml_doc, ldoc);
-              buff += ldoc;
-              strncpy(buff, "swig_ptr: ", 10);
-              buff += 10;
-              SWIG_PackVoidPtr(buff, ptr, ty->name, lptr);
-              methods[i].ml_doc = ndoc;
-            }
-          }
-        }
-      }
-    }
-  } 
-  
+}
+
 #ifdef __cplusplus
 }
 #endif
 
-/* -----------------------------------------------------------------------------*
- *  Partial Init method
- * -----------------------------------------------------------------------------*/
 
-#ifdef __cplusplus
-extern "C"
-#endif
+const char* SWIG_LUACODE=
+  "";
 
-SWIGEXPORT 
-#if PY_VERSION_HEX >= 0x03000000
-PyObject*
-#else
-void
-#endif
-SWIG_init(void) {
-  PyObject *m, *d, *md;
-#if PY_VERSION_HEX >= 0x03000000
-  static struct PyModuleDef SWIG_module = {
-# if PY_VERSION_HEX >= 0x03020000
-    PyModuleDef_HEAD_INIT,
-# else
-    {
-      PyObject_HEAD_INIT(NULL)
-      NULL, /* m_init */
-      0,    /* m_index */
-      NULL, /* m_copy */
-    },
-# endif
-    (char *) SWIG_name,
-    NULL,
-    -1,
-    SwigMethods,
-    NULL,
-    NULL,
-    NULL,
-    NULL
-  };
-#endif
-  
-#if defined(SWIGPYTHON_BUILTIN)
-  static SwigPyClientData SwigPyObject_clientdata = {
-    0, 0, 0, 0, 0, 0, 0
-  };
-  static PyGetSetDef this_getset_def = {
-    (char *)"this", &SwigPyBuiltin_ThisClosure, NULL, NULL, NULL
-  };
-  static SwigPyGetSet thisown_getset_closure = {
-    (PyCFunction) SwigPyObject_own,
-    (PyCFunction) SwigPyObject_own
-  };
-  static PyGetSetDef thisown_getset_def = {
-    (char *)"thisown", SwigPyBuiltin_GetterClosure, SwigPyBuiltin_SetterClosure, NULL, &thisown_getset_closure
-  };
-  PyObject *metatype_args;
-  PyTypeObject *builtin_pytype;
-  int builtin_base_count;
-  swig_type_info *builtin_basetype;
-  PyObject *tuple;
-  PyGetSetDescrObject *static_getset;
-  PyTypeObject *metatype;
-  SwigPyClientData *cd;
-  PyObject *public_interface, *public_symbol;
-  PyObject *this_descr;
-  PyObject *thisown_descr;
-  int i;
-  
-  (void)builtin_pytype;
-  (void)builtin_base_count;
-  (void)builtin_basetype;
-  (void)tuple;
-  (void)static_getset;
-  
-  /* metatype is used to implement static member variables. */
-  metatype_args = Py_BuildValue("(s(O){})", "SwigPyObjectType", &PyType_Type);
-  assert(metatype_args);
-  metatype = (PyTypeObject *) PyType_Type.tp_call((PyObject *) &PyType_Type, metatype_args, NULL);
-  assert(metatype);
-  Py_DECREF(metatype_args);
-  metatype->tp_setattro = (setattrofunc) &SwigPyObjectType_setattro;
-  assert(PyType_Ready(metatype) >= 0);
-#endif
-  
-  /* Fix SwigMethods to carry the callback ptrs when needed */
-  SWIG_Python_FixMethods(SwigMethods, swig_const_table, swig_types, swig_type_initial);
-  
-#if PY_VERSION_HEX >= 0x03000000
-  m = PyModule_Create(&SWIG_module);
-#else
-  m = Py_InitModule((char *) SWIG_name, SwigMethods);
-#endif
-  md = d = PyModule_GetDict(m);
-  (void)md;
-  
-  SWIG_InitializeModule(0);
-  
-#ifdef SWIGPYTHON_BUILTIN
-  SwigPyObject_stype = SWIG_MangledTypeQuery("_p_SwigPyObject");
-  assert(SwigPyObject_stype);
-  cd = (SwigPyClientData*) SwigPyObject_stype->clientdata;
-  if (!cd) {
-    SwigPyObject_stype->clientdata = &SwigPyObject_clientdata;
-    SwigPyObject_clientdata.pytype = SwigPyObject_TypeOnce();
-  } else if (SwigPyObject_TypeOnce()->tp_basicsize != cd->pytype->tp_basicsize) {
-    PyErr_SetString(PyExc_RuntimeError, "Import error: attempted to load two incompatible swig-generated modules.");
-# if PY_VERSION_HEX >= 0x03000000
-    return NULL;
-# else
-    return;
-# endif
-  }
-  
-  /* All objects have a 'this' attribute */
-  this_descr = PyDescr_NewGetSet(SwigPyObject_type(), &this_getset_def);
-  (void)this_descr;
-  
-  /* All objects have a 'thisown' attribute */
-  thisown_descr = PyDescr_NewGetSet(SwigPyObject_type(), &thisown_getset_def);
-  (void)thisown_descr;
-  
-  public_interface = PyList_New(0);
-  public_symbol = 0;
-  (void)public_symbol;
-  
-  PyDict_SetItemString(md, "__all__", public_interface);
-  Py_DECREF(public_interface);
-  for (i = 0; SwigMethods[i].ml_name != NULL; ++i)
-  SwigPyBuiltin_AddPublicSymbol(public_interface, SwigMethods[i].ml_name);
-  for (i = 0; swig_const_table[i].name != 0; ++i)
-  SwigPyBuiltin_AddPublicSymbol(public_interface, swig_const_table[i].name);
-#endif
-  
-  SWIG_InstallConstants(d,swig_const_table);
-  
-#if PY_VERSION_HEX >= 0x03000000
-  return m;
-#else
-  return;
-#endif
+void SWIG_init_user(lua_State* L)
+{
+  /* exec Lua code if applicable */
+  SWIG_Lua_dostring(L,SWIG_LUACODE);
 }
 

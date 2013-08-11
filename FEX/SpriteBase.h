@@ -23,7 +23,7 @@ FE_NS_BEGIN
 
 class SpriteBase;
 class SpriteComponent;
-class EditorProxy;
+
 class SpriteBase :public GameObjBase
 {
 public:
@@ -49,22 +49,22 @@ public:
     }
     std::vector< SpriteComponent* >& get_components();
     
-//#if !defined SWIG_ING
-//    template <typename T, typename ...ArgsA , typename ...ArgsB>//,
-////    typename std::enable_if<std::is_convertible<ArgsB..., ArgsA...>::value>::type* = nullptr>
-//    void each_component( void (T::*mf)(ArgsA...), ArgsB&& ...args)
-//    {
-//        for( auto i : components )
-//            (i->*mf)(std::forward<ArgsB>(args)...);
-//    }
-//
-//    template <typename T>
-//    void each_component( void (T::*mf)() )
-//    {
-//        for( auto i : components )
-//            (i->*mf)();
-//    }
-//#endif
+#if !defined SWIG
+    template <typename T, typename ...ArgsA , typename ...ArgsB>//,
+//    typename std::enable_if<std::is_convertible<ArgsB..., ArgsA...>::value>::type* = nullptr>
+    void each_component( void (T::*mf)(ArgsA...), ArgsB&& ...args)
+    {
+        for( auto i : components )
+            (i->*mf)(std::forward<ArgsB>(args)...);
+    }
+
+    template <typename T>
+    void each_component( void (T::*mf)() )
+    {
+        for( auto i : components )
+            (i->*mf)();
+    }
+#endif
     
     virtual void begin_contact( b2Contact* contact );
     virtual void end_contact( b2Contact* contact );
@@ -75,43 +75,13 @@ public:
     virtual void set_position( cocos2d::CCPoint pos );
     virtual void set_rotation( float angle );
     
-    int get_trigger_id()
-    {
-        return trigger_id;
-    }
-    void set_trigger_id( int id )
-    {
-        trigger_id = id;
-    }
-    void create_editor_proxy();
-    EditorProxy* get_editor_proxy()
-    {
-        return editor_proxy.get();
-    }
 protected:
     void init( const cocos2d::CCPoint& location, const std::shared_ptr<sprite_desc> desc );
 protected:
-    std::unique_ptr<EditorProxy> editor_proxy;
-    int trigger_id;//the trigger that spawned this sprite
     std::vector< SpriteComponent* > components;
 };
 
-class EditorProxy
-{
-public:
-    EditorProxy()
-    :selected(false)
-    {
-        
-    }
-public:
-    bool hit_test( const cocos2d::CCPoint& pt );
-    void set_selected(bool selected);
-    void set_sprite( std::weak_ptr<SpriteBase> spr );
-protected:
-    std::weak_ptr<SpriteBase> sprite;
-    bool selected;
-};
+
 
 FE_NS_END
 

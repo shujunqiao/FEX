@@ -21,13 +21,13 @@
 %include "std_string.i"
 %include "std_map.i"
 %include "std_vector.i"
-%include "std_shared_ptr.i"
+//%include "std_shared_ptr.i"
 
 %ignore FESimple::SharedReourceMap;
 
 %template(map_string_string) std::map<std::string, std::string>;
 %template(vector_controller) std::vector<FESimple::ControllerBase*>;
-%template(gameobj_ptr)  std::shared_ptr<FESimple::GameObjBase>;
+//%template(gameobj_ptr)  std::shared_ptr<FESimple::GameObjBase>;
 
 %feature("director") FESimple::GameBase;
 %feature("director") FESimple::GameObjBase;

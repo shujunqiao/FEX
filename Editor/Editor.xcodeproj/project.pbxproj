@@ -14,6 +14,8 @@
 		041CA87F178EFEE50030FBCB /* libCocosDenshion.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 041CA87B178EFEE50030FBCB /* libCocosDenshion.a */; };
 		044332FA17AE13F4007EF907 /* DataSources.mm in Sources */ = {isa = PBXBuildFile; fileRef = 044332F917AE13F4007EF907 /* DataSources.mm */; };
 		045FF181178926D9007A338D /* AppDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 045FF17D178926D9007A338D /* AppDelegate.cpp */; };
+		04936B8517B62B8E00571FE7 /* libGameSADLibMac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 04936B8417B62B8D00571FE7 /* libGameSADLibMac.a */; };
+		04936B8717B62B9300571FE7 /* libFEXMac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 04936B8617B62B9300571FE7 /* libFEXMac.a */; };
 		04A88A9917AD3B4200DFD42F /* sfx in Resources */ = {isa = PBXBuildFile; fileRef = 04A88A9017AD3B4200DFD42F /* sfx */; };
 		04A88A9A17AD3B4200DFD42F /* shaders in Resources */ = {isa = PBXBuildFile; fileRef = 04A88A9117AD3B4200DFD42F /* shaders */; };
 		04A88A9B17AD3B4200DFD42F /* sprite_components in Resources */ = {isa = PBXBuildFile; fileRef = 04A88A9217AD3B4200DFD42F /* sprite_components */; };
@@ -23,8 +25,6 @@
 		04A88A9F17AD3B4200DFD42F /* particles in Resources */ = {isa = PBXBuildFile; fileRef = 04A88A9617AD3B4200DFD42F /* particles */; };
 		04A88AA017AD3B4200DFD42F /* pdb in Resources */ = {isa = PBXBuildFile; fileRef = 04A88A9717AD3B4200DFD42F /* pdb */; };
 		04A88AA117AD3B4200DFD42F /* pic in Resources */ = {isa = PBXBuildFile; fileRef = 04A88A9817AD3B4200DFD42F /* pic */; };
-		04C66D1317B0918800283887 /* libGameSADLibMac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 04C66D1217B0918800283887 /* libGameSADLibMac.a */; };
-		04E34A2F17B508AA0032ED38 /* libFEXMac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 041AB4F717A9F4F900181E05 /* libFEXMac.a */; };
 		15C64823165F391E007D4F18 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15C64822165F391E007D4F18 /* Cocoa.framework */; };
 		15C64825165F3934007D4F18 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15C64824165F3934007D4F18 /* OpenGL.framework */; };
 		15C64827165F394E007D4F18 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15C64826165F394E007D4F18 /* QuartzCore.framework */; };
@@ -43,7 +43,6 @@
 
 /* Begin PBXFileReference section */
 		0405DC4F17A8049C008DD5B9 /* libpython2.7-mac.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libpython2.7-mac.a"; path = "../libs/python2.7/libs/libpython2.7-mac.a"; sourceTree = "<group>"; };
-		041AB4F717A9F4F900181E05 /* libFEXMac.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libFEXMac.a; path = "../../../../../Users/fancyzero/Library/Developer/Xcode/DerivedData/FEXMacWorkspace-dflqantggihhcrbvstfjzqrdkjos/Build/Products/Debug/libFEXMac.a"; sourceTree = "<group>"; };
 		041AB51217AB4DDE00181E05 /* python */ = {isa = PBXFileReference; lastKnownFileType = folder; name = python; path = ../GameSADLib/Resources/python; sourceTree = "<group>"; };
 		041CA879178EFEE50030FBCB /* libBox2D.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; name = libBox2D.a; path = ../../../../../../../../dev/FEX/libs/external/Box2D/proj.mac/build/Release/libBox2D.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		041CA87A178EFEE50030FBCB /* libcocos2dx.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcocos2dx.a; path = "../../../Library/Developer/Xcode/DerivedData/FEXMacWorkspace-dflqantggihhcrbvstfjzqrdkjos/Build/Products/Debug/libcocos2dx.a"; sourceTree = "<group>"; };
@@ -52,6 +51,8 @@
 		044332F917AE13F4007EF907 /* DataSources.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = DataSources.mm; path = Classes/DataSources.mm; sourceTree = SOURCE_ROOT; };
 		045FF17D178926D9007A338D /* AppDelegate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AppDelegate.cpp; sourceTree = "<group>"; };
 		045FF17E178926D9007A338D /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		04936B8417B62B8D00571FE7 /* libGameSADLibMac.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libGameSADLibMac.a; path = "../../../Library/Developer/Xcode/DerivedData/FEXMacWorkspace-dflqantggihhcrbvstfjzqrdkjos/Build/Products/Debug/libGameSADLibMac.a"; sourceTree = "<group>"; };
+		04936B8617B62B9300571FE7 /* libFEXMac.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libFEXMac.a; path = "../../../Library/Developer/Xcode/DerivedData/FEXMacWorkspace-dflqantggihhcrbvstfjzqrdkjos/Build/Products/Debug/libFEXMac.a"; sourceTree = "<group>"; };
 		04A88A9017AD3B4200DFD42F /* sfx */ = {isa = PBXFileReference; lastKnownFileType = folder; name = sfx; path = ../GameSADLib/Resources/sfx; sourceTree = "<group>"; };
 		04A88A9117AD3B4200DFD42F /* shaders */ = {isa = PBXFileReference; lastKnownFileType = folder; name = shaders; path = ../GameSADLib/Resources/shaders; sourceTree = "<group>"; };
 		04A88A9217AD3B4200DFD42F /* sprite_components */ = {isa = PBXFileReference; lastKnownFileType = folder; name = sprite_components; path = ../GameSADLib/Resources/sprite_components; sourceTree = "<group>"; };
@@ -61,7 +62,6 @@
 		04A88A9617AD3B4200DFD42F /* particles */ = {isa = PBXFileReference; lastKnownFileType = folder; name = particles; path = ../GameSADLib/Resources/particles; sourceTree = "<group>"; };
 		04A88A9717AD3B4200DFD42F /* pdb */ = {isa = PBXFileReference; lastKnownFileType = folder; name = pdb; path = ../GameSADLib/Resources/pdb; sourceTree = "<group>"; };
 		04A88A9817AD3B4200DFD42F /* pic */ = {isa = PBXFileReference; lastKnownFileType = folder; name = pic; path = ../GameSADLib/Resources/pic; sourceTree = "<group>"; };
-		04C66D1217B0918800283887 /* libGameSADLibMac.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libGameSADLibMac.a; path = "../../../../../Users/fancyzero/Library/Developer/Xcode/DerivedData/FEXMacWorkspace-dflqantggihhcrbvstfjzqrdkjos/Build/Products/Debug/libGameSADLibMac.a"; sourceTree = "<group>"; };
 		15C64822165F391E007D4F18 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
 		15C64824165F3934007D4F18 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/OpenGL.framework; sourceTree = DEVELOPER_DIR; };
 		15C64826165F394E007D4F18 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
@@ -88,9 +88,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04E34A2F17B508AA0032ED38 /* libFEXMac.a in Frameworks */,
 				0405DC5017A8049C008DD5B9 /* libpython2.7-mac.a in Frameworks */,
-				04C66D1317B0918800283887 /* libGameSADLibMac.a in Frameworks */,
+				04936B8517B62B8E00571FE7 /* libGameSADLibMac.a in Frameworks */,
+				04936B8717B62B9300571FE7 /* libFEXMac.a in Frameworks */,
 				041CA87D178EFEE50030FBCB /* libBox2D.a in Frameworks */,
 				041CA87E178EFEE50030FBCB /* libcocos2dx.a in Frameworks */,
 				041CA87F178EFEE50030FBCB /* libCocosDenshion.a in Frameworks */,
@@ -146,9 +146,9 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
-				04C66D1217B0918800283887 /* libGameSADLibMac.a */,
+				04936B8617B62B9300571FE7 /* libFEXMac.a */,
+				04936B8417B62B8D00571FE7 /* libGameSADLibMac.a */,
 				041AB51117AB4DC800181E05 /* Res */,
-				041AB4F717A9F4F900181E05 /* libFEXMac.a */,
 				0405DC4F17A8049C008DD5B9 /* libpython2.7-mac.a */,
 				041CA879178EFEE50030FBCB /* libBox2D.a */,
 				041CA87A178EFEE50030FBCB /* libcocos2dx.a */,

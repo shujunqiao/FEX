@@ -13,12 +13,13 @@
 
 FE_NS_BEGIN
 
+void register_FEX_classes();
 
 class GameObjFactory
 {
 public:
     static GameObjPtr construct_obj( const Name& classname, const SpawnParams& params );
-    static const std::vector<const ClassInfo*>& get_all_classes();
+    static const std::map<std::string, const ClassInfo*>& get_all_classes();
     static void add_class_info(const ClassInfo* info);
 };
 FE_NS_END

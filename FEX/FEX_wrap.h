@@ -21,7 +21,7 @@ public:
     SwigDirector_GameObjBase(PyObject *self, FESimple::SpawnParams const &params);
     SwigDirector_GameObjBase(PyObject *self);
     virtual FESimple::ClassInfo *get_class_info();
-    virtual ~SwigDirector_GameObjBase();
+    virtual ~SwigDirector_GameObjBase() throw ();
     virtual void added_to_game(FESimple::GameBase *game, FESimple::Name const &to_layer);
     virtual void removed_from_game(FESimple::GameBase *game);
     virtual void update(float delta_time);
@@ -124,6 +124,7 @@ public:
     SwigDirector_GameBase(PyObject *self);
     virtual ~SwigDirector_GameBase();
     virtual void update(float delta_time);
+    virtual bool is_editor();
 
 
 /* Internal Director utilities */
@@ -157,7 +158,7 @@ private:
       return method;
     }
 private:
-    mutable swig::SwigVar_PyObject vtable[1];
+    mutable swig::SwigVar_PyObject vtable[2];
 #endif
 
 };
