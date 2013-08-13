@@ -32,19 +32,6 @@ FE_NS_USING;
 using namespace CocosDenshion;
 using namespace GameTheSoldiersNamespace;
 
-void parse(std::string json_string)
-{
-    
-    auto it = json_string.begin();
-    while( it != json_string.end() )
-    {
-        char c = *it;
-        if ( c == '{' )
-            printf("new dict");
-    }
-}
-
-
 AppDelegate::AppDelegate()
 {
     
