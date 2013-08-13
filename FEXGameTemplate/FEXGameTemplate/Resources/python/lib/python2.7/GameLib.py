@@ -37,7 +37,6 @@ class GameDot(FEX.GameBase):
             return self.dots[x + y*8]
         return None
     
-    def select_dot( self, pt )
         
     
     def update(self, *args):
@@ -52,13 +51,13 @@ class HeroController(FEX.IOSTouchController):
     def ccTouchBegan(self, touch, event):
         global game
 
-        dot = game.get_dot( touch.getLocation() ):
+        dot = game.get_dot( touch.getLocation() )
         if ( dot ):
             dot.selected()
 
         return True
     def ccTouchMoved(self, touch, event):
-        dot = game.get_dot( touch.getLocation() ):
+        dot = game.get_dot( touch.getLocation() )
         if ( dot ):
             dot.selected()
         return
