@@ -8,10 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		040917681794FA5600283684 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 040917671794FA5600283684 /* Default-568h@2x.png */; };
-		040A59E9177ECE3F0010E979 /* GameTheSoldiers.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 040A59E7177ECE3F0010E979 /* GameTheSoldiers.cpp */; };
 		043C4F50177FCEFF00A55BD9 /* python2.7.all.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 043C4F4F177FCEFF00A55BD9 /* python2.7.all.a */; };
 		043C4F52177FDEEA00A55BD9 /* python in Resources */ = {isa = PBXBuildFile; fileRef = 043C4F51177FDEEA00A55BD9 /* python */; };
-		045FF19017894295007A338D /* example.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 045FF18E17894295007A338D /* example.cpp */; };
 		046D5D5B1780851F00919167 /* libFEX.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 046D5D5A1780851F00919167 /* libFEX.a */; };
 		046D5D5D1780873700919167 /* libcocos2dx.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 046D5D5C1780873700919167 /* libcocos2dx.a */; };
 		046D5D5F1780873A00919167 /* libCocosDenshion.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 046D5D5E1780873A00919167 /* libCocosDenshion.a */; };
@@ -49,17 +47,12 @@
 		04A633C8177C5C9000E1760D /* shaders in Resources */ = {isa = PBXBuildFile; fileRef = 04A633BF177C5C9000E1760D /* shaders */; };
 		04A633C9177C5C9000E1760D /* sprite_components in Resources */ = {isa = PBXBuildFile; fileRef = 04A633C0177C5C9000E1760D /* sprite_components */; };
 		04A633CA177C5C9000E1760D /* sprites in Resources */ = {isa = PBXBuildFile; fileRef = 04A633C1177C5C9000E1760D /* sprites */; };
-		04E11FA4178179B7009E1847 /* WarZone.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04E11FA2178179B7009E1847 /* WarZone.cpp */; };
-		04E11FA7178179E3009E1847 /* GameTheSoldiersCommon.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04E11FA5178179E3009E1847 /* GameTheSoldiersCommon.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		040917671794FA5600283684 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		040A59E7177ECE3F0010E979 /* GameTheSoldiers.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GameTheSoldiers.cpp; path = GameClasses/GameTheSoldiers.cpp; sourceTree = "<group>"; };
-		040A59E8177ECE3F0010E979 /* GameTheSoldiers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameTheSoldiers.h; path = GameClasses/GameTheSoldiers.h; sourceTree = "<group>"; };
 		043C4F4F177FCEFF00A55BD9 /* python2.7.all.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = python2.7.all.a; path = ../libs/python2.7/libs/python2.7.all.a; sourceTree = "<group>"; };
 		043C4F51177FDEEA00A55BD9 /* python */ = {isa = PBXFileReference; lastKnownFileType = folder; name = python; path = Resources/python; sourceTree = "<group>"; };
-		045FF18E17894295007A338D /* example.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = example.cpp; path = Classes/example.cpp; sourceTree = "<group>"; };
 		046D5D5A1780851F00919167 /* libFEX.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libFEX.a; path = "../../../Library/Developer/Xcode/DerivedData/FETemplate-bwkxjubalbhtkretxzgqqgetelpu/Build/Products/Debug-iphoneos/libFEX.a"; sourceTree = "<group>"; };
 		046D5D5C1780873700919167 /* libcocos2dx.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcocos2dx.a; path = "../../../Library/Developer/Xcode/DerivedData/FETemplate-bwkxjubalbhtkretxzgqqgetelpu/Build/Products/Debug-iphoneos/libcocos2dx.a"; sourceTree = "<group>"; };
 		046D5D5E1780873A00919167 /* libCocosDenshion.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libCocosDenshion.a; path = "../../../Library/Developer/Xcode/DerivedData/FETemplate-bwkxjubalbhtkretxzgqqgetelpu/Build/Products/Debug-iphoneos/libCocosDenshion.a"; sourceTree = "<group>"; };
@@ -103,10 +96,6 @@
 		04A633BF177C5C9000E1760D /* shaders */ = {isa = PBXFileReference; lastKnownFileType = folder; name = shaders; path = Resources/shaders; sourceTree = "<group>"; };
 		04A633C0177C5C9000E1760D /* sprite_components */ = {isa = PBXFileReference; lastKnownFileType = folder; name = sprite_components; path = Resources/sprite_components; sourceTree = "<group>"; };
 		04A633C1177C5C9000E1760D /* sprites */ = {isa = PBXFileReference; lastKnownFileType = folder; name = sprites; path = Resources/sprites; sourceTree = "<group>"; };
-		04E11FA2178179B7009E1847 /* WarZone.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = WarZone.cpp; path = GameClasses/WarZone.cpp; sourceTree = "<group>"; };
-		04E11FA3178179B7009E1847 /* WarZone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WarZone.h; path = GameClasses/WarZone.h; sourceTree = "<group>"; };
-		04E11FA5178179E3009E1847 /* GameTheSoldiersCommon.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GameTheSoldiersCommon.cpp; path = GameClasses/GameTheSoldiersCommon.cpp; sourceTree = "<group>"; };
-		04E11FA6178179E3009E1847 /* GameTheSoldiersCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameTheSoldiersCommon.h; path = GameClasses/GameTheSoldiersCommon.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,19 +122,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		040A59EA177ECE450010E979 /* GameClasses */ = {
-			isa = PBXGroup;
-			children = (
-				040A59E7177ECE3F0010E979 /* GameTheSoldiers.cpp */,
-				040A59E8177ECE3F0010E979 /* GameTheSoldiers.h */,
-				04E11FA2178179B7009E1847 /* WarZone.cpp */,
-				04E11FA3178179B7009E1847 /* WarZone.h */,
-				04E11FA5178179E3009E1847 /* GameTheSoldiersCommon.cpp */,
-				04E11FA6178179E3009E1847 /* GameTheSoldiersCommon.h */,
-			);
-			name = GameClasses;
-			sourceTree = "<group>";
-		};
 		04A63027177C5AC800E1760D = {
 			isa = PBXGroup;
 			children = (
@@ -155,7 +131,7 @@
 				046D5D5C1780873700919167 /* libcocos2dx.a */,
 				046D5D5A1780851F00919167 /* libFEX.a */,
 				043C4F4F177FCEFF00A55BD9 /* python2.7.all.a */,
-				04A63043177C5AC800E1760D /* FEXGameTemplate */,
+				04A63043177C5AC800E1760D /* GameSADiOS */,
 				04A63032177C5AC800E1760D /* Frameworks */,
 				04A63031177C5AC800E1760D /* Products */,
 			);
@@ -184,15 +160,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		04A63043177C5AC800E1760D /* FEXGameTemplate */ = {
+		04A63043177C5AC800E1760D /* GameSADiOS */ = {
 			isa = PBXGroup;
 			children = (
 				04A633A1177C5ACF00E1760D /* Classes */,
-				040A59EA177ECE450010E979 /* GameClasses */,
 				04A63044177C5AC800E1760D /* Resources */,
 				04A6305C177C5AC900E1760D /* ios */,
 				04A6339F177C5ACF00E1760D /* Supporting Files */,
 			);
+			name = GameSADiOS;
 			path = FEXGameTemplate;
 			sourceTree = "<group>";
 		};
@@ -249,7 +225,6 @@
 		04A633A1177C5ACF00E1760D /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				045FF18E17894295007A338D /* example.cpp */,
 				04A633A2177C5ACF00E1760D /* AppDelegate.h */,
 				04A633A3177C5ACF00E1760D /* AppDelegate.cpp */,
 			);
@@ -259,9 +234,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		04A6302F177C5AC800E1760D /* FEXGameTemplate */ = {
+		04A6302F177C5AC800E1760D /* GameSADiOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 04A633AC177C5ACF00E1760D /* Build configuration list for PBXNativeTarget "FEXGameTemplate" */;
+			buildConfigurationList = 04A633AC177C5ACF00E1760D /* Build configuration list for PBXNativeTarget "GameSADiOS" */;
 			buildPhases = (
 				04A6302C177C5AC800E1760D /* Sources */,
 				04A6302D177C5AC800E1760D /* Frameworks */,
@@ -271,7 +246,7 @@
 			);
 			dependencies = (
 			);
-			name = FEXGameTemplate;
+			name = GameSADiOS;
 			productName = FEXGameTemplate;
 			productReference = 04A63030177C5AC800E1760D /* FEXGameTemplate.app */;
 			productType = "com.apple.product-type.application";
@@ -284,7 +259,7 @@
 			attributes = {
 				LastUpgradeCheck = 0460;
 			};
-			buildConfigurationList = 04A6302B177C5AC800E1760D /* Build configuration list for PBXProject "FEXGameTemplate" */;
+			buildConfigurationList = 04A6302B177C5AC800E1760D /* Build configuration list for PBXProject "GameSADiOS" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -296,7 +271,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				04A6302F177C5AC800E1760D /* FEXGameTemplate */,
+				04A6302F177C5AC800E1760D /* GameSADiOS */,
 			);
 		};
 /* End PBXProject section */
@@ -343,10 +318,6 @@
 				04A63062177C5AC900E1760D /* RootViewController.mm in Sources */,
 				04A63064177C5AC900E1760D /* main.m in Sources */,
 				04A633A4177C5ACF00E1760D /* AppDelegate.cpp in Sources */,
-				040A59E9177ECE3F0010E979 /* GameTheSoldiers.cpp in Sources */,
-				04E11FA4178179B7009E1847 /* WarZone.cpp in Sources */,
-				04E11FA7178179E3009E1847 /* GameTheSoldiersCommon.cpp in Sources */,
-				045FF19017894295007A338D /* example.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -449,7 +420,7 @@
 					"-lz",
 					"-lsqlite3",
 				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = GameSADiOS;
 				PROVISIONING_PROFILE = "50FAF1A6-B7E3-4610-AA2A-CA9C589EDC5E";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "50FAF1A6-B7E3-4610-AA2A-CA9C589EDC5E";
 				WRAPPER_EXTENSION = app;
@@ -491,7 +462,7 @@
 					"-lz",
 					"-lsqlite3",
 				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = GameSADiOS;
 				PROVISIONING_PROFILE = "50FAF1A6-B7E3-4610-AA2A-CA9C589EDC5E";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "50FAF1A6-B7E3-4610-AA2A-CA9C589EDC5E";
 				VALIDATE_PRODUCT = YES;
@@ -502,7 +473,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		04A6302B177C5AC800E1760D /* Build configuration list for PBXProject "FEXGameTemplate" */ = {
+		04A6302B177C5AC800E1760D /* Build configuration list for PBXProject "GameSADiOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				04A633AA177C5ACF00E1760D /* Debug */,
@@ -511,7 +482,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		04A633AC177C5ACF00E1760D /* Build configuration list for PBXNativeTarget "FEXGameTemplate" */ = {
+		04A633AC177C5ACF00E1760D /* Build configuration list for PBXNativeTarget "GameSADiOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				04A633AD177C5ACF00E1760D /* Debug */,

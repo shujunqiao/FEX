@@ -4,6 +4,9 @@
    <FileRef
       location = "group:GameSADLib/GameSADLib.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:FEXGameTemplate/GameSADiOS.xcodeproj">
+   </FileRef>
    <Group
       location = "container:"
       name = "Libs">
@@ -22,9 +25,6 @@
       name = "FEX">
       <FileRef
          location = "group:FEX.xcodeproj">
-      </FileRef>
-      <FileRef
-         location = "group:FEXGameTemplate/FEXGameTemplate.xcodeproj">
       </FileRef>
    </Group>
 </Workspace>

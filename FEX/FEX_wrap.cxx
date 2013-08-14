@@ -3627,7 +3627,7 @@ namespace swig {
 #include "ControllerBase.h"
 #include "IOSTouchController.h"
 #include "cocos2d.h"
-#include "FEX/ResourceManager.h"
+#include "ResourceManager.h"
 
 
 #include <string>

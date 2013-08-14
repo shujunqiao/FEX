@@ -17,3 +17,9 @@ libs/CocosDenshion/proj.mac/CocosDenshion.xcodeproj/xcuserdata/fancyzero.xcuserd
 libs/cocos2dx/proj.mac/cocos2dx.xcodeproj/xcuserdata/fancyzero.xcuserdatad/xcschemes/xcschememanagement.plist
 
 libs/external/Box2D/proj.mac/Box2D.xcodeproj/xcuserdata/fancyzero.xcuserdatad/xcschemes/xcschememanagement.plist
+
+*.xcuserstate
+
+*.xcuserstate
+
+FEXGameTemplate/GameSADiOS.xcodeproj/project.xcworkspace/xcuserdata/fancyzero.xcuserdatad/UserInterfaceState.xcuserstate
