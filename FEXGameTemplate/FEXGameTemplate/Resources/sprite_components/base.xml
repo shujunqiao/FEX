@@ -1,11 +1,9 @@
 <sprite_components>
-    <component name="saw">
-		<physics_def>
-			<body type="dynamic" url="saw"/>
-		</physics_def>
+    <component name="coin">
 		<animations>
 			<sequence name="default" animated="true" texture="pic/scene.plist" frames="coin.png" frame_speed="0"/>
 		</animations>
+        
 	</component>
 </sprite_components>
 

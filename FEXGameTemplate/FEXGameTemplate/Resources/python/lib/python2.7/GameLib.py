@@ -12,7 +12,7 @@ def create_sprite( x, y ):
 
 class Dot(FEX.SpriteBase):
     def __init__(self, point):
-        FEX.SpriteBase.__init__( self, point ,FEX.map_string_string({ "sprite_desc" : "saw"}) )
+        FEX.SpriteBase.__init__( self, point ,FEX.map_string_string({ "sprite_desc" : "coin"}) )
 
 class GameDot(FEX.GameBase):
 
