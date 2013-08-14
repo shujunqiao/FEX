@@ -43,7 +43,12 @@ SpriteComponent::SpriteComponent(  const CCPoint& location, const std::shared_pt
             phy_body->CreateFixture( dynamic_cast<b2FixtureDef*>(&fixdef) );
         }
     }
-    logger("sprite component") << this << " created retaincount:" << retainCount() <<  endl;    
+    else
+    {
+        // no physics body defined ,set location directly
+        this->setPosition(location);
+    }
+    logger("sprite component") << this << " created retaincount:" << retainCount() <<  endl;
     //scheduleUpdate();
 }
 
@@ -121,7 +126,7 @@ void SpriteComponent::draw()
     
     CHECK_GL_ERROR_DEBUG();
     
-#if CC_SPRITE_DEBUG_DRAW == 1
+#if 1//CC_SPRITE_DEBUG_DRAW == 1
     // draw bounding box
     CCPoint vertices[4]={
         ccp(m_sQuad.tl.vertices.x,m_sQuad.tl.vertices.y),
