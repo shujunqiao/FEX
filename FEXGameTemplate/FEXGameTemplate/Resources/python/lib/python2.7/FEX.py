@@ -103,7 +103,53 @@ class SwigPyIterator(_object):
 SwigPyIterator_swigregister = _FEX.SwigPyIterator_swigregister
 SwigPyIterator_swigregister(SwigPyIterator)
 
-SHARED_PTR_DISOWN = _FEX.SHARED_PTR_DISOWN
+class vector_sprite_components(_object):
+    __swig_setmethods__ = {}
+    __setattr__ = lambda self, name, value: _swig_setattr(self, vector_sprite_components, name, value)
+    __swig_getmethods__ = {}
+    __getattr__ = lambda self, name: _swig_getattr(self, vector_sprite_components, name)
+    __repr__ = _swig_repr
+    def iterator(self): return _FEX.vector_sprite_components_iterator(self)
+    def __iter__(self): return self.iterator()
+    def __nonzero__(self): return _FEX.vector_sprite_components___nonzero__(self)
+    def __bool__(self): return _FEX.vector_sprite_components___bool__(self)
+    def __len__(self): return _FEX.vector_sprite_components___len__(self)
+    def pop(self): return _FEX.vector_sprite_components_pop(self)
+    def __getslice__(self, *args): return _FEX.vector_sprite_components___getslice__(self, *args)
+    def __setslice__(self, *args): return _FEX.vector_sprite_components___setslice__(self, *args)
+    def __delslice__(self, *args): return _FEX.vector_sprite_components___delslice__(self, *args)
+    def __delitem__(self, *args): return _FEX.vector_sprite_components___delitem__(self, *args)
+    def __getitem__(self, *args): return _FEX.vector_sprite_components___getitem__(self, *args)
+    def __setitem__(self, *args): return _FEX.vector_sprite_components___setitem__(self, *args)
+    def append(self, *args): return _FEX.vector_sprite_components_append(self, *args)
+    def empty(self): return _FEX.vector_sprite_components_empty(self)
+    def size(self): return _FEX.vector_sprite_components_size(self)
+    def clear(self): return _FEX.vector_sprite_components_clear(self)
+    def swap(self, *args): return _FEX.vector_sprite_components_swap(self, *args)
+    def get_allocator(self): return _FEX.vector_sprite_components_get_allocator(self)
+    def begin(self): return _FEX.vector_sprite_components_begin(self)
+    def end(self): return _FEX.vector_sprite_components_end(self)
+    def rbegin(self): return _FEX.vector_sprite_components_rbegin(self)
+    def rend(self): return _FEX.vector_sprite_components_rend(self)
+    def pop_back(self): return _FEX.vector_sprite_components_pop_back(self)
+    def erase(self, *args): return _FEX.vector_sprite_components_erase(self, *args)
+    def __init__(self, *args): 
+        this = _FEX.new_vector_sprite_components(*args)
+        try: self.this.append(this)
+        except: self.this = this
+    def push_back(self, *args): return _FEX.vector_sprite_components_push_back(self, *args)
+    def front(self): return _FEX.vector_sprite_components_front(self)
+    def back(self): return _FEX.vector_sprite_components_back(self)
+    def assign(self, *args): return _FEX.vector_sprite_components_assign(self, *args)
+    def resize(self, *args): return _FEX.vector_sprite_components_resize(self, *args)
+    def insert(self, *args): return _FEX.vector_sprite_components_insert(self, *args)
+    def reserve(self, *args): return _FEX.vector_sprite_components_reserve(self, *args)
+    def capacity(self): return _FEX.vector_sprite_components_capacity(self)
+    __swig_destroy__ = _FEX.delete_vector_sprite_components
+    __del__ = lambda self : None;
+vector_sprite_components_swigregister = _FEX.vector_sprite_components_swigregister
+vector_sprite_components_swigregister(vector_sprite_components)
+
 class map_string_string(_object):
     __swig_setmethods__ = {}
     __setattr__ = lambda self, name, value: _swig_setattr(self, map_string_string, name, value)
@@ -199,21 +245,6 @@ class vector_controller(_object):
     __del__ = lambda self : None;
 vector_controller_swigregister = _FEX.vector_controller_swigregister
 vector_controller_swigregister(vector_controller)
-
-class gameobj_ptr(_object):
-    __swig_setmethods__ = {}
-    __setattr__ = lambda self, name, value: _swig_setattr(self, gameobj_ptr, name, value)
-    __swig_getmethods__ = {}
-    __getattr__ = lambda self, name: _swig_getattr(self, gameobj_ptr, name)
-    __repr__ = _swig_repr
-    def __init__(self): 
-        this = _FEX.new_gameobj_ptr()
-        try: self.this.append(this)
-        except: self.this = this
-    __swig_destroy__ = _FEX.delete_gameobj_ptr
-    __del__ = lambda self : None;
-gameobj_ptr_swigregister = _FEX.gameobj_ptr_swigregister
-gameobj_ptr_swigregister(gameobj_ptr)
 
 class CCPoint(_object):
     __swig_setmethods__ = {}
@@ -341,6 +372,24 @@ class ClassInfo(_object):
 ClassInfo_swigregister = _FEX.ClassInfo_swigregister
 ClassInfo_swigregister(ClassInfo)
 
+class EditorProxy(_object):
+    __swig_setmethods__ = {}
+    __setattr__ = lambda self, name, value: _swig_setattr(self, EditorProxy, name, value)
+    __swig_getmethods__ = {}
+    __getattr__ = lambda self, name: _swig_getattr(self, EditorProxy, name)
+    __repr__ = _swig_repr
+    def __init__(self): 
+        this = _FEX.new_EditorProxy()
+        try: self.this.append(this)
+        except: self.this = this
+    def hit_test(self, *args): return _FEX.EditorProxy_hit_test(self, *args)
+    def set_selected(self, *args): return _FEX.EditorProxy_set_selected(self, *args)
+    def set_object(self, *args): return _FEX.EditorProxy_set_object(self, *args)
+    __swig_destroy__ = _FEX.delete_EditorProxy
+    __del__ = lambda self : None;
+EditorProxy_swigregister = _FEX.EditorProxy_swigregister
+EditorProxy_swigregister(EditorProxy)
+
 class GameObjBase(_object):
     __swig_setmethods__ = {}
     __setattr__ = lambda self, name, value: _swig_setattr(self, GameObjBase, name, value)
@@ -368,6 +417,11 @@ class GameObjBase(_object):
     def set_name(self, *args): return _FEX.GameObjBase_set_name(self, *args)
     def is_dead(self): return _FEX.GameObjBase_is_dead(self)
     def set_dead(self, *args): return _FEX.GameObjBase_set_dead(self, *args)
+    def get_editor_proxy(self): return _FEX.GameObjBase_get_editor_proxy(self)
+    def set_editor_proxy(self, *args): return _FEX.GameObjBase_set_editor_proxy(self, *args)
+    def get_trigger_id(self): return _FEX.GameObjBase_get_trigger_id(self)
+    def set_trigger_id(self, *args): return _FEX.GameObjBase_set_trigger_id(self, *args)
+    def set_class_info(self, *args): return _FEX.GameObjBase_set_class_info(self, *args)
     def __disown__(self):
         self.this.disown()
         _FEX.disown_GameObjBase(self)
@@ -405,6 +459,7 @@ class SpriteBase(GameObjBase):
     def remove_component(self, *args): return _FEX.SpriteBase_remove_component(self, *args)
     def component(self, *args): return _FEX.SpriteBase_component(self, *args)
     def component_count(self): return _FEX.SpriteBase_component_count(self)
+    def get_components(self): return _FEX.SpriteBase_get_components(self)
     def begin_contact(self, *args): return _FEX.SpriteBase_begin_contact(self, *args)
     def end_contact(self, *args): return _FEX.SpriteBase_end_contact(self, *args)
     def update(self, *args): return _FEX.SpriteBase_update(self, *args)
@@ -440,7 +495,9 @@ class GameBase(_object):
     def get_scene(self): return _FEX.GameBase_get_scene(self)
     def get_phy_world(self): return _FEX.GameBase_get_phy_world(self)
     def get_level(self): return _FEX.GameBase_get_level(self)
+    def is_editor(self): return _FEX.GameBase_is_editor(self)
     def get_obj(self, *args): return _FEX.GameBase_get_obj(self, *args)
+    def get_objects(self): return _FEX.GameBase_get_objects(self)
     def __disown__(self):
         self.this.disown()
         _FEX.disown_GameBase(self)
@@ -542,6 +599,10 @@ set_current_time = _FEX.set_current_time
 def string_to_point(*args):
   return _FEX.string_to_point(*args)
 string_to_point = _FEX.string_to_point
+
+def point_to_string(*args):
+  return _FEX.point_to_string(*args)
+point_to_string = _FEX.point_to_string
 
 def string_to_rect(*args):
   return _FEX.string_to_rect(*args)
@@ -664,6 +725,14 @@ make_gameobj_ptr = _FEX.make_gameobj_ptr
 def init_python(*args):
   return _FEX.init_python(*args)
 init_python = _FEX.init_python
+
+def ends_with(*args):
+  return _FEX.ends_with(*args)
+ends_with = _FEX.ends_with
+
+def register_FEX_classes():
+  return _FEX.register_FEX_classes()
+register_FEX_classes = _FEX.register_FEX_classes
 class GameObjFactory(_object):
     __swig_setmethods__ = {}
     __setattr__ = lambda self, name, value: _swig_setattr(self, GameObjFactory, name, value)
@@ -968,6 +1037,65 @@ class SpriteComponent(_object):
     def get_owner(self): return _FEX.SpriteComponent_get_owner(self)
 SpriteComponent_swigregister = _FEX.SpriteComponent_swigregister
 SpriteComponent_swigregister(SpriteComponent)
+
+class ResourceManager(_object):
+    __swig_setmethods__ = {}
+    __setattr__ = lambda self, name, value: _swig_setattr(self, ResourceManager, name, value)
+    __swig_getmethods__ = {}
+    __getattr__ = lambda self, name: _swig_getattr(self, ResourceManager, name)
+    __repr__ = _swig_repr
+    __swig_getmethods__["instance"] = lambda x: _FEX.ResourceManager_instance
+    if _newclass:instance = staticmethod(_FEX.ResourceManager_instance)
+    def load_sprite_desc(self, *args): return _FEX.ResourceManager_load_sprite_desc(self, *args)
+    def load_physic_desc(self, *args): return _FEX.ResourceManager_load_physic_desc(self, *args)
+    def load_sprite_component_desc(self, *args): return _FEX.ResourceManager_load_sprite_component_desc(self, *args)
+    def get_level_data(self, *args): return _FEX.ResourceManager_get_level_data(self, *args)
+    __swig_setmethods__["sprite_descs"] = _FEX.ResourceManager_sprite_descs_set
+    __swig_getmethods__["sprite_descs"] = _FEX.ResourceManager_sprite_descs_get
+    if _newclass:sprite_descs = _swig_property(_FEX.ResourceManager_sprite_descs_get, _FEX.ResourceManager_sprite_descs_set)
+    __swig_setmethods__["physic_descs"] = _FEX.ResourceManager_physic_descs_set
+    __swig_getmethods__["physic_descs"] = _FEX.ResourceManager_physic_descs_get
+    if _newclass:physic_descs = _swig_property(_FEX.ResourceManager_physic_descs_get, _FEX.ResourceManager_physic_descs_set)
+    __swig_setmethods__["sprite_components"] = _FEX.ResourceManager_sprite_components_set
+    __swig_getmethods__["sprite_components"] = _FEX.ResourceManager_sprite_components_get
+    if _newclass:sprite_components = _swig_property(_FEX.ResourceManager_sprite_components_get, _FEX.ResourceManager_sprite_components_set)
+    __swig_setmethods__["animations"] = _FEX.ResourceManager_animations_set
+    __swig_getmethods__["animations"] = _FEX.ResourceManager_animations_get
+    if _newclass:animations = _swig_property(_FEX.ResourceManager_animations_get, _FEX.ResourceManager_animations_set)
+    __swig_setmethods__["levels"] = _FEX.ResourceManager_levels_set
+    __swig_getmethods__["levels"] = _FEX.ResourceManager_levels_get
+    if _newclass:levels = _swig_property(_FEX.ResourceManager_levels_get, _FEX.ResourceManager_levels_set)
+    def __init__(self): 
+        this = _FEX.new_ResourceManager()
+        try: self.this.append(this)
+        except: self.this = this
+    __swig_destroy__ = _FEX.delete_ResourceManager
+    __del__ = lambda self : None;
+ResourceManager_swigregister = _FEX.ResourceManager_swigregister
+ResourceManager_swigregister(ResourceManager)
+
+def ResourceManager_instance():
+  return _FEX.ResourceManager_instance()
+ResourceManager_instance = _FEX.ResourceManager_instance
+
+class SimpleSocket(_object):
+    __swig_setmethods__ = {}
+    __setattr__ = lambda self, name, value: _swig_setattr(self, SimpleSocket, name, value)
+    __swig_getmethods__ = {}
+    __getattr__ = lambda self, name: _swig_getattr(self, SimpleSocket, name)
+    __repr__ = _swig_repr
+    def connect(self, *args): return _FEX.SimpleSocket_connect(self, *args)
+    def disconnect(self): return _FEX.SimpleSocket_disconnect(self)
+    def send(self, *args): return _FEX.SimpleSocket_send(self, *args)
+    def recv(self, *args): return _FEX.SimpleSocket_recv(self, *args)
+    def __init__(self): 
+        this = _FEX.new_SimpleSocket()
+        try: self.this.append(this)
+        except: self.this = this
+    __swig_destroy__ = _FEX.delete_SimpleSocket
+    __del__ = lambda self : None;
+SimpleSocket_swigregister = _FEX.SimpleSocket_swigregister
+SimpleSocket_swigregister(SimpleSocket)
 
 # This file is compatible with both classic and new-style classes.
 

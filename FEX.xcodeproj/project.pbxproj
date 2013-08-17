@@ -30,6 +30,16 @@
 		045FF17317892196007A338D /* SpriteComponent.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04A627EB177BEDD200E1760D /* SpriteComponent.cpp */; };
 		045FF17417892196007A338D /* CollisionListener.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 040A59E4177E6FA00010E979 /* CollisionListener.cpp */; };
 		045FF17617892196007A338D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04713BD81760C81900443B48 /* Foundation.framework */; };
+		0476E26A17BCA4A900BA62B8 /* SimpleSocket.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0476E26817BCA4A800BA62B8 /* SimpleSocket.cpp */; };
+		0476E26B17BCA4A900BA62B8 /* SimpleSocket.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0476E26817BCA4A800BA62B8 /* SimpleSocket.cpp */; };
+		0476E26D17BDF2AB00BA62B8 /* _sre.c in Sources */ = {isa = PBXBuildFile; fileRef = 0476E26C17BDF2AB00BA62B8 /* _sre.c */; };
+		0476E26E17BDF2AB00BA62B8 /* _sre.c in Sources */ = {isa = PBXBuildFile; fileRef = 0476E26C17BDF2AB00BA62B8 /* _sre.c */; };
+		0476E27017BDF44F00BA62B8 /* _struct.c in Sources */ = {isa = PBXBuildFile; fileRef = 0476E26F17BDF44F00BA62B8 /* _struct.c */; };
+		0476E27117BDF44F00BA62B8 /* _struct.c in Sources */ = {isa = PBXBuildFile; fileRef = 0476E26F17BDF44F00BA62B8 /* _struct.c */; };
+		0476E27317BDF5C300BA62B8 /* _codecsmodule.c in Sources */ = {isa = PBXBuildFile; fileRef = 0476E27217BDF5C200BA62B8 /* _codecsmodule.c */; };
+		0476E27417BDF5C300BA62B8 /* _codecsmodule.c in Sources */ = {isa = PBXBuildFile; fileRef = 0476E27217BDF5C200BA62B8 /* _codecsmodule.c */; };
+		0476E27617BDF8F200BA62B8 /* _json.c in Sources */ = {isa = PBXBuildFile; fileRef = 0476E27517BDF8F200BA62B8 /* _json.c */; };
+		0476E27717BDF8F200BA62B8 /* _json.c in Sources */ = {isa = PBXBuildFile; fileRef = 0476E27517BDF8F200BA62B8 /* _json.c */; };
 		04A627B1177BEC7900E1760D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04713BD81760C81900443B48 /* Foundation.framework */; };
 		04A627ED177BEDD200E1760D /* CCPhyDebugNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04A627CB177BEDD200E1760D /* CCPhyDebugNode.cpp */; };
 		04A627EE177BEDD200E1760D /* ControllerBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04A627CE177BEDD200E1760D /* ControllerBase.cpp */; };
@@ -85,6 +95,12 @@
 		04713BD61760C81900443B48 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		04713BD81760C81900443B48 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		04713BDA1760C81900443B48 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		0476E26817BCA4A800BA62B8 /* SimpleSocket.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SimpleSocket.cpp; path = FEX/SimpleSocket.cpp; sourceTree = "<group>"; };
+		0476E26917BCA4A800BA62B8 /* SimpleSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SimpleSocket.h; path = FEX/SimpleSocket.h; sourceTree = "<group>"; };
+		0476E26C17BDF2AB00BA62B8 /* _sre.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = _sre.c; path = FEX/_sre.c; sourceTree = "<group>"; };
+		0476E26F17BDF44F00BA62B8 /* _struct.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = _struct.c; path = FEX/_struct.c; sourceTree = "<group>"; };
+		0476E27217BDF5C200BA62B8 /* _codecsmodule.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = _codecsmodule.c; path = FEX/_codecsmodule.c; sourceTree = "<group>"; };
+		0476E27517BDF8F200BA62B8 /* _json.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = _json.c; path = FEX/_json.c; sourceTree = "<group>"; };
 		04A627B0177BEC7900E1760D /* libFEX.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libFEX.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		04A627B4177BEC7900E1760D /* FEX-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "FEX-Prefix.pch"; path = "FEX/FEX-Prefix.pch"; sourceTree = "<group>"; };
 		04A627CB177BEDD200E1760D /* CCPhyDebugNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CCPhyDebugNode.cpp; path = FEX/CCPhyDebugNode.cpp; sourceTree = "<group>"; };
@@ -181,6 +197,12 @@
 		04A627CA177BEDC600E1760D /* Src */ = {
 			isa = PBXGroup;
 			children = (
+				0476E27517BDF8F200BA62B8 /* _json.c */,
+				0476E27217BDF5C200BA62B8 /* _codecsmodule.c */,
+				0476E26F17BDF44F00BA62B8 /* _struct.c */,
+				0476E26C17BDF2AB00BA62B8 /* _sre.c */,
+				0476E26817BCA4A800BA62B8 /* SimpleSocket.cpp */,
+				0476E26917BCA4A800BA62B8 /* SimpleSocket.h */,
 				045E880617A545E200C99DB7 /* FEX_wrap.cxx */,
 				045E880717A545E200C99DB7 /* FEX_wrap.h */,
 				045E880817A545E200C99DB7 /* zlibmodule.c */,
@@ -321,6 +343,11 @@
 				045FF17417892196007A338D /* CollisionListener.cpp in Sources */,
 				045E880A17A545E200C99DB7 /* FEX_wrap.cxx in Sources */,
 				045E880C17A545E200C99DB7 /* zlibmodule.c in Sources */,
+				0476E26B17BCA4A900BA62B8 /* SimpleSocket.cpp in Sources */,
+				0476E26E17BDF2AB00BA62B8 /* _sre.c in Sources */,
+				0476E27117BDF44F00BA62B8 /* _struct.c in Sources */,
+				0476E27417BDF5C300BA62B8 /* _codecsmodule.c in Sources */,
+				0476E27717BDF8F200BA62B8 /* _json.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,6 +374,11 @@
 				04C3AF9617914F36005F9937 /* IOSTouchController.cpp in Sources */,
 				045E880917A545E200C99DB7 /* FEX_wrap.cxx in Sources */,
 				045E880B17A545E200C99DB7 /* zlibmodule.c in Sources */,
+				0476E26A17BCA4A900BA62B8 /* SimpleSocket.cpp in Sources */,
+				0476E26D17BDF2AB00BA62B8 /* _sre.c in Sources */,
+				0476E27017BDF44F00BA62B8 /* _struct.c in Sources */,
+				0476E27317BDF5C300BA62B8 /* _codecsmodule.c in Sources */,
+				0476E27617BDF8F200BA62B8 /* _json.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

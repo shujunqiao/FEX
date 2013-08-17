@@ -4,200 +4,31 @@
     <dict>
         <key>frames</key>
         <dict>
-            <key>ball.png</key>
+            <key>dimdot.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{1564,433},{416,374}}</string>
+                <string>{{2,14},{10,10}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
                 <false/>
                 <key>sourceColorRect</key>
-                <string>{{0,0},{416,374}}</string>
+                <string>{{0,0},{10,10}}</string>
                 <key>sourceSize</key>
-                <string>{416,374}</string>
+                <string>{10,10}</string>
             </dict>
-            <key>coin.png</key>
+            <key>lightdot.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{1633,237},{100,110}}</string>
+                <string>{{2,2},{10,10}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
                 <false/>
                 <key>sourceColorRect</key>
-                <string>{{0,0},{100,110}}</string>
+                <string>{{0,0},{10,10}}</string>
                 <key>sourceSize</key>
-                <string>{100,110}</string>
-            </dict>
-            <key>coin1.png</key>
-            <dict>
-                <key>frame</key>
-                <string>{{1888,199},{100,110}}</string>
-                <key>offset</key>
-                <string>{0,0}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{0,0},{100,110}}</string>
-                <key>sourceSize</key>
-                <string>{100,110}</string>
-            </dict>
-            <key>earth_1.png</key>
-            <dict>
-                <key>frame</key>
-                <string>{{2,2},{1629,257}}</string>
-                <key>offset</key>
-                <string>{0,0}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{0,0},{1629,257}}</string>
-                <key>sourceSize</key>
-                <string>{1629,257}</string>
-            </dict>
-            <key>earth_2.png</key>
-            <dict>
-                <key>frame</key>
-                <string>{{2,465},{1338,242}}</string>
-                <key>offset</key>
-                <string>{0,0}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{0,0},{1338,242}}</string>
-                <key>sourceSize</key>
-                <string>{1338,242}</string>
-            </dict>
-            <key>earth_3.png</key>
-            <dict>
-                <key>frame</key>
-                <string>{{1132,809},{886,226}}</string>
-                <key>offset</key>
-                <string>{0,0}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{0,0},{886,226}}</string>
-                <key>sourceSize</key>
-                <string>{886,226}</string>
-            </dict>
-            <key>earth_4.png</key>
-            <dict>
-                <key>frame</key>
-                <string>{{2,1094},{626,238}}</string>
-                <key>offset</key>
-                <string>{0,0}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{0,0},{626,238}}</string>
-                <key>sourceSize</key>
-                <string>{626,238}</string>
-            </dict>
-            <key>excellent.png</key>
-            <dict>
-                <key>frame</key>
-                <string>{{1735,237},{98,194}}</string>
-                <key>offset</key>
-                <string>{-1,2}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{0,1},{98,194}}</string>
-                <key>sourceSize</key>
-                <string>{100,200}</string>
-            </dict>
-            <key>god.png</key>
-            <dict>
-                <key>frame</key>
-                <string>{{1888,2},{136,195}}</string>
-                <key>offset</key>
-                <string>{0,0}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{0,0},{136,195}}</string>
-                <key>sourceSize</key>
-                <string>{136,195}</string>
-            </dict>
-            <key>magnet.png</key>
-            <dict>
-                <key>frame</key>
-                <string>{{1342,465},{90,124}}</string>
-                <key>offset</key>
-                <string>{-2,0}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{17,2},{90,124}}</string>
-                <key>sourceSize</key>
-                <string>{128,128}</string>
-            </dict>
-            <key>ribbon.png</key>
-            <dict>
-                <key>frame</key>
-                <string>{{1633,205},{200,30}}</string>
-                <key>offset</key>
-                <string>{0,0}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{0,0},{200,30}}</string>
-                <key>sourceSize</key>
-                <string>{200,30}</string>
-            </dict>
-            <key>rock_1.png</key>
-            <dict>
-                <key>frame</key>
-                <string>{{2,261},{1560,202}}</string>
-                <key>offset</key>
-                <string>{0,0}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{0,0},{1560,202}}</string>
-                <key>sourceSize</key>
-                <string>{1560,202}</string>
-            </dict>
-            <key>rock_2.png</key>
-            <dict>
-                <key>frame</key>
-                <string>{{2,709},{1128,200}}</string>
-                <key>offset</key>
-                <string>{0,0}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{0,0},{1128,200}}</string>
-                <key>sourceSize</key>
-                <string>{1128,200}</string>
-            </dict>
-            <key>rock_3.png</key>
-            <dict>
-                <key>frame</key>
-                <string>{{2,911},{637,181}}</string>
-                <key>offset</key>
-                <string>{0,0}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{0,0},{637,181}}</string>
-                <key>sourceSize</key>
-                <string>{637,181}</string>
-            </dict>
-            <key>spike.png</key>
-            <dict>
-                <key>frame</key>
-                <string>{{1633,2},{253,201}}</string>
-                <key>offset</key>
-                <string>{0,0}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{0,0},{253,201}}</string>
-                <key>sourceSize</key>
-                <string>{253,201}</string>
+                <string>{10,10}</string>
             </dict>
         </dict>
         <key>metadata</key>
@@ -207,9 +38,9 @@
             <key>realTextureFileName</key>
             <string>scene-ipadhd.png</string>
             <key>size</key>
-            <string>{2048,2048}</string>
+            <string>{16,32}</string>
             <key>smartupdate</key>
-            <string>$TexturePacker:SmartUpdate:beba14e80762c56039df007e9ab12fed$</string>
+            <string>$TexturePacker:SmartUpdate:987531065294ee17e4beaa7f68b46d6c$</string>
             <key>textureFileName</key>
             <string>scene-ipadhd.png</string>
         </dict>

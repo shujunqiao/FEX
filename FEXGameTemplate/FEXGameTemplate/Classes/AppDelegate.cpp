@@ -84,8 +84,8 @@ bool AppDelegate::applicationDidFinishLaunching()
     ResourceManager::instance()->load_sprite_desc(full_path("sprites/base.xml"));
     ResourceManager::instance()->load_physic_desc(full_path("pdb/main.xml"));
     
-    PyRun_SimpleString("import GameLib");
-    PyRun_SimpleString("GameLib.run_game()");
+    PyRun_SimpleString("import SnakeGameLib");
+    PyRun_SimpleString("SnakeGameLib.run_game()");
     
     return true;
 }
