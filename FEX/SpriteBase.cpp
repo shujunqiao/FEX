@@ -35,7 +35,7 @@ void SpriteBase::init( const cocos2d::CCPoint& location, const std::shared_ptr<s
                                                 ResourceManager::instance()->
                                                 sprite_components.item(it.component_name))
                       );
-        logger("memory ")<< spc->retainCount() << endl;
+        //logger("memory ")<< spc->retainCount() << endl;
     }
 
 }

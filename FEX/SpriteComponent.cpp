@@ -48,13 +48,13 @@ SpriteComponent::SpriteComponent(  const CCPoint& location, const std::shared_pt
         // no physics body defined ,set location directly
         this->setPosition(location);
     }
-    logger("sprite component") << this << " created retaincount:" << retainCount() <<  endl;
+    //logger("sprite component") << this << " created retaincount:" << retainCount() <<  endl;
     //scheduleUpdate();
 }
 
 SpriteComponent::~SpriteComponent()
 {
-    logger("sprite component") << this << "destroyed" << endl;
+    //logger("sprite component") << this << "destroyed" << endl;
     if (phy_body)
         get_game()->get_phy_world()->DestroyBody(phy_body);
 }
@@ -71,6 +71,7 @@ bool SpriteComponent::play_anim( const Name& anim_name )
     {
         if ( a.name == anim_name )
         {
+            this->stopAllActions();//todo: only stop last action added by this method
             runAction( a.animation );
             return true;
         }
@@ -126,7 +127,7 @@ void SpriteComponent::draw()
     
     CHECK_GL_ERROR_DEBUG();
     
-#if 1//CC_SPRITE_DEBUG_DRAW == 1
+#if CC_SPRITE_DEBUG_DRAW == 1
     // draw bounding box
     CCPoint vertices[4]={
         ccp(m_sQuad.tl.vertices.x,m_sQuad.tl.vertices.y),

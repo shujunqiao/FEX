@@ -3493,33 +3493,34 @@ namespace Swig {
 #define SWIGTYPE_p_reference swig_types[53]
 #define SWIGTYPE_p_size_type swig_types[54]
 #define SWIGTYPE_p_std__allocatorT_FESimple__ControllerBase_p_t swig_types[55]
-#define SWIGTYPE_p_std__allocatorT_std__pairT_std__string_const_std__string_t_t swig_types[56]
-#define SWIGTYPE_p_std__functionT_void_pfstd__mapT_std__string_std__string_std__lessT_std__string_t_std__allocatorT_std__pairT_std__string_const_std__string_t_t_t_const_RF_t swig_types[57]
-#define SWIGTYPE_p_std__invalid_argument swig_types[58]
-#define SWIGTYPE_p_std__lessT_std__string_t swig_types[59]
-#define SWIGTYPE_p_std__listT_std__shared_ptrT_FESimple__GameObjBase_t_t swig_types[60]
-#define SWIGTYPE_p_std__mapT_std__string_FESimple__ClassInfo_const_p_std__lessT_std__string_t_std__allocatorT_std__pairT_std__string_const_FESimple__ClassInfo_const_p_t_t_t swig_types[61]
-#define SWIGTYPE_p_std__mapT_std__string_std__string_std__lessT_std__string_t_std__allocatorT_std__pairT_std__string_const_std__string_t_t_t swig_types[62]
-#define SWIGTYPE_p_std__shared_ptrT_FESimple__GameObjBase_t swig_types[63]
-#define SWIGTYPE_p_std__shared_ptrT_FESimple__LevelData_t swig_types[64]
-#define SWIGTYPE_p_std__shared_ptrT_FESimple__sprite_component_desc_t swig_types[65]
-#define SWIGTYPE_p_std__string swig_types[66]
-#define SWIGTYPE_p_std__vectorT_FESimple__ClassInfo_p_std__allocatorT_FESimple__ClassInfo_p_t_t swig_types[67]
-#define SWIGTYPE_p_std__vectorT_FESimple__ControllerBase_p_std__allocatorT_FESimple__ControllerBase_p_t_t swig_types[68]
-#define SWIGTYPE_p_std__vectorT_FESimple__LevelTrigger_std__allocatorT_FESimple__LevelTrigger_t_t swig_types[69]
-#define SWIGTYPE_p_std__vectorT_FESimple__SpriteComponent_p_std__allocatorT_FESimple__SpriteComponent_p_t_t swig_types[70]
-#define SWIGTYPE_p_std__vectorT_FESimple__b2fixture_def_std__allocatorT_FESimple__b2fixture_def_t_t swig_types[71]
-#define SWIGTYPE_p_std__vectorT_FESimple__sprite_component_ref_std__allocatorT_FESimple__sprite_component_ref_t_t swig_types[72]
-#define SWIGTYPE_p_std__vectorT_FESimple__sprite_joint_desc_std__allocatorT_FESimple__sprite_joint_desc_t_t swig_types[73]
-#define SWIGTYPE_p_std__vectorT__Tp_p__Alloc_t swig_types[74]
-#define SWIGTYPE_p_std__vectorT_float_std__allocatorT_float_t_t swig_types[75]
-#define SWIGTYPE_p_std__vectorT_std__string_std__allocatorT_std__string_t_t swig_types[76]
-#define SWIGTYPE_p_std__weak_ptrT_FESimple__GameObjBase_t swig_types[77]
-#define SWIGTYPE_p_std__weak_ptrT_FESimple__SpriteBase_t swig_types[78]
-#define SWIGTYPE_p_swig__SwigPyIterator swig_types[79]
-#define SWIGTYPE_p_value_type swig_types[80]
-static swig_type_info *swig_types[82];
-static swig_module_info swig_module = {swig_types, 81, 0, 0, 0, 0};
+#define SWIGTYPE_p_std__allocatorT_FESimple__SpriteComponent_p_t swig_types[56]
+#define SWIGTYPE_p_std__allocatorT_std__pairT_std__string_const_std__string_t_t swig_types[57]
+#define SWIGTYPE_p_std__functionT_void_pfstd__mapT_std__string_std__string_std__lessT_std__string_t_std__allocatorT_std__pairT_std__string_const_std__string_t_t_t_const_RF_t swig_types[58]
+#define SWIGTYPE_p_std__invalid_argument swig_types[59]
+#define SWIGTYPE_p_std__lessT_std__string_t swig_types[60]
+#define SWIGTYPE_p_std__listT_std__shared_ptrT_FESimple__GameObjBase_t_t swig_types[61]
+#define SWIGTYPE_p_std__mapT_std__string_FESimple__ClassInfo_const_p_std__lessT_std__string_t_std__allocatorT_std__pairT_std__string_const_FESimple__ClassInfo_const_p_t_t_t swig_types[62]
+#define SWIGTYPE_p_std__mapT_std__string_std__string_std__lessT_std__string_t_std__allocatorT_std__pairT_std__string_const_std__string_t_t_t swig_types[63]
+#define SWIGTYPE_p_std__shared_ptrT_FESimple__GameObjBase_t swig_types[64]
+#define SWIGTYPE_p_std__shared_ptrT_FESimple__LevelData_t swig_types[65]
+#define SWIGTYPE_p_std__shared_ptrT_FESimple__sprite_component_desc_t swig_types[66]
+#define SWIGTYPE_p_std__string swig_types[67]
+#define SWIGTYPE_p_std__vectorT_FESimple__ClassInfo_p_std__allocatorT_FESimple__ClassInfo_p_t_t swig_types[68]
+#define SWIGTYPE_p_std__vectorT_FESimple__ControllerBase_p_std__allocatorT_FESimple__ControllerBase_p_t_t swig_types[69]
+#define SWIGTYPE_p_std__vectorT_FESimple__LevelTrigger_std__allocatorT_FESimple__LevelTrigger_t_t swig_types[70]
+#define SWIGTYPE_p_std__vectorT_FESimple__SpriteComponent_p_std__allocatorT_FESimple__SpriteComponent_p_t_t swig_types[71]
+#define SWIGTYPE_p_std__vectorT_FESimple__b2fixture_def_std__allocatorT_FESimple__b2fixture_def_t_t swig_types[72]
+#define SWIGTYPE_p_std__vectorT_FESimple__sprite_component_ref_std__allocatorT_FESimple__sprite_component_ref_t_t swig_types[73]
+#define SWIGTYPE_p_std__vectorT_FESimple__sprite_joint_desc_std__allocatorT_FESimple__sprite_joint_desc_t_t swig_types[74]
+#define SWIGTYPE_p_std__vectorT__Tp_p__Alloc_t swig_types[75]
+#define SWIGTYPE_p_std__vectorT_float_std__allocatorT_float_t_t swig_types[76]
+#define SWIGTYPE_p_std__vectorT_std__string_std__allocatorT_std__string_t_t swig_types[77]
+#define SWIGTYPE_p_std__weak_ptrT_FESimple__GameObjBase_t swig_types[78]
+#define SWIGTYPE_p_std__weak_ptrT_FESimple__SpriteBase_t swig_types[79]
+#define SWIGTYPE_p_swig__SwigPyIterator swig_types[80]
+#define SWIGTYPE_p_value_type swig_types[81]
+static swig_type_info *swig_types[83];
+static swig_module_info swig_module = {swig_types, 82, 0, 0, 0, 0};
 #define SWIG_TypeQuery(name) SWIG_TypeQueryModule(&swig_module, &swig_module, name)
 #define SWIG_MangledTypeQuery(name) SWIG_MangledTypeQueryModule(&swig_module, &swig_module, name)
 
@@ -3628,6 +3629,7 @@ namespace swig {
 #include "IOSTouchController.h"
 #include "cocos2d.h"
 #include "ResourceManager.h"
+
 
 
 #include <string>
@@ -4017,13 +4019,6 @@ SWIG_AsVal_ptrdiff_t (PyObject * obj, ptrdiff_t *val)
 
 
 #include <vector>
-
-
-SWIGINTERNINLINE PyObject*
-  SWIG_From_int  (int value)
-{
-  return PyInt_FromLong((long) value);
-}
 
 
 namespace swig {  
@@ -5035,6 +5030,221 @@ namespace swig
 }
 
 
+  namespace swig {
+    template <>  struct traits<FESimple::SpriteComponent > {
+      typedef pointer_category category;
+      static const char* type_name() { return"FESimple::SpriteComponent"; }
+    };
+  }
+
+
+namespace swig {
+  template <class SwigPySeq, class Seq>
+  inline void
+  assign(const SwigPySeq& swigpyseq, Seq* seq) {
+    // seq->assign(swigpyseq.begin(), swigpyseq.end()); // not used as not always implemented
+    typedef typename SwigPySeq::value_type value_type;
+    typename SwigPySeq::const_iterator it = swigpyseq.begin();
+    for (;it != swigpyseq.end(); ++it) {
+      seq->insert(seq->end(),(value_type)(*it));
+    }
+  }
+
+  template <class Seq, class T = typename Seq::value_type >
+  struct traits_asptr_stdseq {
+    typedef Seq sequence;
+    typedef T value_type;
+
+    static int asptr(PyObject *obj, sequence **seq) {
+      if (obj == Py_None || SWIG_Python_GetSwigThis(obj)) {
+	sequence *p;
+	if (::SWIG_ConvertPtr(obj,(void**)&p,
+			      swig::type_info<sequence>(),0) == SWIG_OK) {
+	  if (seq) *seq = p;
+	  return SWIG_OLDOBJ;
+	}
+      } else if (PySequence_Check(obj)) {
+	try {
+	  SwigPySequence_Cont<value_type> swigpyseq(obj);
+	  if (seq) {
+	    sequence *pseq = new sequence();
+	    assign(swigpyseq, pseq);
+	    *seq = pseq;
+	    return SWIG_NEWOBJ;
+	  } else {
+	    return swigpyseq.check() ? SWIG_OK : SWIG_ERROR;
+	  }
+	} catch (std::exception& e) {
+	  if (seq) {
+	    if (!PyErr_Occurred()) {
+	      PyErr_SetString(PyExc_TypeError, e.what());
+	    }
+	  }
+	  return SWIG_ERROR;
+	}
+      }
+      return SWIG_ERROR;
+    }
+  };
+
+  template <class Seq, class T = typename Seq::value_type >
+  struct traits_from_stdseq {
+    typedef Seq sequence;
+    typedef T value_type;
+    typedef typename Seq::size_type size_type;
+    typedef typename sequence::const_iterator const_iterator;
+
+    static PyObject *from(const sequence& seq) {
+#ifdef SWIG_PYTHON_EXTRA_NATIVE_CONTAINERS
+      swig_type_info *desc = swig::type_info<sequence>();
+      if (desc && desc->clientdata) {
+	return SWIG_NewPointerObj(new sequence(seq), desc, SWIG_POINTER_OWN);
+      }
+#endif
+      size_type size = seq.size();
+      if (size <= (size_type)INT_MAX) {
+	PyObject *obj = PyTuple_New((int)size);
+	int i = 0;
+	for (const_iterator it = seq.begin();
+	     it != seq.end(); ++it, ++i) {
+	  PyTuple_SetItem(obj,i,swig::from<value_type>(*it));
+	}
+	return obj;
+      } else {
+	PyErr_SetString(PyExc_OverflowError,"sequence size not valid in python");
+	return NULL;
+      }
+    }
+  };
+}
+
+
+  namespace swig {
+    template <class T>
+    struct traits_asptr<std::vector<T> >  {
+      static int asptr(PyObject *obj, std::vector<T> **vec) {
+	return traits_asptr_stdseq<std::vector<T> >::asptr(obj, vec);
+      }
+    };
+    
+    template <class T>
+    struct traits_from<std::vector<T> > {
+      static PyObject *from(const std::vector<T>& vec) {
+	return traits_from_stdseq<std::vector<T> >::from(vec);
+      }
+    };
+  }
+
+
+      namespace swig {
+	template <>  struct traits<std::vector<FESimple::SpriteComponent*, std::allocator< FESimple::SpriteComponent * > > > {
+	  typedef value_category category;
+	  static const char* type_name() {
+	    return "std::vector<" "FESimple::SpriteComponent" " *," "std::allocator< FESimple::SpriteComponent * >" " >";
+	  }
+	};
+      }
+    
+SWIGINTERN swig::SwigPyIterator *std_vector_Sl_FESimple_SpriteComponent_Sm__Sg__iterator(std::vector< FESimple::SpriteComponent * > *self,PyObject **PYTHON_SELF){
+      return swig::make_output_iterator(self->begin(), self->begin(), self->end(), *PYTHON_SELF);
+    }
+SWIGINTERN bool std_vector_Sl_FESimple_SpriteComponent_Sm__Sg____nonzero__(std::vector< FESimple::SpriteComponent * > const *self){
+      return !(self->empty());
+    }
+SWIGINTERN bool std_vector_Sl_FESimple_SpriteComponent_Sm__Sg____bool__(std::vector< FESimple::SpriteComponent * > const *self){
+      return !(self->empty());
+    }
+SWIGINTERN std::vector< FESimple::SpriteComponent * >::size_type std_vector_Sl_FESimple_SpriteComponent_Sm__Sg____len__(std::vector< FESimple::SpriteComponent * > const *self){
+      return self->size();
+    }
+
+SWIGINTERNINLINE PyObject* 
+SWIG_From_unsigned_SS_long  (unsigned long value)
+{
+  return (value > LONG_MAX) ?
+    PyLong_FromUnsignedLong(value) : PyLong_FromLong(static_cast< long >(value)); 
+}
+
+
+SWIGINTERNINLINE PyObject *
+SWIG_From_size_t  (size_t value)
+{    
+  return SWIG_From_unsigned_SS_long  (static_cast< unsigned long >(value));
+}
+
+SWIGINTERN std::vector< FESimple::SpriteComponent * >::value_type std_vector_Sl_FESimple_SpriteComponent_Sm__Sg__pop(std::vector< FESimple::SpriteComponent * > *self){
+      if (self->size() == 0)
+	throw std::out_of_range("pop from empty container");
+      std::vector<FESimple::SpriteComponent*,std::allocator< FESimple::SpriteComponent * > >::value_type x = self->back();
+      self->pop_back();
+      return x;
+    }
+SWIGINTERN std::vector< FESimple::SpriteComponent *,std::allocator< FESimple::SpriteComponent * > > *std_vector_Sl_FESimple_SpriteComponent_Sm__Sg____getslice__(std::vector< FESimple::SpriteComponent * > *self,std::vector< FESimple::SpriteComponent * >::difference_type i,std::vector< FESimple::SpriteComponent * >::difference_type j){
+      return swig::getslice(self, i, j, 1);
+    }
+SWIGINTERN void std_vector_Sl_FESimple_SpriteComponent_Sm__Sg____setslice____SWIG_0(std::vector< FESimple::SpriteComponent * > *self,std::vector< FESimple::SpriteComponent * >::difference_type i,std::vector< FESimple::SpriteComponent * >::difference_type j,std::vector< FESimple::SpriteComponent *,std::allocator< FESimple::SpriteComponent * > > const &v=std::vector< FESimple::SpriteComponent *,std::allocator< FESimple::SpriteComponent * > >()){
+      swig::setslice(self, i, j, 1, v);
+    }
+SWIGINTERN void std_vector_Sl_FESimple_SpriteComponent_Sm__Sg____delslice__(std::vector< FESimple::SpriteComponent * > *self,std::vector< FESimple::SpriteComponent * >::difference_type i,std::vector< FESimple::SpriteComponent * >::difference_type j){
+      swig::delslice(self, i, j, 1);
+    }
+SWIGINTERN void std_vector_Sl_FESimple_SpriteComponent_Sm__Sg____delitem____SWIG_0(std::vector< FESimple::SpriteComponent * > *self,std::vector< FESimple::SpriteComponent * >::difference_type i){
+      self->erase(swig::getpos(self,i));
+    }
+SWIGINTERN std::vector< FESimple::SpriteComponent *,std::allocator< FESimple::SpriteComponent * > > *std_vector_Sl_FESimple_SpriteComponent_Sm__Sg____getitem____SWIG_0(std::vector< FESimple::SpriteComponent * > *self,PySliceObject *slice){
+      Py_ssize_t i, j, step;
+      if( !PySlice_Check(slice) ) {
+        SWIG_Error(SWIG_TypeError, "Slice object expected.");
+        return NULL;
+      }
+      PySlice_GetIndices(SWIGPY_SLICE_ARG(slice), (Py_ssize_t)self->size(), &i, &j, &step);
+      std::vector<FESimple::SpriteComponent*,std::allocator< FESimple::SpriteComponent * > >::difference_type id = i;
+      std::vector<FESimple::SpriteComponent*,std::allocator< FESimple::SpriteComponent * > >::difference_type jd = j;
+      return swig::getslice(self, id, jd, step);
+    }
+SWIGINTERN void std_vector_Sl_FESimple_SpriteComponent_Sm__Sg____setitem____SWIG_0(std::vector< FESimple::SpriteComponent * > *self,PySliceObject *slice,std::vector< FESimple::SpriteComponent *,std::allocator< FESimple::SpriteComponent * > > const &v){
+      Py_ssize_t i, j, step;
+      if( !PySlice_Check(slice) ) {
+        SWIG_Error(SWIG_TypeError, "Slice object expected.");
+        return;
+      }
+      PySlice_GetIndices(SWIGPY_SLICE_ARG(slice), (Py_ssize_t)self->size(), &i, &j, &step);
+      std::vector<FESimple::SpriteComponent*,std::allocator< FESimple::SpriteComponent * > >::difference_type id = i;
+      std::vector<FESimple::SpriteComponent*,std::allocator< FESimple::SpriteComponent * > >::difference_type jd = j;
+      swig::setslice(self, id, jd, step, v);
+    }
+SWIGINTERN void std_vector_Sl_FESimple_SpriteComponent_Sm__Sg____setitem____SWIG_1(std::vector< FESimple::SpriteComponent * > *self,PySliceObject *slice){
+      Py_ssize_t i, j, step;
+      if( !PySlice_Check(slice) ) {
+        SWIG_Error(SWIG_TypeError, "Slice object expected.");
+        return;
+      }
+      PySlice_GetIndices(SWIGPY_SLICE_ARG(slice), (Py_ssize_t)self->size(), &i, &j, &step);
+      std::vector<FESimple::SpriteComponent*,std::allocator< FESimple::SpriteComponent * > >::difference_type id = i;
+      std::vector<FESimple::SpriteComponent*,std::allocator< FESimple::SpriteComponent * > >::difference_type jd = j;
+      swig::delslice(self, id, jd, step);
+    }
+SWIGINTERN void std_vector_Sl_FESimple_SpriteComponent_Sm__Sg____delitem____SWIG_1(std::vector< FESimple::SpriteComponent * > *self,PySliceObject *slice){
+      Py_ssize_t i, j, step;
+      if( !PySlice_Check(slice) ) {
+        SWIG_Error(SWIG_TypeError, "Slice object expected.");
+        return;
+      }
+      PySlice_GetIndices(SWIGPY_SLICE_ARG(slice), (Py_ssize_t)self->size(), &i, &j, &step);
+      std::vector<FESimple::SpriteComponent*,std::allocator< FESimple::SpriteComponent * > >::difference_type id = i;
+      std::vector<FESimple::SpriteComponent*,std::allocator< FESimple::SpriteComponent * > >::difference_type jd = j;
+      swig::delslice(self, id, jd, step);
+    }
+SWIGINTERN std::vector< FESimple::SpriteComponent * >::value_type std_vector_Sl_FESimple_SpriteComponent_Sm__Sg____getitem____SWIG_1(std::vector< FESimple::SpriteComponent * > *self,std::vector< FESimple::SpriteComponent * >::difference_type i){
+      return *(swig::cgetpos(self, i));
+    }
+SWIGINTERN void std_vector_Sl_FESimple_SpriteComponent_Sm__Sg____setitem____SWIG_2(std::vector< FESimple::SpriteComponent * > *self,std::vector< FESimple::SpriteComponent * >::difference_type i,std::vector< FESimple::SpriteComponent * >::value_type x){
+      *(swig::getpos(self,i)) = x;
+    }
+SWIGINTERN void std_vector_Sl_FESimple_SpriteComponent_Sm__Sg__append(std::vector< FESimple::SpriteComponent * > *self,std::vector< FESimple::SpriteComponent * >::value_type x){
+      self->push_back(x);
+    }
+
 SWIGINTERN swig_type_info*
 SWIG_pchar_descriptor(void)
 {
@@ -5378,87 +5588,6 @@ namespace swig {
       }
     
 
-namespace swig {
-  template <class SwigPySeq, class Seq>
-  inline void
-  assign(const SwigPySeq& swigpyseq, Seq* seq) {
-    // seq->assign(swigpyseq.begin(), swigpyseq.end()); // not used as not always implemented
-    typedef typename SwigPySeq::value_type value_type;
-    typename SwigPySeq::const_iterator it = swigpyseq.begin();
-    for (;it != swigpyseq.end(); ++it) {
-      seq->insert(seq->end(),(value_type)(*it));
-    }
-  }
-
-  template <class Seq, class T = typename Seq::value_type >
-  struct traits_asptr_stdseq {
-    typedef Seq sequence;
-    typedef T value_type;
-
-    static int asptr(PyObject *obj, sequence **seq) {
-      if (obj == Py_None || SWIG_Python_GetSwigThis(obj)) {
-	sequence *p;
-	if (::SWIG_ConvertPtr(obj,(void**)&p,
-			      swig::type_info<sequence>(),0) == SWIG_OK) {
-	  if (seq) *seq = p;
-	  return SWIG_OLDOBJ;
-	}
-      } else if (PySequence_Check(obj)) {
-	try {
-	  SwigPySequence_Cont<value_type> swigpyseq(obj);
-	  if (seq) {
-	    sequence *pseq = new sequence();
-	    assign(swigpyseq, pseq);
-	    *seq = pseq;
-	    return SWIG_NEWOBJ;
-	  } else {
-	    return swigpyseq.check() ? SWIG_OK : SWIG_ERROR;
-	  }
-	} catch (std::exception& e) {
-	  if (seq) {
-	    if (!PyErr_Occurred()) {
-	      PyErr_SetString(PyExc_TypeError, e.what());
-	    }
-	  }
-	  return SWIG_ERROR;
-	}
-      }
-      return SWIG_ERROR;
-    }
-  };
-
-  template <class Seq, class T = typename Seq::value_type >
-  struct traits_from_stdseq {
-    typedef Seq sequence;
-    typedef T value_type;
-    typedef typename Seq::size_type size_type;
-    typedef typename sequence::const_iterator const_iterator;
-
-    static PyObject *from(const sequence& seq) {
-#ifdef SWIG_PYTHON_EXTRA_NATIVE_CONTAINERS
-      swig_type_info *desc = swig::type_info<sequence>();
-      if (desc && desc->clientdata) {
-	return SWIG_NewPointerObj(new sequence(seq), desc, SWIG_POINTER_OWN);
-      }
-#endif
-      size_type size = seq.size();
-      if (size <= (size_type)INT_MAX) {
-	PyObject *obj = PyTuple_New((int)size);
-	int i = 0;
-	for (const_iterator it = seq.begin();
-	     it != seq.end(); ++it, ++i) {
-	  PyTuple_SetItem(obj,i,swig::from<value_type>(*it));
-	}
-	return obj;
-      } else {
-	PyErr_SetString(PyExc_OverflowError,"sequence size not valid in python");
-	return NULL;
-      }
-    }
-  };
-}
-
-
   namespace swig {
     template <class SwigPySeq, class K, class T, class Compare, class Alloc >
     inline void
@@ -5620,21 +5749,6 @@ SWIGINTERN bool std_map_Sl_std_string_Sc_std_string_Sg____bool__(std::map< std::
 SWIGINTERN std::map< std::string,std::string >::size_type std_map_Sl_std_string_Sc_std_string_Sg____len__(std::map< std::string,std::string > const *self){
       return self->size();
     }
-
-SWIGINTERNINLINE PyObject* 
-SWIG_From_unsigned_SS_long  (unsigned long value)
-{
-  return (value > LONG_MAX) ?
-    PyLong_FromUnsignedLong(value) : PyLong_FromLong(static_cast< long >(value)); 
-}
-
-
-SWIGINTERNINLINE PyObject *
-SWIG_From_size_t  (size_t value)
-{    
-  return SWIG_From_unsigned_SS_long  (static_cast< unsigned long >(value));
-}
-
 SWIGINTERN std::map< std::string,std::string >::mapped_type const &std_map_Sl_std_string_Sc_std_string_Sg____getitem__(std::map< std::string,std::string > *self,std::map< std::string,std::string >::key_type const &key){
       std::map<std::string,std::string,std::less< std::string >,std::allocator< std::pair< std::string const,std::string > > >::const_iterator i = self->find(key);
       if (i != self->end())
@@ -5730,23 +5844,6 @@ SWIGINTERN PyObject *std_map_Sl_std_string_Sc_std_string_Sg__asdict(std::map< st
     template <>  struct traits<FESimple::ControllerBase > {
       typedef pointer_category category;
       static const char* type_name() { return"FESimple::ControllerBase"; }
-    };
-  }
-
-
-  namespace swig {
-    template <class T>
-    struct traits_asptr<std::vector<T> >  {
-      static int asptr(PyObject *obj, std::vector<T> **vec) {
-	return traits_asptr_stdseq<std::vector<T> >::asptr(obj, vec);
-      }
-    };
-    
-    template <class T>
-    struct traits_from<std::vector<T> > {
-      static PyObject *from(const std::vector<T>& vec) {
-	return traits_from_stdseq<std::vector<T> >::from(vec);
-      }
     };
   }
 
@@ -5894,6 +5991,13 @@ SWIG_AsVal_int (PyObject * obj, int *val)
     }
   }  
   return res;
+}
+
+
+SWIGINTERNINLINE PyObject*
+  SWIG_From_int  (int value)
+{
+  return PyInt_FromLong((long) value);
 }
 
 
@@ -7348,6 +7452,1884 @@ SWIGINTERN PyObject *SwigPyIterator_swigregister(PyObject *SWIGUNUSEDPARM(self),
   PyObject *obj;
   if (!PyArg_ParseTuple(args,(char*)"O:swigregister", &obj)) return NULL;
   SWIG_TypeNewClientData(SWIGTYPE_p_swig__SwigPyIterator, SWIG_NewClientData(obj));
+  return SWIG_Py_Void();
+}
+
+SWIGINTERN PyObject *_wrap_vector_sprite_components_iterator(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  std::vector< FESimple::SpriteComponent * > *arg1 = (std::vector< FESimple::SpriteComponent * > *) 0 ;
+  PyObject **arg2 = (PyObject **) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  swig::SwigPyIterator *result = 0 ;
+  
+  arg2 = &obj0;
+  if (!PyArg_ParseTuple(args,(char *)"O:vector_sprite_components_iterator",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_std__vectorT_FESimple__SpriteComponent_p_std__allocatorT_FESimple__SpriteComponent_p_t_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "vector_sprite_components_iterator" "', argument " "1"" of type '" "std::vector< FESimple::SpriteComponent * > *""'"); 
+  }
+  arg1 = reinterpret_cast< std::vector< FESimple::SpriteComponent * > * >(argp1);
+  result = (swig::SwigPyIterator *)std_vector_Sl_FESimple_SpriteComponent_Sm__Sg__iterator(arg1,arg2);
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_swig__SwigPyIterator, SWIG_POINTER_OWN |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_vector_sprite_components___nonzero__(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  std::vector< FESimple::SpriteComponent * > *arg1 = (std::vector< FESimple::SpriteComponent * > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  bool result;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:vector_sprite_components___nonzero__",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_std__vectorT_FESimple__SpriteComponent_p_std__allocatorT_FESimple__SpriteComponent_p_t_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "vector_sprite_components___nonzero__" "', argument " "1"" of type '" "std::vector< FESimple::SpriteComponent * > const *""'"); 
+  }
+  arg1 = reinterpret_cast< std::vector< FESimple::SpriteComponent * > * >(argp1);
+  result = (bool)std_vector_Sl_FESimple_SpriteComponent_Sm__Sg____nonzero__((std::vector< FESimple::SpriteComponent * > const *)arg1);
+  resultobj = SWIG_From_bool(static_cast< bool >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_vector_sprite_components___bool__(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  std::vector< FESimple::SpriteComponent * > *arg1 = (std::vector< FESimple::SpriteComponent * > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  bool result;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:vector_sprite_components___bool__",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_std__vectorT_FESimple__SpriteComponent_p_std__allocatorT_FESimple__SpriteComponent_p_t_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "vector_sprite_components___bool__" "', argument " "1"" of type '" "std::vector< FESimple::SpriteComponent * > const *""'"); 
+  }
+  arg1 = reinterpret_cast< std::vector< FESimple::SpriteComponent * > * >(argp1);
+  result = (bool)std_vector_Sl_FESimple_SpriteComponent_Sm__Sg____bool__((std::vector< FESimple::SpriteComponent * > const *)arg1);
+  resultobj = SWIG_From_bool(static_cast< bool >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_vector_sprite_components___len__(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  std::vector< FESimple::SpriteComponent * > *arg1 = (std::vector< FESimple::SpriteComponent * > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  std::vector< FESimple::SpriteComponent * >::size_type result;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:vector_sprite_components___len__",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_std__vectorT_FESimple__SpriteComponent_p_std__allocatorT_FESimple__SpriteComponent_p_t_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "vector_sprite_components___len__" "', argument " "1"" of type '" "std::vector< FESimple::SpriteComponent * > const *""'"); 
+  }
+  arg1 = reinterpret_cast< std::vector< FESimple::SpriteComponent * > * >(argp1);
+  result = std_vector_Sl_FESimple_SpriteComponent_Sm__Sg____len__((std::vector< FESimple::SpriteComponent * > const *)arg1);
+  resultobj = SWIG_From_size_t(static_cast< size_t >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_vector_sprite_components_pop(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  std::vector< FESimple::SpriteComponent * > *arg1 = (std::vector< FESimple::SpriteComponent * > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  std::vector< FESimple::SpriteComponent * >::value_type result;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:vector_sprite_components_pop",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_std__vectorT_FESimple__SpriteComponent_p_std__allocatorT_FESimple__SpriteComponent_p_t_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "vector_sprite_components_pop" "', argument " "1"" of type '" "std::vector< FESimple::SpriteComponent * > *""'"); 
+  }
+  arg1 = reinterpret_cast< std::vector< FESimple::SpriteComponent * > * >(argp1);
+  try {
+    result = (std::vector< FESimple::SpriteComponent * >::value_type)std_vector_Sl_FESimple_SpriteComponent_Sm__Sg__pop(arg1);
+  }
+  catch(std::out_of_range &_e) {
+    SWIG_exception_fail(SWIG_IndexError, (&_e)->what());
+  }
+  
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_FESimple__SpriteComponent, 0 |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_vector_sprite_components___getslice__(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  std::vector< FESimple::SpriteComponent * > *arg1 = (std::vector< FESimple::SpriteComponent * > *) 0 ;
+  std::vector< FESimple::SpriteComponent * >::difference_type arg2 ;
+  std::vector< FESimple::SpriteComponent * >::difference_type arg3 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  ptrdiff_t val2 ;
+  int ecode2 = 0 ;
+  ptrdiff_t val3 ;
+  int ecode3 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  PyObject * obj2 = 0 ;
+  std::vector< FESimple::SpriteComponent *,std::allocator< FESimple::SpriteComponent * > > *result = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"OOO:vector_sprite_components___getslice__",&obj0,&obj1,&obj2)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_std__vectorT_FESimple__SpriteComponent_p_std__allocatorT_FESimple__SpriteComponent_p_t_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "vector_sprite_components___getslice__" "', argument " "1"" of type '" "std::vector< FESimple::SpriteComponent * > *""'"); 
+  }
+  arg1 = reinterpret_cast< std::vector< FESimple::SpriteComponent * > * >(argp1);
+  ecode2 = SWIG_AsVal_ptrdiff_t(obj1, &val2);
+  if (!SWIG_IsOK(ecode2)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "vector_sprite_components___getslice__" "', argument " "2"" of type '" "std::vector< FESimple::SpriteComponent * >::difference_type""'");
+  } 
+  arg2 = static_cast< std::vector< FESimple::SpriteComponent * >::difference_type >(val2);
+  ecode3 = SWIG_AsVal_ptrdiff_t(obj2, &val3);
+  if (!SWIG_IsOK(ecode3)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode3), "in method '" "vector_sprite_components___getslice__" "', argument " "3"" of type '" "std::vector< FESimple::SpriteComponent * >::difference_type""'");
+  } 
+  arg3 = static_cast< std::vector< FESimple::SpriteComponent * >::difference_type >(val3);
+  try {
+    result = (std::vector< FESimple::SpriteComponent *,std::allocator< FESimple::SpriteComponent * > > *)std_vector_Sl_FESimple_SpriteComponent_Sm__Sg____getslice__(arg1,arg2,arg3);
+  }
+  catch(std::out_of_range &_e) {
+    SWIG_exception_fail(SWIG_IndexError, (&_e)->what());
+  }
+  catch(std::invalid_argument &_e) {
+    SWIG_exception_fail(SWIG_ValueError, (&_e)->what());
+  }
+  
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_std__vectorT_FESimple__SpriteComponent_p_std__allocatorT_FESimple__SpriteComponent_p_t_t, SWIG_POINTER_OWN |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_vector_sprite_components___setslice____SWIG_0(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  std::vector< FESimple::SpriteComponent * > *arg1 = (std::vector< FESimple::SpriteComponent * > *) 0 ;
+  std::vector< FESimple::SpriteComponent * >::difference_type arg2 ;
+  std::vector< FESimple::SpriteComponent * >::difference_type arg3 ;
+  std::vector< FESimple::SpriteComponent *,std::allocator< FESimple::SpriteComponent * > > *arg4 = 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  ptrdiff_t val2 ;
+  int ecode2 = 0 ;
+  ptrdiff_t val3 ;
+  int ecode3 = 0 ;
+  int res4 = SWIG_OLDOBJ ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  PyObject * obj2 = 0 ;
+  PyObject * obj3 = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"OOOO:vector_sprite_components___setslice__",&obj0,&obj1,&obj2,&obj3)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_std__vectorT_FESimple__SpriteComponent_p_std__allocatorT_FESimple__SpriteComponent_p_t_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "vector_sprite_components___setslice__" "', argument " "1"" of type '" "std::vector< FESimple::SpriteComponent * > *""'"); 
+  }
+  arg1 = reinterpret_cast< std::vector< FESimple::SpriteComponent * > * >(argp1);
+  ecode2 = SWIG_AsVal_ptrdiff_t(obj1, &val2);
+  if (!SWIG_IsOK(ecode2)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "vector_sprite_components___setslice__" "', argument " "2"" of type '" "std::vector< FESimple::SpriteComponent * >::difference_type""'");
+  } 
+  arg2 = static_cast< std::vector< FESimple::SpriteComponent * >::difference_type >(val2);
+  ecode3 = SWIG_AsVal_ptrdiff_t(obj2, &val3);
+  if (!SWIG_IsOK(ecode3)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode3), "in method '" "vector_sprite_components___setslice__" "', argument " "3"" of type '" "std::vector< FESimple::SpriteComponent * >::difference_type""'");
+  } 
+  arg3 = static_cast< std::vector< FESimple::SpriteComponent * >::difference_type >(val3);
+  {
+    std::vector<FESimple::SpriteComponent*,std::allocator< FESimple::SpriteComponent * > > *ptr = (std::vector<FESimple::SpriteComponent*,std::allocator< FESimple::SpriteComponent * > > *)0;
+    res4 = swig::asptr(obj3, &ptr);
+    if (!SWIG_IsOK(res4)) {
+      SWIG_exception_fail(SWIG_ArgError(res4), "in method '" "vector_sprite_components___setslice__" "', argument " "4"" of type '" "std::vector< FESimple::SpriteComponent *,std::allocator< FESimple::SpriteComponent * > > const &""'"); 
+    }
+    if (!ptr) {
+      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "vector_sprite_components___setslice__" "', argument " "4"" of type '" "std::vector< FESimple::SpriteComponent *,std::allocator< FESimple::SpriteComponent * > > const &""'"); 
+    }
+    arg4 = ptr;
+  }
+  try {
+    std_vector_Sl_FESimple_SpriteComponent_Sm__Sg____setslice____SWIG_0(arg1,arg2,arg3,(std::vector< FESimple::SpriteComponent *,std::allocator< FESimple::SpriteComponent * > > const &)*arg4);
+  }
+  catch(std::out_of_range &_e) {
+    SWIG_exception_fail(SWIG_IndexError, (&_e)->what());
+  }
+  catch(std::invalid_argument &_e) {
+    SWIG_exception_fail(SWIG_ValueError, (&_e)->what());
+  }
+  
+  resultobj = SWIG_Py_Void();
+  if (SWIG_IsNewObj(res4)) delete arg4;
+  return resultobj;
+fail:
+  if (SWIG_IsNewObj(res4)) delete arg4;
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_vector_sprite_components___setslice____SWIG_1(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  std::vector< FESimple::SpriteComponent * > *arg1 = (std::vector< FESimple::SpriteComponent * > *) 0 ;
+  std::vector< FESimple::SpriteComponent * >::difference_type arg2 ;
+  std::vector< FESimple::SpriteComponent * >::difference_type arg3 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  ptrdiff_t val2 ;
+  int ecode2 = 0 ;
+  ptrdiff_t val3 ;
+  int ecode3 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  PyObject * obj2 = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"OOO:vector_sprite_components___setslice__",&obj0,&obj1,&obj2)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_std__vectorT_FESimple__SpriteComponent_p_std__allocatorT_FESimple__SpriteComponent_p_t_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "vector_sprite_components___setslice__" "', argument " "1"" of type '" "std::vector< FESimple::SpriteComponent * > *""'"); 
+  }
+  arg1 = reinterpret_cast< std::vector< FESimple::SpriteComponent * > * >(argp1);
+  ecode2 = SWIG_AsVal_ptrdiff_t(obj1, &val2);
+  if (!SWIG_IsOK(ecode2)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "vector_sprite_components___setslice__" "', argument " "2"" of type '" "std::vector< FESimple::SpriteComponent * >::difference_type""'");
+  } 
+  arg2 = static_cast< std::vector< FESimple::SpriteComponent * >::difference_type >(val2);
+  ecode3 = SWIG_AsVal_ptrdiff_t(obj2, &val3);
+  if (!SWIG_IsOK(ecode3)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode3), "in method '" "vector_sprite_components___setslice__" "', argument " "3"" of type '" "std::vector< FESimple::SpriteComponent * >::difference_type""'");
+  } 
+  arg3 = static_cast< std::vector< FESimple::SpriteComponent * >::difference_type >(val3);
+  try {
+    std_vector_Sl_FESimple_SpriteComponent_Sm__Sg____setslice____SWIG_0(arg1,arg2,arg3);
+  }
+  catch(std::out_of_range &_e) {
+    SWIG_exception_fail(SWIG_IndexError, (&_e)->what());
+  }
+  catch(std::invalid_argument &_e) {
+    SWIG_exception_fail(SWIG_ValueError, (&_e)->what());
+  }
+  
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_vector_sprite_components___setslice__(PyObject *self, PyObject *args) {
+  int argc;
+  PyObject *argv[5];
+  int ii;
+  
+  if (!PyTuple_Check(args)) SWIG_fail;
+  argc = args ? (int)PyObject_Length(args) : 0;
+  for (ii = 0; (ii < 4) && (ii < argc); ii++) {
+    argv[ii] = PyTuple_GET_ITEM(args,ii);
+  }
+  if (argc == 3) {
+    int _v;
+    int res = swig::asptr(argv[0], (std::vector<FESimple::SpriteComponent*,std::allocator< FESimple::SpriteComponent * > >**)(0));
+    _v = SWIG_CheckState(res);
+    if (_v) {
+      {
+        int res = SWIG_AsVal_ptrdiff_t(argv[1], NULL);
+        _v = SWIG_CheckState(res);
+      }
+      if (_v) {
+        {
+          int res = SWIG_AsVal_ptrdiff_t(argv[2], NULL);
+          _v = SWIG_CheckState(res);
+        }
+        if (_v) {
+          return _wrap_vector_sprite_components___setslice____SWIG_1(self, args);
+        }
+      }
+    }
+  }
+  if (argc == 4) {
+    int _v;
+    int res = swig::asptr(argv[0], (std::vector<FESimple::SpriteComponent*,std::allocator< FESimple::SpriteComponent * > >**)(0));
+    _v = SWIG_CheckState(res);
+    if (_v) {
+      {
+        int res = SWIG_AsVal_ptrdiff_t(argv[1], NULL);
+        _v = SWIG_CheckState(res);
+      }
+      if (_v) {
+        {
+          int res = SWIG_AsVal_ptrdiff_t(argv[2], NULL);
+          _v = SWIG_CheckState(res);
+        }
+        if (_v) {
+          int res = swig::asptr(argv[3], (std::vector<FESimple::SpriteComponent*,std::allocator< FESimple::SpriteComponent * > >**)(0));
+          _v = SWIG_CheckState(res);
+          if (_v) {
+            return _wrap_vector_sprite_components___setslice____SWIG_0(self, args);
+          }
+        }
+      }
+    }
+  }
+  
+fail:
+  SWIG_SetErrorMsg(PyExc_NotImplementedError,"Wrong number or type of arguments for overloaded function 'vector_sprite_components___setslice__'.\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    std::vector< FESimple::SpriteComponent * >::__setslice__(std::vector< FESimple::SpriteComponent * >::difference_type,std::vector< FESimple::SpriteComponent * >::difference_type,std::vector< FESimple::SpriteComponent *,std::allocator< FESimple::SpriteComponent * > > const &)\n"
+    "    std::vector< FESimple::SpriteComponent * >::__setslice__(std::vector< FESimple::SpriteComponent * >::difference_type,std::vector< FESimple::SpriteComponent * >::difference_type)\n");
+  return 0;
+}
+
+
+SWIGINTERN PyObject *_wrap_vector_sprite_components___delslice__(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  std::vector< FESimple::SpriteComponent * > *arg1 = (std::vector< FESimple::SpriteComponent * > *) 0 ;
+  std::vector< FESimple::SpriteComponent * >::difference_type arg2 ;
+  std::vector< FESimple::SpriteComponent * >::difference_type arg3 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  ptrdiff_t val2 ;
+  int ecode2 = 0 ;
+  ptrdiff_t val3 ;
+  int ecode3 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  PyObject * obj2 = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"OOO:vector_sprite_components___delslice__",&obj0,&obj1,&obj2)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_std__vectorT_FESimple__SpriteComponent_p_std__allocatorT_FESimple__SpriteComponent_p_t_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "vector_sprite_components___delslice__" "', argument " "1"" of type '" "std::vector< FESimple::SpriteComponent * > *""'"); 
+  }
+  arg1 = reinterpret_cast< std::vector< FESimple::SpriteComponent * > * >(argp1);
+  ecode2 = SWIG_AsVal_ptrdiff_t(obj1, &val2);
+  if (!SWIG_IsOK(ecode2)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "vector_sprite_components___delslice__" "', argument " "2"" of type '" "std::vector< FESimple::SpriteComponent * >::difference_type""'");
+  } 
+  arg2 = static_cast< std::vector< FESimple::SpriteComponent * >::difference_type >(val2);
+  ecode3 = SWIG_AsVal_ptrdiff_t(obj2, &val3);
+  if (!SWIG_IsOK(ecode3)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode3), "in method '" "vector_sprite_components___delslice__" "', argument " "3"" of type '" "std::vector< FESimple::SpriteComponent * >::difference_type""'");
+  } 
+  arg3 = static_cast< std::vector< FESimple::SpriteComponent * >::difference_type >(val3);
+  try {
+    std_vector_Sl_FESimple_SpriteComponent_Sm__Sg____delslice__(arg1,arg2,arg3);
+  }
+  catch(std::out_of_range &_e) {
+    SWIG_exception_fail(SWIG_IndexError, (&_e)->what());
+  }
+  catch(std::invalid_argument &_e) {
+    SWIG_exception_fail(SWIG_ValueError, (&_e)->what());
+  }
+  
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_vector_sprite_components___delitem____SWIG_0(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  std::vector< FESimple::SpriteComponent * > *arg1 = (std::vector< FESimple::SpriteComponent * > *) 0 ;
+  std::vector< FESimple::SpriteComponent * >::difference_type arg2 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  ptrdiff_t val2 ;
+  int ecode2 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"OO:vector_sprite_components___delitem__",&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_std__vectorT_FESimple__SpriteComponent_p_std__allocatorT_FESimple__SpriteComponent_p_t_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "vector_sprite_components___delitem__" "', argument " "1"" of type '" "std::vector< FESimple::SpriteComponent * > *""'"); 
+  }
+  arg1 = reinterpret_cast< std::vector< FESimple::SpriteComponent * > * >(argp1);
+  ecode2 = SWIG_AsVal_ptrdiff_t(obj1, &val2);
+  if (!SWIG_IsOK(ecode2)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "vector_sprite_components___delitem__" "', argument " "2"" of type '" "std::vector< FESimple::SpriteComponent * >::difference_type""'");
+  } 
+  arg2 = static_cast< std::vector< FESimple::SpriteComponent * >::difference_type >(val2);
+  try {
+    std_vector_Sl_FESimple_SpriteComponent_Sm__Sg____delitem____SWIG_0(arg1,arg2);
+  }
+  catch(std::out_of_range &_e) {
+    SWIG_exception_fail(SWIG_IndexError, (&_e)->what());
+  }
+  
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_vector_sprite_components___getitem____SWIG_0(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  std::vector< FESimple::SpriteComponent * > *arg1 = (std::vector< FESimple::SpriteComponent * > *) 0 ;
+  PySliceObject *arg2 = (PySliceObject *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  std::vector< FESimple::SpriteComponent *,std::allocator< FESimple::SpriteComponent * > > *result = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"OO:vector_sprite_components___getitem__",&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_std__vectorT_FESimple__SpriteComponent_p_std__allocatorT_FESimple__SpriteComponent_p_t_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "vector_sprite_components___getitem__" "', argument " "1"" of type '" "std::vector< FESimple::SpriteComponent * > *""'"); 
+  }
+  arg1 = reinterpret_cast< std::vector< FESimple::SpriteComponent * > * >(argp1);
+  {
+    if (!PySlice_Check(obj1)) {
+      SWIG_exception_fail(SWIG_ArgError(SWIG_TypeError), "in method '" "vector_sprite_components___getitem__" "', argument " "2"" of type '" "PySliceObject *""'");
+    }
+    arg2 = (PySliceObject *) obj1;
+  }
+  try {
+    result = (std::vector< FESimple::SpriteComponent *,std::allocator< FESimple::SpriteComponent * > > *)std_vector_Sl_FESimple_SpriteComponent_Sm__Sg____getitem____SWIG_0(arg1,arg2);
+  }
+  catch(std::out_of_range &_e) {
+    SWIG_exception_fail(SWIG_IndexError, (&_e)->what());
+  }
+  catch(std::invalid_argument &_e) {
+    SWIG_exception_fail(SWIG_ValueError, (&_e)->what());
+  }
+  
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_std__vectorT_FESimple__SpriteComponent_p_std__allocatorT_FESimple__SpriteComponent_p_t_t, SWIG_POINTER_OWN |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_vector_sprite_components___setitem____SWIG_0(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  std::vector< FESimple::SpriteComponent * > *arg1 = (std::vector< FESimple::SpriteComponent * > *) 0 ;
+  PySliceObject *arg2 = (PySliceObject *) 0 ;
+  std::vector< FESimple::SpriteComponent *,std::allocator< FESimple::SpriteComponent * > > *arg3 = 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  int res3 = SWIG_OLDOBJ ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  PyObject * obj2 = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"OOO:vector_sprite_components___setitem__",&obj0,&obj1,&obj2)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_std__vectorT_FESimple__SpriteComponent_p_std__allocatorT_FESimple__SpriteComponent_p_t_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "vector_sprite_components___setitem__" "', argument " "1"" of type '" "std::vector< FESimple::SpriteComponent * > *""'"); 
+  }
+  arg1 = reinterpret_cast< std::vector< FESimple::SpriteComponent * > * >(argp1);
+  {
+    if (!PySlice_Check(obj1)) {
+      SWIG_exception_fail(SWIG_ArgError(SWIG_TypeError), "in method '" "vector_sprite_components___setitem__" "', argument " "2"" of type '" "PySliceObject *""'");
+    }
+    arg2 = (PySliceObject *) obj1;
+  }
+  {
+    std::vector<FESimple::SpriteComponent*,std::allocator< FESimple::SpriteComponent * > > *ptr = (std::vector<FESimple::SpriteComponent*,std::allocator< FESimple::SpriteComponent * > > *)0;
+    res3 = swig::asptr(obj2, &ptr);
+    if (!SWIG_IsOK(res3)) {
+      SWIG_exception_fail(SWIG_ArgError(res3), "in method '" "vector_sprite_components___setitem__" "', argument " "3"" of type '" "std::vector< FESimple::SpriteComponent *,std::allocator< FESimple::SpriteComponent * > > const &""'"); 
+    }
+    if (!ptr) {
+      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "vector_sprite_components___setitem__" "', argument " "3"" of type '" "std::vector< FESimple::SpriteComponent *,std::allocator< FESimple::SpriteComponent * > > const &""'"); 
+    }
+    arg3 = ptr;
+  }
+  try {
+    std_vector_Sl_FESimple_SpriteComponent_Sm__Sg____setitem____SWIG_0(arg1,arg2,(std::vector< FESimple::SpriteComponent *,std::allocator< FESimple::SpriteComponent * > > const &)*arg3);
+  }
+  catch(std::out_of_range &_e) {
+    SWIG_exception_fail(SWIG_IndexError, (&_e)->what());
+  }
+  catch(std::invalid_argument &_e) {
+    SWIG_exception_fail(SWIG_ValueError, (&_e)->what());
+  }
+  
+  resultobj = SWIG_Py_Void();
+  if (SWIG_IsNewObj(res3)) delete arg3;
+  return resultobj;
+fail:
+  if (SWIG_IsNewObj(res3)) delete arg3;
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_vector_sprite_components___setitem____SWIG_1(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  std::vector< FESimple::SpriteComponent * > *arg1 = (std::vector< FESimple::SpriteComponent * > *) 0 ;
+  PySliceObject *arg2 = (PySliceObject *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"OO:vector_sprite_components___setitem__",&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_std__vectorT_FESimple__SpriteComponent_p_std__allocatorT_FESimple__SpriteComponent_p_t_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "vector_sprite_components___setitem__" "', argument " "1"" of type '" "std::vector< FESimple::SpriteComponent * > *""'"); 
+  }
+  arg1 = reinterpret_cast< std::vector< FESimple::SpriteComponent * > * >(argp1);
+  {
+    if (!PySlice_Check(obj1)) {
+      SWIG_exception_fail(SWIG_ArgError(SWIG_TypeError), "in method '" "vector_sprite_components___setitem__" "', argument " "2"" of type '" "PySliceObject *""'");
+    }
+    arg2 = (PySliceObject *) obj1;
+  }
+  try {
+    std_vector_Sl_FESimple_SpriteComponent_Sm__Sg____setitem____SWIG_1(arg1,arg2);
+  }
+  catch(std::out_of_range &_e) {
+    SWIG_exception_fail(SWIG_IndexError, (&_e)->what());
+  }
+  catch(std::invalid_argument &_e) {
+    SWIG_exception_fail(SWIG_ValueError, (&_e)->what());
+  }
+  
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_vector_sprite_components___delitem____SWIG_1(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  std::vector< FESimple::SpriteComponent * > *arg1 = (std::vector< FESimple::SpriteComponent * > *) 0 ;
+  PySliceObject *arg2 = (PySliceObject *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"OO:vector_sprite_components___delitem__",&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_std__vectorT_FESimple__SpriteComponent_p_std__allocatorT_FESimple__SpriteComponent_p_t_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "vector_sprite_components___delitem__" "', argument " "1"" of type '" "std::vector< FESimple::SpriteComponent * > *""'"); 
+  }
+  arg1 = reinterpret_cast< std::vector< FESimple::SpriteComponent * > * >(argp1);
+  {
+    if (!PySlice_Check(obj1)) {
+      SWIG_exception_fail(SWIG_ArgError(SWIG_TypeError), "in method '" "vector_sprite_components___delitem__" "', argument " "2"" of type '" "PySliceObject *""'");
+    }
+    arg2 = (PySliceObject *) obj1;
+  }
+  try {
+    std_vector_Sl_FESimple_SpriteComponent_Sm__Sg____delitem____SWIG_1(arg1,arg2);
+  }
+  catch(std::out_of_range &_e) {
+    SWIG_exception_fail(SWIG_IndexError, (&_e)->what());
+  }
+  catch(std::invalid_argument &_e) {
+    SWIG_exception_fail(SWIG_ValueError, (&_e)->what());
+  }
+  
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_vector_sprite_components___delitem__(PyObject *self, PyObject *args) {
+  int argc;
+  PyObject *argv[3];
+  int ii;
+  
+  if (!PyTuple_Check(args)) SWIG_fail;
+  argc = args ? (int)PyObject_Length(args) : 0;
+  for (ii = 0; (ii < 2) && (ii < argc); ii++) {
+    argv[ii] = PyTuple_GET_ITEM(args,ii);
+  }
+  if (argc == 2) {
+    int _v;
+    int res = swig::asptr(argv[0], (std::vector<FESimple::SpriteComponent*,std::allocator< FESimple::SpriteComponent * > >**)(0));
+    _v = SWIG_CheckState(res);
+    if (_v) {
+      {
+        _v = PySlice_Check(argv[1]);
+      }
+      if (_v) {
+        return _wrap_vector_sprite_components___delitem____SWIG_1(self, args);
+      }
+    }
+  }
+  if (argc == 2) {
+    int _v;
+    int res = swig::asptr(argv[0], (std::vector<FESimple::SpriteComponent*,std::allocator< FESimple::SpriteComponent * > >**)(0));
+    _v = SWIG_CheckState(res);
+    if (_v) {
+      {
+        int res = SWIG_AsVal_ptrdiff_t(argv[1], NULL);
+        _v = SWIG_CheckState(res);
+      }
+      if (_v) {
+        return _wrap_vector_sprite_components___delitem____SWIG_0(self, args);
+      }
+    }
+  }
+  
+fail:
+  SWIG_SetErrorMsg(PyExc_NotImplementedError,"Wrong number or type of arguments for overloaded function 'vector_sprite_components___delitem__'.\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    std::vector< FESimple::SpriteComponent * >::__delitem__(std::vector< FESimple::SpriteComponent * >::difference_type)\n"
+    "    std::vector< FESimple::SpriteComponent * >::__delitem__(PySliceObject *)\n");
+  return 0;
+}
+
+
+SWIGINTERN PyObject *_wrap_vector_sprite_components___getitem____SWIG_1(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  std::vector< FESimple::SpriteComponent * > *arg1 = (std::vector< FESimple::SpriteComponent * > *) 0 ;
+  std::vector< FESimple::SpriteComponent * >::difference_type arg2 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  ptrdiff_t val2 ;
+  int ecode2 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  std::vector< FESimple::SpriteComponent * >::value_type result;
+  
+  if (!PyArg_ParseTuple(args,(char *)"OO:vector_sprite_components___getitem__",&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_std__vectorT_FESimple__SpriteComponent_p_std__allocatorT_FESimple__SpriteComponent_p_t_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "vector_sprite_components___getitem__" "', argument " "1"" of type '" "std::vector< FESimple::SpriteComponent * > *""'"); 
+  }
+  arg1 = reinterpret_cast< std::vector< FESimple::SpriteComponent * > * >(argp1);
+  ecode2 = SWIG_AsVal_ptrdiff_t(obj1, &val2);
+  if (!SWIG_IsOK(ecode2)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "vector_sprite_components___getitem__" "', argument " "2"" of type '" "std::vector< FESimple::SpriteComponent * >::difference_type""'");
+  } 
+  arg2 = static_cast< std::vector< FESimple::SpriteComponent * >::difference_type >(val2);
+  try {
+    result = (std::vector< FESimple::SpriteComponent * >::value_type)std_vector_Sl_FESimple_SpriteComponent_Sm__Sg____getitem____SWIG_1(arg1,arg2);
+  }
+  catch(std::out_of_range &_e) {
+    SWIG_exception_fail(SWIG_IndexError, (&_e)->what());
+  }
+  
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_FESimple__SpriteComponent, 0 |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_vector_sprite_components___getitem__(PyObject *self, PyObject *args) {
+  int argc;
+  PyObject *argv[3];
+  int ii;
+  
+  if (!PyTuple_Check(args)) SWIG_fail;
+  argc = args ? (int)PyObject_Length(args) : 0;
+  for (ii = 0; (ii < 2) && (ii < argc); ii++) {
+    argv[ii] = PyTuple_GET_ITEM(args,ii);
+  }
+  if (argc == 2) {
+    int _v;
+    int res = swig::asptr(argv[0], (std::vector<FESimple::SpriteComponent*,std::allocator< FESimple::SpriteComponent * > >**)(0));
+    _v = SWIG_CheckState(res);
+    if (_v) {
+      {
+        _v = PySlice_Check(argv[1]);
+      }
+      if (_v) {
+        return _wrap_vector_sprite_components___getitem____SWIG_0(self, args);
+      }
+    }
+  }
+  if (argc == 2) {
+    int _v;
+    int res = swig::asptr(argv[0], (std::vector<FESimple::SpriteComponent*,std::allocator< FESimple::SpriteComponent * > >**)(0));
+    _v = SWIG_CheckState(res);
+    if (_v) {
+      {
+        int res = SWIG_AsVal_ptrdiff_t(argv[1], NULL);
+        _v = SWIG_CheckState(res);
+      }
+      if (_v) {
+        return _wrap_vector_sprite_components___getitem____SWIG_1(self, args);
+      }
+    }
+  }
+  
+fail:
+  SWIG_SetErrorMsg(PyExc_NotImplementedError,"Wrong number or type of arguments for overloaded function 'vector_sprite_components___getitem__'.\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    std::vector< FESimple::SpriteComponent * >::__getitem__(PySliceObject *)\n"
+    "    std::vector< FESimple::SpriteComponent * >::__getitem__(std::vector< FESimple::SpriteComponent * >::difference_type)\n");
+  return 0;
+}
+
+
+SWIGINTERN PyObject *_wrap_vector_sprite_components___setitem____SWIG_2(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  std::vector< FESimple::SpriteComponent * > *arg1 = (std::vector< FESimple::SpriteComponent * > *) 0 ;
+  std::vector< FESimple::SpriteComponent * >::difference_type arg2 ;
+  std::vector< FESimple::SpriteComponent * >::value_type arg3 = (std::vector< FESimple::SpriteComponent * >::value_type) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  ptrdiff_t val2 ;
+  int ecode2 = 0 ;
+  void *argp3 = 0 ;
+  int res3 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  PyObject * obj2 = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"OOO:vector_sprite_components___setitem__",&obj0,&obj1,&obj2)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_std__vectorT_FESimple__SpriteComponent_p_std__allocatorT_FESimple__SpriteComponent_p_t_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "vector_sprite_components___setitem__" "', argument " "1"" of type '" "std::vector< FESimple::SpriteComponent * > *""'"); 
+  }
+  arg1 = reinterpret_cast< std::vector< FESimple::SpriteComponent * > * >(argp1);
+  ecode2 = SWIG_AsVal_ptrdiff_t(obj1, &val2);
+  if (!SWIG_IsOK(ecode2)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "vector_sprite_components___setitem__" "', argument " "2"" of type '" "std::vector< FESimple::SpriteComponent * >::difference_type""'");
+  } 
+  arg2 = static_cast< std::vector< FESimple::SpriteComponent * >::difference_type >(val2);
+  res3 = SWIG_ConvertPtr(obj2, &argp3,SWIGTYPE_p_FESimple__SpriteComponent, 0 |  0 );
+  if (!SWIG_IsOK(res3)) {
+    SWIG_exception_fail(SWIG_ArgError(res3), "in method '" "vector_sprite_components___setitem__" "', argument " "3"" of type '" "std::vector< FESimple::SpriteComponent * >::value_type""'"); 
+  }
+  arg3 = reinterpret_cast< std::vector< FESimple::SpriteComponent * >::value_type >(argp3);
+  try {
+    std_vector_Sl_FESimple_SpriteComponent_Sm__Sg____setitem____SWIG_2(arg1,arg2,arg3);
+  }
+  catch(std::out_of_range &_e) {
+    SWIG_exception_fail(SWIG_IndexError, (&_e)->what());
+  }
+  
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_vector_sprite_components___setitem__(PyObject *self, PyObject *args) {
+  int argc;
+  PyObject *argv[4];
+  int ii;
+  
+  if (!PyTuple_Check(args)) SWIG_fail;
+  argc = args ? (int)PyObject_Length(args) : 0;
+  for (ii = 0; (ii < 3) && (ii < argc); ii++) {
+    argv[ii] = PyTuple_GET_ITEM(args,ii);
+  }
+  if (argc == 2) {
+    int _v;
+    int res = swig::asptr(argv[0], (std::vector<FESimple::SpriteComponent*,std::allocator< FESimple::SpriteComponent * > >**)(0));
+    _v = SWIG_CheckState(res);
+    if (_v) {
+      {
+        _v = PySlice_Check(argv[1]);
+      }
+      if (_v) {
+        return _wrap_vector_sprite_components___setitem____SWIG_1(self, args);
+      }
+    }
+  }
+  if (argc == 3) {
+    int _v;
+    int res = swig::asptr(argv[0], (std::vector<FESimple::SpriteComponent*,std::allocator< FESimple::SpriteComponent * > >**)(0));
+    _v = SWIG_CheckState(res);
+    if (_v) {
+      {
+        _v = PySlice_Check(argv[1]);
+      }
+      if (_v) {
+        int res = swig::asptr(argv[2], (std::vector<FESimple::SpriteComponent*,std::allocator< FESimple::SpriteComponent * > >**)(0));
+        _v = SWIG_CheckState(res);
+        if (_v) {
+          return _wrap_vector_sprite_components___setitem____SWIG_0(self, args);
+        }
+      }
+    }
+  }
+  if (argc == 3) {
+    int _v;
+    int res = swig::asptr(argv[0], (std::vector<FESimple::SpriteComponent*,std::allocator< FESimple::SpriteComponent * > >**)(0));
+    _v = SWIG_CheckState(res);
+    if (_v) {
+      {
+        int res = SWIG_AsVal_ptrdiff_t(argv[1], NULL);
+        _v = SWIG_CheckState(res);
+      }
+      if (_v) {
+        void *vptr = 0;
+        int res = SWIG_ConvertPtr(argv[2], &vptr, SWIGTYPE_p_FESimple__SpriteComponent, 0);
+        _v = SWIG_CheckState(res);
+        if (_v) {
+          return _wrap_vector_sprite_components___setitem____SWIG_2(self, args);
+        }
+      }
+    }
+  }
+  
+fail:
+  SWIG_SetErrorMsg(PyExc_NotImplementedError,"Wrong number or type of arguments for overloaded function 'vector_sprite_components___setitem__'.\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    std::vector< FESimple::SpriteComponent * >::__setitem__(PySliceObject *,std::vector< FESimple::SpriteComponent *,std::allocator< FESimple::SpriteComponent * > > const &)\n"
+    "    std::vector< FESimple::SpriteComponent * >::__setitem__(PySliceObject *)\n"
+    "    std::vector< FESimple::SpriteComponent * >::__setitem__(std::vector< FESimple::SpriteComponent * >::difference_type,std::vector< FESimple::SpriteComponent * >::value_type)\n");
+  return 0;
+}
+
+
+SWIGINTERN PyObject *_wrap_vector_sprite_components_append(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  std::vector< FESimple::SpriteComponent * > *arg1 = (std::vector< FESimple::SpriteComponent * > *) 0 ;
+  std::vector< FESimple::SpriteComponent * >::value_type arg2 = (std::vector< FESimple::SpriteComponent * >::value_type) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 = 0 ;
+  int res2 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"OO:vector_sprite_components_append",&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_std__vectorT_FESimple__SpriteComponent_p_std__allocatorT_FESimple__SpriteComponent_p_t_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "vector_sprite_components_append" "', argument " "1"" of type '" "std::vector< FESimple::SpriteComponent * > *""'"); 
+  }
+  arg1 = reinterpret_cast< std::vector< FESimple::SpriteComponent * > * >(argp1);
+  res2 = SWIG_ConvertPtr(obj1, &argp2,SWIGTYPE_p_FESimple__SpriteComponent, 0 |  0 );
+  if (!SWIG_IsOK(res2)) {
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "vector_sprite_components_append" "', argument " "2"" of type '" "std::vector< FESimple::SpriteComponent * >::value_type""'"); 
+  }
+  arg2 = reinterpret_cast< std::vector< FESimple::SpriteComponent * >::value_type >(argp2);
+  std_vector_Sl_FESimple_SpriteComponent_Sm__Sg__append(arg1,arg2);
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_new_vector_sprite_components__SWIG_0(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  std::vector< FESimple::SpriteComponent * > *result = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)":new_vector_sprite_components")) SWIG_fail;
+  result = (std::vector< FESimple::SpriteComponent * > *)new std::vector< FESimple::SpriteComponent * >();
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_std__vectorT_FESimple__SpriteComponent_p_std__allocatorT_FESimple__SpriteComponent_p_t_t, SWIG_POINTER_NEW |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_new_vector_sprite_components__SWIG_1(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  std::vector< FESimple::SpriteComponent * > *arg1 = 0 ;
+  int res1 = SWIG_OLDOBJ ;
+  PyObject * obj0 = 0 ;
+  std::vector< FESimple::SpriteComponent * > *result = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:new_vector_sprite_components",&obj0)) SWIG_fail;
+  {
+    std::vector<FESimple::SpriteComponent*,std::allocator< FESimple::SpriteComponent * > > *ptr = (std::vector<FESimple::SpriteComponent*,std::allocator< FESimple::SpriteComponent * > > *)0;
+    res1 = swig::asptr(obj0, &ptr);
+    if (!SWIG_IsOK(res1)) {
+      SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "new_vector_sprite_components" "', argument " "1"" of type '" "std::vector< FESimple::SpriteComponent * > const &""'"); 
+    }
+    if (!ptr) {
+      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "new_vector_sprite_components" "', argument " "1"" of type '" "std::vector< FESimple::SpriteComponent * > const &""'"); 
+    }
+    arg1 = ptr;
+  }
+  result = (std::vector< FESimple::SpriteComponent * > *)new std::vector< FESimple::SpriteComponent * >((std::vector< FESimple::SpriteComponent * > const &)*arg1);
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_std__vectorT_FESimple__SpriteComponent_p_std__allocatorT_FESimple__SpriteComponent_p_t_t, SWIG_POINTER_NEW |  0 );
+  if (SWIG_IsNewObj(res1)) delete arg1;
+  return resultobj;
+fail:
+  if (SWIG_IsNewObj(res1)) delete arg1;
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_vector_sprite_components_empty(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  std::vector< FESimple::SpriteComponent * > *arg1 = (std::vector< FESimple::SpriteComponent * > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  bool result;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:vector_sprite_components_empty",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_std__vectorT_FESimple__SpriteComponent_p_std__allocatorT_FESimple__SpriteComponent_p_t_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "vector_sprite_components_empty" "', argument " "1"" of type '" "std::vector< FESimple::SpriteComponent * > const *""'"); 
+  }
+  arg1 = reinterpret_cast< std::vector< FESimple::SpriteComponent * > * >(argp1);
+  result = (bool)((std::vector< FESimple::SpriteComponent * > const *)arg1)->empty();
+  resultobj = SWIG_From_bool(static_cast< bool >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_vector_sprite_components_size(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  std::vector< FESimple::SpriteComponent * > *arg1 = (std::vector< FESimple::SpriteComponent * > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  std::vector< FESimple::SpriteComponent * >::size_type result;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:vector_sprite_components_size",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_std__vectorT_FESimple__SpriteComponent_p_std__allocatorT_FESimple__SpriteComponent_p_t_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "vector_sprite_components_size" "', argument " "1"" of type '" "std::vector< FESimple::SpriteComponent * > const *""'"); 
+  }
+  arg1 = reinterpret_cast< std::vector< FESimple::SpriteComponent * > * >(argp1);
+  result = ((std::vector< FESimple::SpriteComponent * > const *)arg1)->size();
+  resultobj = SWIG_From_size_t(static_cast< size_t >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_vector_sprite_components_clear(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  std::vector< FESimple::SpriteComponent * > *arg1 = (std::vector< FESimple::SpriteComponent * > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:vector_sprite_components_clear",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_std__vectorT_FESimple__SpriteComponent_p_std__allocatorT_FESimple__SpriteComponent_p_t_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "vector_sprite_components_clear" "', argument " "1"" of type '" "std::vector< FESimple::SpriteComponent * > *""'"); 
+  }
+  arg1 = reinterpret_cast< std::vector< FESimple::SpriteComponent * > * >(argp1);
+  (arg1)->clear();
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_vector_sprite_components_swap(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  std::vector< FESimple::SpriteComponent * > *arg1 = (std::vector< FESimple::SpriteComponent * > *) 0 ;
+  std::vector< FESimple::SpriteComponent * > *arg2 = 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 = 0 ;
+  int res2 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"OO:vector_sprite_components_swap",&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_std__vectorT_FESimple__SpriteComponent_p_std__allocatorT_FESimple__SpriteComponent_p_t_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "vector_sprite_components_swap" "', argument " "1"" of type '" "std::vector< FESimple::SpriteComponent * > *""'"); 
+  }
+  arg1 = reinterpret_cast< std::vector< FESimple::SpriteComponent * > * >(argp1);
+  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_std__vectorT_FESimple__SpriteComponent_p_std__allocatorT_FESimple__SpriteComponent_p_t_t,  0 );
+  if (!SWIG_IsOK(res2)) {
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "vector_sprite_components_swap" "', argument " "2"" of type '" "std::vector< FESimple::SpriteComponent * > &""'"); 
+  }
+  if (!argp2) {
+    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "vector_sprite_components_swap" "', argument " "2"" of type '" "std::vector< FESimple::SpriteComponent * > &""'"); 
+  }
+  arg2 = reinterpret_cast< std::vector< FESimple::SpriteComponent * > * >(argp2);
+  (arg1)->swap(*arg2);
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_vector_sprite_components_get_allocator(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  std::vector< FESimple::SpriteComponent * > *arg1 = (std::vector< FESimple::SpriteComponent * > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  SwigValueWrapper< std::allocator< FESimple::SpriteComponent * > > result;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:vector_sprite_components_get_allocator",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_std__vectorT_FESimple__SpriteComponent_p_std__allocatorT_FESimple__SpriteComponent_p_t_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "vector_sprite_components_get_allocator" "', argument " "1"" of type '" "std::vector< FESimple::SpriteComponent * > const *""'"); 
+  }
+  arg1 = reinterpret_cast< std::vector< FESimple::SpriteComponent * > * >(argp1);
+  result = ((std::vector< FESimple::SpriteComponent * > const *)arg1)->get_allocator();
+  resultobj = SWIG_NewPointerObj((new std::vector< FESimple::SpriteComponent * >::allocator_type(static_cast< const std::vector< FESimple::SpriteComponent * >::allocator_type& >(result))), SWIGTYPE_p_std__allocatorT_FESimple__SpriteComponent_p_t, SWIG_POINTER_OWN |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_vector_sprite_components_begin(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  std::vector< FESimple::SpriteComponent * > *arg1 = (std::vector< FESimple::SpriteComponent * > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  std::vector< FESimple::SpriteComponent * >::iterator result;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:vector_sprite_components_begin",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_std__vectorT_FESimple__SpriteComponent_p_std__allocatorT_FESimple__SpriteComponent_p_t_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "vector_sprite_components_begin" "', argument " "1"" of type '" "std::vector< FESimple::SpriteComponent * > *""'"); 
+  }
+  arg1 = reinterpret_cast< std::vector< FESimple::SpriteComponent * > * >(argp1);
+  result = (arg1)->begin();
+  resultobj = SWIG_NewPointerObj(swig::make_output_iterator(static_cast< const std::vector< FESimple::SpriteComponent * >::iterator & >(result)),
+    swig::SwigPyIterator::descriptor(),SWIG_POINTER_OWN);
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_vector_sprite_components_end(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  std::vector< FESimple::SpriteComponent * > *arg1 = (std::vector< FESimple::SpriteComponent * > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  std::vector< FESimple::SpriteComponent * >::iterator result;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:vector_sprite_components_end",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_std__vectorT_FESimple__SpriteComponent_p_std__allocatorT_FESimple__SpriteComponent_p_t_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "vector_sprite_components_end" "', argument " "1"" of type '" "std::vector< FESimple::SpriteComponent * > *""'"); 
+  }
+  arg1 = reinterpret_cast< std::vector< FESimple::SpriteComponent * > * >(argp1);
+  result = (arg1)->end();
+  resultobj = SWIG_NewPointerObj(swig::make_output_iterator(static_cast< const std::vector< FESimple::SpriteComponent * >::iterator & >(result)),
+    swig::SwigPyIterator::descriptor(),SWIG_POINTER_OWN);
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_vector_sprite_components_rbegin(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  std::vector< FESimple::SpriteComponent * > *arg1 = (std::vector< FESimple::SpriteComponent * > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  std::vector< FESimple::SpriteComponent * >::reverse_iterator result;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:vector_sprite_components_rbegin",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_std__vectorT_FESimple__SpriteComponent_p_std__allocatorT_FESimple__SpriteComponent_p_t_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "vector_sprite_components_rbegin" "', argument " "1"" of type '" "std::vector< FESimple::SpriteComponent * > *""'"); 
+  }
+  arg1 = reinterpret_cast< std::vector< FESimple::SpriteComponent * > * >(argp1);
+  result = (arg1)->rbegin();
+  resultobj = SWIG_NewPointerObj(swig::make_output_iterator(static_cast< const std::vector< FESimple::SpriteComponent * >::reverse_iterator & >(result)),
+    swig::SwigPyIterator::descriptor(),SWIG_POINTER_OWN);
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_vector_sprite_components_rend(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  std::vector< FESimple::SpriteComponent * > *arg1 = (std::vector< FESimple::SpriteComponent * > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  std::vector< FESimple::SpriteComponent * >::reverse_iterator result;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:vector_sprite_components_rend",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_std__vectorT_FESimple__SpriteComponent_p_std__allocatorT_FESimple__SpriteComponent_p_t_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "vector_sprite_components_rend" "', argument " "1"" of type '" "std::vector< FESimple::SpriteComponent * > *""'"); 
+  }
+  arg1 = reinterpret_cast< std::vector< FESimple::SpriteComponent * > * >(argp1);
+  result = (arg1)->rend();
+  resultobj = SWIG_NewPointerObj(swig::make_output_iterator(static_cast< const std::vector< FESimple::SpriteComponent * >::reverse_iterator & >(result)),
+    swig::SwigPyIterator::descriptor(),SWIG_POINTER_OWN);
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_new_vector_sprite_components__SWIG_2(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  std::vector< FESimple::SpriteComponent * >::size_type arg1 ;
+  size_t val1 ;
+  int ecode1 = 0 ;
+  PyObject * obj0 = 0 ;
+  std::vector< FESimple::SpriteComponent * > *result = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:new_vector_sprite_components",&obj0)) SWIG_fail;
+  ecode1 = SWIG_AsVal_size_t(obj0, &val1);
+  if (!SWIG_IsOK(ecode1)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode1), "in method '" "new_vector_sprite_components" "', argument " "1"" of type '" "std::vector< FESimple::SpriteComponent * >::size_type""'");
+  } 
+  arg1 = static_cast< std::vector< FESimple::SpriteComponent * >::size_type >(val1);
+  result = (std::vector< FESimple::SpriteComponent * > *)new std::vector< FESimple::SpriteComponent * >(arg1);
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_std__vectorT_FESimple__SpriteComponent_p_std__allocatorT_FESimple__SpriteComponent_p_t_t, SWIG_POINTER_NEW |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_vector_sprite_components_pop_back(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  std::vector< FESimple::SpriteComponent * > *arg1 = (std::vector< FESimple::SpriteComponent * > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:vector_sprite_components_pop_back",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_std__vectorT_FESimple__SpriteComponent_p_std__allocatorT_FESimple__SpriteComponent_p_t_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "vector_sprite_components_pop_back" "', argument " "1"" of type '" "std::vector< FESimple::SpriteComponent * > *""'"); 
+  }
+  arg1 = reinterpret_cast< std::vector< FESimple::SpriteComponent * > * >(argp1);
+  (arg1)->pop_back();
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_vector_sprite_components_resize__SWIG_0(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  std::vector< FESimple::SpriteComponent * > *arg1 = (std::vector< FESimple::SpriteComponent * > *) 0 ;
+  std::vector< FESimple::SpriteComponent * >::size_type arg2 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  size_t val2 ;
+  int ecode2 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"OO:vector_sprite_components_resize",&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_std__vectorT_FESimple__SpriteComponent_p_std__allocatorT_FESimple__SpriteComponent_p_t_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "vector_sprite_components_resize" "', argument " "1"" of type '" "std::vector< FESimple::SpriteComponent * > *""'"); 
+  }
+  arg1 = reinterpret_cast< std::vector< FESimple::SpriteComponent * > * >(argp1);
+  ecode2 = SWIG_AsVal_size_t(obj1, &val2);
+  if (!SWIG_IsOK(ecode2)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "vector_sprite_components_resize" "', argument " "2"" of type '" "std::vector< FESimple::SpriteComponent * >::size_type""'");
+  } 
+  arg2 = static_cast< std::vector< FESimple::SpriteComponent * >::size_type >(val2);
+  (arg1)->resize(arg2);
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_vector_sprite_components_erase__SWIG_0(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  std::vector< FESimple::SpriteComponent * > *arg1 = (std::vector< FESimple::SpriteComponent * > *) 0 ;
+  std::vector< FESimple::SpriteComponent * >::iterator arg2 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  swig::SwigPyIterator *iter2 = 0 ;
+  int res2 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  std::vector< FESimple::SpriteComponent * >::iterator result;
+  
+  if (!PyArg_ParseTuple(args,(char *)"OO:vector_sprite_components_erase",&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_std__vectorT_FESimple__SpriteComponent_p_std__allocatorT_FESimple__SpriteComponent_p_t_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "vector_sprite_components_erase" "', argument " "1"" of type '" "std::vector< FESimple::SpriteComponent * > *""'"); 
+  }
+  arg1 = reinterpret_cast< std::vector< FESimple::SpriteComponent * > * >(argp1);
+  res2 = SWIG_ConvertPtr(obj1, SWIG_as_voidptrptr(&iter2), swig::SwigPyIterator::descriptor(), 0);
+  if (!SWIG_IsOK(res2) || !iter2) {
+    SWIG_exception_fail(SWIG_ArgError(SWIG_TypeError), "in method '" "vector_sprite_components_erase" "', argument " "2"" of type '" "std::vector< FESimple::SpriteComponent * >::iterator""'");
+  } else {
+    swig::SwigPyIterator_T<std::vector< FESimple::SpriteComponent * >::iterator > *iter_t = dynamic_cast<swig::SwigPyIterator_T<std::vector< FESimple::SpriteComponent * >::iterator > *>(iter2);
+    if (iter_t) {
+      arg2 = iter_t->get_current();
+    } else {
+      SWIG_exception_fail(SWIG_ArgError(SWIG_TypeError), "in method '" "vector_sprite_components_erase" "', argument " "2"" of type '" "std::vector< FESimple::SpriteComponent * >::iterator""'");
+    }
+  }
+  result = (arg1)->erase(arg2);
+  resultobj = SWIG_NewPointerObj(swig::make_output_iterator(static_cast< const std::vector< FESimple::SpriteComponent * >::iterator & >(result)),
+    swig::SwigPyIterator::descriptor(),SWIG_POINTER_OWN);
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_vector_sprite_components_erase__SWIG_1(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  std::vector< FESimple::SpriteComponent * > *arg1 = (std::vector< FESimple::SpriteComponent * > *) 0 ;
+  std::vector< FESimple::SpriteComponent * >::iterator arg2 ;
+  std::vector< FESimple::SpriteComponent * >::iterator arg3 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  swig::SwigPyIterator *iter2 = 0 ;
+  int res2 ;
+  swig::SwigPyIterator *iter3 = 0 ;
+  int res3 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  PyObject * obj2 = 0 ;
+  std::vector< FESimple::SpriteComponent * >::iterator result;
+  
+  if (!PyArg_ParseTuple(args,(char *)"OOO:vector_sprite_components_erase",&obj0,&obj1,&obj2)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_std__vectorT_FESimple__SpriteComponent_p_std__allocatorT_FESimple__SpriteComponent_p_t_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "vector_sprite_components_erase" "', argument " "1"" of type '" "std::vector< FESimple::SpriteComponent * > *""'"); 
+  }
+  arg1 = reinterpret_cast< std::vector< FESimple::SpriteComponent * > * >(argp1);
+  res2 = SWIG_ConvertPtr(obj1, SWIG_as_voidptrptr(&iter2), swig::SwigPyIterator::descriptor(), 0);
+  if (!SWIG_IsOK(res2) || !iter2) {
+    SWIG_exception_fail(SWIG_ArgError(SWIG_TypeError), "in method '" "vector_sprite_components_erase" "', argument " "2"" of type '" "std::vector< FESimple::SpriteComponent * >::iterator""'");
+  } else {
+    swig::SwigPyIterator_T<std::vector< FESimple::SpriteComponent * >::iterator > *iter_t = dynamic_cast<swig::SwigPyIterator_T<std::vector< FESimple::SpriteComponent * >::iterator > *>(iter2);
+    if (iter_t) {
+      arg2 = iter_t->get_current();
+    } else {
+      SWIG_exception_fail(SWIG_ArgError(SWIG_TypeError), "in method '" "vector_sprite_components_erase" "', argument " "2"" of type '" "std::vector< FESimple::SpriteComponent * >::iterator""'");
+    }
+  }
+  res3 = SWIG_ConvertPtr(obj2, SWIG_as_voidptrptr(&iter3), swig::SwigPyIterator::descriptor(), 0);
+  if (!SWIG_IsOK(res3) || !iter3) {
+    SWIG_exception_fail(SWIG_ArgError(SWIG_TypeError), "in method '" "vector_sprite_components_erase" "', argument " "3"" of type '" "std::vector< FESimple::SpriteComponent * >::iterator""'");
+  } else {
+    swig::SwigPyIterator_T<std::vector< FESimple::SpriteComponent * >::iterator > *iter_t = dynamic_cast<swig::SwigPyIterator_T<std::vector< FESimple::SpriteComponent * >::iterator > *>(iter3);
+    if (iter_t) {
+      arg3 = iter_t->get_current();
+    } else {
+      SWIG_exception_fail(SWIG_ArgError(SWIG_TypeError), "in method '" "vector_sprite_components_erase" "', argument " "3"" of type '" "std::vector< FESimple::SpriteComponent * >::iterator""'");
+    }
+  }
+  result = (arg1)->erase(arg2,arg3);
+  resultobj = SWIG_NewPointerObj(swig::make_output_iterator(static_cast< const std::vector< FESimple::SpriteComponent * >::iterator & >(result)),
+    swig::SwigPyIterator::descriptor(),SWIG_POINTER_OWN);
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_vector_sprite_components_erase(PyObject *self, PyObject *args) {
+  int argc;
+  PyObject *argv[4];
+  int ii;
+  
+  if (!PyTuple_Check(args)) SWIG_fail;
+  argc = args ? (int)PyObject_Length(args) : 0;
+  for (ii = 0; (ii < 3) && (ii < argc); ii++) {
+    argv[ii] = PyTuple_GET_ITEM(args,ii);
+  }
+  if (argc == 2) {
+    int _v;
+    int res = swig::asptr(argv[0], (std::vector<FESimple::SpriteComponent*,std::allocator< FESimple::SpriteComponent * > >**)(0));
+    _v = SWIG_CheckState(res);
+    if (_v) {
+      swig::SwigPyIterator *iter = 0;
+      int res = SWIG_ConvertPtr(argv[1], SWIG_as_voidptrptr(&iter), swig::SwigPyIterator::descriptor(), 0);
+      _v = (SWIG_IsOK(res) && iter && (dynamic_cast<swig::SwigPyIterator_T<std::vector< FESimple::SpriteComponent * >::iterator > *>(iter) != 0));
+      if (_v) {
+        return _wrap_vector_sprite_components_erase__SWIG_0(self, args);
+      }
+    }
+  }
+  if (argc == 3) {
+    int _v;
+    int res = swig::asptr(argv[0], (std::vector<FESimple::SpriteComponent*,std::allocator< FESimple::SpriteComponent * > >**)(0));
+    _v = SWIG_CheckState(res);
+    if (_v) {
+      swig::SwigPyIterator *iter = 0;
+      int res = SWIG_ConvertPtr(argv[1], SWIG_as_voidptrptr(&iter), swig::SwigPyIterator::descriptor(), 0);
+      _v = (SWIG_IsOK(res) && iter && (dynamic_cast<swig::SwigPyIterator_T<std::vector< FESimple::SpriteComponent * >::iterator > *>(iter) != 0));
+      if (_v) {
+        swig::SwigPyIterator *iter = 0;
+        int res = SWIG_ConvertPtr(argv[2], SWIG_as_voidptrptr(&iter), swig::SwigPyIterator::descriptor(), 0);
+        _v = (SWIG_IsOK(res) && iter && (dynamic_cast<swig::SwigPyIterator_T<std::vector< FESimple::SpriteComponent * >::iterator > *>(iter) != 0));
+        if (_v) {
+          return _wrap_vector_sprite_components_erase__SWIG_1(self, args);
+        }
+      }
+    }
+  }
+  
+fail:
+  SWIG_SetErrorMsg(PyExc_NotImplementedError,"Wrong number or type of arguments for overloaded function 'vector_sprite_components_erase'.\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    std::vector< FESimple::SpriteComponent * >::erase(std::vector< FESimple::SpriteComponent * >::iterator)\n"
+    "    std::vector< FESimple::SpriteComponent * >::erase(std::vector< FESimple::SpriteComponent * >::iterator,std::vector< FESimple::SpriteComponent * >::iterator)\n");
+  return 0;
+}
+
+
+SWIGINTERN PyObject *_wrap_new_vector_sprite_components__SWIG_3(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  std::vector< FESimple::SpriteComponent * >::size_type arg1 ;
+  std::vector< FESimple::SpriteComponent * >::value_type arg2 = (std::vector< FESimple::SpriteComponent * >::value_type) 0 ;
+  size_t val1 ;
+  int ecode1 = 0 ;
+  void *argp2 = 0 ;
+  int res2 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  std::vector< FESimple::SpriteComponent * > *result = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"OO:new_vector_sprite_components",&obj0,&obj1)) SWIG_fail;
+  ecode1 = SWIG_AsVal_size_t(obj0, &val1);
+  if (!SWIG_IsOK(ecode1)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode1), "in method '" "new_vector_sprite_components" "', argument " "1"" of type '" "std::vector< FESimple::SpriteComponent * >::size_type""'");
+  } 
+  arg1 = static_cast< std::vector< FESimple::SpriteComponent * >::size_type >(val1);
+  res2 = SWIG_ConvertPtr(obj1, &argp2,SWIGTYPE_p_FESimple__SpriteComponent, 0 |  0 );
+  if (!SWIG_IsOK(res2)) {
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "new_vector_sprite_components" "', argument " "2"" of type '" "std::vector< FESimple::SpriteComponent * >::value_type""'"); 
+  }
+  arg2 = reinterpret_cast< std::vector< FESimple::SpriteComponent * >::value_type >(argp2);
+  result = (std::vector< FESimple::SpriteComponent * > *)new std::vector< FESimple::SpriteComponent * >(arg1,arg2);
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_std__vectorT_FESimple__SpriteComponent_p_std__allocatorT_FESimple__SpriteComponent_p_t_t, SWIG_POINTER_NEW |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_new_vector_sprite_components(PyObject *self, PyObject *args) {
+  int argc;
+  PyObject *argv[3];
+  int ii;
+  
+  if (!PyTuple_Check(args)) SWIG_fail;
+  argc = args ? (int)PyObject_Length(args) : 0;
+  for (ii = 0; (ii < 2) && (ii < argc); ii++) {
+    argv[ii] = PyTuple_GET_ITEM(args,ii);
+  }
+  if (argc == 0) {
+    return _wrap_new_vector_sprite_components__SWIG_0(self, args);
+  }
+  if (argc == 1) {
+    int _v;
+    {
+      int res = SWIG_AsVal_size_t(argv[0], NULL);
+      _v = SWIG_CheckState(res);
+    }
+    if (_v) {
+      return _wrap_new_vector_sprite_components__SWIG_2(self, args);
+    }
+  }
+  if (argc == 1) {
+    int _v;
+    int res = swig::asptr(argv[0], (std::vector<FESimple::SpriteComponent*,std::allocator< FESimple::SpriteComponent * > >**)(0));
+    _v = SWIG_CheckState(res);
+    if (_v) {
+      return _wrap_new_vector_sprite_components__SWIG_1(self, args);
+    }
+  }
+  if (argc == 2) {
+    int _v;
+    {
+      int res = SWIG_AsVal_size_t(argv[0], NULL);
+      _v = SWIG_CheckState(res);
+    }
+    if (_v) {
+      void *vptr = 0;
+      int res = SWIG_ConvertPtr(argv[1], &vptr, SWIGTYPE_p_FESimple__SpriteComponent, 0);
+      _v = SWIG_CheckState(res);
+      if (_v) {
+        return _wrap_new_vector_sprite_components__SWIG_3(self, args);
+      }
+    }
+  }
+  
+fail:
+  SWIG_SetErrorMsg(PyExc_NotImplementedError,"Wrong number or type of arguments for overloaded function 'new_vector_sprite_components'.\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    std::vector< FESimple::SpriteComponent * >::vector()\n"
+    "    std::vector< FESimple::SpriteComponent * >::vector(std::vector< FESimple::SpriteComponent * > const &)\n"
+    "    std::vector< FESimple::SpriteComponent * >::vector(std::vector< FESimple::SpriteComponent * >::size_type)\n"
+    "    std::vector< FESimple::SpriteComponent * >::vector(std::vector< FESimple::SpriteComponent * >::size_type,std::vector< FESimple::SpriteComponent * >::value_type)\n");
+  return 0;
+}
+
+
+SWIGINTERN PyObject *_wrap_vector_sprite_components_push_back(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  std::vector< FESimple::SpriteComponent * > *arg1 = (std::vector< FESimple::SpriteComponent * > *) 0 ;
+  std::vector< FESimple::SpriteComponent * >::value_type arg2 = (std::vector< FESimple::SpriteComponent * >::value_type) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 = 0 ;
+  int res2 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"OO:vector_sprite_components_push_back",&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_std__vectorT_FESimple__SpriteComponent_p_std__allocatorT_FESimple__SpriteComponent_p_t_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "vector_sprite_components_push_back" "', argument " "1"" of type '" "std::vector< FESimple::SpriteComponent * > *""'"); 
+  }
+  arg1 = reinterpret_cast< std::vector< FESimple::SpriteComponent * > * >(argp1);
+  res2 = SWIG_ConvertPtr(obj1, &argp2,SWIGTYPE_p_FESimple__SpriteComponent, 0 |  0 );
+  if (!SWIG_IsOK(res2)) {
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "vector_sprite_components_push_back" "', argument " "2"" of type '" "std::vector< FESimple::SpriteComponent * >::value_type""'"); 
+  }
+  arg2 = reinterpret_cast< std::vector< FESimple::SpriteComponent * >::value_type >(argp2);
+  (arg1)->push_back(arg2);
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_vector_sprite_components_front(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  std::vector< FESimple::SpriteComponent * > *arg1 = (std::vector< FESimple::SpriteComponent * > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  std::vector< FESimple::SpriteComponent * >::value_type result;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:vector_sprite_components_front",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_std__vectorT_FESimple__SpriteComponent_p_std__allocatorT_FESimple__SpriteComponent_p_t_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "vector_sprite_components_front" "', argument " "1"" of type '" "std::vector< FESimple::SpriteComponent * > const *""'"); 
+  }
+  arg1 = reinterpret_cast< std::vector< FESimple::SpriteComponent * > * >(argp1);
+  result = (std::vector< FESimple::SpriteComponent * >::value_type)((std::vector< FESimple::SpriteComponent * > const *)arg1)->front();
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_FESimple__SpriteComponent, 0 |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_vector_sprite_components_back(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  std::vector< FESimple::SpriteComponent * > *arg1 = (std::vector< FESimple::SpriteComponent * > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  std::vector< FESimple::SpriteComponent * >::value_type result;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:vector_sprite_components_back",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_std__vectorT_FESimple__SpriteComponent_p_std__allocatorT_FESimple__SpriteComponent_p_t_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "vector_sprite_components_back" "', argument " "1"" of type '" "std::vector< FESimple::SpriteComponent * > const *""'"); 
+  }
+  arg1 = reinterpret_cast< std::vector< FESimple::SpriteComponent * > * >(argp1);
+  result = (std::vector< FESimple::SpriteComponent * >::value_type)((std::vector< FESimple::SpriteComponent * > const *)arg1)->back();
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_FESimple__SpriteComponent, 0 |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_vector_sprite_components_assign(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  std::vector< FESimple::SpriteComponent * > *arg1 = (std::vector< FESimple::SpriteComponent * > *) 0 ;
+  std::vector< FESimple::SpriteComponent * >::size_type arg2 ;
+  std::vector< FESimple::SpriteComponent * >::value_type arg3 = (std::vector< FESimple::SpriteComponent * >::value_type) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  size_t val2 ;
+  int ecode2 = 0 ;
+  void *argp3 = 0 ;
+  int res3 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  PyObject * obj2 = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"OOO:vector_sprite_components_assign",&obj0,&obj1,&obj2)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_std__vectorT_FESimple__SpriteComponent_p_std__allocatorT_FESimple__SpriteComponent_p_t_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "vector_sprite_components_assign" "', argument " "1"" of type '" "std::vector< FESimple::SpriteComponent * > *""'"); 
+  }
+  arg1 = reinterpret_cast< std::vector< FESimple::SpriteComponent * > * >(argp1);
+  ecode2 = SWIG_AsVal_size_t(obj1, &val2);
+  if (!SWIG_IsOK(ecode2)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "vector_sprite_components_assign" "', argument " "2"" of type '" "std::vector< FESimple::SpriteComponent * >::size_type""'");
+  } 
+  arg2 = static_cast< std::vector< FESimple::SpriteComponent * >::size_type >(val2);
+  res3 = SWIG_ConvertPtr(obj2, &argp3,SWIGTYPE_p_FESimple__SpriteComponent, 0 |  0 );
+  if (!SWIG_IsOK(res3)) {
+    SWIG_exception_fail(SWIG_ArgError(res3), "in method '" "vector_sprite_components_assign" "', argument " "3"" of type '" "std::vector< FESimple::SpriteComponent * >::value_type""'"); 
+  }
+  arg3 = reinterpret_cast< std::vector< FESimple::SpriteComponent * >::value_type >(argp3);
+  (arg1)->assign(arg2,arg3);
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_vector_sprite_components_resize__SWIG_1(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  std::vector< FESimple::SpriteComponent * > *arg1 = (std::vector< FESimple::SpriteComponent * > *) 0 ;
+  std::vector< FESimple::SpriteComponent * >::size_type arg2 ;
+  std::vector< FESimple::SpriteComponent * >::value_type arg3 = (std::vector< FESimple::SpriteComponent * >::value_type) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  size_t val2 ;
+  int ecode2 = 0 ;
+  void *argp3 = 0 ;
+  int res3 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  PyObject * obj2 = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"OOO:vector_sprite_components_resize",&obj0,&obj1,&obj2)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_std__vectorT_FESimple__SpriteComponent_p_std__allocatorT_FESimple__SpriteComponent_p_t_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "vector_sprite_components_resize" "', argument " "1"" of type '" "std::vector< FESimple::SpriteComponent * > *""'"); 
+  }
+  arg1 = reinterpret_cast< std::vector< FESimple::SpriteComponent * > * >(argp1);
+  ecode2 = SWIG_AsVal_size_t(obj1, &val2);
+  if (!SWIG_IsOK(ecode2)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "vector_sprite_components_resize" "', argument " "2"" of type '" "std::vector< FESimple::SpriteComponent * >::size_type""'");
+  } 
+  arg2 = static_cast< std::vector< FESimple::SpriteComponent * >::size_type >(val2);
+  res3 = SWIG_ConvertPtr(obj2, &argp3,SWIGTYPE_p_FESimple__SpriteComponent, 0 |  0 );
+  if (!SWIG_IsOK(res3)) {
+    SWIG_exception_fail(SWIG_ArgError(res3), "in method '" "vector_sprite_components_resize" "', argument " "3"" of type '" "std::vector< FESimple::SpriteComponent * >::value_type""'"); 
+  }
+  arg3 = reinterpret_cast< std::vector< FESimple::SpriteComponent * >::value_type >(argp3);
+  (arg1)->resize(arg2,arg3);
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_vector_sprite_components_resize(PyObject *self, PyObject *args) {
+  int argc;
+  PyObject *argv[4];
+  int ii;
+  
+  if (!PyTuple_Check(args)) SWIG_fail;
+  argc = args ? (int)PyObject_Length(args) : 0;
+  for (ii = 0; (ii < 3) && (ii < argc); ii++) {
+    argv[ii] = PyTuple_GET_ITEM(args,ii);
+  }
+  if (argc == 2) {
+    int _v;
+    int res = swig::asptr(argv[0], (std::vector<FESimple::SpriteComponent*,std::allocator< FESimple::SpriteComponent * > >**)(0));
+    _v = SWIG_CheckState(res);
+    if (_v) {
+      {
+        int res = SWIG_AsVal_size_t(argv[1], NULL);
+        _v = SWIG_CheckState(res);
+      }
+      if (_v) {
+        return _wrap_vector_sprite_components_resize__SWIG_0(self, args);
+      }
+    }
+  }
+  if (argc == 3) {
+    int _v;
+    int res = swig::asptr(argv[0], (std::vector<FESimple::SpriteComponent*,std::allocator< FESimple::SpriteComponent * > >**)(0));
+    _v = SWIG_CheckState(res);
+    if (_v) {
+      {
+        int res = SWIG_AsVal_size_t(argv[1], NULL);
+        _v = SWIG_CheckState(res);
+      }
+      if (_v) {
+        void *vptr = 0;
+        int res = SWIG_ConvertPtr(argv[2], &vptr, SWIGTYPE_p_FESimple__SpriteComponent, 0);
+        _v = SWIG_CheckState(res);
+        if (_v) {
+          return _wrap_vector_sprite_components_resize__SWIG_1(self, args);
+        }
+      }
+    }
+  }
+  
+fail:
+  SWIG_SetErrorMsg(PyExc_NotImplementedError,"Wrong number or type of arguments for overloaded function 'vector_sprite_components_resize'.\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    std::vector< FESimple::SpriteComponent * >::resize(std::vector< FESimple::SpriteComponent * >::size_type)\n"
+    "    std::vector< FESimple::SpriteComponent * >::resize(std::vector< FESimple::SpriteComponent * >::size_type,std::vector< FESimple::SpriteComponent * >::value_type)\n");
+  return 0;
+}
+
+
+SWIGINTERN PyObject *_wrap_vector_sprite_components_insert__SWIG_0(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  std::vector< FESimple::SpriteComponent * > *arg1 = (std::vector< FESimple::SpriteComponent * > *) 0 ;
+  std::vector< FESimple::SpriteComponent * >::iterator arg2 ;
+  std::vector< FESimple::SpriteComponent * >::value_type arg3 = (std::vector< FESimple::SpriteComponent * >::value_type) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  swig::SwigPyIterator *iter2 = 0 ;
+  int res2 ;
+  void *argp3 = 0 ;
+  int res3 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  PyObject * obj2 = 0 ;
+  std::vector< FESimple::SpriteComponent * >::iterator result;
+  
+  if (!PyArg_ParseTuple(args,(char *)"OOO:vector_sprite_components_insert",&obj0,&obj1,&obj2)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_std__vectorT_FESimple__SpriteComponent_p_std__allocatorT_FESimple__SpriteComponent_p_t_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "vector_sprite_components_insert" "', argument " "1"" of type '" "std::vector< FESimple::SpriteComponent * > *""'"); 
+  }
+  arg1 = reinterpret_cast< std::vector< FESimple::SpriteComponent * > * >(argp1);
+  res2 = SWIG_ConvertPtr(obj1, SWIG_as_voidptrptr(&iter2), swig::SwigPyIterator::descriptor(), 0);
+  if (!SWIG_IsOK(res2) || !iter2) {
+    SWIG_exception_fail(SWIG_ArgError(SWIG_TypeError), "in method '" "vector_sprite_components_insert" "', argument " "2"" of type '" "std::vector< FESimple::SpriteComponent * >::iterator""'");
+  } else {
+    swig::SwigPyIterator_T<std::vector< FESimple::SpriteComponent * >::iterator > *iter_t = dynamic_cast<swig::SwigPyIterator_T<std::vector< FESimple::SpriteComponent * >::iterator > *>(iter2);
+    if (iter_t) {
+      arg2 = iter_t->get_current();
+    } else {
+      SWIG_exception_fail(SWIG_ArgError(SWIG_TypeError), "in method '" "vector_sprite_components_insert" "', argument " "2"" of type '" "std::vector< FESimple::SpriteComponent * >::iterator""'");
+    }
+  }
+  res3 = SWIG_ConvertPtr(obj2, &argp3,SWIGTYPE_p_FESimple__SpriteComponent, 0 |  0 );
+  if (!SWIG_IsOK(res3)) {
+    SWIG_exception_fail(SWIG_ArgError(res3), "in method '" "vector_sprite_components_insert" "', argument " "3"" of type '" "std::vector< FESimple::SpriteComponent * >::value_type""'"); 
+  }
+  arg3 = reinterpret_cast< std::vector< FESimple::SpriteComponent * >::value_type >(argp3);
+  result = (arg1)->insert(arg2,arg3);
+  resultobj = SWIG_NewPointerObj(swig::make_output_iterator(static_cast< const std::vector< FESimple::SpriteComponent * >::iterator & >(result)),
+    swig::SwigPyIterator::descriptor(),SWIG_POINTER_OWN);
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_vector_sprite_components_insert__SWIG_1(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  std::vector< FESimple::SpriteComponent * > *arg1 = (std::vector< FESimple::SpriteComponent * > *) 0 ;
+  std::vector< FESimple::SpriteComponent * >::iterator arg2 ;
+  std::vector< FESimple::SpriteComponent * >::size_type arg3 ;
+  std::vector< FESimple::SpriteComponent * >::value_type arg4 = (std::vector< FESimple::SpriteComponent * >::value_type) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  swig::SwigPyIterator *iter2 = 0 ;
+  int res2 ;
+  size_t val3 ;
+  int ecode3 = 0 ;
+  void *argp4 = 0 ;
+  int res4 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  PyObject * obj2 = 0 ;
+  PyObject * obj3 = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"OOOO:vector_sprite_components_insert",&obj0,&obj1,&obj2,&obj3)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_std__vectorT_FESimple__SpriteComponent_p_std__allocatorT_FESimple__SpriteComponent_p_t_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "vector_sprite_components_insert" "', argument " "1"" of type '" "std::vector< FESimple::SpriteComponent * > *""'"); 
+  }
+  arg1 = reinterpret_cast< std::vector< FESimple::SpriteComponent * > * >(argp1);
+  res2 = SWIG_ConvertPtr(obj1, SWIG_as_voidptrptr(&iter2), swig::SwigPyIterator::descriptor(), 0);
+  if (!SWIG_IsOK(res2) || !iter2) {
+    SWIG_exception_fail(SWIG_ArgError(SWIG_TypeError), "in method '" "vector_sprite_components_insert" "', argument " "2"" of type '" "std::vector< FESimple::SpriteComponent * >::iterator""'");
+  } else {
+    swig::SwigPyIterator_T<std::vector< FESimple::SpriteComponent * >::iterator > *iter_t = dynamic_cast<swig::SwigPyIterator_T<std::vector< FESimple::SpriteComponent * >::iterator > *>(iter2);
+    if (iter_t) {
+      arg2 = iter_t->get_current();
+    } else {
+      SWIG_exception_fail(SWIG_ArgError(SWIG_TypeError), "in method '" "vector_sprite_components_insert" "', argument " "2"" of type '" "std::vector< FESimple::SpriteComponent * >::iterator""'");
+    }
+  }
+  ecode3 = SWIG_AsVal_size_t(obj2, &val3);
+  if (!SWIG_IsOK(ecode3)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode3), "in method '" "vector_sprite_components_insert" "', argument " "3"" of type '" "std::vector< FESimple::SpriteComponent * >::size_type""'");
+  } 
+  arg3 = static_cast< std::vector< FESimple::SpriteComponent * >::size_type >(val3);
+  res4 = SWIG_ConvertPtr(obj3, &argp4,SWIGTYPE_p_FESimple__SpriteComponent, 0 |  0 );
+  if (!SWIG_IsOK(res4)) {
+    SWIG_exception_fail(SWIG_ArgError(res4), "in method '" "vector_sprite_components_insert" "', argument " "4"" of type '" "std::vector< FESimple::SpriteComponent * >::value_type""'"); 
+  }
+  arg4 = reinterpret_cast< std::vector< FESimple::SpriteComponent * >::value_type >(argp4);
+  (arg1)->insert(arg2,arg3,arg4);
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_vector_sprite_components_insert(PyObject *self, PyObject *args) {
+  int argc;
+  PyObject *argv[5];
+  int ii;
+  
+  if (!PyTuple_Check(args)) SWIG_fail;
+  argc = args ? (int)PyObject_Length(args) : 0;
+  for (ii = 0; (ii < 4) && (ii < argc); ii++) {
+    argv[ii] = PyTuple_GET_ITEM(args,ii);
+  }
+  if (argc == 3) {
+    int _v;
+    int res = swig::asptr(argv[0], (std::vector<FESimple::SpriteComponent*,std::allocator< FESimple::SpriteComponent * > >**)(0));
+    _v = SWIG_CheckState(res);
+    if (_v) {
+      swig::SwigPyIterator *iter = 0;
+      int res = SWIG_ConvertPtr(argv[1], SWIG_as_voidptrptr(&iter), swig::SwigPyIterator::descriptor(), 0);
+      _v = (SWIG_IsOK(res) && iter && (dynamic_cast<swig::SwigPyIterator_T<std::vector< FESimple::SpriteComponent * >::iterator > *>(iter) != 0));
+      if (_v) {
+        void *vptr = 0;
+        int res = SWIG_ConvertPtr(argv[2], &vptr, SWIGTYPE_p_FESimple__SpriteComponent, 0);
+        _v = SWIG_CheckState(res);
+        if (_v) {
+          return _wrap_vector_sprite_components_insert__SWIG_0(self, args);
+        }
+      }
+    }
+  }
+  if (argc == 4) {
+    int _v;
+    int res = swig::asptr(argv[0], (std::vector<FESimple::SpriteComponent*,std::allocator< FESimple::SpriteComponent * > >**)(0));
+    _v = SWIG_CheckState(res);
+    if (_v) {
+      swig::SwigPyIterator *iter = 0;
+      int res = SWIG_ConvertPtr(argv[1], SWIG_as_voidptrptr(&iter), swig::SwigPyIterator::descriptor(), 0);
+      _v = (SWIG_IsOK(res) && iter && (dynamic_cast<swig::SwigPyIterator_T<std::vector< FESimple::SpriteComponent * >::iterator > *>(iter) != 0));
+      if (_v) {
+        {
+          int res = SWIG_AsVal_size_t(argv[2], NULL);
+          _v = SWIG_CheckState(res);
+        }
+        if (_v) {
+          void *vptr = 0;
+          int res = SWIG_ConvertPtr(argv[3], &vptr, SWIGTYPE_p_FESimple__SpriteComponent, 0);
+          _v = SWIG_CheckState(res);
+          if (_v) {
+            return _wrap_vector_sprite_components_insert__SWIG_1(self, args);
+          }
+        }
+      }
+    }
+  }
+  
+fail:
+  SWIG_SetErrorMsg(PyExc_NotImplementedError,"Wrong number or type of arguments for overloaded function 'vector_sprite_components_insert'.\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    std::vector< FESimple::SpriteComponent * >::insert(std::vector< FESimple::SpriteComponent * >::iterator,std::vector< FESimple::SpriteComponent * >::value_type)\n"
+    "    std::vector< FESimple::SpriteComponent * >::insert(std::vector< FESimple::SpriteComponent * >::iterator,std::vector< FESimple::SpriteComponent * >::size_type,std::vector< FESimple::SpriteComponent * >::value_type)\n");
+  return 0;
+}
+
+
+SWIGINTERN PyObject *_wrap_vector_sprite_components_reserve(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  std::vector< FESimple::SpriteComponent * > *arg1 = (std::vector< FESimple::SpriteComponent * > *) 0 ;
+  std::vector< FESimple::SpriteComponent * >::size_type arg2 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  size_t val2 ;
+  int ecode2 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"OO:vector_sprite_components_reserve",&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_std__vectorT_FESimple__SpriteComponent_p_std__allocatorT_FESimple__SpriteComponent_p_t_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "vector_sprite_components_reserve" "', argument " "1"" of type '" "std::vector< FESimple::SpriteComponent * > *""'"); 
+  }
+  arg1 = reinterpret_cast< std::vector< FESimple::SpriteComponent * > * >(argp1);
+  ecode2 = SWIG_AsVal_size_t(obj1, &val2);
+  if (!SWIG_IsOK(ecode2)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "vector_sprite_components_reserve" "', argument " "2"" of type '" "std::vector< FESimple::SpriteComponent * >::size_type""'");
+  } 
+  arg2 = static_cast< std::vector< FESimple::SpriteComponent * >::size_type >(val2);
+  (arg1)->reserve(arg2);
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_vector_sprite_components_capacity(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  std::vector< FESimple::SpriteComponent * > *arg1 = (std::vector< FESimple::SpriteComponent * > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  std::vector< FESimple::SpriteComponent * >::size_type result;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:vector_sprite_components_capacity",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_std__vectorT_FESimple__SpriteComponent_p_std__allocatorT_FESimple__SpriteComponent_p_t_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "vector_sprite_components_capacity" "', argument " "1"" of type '" "std::vector< FESimple::SpriteComponent * > const *""'"); 
+  }
+  arg1 = reinterpret_cast< std::vector< FESimple::SpriteComponent * > * >(argp1);
+  result = ((std::vector< FESimple::SpriteComponent * > const *)arg1)->capacity();
+  resultobj = SWIG_From_size_t(static_cast< size_t >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_delete_vector_sprite_components(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  std::vector< FESimple::SpriteComponent * > *arg1 = (std::vector< FESimple::SpriteComponent * > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:delete_vector_sprite_components",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_std__vectorT_FESimple__SpriteComponent_p_std__allocatorT_FESimple__SpriteComponent_p_t_t, SWIG_POINTER_DISOWN |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "delete_vector_sprite_components" "', argument " "1"" of type '" "std::vector< FESimple::SpriteComponent * > *""'"); 
+  }
+  arg1 = reinterpret_cast< std::vector< FESimple::SpriteComponent * > * >(argp1);
+  delete arg1;
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *vector_sprite_components_swigregister(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *obj;
+  if (!PyArg_ParseTuple(args,(char*)"O:swigregister", &obj)) return NULL;
+  SWIG_TypeNewClientData(SWIGTYPE_p_std__vectorT_FESimple__SpriteComponent_p_std__allocatorT_FESimple__SpriteComponent_p_t_t, SWIG_NewClientData(obj));
   return SWIG_Py_Void();
 }
 
@@ -18230,7 +20212,7 @@ SWIGINTERN PyObject *_wrap_delete_SpriteComponent(PyObject *SWIGUNUSEDPARM(self)
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "delete_SpriteComponent" "', argument " "1"" of type '" "FESimple::SpriteComponent *""'"); 
   }
   arg1 = reinterpret_cast< FESimple::SpriteComponent * >(argp1);
-  arg1->release();
+  arg1->release(); // unref for SpriteComponent
   resultobj = SWIG_Py_Void();
   return resultobj;
 fail:
@@ -19514,6 +21496,40 @@ static PyMethodDef SwigMethods[] = {
 	 { (char *)"SwigPyIterator___add__", _wrap_SwigPyIterator___add__, METH_VARARGS, NULL},
 	 { (char *)"SwigPyIterator___sub__", _wrap_SwigPyIterator___sub__, METH_VARARGS, NULL},
 	 { (char *)"SwigPyIterator_swigregister", SwigPyIterator_swigregister, METH_VARARGS, NULL},
+	 { (char *)"vector_sprite_components_iterator", _wrap_vector_sprite_components_iterator, METH_VARARGS, NULL},
+	 { (char *)"vector_sprite_components___nonzero__", _wrap_vector_sprite_components___nonzero__, METH_VARARGS, NULL},
+	 { (char *)"vector_sprite_components___bool__", _wrap_vector_sprite_components___bool__, METH_VARARGS, NULL},
+	 { (char *)"vector_sprite_components___len__", _wrap_vector_sprite_components___len__, METH_VARARGS, NULL},
+	 { (char *)"vector_sprite_components_pop", _wrap_vector_sprite_components_pop, METH_VARARGS, NULL},
+	 { (char *)"vector_sprite_components___getslice__", _wrap_vector_sprite_components___getslice__, METH_VARARGS, NULL},
+	 { (char *)"vector_sprite_components___setslice__", _wrap_vector_sprite_components___setslice__, METH_VARARGS, NULL},
+	 { (char *)"vector_sprite_components___delslice__", _wrap_vector_sprite_components___delslice__, METH_VARARGS, NULL},
+	 { (char *)"vector_sprite_components___delitem__", _wrap_vector_sprite_components___delitem__, METH_VARARGS, NULL},
+	 { (char *)"vector_sprite_components___getitem__", _wrap_vector_sprite_components___getitem__, METH_VARARGS, NULL},
+	 { (char *)"vector_sprite_components___setitem__", _wrap_vector_sprite_components___setitem__, METH_VARARGS, NULL},
+	 { (char *)"vector_sprite_components_append", _wrap_vector_sprite_components_append, METH_VARARGS, NULL},
+	 { (char *)"vector_sprite_components_empty", _wrap_vector_sprite_components_empty, METH_VARARGS, NULL},
+	 { (char *)"vector_sprite_components_size", _wrap_vector_sprite_components_size, METH_VARARGS, NULL},
+	 { (char *)"vector_sprite_components_clear", _wrap_vector_sprite_components_clear, METH_VARARGS, NULL},
+	 { (char *)"vector_sprite_components_swap", _wrap_vector_sprite_components_swap, METH_VARARGS, NULL},
+	 { (char *)"vector_sprite_components_get_allocator", _wrap_vector_sprite_components_get_allocator, METH_VARARGS, NULL},
+	 { (char *)"vector_sprite_components_begin", _wrap_vector_sprite_components_begin, METH_VARARGS, NULL},
+	 { (char *)"vector_sprite_components_end", _wrap_vector_sprite_components_end, METH_VARARGS, NULL},
+	 { (char *)"vector_sprite_components_rbegin", _wrap_vector_sprite_components_rbegin, METH_VARARGS, NULL},
+	 { (char *)"vector_sprite_components_rend", _wrap_vector_sprite_components_rend, METH_VARARGS, NULL},
+	 { (char *)"vector_sprite_components_pop_back", _wrap_vector_sprite_components_pop_back, METH_VARARGS, NULL},
+	 { (char *)"vector_sprite_components_erase", _wrap_vector_sprite_components_erase, METH_VARARGS, NULL},
+	 { (char *)"new_vector_sprite_components", _wrap_new_vector_sprite_components, METH_VARARGS, NULL},
+	 { (char *)"vector_sprite_components_push_back", _wrap_vector_sprite_components_push_back, METH_VARARGS, NULL},
+	 { (char *)"vector_sprite_components_front", _wrap_vector_sprite_components_front, METH_VARARGS, NULL},
+	 { (char *)"vector_sprite_components_back", _wrap_vector_sprite_components_back, METH_VARARGS, NULL},
+	 { (char *)"vector_sprite_components_assign", _wrap_vector_sprite_components_assign, METH_VARARGS, NULL},
+	 { (char *)"vector_sprite_components_resize", _wrap_vector_sprite_components_resize, METH_VARARGS, NULL},
+	 { (char *)"vector_sprite_components_insert", _wrap_vector_sprite_components_insert, METH_VARARGS, NULL},
+	 { (char *)"vector_sprite_components_reserve", _wrap_vector_sprite_components_reserve, METH_VARARGS, NULL},
+	 { (char *)"vector_sprite_components_capacity", _wrap_vector_sprite_components_capacity, METH_VARARGS, NULL},
+	 { (char *)"delete_vector_sprite_components", _wrap_delete_vector_sprite_components, METH_VARARGS, NULL},
+	 { (char *)"vector_sprite_components_swigregister", vector_sprite_components_swigregister, METH_VARARGS, NULL},
 	 { (char *)"map_string_string_iterator", _wrap_map_string_string_iterator, METH_VARARGS, NULL},
 	 { (char *)"map_string_string___nonzero__", _wrap_map_string_string___nonzero__, METH_VARARGS, NULL},
 	 { (char *)"map_string_string___bool__", _wrap_map_string_string___bool__, METH_VARARGS, NULL},
@@ -19927,7 +21943,7 @@ static swig_type_info _swigt__p_FESimple__SharedReourceMapT_FESimple__physic_des
 static swig_type_info _swigt__p_FESimple__SharedReourceMapT_FESimple__sprite_component_desc_t = {"_p_FESimple__SharedReourceMapT_FESimple__sprite_component_desc_t", "FESimple::SharedReourceMap< FESimple::sprite_component_desc > *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_FESimple__SharedReourceMapT_FESimple__sprite_desc_t = {"_p_FESimple__SharedReourceMapT_FESimple__sprite_desc_t", "FESimple::SharedReourceMap< FESimple::sprite_desc > *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_FESimple__SpriteBase = {"_p_FESimple__SpriteBase", "FESimple::SpriteBase *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_FESimple__SpriteComponent = {"_p_FESimple__SpriteComponent", "FESimple::SpriteComponent *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_FESimple__SpriteComponent = {"_p_FESimple__SpriteComponent", "std::vector< FESimple::SpriteComponent * >::value_type|FESimple::SpriteComponent *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_FESimple__animation = {"_p_FESimple__animation", "FESimple::animation *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_FESimple__b2fixture_def = {"_p_FESimple__b2fixture_def", "FESimple::b2fixture_def *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_FESimple__physic_desc = {"_p_FESimple__physic_desc", "FESimple::physic_desc *", 0, 0, (void*)0, 0};
@@ -19962,6 +21978,7 @@ static swig_type_info _swigt__p_p_PyObject = {"_p_p_PyObject", "PyObject **", 0,
 static swig_type_info _swigt__p_reference = {"_p_reference", "reference *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_size_type = {"_p_size_type", "size_type *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_std__allocatorT_FESimple__ControllerBase_p_t = {"_p_std__allocatorT_FESimple__ControllerBase_p_t", "std::vector< FESimple::ControllerBase * >::allocator_type *|std::allocator< FESimple::ControllerBase * > *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_std__allocatorT_FESimple__SpriteComponent_p_t = {"_p_std__allocatorT_FESimple__SpriteComponent_p_t", "std::allocator< FESimple::SpriteComponent * > *|std::vector< FESimple::SpriteComponent * >::allocator_type *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_std__allocatorT_std__pairT_std__string_const_std__string_t_t = {"_p_std__allocatorT_std__pairT_std__string_const_std__string_t_t", "std::map< std::string,std::string >::allocator_type *|std::allocator< std::pair< std::string const,std::string > > *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_std__functionT_void_pfstd__mapT_std__string_std__string_std__lessT_std__string_t_std__allocatorT_std__pairT_std__string_const_std__string_t_t_t_const_RF_t = {"_p_std__functionT_void_pfstd__mapT_std__string_std__string_std__lessT_std__string_t_std__allocatorT_std__pairT_std__string_const_std__string_t_t_t_const_RF_t", "std::function< void *(std::map< std::string,std::string,std::less< std::string >,std::allocator< std::pair< std::string const,std::string > > > const &) > *|std::function< void *(FESimple::SpawnParams const &) > *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_std__invalid_argument = {"_p_std__invalid_argument", "std::invalid_argument *", 0, 0, (void*)0, 0};
@@ -19976,7 +21993,7 @@ static swig_type_info _swigt__p_std__string = {"_p_std__string", "FESimple::Name
 static swig_type_info _swigt__p_std__vectorT_FESimple__ClassInfo_p_std__allocatorT_FESimple__ClassInfo_p_t_t = {"_p_std__vectorT_FESimple__ClassInfo_p_std__allocatorT_FESimple__ClassInfo_p_t_t", "std::vector< FESimple::ClassInfo *,std::allocator< FESimple::ClassInfo * > > *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_std__vectorT_FESimple__ControllerBase_p_std__allocatorT_FESimple__ControllerBase_p_t_t = {"_p_std__vectorT_FESimple__ControllerBase_p_std__allocatorT_FESimple__ControllerBase_p_t_t", "std::vector< FESimple::ControllerBase * > *|std::vector< FESimple::ControllerBase *,std::allocator< FESimple::ControllerBase * > > *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_std__vectorT_FESimple__LevelTrigger_std__allocatorT_FESimple__LevelTrigger_t_t = {"_p_std__vectorT_FESimple__LevelTrigger_std__allocatorT_FESimple__LevelTrigger_t_t", "std::vector< FESimple::LevelTrigger,std::allocator< FESimple::LevelTrigger > > *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_std__vectorT_FESimple__SpriteComponent_p_std__allocatorT_FESimple__SpriteComponent_p_t_t = {"_p_std__vectorT_FESimple__SpriteComponent_p_std__allocatorT_FESimple__SpriteComponent_p_t_t", "std::vector< FESimple::SpriteComponent *,std::allocator< FESimple::SpriteComponent * > > *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_std__vectorT_FESimple__SpriteComponent_p_std__allocatorT_FESimple__SpriteComponent_p_t_t = {"_p_std__vectorT_FESimple__SpriteComponent_p_std__allocatorT_FESimple__SpriteComponent_p_t_t", "std::vector< FESimple::SpriteComponent *,std::allocator< FESimple::SpriteComponent * > > *|std::vector< FESimple::SpriteComponent * > *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_std__vectorT_FESimple__b2fixture_def_std__allocatorT_FESimple__b2fixture_def_t_t = {"_p_std__vectorT_FESimple__b2fixture_def_std__allocatorT_FESimple__b2fixture_def_t_t", "std::vector< FESimple::b2fixture_def,std::allocator< FESimple::b2fixture_def > > *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_std__vectorT_FESimple__sprite_component_ref_std__allocatorT_FESimple__sprite_component_ref_t_t = {"_p_std__vectorT_FESimple__sprite_component_ref_std__allocatorT_FESimple__sprite_component_ref_t_t", "std::vector< FESimple::sprite_component_ref,std::allocator< FESimple::sprite_component_ref > > *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_std__vectorT_FESimple__sprite_joint_desc_std__allocatorT_FESimple__sprite_joint_desc_t_t = {"_p_std__vectorT_FESimple__sprite_joint_desc_std__allocatorT_FESimple__sprite_joint_desc_t_t", "std::vector< FESimple::sprite_joint_desc,std::allocator< FESimple::sprite_joint_desc > > *", 0, 0, (void*)0, 0};
@@ -20045,6 +22062,7 @@ static swig_type_info *swig_type_initial[] = {
   &_swigt__p_reference,
   &_swigt__p_size_type,
   &_swigt__p_std__allocatorT_FESimple__ControllerBase_p_t,
+  &_swigt__p_std__allocatorT_FESimple__SpriteComponent_p_t,
   &_swigt__p_std__allocatorT_std__pairT_std__string_const_std__string_t_t,
   &_swigt__p_std__functionT_void_pfstd__mapT_std__string_std__string_std__lessT_std__string_t_std__allocatorT_std__pairT_std__string_const_std__string_t_t_t_const_RF_t,
   &_swigt__p_std__invalid_argument,
@@ -20128,6 +22146,7 @@ static swig_cast_info _swigc__p_p_PyObject[] = {  {&_swigt__p_p_PyObject, 0, 0, 
 static swig_cast_info _swigc__p_reference[] = {  {&_swigt__p_reference, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_size_type[] = {  {&_swigt__p_size_type, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_std__allocatorT_FESimple__ControllerBase_p_t[] = {  {&_swigt__p_std__allocatorT_FESimple__ControllerBase_p_t, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_std__allocatorT_FESimple__SpriteComponent_p_t[] = {  {&_swigt__p_std__allocatorT_FESimple__SpriteComponent_p_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_std__allocatorT_std__pairT_std__string_const_std__string_t_t[] = {  {&_swigt__p_std__allocatorT_std__pairT_std__string_const_std__string_t_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_std__functionT_void_pfstd__mapT_std__string_std__string_std__lessT_std__string_t_std__allocatorT_std__pairT_std__string_const_std__string_t_t_t_const_RF_t[] = {  {&_swigt__p_std__functionT_void_pfstd__mapT_std__string_std__string_std__lessT_std__string_t_std__allocatorT_std__pairT_std__string_const_std__string_t_t_t_const_RF_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_std__invalid_argument[] = {  {&_swigt__p_std__invalid_argument, 0, 0, 0},{0, 0, 0, 0}};
@@ -20211,6 +22230,7 @@ static swig_cast_info *swig_cast_initial[] = {
   _swigc__p_reference,
   _swigc__p_size_type,
   _swigc__p_std__allocatorT_FESimple__ControllerBase_p_t,
+  _swigc__p_std__allocatorT_FESimple__SpriteComponent_p_t,
   _swigc__p_std__allocatorT_std__pairT_std__string_const_std__string_t_t,
   _swigc__p_std__functionT_void_pfstd__mapT_std__string_std__string_std__lessT_std__string_t_std__allocatorT_std__pairT_std__string_const_std__string_t_t_t_const_RF_t,
   _swigc__p_std__invalid_argument,
@@ -20920,7 +22940,6 @@ SWIG_init(void) {
   
   SWIG_InstallConstants(d,swig_const_table);
   
-  SWIG_Python_SetConstant(d, "SHARED_PTR_DISOWN",SWIG_From_int(static_cast< int >(0)));
   PyDict_SetItemString(md,(char*)"cvar", SWIG_globals());
   SWIG_addvarlink(SWIG_globals(),(char*)"GameObjBase_classinfo",Swig_var_GameObjBase_classinfo_get, Swig_var_GameObjBase_classinfo_set);
   SWIG_addvarlink(SWIG_globals(),(char*)"SpriteBase_classinfo",Swig_var_SpriteBase_classinfo_get, Swig_var_SpriteBase_classinfo_set);

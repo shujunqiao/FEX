@@ -12,35 +12,40 @@
 #include "IOSTouchController.h"
 #include "cocos2d.h"
 #include "ResourceManager.h"
-#include "SimpleSocket.h"
 
 %}
-%define SWIG_ING
-%enddef
 
 
 
 %include "std_string.i"
 %include "std_map.i"
 %include "std_vector.i"
-//%include "std_shared_ptr.i"
-
 %ignore FESimple::SharedReourceMap;
+
+namespace std
+{
+    template<typename T>
+    class shared_ptr
+    {
+    };
+}
 
 %template(vector_sprite_components) std::vector<FESimple::SpriteComponent*>;
 %template(map_string_string) std::map<std::string, std::string>;
 %template(vector_controller) std::vector<FESimple::ControllerBase*>;
-//%template(gameobj_ptr)  std::shared_ptr<FESimple::GameObjBase>;
+%template(gameobj_ptr)  std::shared_ptr<FESimple::GameObjBase>;
 
 %feature("director") FESimple::GameBase;
 %feature("director") FESimple::GameObjBase;
 %feature("director") FESimple::SpriteBase;
-//%feature("director") FESimple::ControllerBase;
 %feature("director") FESimple::IOSTouchController;
-%feature("unref") std::shared_ptr<FESimple::GameObjBase> "delete $this;//nimei"
 
-//%feature("ref") FESimple::SpriteComponent "$this->retain();"
-%feature("unref") FESimple::SpriteComponent "$this->release();"
+%feature("unref") std::shared_ptr<FESimple::GameObjBase> "delete $this;//nimei"
+%feature("unref") std::shared_ptr<GameObjBase> "delete $this;//nimei"
+
+%feature("unref") FESimple::SpriteComponent "$this->release(); // unref for SpriteComponent"
+
+
 
 namespace cocos2d
 {
@@ -55,7 +60,7 @@ namespace cocos2d
         CCPoint();
         CCPoint(float x, float y);
         CCPoint(const CCPoint& other);
-        CCPoint& operator= (const CCPoint& other);
+//ignored by swig        CCPoint& operator= (const CCPoint& other);
         void setPoint(float x, float y);
         bool equals(const CCPoint& target) const;
     };
@@ -70,7 +75,7 @@ namespace cocos2d
         CCSize();
         CCSize(float width, float height);
         CCSize(const CCSize& other);
-        CCSize& operator= (const CCSize& other);
+//ignored by swig        CCSize& operator= (const CCSize& other);
         void setSize(float width, float height);
         bool equals(const CCSize& target) const;
     };
@@ -85,7 +90,7 @@ namespace cocos2d
         CCRect();
         CCRect(float x, float y, float width, float height);
         CCRect(const CCRect& other);
-        CCRect& operator= (const CCRect& other);
+//ignored by swig        CCRect& operator= (const CCRect& other);
         void setRect(float x, float y, float width, float height);
         float getMinX() const; /// return the leftmost x-value of current rect
         float getMidX() const; /// return the midpoint x-value of current rect
@@ -161,4 +166,4 @@ namespace cocos2d
 %include "../FEX/IOSTouchController.h"
 %include "../FEX/SpriteComponent.h"
 %include "../FEX/ResourceManager.h"
-%include "../FEX/SimpleSocket.h"
+

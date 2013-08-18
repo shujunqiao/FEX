@@ -46,7 +46,7 @@ cocos2d::CCPoint operator - ( const cocos2d::CCPoint& pt1, const cocos2d::CCPoin
 
 float angle_to_rad( float angle );
 float rad_to_angle( float rad );
-float random( float from = 0.0f, float to = 1.0f);
+float random( float _from = 0.0f, float to = 1.0f);
 cocos2d::CCPoint random_dir( float from_rad = 0, float to_rad = Pi*2 );
 
 class ControllerBase;

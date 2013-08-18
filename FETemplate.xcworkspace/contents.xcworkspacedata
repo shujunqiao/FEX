@@ -11,6 +11,9 @@
       location = "container:"
       name = "Libs">
       <FileRef
+         location = "group:libs/Python.xcodeproj">
+      </FileRef>
+      <FileRef
          location = "group:libs/external/Box2D/proj.ios/Box2D.xcodeproj">
       </FileRef>
       <FileRef

@@ -3467,61 +3467,60 @@ namespace Swig {
 #define SWIGTYPE_p_FESimple__sprite_component_ref swig_types[27]
 #define SWIGTYPE_p_FESimple__sprite_desc swig_types[28]
 #define SWIGTYPE_p_FESimple__sprite_joint_desc swig_types[29]
-#define SWIGTYPE_p_SimpleSocket swig_types[30]
-#define SWIGTYPE_p_allocator_type swig_types[31]
-#define SWIGTYPE_p_b2BodyDef swig_types[32]
-#define SWIGTYPE_p_b2BodyType swig_types[33]
-#define SWIGTYPE_p_b2Contact swig_types[34]
-#define SWIGTYPE_p_b2JointType swig_types[35]
-#define SWIGTYPE_p_b2Vec2 swig_types[36]
-#define SWIGTYPE_p_b2World swig_types[37]
-#define SWIGTYPE_p_bool swig_types[38]
-#define SWIGTYPE_p_char swig_types[39]
-#define SWIGTYPE_p_cocos2d__CCAction swig_types[40]
-#define SWIGTYPE_p_cocos2d__CCAffineTransform swig_types[41]
-#define SWIGTYPE_p_cocos2d__CCAnimation swig_types[42]
-#define SWIGTYPE_p_cocos2d__CCEvent swig_types[43]
-#define SWIGTYPE_p_cocos2d__CCPoint swig_types[44]
-#define SWIGTYPE_p_cocos2d__CCRect swig_types[45]
-#define SWIGTYPE_p_cocos2d__CCSize swig_types[46]
-#define SWIGTYPE_p_cocos2d__CCTouch swig_types[47]
-#define SWIGTYPE_p_cocos2d__ccColor4F swig_types[48]
-#define SWIGTYPE_p_const_reference swig_types[49]
-#define SWIGTYPE_p_difference_type swig_types[50]
-#define SWIGTYPE_p_key_type swig_types[51]
-#define SWIGTYPE_p_mapped_type swig_types[52]
-#define SWIGTYPE_p_p_PyObject swig_types[53]
-#define SWIGTYPE_p_reference swig_types[54]
-#define SWIGTYPE_p_size_type swig_types[55]
-#define SWIGTYPE_p_std__allocatorT_FESimple__ControllerBase_p_t swig_types[56]
-#define SWIGTYPE_p_std__allocatorT_FESimple__SpriteComponent_p_t swig_types[57]
-#define SWIGTYPE_p_std__allocatorT_std__pairT_std__string_const_std__string_t_t swig_types[58]
-#define SWIGTYPE_p_std__functionT_void_pfstd__mapT_std__string_std__string_std__lessT_std__string_t_std__allocatorT_std__pairT_std__string_const_std__string_t_t_t_const_RF_t swig_types[59]
-#define SWIGTYPE_p_std__invalid_argument swig_types[60]
-#define SWIGTYPE_p_std__lessT_std__string_t swig_types[61]
-#define SWIGTYPE_p_std__listT_std__shared_ptrT_FESimple__GameObjBase_t_t swig_types[62]
-#define SWIGTYPE_p_std__mapT_std__string_FESimple__ClassInfo_const_p_std__lessT_std__string_t_std__allocatorT_std__pairT_std__string_const_FESimple__ClassInfo_const_p_t_t_t swig_types[63]
-#define SWIGTYPE_p_std__mapT_std__string_std__string_std__lessT_std__string_t_std__allocatorT_std__pairT_std__string_const_std__string_t_t_t swig_types[64]
-#define SWIGTYPE_p_std__shared_ptrT_FESimple__GameObjBase_t swig_types[65]
-#define SWIGTYPE_p_std__shared_ptrT_FESimple__LevelData_t swig_types[66]
-#define SWIGTYPE_p_std__shared_ptrT_FESimple__sprite_component_desc_t swig_types[67]
-#define SWIGTYPE_p_std__string swig_types[68]
-#define SWIGTYPE_p_std__vectorT_FESimple__ClassInfo_p_std__allocatorT_FESimple__ClassInfo_p_t_t swig_types[69]
-#define SWIGTYPE_p_std__vectorT_FESimple__ControllerBase_p_std__allocatorT_FESimple__ControllerBase_p_t_t swig_types[70]
-#define SWIGTYPE_p_std__vectorT_FESimple__LevelTrigger_std__allocatorT_FESimple__LevelTrigger_t_t swig_types[71]
-#define SWIGTYPE_p_std__vectorT_FESimple__SpriteComponent_p_std__allocatorT_FESimple__SpriteComponent_p_t_t swig_types[72]
-#define SWIGTYPE_p_std__vectorT_FESimple__b2fixture_def_std__allocatorT_FESimple__b2fixture_def_t_t swig_types[73]
-#define SWIGTYPE_p_std__vectorT_FESimple__sprite_component_ref_std__allocatorT_FESimple__sprite_component_ref_t_t swig_types[74]
-#define SWIGTYPE_p_std__vectorT_FESimple__sprite_joint_desc_std__allocatorT_FESimple__sprite_joint_desc_t_t swig_types[75]
-#define SWIGTYPE_p_std__vectorT__Tp_p__Alloc_t swig_types[76]
-#define SWIGTYPE_p_std__vectorT_float_std__allocatorT_float_t_t swig_types[77]
-#define SWIGTYPE_p_std__vectorT_std__string_std__allocatorT_std__string_t_t swig_types[78]
-#define SWIGTYPE_p_std__weak_ptrT_FESimple__GameObjBase_t swig_types[79]
-#define SWIGTYPE_p_std__weak_ptrT_FESimple__SpriteBase_t swig_types[80]
-#define SWIGTYPE_p_swig__SwigPyIterator swig_types[81]
-#define SWIGTYPE_p_value_type swig_types[82]
-static swig_type_info *swig_types[84];
-static swig_module_info swig_module = {swig_types, 83, 0, 0, 0, 0};
+#define SWIGTYPE_p_allocator_type swig_types[30]
+#define SWIGTYPE_p_b2BodyDef swig_types[31]
+#define SWIGTYPE_p_b2BodyType swig_types[32]
+#define SWIGTYPE_p_b2Contact swig_types[33]
+#define SWIGTYPE_p_b2JointType swig_types[34]
+#define SWIGTYPE_p_b2Vec2 swig_types[35]
+#define SWIGTYPE_p_b2World swig_types[36]
+#define SWIGTYPE_p_bool swig_types[37]
+#define SWIGTYPE_p_char swig_types[38]
+#define SWIGTYPE_p_cocos2d__CCAction swig_types[39]
+#define SWIGTYPE_p_cocos2d__CCAffineTransform swig_types[40]
+#define SWIGTYPE_p_cocos2d__CCAnimation swig_types[41]
+#define SWIGTYPE_p_cocos2d__CCEvent swig_types[42]
+#define SWIGTYPE_p_cocos2d__CCPoint swig_types[43]
+#define SWIGTYPE_p_cocos2d__CCRect swig_types[44]
+#define SWIGTYPE_p_cocos2d__CCSize swig_types[45]
+#define SWIGTYPE_p_cocos2d__CCTouch swig_types[46]
+#define SWIGTYPE_p_cocos2d__ccColor4F swig_types[47]
+#define SWIGTYPE_p_const_reference swig_types[48]
+#define SWIGTYPE_p_difference_type swig_types[49]
+#define SWIGTYPE_p_key_type swig_types[50]
+#define SWIGTYPE_p_mapped_type swig_types[51]
+#define SWIGTYPE_p_p_PyObject swig_types[52]
+#define SWIGTYPE_p_reference swig_types[53]
+#define SWIGTYPE_p_size_type swig_types[54]
+#define SWIGTYPE_p_std__allocatorT_FESimple__ControllerBase_p_t swig_types[55]
+#define SWIGTYPE_p_std__allocatorT_FESimple__SpriteComponent_p_t swig_types[56]
+#define SWIGTYPE_p_std__allocatorT_std__pairT_std__string_const_std__string_t_t swig_types[57]
+#define SWIGTYPE_p_std__functionT_void_pfstd__mapT_std__string_std__string_std__lessT_std__string_t_std__allocatorT_std__pairT_std__string_const_std__string_t_t_t_const_RF_t swig_types[58]
+#define SWIGTYPE_p_std__invalid_argument swig_types[59]
+#define SWIGTYPE_p_std__lessT_std__string_t swig_types[60]
+#define SWIGTYPE_p_std__listT_std__shared_ptrT_FESimple__GameObjBase_t_t swig_types[61]
+#define SWIGTYPE_p_std__mapT_std__string_FESimple__ClassInfo_const_p_std__lessT_std__string_t_std__allocatorT_std__pairT_std__string_const_FESimple__ClassInfo_const_p_t_t_t swig_types[62]
+#define SWIGTYPE_p_std__mapT_std__string_std__string_std__lessT_std__string_t_std__allocatorT_std__pairT_std__string_const_std__string_t_t_t swig_types[63]
+#define SWIGTYPE_p_std__shared_ptrT_FESimple__GameObjBase_t swig_types[64]
+#define SWIGTYPE_p_std__shared_ptrT_FESimple__LevelData_t swig_types[65]
+#define SWIGTYPE_p_std__shared_ptrT_FESimple__sprite_component_desc_t swig_types[66]
+#define SWIGTYPE_p_std__string swig_types[67]
+#define SWIGTYPE_p_std__vectorT_FESimple__ClassInfo_p_std__allocatorT_FESimple__ClassInfo_p_t_t swig_types[68]
+#define SWIGTYPE_p_std__vectorT_FESimple__ControllerBase_p_std__allocatorT_FESimple__ControllerBase_p_t_t swig_types[69]
+#define SWIGTYPE_p_std__vectorT_FESimple__LevelTrigger_std__allocatorT_FESimple__LevelTrigger_t_t swig_types[70]
+#define SWIGTYPE_p_std__vectorT_FESimple__SpriteComponent_p_std__allocatorT_FESimple__SpriteComponent_p_t_t swig_types[71]
+#define SWIGTYPE_p_std__vectorT_FESimple__b2fixture_def_std__allocatorT_FESimple__b2fixture_def_t_t swig_types[72]
+#define SWIGTYPE_p_std__vectorT_FESimple__sprite_component_ref_std__allocatorT_FESimple__sprite_component_ref_t_t swig_types[73]
+#define SWIGTYPE_p_std__vectorT_FESimple__sprite_joint_desc_std__allocatorT_FESimple__sprite_joint_desc_t_t swig_types[74]
+#define SWIGTYPE_p_std__vectorT__Tp_p__Alloc_t swig_types[75]
+#define SWIGTYPE_p_std__vectorT_float_std__allocatorT_float_t_t swig_types[76]
+#define SWIGTYPE_p_std__vectorT_std__string_std__allocatorT_std__string_t_t swig_types[77]
+#define SWIGTYPE_p_std__weak_ptrT_FESimple__GameObjBase_t swig_types[78]
+#define SWIGTYPE_p_std__weak_ptrT_FESimple__SpriteBase_t swig_types[79]
+#define SWIGTYPE_p_swig__SwigPyIterator swig_types[80]
+#define SWIGTYPE_p_value_type swig_types[81]
+static swig_type_info *swig_types[83];
+static swig_module_info swig_module = {swig_types, 82, 0, 0, 0, 0};
 #define SWIG_TypeQuery(name) SWIG_TypeQueryModule(&swig_module, &swig_module, name)
 #define SWIG_MangledTypeQuery(name) SWIG_MangledTypeQueryModule(&swig_module, &swig_module, name)
 
@@ -3630,7 +3629,6 @@ namespace swig {
 #include "IOSTouchController.h"
 #include "cocos2d.h"
 #include "ResourceManager.h"
-#include "SimpleSocket.h"
 
 
 
@@ -12437,6 +12435,47 @@ SWIGINTERN PyObject *vector_controller_swigregister(PyObject *SWIGUNUSEDPARM(sel
   return SWIG_Py_Void();
 }
 
+SWIGINTERN PyObject *_wrap_new_gameobj_ptr(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  std::shared_ptr< FESimple::GameObjBase > *result = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)":new_gameobj_ptr")) SWIG_fail;
+  result = (std::shared_ptr< FESimple::GameObjBase > *)new std::shared_ptr< FESimple::GameObjBase >();
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_std__shared_ptrT_FESimple__GameObjBase_t, SWIG_POINTER_NEW |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_delete_gameobj_ptr(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  std::shared_ptr< FESimple::GameObjBase > *arg1 = (std::shared_ptr< FESimple::GameObjBase > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:delete_gameobj_ptr",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_std__shared_ptrT_FESimple__GameObjBase_t, SWIG_POINTER_DISOWN |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "delete_gameobj_ptr" "', argument " "1"" of type '" "std::shared_ptr< FESimple::GameObjBase > *""'"); 
+  }
+  arg1 = reinterpret_cast< std::shared_ptr< FESimple::GameObjBase > * >(argp1);
+  delete arg1;
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *gameobj_ptr_swigregister(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *obj;
+  if (!PyArg_ParseTuple(args,(char*)"O:swigregister", &obj)) return NULL;
+  SWIG_TypeNewClientData(SWIGTYPE_p_std__shared_ptrT_FESimple__GameObjBase_t, SWIG_NewClientData(obj));
+  return SWIG_Py_Void();
+}
+
 SWIGINTERN PyObject *_wrap_CCPoint_x_set(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   cocos2d::CCPoint *arg1 = (cocos2d::CCPoint *) 0 ;
@@ -15796,7 +15835,7 @@ fail:
 SWIGINTERN PyObject *_wrap_GameBase_add_game_object(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   FESimple::GameBase *arg1 = (FESimple::GameBase *) 0 ;
-  SwigValueWrapper< std::shared_ptr< FESimple::GameObjBase > > arg2 ;
+  FESimple::GameObjPtr arg2 ;
   FESimple::Name *arg3 = 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
@@ -15850,7 +15889,7 @@ fail:
 SWIGINTERN PyObject *_wrap_GameBase_remove_game_object(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   FESimple::GameBase *arg1 = (FESimple::GameBase *) 0 ;
-  SwigValueWrapper< std::shared_ptr< FESimple::GameObjBase > > arg2 ;
+  FESimple::GameObjPtr arg2 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   void *argp2 ;
@@ -15994,7 +16033,7 @@ SWIGINTERN PyObject *_wrap_GameBase_get_obj(PyObject *SWIGUNUSEDPARM(self), PyOb
   int res2 = SWIG_OLDOBJ ;
   PyObject * obj0 = 0 ;
   PyObject * obj1 = 0 ;
-  SwigValueWrapper< std::shared_ptr< FESimple::GameObjBase > > result;
+  FESimple::GameObjPtr result;
   
   if (!PyArg_ParseTuple(args,(char *)"OO:GameBase_get_obj",&obj0,&obj1)) SWIG_fail;
   res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_FESimple__GameBase, 0 |  0 );
@@ -18023,7 +18062,7 @@ SWIGINTERN PyObject *_wrap_make_gameobj_ptr(PyObject *SWIGUNUSEDPARM(self), PyOb
   void *argp1 = 0 ;
   int res1 = 0 ;
   PyObject * obj0 = 0 ;
-  SwigValueWrapper< std::shared_ptr< FESimple::GameObjBase > > result;
+  FESimple::GameObjPtr result;
   
   if (!PyArg_ParseTuple(args,(char *)"O:make_gameobj_ptr",&obj0)) SWIG_fail;
   res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_FESimple__GameObjBase, 0 |  0 );
@@ -18133,7 +18172,7 @@ SWIGINTERN PyObject *_wrap_GameObjFactory_construct_obj(PyObject *SWIGUNUSEDPARM
   int res2 = SWIG_OLDOBJ ;
   PyObject * obj0 = 0 ;
   PyObject * obj1 = 0 ;
-  SwigValueWrapper< std::shared_ptr< FESimple::GameObjBase > > result;
+  FESimple::GameObjPtr result;
   
   if (!PyArg_ParseTuple(args,(char *)"OO:GameObjFactory_construct_obj",&obj0,&obj1)) SWIG_fail;
   {
@@ -20173,7 +20212,7 @@ SWIGINTERN PyObject *_wrap_delete_SpriteComponent(PyObject *SWIGUNUSEDPARM(self)
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "delete_SpriteComponent" "', argument " "1"" of type '" "FESimple::SpriteComponent *""'"); 
   }
   arg1 = reinterpret_cast< FESimple::SpriteComponent * >(argp1);
-  arg1->release();
+  arg1->release(); // unref for SpriteComponent
   resultobj = SWIG_Py_Void();
   return resultobj;
 fail:
@@ -21437,175 +21476,6 @@ SWIGINTERN PyObject *ResourceManager_swigregister(PyObject *SWIGUNUSEDPARM(self)
   return SWIG_Py_Void();
 }
 
-SWIGINTERN PyObject *_wrap_SimpleSocket_connect(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
-  PyObject *resultobj = 0;
-  SimpleSocket *arg1 = (SimpleSocket *) 0 ;
-  std::string arg2 ;
-  int arg3 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  int val3 ;
-  int ecode3 = 0 ;
-  PyObject * obj0 = 0 ;
-  PyObject * obj1 = 0 ;
-  PyObject * obj2 = 0 ;
-  bool result;
-  
-  if (!PyArg_ParseTuple(args,(char *)"OOO:SimpleSocket_connect",&obj0,&obj1,&obj2)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_SimpleSocket, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimpleSocket_connect" "', argument " "1"" of type '" "SimpleSocket *""'"); 
-  }
-  arg1 = reinterpret_cast< SimpleSocket * >(argp1);
-  {
-    std::string *ptr = (std::string *)0;
-    int res = SWIG_AsPtr_std_string(obj1, &ptr);
-    if (!SWIG_IsOK(res) || !ptr) {
-      SWIG_exception_fail(SWIG_ArgError((ptr ? res : SWIG_TypeError)), "in method '" "SimpleSocket_connect" "', argument " "2"" of type '" "std::string""'"); 
-    }
-    arg2 = *ptr;
-    if (SWIG_IsNewObj(res)) delete ptr;
-  }
-  ecode3 = SWIG_AsVal_int(obj2, &val3);
-  if (!SWIG_IsOK(ecode3)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode3), "in method '" "SimpleSocket_connect" "', argument " "3"" of type '" "int""'");
-  } 
-  arg3 = static_cast< int >(val3);
-  result = (bool)(arg1)->connect(arg2,arg3);
-  resultobj = SWIG_From_bool(static_cast< bool >(result));
-  return resultobj;
-fail:
-  return NULL;
-}
-
-
-SWIGINTERN PyObject *_wrap_SimpleSocket_disconnect(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
-  PyObject *resultobj = 0;
-  SimpleSocket *arg1 = (SimpleSocket *) 0 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  PyObject * obj0 = 0 ;
-  bool result;
-  
-  if (!PyArg_ParseTuple(args,(char *)"O:SimpleSocket_disconnect",&obj0)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_SimpleSocket, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimpleSocket_disconnect" "', argument " "1"" of type '" "SimpleSocket *""'"); 
-  }
-  arg1 = reinterpret_cast< SimpleSocket * >(argp1);
-  result = (bool)(arg1)->disconnect();
-  resultobj = SWIG_From_bool(static_cast< bool >(result));
-  return resultobj;
-fail:
-  return NULL;
-}
-
-
-SWIGINTERN PyObject *_wrap_SimpleSocket_send(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
-  PyObject *resultobj = 0;
-  SimpleSocket *arg1 = (SimpleSocket *) 0 ;
-  std::string arg2 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  PyObject * obj0 = 0 ;
-  PyObject * obj1 = 0 ;
-  int result;
-  
-  if (!PyArg_ParseTuple(args,(char *)"OO:SimpleSocket_send",&obj0,&obj1)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_SimpleSocket, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimpleSocket_send" "', argument " "1"" of type '" "SimpleSocket *""'"); 
-  }
-  arg1 = reinterpret_cast< SimpleSocket * >(argp1);
-  {
-    std::string *ptr = (std::string *)0;
-    int res = SWIG_AsPtr_std_string(obj1, &ptr);
-    if (!SWIG_IsOK(res) || !ptr) {
-      SWIG_exception_fail(SWIG_ArgError((ptr ? res : SWIG_TypeError)), "in method '" "SimpleSocket_send" "', argument " "2"" of type '" "std::string""'"); 
-    }
-    arg2 = *ptr;
-    if (SWIG_IsNewObj(res)) delete ptr;
-  }
-  result = (int)(arg1)->send(arg2);
-  resultobj = SWIG_From_int(static_cast< int >(result));
-  return resultobj;
-fail:
-  return NULL;
-}
-
-
-SWIGINTERN PyObject *_wrap_SimpleSocket_recv(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
-  PyObject *resultobj = 0;
-  SimpleSocket *arg1 = (SimpleSocket *) 0 ;
-  int arg2 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  int val2 ;
-  int ecode2 = 0 ;
-  PyObject * obj0 = 0 ;
-  PyObject * obj1 = 0 ;
-  std::string result;
-  
-  if (!PyArg_ParseTuple(args,(char *)"OO:SimpleSocket_recv",&obj0,&obj1)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_SimpleSocket, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SimpleSocket_recv" "', argument " "1"" of type '" "SimpleSocket *""'"); 
-  }
-  arg1 = reinterpret_cast< SimpleSocket * >(argp1);
-  ecode2 = SWIG_AsVal_int(obj1, &val2);
-  if (!SWIG_IsOK(ecode2)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "SimpleSocket_recv" "', argument " "2"" of type '" "int""'");
-  } 
-  arg2 = static_cast< int >(val2);
-  result = (arg1)->recv(arg2);
-  resultobj = SWIG_From_std_string(static_cast< std::string >(result));
-  return resultobj;
-fail:
-  return NULL;
-}
-
-
-SWIGINTERN PyObject *_wrap_new_SimpleSocket(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
-  PyObject *resultobj = 0;
-  SimpleSocket *result = 0 ;
-  
-  if (!PyArg_ParseTuple(args,(char *)":new_SimpleSocket")) SWIG_fail;
-  result = (SimpleSocket *)new SimpleSocket();
-  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_SimpleSocket, SWIG_POINTER_NEW |  0 );
-  return resultobj;
-fail:
-  return NULL;
-}
-
-
-SWIGINTERN PyObject *_wrap_delete_SimpleSocket(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
-  PyObject *resultobj = 0;
-  SimpleSocket *arg1 = (SimpleSocket *) 0 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  PyObject * obj0 = 0 ;
-  
-  if (!PyArg_ParseTuple(args,(char *)"O:delete_SimpleSocket",&obj0)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_SimpleSocket, SWIG_POINTER_DISOWN |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "delete_SimpleSocket" "', argument " "1"" of type '" "SimpleSocket *""'"); 
-  }
-  arg1 = reinterpret_cast< SimpleSocket * >(argp1);
-  delete arg1;
-  resultobj = SWIG_Py_Void();
-  return resultobj;
-fail:
-  return NULL;
-}
-
-
-SWIGINTERN PyObject *SimpleSocket_swigregister(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
-  PyObject *obj;
-  if (!PyArg_ParseTuple(args,(char*)"O:swigregister", &obj)) return NULL;
-  SWIG_TypeNewClientData(SWIGTYPE_p_SimpleSocket, SWIG_NewClientData(obj));
-  return SWIG_Py_Void();
-}
-
 static PyMethodDef SwigMethods[] = {
 	 { (char *)"SWIG_PyInstanceMethod_New", (PyCFunction)SWIG_PyInstanceMethod_New, METH_O, NULL},
 	 { (char *)"delete_SwigPyIterator", _wrap_delete_SwigPyIterator, METH_VARARGS, NULL},
@@ -21726,6 +21596,9 @@ static PyMethodDef SwigMethods[] = {
 	 { (char *)"vector_controller_capacity", _wrap_vector_controller_capacity, METH_VARARGS, NULL},
 	 { (char *)"delete_vector_controller", _wrap_delete_vector_controller, METH_VARARGS, NULL},
 	 { (char *)"vector_controller_swigregister", vector_controller_swigregister, METH_VARARGS, NULL},
+	 { (char *)"new_gameobj_ptr", _wrap_new_gameobj_ptr, METH_VARARGS, NULL},
+	 { (char *)"delete_gameobj_ptr", _wrap_delete_gameobj_ptr, METH_VARARGS, NULL},
+	 { (char *)"gameobj_ptr_swigregister", gameobj_ptr_swigregister, METH_VARARGS, NULL},
 	 { (char *)"CCPoint_x_set", _wrap_CCPoint_x_set, METH_VARARGS, NULL},
 	 { (char *)"CCPoint_x_get", _wrap_CCPoint_x_get, METH_VARARGS, NULL},
 	 { (char *)"CCPoint_y_set", _wrap_CCPoint_y_set, METH_VARARGS, NULL},
@@ -22037,13 +21910,6 @@ static PyMethodDef SwigMethods[] = {
 	 { (char *)"new_ResourceManager", _wrap_new_ResourceManager, METH_VARARGS, NULL},
 	 { (char *)"delete_ResourceManager", _wrap_delete_ResourceManager, METH_VARARGS, NULL},
 	 { (char *)"ResourceManager_swigregister", ResourceManager_swigregister, METH_VARARGS, NULL},
-	 { (char *)"SimpleSocket_connect", _wrap_SimpleSocket_connect, METH_VARARGS, NULL},
-	 { (char *)"SimpleSocket_disconnect", _wrap_SimpleSocket_disconnect, METH_VARARGS, NULL},
-	 { (char *)"SimpleSocket_send", _wrap_SimpleSocket_send, METH_VARARGS, NULL},
-	 { (char *)"SimpleSocket_recv", _wrap_SimpleSocket_recv, METH_VARARGS, NULL},
-	 { (char *)"new_SimpleSocket", _wrap_new_SimpleSocket, METH_VARARGS, NULL},
-	 { (char *)"delete_SimpleSocket", _wrap_delete_SimpleSocket, METH_VARARGS, NULL},
-	 { (char *)"SimpleSocket_swigregister", SimpleSocket_swigregister, METH_VARARGS, NULL},
 	 { NULL, NULL, 0, NULL }
 };
 
@@ -22086,7 +21952,6 @@ static swig_type_info _swigt__p_FESimple__sprite_component_desc = {"_p_FESimple_
 static swig_type_info _swigt__p_FESimple__sprite_component_ref = {"_p_FESimple__sprite_component_ref", "FESimple::sprite_component_ref *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_FESimple__sprite_desc = {"_p_FESimple__sprite_desc", "FESimple::sprite_desc *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_FESimple__sprite_joint_desc = {"_p_FESimple__sprite_joint_desc", "FESimple::sprite_joint_desc *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_SimpleSocket = {"_p_SimpleSocket", "SimpleSocket *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_allocator_type = {"_p_allocator_type", "allocator_type *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_b2BodyDef = {"_p_b2BodyDef", "b2BodyDef *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_b2BodyType = {"_p_b2BodyType", "b2BodyType *", 0, 0, (void*)0, 0};
@@ -22171,7 +22036,6 @@ static swig_type_info *swig_type_initial[] = {
   &_swigt__p_FESimple__sprite_component_ref,
   &_swigt__p_FESimple__sprite_desc,
   &_swigt__p_FESimple__sprite_joint_desc,
-  &_swigt__p_SimpleSocket,
   &_swigt__p_allocator_type,
   &_swigt__p_b2BodyDef,
   &_swigt__p_b2BodyType,
@@ -22256,7 +22120,6 @@ static swig_cast_info _swigc__p_FESimple__sprite_component_desc[] = {  {&_swigt_
 static swig_cast_info _swigc__p_FESimple__sprite_component_ref[] = {  {&_swigt__p_FESimple__sprite_component_ref, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_FESimple__sprite_desc[] = {  {&_swigt__p_FESimple__sprite_desc, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_FESimple__sprite_joint_desc[] = {  {&_swigt__p_FESimple__sprite_joint_desc, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_SimpleSocket[] = {  {&_swigt__p_SimpleSocket, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_allocator_type[] = {  {&_swigt__p_allocator_type, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_b2BodyDef[] = {  {&_swigt__p_b2BodyDef, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_b2BodyType[] = {  {&_swigt__p_b2BodyType, 0, 0, 0},{0, 0, 0, 0}};
@@ -22341,7 +22204,6 @@ static swig_cast_info *swig_cast_initial[] = {
   _swigc__p_FESimple__sprite_component_ref,
   _swigc__p_FESimple__sprite_desc,
   _swigc__p_FESimple__sprite_joint_desc,
-  _swigc__p_SimpleSocket,
   _swigc__p_allocator_type,
   _swigc__p_b2BodyDef,
   _swigc__p_b2BodyType,

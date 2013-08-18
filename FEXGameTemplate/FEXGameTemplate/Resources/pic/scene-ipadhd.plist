@@ -7,28 +7,28 @@
             <key>dimdot.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{2,14},{10,10}}</string>
+                <string>{{2,68},{64,64}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
                 <false/>
                 <key>sourceColorRect</key>
-                <string>{{0,0},{10,10}}</string>
+                <string>{{0,0},{64,64}}</string>
                 <key>sourceSize</key>
-                <string>{10,10}</string>
+                <string>{64,64}</string>
             </dict>
             <key>lightdot.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{2,2},{10,10}}</string>
+                <string>{{2,2},{64,64}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
                 <false/>
                 <key>sourceColorRect</key>
-                <string>{{0,0},{10,10}}</string>
+                <string>{{0,0},{64,64}}</string>
                 <key>sourceSize</key>
-                <string>{10,10}</string>
+                <string>{64,64}</string>
             </dict>
         </dict>
         <key>metadata</key>
@@ -38,9 +38,9 @@
             <key>realTextureFileName</key>
             <string>scene-ipadhd.png</string>
             <key>size</key>
-            <string>{16,32}</string>
+            <string>{128,256}</string>
             <key>smartupdate</key>
-            <string>$TexturePacker:SmartUpdate:987531065294ee17e4beaa7f68b46d6c$</string>
+            <string>$TexturePacker:SmartUpdate:d85e69314665ffd137f408ab3bb030c3$</string>
             <key>textureFileName</key>
             <string>scene-ipadhd.png</string>
         </dict>

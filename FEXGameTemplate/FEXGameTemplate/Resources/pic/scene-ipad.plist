@@ -7,28 +7,28 @@
             <key>dimdot.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{2,9},{5,5}}</string>
+                <string>{{2,36},{32,32}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
                 <false/>
                 <key>sourceColorRect</key>
-                <string>{{0,0},{5,5}}</string>
+                <string>{{0,0},{32,32}}</string>
                 <key>sourceSize</key>
-                <string>{5,5}</string>
+                <string>{32,32}</string>
             </dict>
             <key>lightdot.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{2,2},{5,5}}</string>
+                <string>{{2,2},{32,32}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
                 <false/>
                 <key>sourceColorRect</key>
-                <string>{{0,0},{5,5}}</string>
+                <string>{{0,0},{32,32}}</string>
                 <key>sourceSize</key>
-                <string>{5,5}</string>
+                <string>{32,32}</string>
             </dict>
         </dict>
         <key>metadata</key>
@@ -38,9 +38,9 @@
             <key>realTextureFileName</key>
             <string>scene-ipad.png</string>
             <key>size</key>
-            <string>{16,16}</string>
+            <string>{64,128}</string>
             <key>smartupdate</key>
-            <string>$TexturePacker:SmartUpdate:33b6fb714d9aa0079935d3742a2fe98a$</string>
+            <string>$TexturePacker:SmartUpdate:adb0b2707a4a680dff350677f5535359$</string>
             <key>textureFileName</key>
             <string>scene-ipad.png</string>
         </dict>

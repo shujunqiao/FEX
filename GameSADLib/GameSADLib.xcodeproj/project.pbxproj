@@ -418,7 +418,13 @@
 			buildSettings = {
 				DSTROOT = /tmp/GameSADLib.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "GameSADLib/GameSADLib-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					DEBUG,
+					"COCOS2D_DEBUG=1",
+					USE_FILE32API,
+					CC_TARGET_OS_IPHONE,
+				);
 				HEADER_SEARCH_PATHS = (
 					"\"../libs/cocos2dx/kazmath/include\"",
 					"\"../libs/cocos2dx\"",
@@ -430,8 +436,10 @@
 					"\"../libs/external\"",
 					../FEX,
 				);
+				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -441,7 +449,11 @@
 			buildSettings = {
 				DSTROOT = /tmp/GameSADLib.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "GameSADLib/GameSADLib-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					NDEBUG,
+					USE_FILE32API,
+					CC_TARGET_OS_IPHONE,
+				);
 				HEADER_SEARCH_PATHS = (
 					"\"../libs/cocos2dx/kazmath/include\"",
 					"\"../libs/cocos2dx\"",
@@ -455,6 +467,7 @@
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
