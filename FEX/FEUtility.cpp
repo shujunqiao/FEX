@@ -17,7 +17,6 @@ using namespace FESimple;
 #include "FEX_wrap.cxx"
 #include "FEX_wrap.h"
 
-extern "C" void initzlib(void);
 
 FE_NS_BEGIN
 
@@ -258,11 +257,8 @@ bool init_python(const std::string& python_home)
     Py_SetPythonHome(path);
     Py_Initialize();
     
-    initzlib();
     init_FEX();
     PyRun_SimpleString("import sys");
-    std::string cmd = std::string("sys.path.append(\"") + full_path("python") + "/python.zip\")";
-    PyRun_SimpleString(cmd.c_str());
     PyRun_SimpleString("print sys.path");
     return true;
 }
@@ -273,5 +269,9 @@ bool ends_with( const std::string& bigger_str, const std::string& smaller_str )
     return pos+1 == bigger_str.length();
 }
 
+cocos2d::CCSize get_screen_size()
+{
+    return cocos2d::CCDirector::sharedDirector()->getWinSize();
+}
 FE_NS_END
 

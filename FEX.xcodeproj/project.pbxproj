@@ -62,7 +62,7 @@
 		04A627AE177BEC7900E1760D /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 12;
-			dstPath = "build/${PRODUCT_NAME}";
+			dstPath = "../$(EFFECTIVE_PLATFORM_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
 			);

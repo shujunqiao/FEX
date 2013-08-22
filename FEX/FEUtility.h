@@ -68,6 +68,7 @@ bool init_python(const std::string& python_home);
 
 
 bool ends_with( const std::string& bigger_str, const std::string& smaller_str );
+cocos2d::CCSize get_screen_size();
 FE_NS_END
 
 

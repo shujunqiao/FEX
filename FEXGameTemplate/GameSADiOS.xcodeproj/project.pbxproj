@@ -42,10 +42,10 @@
 		04A633C8177C5C9000E1760D /* shaders in Resources */ = {isa = PBXBuildFile; fileRef = 04A633BF177C5C9000E1760D /* shaders */; };
 		04A633C9177C5C9000E1760D /* sprite_components in Resources */ = {isa = PBXBuildFile; fileRef = 04A633C0177C5C9000E1760D /* sprite_components */; };
 		04A633CA177C5C9000E1760D /* sprites in Resources */ = {isa = PBXBuildFile; fileRef = 04A633C1177C5C9000E1760D /* sprites */; };
+		04B78CD817C30A54004649D3 /* libGameSADLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 04B78CD717C30A54004649D3 /* libGameSADLib.a */; };
 		04C335D817BFCC9900CBCB33 /* libBox2D.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 04C335D317BFCC9800CBCB33 /* libBox2D.a */; };
 		04C335D917BFCC9900CBCB33 /* libcocos2dx.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 04C335D417BFCC9800CBCB33 /* libcocos2dx.a */; };
 		04C335DA17BFCC9900CBCB33 /* libFEX.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 04C335D517BFCC9800CBCB33 /* libFEX.a */; };
-		04C335DB17BFCC9900CBCB33 /* libGameSADLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 04C335D617BFCC9800CBCB33 /* libGameSADLib.a */; };
 		04C335DC17BFCC9900CBCB33 /* libPython.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 04C335D717BFCC9800CBCB33 /* libPython.a */; };
 		04C335DE17BFCD8E00CBCB33 /* libCocosDenshion.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 04C335DD17BFCD8E00CBCB33 /* libCocosDenshion.a */; };
 /* End PBXBuildFile section */
@@ -92,6 +92,7 @@
 		04A633BF177C5C9000E1760D /* shaders */ = {isa = PBXFileReference; lastKnownFileType = folder; name = shaders; path = Resources/shaders; sourceTree = "<group>"; };
 		04A633C0177C5C9000E1760D /* sprite_components */ = {isa = PBXFileReference; lastKnownFileType = folder; name = sprite_components; path = Resources/sprite_components; sourceTree = "<group>"; };
 		04A633C1177C5C9000E1760D /* sprites */ = {isa = PBXFileReference; lastKnownFileType = folder; name = sprites; path = Resources/sprites; sourceTree = "<group>"; };
+		04B78CD717C30A54004649D3 /* libGameSADLib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libGameSADLib.a; path = ../Debug/libGameSADLib.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		04C335D317BFCC9800CBCB33 /* libBox2D.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libBox2D.a; path = "../libs/external/Box2D/proj.ios/build/Release-iphoneos/libBox2D.a"; sourceTree = "<group>"; };
 		04C335D417BFCC9800CBCB33 /* libcocos2dx.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcocos2dx.a; path = "../libs/cocos2dx/proj.ios/build/Release-iphoneos/libcocos2dx.a"; sourceTree = "<group>"; };
 		04C335D517BFCC9800CBCB33 /* libFEX.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libFEX.a; path = "../build/Release-iphoneos/libFEX.a"; sourceTree = "<group>"; };
@@ -105,11 +106,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04B78CD817C30A54004649D3 /* libGameSADLib.a in Frameworks */,
 				04C335DE17BFCD8E00CBCB33 /* libCocosDenshion.a in Frameworks */,
 				04C335D817BFCC9900CBCB33 /* libBox2D.a in Frameworks */,
 				04C335D917BFCC9900CBCB33 /* libcocos2dx.a in Frameworks */,
 				04C335DA17BFCC9900CBCB33 /* libFEX.a in Frameworks */,
-				04C335DB17BFCC9900CBCB33 /* libGameSADLib.a in Frameworks */,
 				04C335DC17BFCC9900CBCB33 /* libPython.a in Frameworks */,
 				04A63034177C5AC800E1760D /* QuartzCore.framework in Frameworks */,
 				04A63036177C5AC800E1760D /* OpenGLES.framework in Frameworks */,
@@ -128,6 +129,7 @@
 		04A63027177C5AC800E1760D = {
 			isa = PBXGroup;
 			children = (
+				04B78CD717C30A54004649D3 /* libGameSADLib.a */,
 				04C335DD17BFCD8E00CBCB33 /* libCocosDenshion.a */,
 				04C335D317BFCC9800CBCB33 /* libBox2D.a */,
 				04C335D417BFCC9800CBCB33 /* libcocos2dx.a */,
@@ -415,7 +417,10 @@
 				);
 				INFOPLIST_FILE = FEXGameTemplate/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
-				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"/Users/fancyzero/Library/Developer/Xcode/DerivedData/FETemplate-bwkxjubalbhtkretxzgqqgetelpu/Build/Products/Debug\"",
+				);
 				OTHER_LDFLAGS = (
 					"-lxml2",
 					"-lz",
@@ -454,7 +459,10 @@
 				);
 				INFOPLIST_FILE = FEXGameTemplate/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
-				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"/Users/fancyzero/Library/Developer/Xcode/DerivedData/FETemplate-bwkxjubalbhtkretxzgqqgetelpu/Build/Products/Debug\"",
+				);
 				OTHER_LDFLAGS = (
 					"-lxml2",
 					"-lz",

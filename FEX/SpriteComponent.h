@@ -186,6 +186,9 @@ public:
     {
         return owner;
     }
+    
+    //
+    void set_scale(float s);
 protected:
     float                           color_mask_expire_time;
     std::weak_ptr<SpriteBase>       owner;

@@ -745,6 +745,10 @@ def ends_with(*args):
   return _FEX.ends_with(*args)
 ends_with = _FEX.ends_with
 
+def get_screen_size():
+  return _FEX.get_screen_size()
+get_screen_size = _FEX.get_screen_size
+
 def register_FEX_classes():
   return _FEX.register_FEX_classes()
 register_FEX_classes = _FEX.register_FEX_classes
@@ -1050,6 +1054,7 @@ class SpriteComponent(_object):
     def set_shader(self, *args): return _FEX.SpriteComponent_set_shader(self, *args)
     def set_owner(self, *args): return _FEX.SpriteComponent_set_owner(self, *args)
     def get_owner(self): return _FEX.SpriteComponent_get_owner(self)
+    def set_scale(self, *args): return _FEX.SpriteComponent_set_scale(self, *args)
 SpriteComponent_swigregister = _FEX.SpriteComponent_swigregister
 SpriteComponent_swigregister(SpriteComponent)
 

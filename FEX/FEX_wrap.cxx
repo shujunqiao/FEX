@@ -18152,6 +18152,19 @@ fail:
 }
 
 
+SWIGINTERN PyObject *_wrap_get_screen_size(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  cocos2d::CCSize result;
+  
+  if (!PyArg_ParseTuple(args,(char *)":get_screen_size")) SWIG_fail;
+  result = FESimple::get_screen_size();
+  resultobj = SWIG_NewPointerObj((new cocos2d::CCSize(static_cast< const cocos2d::CCSize& >(result))), SWIGTYPE_p_cocos2d__CCSize, SWIG_POINTER_OWN |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
 SWIGINTERN PyObject *_wrap_register_FEX_classes(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   
@@ -21006,6 +21019,36 @@ fail:
 }
 
 
+SWIGINTERN PyObject *_wrap_SpriteComponent_set_scale(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  FESimple::SpriteComponent *arg1 = (FESimple::SpriteComponent *) 0 ;
+  float arg2 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  float val2 ;
+  int ecode2 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"OO:SpriteComponent_set_scale",&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_FESimple__SpriteComponent, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SpriteComponent_set_scale" "', argument " "1"" of type '" "FESimple::SpriteComponent *""'"); 
+  }
+  arg1 = reinterpret_cast< FESimple::SpriteComponent * >(argp1);
+  ecode2 = SWIG_AsVal_float(obj1, &val2);
+  if (!SWIG_IsOK(ecode2)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "SpriteComponent_set_scale" "', argument " "2"" of type '" "float""'");
+  } 
+  arg2 = static_cast< float >(val2);
+  (arg1)->set_scale(arg2);
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
 SWIGINTERN PyObject *SpriteComponent_swigregister(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *obj;
   if (!PyArg_ParseTuple(args,(char*)"O:swigregister", &obj)) return NULL;
@@ -21782,6 +21825,7 @@ static PyMethodDef SwigMethods[] = {
 	 { (char *)"make_gameobj_ptr", _wrap_make_gameobj_ptr, METH_VARARGS, NULL},
 	 { (char *)"init_python", _wrap_init_python, METH_VARARGS, NULL},
 	 { (char *)"ends_with", _wrap_ends_with, METH_VARARGS, NULL},
+	 { (char *)"get_screen_size", _wrap_get_screen_size, METH_VARARGS, NULL},
 	 { (char *)"register_FEX_classes", _wrap_register_FEX_classes, METH_VARARGS, NULL},
 	 { (char *)"GameObjFactory_construct_obj", _wrap_GameObjFactory_construct_obj, METH_VARARGS, NULL},
 	 { (char *)"GameObjFactory_get_all_classes", _wrap_GameObjFactory_get_all_classes, METH_VARARGS, NULL},
@@ -21891,6 +21935,7 @@ static PyMethodDef SwigMethods[] = {
 	 { (char *)"SpriteComponent_set_shader", _wrap_SpriteComponent_set_shader, METH_VARARGS, NULL},
 	 { (char *)"SpriteComponent_set_owner", _wrap_SpriteComponent_set_owner, METH_VARARGS, NULL},
 	 { (char *)"SpriteComponent_get_owner", _wrap_SpriteComponent_get_owner, METH_VARARGS, NULL},
+	 { (char *)"SpriteComponent_set_scale", _wrap_SpriteComponent_set_scale, METH_VARARGS, NULL},
 	 { (char *)"SpriteComponent_swigregister", SpriteComponent_swigregister, METH_VARARGS, NULL},
 	 { (char *)"ResourceManager_instance", _wrap_ResourceManager_instance, METH_VARARGS, NULL},
 	 { (char *)"ResourceManager_load_sprite_desc", _wrap_ResourceManager_load_sprite_desc, METH_VARARGS, NULL},

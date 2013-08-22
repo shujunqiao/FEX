@@ -319,4 +319,10 @@ void SpriteComponent::set_shader( const Name& shader_name )
 {
 }
 
+void SpriteComponent::set_scale(float s)
+{
+    setScale( s );
+    //todo : set physic model scale 
+}
+
 FE_NS_END

@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		041AB4F417A9F42800181E05 /* GameSADLevel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 041AB4F217A9F42800181E05 /* GameSADLevel.cpp */; };
 		041AB4F517A9F42800181E05 /* GameSADLevel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 041AB4F217A9F42800181E05 /* GameSADLevel.cpp */; };
-		041AB4F617A9F42800181E05 /* GameSADLevel.h in Headers */ = {isa = PBXBuildFile; fileRef = 041AB4F317A9F42800181E05 /* GameSADLevel.h */; };
 		04249B23179E227C00AE59D4 /* GameSADEditor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04249B21179E227C00AE59D4 /* GameSADEditor.cpp */; };
 		04249B29179E22A500AE59D4 /* GameSADEditorLevel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04249B27179E22A500AE59D4 /* GameSADEditorLevel.cpp */; };
 		04249B31179E238800AE59D4 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04249B30179E238800AE59D4 /* Cocoa.framework */; };
@@ -21,22 +20,30 @@
 		04249B53179E79C800AE59D4 /* Hero.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04249B47179E756300AE59D4 /* Hero.cpp */; };
 		044332FD17AE2E03007EF907 /* GameSADCommon.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 044332FB17AE2E03007EF907 /* GameSADCommon.cpp */; };
 		044332FE17AE2E03007EF907 /* GameSADCommon.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 044332FB17AE2E03007EF907 /* GameSADCommon.cpp */; };
-		044332FF17AE2E03007EF907 /* GameSADCommon.h in Headers */ = {isa = PBXBuildFile; fileRef = 044332FC17AE2E03007EF907 /* GameSADCommon.h */; };
 		0443330317AE5DA8007EF907 /* EditorControllers.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0443330017AE5DA8007EF907 /* EditorControllers.cpp */; };
-		0443330417AE5DA8007EF907 /* EditorControllers.h in Headers */ = {isa = PBXBuildFile; fileRef = 0443330117AE5DA8007EF907 /* EditorControllers.h */; };
 		0443330617AE5FCB007EF907 /* IOSTouchController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0443330517AE5FCB007EF907 /* IOSTouchController.cpp */; };
 		0443330717AE5FCB007EF907 /* IOSTouchController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0443330517AE5FCB007EF907 /* IOSTouchController.cpp */; };
-		0443330917AE5FD2007EF907 /* IOSTouchController.h in Headers */ = {isa = PBXBuildFile; fileRef = 0443330817AE5FD2007EF907 /* IOSTouchController.h */; };
 		04F0CB96179048BF00321D88 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04F0CB95179048BF00321D88 /* Foundation.framework */; };
+		04F1410E17C33D3300AFC15F /* libGameSADLibMac.a in CopyFiles */ = {isa = PBXBuildFile; fileRef = 04249B2F179E238800AE59D4 /* libGameSADLibMac.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		04F0CB90179048BF00321D88 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
-			dstPath = "include/${PRODUCT_NAME}";
+			dstPath = "../$(EFFECTIVE_PLATFORM_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04F1410C17C33CE900AFC15F /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "../$(EFFECTIVE_PLATFORM_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				04F1410E17C33D3300AFC15F /* libGameSADLibMac.a in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -179,20 +186,6 @@
 		};
 /* End PBXGroup section */
 
-/* Begin PBXHeadersBuildPhase section */
-		04249B2D179E238800AE59D4 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				041AB4F617A9F42800181E05 /* GameSADLevel.h in Headers */,
-				044332FF17AE2E03007EF907 /* GameSADCommon.h in Headers */,
-				0443330417AE5DA8007EF907 /* EditorControllers.h in Headers */,
-				0443330917AE5FD2007EF907 /* IOSTouchController.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXHeadersBuildPhase section */
-
 /* Begin PBXNativeTarget section */
 		04249B2E179E238800AE59D4 /* GameSADLibMac */ = {
 			isa = PBXNativeTarget;
@@ -200,7 +193,7 @@
 			buildPhases = (
 				04249B2B179E238800AE59D4 /* Sources */,
 				04249B2C179E238800AE59D4 /* Frameworks */,
-				04249B2D179E238800AE59D4 /* Headers */,
+				04F1410C17C33CE900AFC15F /* CopyFiles */,
 			);
 			buildRules = (
 			);
