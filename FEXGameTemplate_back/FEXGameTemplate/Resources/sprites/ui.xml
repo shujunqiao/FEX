@@ -1,8 +1,0 @@
-<sprites>
-	<sprite name="life_bar">
-		<sprite_components>
-			<sprite_component desc="sprite_components/ui.xml:life_bar"/>
-		</sprite_components>
-	</sprite>
-		
-</sprites>
