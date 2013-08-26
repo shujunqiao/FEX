@@ -40,6 +40,9 @@ extern "C" {
     extern void initbinascii(void);
     extern void initzlib(void);
     extern void initmath(void);
+    extern void inittime(void);
+    extern void init_random(void);
+    extern void initcStringIO(void);
     /* -- ADDMODULE MARKER 1 -- */
     
     extern void PyMarshal_Init(void);
@@ -49,6 +52,9 @@ extern "C" {
     extern void _PyWarnings_Init(void);
     
     struct _inittab _PyImport_Inittab[] = {
+        {"cStringIO",initcStringIO},
+        {"_random",init_random},
+        {"time",inittime},
         {"math",initmath},
         {"zlib",initzlib},
         {"binascii", initbinascii},

@@ -26,7 +26,7 @@ public:
             return it->second;
         else
         {
-            cout << "item: \"" << name << "\" not found!" << endl;
+//            cout << "item: \"" << name << "\" not found!" << endl;
             return std::shared_ptr<T>();
         }
     }
