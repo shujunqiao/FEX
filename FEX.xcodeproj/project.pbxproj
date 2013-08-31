@@ -7,29 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0405DC5117A81CF5008DD5B9 /* IOSTouchController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04C3AF9417914F35005F9937 /* IOSTouchController.cpp */; };
 		040A59E6177E6FA00010E979 /* CollisionListener.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 040A59E4177E6FA00010E979 /* CollisionListener.cpp */; };
 		045E880917A545E200C99DB7 /* FEX_wrap.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 045E880617A545E200C99DB7 /* FEX_wrap.cxx */; };
-		045E880A17A545E200C99DB7 /* FEX_wrap.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 045E880617A545E200C99DB7 /* FEX_wrap.cxx */; };
 		045E880B17A545E200C99DB7 /* zlibmodule.c in Sources */ = {isa = PBXBuildFile; fileRef = 045E880817A545E200C99DB7 /* zlibmodule.c */; };
-		045E880C17A545E200C99DB7 /* zlibmodule.c in Sources */ = {isa = PBXBuildFile; fileRef = 045E880817A545E200C99DB7 /* zlibmodule.c */; };
-		045FF16517892196007A338D /* CCPhyDebugNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04A627CB177BEDD200E1760D /* CCPhyDebugNode.cpp */; };
-		045FF16617892196007A338D /* ControllerBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04A627CE177BEDD200E1760D /* ControllerBase.cpp */; };
-		045FF16717892196007A338D /* FE.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04A627D0177BEDD200E1760D /* FE.cpp */; };
-		045FF16817892196007A338D /* FEUtility.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04A627D2177BEDD200E1760D /* FEUtility.cpp */; };
-		045FF16917892196007A338D /* GameBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04A627D4177BEDD200E1760D /* GameBase.cpp */; };
-		045FF16A17892196007A338D /* GameLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04A627D6177BEDD200E1760D /* GameLayer.cpp */; };
-		045FF16B17892196007A338D /* GameObjBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04A627D8177BEDD200E1760D /* GameObjBase.cpp */; };
-		045FF16C17892196007A338D /* GameObjFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04A627DA177BEDD200E1760D /* GameObjFactory.cpp */; };
-		045FF16D17892196007A338D /* GameScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04A627DC177BEDD200E1760D /* GameScene.cpp */; };
-		045FF16E17892196007A338D /* GLES-Render.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04A627DE177BEDD200E1760D /* GLES-Render.cpp */; };
-		045FF16F17892196007A338D /* LevelBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04A627E0177BEDD200E1760D /* LevelBase.cpp */; };
-		045FF17017892196007A338D /* pugixml.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04A627E5177BEDD200E1760D /* pugixml.cpp */; };
-		045FF17117892196007A338D /* ResourceManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04A627E7177BEDD200E1760D /* ResourceManager.cpp */; };
-		045FF17217892196007A338D /* SpriteBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04A627E9177BEDD200E1760D /* SpriteBase.cpp */; };
-		045FF17317892196007A338D /* SpriteComponent.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04A627EB177BEDD200E1760D /* SpriteComponent.cpp */; };
-		045FF17417892196007A338D /* CollisionListener.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 040A59E4177E6FA00010E979 /* CollisionListener.cpp */; };
-		045FF17617892196007A338D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04713BD81760C81900443B48 /* Foundation.framework */; };
 		04A627B1177BEC7900E1760D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04713BD81760C81900443B48 /* Foundation.framework */; };
 		04A627ED177BEDD200E1760D /* CCPhyDebugNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04A627CB177BEDD200E1760D /* CCPhyDebugNode.cpp */; };
 		04A627EE177BEDD200E1760D /* ControllerBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04A627CE177BEDD200E1760D /* ControllerBase.cpp */; };
@@ -50,15 +30,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		045FF17717892196007A338D /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 12;
-			dstPath = "build/${PRODUCT_NAME}";
-			dstSubfolderSpec = 16;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		04A627AE177BEC7900E1760D /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 12;
@@ -76,7 +47,6 @@
 		045E880617A545E200C99DB7 /* FEX_wrap.cxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FEX_wrap.cxx; path = FEX/FEX_wrap.cxx; sourceTree = "<group>"; };
 		045E880717A545E200C99DB7 /* FEX_wrap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FEX_wrap.h; path = FEX/FEX_wrap.h; sourceTree = "<group>"; };
 		045E880817A545E200C99DB7 /* zlibmodule.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = zlibmodule.c; path = FEX/zlibmodule.c; sourceTree = "<group>"; };
-		045FF17B17892196007A338D /* libFEXMac.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libFEXMac.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		04713BCC1760C81900443B48 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		04713BCE1760C81900443B48 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		04713BD01760C81900443B48 /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
@@ -125,14 +95,6 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		045FF17517892196007A338D /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				045FF17617892196007A338D /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		04A627AD177BEC7900E1760D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -158,7 +120,6 @@
 			isa = PBXGroup;
 			children = (
 				04A627B0177BEC7900E1760D /* libFEX.a */,
-				045FF17B17892196007A338D /* libFEXMac.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -237,23 +198,6 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		045FF16317892196007A338D /* FEXMac */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 045FF17817892196007A338D /* Build configuration list for PBXNativeTarget "FEXMac" */;
-			buildPhases = (
-				045FF16417892196007A338D /* Sources */,
-				045FF17517892196007A338D /* Frameworks */,
-				045FF17717892196007A338D /* CopyFiles */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = FEXMac;
-			productName = FEX;
-			productReference = 045FF17B17892196007A338D /* libFEXMac.a */;
-			productType = "com.apple.product-type.library.static";
-		};
 		04A627AF177BEC7900E1760D /* FEX */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 04A627B9177BEC7900E1760D /* Build configuration list for PBXNativeTarget "FEX" */;
@@ -292,38 +236,11 @@
 			projectRoot = "";
 			targets = (
 				04A627AF177BEC7900E1760D /* FEX */,
-				045FF16317892196007A338D /* FEXMac */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		045FF16417892196007A338D /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0405DC5117A81CF5008DD5B9 /* IOSTouchController.cpp in Sources */,
-				045FF16517892196007A338D /* CCPhyDebugNode.cpp in Sources */,
-				045FF16617892196007A338D /* ControllerBase.cpp in Sources */,
-				045FF16717892196007A338D /* FE.cpp in Sources */,
-				045FF16817892196007A338D /* FEUtility.cpp in Sources */,
-				045FF16917892196007A338D /* GameBase.cpp in Sources */,
-				045FF16A17892196007A338D /* GameLayer.cpp in Sources */,
-				045FF16B17892196007A338D /* GameObjBase.cpp in Sources */,
-				045FF16C17892196007A338D /* GameObjFactory.cpp in Sources */,
-				045FF16D17892196007A338D /* GameScene.cpp in Sources */,
-				045FF16E17892196007A338D /* GLES-Render.cpp in Sources */,
-				045FF16F17892196007A338D /* LevelBase.cpp in Sources */,
-				045FF17017892196007A338D /* pugixml.cpp in Sources */,
-				045FF17117892196007A338D /* ResourceManager.cpp in Sources */,
-				045FF17217892196007A338D /* SpriteBase.cpp in Sources */,
-				045FF17317892196007A338D /* SpriteComponent.cpp in Sources */,
-				045FF17417892196007A338D /* CollisionListener.cpp in Sources */,
-				045E880A17A545E200C99DB7 /* FEX_wrap.cxx in Sources */,
-				045E880C17A545E200C99DB7 /* zlibmodule.c in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		04A627AC177BEC7900E1760D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -353,96 +270,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		045FF17917892196007A338D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=*]" = "";
-				COPY_PHASE_STRIP = NO;
-				DSTROOT = /tmp/FEX.dst;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "FEX/FEX-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-					CC_TARGET_OS_MAC,
-				);
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				HEADER_SEARCH_PATHS = (
-					"\"libs/cocos2dx/kazmath/include\"",
-					"\"libs/cocos2dx\"",
-					"\"libs/CocosDenshion/include\"",
-					"\"libs/extensions\"",
-					"\"libs/cocos2dx/include\"",
-					"\"libs/cocos2dx/platform/third_party/mac\"",
-					"\"libs/cocos2dx/platform/mac\"",
-					"\"libs/external\"",
-					"\"libs/python2.7\"",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
-				ONLY_ACTIVE_ARCH = YES;
-				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = FEXMac;
-				SDKROOT = macosx10.7;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		045FF17A17892196007A338D /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=*]" = "";
-				COPY_PHASE_STRIP = YES;
-				DSTROOT = /tmp/FEX.dst;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "FEX/FEX-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					NDEBUG,
-					USE_FILE32API,
-					CC_TARGET_OS_MAC,
-					"CC_ENABLE_CHIPMUNK_INTEGRATION=0",
-					"CC_ENABLE_BOX2D_INTEGRATION=1",
-				);
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				HEADER_SEARCH_PATHS = (
-					"\"libs/cocos2dx/kazmath/include\"",
-					"\"libs/cocos2dx\"",
-					"\"libs/CocosDenshion/include\"",
-					"\"libs/extensions\"",
-					"\"libs/cocos2dx/include\"",
-					"\"libs/cocos2dx/platform/third_party/mac\"",
-					"\"libs/cocos2dx/platform/mac\"",
-					"\"libs/external\"",
-					"\"libs/python2.7\"",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
-				ONLY_ACTIVE_ARCH = YES;
-				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = FEXMac;
-				SDKROOT = macosx10.7;
-				SKIP_INSTALL = YES;
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
 		04713F791760C82000443B48 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -469,7 +296,8 @@
 					"\"$(PROJECT_NAME)/libs/cocos2dx/platform/third_party/ios\"",
 					"\"$(PROJECT_NAME)/libs/cocos2dx/platform/ios\"",
 				);
-				SDKROOT = "";
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
 			};
 			name = Debug;
 		};
@@ -497,7 +325,7 @@
 					"\"$(PROJECT_NAME)/libs/cocos2dx/platform/third_party/ios\"",
 					"\"$(PROJECT_NAME)/libs/cocos2dx/platform/ios\"",
 				);
-				SDKROOT = "";
+				SDKROOT = iphoneos;
 			};
 			name = Release;
 		};
@@ -537,11 +365,13 @@
 					"\"libs/Python/Include\"",
 				);
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
-				ONLY_ACTIVE_ARCH = NO;
+				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				STRIP_STYLE = debugging;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -587,6 +417,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				STRIP_STYLE = debugging;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -594,15 +426,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		045FF17817892196007A338D /* Build configuration list for PBXNativeTarget "FEXMac" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				045FF17917892196007A338D /* Debug */,
-				045FF17A17892196007A338D /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		04713BC41760C81900443B48 /* Build configuration list for PBXProject "FEX" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

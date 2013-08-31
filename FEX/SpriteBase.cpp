@@ -26,34 +26,42 @@ SpriteBase::SpriteBase()
 
 void SpriteBase::init( const cocos2d::CCPoint& location, const std::shared_ptr<sprite_desc> desc )
 {
-    assert(desc);
-    SpriteComponent* spc;
-    for( auto &it : desc->components )
+    if ( desc != nullptr )
     {
-        add_component(
-                      spc = new SpriteComponent( it.offset + location,
-                                                ResourceManager::instance()->
-                                                sprite_components.item(it.component_name))
-                      );
-        //logger("memory ")<< spc->retainCount() << endl;
+        SpriteComponent* spc;
+        for( auto &it : desc->components )
+        {
+            add_component(
+                          spc = new SpriteComponent( it.offset + location,
+                                                    ResourceManager::instance()->
+                                                    sprite_components.item(it.component_name))
+                          );
+            //logger("memory ")<< spc->retainCount() << endl;
+        }
     }
-
 }
 
 SpriteBase::SpriteBase( const SpawnParams& params )
 :GameObjBase( params )
 {
-    auto location = string_to_point(params.find("init_location")->second.c_str());
-    auto desc = ResourceManager::instance()->sprite_descs.item( params.find("sprite_desc")->second);
-    init( location, desc );
-    
+    cocos2d::CCPoint location;
+    if ( params.find("init_location") != params.end() )
+        location = string_to_point(params.find("init_location")->second.c_str());
+    if ( params.find("sprite_desc") != params.end() )
+    {
+        auto desc = ResourceManager::instance()->sprite_descs.item( params.find("sprite_desc")->second);
+        init( location, desc );
+    }
 }
 
 SpriteBase::SpriteBase( const cocos2d::CCPoint& location, const SpawnParams& params )
 :GameObjBase(params)
 {
-    auto desc = ResourceManager::instance()->sprite_descs.item( params.find("sprite_desc")->second);
-    init( location, desc );
+    if ( params.find("sprite_desc") != params.end() )
+    {
+        auto desc = ResourceManager::instance()->sprite_descs.item( params.find("sprite_desc")->second);
+        init( location, desc );
+    }
 }
 
 SpriteBase::~SpriteBase()
