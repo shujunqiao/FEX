@@ -15,7 +15,16 @@
 
 %}
 
-
+%feature("director:except") {
+    if( $error != NULL ) {
+        fprintf(stderr,"director exception:");
+        PyObject *ptype, *pvalue, *ptraceback;
+        PyErr_Fetch( &ptype, &pvalue, &ptraceback );
+        PyErr_Restore( ptype, pvalue, ptraceback );
+        PyErr_Print();
+        Py_Exit(1);
+    }
+}
 
 %include "std_string.i"
 %include "std_map.i"
@@ -34,6 +43,7 @@ namespace std
 %template(map_string_string) std::map<std::string, std::string>;
 %template(vector_controller) std::vector<FESimple::ControllerBase*>;
 %template(gameobj_ptr)  std::shared_ptr<FESimple::GameObjBase>;
+%template(sprite_component_desc_ptr) std::shared_ptr<FESimple::sprite_component_desc>;
 
 %feature("director") FESimple::GameBase;
 %feature("director") FESimple::GameObjBase;
@@ -42,7 +52,7 @@ namespace std
 
 %feature("unref") std::shared_ptr<FESimple::GameObjBase> "delete $this;//nimei"
 %feature("unref") std::shared_ptr<GameObjBase> "delete $this;//nimei"
-
+%feature("unref") std::shared_ptr<FESimple::sprite_component_desc> "delete $this;//nimei"
 %feature("unref") FESimple::SpriteComponent "$this->release(); // unref for SpriteComponent"
 
 

@@ -30,6 +30,7 @@ public:
             return std::shared_ptr<T>();
         }
     }
+
 };
 
 class ResourceManager
@@ -41,6 +42,21 @@ public:
     void load_physic_desc( const std::string& filename );
     void load_sprite_component_desc( const std::string& filename );
     std::shared_ptr<LevelData> get_level_data( const std::string& filename );
+    
+    std::shared_ptr<sprite_desc> get_sprite_desc(const Name& name)
+    {
+        return sprite_descs.item(name);
+    }
+
+    std::shared_ptr<sprite_component_desc> get_sprite_component_desc(const Name& name)
+    {
+        return sprite_components.item(name);
+    }
+    
+    std::shared_ptr<animation> get_animation(const Name& name)
+    {
+        return animations.item(name);
+    }
     
     SharedReourceMap<sprite_desc>              sprite_descs;
     SharedReourceMap<physic_desc>              physic_descs;

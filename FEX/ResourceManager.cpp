@@ -182,7 +182,7 @@ void ResourceManager::load_sprite_component_desc( const std::string& filename )
 
             //as a resource , animation should be cached as well
             animations[unique_anim_name] = std::shared_ptr<animation>( new animation({anim_name,ccanim}));
-            logger("debug") << "add anim name: "<< unique_anim_name;
+            logger("debug") << "add anim name: "<< unique_anim_name << endl;
             desc->animation_names.push_back(unique_anim_name);
         }
         pugi::xml_node body_node = it.child("physics_def").child("body");
