@@ -26,7 +26,15 @@ public:
             return it->second;
         else
         {
-//            cout << "item: \"" << name << "\" not found!" << endl;
+            cout << "item: \"" << name << "\" not found!" << endl;
+            cout << "we have:" << endl;
+            auto t = this->begin();
+            while( t != this->end())
+            {
+                cout << t->first <<",";
+                t++;
+            }
+            cout << endl;
             return std::shared_ptr<T>();
         }
     }
