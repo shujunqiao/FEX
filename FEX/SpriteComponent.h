@@ -152,6 +152,7 @@ public:
     SpriteComponent( const cocos2d::CCPoint& location, const std::shared_ptr<sprite_component_desc> desc );
     virtual ~SpriteComponent();
     bool init_shader();
+    void init_physics( const std::shared_ptr<physic_desc> desc );
     bool play_anim( const Name& anim );
     virtual void draw();
     
@@ -194,9 +195,7 @@ protected:
     std::weak_ptr<SpriteBase>       owner;
     std::vector<sprite_animation>   animations;
     b2Body*                         phy_body;
-    
-    
-    
+    std::shared_ptr<physic_desc>    phy_desc;    
 };
 
 FE_NS_END

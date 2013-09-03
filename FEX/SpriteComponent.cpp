@@ -21,7 +21,7 @@ FE_NS_BEGIN
 SpriteComponent::SpriteComponent(  const CCPoint& location, const std::shared_ptr<sprite_component_desc> desc )
 :CCSprite(),phy_body(nullptr)
 {
-
+    assert(desc);
     CCSprite::init();
     init_shader();
     for ( auto anim_name : desc->animation_names )
@@ -31,23 +31,9 @@ SpriteComponent::SpriteComponent(  const CCPoint& location, const std::shared_pt
     }
     play_anim("default");
     //create physics body
-    auto phy = ResourceManager::instance()->physic_descs.item(desc->physic_desc_name);
-    if ( phy != nullptr )
-    {
-        b2BodyDef bodydef = phy->body_def;
-        bodydef.position = point_to_b2Vec2( location );
-        phy_body = get_game()->get_phy_world()->CreateBody( &bodydef );
-        for ( auto fixdef_temp : phy->fixture_defs )
-        {
-            b2FixtureDef fixdef = fixdef_temp;
-            phy_body->CreateFixture( dynamic_cast<b2FixtureDef*>(&fixdef) );
-        }
-    }
-    else
-    {
-        // no physics body defined ,set location directly
-        this->setPosition(location);
-    }
+    phy_desc = ResourceManager::instance()->physic_descs.item(desc->physic_desc_name);
+    setPosition(location);
+    init_physics(phy_desc);
     //logger("sprite component") << this << " created retaincount:" << retainCount() <<  endl;
     //scheduleUpdate();
 }
@@ -63,6 +49,45 @@ bool SpriteComponent::init_shader()
 {
     setShaderProgram(CCShaderCache::sharedShaderCache()->programForKey("base_shader"));
     return true;
+}
+
+void SpriteComponent::init_physics( const std::shared_ptr<physic_desc> phy )
+{
+    if ( phy == nullptr )
+        return;
+    auto location = point_to_b2Vec2( this->getPosition() );
+    if ( phy_body != nullptr )
+        get_game()->get_phy_world()->DestroyBody(phy_body);
+    phy_body = nullptr;
+    b2BodyDef bodydef = phy->body_def;
+    bodydef.position = location;
+    phy_body = get_game()->get_phy_world()->CreateBody( &bodydef );
+    for ( auto fixdef_temp : phy->fixture_defs )
+    {
+        b2FixtureDef fixdef = fixdef_temp;
+        switch (fixdef.shape->GetType())
+        {
+            case b2Shape::e_circle:
+            {
+                b2CircleShape* s = (b2CircleShape*)fixdef.shape;
+                s->m_radius *= getScaleX()/ptm_ratio();
+            }
+                break;
+                
+            case b2Shape::e_polygon:
+            {
+                b2PolygonShape* s = (b2PolygonShape*)fixdef.shape;
+                for ( int i =0; i < s->m_vertexCount; i++ )
+                {
+                    s->m_vertices[i].x *= getScaleX()/ptm_ratio();
+                    s->m_vertices[i].y *= getScaleY()/ptm_ratio();
+                }
+            }
+                break;
+        }
+        phy_body->CreateFixture( dynamic_cast<b2FixtureDef*>(&fixdef) )->SetUserData(this);
+    }
+    
 }
 
 bool SpriteComponent::play_anim( const Name& anim_name )
@@ -150,17 +175,17 @@ void SpriteComponent::draw()
     CC_INCREMENT_GL_DRAWS(1);
     
     CC_PROFILER_STOP_CATEGORY(kCCProfilerCategorySprite, "CCSprite - draw");
-
+    
 }
 
 void SpriteComponent::update(float fDelta)
 {
     //sync position and rotation with physics body
-//    if ( phy_body )
-//    {
-//        CCSprite::setPosition(b2Vec2_to_point(phy_body->GetPosition()));
-//        CCSprite::setRotation(rad_to_angle(phy_body->GetAngle()));
-//    }
+    //    if ( phy_body )
+    //    {
+    //        CCSprite::setPosition(b2Vec2_to_point(phy_body->GetPosition()));
+    //        CCSprite::setRotation(rad_to_angle(phy_body->GetAngle()));
+    //    }
     CCSprite::update( fDelta );
     if ( current_time() > color_mask_expire_time )
         color_mask(ccc4f(0, 0, 0, 0), 0);
@@ -296,7 +321,7 @@ void SpriteComponent::wakeup()
 
 void SpriteComponent::color_mask( const cocos2d::ccColor4F& color, float time )
 {
-
+    
     ccColor4B cc4b;
     if ( time > 0 )
         cc4b = ccc4BFromccc4F( color );
@@ -312,7 +337,7 @@ void SpriteComponent::color_mask( const cocos2d::ccColor4F& color, float time )
 void SpriteComponent::color_tint( const cocos2d::ccColor4F& color, float time )
 {
     setColor(ccc3(color.r*255, color.g*255, color.b*255));
-
+    
 }
 
 void SpriteComponent::set_shader( const Name& shader_name )
@@ -322,7 +347,7 @@ void SpriteComponent::set_shader( const Name& shader_name )
 void SpriteComponent::set_scale(float s)
 {
     setScale( s );
-    //todo : set physic model scale 
+    init_physics( phy_desc );
 }
 
 FE_NS_END
