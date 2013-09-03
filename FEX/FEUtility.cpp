@@ -273,5 +273,36 @@ cocos2d::CCSize get_screen_size()
 {
     return cocos2d::CCDirector::sharedDirector()->getWinSize();
 }
+
+class pick_sprite_cb :public b2QueryCallback
+{
+public:
+    /// Called for each fixture found in the query AABB.
+    /// @return false to terminate the query.
+    SpriteComponent* picked = nullptr;//weak ref
+    virtual bool ReportFixture(b2Fixture* fixture)
+    {
+        if ( fixture->GetUserData() == nullptr )
+            return true;
+        
+        SpriteComponent* cmp = static_cast<SpriteComponent*>(fixture->GetUserData());
+        
+        if ( picked == nullptr )
+            picked = cmp;
+        else if ( picked->getZOrder() < cmp->getZOrder() )
+            picked = cmp;
+        return true;
+    }
+};
+
+SpriteComponent* pick_sprite( const cocos2d::CCPoint world_point )
+{
+    SpriteComponent* cmp;
+    b2AABB aabb;
+    aabb.lowerBound = aabb.upperBound = point_to_b2Vec2( world_point );
+    pick_sprite_cb cb;
+    get_game()->get_phy_world()->QueryAABB( &cb, aabb );
+    return cb.picked;
+}
 FE_NS_END
 

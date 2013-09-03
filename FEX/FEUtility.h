@@ -16,6 +16,8 @@
 #include <iostream>
 
 FE_NS_BEGIN
+class SpriteBase;
+class SpriteComponent;
 extern float Pi;
 float current_time();
 void set_current_time(float time);
@@ -69,6 +71,7 @@ bool init_python(const std::string& python_home);
 
 bool ends_with( const std::string& bigger_str, const std::string& smaller_str );
 cocos2d::CCSize get_screen_size();
+SpriteComponent* pick_sprite( const cocos2d::CCPoint world_point );
 FE_NS_END
 
 
