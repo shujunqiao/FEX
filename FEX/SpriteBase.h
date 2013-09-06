@@ -77,8 +77,8 @@ public:
     
 protected:
     void init( const cocos2d::CCPoint& location, const std::shared_ptr<sprite_desc> desc );
-protected:
     std::vector< SpriteComponent* > components;
+    bool        added = false;//is added to game
 };
 
 
