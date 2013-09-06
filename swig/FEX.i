@@ -44,12 +44,15 @@ namespace std
 %template(vector_controller) std::vector<FESimple::ControllerBase*>;
 %template(gameobj_ptr)  std::shared_ptr<FESimple::GameObjBase>;
 %template(sprite_component_desc_ptr) std::shared_ptr<FESimple::sprite_component_desc>;
+%template(spritebase_ptr) std::shared_ptr< FESimple::SpriteBase >;
+%template(spritebase_weak_ptr) std::weak_ptr< FESimple::SpriteBase >;
 
 %feature("director") FESimple::GameBase;
 %feature("director") FESimple::GameObjBase;
 %feature("director") FESimple::SpriteBase;
 %feature("director") FESimple::IOSTouchController;
-
+//%feature("unref") std::shared_ptr<FESimple::SpriteBase> "delete $this;//nimei"
+//%feature("unref") std::weak_ptr<FESimple::SpriteBase> "delete $this;//nimei"
 %feature("unref") std::shared_ptr<FESimple::GameObjBase> "delete $this;//nimei"
 %feature("unref") std::shared_ptr<GameObjBase> "delete $this;//nimei"
 %feature("unref") std::shared_ptr<FESimple::sprite_component_desc> "delete $this;//nimei"

@@ -304,5 +304,21 @@ SpriteComponent* pick_sprite( const cocos2d::CCPoint world_point )
     get_game()->get_phy_world()->QueryAABB( &cb, aabb );
     return cb.picked;
 }
+GameObjBase* get_raw_ptr( std::shared_ptr<GameObjBase>& ptr )
+{
+    return ptr.get();
+    
+}
+SpriteBase* get_raw_ptr( std::shared_ptr<SpriteBase>& ptr )
+{
+    return ptr.get();
+    
+}
+SpriteBase* get_raw_ptr( std::weak_ptr<SpriteBase>& ptr )
+{
+    return ptr.lock().get();
+    
+}
+
 FE_NS_END
 

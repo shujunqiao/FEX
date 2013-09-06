@@ -72,6 +72,9 @@ bool init_python(const std::string& python_home);
 bool ends_with( const std::string& bigger_str, const std::string& smaller_str );
 cocos2d::CCSize get_screen_size();
 SpriteComponent* pick_sprite( const cocos2d::CCPoint world_point );
+GameObjBase* get_raw_ptr( std::shared_ptr<GameObjBase>& ptr );
+SpriteBase* get_raw_ptr( std::shared_ptr<SpriteBase>& ptr );
+SpriteBase* get_raw_ptr( std::weak_ptr<SpriteBase>& ptr );
 FE_NS_END
 
 
