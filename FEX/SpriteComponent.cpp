@@ -350,4 +350,42 @@ void SpriteComponent::set_scale(float s)
     init_physics( phy_desc );
 }
 
+class qc: public b2QueryCallback
+{
+public:
+    /// Called for each fixture found in the query AABB.
+    /// @return false to terminate the query.
+    virtual bool ReportFixture(b2Fixture* fixture)
+    {
+        hited = true;
+        return false;
+    }
+    bool hited;
+};
+
+
+bool SpriteComponent::hit_test( const cocos2d::CCPoint& world_point)
+{
+    if ( phy_body != nullptr) //use physics model do percesice hit test
+    {
+        b2Vec2 b2point = point_to_b2Vec2(world_point);
+        auto p = phy_body->GetFixtureList();
+        while( p )
+        {
+            if (p->TestPoint(b2point))
+                return true;
+            p = p->GetNext();
+        }
+    }
+    else
+    {
+        //world-space aabb box check, simple and rough
+        CCRect rect = CCRectMake(0, 0, m_obContentSize.width, m_obContentSize.height);
+        CCRectApplyAffineTransform( rect, nodeToWorldTransform() );
+        if ( rect.containsPoint(world_point) )
+            return true;
+    }
+    return false;
+}
+
 FE_NS_END

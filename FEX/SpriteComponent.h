@@ -190,6 +190,7 @@ public:
     
     //
     void set_scale(float s);
+    bool hit_test( const cocos2d::CCPoint& world_point); //return true if this component contain point in world-space
 protected:
     float                           color_mask_expire_time;
     std::weak_ptr<SpriteBase>       owner;
