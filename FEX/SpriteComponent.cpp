@@ -65,22 +65,26 @@ void SpriteComponent::init_physics( const std::shared_ptr<physic_desc> phy )
     for ( auto fixdef_temp : phy->fixture_defs )
     {
         b2FixtureDef fixdef = fixdef_temp;
+        b2CircleShape cs;
+        b2PolygonShape ps;
         switch (fixdef.shape->GetType())
         {
             case b2Shape::e_circle:
             {
-                b2CircleShape* s = (b2CircleShape*)fixdef.shape;
-                s->m_radius *= getScaleX()/ptm_ratio();
+                cs = *(b2CircleShape*)fixdef.shape;
+                fixdef.shape = &cs;
+                cs.m_radius *= getScaleX();
             }
-                break;
+            break;
                 
             case b2Shape::e_polygon:
             {
-                b2PolygonShape* s = (b2PolygonShape*)fixdef.shape;
-                for ( int i =0; i < s->m_vertexCount; i++ )
+                ps = *(b2PolygonShape*)fixdef.shape;
+                fixdef.shape = &ps;
+                for ( int i =0; i < ps.m_vertexCount; i++ )
                 {
-                    s->m_vertices[i].x *= getScaleX()/ptm_ratio();
-                    s->m_vertices[i].y *= getScaleY()/ptm_ratio();
+                    ps.m_vertices[i].x *= getScaleX();
+                    ps.m_vertices[i].y *= getScaleY();
                 }
             }
                 break;
