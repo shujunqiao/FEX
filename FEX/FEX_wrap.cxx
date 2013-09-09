@@ -5971,6 +5971,12 @@ SWIG_From_float  (float value)
   return SWIG_From_double  (value);
 }
 
+SWIGINTERN cocos2d::CCPoint cocos2d_CCPoint_operator_Ss_(cocos2d::CCPoint *self,cocos2d::CCPoint const &other){
+        return cocos2d::CCPoint( self->x - other.x, self->y - other.y);
+    }
+SWIGINTERN cocos2d::CCPoint cocos2d_CCPoint_operator_Sa_(cocos2d::CCPoint *self,cocos2d::CCPoint const &other){
+        return cocos2d::CCPoint( self->x + other.x, self->y + other.y);
+    }
 
 #include <limits.h>
 #if !defined(SWIG_NO_LLONG_MAX)
@@ -12702,6 +12708,47 @@ SWIGINTERN PyObject *spritebase_ptr_swigregister(PyObject *SWIGUNUSEDPARM(self),
   return SWIG_Py_Void();
 }
 
+SWIGINTERN PyObject *_wrap_new_spritebase_weak_ptr(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  std::weak_ptr< FESimple::SpriteBase > *result = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)":new_spritebase_weak_ptr")) SWIG_fail;
+  result = (std::weak_ptr< FESimple::SpriteBase > *)new std::weak_ptr< FESimple::SpriteBase >();
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_std__weak_ptrT_FESimple__SpriteBase_t, SWIG_POINTER_NEW |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_delete_spritebase_weak_ptr(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  std::weak_ptr< FESimple::SpriteBase > *arg1 = (std::weak_ptr< FESimple::SpriteBase > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:delete_spritebase_weak_ptr",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_std__weak_ptrT_FESimple__SpriteBase_t, SWIG_POINTER_DISOWN |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "delete_spritebase_weak_ptr" "', argument " "1"" of type '" "std::weak_ptr< FESimple::SpriteBase > *""'"); 
+  }
+  arg1 = reinterpret_cast< std::weak_ptr< FESimple::SpriteBase > * >(argp1);
+  delete arg1;
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *spritebase_weak_ptr_swigregister(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *obj;
+  if (!PyArg_ParseTuple(args,(char*)"O:swigregister", &obj)) return NULL;
+  SWIG_TypeNewClientData(SWIGTYPE_p_std__weak_ptrT_FESimple__SpriteBase_t, SWIG_NewClientData(obj));
+  return SWIG_Py_Void();
+}
+
 SWIGINTERN PyObject *_wrap_CCPoint_x_set(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   cocos2d::CCPoint *arg1 = (cocos2d::CCPoint *) 0 ;
@@ -12990,6 +13037,74 @@ SWIGINTERN PyObject *_wrap_CCPoint_equals(PyObject *SWIGUNUSEDPARM(self), PyObje
   arg2 = reinterpret_cast< cocos2d::CCPoint * >(argp2);
   result = (bool)((cocos2d::CCPoint const *)arg1)->equals((cocos2d::CCPoint const &)*arg2);
   resultobj = SWIG_From_bool(static_cast< bool >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_CCPoint___sub__(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  cocos2d::CCPoint *arg1 = (cocos2d::CCPoint *) 0 ;
+  cocos2d::CCPoint *arg2 = 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 = 0 ;
+  int res2 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  cocos2d::CCPoint result;
+  
+  if (!PyArg_ParseTuple(args,(char *)"OO:CCPoint___sub__",&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_cocos2d__CCPoint, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "CCPoint___sub__" "', argument " "1"" of type '" "cocos2d::CCPoint *""'"); 
+  }
+  arg1 = reinterpret_cast< cocos2d::CCPoint * >(argp1);
+  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_cocos2d__CCPoint,  0  | 0);
+  if (!SWIG_IsOK(res2)) {
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "CCPoint___sub__" "', argument " "2"" of type '" "cocos2d::CCPoint const &""'"); 
+  }
+  if (!argp2) {
+    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "CCPoint___sub__" "', argument " "2"" of type '" "cocos2d::CCPoint const &""'"); 
+  }
+  arg2 = reinterpret_cast< cocos2d::CCPoint * >(argp2);
+  result = cocos2d_CCPoint_operator_Ss_(arg1,(cocos2d::CCPoint const &)*arg2);
+  resultobj = SWIG_NewPointerObj((new cocos2d::CCPoint(static_cast< const cocos2d::CCPoint& >(result))), SWIGTYPE_p_cocos2d__CCPoint, SWIG_POINTER_OWN |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_CCPoint___add__(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  cocos2d::CCPoint *arg1 = (cocos2d::CCPoint *) 0 ;
+  cocos2d::CCPoint *arg2 = 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 = 0 ;
+  int res2 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  cocos2d::CCPoint result;
+  
+  if (!PyArg_ParseTuple(args,(char *)"OO:CCPoint___add__",&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_cocos2d__CCPoint, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "CCPoint___add__" "', argument " "1"" of type '" "cocos2d::CCPoint *""'"); 
+  }
+  arg1 = reinterpret_cast< cocos2d::CCPoint * >(argp1);
+  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_cocos2d__CCPoint,  0  | 0);
+  if (!SWIG_IsOK(res2)) {
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "CCPoint___add__" "', argument " "2"" of type '" "cocos2d::CCPoint const &""'"); 
+  }
+  if (!argp2) {
+    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "CCPoint___add__" "', argument " "2"" of type '" "cocos2d::CCPoint const &""'"); 
+  }
+  arg2 = reinterpret_cast< cocos2d::CCPoint * >(argp2);
+  result = cocos2d_CCPoint_operator_Sa_(arg1,(cocos2d::CCPoint const &)*arg2);
+  resultobj = SWIG_NewPointerObj((new cocos2d::CCPoint(static_cast< const cocos2d::CCPoint& >(result))), SWIGTYPE_p_cocos2d__CCPoint, SWIG_POINTER_OWN |  0 );
   return resultobj;
 fail:
   return NULL;
@@ -20585,6 +20700,7 @@ SWIGINTERN PyObject *_wrap_new_SpriteComponent(PyObject *SWIGUNUSEDPARM(self), P
   }
   result = (FESimple::SpriteComponent *)new FESimple::SpriteComponent((cocos2d::CCPoint const &)*arg1,arg2);
   resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_FESimple__SpriteComponent, SWIG_POINTER_NEW |  0 );
+  result->retain (); // unref for SpriteComponent
   return resultobj;
 fail:
   return NULL;
@@ -21379,7 +21495,7 @@ fail:
 SWIGINTERN PyObject *_wrap_SpriteComponent_set_owner(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   FESimple::SpriteComponent *arg1 = (FESimple::SpriteComponent *) 0 ;
-  SwigValueWrapper< std::weak_ptr< FESimple::SpriteBase > > arg2 ;
+  std::weak_ptr< FESimple::SpriteBase > arg2 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   void *argp2 ;
@@ -21420,7 +21536,7 @@ SWIGINTERN PyObject *_wrap_SpriteComponent_get_owner(PyObject *SWIGUNUSEDPARM(se
   void *argp1 = 0 ;
   int res1 = 0 ;
   PyObject * obj0 = 0 ;
-  SwigValueWrapper< std::weak_ptr< FESimple::SpriteBase > > result;
+  std::weak_ptr< FESimple::SpriteBase > result;
   
   if (!PyArg_ParseTuple(args,(char *)"O:SpriteComponent_get_owner",&obj0)) SWIG_fail;
   res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_FESimple__SpriteComponent, 0 |  0 );
@@ -21460,6 +21576,40 @@ SWIGINTERN PyObject *_wrap_SpriteComponent_set_scale(PyObject *SWIGUNUSEDPARM(se
   arg2 = static_cast< float >(val2);
   (arg1)->set_scale(arg2);
   resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_SpriteComponent_hit_test(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  FESimple::SpriteComponent *arg1 = (FESimple::SpriteComponent *) 0 ;
+  cocos2d::CCPoint *arg2 = 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 = 0 ;
+  int res2 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  bool result;
+  
+  if (!PyArg_ParseTuple(args,(char *)"OO:SpriteComponent_hit_test",&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_FESimple__SpriteComponent, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "SpriteComponent_hit_test" "', argument " "1"" of type '" "FESimple::SpriteComponent *""'"); 
+  }
+  arg1 = reinterpret_cast< FESimple::SpriteComponent * >(argp1);
+  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_cocos2d__CCPoint,  0  | 0);
+  if (!SWIG_IsOK(res2)) {
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "SpriteComponent_hit_test" "', argument " "2"" of type '" "cocos2d::CCPoint const &""'"); 
+  }
+  if (!argp2) {
+    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "SpriteComponent_hit_test" "', argument " "2"" of type '" "cocos2d::CCPoint const &""'"); 
+  }
+  arg2 = reinterpret_cast< cocos2d::CCPoint * >(argp2);
+  result = (bool)(arg1)->hit_test((cocos2d::CCPoint const &)*arg2);
+  resultobj = SWIG_From_bool(static_cast< bool >(result));
   return resultobj;
 fail:
   return NULL;
@@ -22179,6 +22329,9 @@ static PyMethodDef SwigMethods[] = {
 	 { (char *)"new_spritebase_ptr", _wrap_new_spritebase_ptr, METH_VARARGS, NULL},
 	 { (char *)"delete_spritebase_ptr", _wrap_delete_spritebase_ptr, METH_VARARGS, NULL},
 	 { (char *)"spritebase_ptr_swigregister", spritebase_ptr_swigregister, METH_VARARGS, NULL},
+	 { (char *)"new_spritebase_weak_ptr", _wrap_new_spritebase_weak_ptr, METH_VARARGS, NULL},
+	 { (char *)"delete_spritebase_weak_ptr", _wrap_delete_spritebase_weak_ptr, METH_VARARGS, NULL},
+	 { (char *)"spritebase_weak_ptr_swigregister", spritebase_weak_ptr_swigregister, METH_VARARGS, NULL},
 	 { (char *)"CCPoint_x_set", _wrap_CCPoint_x_set, METH_VARARGS, NULL},
 	 { (char *)"CCPoint_x_get", _wrap_CCPoint_x_get, METH_VARARGS, NULL},
 	 { (char *)"CCPoint_y_set", _wrap_CCPoint_y_set, METH_VARARGS, NULL},
@@ -22186,6 +22339,8 @@ static PyMethodDef SwigMethods[] = {
 	 { (char *)"new_CCPoint", _wrap_new_CCPoint, METH_VARARGS, NULL},
 	 { (char *)"CCPoint_setPoint", _wrap_CCPoint_setPoint, METH_VARARGS, NULL},
 	 { (char *)"CCPoint_equals", _wrap_CCPoint_equals, METH_VARARGS, NULL},
+	 { (char *)"CCPoint___sub__", _wrap_CCPoint___sub__, METH_VARARGS, NULL},
+	 { (char *)"CCPoint___add__", _wrap_CCPoint___add__, METH_VARARGS, NULL},
 	 { (char *)"delete_CCPoint", _wrap_delete_CCPoint, METH_VARARGS, NULL},
 	 { (char *)"CCPoint_swigregister", CCPoint_swigregister, METH_VARARGS, NULL},
 	 { (char *)"CCSize_width_set", _wrap_CCSize_width_set, METH_VARARGS, NULL},
@@ -22476,6 +22631,7 @@ static PyMethodDef SwigMethods[] = {
 	 { (char *)"SpriteComponent_set_owner", _wrap_SpriteComponent_set_owner, METH_VARARGS, NULL},
 	 { (char *)"SpriteComponent_get_owner", _wrap_SpriteComponent_get_owner, METH_VARARGS, NULL},
 	 { (char *)"SpriteComponent_set_scale", _wrap_SpriteComponent_set_scale, METH_VARARGS, NULL},
+	 { (char *)"SpriteComponent_hit_test", _wrap_SpriteComponent_hit_test, METH_VARARGS, NULL},
 	 { (char *)"SpriteComponent_swigregister", SpriteComponent_swigregister, METH_VARARGS, NULL},
 	 { (char *)"ResourceManager_instance", _wrap_ResourceManager_instance, METH_VARARGS, NULL},
 	 { (char *)"ResourceManager_load_sprite_desc", _wrap_ResourceManager_load_sprite_desc, METH_VARARGS, NULL},

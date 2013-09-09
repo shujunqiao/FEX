@@ -63,6 +63,10 @@ public:
     {
         return level_data.bound;
     }
+    LevelTrigger& get_current_trigger()
+    {
+        return level_data.triggers[current_trigger];
+    }
 protected:
     unsigned int current_trigger;
     float       start_time;

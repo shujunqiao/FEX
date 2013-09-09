@@ -1,0 +1,454 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		040A59E6177E6FA00010E979 /* CollisionListener.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 040A59E4177E6FA00010E979 /* CollisionListener.cpp */; };
+		04491E6617DCCF7500D01E99 /* EditorModule.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04491E6417DCCF7500D01E99 /* EditorModule.cpp */; };
+		045E880917A545E200C99DB7 /* FEX_wrap.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 045E880617A545E200C99DB7 /* FEX_wrap.cxx */; };
+		045E880B17A545E200C99DB7 /* zlibmodule.c in Sources */ = {isa = PBXBuildFile; fileRef = 045E880817A545E200C99DB7 /* zlibmodule.c */; };
+		04A627B1177BEC7900E1760D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04713BD81760C81900443B48 /* Foundation.framework */; };
+		04A627ED177BEDD200E1760D /* CCPhyDebugNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04A627CB177BEDD200E1760D /* CCPhyDebugNode.cpp */; };
+		04A627EE177BEDD200E1760D /* ControllerBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04A627CE177BEDD200E1760D /* ControllerBase.cpp */; };
+		04A627EF177BEDD200E1760D /* FE.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04A627D0177BEDD200E1760D /* FE.cpp */; };
+		04A627F0177BEDD200E1760D /* FEUtility.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04A627D2177BEDD200E1760D /* FEUtility.cpp */; };
+		04A627F1177BEDD200E1760D /* GameBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04A627D4177BEDD200E1760D /* GameBase.cpp */; };
+		04A627F2177BEDD200E1760D /* GameLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04A627D6177BEDD200E1760D /* GameLayer.cpp */; };
+		04A627F3177BEDD200E1760D /* GameObjBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04A627D8177BEDD200E1760D /* GameObjBase.cpp */; };
+		04A627F4177BEDD200E1760D /* GameObjFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04A627DA177BEDD200E1760D /* GameObjFactory.cpp */; };
+		04A627F5177BEDD200E1760D /* GameScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04A627DC177BEDD200E1760D /* GameScene.cpp */; };
+		04A627F6177BEDD200E1760D /* GLES-Render.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04A627DE177BEDD200E1760D /* GLES-Render.cpp */; };
+		04A627F7177BEDD200E1760D /* LevelBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04A627E0177BEDD200E1760D /* LevelBase.cpp */; };
+		04A627F8177BEDD200E1760D /* pugixml.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04A627E5177BEDD200E1760D /* pugixml.cpp */; };
+		04A627F9177BEDD200E1760D /* ResourceManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04A627E7177BEDD200E1760D /* ResourceManager.cpp */; };
+		04A627FA177BEDD200E1760D /* SpriteBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04A627E9177BEDD200E1760D /* SpriteBase.cpp */; };
+		04A627FB177BEDD200E1760D /* SpriteComponent.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04A627EB177BEDD200E1760D /* SpriteComponent.cpp */; };
+		04C3AF9617914F36005F9937 /* IOSTouchController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04C3AF9417914F35005F9937 /* IOSTouchController.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		04A627AE177BEC7900E1760D /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = "../$(EFFECTIVE_PLATFORM_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		040A59E4177E6FA00010E979 /* CollisionListener.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CollisionListener.cpp; path = FEX/CollisionListener.cpp; sourceTree = "<group>"; };
+		040A59E5177E6FA00010E979 /* CollisionListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CollisionListener.h; path = FEX/CollisionListener.h; sourceTree = "<group>"; };
+		04491E6417DCCF7500D01E99 /* EditorModule.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = EditorModule.cpp; sourceTree = "<group>"; };
+		04491E6517DCCF7500D01E99 /* EditorModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditorModule.h; sourceTree = "<group>"; };
+		045E880617A545E200C99DB7 /* FEX_wrap.cxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FEX_wrap.cxx; path = FEX/FEX_wrap.cxx; sourceTree = "<group>"; };
+		045E880717A545E200C99DB7 /* FEX_wrap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FEX_wrap.h; path = FEX/FEX_wrap.h; sourceTree = "<group>"; };
+		045E880817A545E200C99DB7 /* zlibmodule.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = zlibmodule.c; path = FEX/zlibmodule.c; sourceTree = "<group>"; };
+		04713BCC1760C81900443B48 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		04713BD01760C81900443B48 /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
+		04713BD21760C81900443B48 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		04713BD41760C81900443B48 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		04713BD81760C81900443B48 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		04713BDA1760C81900443B48 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		04A627B0177BEC7900E1760D /* libFEX.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libFEX.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		04A627B4177BEC7900E1760D /* FEX-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "FEX-Prefix.pch"; path = "FEX/FEX-Prefix.pch"; sourceTree = "<group>"; };
+		04A627CB177BEDD200E1760D /* CCPhyDebugNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CCPhyDebugNode.cpp; path = FEX/CCPhyDebugNode.cpp; sourceTree = "<group>"; };
+		04A627CC177BEDD200E1760D /* CCPhyDebugNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CCPhyDebugNode.h; path = FEX/CCPhyDebugNode.h; sourceTree = "<group>"; };
+		04A627CD177BEDD200E1760D /* ClassInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ClassInfo.h; path = FEX/ClassInfo.h; sourceTree = "<group>"; };
+		04A627CE177BEDD200E1760D /* ControllerBase.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ControllerBase.cpp; path = FEX/ControllerBase.cpp; sourceTree = "<group>"; };
+		04A627CF177BEDD200E1760D /* ControllerBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ControllerBase.h; path = FEX/ControllerBase.h; sourceTree = "<group>"; };
+		04A627D0177BEDD200E1760D /* FE.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FE.cpp; path = FEX/FE.cpp; sourceTree = "<group>"; };
+		04A627D1177BEDD200E1760D /* FE.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FE.h; path = FEX/FE.h; sourceTree = "<group>"; };
+		04A627D2177BEDD200E1760D /* FEUtility.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FEUtility.cpp; path = FEX/FEUtility.cpp; sourceTree = "<group>"; };
+		04A627D3177BEDD200E1760D /* FEUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FEUtility.h; path = FEX/FEUtility.h; sourceTree = "<group>"; };
+		04A627D4177BEDD200E1760D /* GameBase.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GameBase.cpp; path = FEX/GameBase.cpp; sourceTree = "<group>"; };
+		04A627D5177BEDD200E1760D /* GameBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameBase.h; path = FEX/GameBase.h; sourceTree = "<group>"; };
+		04A627D6177BEDD200E1760D /* GameLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GameLayer.cpp; path = FEX/GameLayer.cpp; sourceTree = "<group>"; };
+		04A627D7177BEDD200E1760D /* GameLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameLayer.h; path = FEX/GameLayer.h; sourceTree = "<group>"; };
+		04A627D8177BEDD200E1760D /* GameObjBase.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GameObjBase.cpp; path = FEX/GameObjBase.cpp; sourceTree = "<group>"; };
+		04A627D9177BEDD200E1760D /* GameObjBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameObjBase.h; path = FEX/GameObjBase.h; sourceTree = "<group>"; };
+		04A627DA177BEDD200E1760D /* GameObjFactory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GameObjFactory.cpp; path = FEX/GameObjFactory.cpp; sourceTree = "<group>"; };
+		04A627DB177BEDD200E1760D /* GameObjFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameObjFactory.h; path = FEX/GameObjFactory.h; sourceTree = "<group>"; };
+		04A627DC177BEDD200E1760D /* GameScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GameScene.cpp; path = FEX/GameScene.cpp; sourceTree = "<group>"; };
+		04A627DD177BEDD200E1760D /* GameScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameScene.h; path = FEX/GameScene.h; sourceTree = "<group>"; };
+		04A627DE177BEDD200E1760D /* GLES-Render.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = "GLES-Render.cpp"; path = "FEX/GLES-Render.cpp"; sourceTree = "<group>"; };
+		04A627DF177BEDD200E1760D /* GLES-Render.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "GLES-Render.h"; path = "FEX/GLES-Render.h"; sourceTree = "<group>"; };
+		04A627E0177BEDD200E1760D /* LevelBase.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = LevelBase.cpp; path = FEX/LevelBase.cpp; sourceTree = "<group>"; };
+		04A627E1177BEDD200E1760D /* LevelBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LevelBase.h; path = FEX/LevelBase.h; sourceTree = "<group>"; };
+		04A627E2177BEDD200E1760D /* logger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = logger.h; path = FEX/logger.h; sourceTree = "<group>"; };
+		04A627E4177BEDD200E1760D /* pugiconfig.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = pugiconfig.hpp; sourceTree = "<group>"; };
+		04A627E5177BEDD200E1760D /* pugixml.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = pugixml.cpp; sourceTree = "<group>"; };
+		04A627E6177BEDD200E1760D /* pugixml.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = pugixml.hpp; sourceTree = "<group>"; };
+		04A627E7177BEDD200E1760D /* ResourceManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ResourceManager.cpp; path = FEX/ResourceManager.cpp; sourceTree = "<group>"; };
+		04A627E8177BEDD200E1760D /* ResourceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ResourceManager.h; path = FEX/ResourceManager.h; sourceTree = "<group>"; };
+		04A627E9177BEDD200E1760D /* SpriteBase.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SpriteBase.cpp; path = FEX/SpriteBase.cpp; sourceTree = "<group>"; };
+		04A627EA177BEDD200E1760D /* SpriteBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SpriteBase.h; path = FEX/SpriteBase.h; sourceTree = "<group>"; };
+		04A627EB177BEDD200E1760D /* SpriteComponent.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SpriteComponent.cpp; path = FEX/SpriteComponent.cpp; sourceTree = "<group>"; };
+		04A627EC177BEDD200E1760D /* SpriteComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SpriteComponent.h; path = FEX/SpriteComponent.h; sourceTree = "<group>"; };
+		04A7F7CE17DCBA9200CB9B0C /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		04C3AF9417914F35005F9937 /* IOSTouchController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = IOSTouchController.cpp; path = FEX/IOSTouchController.cpp; sourceTree = "<group>"; };
+		04C3AF9517914F35005F9937 /* IOSTouchController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IOSTouchController.h; path = FEX/IOSTouchController.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		04A627AD177BEC7900E1760D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04A627B1177BEC7900E1760D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		04713BC01760C81900443B48 = {
+			isa = PBXGroup;
+			children = (
+				04A627CA177BEDC600E1760D /* Src */,
+				04A7F7CE17DCBA9200CB9B0C /* OpenGL.framework */,
+				04A627B4177BEC7900E1760D /* FEX-Prefix.pch */,
+				04713BCB1760C81900443B48 /* Frameworks */,
+				04713BCA1760C81900443B48 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		04713BCA1760C81900443B48 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				04A627B0177BEC7900E1760D /* libFEX.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		04713BCB1760C81900443B48 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				04713BCC1760C81900443B48 /* QuartzCore.framework */,
+				04713BD01760C81900443B48 /* OpenAL.framework */,
+				04713BD21760C81900443B48 /* AudioToolbox.framework */,
+				04713BD41760C81900443B48 /* AVFoundation.framework */,
+				04713BD81760C81900443B48 /* Foundation.framework */,
+				04713BDA1760C81900443B48 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		04A627CA177BEDC600E1760D /* Src */ = {
+			isa = PBXGroup;
+			children = (
+				045E880617A545E200C99DB7 /* FEX_wrap.cxx */,
+				045E880717A545E200C99DB7 /* FEX_wrap.h */,
+				045E880817A545E200C99DB7 /* zlibmodule.c */,
+				04C3AF9417914F35005F9937 /* IOSTouchController.cpp */,
+				04C3AF9517914F35005F9937 /* IOSTouchController.h */,
+				04A627CB177BEDD200E1760D /* CCPhyDebugNode.cpp */,
+				04A627CC177BEDD200E1760D /* CCPhyDebugNode.h */,
+				04A627CD177BEDD200E1760D /* ClassInfo.h */,
+				04A627CE177BEDD200E1760D /* ControllerBase.cpp */,
+				04A627CF177BEDD200E1760D /* ControllerBase.h */,
+				04A627D0177BEDD200E1760D /* FE.cpp */,
+				04A627D1177BEDD200E1760D /* FE.h */,
+				04A627D2177BEDD200E1760D /* FEUtility.cpp */,
+				04A627D3177BEDD200E1760D /* FEUtility.h */,
+				04A627D4177BEDD200E1760D /* GameBase.cpp */,
+				04A627D5177BEDD200E1760D /* GameBase.h */,
+				04A627D6177BEDD200E1760D /* GameLayer.cpp */,
+				04A627D7177BEDD200E1760D /* GameLayer.h */,
+				04A627D8177BEDD200E1760D /* GameObjBase.cpp */,
+				04A627D9177BEDD200E1760D /* GameObjBase.h */,
+				04A627DA177BEDD200E1760D /* GameObjFactory.cpp */,
+				04A627DB177BEDD200E1760D /* GameObjFactory.h */,
+				04A627DC177BEDD200E1760D /* GameScene.cpp */,
+				04A627DD177BEDD200E1760D /* GameScene.h */,
+				04A627DE177BEDD200E1760D /* GLES-Render.cpp */,
+				04A627DF177BEDD200E1760D /* GLES-Render.h */,
+				04A627E0177BEDD200E1760D /* LevelBase.cpp */,
+				04A627E1177BEDD200E1760D /* LevelBase.h */,
+				04A627E2177BEDD200E1760D /* logger.h */,
+				04A627E3177BEDD200E1760D /* pugixml */,
+				04A627E7177BEDD200E1760D /* ResourceManager.cpp */,
+				04A627E8177BEDD200E1760D /* ResourceManager.h */,
+				04A627E9177BEDD200E1760D /* SpriteBase.cpp */,
+				04A627EA177BEDD200E1760D /* SpriteBase.h */,
+				04A627EB177BEDD200E1760D /* SpriteComponent.cpp */,
+				04A627EC177BEDD200E1760D /* SpriteComponent.h */,
+				040A59E4177E6FA00010E979 /* CollisionListener.cpp */,
+				040A59E5177E6FA00010E979 /* CollisionListener.h */,
+				04491E6417DCCF7500D01E99 /* EditorModule.cpp */,
+				04491E6517DCCF7500D01E99 /* EditorModule.h */,
+			);
+			name = Src;
+			sourceTree = "<group>";
+		};
+		04A627E3177BEDD200E1760D /* pugixml */ = {
+			isa = PBXGroup;
+			children = (
+				04A627E4177BEDD200E1760D /* pugiconfig.hpp */,
+				04A627E5177BEDD200E1760D /* pugixml.cpp */,
+				04A627E6177BEDD200E1760D /* pugixml.hpp */,
+			);
+			name = pugixml;
+			path = FEX/pugixml;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		04A627AF177BEC7900E1760D /* FEX */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04A627B9177BEC7900E1760D /* Build configuration list for PBXNativeTarget "FEX" */;
+			buildPhases = (
+				04A627AC177BEC7900E1760D /* Sources */,
+				04A627AD177BEC7900E1760D /* Frameworks */,
+				04A627AE177BEC7900E1760D /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FEX;
+			productName = FEX;
+			productReference = 04A627B0177BEC7900E1760D /* libFEX.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		04713BC11760C81900443B48 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+			};
+			buildConfigurationList = 04713BC41760C81900443B48 /* Build configuration list for PBXProject "FEXMac" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 04713BC01760C81900443B48;
+			productRefGroup = 04713BCA1760C81900443B48 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				04A627AF177BEC7900E1760D /* FEX */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		04A627AC177BEC7900E1760D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04A627ED177BEDD200E1760D /* CCPhyDebugNode.cpp in Sources */,
+				04A627EE177BEDD200E1760D /* ControllerBase.cpp in Sources */,
+				04A627EF177BEDD200E1760D /* FE.cpp in Sources */,
+				04A627F0177BEDD200E1760D /* FEUtility.cpp in Sources */,
+				04A627F1177BEDD200E1760D /* GameBase.cpp in Sources */,
+				04A627F2177BEDD200E1760D /* GameLayer.cpp in Sources */,
+				04A627F3177BEDD200E1760D /* GameObjBase.cpp in Sources */,
+				04A627F4177BEDD200E1760D /* GameObjFactory.cpp in Sources */,
+				04A627F5177BEDD200E1760D /* GameScene.cpp in Sources */,
+				04A627F6177BEDD200E1760D /* GLES-Render.cpp in Sources */,
+				04A627F7177BEDD200E1760D /* LevelBase.cpp in Sources */,
+				04A627F8177BEDD200E1760D /* pugixml.cpp in Sources */,
+				04A627F9177BEDD200E1760D /* ResourceManager.cpp in Sources */,
+				04A627FA177BEDD200E1760D /* SpriteBase.cpp in Sources */,
+				04A627FB177BEDD200E1760D /* SpriteComponent.cpp in Sources */,
+				040A59E6177E6FA00010E979 /* CollisionListener.cpp in Sources */,
+				04C3AF9617914F36005F9937 /* IOSTouchController.cpp in Sources */,
+				045E880917A545E200C99DB7 /* FEX_wrap.cxx in Sources */,
+				045E880B17A545E200C99DB7 /* zlibmodule.c in Sources */,
+				04491E6617DCCF7500D01E99 /* EditorModule.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		04713F791760C82000443B48 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					DEBUG,
+					"COCOS2D_DEBUG=1",
+					USE_FILE32API,
+					"CC_ENABLE_CHIPMUNK_INTEGRATION=0",
+					"CC_ENABLE_BOX2D_INTEGRATION=1",
+					CC_TARGET_OS_MAC,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"\"$(PROJECT_NAME)/libs/cocos2dx/kazmath/include\"",
+					"\"$(PROJECT_NAME)/libs/cocos2dx\"",
+					"\"$(PROJECT_NAME)/libs/CocosDenshion/include\"",
+					"\"$(PROJECT_NAME)/libs/extensions\"",
+					"\"$(PROJECT_NAME)/libs/cocos2dx/include\"",
+					"\"$(PROJECT_NAME)/libs/cocos2dx/platform/third_party/ios\"",
+					"\"$(PROJECT_NAME)/libs/cocos2dx/platform/ios\"",
+				);
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		04713F7A1760C82000443B48 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					NDEBUG,
+					USE_FILE32API,
+					"CC_ENABLE_CHIPMUNK_INTEGRATION=1",
+					"CC_ENABLE_CHIPMUNK_INTEGRATION=0",
+					"CC_ENABLE_BOX2D_INTEGRATION=1",
+					CC_TARGET_OS_MAC,
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"\"$(PROJECT_NAME)/libs/cocos2dx/kazmath/include\"",
+					"\"$(PROJECT_NAME)/libs/cocos2dx\"",
+					"\"$(PROJECT_NAME)/libs/CocosDenshion/include\"",
+					"\"$(PROJECT_NAME)/libs/extensions\"",
+					"\"$(PROJECT_NAME)/libs/cocos2dx/include\"",
+					"\"$(PROJECT_NAME)/libs/cocos2dx/platform/third_party/ios\"",
+					"\"$(PROJECT_NAME)/libs/cocos2dx/platform/ios\"",
+				);
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		04A627BA177BEC7900E1760D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=*]" = "";
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/FEX.dst;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FEX/FEX-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				HEADER_SEARCH_PATHS = (
+					"\"libs/cocos2dx/kazmath/include\"",
+					"\"libs/cocos2dx\"",
+					"\"libs/CocosDenshion/include\"",
+					"\"libs/extensions\"",
+					"\"libs/cocos2dx/include\"",
+					"\"libs/cocos2dx/platform/third_party/mac\"",
+					"\"libs/cocos2dx/platform/mac\"",
+					"\"libs/external\"",
+					"\"libs/Python/Include\"",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				STRIP_STYLE = debugging;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		04A627BB177BEC7900E1760D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=*]" = "";
+				COPY_PHASE_STRIP = YES;
+				DSTROOT = /tmp/FEX.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FEX/FEX-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					NDEBUG,
+					USE_FILE32API,
+					"CC_ENABLE_CHIPMUNK_INTEGRATION=0",
+					"CC_ENABLE_BOX2D_INTEGRATION=1",
+				);
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				HEADER_SEARCH_PATHS = (
+					"\"libs/cocos2dx/kazmath/include\"",
+					"\"libs/cocos2dx\"",
+					"\"libs/CocosDenshion/include\"",
+					"\"libs/extensions\"",
+					"\"libs/cocos2dx/include\"",
+					"\"libs/cocos2dx/platform/third_party/mac\"",
+					"\"libs/cocos2dx/platform/mac\"",
+					"\"libs/external\"",
+					"\"libs/Python/Include\"",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				STRIP_STYLE = debugging;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		04713BC41760C81900443B48 /* Build configuration list for PBXProject "FEXMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04713F791760C82000443B48 /* Debug */,
+				04713F7A1760C82000443B48 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04A627B9177BEC7900E1760D /* Build configuration list for PBXNativeTarget "FEX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04A627BA177BEC7900E1760D /* Debug */,
+				04A627BB177BEC7900E1760D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 04713BC11760C81900443B48 /* Project object */;
+}

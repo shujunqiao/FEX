@@ -37,6 +37,11 @@ namespace std
     class shared_ptr
     {
     };
+    template<typename T>
+    class weak_ptr
+    {
+    };
+    
 }
 
 %template(vector_sprite_components) std::vector<FESimple::SpriteComponent*>;
@@ -46,16 +51,12 @@ namespace std
 %template(sprite_component_desc_ptr) std::shared_ptr<FESimple::sprite_component_desc>;
 %template(spritebase_ptr) std::shared_ptr< FESimple::SpriteBase >;
 %template(spritebase_weak_ptr) std::weak_ptr< FESimple::SpriteBase >;
-
+ 
 %feature("director") FESimple::GameBase;
 %feature("director") FESimple::GameObjBase;
 %feature("director") FESimple::SpriteBase;
 %feature("director") FESimple::IOSTouchController;
-//%feature("unref") std::shared_ptr<FESimple::SpriteBase> "delete $this;//nimei"
-//%feature("unref") std::weak_ptr<FESimple::SpriteBase> "delete $this;//nimei"
-%feature("unref") std::shared_ptr<FESimple::GameObjBase> "delete $this;//nimei"
-%feature("unref") std::shared_ptr<GameObjBase> "delete $this;//nimei"
-%feature("unref") std::shared_ptr<FESimple::sprite_component_desc> "delete $this;//nimei"
+%feature("ref") FESimple::SpriteComponent "$this->retain (); // unref for SpriteComponent"
 %feature("unref") FESimple::SpriteComponent "$this->release(); // unref for SpriteComponent"
 
 
@@ -167,6 +168,20 @@ namespace cocos2d
         CCPoint m_prevPoint;
     };
 }
+
+%extend cocos2d::CCPoint
+{
+    cocos2d::CCPoint operator - (const cocos2d::CCPoint& other )
+    {
+        return cocos2d::CCPoint( $self->x - other.x, $self->y - other.y);
+    }
+    cocos2d::CCPoint operator + (const cocos2d::CCPoint& other )
+    {
+        return cocos2d::CCPoint( $self->x + other.x, $self->y + other.y);
+    }
+    
+}
+
 %include "../FEX/FE.h"
 %include "../FEX/ClassInfo.h"
 %include "../FEX/GameObjBase.h"

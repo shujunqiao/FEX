@@ -291,6 +291,21 @@ class spritebase_ptr(_object):
 spritebase_ptr_swigregister = _FEX.spritebase_ptr_swigregister
 spritebase_ptr_swigregister(spritebase_ptr)
 
+class spritebase_weak_ptr(_object):
+    __swig_setmethods__ = {}
+    __setattr__ = lambda self, name, value: _swig_setattr(self, spritebase_weak_ptr, name, value)
+    __swig_getmethods__ = {}
+    __getattr__ = lambda self, name: _swig_getattr(self, spritebase_weak_ptr, name)
+    __repr__ = _swig_repr
+    def __init__(self): 
+        this = _FEX.new_spritebase_weak_ptr()
+        try: self.this.append(this)
+        except: self.this = this
+    __swig_destroy__ = _FEX.delete_spritebase_weak_ptr
+    __del__ = lambda self : None;
+spritebase_weak_ptr_swigregister = _FEX.spritebase_weak_ptr_swigregister
+spritebase_weak_ptr_swigregister(spritebase_weak_ptr)
+
 class CCPoint(_object):
     __swig_setmethods__ = {}
     __setattr__ = lambda self, name, value: _swig_setattr(self, CCPoint, name, value)
@@ -309,6 +324,8 @@ class CCPoint(_object):
         except: self.this = this
     def setPoint(self, *args): return _FEX.CCPoint_setPoint(self, *args)
     def equals(self, *args): return _FEX.CCPoint_equals(self, *args)
+    def __sub__(self, *args): return _FEX.CCPoint___sub__(self, *args)
+    def __add__(self, *args): return _FEX.CCPoint___add__(self, *args)
     __swig_destroy__ = _FEX.delete_CCPoint
     __del__ = lambda self : None;
 CCPoint_swigregister = _FEX.CCPoint_swigregister
@@ -1094,6 +1111,7 @@ class SpriteComponent(_object):
     def set_owner(self, *args): return _FEX.SpriteComponent_set_owner(self, *args)
     def get_owner(self): return _FEX.SpriteComponent_get_owner(self)
     def set_scale(self, *args): return _FEX.SpriteComponent_set_scale(self, *args)
+    def hit_test(self, *args): return _FEX.SpriteComponent_hit_test(self, *args)
 SpriteComponent_swigregister = _FEX.SpriteComponent_swigregister
 SpriteComponent_swigregister(SpriteComponent)
 
