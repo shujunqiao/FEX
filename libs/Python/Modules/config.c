@@ -43,6 +43,9 @@ extern "C" {
     extern void inittime(void);
     extern void init_random(void);
     extern void initcStringIO(void);
+    extern void initoperator(void);
+    extern void init_collections(void);
+    extern void inititertools(void);
     /* -- ADDMODULE MARKER 1 -- */
     
     extern void PyMarshal_Init(void);
@@ -52,6 +55,9 @@ extern "C" {
     extern void _PyWarnings_Init(void);
     
     struct _inittab _PyImport_Inittab[] = {
+        {"itertools",inititertools},
+        {"_collections",init_collections},
+        {"operator",initoperator},
         {"cStringIO",initcStringIO},
         {"_random",init_random},
         {"time",inittime},
