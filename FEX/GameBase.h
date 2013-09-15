@@ -14,6 +14,7 @@
 #include <algorithm>
 class b2World;
 FE_NS_BEGIN
+
 class LevelBase;
 class GameWorld;
 class GameScene;
@@ -46,6 +47,7 @@ public:
         return level.get();
     }
     
+    void set_level( LevelBase* lvl );
     template<class _Predicate>
     GameObjPtr find_obj_if( _Predicate predicate )
     {

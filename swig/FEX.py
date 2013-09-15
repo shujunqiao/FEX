@@ -557,6 +557,7 @@ class GameBase(_object):
     def get_scene(self): return _FEX.GameBase_get_scene(self)
     def get_phy_world(self): return _FEX.GameBase_get_phy_world(self)
     def get_level(self): return _FEX.GameBase_get_level(self)
+    def set_level(self, *args): return _FEX.GameBase_set_level(self, *args)
     def is_editor(self): return _FEX.GameBase_is_editor(self)
     def get_obj(self, *args): return _FEX.GameBase_get_obj(self, *args)
     def get_objects(self): return _FEX.GameBase_get_objects(self)
@@ -635,17 +636,26 @@ class LevelBase(_object):
     __swig_getmethods__ = {}
     __getattr__ = lambda self, name: _swig_getattr(self, LevelBase, name)
     __repr__ = _swig_repr
+    def __init__(self): 
+        if self.__class__ == LevelBase:
+            _self = None
+        else:
+            _self = self
+        this = _FEX.new_LevelBase(_self, )
+        try: self.this.append(this)
+        except: self.this = this
+    __swig_destroy__ = _FEX.delete_LevelBase
+    __del__ = lambda self : None;
     def attach(self, *args): return _FEX.LevelBase_attach(self, *args)
     def reset(self): return _FEX.LevelBase_reset(self)
     def triggering_trigger(self, *args): return _FEX.LevelBase_triggering_trigger(self, *args)
     def update(self, *args): return _FEX.LevelBase_update(self, *args)
     def get_bound(self): return _FEX.LevelBase_get_bound(self)
-    def __init__(self): 
-        this = _FEX.new_LevelBase()
-        try: self.this.append(this)
-        except: self.this = this
-    __swig_destroy__ = _FEX.delete_LevelBase
-    __del__ = lambda self : None;
+    def get_current_trigger(self): return _FEX.LevelBase_get_current_trigger(self)
+    def __disown__(self):
+        self.this.disown()
+        _FEX.disown_LevelBase(self)
+        return weakref_proxy(self)
 LevelBase_swigregister = _FEX.LevelBase_swigregister
 LevelBase_swigregister(LevelBase)
 
@@ -847,6 +857,8 @@ class ControllerBase(_object):
     __getattr__ = lambda self, name: _swig_getattr(self, ControllerBase, name)
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined - class is abstract")
     __repr__ = _swig_repr
+    def get_name(self): return _FEX.ControllerBase_get_name(self)
+    def set_name(self, *args): return _FEX.ControllerBase_set_name(self, *args)
     def plug(self): return _FEX.ControllerBase_plug(self)
     def unplug(self): return _FEX.ControllerBase_unplug(self)
     __swig_destroy__ = _FEX.delete_ControllerBase
@@ -854,36 +866,36 @@ class ControllerBase(_object):
 ControllerBase_swigregister = _FEX.ControllerBase_swigregister
 ControllerBase_swigregister(ControllerBase)
 
-class IOSTouchController(ControllerBase):
+class TouchController(ControllerBase):
     __swig_setmethods__ = {}
     for _s in [ControllerBase]: __swig_setmethods__.update(getattr(_s,'__swig_setmethods__',{}))
-    __setattr__ = lambda self, name, value: _swig_setattr(self, IOSTouchController, name, value)
+    __setattr__ = lambda self, name, value: _swig_setattr(self, TouchController, name, value)
     __swig_getmethods__ = {}
     for _s in [ControllerBase]: __swig_getmethods__.update(getattr(_s,'__swig_getmethods__',{}))
-    __getattr__ = lambda self, name: _swig_getattr(self, IOSTouchController, name)
+    __getattr__ = lambda self, name: _swig_getattr(self, TouchController, name)
     __repr__ = _swig_repr
     def __init__(self): 
-        if self.__class__ == IOSTouchController:
+        if self.__class__ == TouchController:
             _self = None
         else:
             _self = self
-        this = _FEX.new_IOSTouchController(_self, )
+        this = _FEX.new_TouchController(_self, )
         try: self.this.append(this)
         except: self.this = this
-    __swig_destroy__ = _FEX.delete_IOSTouchController
+    __swig_destroy__ = _FEX.delete_TouchController
     __del__ = lambda self : None;
-    def ccTouchBegan(self, *args): return _FEX.IOSTouchController_ccTouchBegan(self, *args)
-    def ccTouchMoved(self, *args): return _FEX.IOSTouchController_ccTouchMoved(self, *args)
-    def ccTouchEnded(self, *args): return _FEX.IOSTouchController_ccTouchEnded(self, *args)
-    def ccTouchCancelled(self, *args): return _FEX.IOSTouchController_ccTouchCancelled(self, *args)
-    def plug(self): return _FEX.IOSTouchController_plug(self)
-    def unplug(self): return _FEX.IOSTouchController_unplug(self)
+    def ccTouchBegan(self, *args): return _FEX.TouchController_ccTouchBegan(self, *args)
+    def ccTouchMoved(self, *args): return _FEX.TouchController_ccTouchMoved(self, *args)
+    def ccTouchEnded(self, *args): return _FEX.TouchController_ccTouchEnded(self, *args)
+    def ccTouchCancelled(self, *args): return _FEX.TouchController_ccTouchCancelled(self, *args)
+    def plug(self): return _FEX.TouchController_plug(self)
+    def unplug(self): return _FEX.TouchController_unplug(self)
     def __disown__(self):
         self.this.disown()
-        _FEX.disown_IOSTouchController(self)
+        _FEX.disown_TouchController(self)
         return weakref_proxy(self)
-IOSTouchController_swigregister = _FEX.IOSTouchController_swigregister
-IOSTouchController_swigregister(IOSTouchController)
+TouchController_swigregister = _FEX.TouchController_swigregister
+TouchController_swigregister(TouchController)
 
 class animation(_object):
     __swig_setmethods__ = {}

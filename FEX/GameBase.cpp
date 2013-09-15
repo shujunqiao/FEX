@@ -73,4 +73,10 @@ GameObjPtr GameBase::get_obj( const Name& name )
     return find_obj_if([&](GameObjPtr i){return i->get_name() == name; } );
 }
 
+void GameBase::set_level( LevelBase* lvl )
+{
+    level.reset( lvl );
+}
+
+
 FE_NS_END

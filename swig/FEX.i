@@ -9,7 +9,7 @@
 #include "LevelBase.h"
 #include "SpriteComponent.h"
 #include "ControllerBase.h"
-#include "IOSTouchController.h"
+#include "TouchController.h"
 #include "cocos2d.h"
 #include "ResourceManager.h"
 
@@ -41,6 +41,10 @@ namespace std
     class weak_ptr
     {
     };
+    template<typename T>
+    class unique_ptr
+    {
+    };
     
 }
 
@@ -51,11 +55,13 @@ namespace std
 %template(sprite_component_desc_ptr) std::shared_ptr<FESimple::sprite_component_desc>;
 %template(spritebase_ptr) std::shared_ptr< FESimple::SpriteBase >;
 %template(spritebase_weak_ptr) std::weak_ptr< FESimple::SpriteBase >;
- 
+
+
 %feature("director") FESimple::GameBase;
 %feature("director") FESimple::GameObjBase;
 %feature("director") FESimple::SpriteBase;
-%feature("director") FESimple::IOSTouchController;
+%feature("director") FESimple::LevelBase;
+%feature("director") FESimple::TouchController;
 %feature("ref") FESimple::SpriteComponent "$this->retain (); // unref for SpriteComponent"
 %feature("unref") FESimple::SpriteComponent "$this->release(); // unref for SpriteComponent"
 
@@ -191,7 +197,7 @@ namespace cocos2d
 %include "../FEX/FEUtility.h"
 %include "../FEX/GameObjFactory.h"
 %include "../FEX/ControllerBase.h"
-%include "../FEX/IOSTouchController.h"
+%include "../FEX/TouchController.h"
 %include "../FEX/SpriteComponent.h"
 %include "../FEX/ResourceManager.h"
 

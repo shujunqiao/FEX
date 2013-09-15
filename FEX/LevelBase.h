@@ -54,6 +54,14 @@ struct LevelData
 class LevelBase
 {
 public:
+    LevelBase()
+    {
+        reset();
+    }
+    virtual ~LevelBase()
+    {
+        logger("debug")<< "level destroyed" << endl;
+    }
     virtual bool attach( const LevelData* data );  //附加关卡，不删除现有内容
     virtual void reset();   //重置关卡，删除所有游戏对象
     virtual void triggering_trigger( LevelTrigger& trigger );
@@ -65,12 +73,17 @@ public:
     }
     LevelTrigger& get_current_trigger()
     {
-        return level_data.triggers[current_trigger];
+        if ( current_trigger < level_data.triggers.size() )
+            return level_data.triggers[current_trigger];
+        else
+            return dummy_trigger;
+        
     }
 protected:
     unsigned int current_trigger;
     float       start_time;
     LevelData   level_data;
+    LevelTrigger dummy_trigger;
     
 };
 FE_NS_END

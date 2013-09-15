@@ -3446,19 +3446,19 @@ namespace Swig {
 #define SWIGTYPE_p_FESimple__GameObjBase swig_types[6]
 #define SWIGTYPE_p_FESimple__GameObjFactory swig_types[7]
 #define SWIGTYPE_p_FESimple__GameScene swig_types[8]
-#define SWIGTYPE_p_FESimple__IOSTouchController swig_types[9]
-#define SWIGTYPE_p_FESimple__LevelBase swig_types[10]
-#define SWIGTYPE_p_FESimple__LevelBound swig_types[11]
-#define SWIGTYPE_p_FESimple__LevelData swig_types[12]
-#define SWIGTYPE_p_FESimple__LevelTrigger swig_types[13]
-#define SWIGTYPE_p_FESimple__ResourceManager swig_types[14]
-#define SWIGTYPE_p_FESimple__SharedReourceMapT_FESimple__LevelData_t swig_types[15]
-#define SWIGTYPE_p_FESimple__SharedReourceMapT_FESimple__animation_t swig_types[16]
-#define SWIGTYPE_p_FESimple__SharedReourceMapT_FESimple__physic_desc_t swig_types[17]
-#define SWIGTYPE_p_FESimple__SharedReourceMapT_FESimple__sprite_component_desc_t swig_types[18]
-#define SWIGTYPE_p_FESimple__SharedReourceMapT_FESimple__sprite_desc_t swig_types[19]
-#define SWIGTYPE_p_FESimple__SpriteBase swig_types[20]
-#define SWIGTYPE_p_FESimple__SpriteComponent swig_types[21]
+#define SWIGTYPE_p_FESimple__LevelBase swig_types[9]
+#define SWIGTYPE_p_FESimple__LevelBound swig_types[10]
+#define SWIGTYPE_p_FESimple__LevelData swig_types[11]
+#define SWIGTYPE_p_FESimple__LevelTrigger swig_types[12]
+#define SWIGTYPE_p_FESimple__ResourceManager swig_types[13]
+#define SWIGTYPE_p_FESimple__SharedReourceMapT_FESimple__LevelData_t swig_types[14]
+#define SWIGTYPE_p_FESimple__SharedReourceMapT_FESimple__animation_t swig_types[15]
+#define SWIGTYPE_p_FESimple__SharedReourceMapT_FESimple__physic_desc_t swig_types[16]
+#define SWIGTYPE_p_FESimple__SharedReourceMapT_FESimple__sprite_component_desc_t swig_types[17]
+#define SWIGTYPE_p_FESimple__SharedReourceMapT_FESimple__sprite_desc_t swig_types[18]
+#define SWIGTYPE_p_FESimple__SpriteBase swig_types[19]
+#define SWIGTYPE_p_FESimple__SpriteComponent swig_types[20]
+#define SWIGTYPE_p_FESimple__TouchController swig_types[21]
 #define SWIGTYPE_p_FESimple__animation swig_types[22]
 #define SWIGTYPE_p_FESimple__b2fixture_def swig_types[23]
 #define SWIGTYPE_p_FESimple__physic_desc swig_types[24]
@@ -3630,7 +3630,7 @@ namespace swig {
 #include "LevelBase.h"
 #include "SpriteComponent.h"
 #include "ControllerBase.h"
-#include "IOSTouchController.h"
+#include "TouchController.h"
 #include "cocos2d.h"
 #include "ResourceManager.h"
 
@@ -6556,16 +6556,122 @@ bool SwigDirector_GameBase::is_editor() {
 }
 
 
-SwigDirector_IOSTouchController::SwigDirector_IOSTouchController(PyObject *self): FESimple::IOSTouchController(), Swig::Director(self) {
-  SWIG_DIRECTOR_RGTR((FESimple::IOSTouchController *)this, this); 
+SwigDirector_LevelBase::SwigDirector_LevelBase(PyObject *self): FESimple::LevelBase(), Swig::Director(self) {
+  SWIG_DIRECTOR_RGTR((FESimple::LevelBase *)this, this); 
 }
 
 
 
 
-void SwigDirector_IOSTouchController::plug() {
+SwigDirector_LevelBase::~SwigDirector_LevelBase() {
+}
+
+bool SwigDirector_LevelBase::attach(FESimple::LevelData const *data) {
+  bool c_result;
+  swig::SwigVar_PyObject obj0;
+  obj0 = SWIG_NewPointerObj(SWIG_as_voidptr(data), SWIGTYPE_p_FESimple__LevelData,  0 );
   if (!swig_get_self()) {
-    Swig::DirectorException::raise("'self' uninitialized, maybe you forgot to call IOSTouchController.__init__.");
+    Swig::DirectorException::raise("'self' uninitialized, maybe you forgot to call LevelBase.__init__.");
+  }
+#if defined(SWIG_PYTHON_DIRECTOR_VTABLE)
+  const size_t swig_method_index = 0;
+  const char * const swig_method_name = "attach";
+  PyObject* method = swig_get_method(swig_method_index, swig_method_name);
+  swig::SwigVar_PyObject result = PyObject_CallFunction(method, (char *)"(O)" ,(PyObject *)obj0);
+#else
+  swig::SwigVar_PyObject result = PyObject_CallMethod(swig_get_self(), (char *)"attach", (char *)"(O)" ,(PyObject *)obj0);
+#endif
+  if (!result) {
+    PyObject *error = PyErr_Occurred();
+    {
+      if( error != NULL ) {
+        fprintf(stderr,"director exception:");
+        PyObject *ptype, *pvalue, *ptraceback;
+        PyErr_Fetch( &ptype, &pvalue, &ptraceback );
+        PyErr_Restore( ptype, pvalue, ptraceback );
+        PyErr_Print();
+        Py_Exit(1);
+      }
+    }
+  }
+  bool swig_val;
+  int swig_res = SWIG_AsVal_bool(result, &swig_val);
+  if (!SWIG_IsOK(swig_res)) {
+    Swig::DirectorTypeMismatchException::raise(SWIG_ErrorType(SWIG_ArgError(swig_res)), "in output value of type '""bool""'");
+  }
+  c_result = static_cast< bool >(swig_val);
+  return (bool) c_result;
+}
+
+
+void SwigDirector_LevelBase::reset() {
+  if (!swig_get_self()) {
+    Swig::DirectorException::raise("'self' uninitialized, maybe you forgot to call LevelBase.__init__.");
+  }
+#if defined(SWIG_PYTHON_DIRECTOR_VTABLE)
+  const size_t swig_method_index = 1;
+  const char * const swig_method_name = "reset";
+  PyObject* method = swig_get_method(swig_method_index, swig_method_name);
+  swig::SwigVar_PyObject result = PyObject_CallFunction(method, NULL, NULL);
+#else
+  swig::SwigVar_PyObject result = PyObject_CallMethod(swig_get_self(), (char *) "reset", NULL);
+#endif
+  if (!result) {
+    PyObject *error = PyErr_Occurred();
+    {
+      if( error != NULL ) {
+        fprintf(stderr,"director exception:");
+        PyObject *ptype, *pvalue, *ptraceback;
+        PyErr_Fetch( &ptype, &pvalue, &ptraceback );
+        PyErr_Restore( ptype, pvalue, ptraceback );
+        PyErr_Print();
+        Py_Exit(1);
+      }
+    }
+  }
+}
+
+
+void SwigDirector_LevelBase::triggering_trigger(FESimple::LevelTrigger &trigger) {
+  swig::SwigVar_PyObject obj0;
+  obj0 = SWIG_NewPointerObj(SWIG_as_voidptr(&trigger), SWIGTYPE_p_FESimple__LevelTrigger,  0 );
+  if (!swig_get_self()) {
+    Swig::DirectorException::raise("'self' uninitialized, maybe you forgot to call LevelBase.__init__.");
+  }
+#if defined(SWIG_PYTHON_DIRECTOR_VTABLE)
+  const size_t swig_method_index = 2;
+  const char * const swig_method_name = "triggering_trigger";
+  PyObject* method = swig_get_method(swig_method_index, swig_method_name);
+  swig::SwigVar_PyObject result = PyObject_CallFunction(method, (char *)"(O)" ,(PyObject *)obj0);
+#else
+  swig::SwigVar_PyObject result = PyObject_CallMethod(swig_get_self(), (char *)"triggering_trigger", (char *)"(O)" ,(PyObject *)obj0);
+#endif
+  if (!result) {
+    PyObject *error = PyErr_Occurred();
+    {
+      if( error != NULL ) {
+        fprintf(stderr,"director exception:");
+        PyObject *ptype, *pvalue, *ptraceback;
+        PyErr_Fetch( &ptype, &pvalue, &ptraceback );
+        PyErr_Restore( ptype, pvalue, ptraceback );
+        PyErr_Print();
+        Py_Exit(1);
+      }
+    }
+  }
+}
+
+
+SwigDirector_TouchController::SwigDirector_TouchController(PyObject *self): FESimple::TouchController(), Swig::Director(self) {
+  SWIG_DIRECTOR_RGTR((FESimple::TouchController *)this, this); 
+}
+
+
+
+
+void SwigDirector_TouchController::plug() {
+  if (!swig_get_self()) {
+    Swig::DirectorException::raise("'self' uninitialized, maybe you forgot to call TouchController.__init__.");
   }
 #if defined(SWIG_PYTHON_DIRECTOR_VTABLE)
   const size_t swig_method_index = 0;
@@ -6591,9 +6697,9 @@ void SwigDirector_IOSTouchController::plug() {
 }
 
 
-void SwigDirector_IOSTouchController::unplug() {
+void SwigDirector_TouchController::unplug() {
   if (!swig_get_self()) {
-    Swig::DirectorException::raise("'self' uninitialized, maybe you forgot to call IOSTouchController.__init__.");
+    Swig::DirectorException::raise("'self' uninitialized, maybe you forgot to call TouchController.__init__.");
   }
 #if defined(SWIG_PYTHON_DIRECTOR_VTABLE)
   const size_t swig_method_index = 1;
@@ -6619,17 +6725,17 @@ void SwigDirector_IOSTouchController::unplug() {
 }
 
 
-SwigDirector_IOSTouchController::~SwigDirector_IOSTouchController() {
+SwigDirector_TouchController::~SwigDirector_TouchController() {
 }
 
-bool SwigDirector_IOSTouchController::ccTouchBegan(cocos2d::CCTouch *pTouch, cocos2d::CCEvent *pEvent) {
+bool SwigDirector_TouchController::ccTouchBegan(cocos2d::CCTouch *pTouch, cocos2d::CCEvent *pEvent) {
   bool c_result;
   swig::SwigVar_PyObject obj0;
   obj0 = SWIG_NewPointerObj(SWIG_as_voidptr(pTouch), SWIGTYPE_p_cocos2d__CCTouch,  0 );
   swig::SwigVar_PyObject obj1;
   obj1 = SWIG_NewPointerObj(SWIG_as_voidptr(pEvent), SWIGTYPE_p_cocos2d__CCEvent,  0 );
   if (!swig_get_self()) {
-    Swig::DirectorException::raise("'self' uninitialized, maybe you forgot to call IOSTouchController.__init__.");
+    Swig::DirectorException::raise("'self' uninitialized, maybe you forgot to call TouchController.__init__.");
   }
 #if defined(SWIG_PYTHON_DIRECTOR_VTABLE)
   const size_t swig_method_index = 2;
@@ -6662,13 +6768,13 @@ bool SwigDirector_IOSTouchController::ccTouchBegan(cocos2d::CCTouch *pTouch, coc
 }
 
 
-void SwigDirector_IOSTouchController::ccTouchMoved(cocos2d::CCTouch *pTouch, cocos2d::CCEvent *pEvent) {
+void SwigDirector_TouchController::ccTouchMoved(cocos2d::CCTouch *pTouch, cocos2d::CCEvent *pEvent) {
   swig::SwigVar_PyObject obj0;
   obj0 = SWIG_NewPointerObj(SWIG_as_voidptr(pTouch), SWIGTYPE_p_cocos2d__CCTouch,  0 );
   swig::SwigVar_PyObject obj1;
   obj1 = SWIG_NewPointerObj(SWIG_as_voidptr(pEvent), SWIGTYPE_p_cocos2d__CCEvent,  0 );
   if (!swig_get_self()) {
-    Swig::DirectorException::raise("'self' uninitialized, maybe you forgot to call IOSTouchController.__init__.");
+    Swig::DirectorException::raise("'self' uninitialized, maybe you forgot to call TouchController.__init__.");
   }
 #if defined(SWIG_PYTHON_DIRECTOR_VTABLE)
   const size_t swig_method_index = 3;
@@ -6694,13 +6800,13 @@ void SwigDirector_IOSTouchController::ccTouchMoved(cocos2d::CCTouch *pTouch, coc
 }
 
 
-void SwigDirector_IOSTouchController::ccTouchEnded(cocos2d::CCTouch *pTouch, cocos2d::CCEvent *pEvent) {
+void SwigDirector_TouchController::ccTouchEnded(cocos2d::CCTouch *pTouch, cocos2d::CCEvent *pEvent) {
   swig::SwigVar_PyObject obj0;
   obj0 = SWIG_NewPointerObj(SWIG_as_voidptr(pTouch), SWIGTYPE_p_cocos2d__CCTouch,  0 );
   swig::SwigVar_PyObject obj1;
   obj1 = SWIG_NewPointerObj(SWIG_as_voidptr(pEvent), SWIGTYPE_p_cocos2d__CCEvent,  0 );
   if (!swig_get_self()) {
-    Swig::DirectorException::raise("'self' uninitialized, maybe you forgot to call IOSTouchController.__init__.");
+    Swig::DirectorException::raise("'self' uninitialized, maybe you forgot to call TouchController.__init__.");
   }
 #if defined(SWIG_PYTHON_DIRECTOR_VTABLE)
   const size_t swig_method_index = 4;
@@ -6726,13 +6832,13 @@ void SwigDirector_IOSTouchController::ccTouchEnded(cocos2d::CCTouch *pTouch, coc
 }
 
 
-void SwigDirector_IOSTouchController::ccTouchCancelled(cocos2d::CCTouch *pTouch, cocos2d::CCEvent *pEvent) {
+void SwigDirector_TouchController::ccTouchCancelled(cocos2d::CCTouch *pTouch, cocos2d::CCEvent *pEvent) {
   swig::SwigVar_PyObject obj0;
   obj0 = SWIG_NewPointerObj(SWIG_as_voidptr(pTouch), SWIGTYPE_p_cocos2d__CCTouch,  0 );
   swig::SwigVar_PyObject obj1;
   obj1 = SWIG_NewPointerObj(SWIG_as_voidptr(pEvent), SWIGTYPE_p_cocos2d__CCEvent,  0 );
   if (!swig_get_self()) {
-    Swig::DirectorException::raise("'self' uninitialized, maybe you forgot to call IOSTouchController.__init__.");
+    Swig::DirectorException::raise("'self' uninitialized, maybe you forgot to call TouchController.__init__.");
   }
 #if defined(SWIG_PYTHON_DIRECTOR_VTABLE)
   const size_t swig_method_index = 5;
@@ -16331,6 +16437,36 @@ fail:
 }
 
 
+SWIGINTERN PyObject *_wrap_GameBase_set_level(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  FESimple::GameBase *arg1 = (FESimple::GameBase *) 0 ;
+  FESimple::LevelBase *arg2 = (FESimple::LevelBase *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 = 0 ;
+  int res2 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"OO:GameBase_set_level",&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_FESimple__GameBase, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "GameBase_set_level" "', argument " "1"" of type '" "FESimple::GameBase *""'"); 
+  }
+  arg1 = reinterpret_cast< FESimple::GameBase * >(argp1);
+  res2 = SWIG_ConvertPtr(obj1, &argp2,SWIGTYPE_p_FESimple__LevelBase, 0 |  0 );
+  if (!SWIG_IsOK(res2)) {
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "GameBase_set_level" "', argument " "2"" of type '" "FESimple::LevelBase *""'"); 
+  }
+  arg2 = reinterpret_cast< FESimple::LevelBase * >(argp2);
+  (arg1)->set_level(arg2);
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
 SWIGINTERN PyObject *_wrap_GameBase_is_editor(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   FESimple::GameBase *arg1 = (FESimple::GameBase *) 0 ;
@@ -16959,6 +17095,49 @@ SWIGINTERN PyObject *LevelData_swigregister(PyObject *SWIGUNUSEDPARM(self), PyOb
   return SWIG_Py_Void();
 }
 
+SWIGINTERN PyObject *_wrap_new_LevelBase(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  PyObject *arg1 = (PyObject *) 0 ;
+  PyObject * obj0 = 0 ;
+  FESimple::LevelBase *result = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:new_LevelBase",&obj0)) SWIG_fail;
+  arg1 = obj0;
+  if ( arg1 != Py_None ) {
+    /* subclassed */
+    result = (FESimple::LevelBase *)new SwigDirector_LevelBase(arg1); 
+  } else {
+    result = (FESimple::LevelBase *)new FESimple::LevelBase(); 
+  }
+  
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_FESimple__LevelBase, SWIG_POINTER_NEW |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_delete_LevelBase(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  FESimple::LevelBase *arg1 = (FESimple::LevelBase *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:delete_LevelBase",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_FESimple__LevelBase, SWIG_POINTER_DISOWN |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "delete_LevelBase" "', argument " "1"" of type '" "FESimple::LevelBase *""'"); 
+  }
+  arg1 = reinterpret_cast< FESimple::LevelBase * >(argp1);
+  delete arg1;
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
 SWIGINTERN PyObject *_wrap_LevelBase_attach(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   FESimple::LevelBase *arg1 = (FESimple::LevelBase *) 0 ;
@@ -16969,6 +17148,8 @@ SWIGINTERN PyObject *_wrap_LevelBase_attach(PyObject *SWIGUNUSEDPARM(self), PyOb
   int res2 = 0 ;
   PyObject * obj0 = 0 ;
   PyObject * obj1 = 0 ;
+  Swig::Director *director = 0;
+  bool upcall = false;
   bool result;
   
   if (!PyArg_ParseTuple(args,(char *)"OO:LevelBase_attach",&obj0,&obj1)) SWIG_fail;
@@ -16982,7 +17163,17 @@ SWIGINTERN PyObject *_wrap_LevelBase_attach(PyObject *SWIGUNUSEDPARM(self), PyOb
     SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "LevelBase_attach" "', argument " "2"" of type '" "FESimple::LevelData const *""'"); 
   }
   arg2 = reinterpret_cast< FESimple::LevelData * >(argp2);
-  result = (bool)(arg1)->attach((FESimple::LevelData const *)arg2);
+  director = SWIG_DIRECTOR_CAST(arg1);
+  upcall = (director && (director->swig_get_self()==obj0));
+  try {
+    if (upcall) {
+      result = (bool)(arg1)->FESimple::LevelBase::attach((FESimple::LevelData const *)arg2);
+    } else {
+      result = (bool)(arg1)->attach((FESimple::LevelData const *)arg2);
+    }
+  } catch (Swig::DirectorException&) {
+    SWIG_fail;
+  }
   resultobj = SWIG_From_bool(static_cast< bool >(result));
   return resultobj;
 fail:
@@ -16996,6 +17187,8 @@ SWIGINTERN PyObject *_wrap_LevelBase_reset(PyObject *SWIGUNUSEDPARM(self), PyObj
   void *argp1 = 0 ;
   int res1 = 0 ;
   PyObject * obj0 = 0 ;
+  Swig::Director *director = 0;
+  bool upcall = false;
   
   if (!PyArg_ParseTuple(args,(char *)"O:LevelBase_reset",&obj0)) SWIG_fail;
   res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_FESimple__LevelBase, 0 |  0 );
@@ -17003,7 +17196,17 @@ SWIGINTERN PyObject *_wrap_LevelBase_reset(PyObject *SWIGUNUSEDPARM(self), PyObj
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "LevelBase_reset" "', argument " "1"" of type '" "FESimple::LevelBase *""'"); 
   }
   arg1 = reinterpret_cast< FESimple::LevelBase * >(argp1);
-  (arg1)->reset();
+  director = SWIG_DIRECTOR_CAST(arg1);
+  upcall = (director && (director->swig_get_self()==obj0));
+  try {
+    if (upcall) {
+      (arg1)->FESimple::LevelBase::reset();
+    } else {
+      (arg1)->reset();
+    }
+  } catch (Swig::DirectorException&) {
+    SWIG_fail;
+  }
   resultobj = SWIG_Py_Void();
   return resultobj;
 fail:
@@ -17021,6 +17224,8 @@ SWIGINTERN PyObject *_wrap_LevelBase_triggering_trigger(PyObject *SWIGUNUSEDPARM
   int res2 = 0 ;
   PyObject * obj0 = 0 ;
   PyObject * obj1 = 0 ;
+  Swig::Director *director = 0;
+  bool upcall = false;
   
   if (!PyArg_ParseTuple(args,(char *)"OO:LevelBase_triggering_trigger",&obj0,&obj1)) SWIG_fail;
   res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_FESimple__LevelBase, 0 |  0 );
@@ -17036,7 +17241,17 @@ SWIGINTERN PyObject *_wrap_LevelBase_triggering_trigger(PyObject *SWIGUNUSEDPARM
     SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "LevelBase_triggering_trigger" "', argument " "2"" of type '" "FESimple::LevelTrigger &""'"); 
   }
   arg2 = reinterpret_cast< FESimple::LevelTrigger * >(argp2);
-  (arg1)->triggering_trigger(*arg2);
+  director = SWIG_DIRECTOR_CAST(arg1);
+  upcall = (director && (director->swig_get_self()==obj0));
+  try {
+    if (upcall) {
+      (arg1)->FESimple::LevelBase::triggering_trigger(*arg2);
+    } else {
+      (arg1)->triggering_trigger(*arg2);
+    }
+  } catch (Swig::DirectorException&) {
+    SWIG_fail;
+  }
   resultobj = SWIG_Py_Void();
   return resultobj;
 fail:
@@ -17096,33 +17311,46 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_new_LevelBase(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_LevelBase_get_current_trigger(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
-  FESimple::LevelBase *result = 0 ;
+  FESimple::LevelBase *arg1 = (FESimple::LevelBase *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  FESimple::LevelTrigger *result = 0 ;
   
-  if (!PyArg_ParseTuple(args,(char *)":new_LevelBase")) SWIG_fail;
-  result = (FESimple::LevelBase *)new FESimple::LevelBase();
-  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_FESimple__LevelBase, SWIG_POINTER_NEW |  0 );
+  if (!PyArg_ParseTuple(args,(char *)"O:LevelBase_get_current_trigger",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_FESimple__LevelBase, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "LevelBase_get_current_trigger" "', argument " "1"" of type '" "FESimple::LevelBase *""'"); 
+  }
+  arg1 = reinterpret_cast< FESimple::LevelBase * >(argp1);
+  result = (FESimple::LevelTrigger *) &(arg1)->get_current_trigger();
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_FESimple__LevelTrigger, 0 |  0 );
   return resultobj;
 fail:
   return NULL;
 }
 
 
-SWIGINTERN PyObject *_wrap_delete_LevelBase(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_disown_LevelBase(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   FESimple::LevelBase *arg1 = (FESimple::LevelBase *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   PyObject * obj0 = 0 ;
   
-  if (!PyArg_ParseTuple(args,(char *)"O:delete_LevelBase",&obj0)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_FESimple__LevelBase, SWIG_POINTER_DISOWN |  0 );
+  if (!PyArg_ParseTuple(args,(char *)"O:disown_LevelBase",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_FESimple__LevelBase, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "delete_LevelBase" "', argument " "1"" of type '" "FESimple::LevelBase *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "disown_LevelBase" "', argument " "1"" of type '" "FESimple::LevelBase *""'"); 
   }
   arg1 = reinterpret_cast< FESimple::LevelBase * >(argp1);
-  delete arg1;
+  {
+    Swig::Director *director = SWIG_DIRECTOR_CAST(arg1);
+    if (director) director->swig_disown();
+  }
+  
   resultobj = SWIG_Py_Void();
   return resultobj;
 fail:
@@ -18791,6 +19019,65 @@ SWIGINTERN PyObject *GameObjFactory_swigregister(PyObject *SWIGUNUSEDPARM(self),
   return SWIG_Py_Void();
 }
 
+SWIGINTERN PyObject *_wrap_ControllerBase_get_name(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  FESimple::ControllerBase *arg1 = (FESimple::ControllerBase *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  FESimple::Name result;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:ControllerBase_get_name",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_FESimple__ControllerBase, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "ControllerBase_get_name" "', argument " "1"" of type '" "FESimple::ControllerBase *""'"); 
+  }
+  arg1 = reinterpret_cast< FESimple::ControllerBase * >(argp1);
+  result = (arg1)->get_name();
+  resultobj = SWIG_From_std_string(static_cast< std::string >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_ControllerBase_set_name(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  FESimple::ControllerBase *arg1 = (FESimple::ControllerBase *) 0 ;
+  FESimple::Name *arg2 = 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  int res2 = SWIG_OLDOBJ ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"OO:ControllerBase_set_name",&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_FESimple__ControllerBase, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "ControllerBase_set_name" "', argument " "1"" of type '" "FESimple::ControllerBase *""'"); 
+  }
+  arg1 = reinterpret_cast< FESimple::ControllerBase * >(argp1);
+  {
+    std::string *ptr = (std::string *)0;
+    res2 = SWIG_AsPtr_std_string(obj1, &ptr);
+    if (!SWIG_IsOK(res2)) {
+      SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "ControllerBase_set_name" "', argument " "2"" of type '" "FESimple::Name const &""'"); 
+    }
+    if (!ptr) {
+      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "ControllerBase_set_name" "', argument " "2"" of type '" "FESimple::Name const &""'"); 
+    }
+    arg2 = ptr;
+  }
+  (arg1)->set_name((FESimple::Name const &)*arg2);
+  resultobj = SWIG_Py_Void();
+  if (SWIG_IsNewObj(res2)) delete arg2;
+  return resultobj;
+fail:
+  if (SWIG_IsNewObj(res2)) delete arg2;
+  return NULL;
+}
+
+
 SWIGINTERN PyObject *_wrap_ControllerBase_plug(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   FESimple::ControllerBase *arg1 = (FESimple::ControllerBase *) 0 ;
@@ -18861,41 +19148,41 @@ SWIGINTERN PyObject *ControllerBase_swigregister(PyObject *SWIGUNUSEDPARM(self),
   return SWIG_Py_Void();
 }
 
-SWIGINTERN PyObject *_wrap_new_IOSTouchController(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_new_TouchController(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   PyObject *arg1 = (PyObject *) 0 ;
   PyObject * obj0 = 0 ;
-  FESimple::IOSTouchController *result = 0 ;
+  FESimple::TouchController *result = 0 ;
   
-  if (!PyArg_ParseTuple(args,(char *)"O:new_IOSTouchController",&obj0)) SWIG_fail;
+  if (!PyArg_ParseTuple(args,(char *)"O:new_TouchController",&obj0)) SWIG_fail;
   arg1 = obj0;
   if ( arg1 != Py_None ) {
     /* subclassed */
-    result = (FESimple::IOSTouchController *)new SwigDirector_IOSTouchController(arg1); 
+    result = (FESimple::TouchController *)new SwigDirector_TouchController(arg1); 
   } else {
-    result = (FESimple::IOSTouchController *)new FESimple::IOSTouchController(); 
+    result = (FESimple::TouchController *)new FESimple::TouchController(); 
   }
   
-  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_FESimple__IOSTouchController, SWIG_POINTER_NEW |  0 );
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_FESimple__TouchController, SWIG_POINTER_NEW |  0 );
   return resultobj;
 fail:
   return NULL;
 }
 
 
-SWIGINTERN PyObject *_wrap_delete_IOSTouchController(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_delete_TouchController(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
-  FESimple::IOSTouchController *arg1 = (FESimple::IOSTouchController *) 0 ;
+  FESimple::TouchController *arg1 = (FESimple::TouchController *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   PyObject * obj0 = 0 ;
   
-  if (!PyArg_ParseTuple(args,(char *)"O:delete_IOSTouchController",&obj0)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_FESimple__IOSTouchController, SWIG_POINTER_DISOWN |  0 );
+  if (!PyArg_ParseTuple(args,(char *)"O:delete_TouchController",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_FESimple__TouchController, SWIG_POINTER_DISOWN |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "delete_IOSTouchController" "', argument " "1"" of type '" "FESimple::IOSTouchController *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "delete_TouchController" "', argument " "1"" of type '" "FESimple::TouchController *""'"); 
   }
-  arg1 = reinterpret_cast< FESimple::IOSTouchController * >(argp1);
+  arg1 = reinterpret_cast< FESimple::TouchController * >(argp1);
   delete arg1;
   resultobj = SWIG_Py_Void();
   return resultobj;
@@ -18904,9 +19191,9 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_IOSTouchController_ccTouchBegan(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_TouchController_ccTouchBegan(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
-  FESimple::IOSTouchController *arg1 = (FESimple::IOSTouchController *) 0 ;
+  FESimple::TouchController *arg1 = (FESimple::TouchController *) 0 ;
   cocos2d::CCTouch *arg2 = (cocos2d::CCTouch *) 0 ;
   cocos2d::CCEvent *arg3 = (cocos2d::CCEvent *) 0 ;
   void *argp1 = 0 ;
@@ -18922,27 +19209,27 @@ SWIGINTERN PyObject *_wrap_IOSTouchController_ccTouchBegan(PyObject *SWIGUNUSEDP
   bool upcall = false;
   bool result;
   
-  if (!PyArg_ParseTuple(args,(char *)"OOO:IOSTouchController_ccTouchBegan",&obj0,&obj1,&obj2)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_FESimple__IOSTouchController, 0 |  0 );
+  if (!PyArg_ParseTuple(args,(char *)"OOO:TouchController_ccTouchBegan",&obj0,&obj1,&obj2)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_FESimple__TouchController, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "IOSTouchController_ccTouchBegan" "', argument " "1"" of type '" "FESimple::IOSTouchController *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "TouchController_ccTouchBegan" "', argument " "1"" of type '" "FESimple::TouchController *""'"); 
   }
-  arg1 = reinterpret_cast< FESimple::IOSTouchController * >(argp1);
+  arg1 = reinterpret_cast< FESimple::TouchController * >(argp1);
   res2 = SWIG_ConvertPtr(obj1, &argp2,SWIGTYPE_p_cocos2d__CCTouch, 0 |  0 );
   if (!SWIG_IsOK(res2)) {
-    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "IOSTouchController_ccTouchBegan" "', argument " "2"" of type '" "cocos2d::CCTouch *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "TouchController_ccTouchBegan" "', argument " "2"" of type '" "cocos2d::CCTouch *""'"); 
   }
   arg2 = reinterpret_cast< cocos2d::CCTouch * >(argp2);
   res3 = SWIG_ConvertPtr(obj2, &argp3,SWIGTYPE_p_cocos2d__CCEvent, 0 |  0 );
   if (!SWIG_IsOK(res3)) {
-    SWIG_exception_fail(SWIG_ArgError(res3), "in method '" "IOSTouchController_ccTouchBegan" "', argument " "3"" of type '" "cocos2d::CCEvent *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res3), "in method '" "TouchController_ccTouchBegan" "', argument " "3"" of type '" "cocos2d::CCEvent *""'"); 
   }
   arg3 = reinterpret_cast< cocos2d::CCEvent * >(argp3);
   director = SWIG_DIRECTOR_CAST(arg1);
   upcall = (director && (director->swig_get_self()==obj0));
   try {
     if (upcall) {
-      result = (bool)(arg1)->FESimple::IOSTouchController::ccTouchBegan(arg2,arg3);
+      result = (bool)(arg1)->FESimple::TouchController::ccTouchBegan(arg2,arg3);
     } else {
       result = (bool)(arg1)->ccTouchBegan(arg2,arg3);
     }
@@ -18956,9 +19243,9 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_IOSTouchController_ccTouchMoved(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_TouchController_ccTouchMoved(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
-  FESimple::IOSTouchController *arg1 = (FESimple::IOSTouchController *) 0 ;
+  FESimple::TouchController *arg1 = (FESimple::TouchController *) 0 ;
   cocos2d::CCTouch *arg2 = (cocos2d::CCTouch *) 0 ;
   cocos2d::CCEvent *arg3 = (cocos2d::CCEvent *) 0 ;
   void *argp1 = 0 ;
@@ -18973,27 +19260,27 @@ SWIGINTERN PyObject *_wrap_IOSTouchController_ccTouchMoved(PyObject *SWIGUNUSEDP
   Swig::Director *director = 0;
   bool upcall = false;
   
-  if (!PyArg_ParseTuple(args,(char *)"OOO:IOSTouchController_ccTouchMoved",&obj0,&obj1,&obj2)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_FESimple__IOSTouchController, 0 |  0 );
+  if (!PyArg_ParseTuple(args,(char *)"OOO:TouchController_ccTouchMoved",&obj0,&obj1,&obj2)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_FESimple__TouchController, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "IOSTouchController_ccTouchMoved" "', argument " "1"" of type '" "FESimple::IOSTouchController *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "TouchController_ccTouchMoved" "', argument " "1"" of type '" "FESimple::TouchController *""'"); 
   }
-  arg1 = reinterpret_cast< FESimple::IOSTouchController * >(argp1);
+  arg1 = reinterpret_cast< FESimple::TouchController * >(argp1);
   res2 = SWIG_ConvertPtr(obj1, &argp2,SWIGTYPE_p_cocos2d__CCTouch, 0 |  0 );
   if (!SWIG_IsOK(res2)) {
-    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "IOSTouchController_ccTouchMoved" "', argument " "2"" of type '" "cocos2d::CCTouch *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "TouchController_ccTouchMoved" "', argument " "2"" of type '" "cocos2d::CCTouch *""'"); 
   }
   arg2 = reinterpret_cast< cocos2d::CCTouch * >(argp2);
   res3 = SWIG_ConvertPtr(obj2, &argp3,SWIGTYPE_p_cocos2d__CCEvent, 0 |  0 );
   if (!SWIG_IsOK(res3)) {
-    SWIG_exception_fail(SWIG_ArgError(res3), "in method '" "IOSTouchController_ccTouchMoved" "', argument " "3"" of type '" "cocos2d::CCEvent *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res3), "in method '" "TouchController_ccTouchMoved" "', argument " "3"" of type '" "cocos2d::CCEvent *""'"); 
   }
   arg3 = reinterpret_cast< cocos2d::CCEvent * >(argp3);
   director = SWIG_DIRECTOR_CAST(arg1);
   upcall = (director && (director->swig_get_self()==obj0));
   try {
     if (upcall) {
-      (arg1)->FESimple::IOSTouchController::ccTouchMoved(arg2,arg3);
+      (arg1)->FESimple::TouchController::ccTouchMoved(arg2,arg3);
     } else {
       (arg1)->ccTouchMoved(arg2,arg3);
     }
@@ -19007,9 +19294,9 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_IOSTouchController_ccTouchEnded(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_TouchController_ccTouchEnded(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
-  FESimple::IOSTouchController *arg1 = (FESimple::IOSTouchController *) 0 ;
+  FESimple::TouchController *arg1 = (FESimple::TouchController *) 0 ;
   cocos2d::CCTouch *arg2 = (cocos2d::CCTouch *) 0 ;
   cocos2d::CCEvent *arg3 = (cocos2d::CCEvent *) 0 ;
   void *argp1 = 0 ;
@@ -19024,27 +19311,27 @@ SWIGINTERN PyObject *_wrap_IOSTouchController_ccTouchEnded(PyObject *SWIGUNUSEDP
   Swig::Director *director = 0;
   bool upcall = false;
   
-  if (!PyArg_ParseTuple(args,(char *)"OOO:IOSTouchController_ccTouchEnded",&obj0,&obj1,&obj2)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_FESimple__IOSTouchController, 0 |  0 );
+  if (!PyArg_ParseTuple(args,(char *)"OOO:TouchController_ccTouchEnded",&obj0,&obj1,&obj2)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_FESimple__TouchController, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "IOSTouchController_ccTouchEnded" "', argument " "1"" of type '" "FESimple::IOSTouchController *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "TouchController_ccTouchEnded" "', argument " "1"" of type '" "FESimple::TouchController *""'"); 
   }
-  arg1 = reinterpret_cast< FESimple::IOSTouchController * >(argp1);
+  arg1 = reinterpret_cast< FESimple::TouchController * >(argp1);
   res2 = SWIG_ConvertPtr(obj1, &argp2,SWIGTYPE_p_cocos2d__CCTouch, 0 |  0 );
   if (!SWIG_IsOK(res2)) {
-    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "IOSTouchController_ccTouchEnded" "', argument " "2"" of type '" "cocos2d::CCTouch *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "TouchController_ccTouchEnded" "', argument " "2"" of type '" "cocos2d::CCTouch *""'"); 
   }
   arg2 = reinterpret_cast< cocos2d::CCTouch * >(argp2);
   res3 = SWIG_ConvertPtr(obj2, &argp3,SWIGTYPE_p_cocos2d__CCEvent, 0 |  0 );
   if (!SWIG_IsOK(res3)) {
-    SWIG_exception_fail(SWIG_ArgError(res3), "in method '" "IOSTouchController_ccTouchEnded" "', argument " "3"" of type '" "cocos2d::CCEvent *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res3), "in method '" "TouchController_ccTouchEnded" "', argument " "3"" of type '" "cocos2d::CCEvent *""'"); 
   }
   arg3 = reinterpret_cast< cocos2d::CCEvent * >(argp3);
   director = SWIG_DIRECTOR_CAST(arg1);
   upcall = (director && (director->swig_get_self()==obj0));
   try {
     if (upcall) {
-      (arg1)->FESimple::IOSTouchController::ccTouchEnded(arg2,arg3);
+      (arg1)->FESimple::TouchController::ccTouchEnded(arg2,arg3);
     } else {
       (arg1)->ccTouchEnded(arg2,arg3);
     }
@@ -19058,9 +19345,9 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_IOSTouchController_ccTouchCancelled(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_TouchController_ccTouchCancelled(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
-  FESimple::IOSTouchController *arg1 = (FESimple::IOSTouchController *) 0 ;
+  FESimple::TouchController *arg1 = (FESimple::TouchController *) 0 ;
   cocos2d::CCTouch *arg2 = (cocos2d::CCTouch *) 0 ;
   cocos2d::CCEvent *arg3 = (cocos2d::CCEvent *) 0 ;
   void *argp1 = 0 ;
@@ -19075,27 +19362,27 @@ SWIGINTERN PyObject *_wrap_IOSTouchController_ccTouchCancelled(PyObject *SWIGUNU
   Swig::Director *director = 0;
   bool upcall = false;
   
-  if (!PyArg_ParseTuple(args,(char *)"OOO:IOSTouchController_ccTouchCancelled",&obj0,&obj1,&obj2)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_FESimple__IOSTouchController, 0 |  0 );
+  if (!PyArg_ParseTuple(args,(char *)"OOO:TouchController_ccTouchCancelled",&obj0,&obj1,&obj2)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_FESimple__TouchController, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "IOSTouchController_ccTouchCancelled" "', argument " "1"" of type '" "FESimple::IOSTouchController *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "TouchController_ccTouchCancelled" "', argument " "1"" of type '" "FESimple::TouchController *""'"); 
   }
-  arg1 = reinterpret_cast< FESimple::IOSTouchController * >(argp1);
+  arg1 = reinterpret_cast< FESimple::TouchController * >(argp1);
   res2 = SWIG_ConvertPtr(obj1, &argp2,SWIGTYPE_p_cocos2d__CCTouch, 0 |  0 );
   if (!SWIG_IsOK(res2)) {
-    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "IOSTouchController_ccTouchCancelled" "', argument " "2"" of type '" "cocos2d::CCTouch *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "TouchController_ccTouchCancelled" "', argument " "2"" of type '" "cocos2d::CCTouch *""'"); 
   }
   arg2 = reinterpret_cast< cocos2d::CCTouch * >(argp2);
   res3 = SWIG_ConvertPtr(obj2, &argp3,SWIGTYPE_p_cocos2d__CCEvent, 0 |  0 );
   if (!SWIG_IsOK(res3)) {
-    SWIG_exception_fail(SWIG_ArgError(res3), "in method '" "IOSTouchController_ccTouchCancelled" "', argument " "3"" of type '" "cocos2d::CCEvent *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res3), "in method '" "TouchController_ccTouchCancelled" "', argument " "3"" of type '" "cocos2d::CCEvent *""'"); 
   }
   arg3 = reinterpret_cast< cocos2d::CCEvent * >(argp3);
   director = SWIG_DIRECTOR_CAST(arg1);
   upcall = (director && (director->swig_get_self()==obj0));
   try {
     if (upcall) {
-      (arg1)->FESimple::IOSTouchController::ccTouchCancelled(arg2,arg3);
+      (arg1)->FESimple::TouchController::ccTouchCancelled(arg2,arg3);
     } else {
       (arg1)->ccTouchCancelled(arg2,arg3);
     }
@@ -19109,26 +19396,26 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_IOSTouchController_plug(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_TouchController_plug(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
-  FESimple::IOSTouchController *arg1 = (FESimple::IOSTouchController *) 0 ;
+  FESimple::TouchController *arg1 = (FESimple::TouchController *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   PyObject * obj0 = 0 ;
   Swig::Director *director = 0;
   bool upcall = false;
   
-  if (!PyArg_ParseTuple(args,(char *)"O:IOSTouchController_plug",&obj0)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_FESimple__IOSTouchController, 0 |  0 );
+  if (!PyArg_ParseTuple(args,(char *)"O:TouchController_plug",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_FESimple__TouchController, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "IOSTouchController_plug" "', argument " "1"" of type '" "FESimple::IOSTouchController *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "TouchController_plug" "', argument " "1"" of type '" "FESimple::TouchController *""'"); 
   }
-  arg1 = reinterpret_cast< FESimple::IOSTouchController * >(argp1);
+  arg1 = reinterpret_cast< FESimple::TouchController * >(argp1);
   director = SWIG_DIRECTOR_CAST(arg1);
   upcall = (director && (director->swig_get_self()==obj0));
   try {
     if (upcall) {
-      (arg1)->FESimple::IOSTouchController::plug();
+      (arg1)->FESimple::TouchController::plug();
     } else {
       (arg1)->plug();
     }
@@ -19142,26 +19429,26 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_IOSTouchController_unplug(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_TouchController_unplug(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
-  FESimple::IOSTouchController *arg1 = (FESimple::IOSTouchController *) 0 ;
+  FESimple::TouchController *arg1 = (FESimple::TouchController *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   PyObject * obj0 = 0 ;
   Swig::Director *director = 0;
   bool upcall = false;
   
-  if (!PyArg_ParseTuple(args,(char *)"O:IOSTouchController_unplug",&obj0)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_FESimple__IOSTouchController, 0 |  0 );
+  if (!PyArg_ParseTuple(args,(char *)"O:TouchController_unplug",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_FESimple__TouchController, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "IOSTouchController_unplug" "', argument " "1"" of type '" "FESimple::IOSTouchController *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "TouchController_unplug" "', argument " "1"" of type '" "FESimple::TouchController *""'"); 
   }
-  arg1 = reinterpret_cast< FESimple::IOSTouchController * >(argp1);
+  arg1 = reinterpret_cast< FESimple::TouchController * >(argp1);
   director = SWIG_DIRECTOR_CAST(arg1);
   upcall = (director && (director->swig_get_self()==obj0));
   try {
     if (upcall) {
-      (arg1)->FESimple::IOSTouchController::unplug();
+      (arg1)->FESimple::TouchController::unplug();
     } else {
       (arg1)->unplug();
     }
@@ -19175,19 +19462,19 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_disown_IOSTouchController(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_disown_TouchController(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
-  FESimple::IOSTouchController *arg1 = (FESimple::IOSTouchController *) 0 ;
+  FESimple::TouchController *arg1 = (FESimple::TouchController *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   PyObject * obj0 = 0 ;
   
-  if (!PyArg_ParseTuple(args,(char *)"O:disown_IOSTouchController",&obj0)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_FESimple__IOSTouchController, 0 |  0 );
+  if (!PyArg_ParseTuple(args,(char *)"O:disown_TouchController",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_FESimple__TouchController, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "disown_IOSTouchController" "', argument " "1"" of type '" "FESimple::IOSTouchController *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "disown_TouchController" "', argument " "1"" of type '" "FESimple::TouchController *""'"); 
   }
-  arg1 = reinterpret_cast< FESimple::IOSTouchController * >(argp1);
+  arg1 = reinterpret_cast< FESimple::TouchController * >(argp1);
   {
     Swig::Director *director = SWIG_DIRECTOR_CAST(arg1);
     if (director) director->swig_disown();
@@ -19200,10 +19487,10 @@ fail:
 }
 
 
-SWIGINTERN PyObject *IOSTouchController_swigregister(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *TouchController_swigregister(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *obj;
   if (!PyArg_ParseTuple(args,(char*)"O:swigregister", &obj)) return NULL;
-  SWIG_TypeNewClientData(SWIGTYPE_p_FESimple__IOSTouchController, SWIG_NewClientData(obj));
+  SWIG_TypeNewClientData(SWIGTYPE_p_FESimple__TouchController, SWIG_NewClientData(obj));
   return SWIG_Py_Void();
 }
 
@@ -22445,6 +22732,7 @@ static PyMethodDef SwigMethods[] = {
 	 { (char *)"GameBase_get_scene", _wrap_GameBase_get_scene, METH_VARARGS, NULL},
 	 { (char *)"GameBase_get_phy_world", _wrap_GameBase_get_phy_world, METH_VARARGS, NULL},
 	 { (char *)"GameBase_get_level", _wrap_GameBase_get_level, METH_VARARGS, NULL},
+	 { (char *)"GameBase_set_level", _wrap_GameBase_set_level, METH_VARARGS, NULL},
 	 { (char *)"GameBase_is_editor", _wrap_GameBase_is_editor, METH_VARARGS, NULL},
 	 { (char *)"GameBase_get_obj", _wrap_GameBase_get_obj, METH_VARARGS, NULL},
 	 { (char *)"GameBase_get_objects", _wrap_GameBase_get_objects, METH_VARARGS, NULL},
@@ -22471,13 +22759,15 @@ static PyMethodDef SwigMethods[] = {
 	 { (char *)"LevelData_triggers_get", _wrap_LevelData_triggers_get, METH_VARARGS, NULL},
 	 { (char *)"delete_LevelData", _wrap_delete_LevelData, METH_VARARGS, NULL},
 	 { (char *)"LevelData_swigregister", LevelData_swigregister, METH_VARARGS, NULL},
+	 { (char *)"new_LevelBase", _wrap_new_LevelBase, METH_VARARGS, NULL},
+	 { (char *)"delete_LevelBase", _wrap_delete_LevelBase, METH_VARARGS, NULL},
 	 { (char *)"LevelBase_attach", _wrap_LevelBase_attach, METH_VARARGS, NULL},
 	 { (char *)"LevelBase_reset", _wrap_LevelBase_reset, METH_VARARGS, NULL},
 	 { (char *)"LevelBase_triggering_trigger", _wrap_LevelBase_triggering_trigger, METH_VARARGS, NULL},
 	 { (char *)"LevelBase_update", _wrap_LevelBase_update, METH_VARARGS, NULL},
 	 { (char *)"LevelBase_get_bound", _wrap_LevelBase_get_bound, METH_VARARGS, NULL},
-	 { (char *)"new_LevelBase", _wrap_new_LevelBase, METH_VARARGS, NULL},
-	 { (char *)"delete_LevelBase", _wrap_delete_LevelBase, METH_VARARGS, NULL},
+	 { (char *)"LevelBase_get_current_trigger", _wrap_LevelBase_get_current_trigger, METH_VARARGS, NULL},
+	 { (char *)"disown_LevelBase", _wrap_disown_LevelBase, METH_VARARGS, NULL},
 	 { (char *)"LevelBase_swigregister", LevelBase_swigregister, METH_VARARGS, NULL},
 	 { (char *)"current_time", _wrap_current_time, METH_VARARGS, NULL},
 	 { (char *)"set_current_time", _wrap_set_current_time, METH_VARARGS, NULL},
@@ -22527,20 +22817,22 @@ static PyMethodDef SwigMethods[] = {
 	 { (char *)"new_GameObjFactory", _wrap_new_GameObjFactory, METH_VARARGS, NULL},
 	 { (char *)"delete_GameObjFactory", _wrap_delete_GameObjFactory, METH_VARARGS, NULL},
 	 { (char *)"GameObjFactory_swigregister", GameObjFactory_swigregister, METH_VARARGS, NULL},
+	 { (char *)"ControllerBase_get_name", _wrap_ControllerBase_get_name, METH_VARARGS, NULL},
+	 { (char *)"ControllerBase_set_name", _wrap_ControllerBase_set_name, METH_VARARGS, NULL},
 	 { (char *)"ControllerBase_plug", _wrap_ControllerBase_plug, METH_VARARGS, NULL},
 	 { (char *)"ControllerBase_unplug", _wrap_ControllerBase_unplug, METH_VARARGS, NULL},
 	 { (char *)"delete_ControllerBase", _wrap_delete_ControllerBase, METH_VARARGS, NULL},
 	 { (char *)"ControllerBase_swigregister", ControllerBase_swigregister, METH_VARARGS, NULL},
-	 { (char *)"new_IOSTouchController", _wrap_new_IOSTouchController, METH_VARARGS, NULL},
-	 { (char *)"delete_IOSTouchController", _wrap_delete_IOSTouchController, METH_VARARGS, NULL},
-	 { (char *)"IOSTouchController_ccTouchBegan", _wrap_IOSTouchController_ccTouchBegan, METH_VARARGS, NULL},
-	 { (char *)"IOSTouchController_ccTouchMoved", _wrap_IOSTouchController_ccTouchMoved, METH_VARARGS, NULL},
-	 { (char *)"IOSTouchController_ccTouchEnded", _wrap_IOSTouchController_ccTouchEnded, METH_VARARGS, NULL},
-	 { (char *)"IOSTouchController_ccTouchCancelled", _wrap_IOSTouchController_ccTouchCancelled, METH_VARARGS, NULL},
-	 { (char *)"IOSTouchController_plug", _wrap_IOSTouchController_plug, METH_VARARGS, NULL},
-	 { (char *)"IOSTouchController_unplug", _wrap_IOSTouchController_unplug, METH_VARARGS, NULL},
-	 { (char *)"disown_IOSTouchController", _wrap_disown_IOSTouchController, METH_VARARGS, NULL},
-	 { (char *)"IOSTouchController_swigregister", IOSTouchController_swigregister, METH_VARARGS, NULL},
+	 { (char *)"new_TouchController", _wrap_new_TouchController, METH_VARARGS, NULL},
+	 { (char *)"delete_TouchController", _wrap_delete_TouchController, METH_VARARGS, NULL},
+	 { (char *)"TouchController_ccTouchBegan", _wrap_TouchController_ccTouchBegan, METH_VARARGS, NULL},
+	 { (char *)"TouchController_ccTouchMoved", _wrap_TouchController_ccTouchMoved, METH_VARARGS, NULL},
+	 { (char *)"TouchController_ccTouchEnded", _wrap_TouchController_ccTouchEnded, METH_VARARGS, NULL},
+	 { (char *)"TouchController_ccTouchCancelled", _wrap_TouchController_ccTouchCancelled, METH_VARARGS, NULL},
+	 { (char *)"TouchController_plug", _wrap_TouchController_plug, METH_VARARGS, NULL},
+	 { (char *)"TouchController_unplug", _wrap_TouchController_unplug, METH_VARARGS, NULL},
+	 { (char *)"disown_TouchController", _wrap_disown_TouchController, METH_VARARGS, NULL},
+	 { (char *)"TouchController_swigregister", TouchController_swigregister, METH_VARARGS, NULL},
 	 { (char *)"new_animation", _wrap_new_animation, METH_VARARGS, NULL},
 	 { (char *)"delete_animation", _wrap_delete_animation, METH_VARARGS, NULL},
 	 { (char *)"animation_name_set", _wrap_animation_name_set, METH_VARARGS, NULL},
@@ -22663,8 +22955,8 @@ static PyMethodDef SwigMethods[] = {
 static void *_p_FESimple__SpriteBaseTo_p_FESimple__GameObjBase(void *x, int *SWIGUNUSEDPARM(newmemory)) {
     return (void *)((FESimple::GameObjBase *)  ((FESimple::SpriteBase *) x));
 }
-static void *_p_FESimple__IOSTouchControllerTo_p_FESimple__ControllerBase(void *x, int *SWIGUNUSEDPARM(newmemory)) {
-    return (void *)((FESimple::ControllerBase *)  ((FESimple::IOSTouchController *) x));
+static void *_p_FESimple__TouchControllerTo_p_FESimple__ControllerBase(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((FESimple::ControllerBase *)  ((FESimple::TouchController *) x));
 }
 static swig_type_info _swigt__p_FESimple__ClassInfo = {"_p_FESimple__ClassInfo", "FESimple::ClassInfo *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_FESimple__ControllerBase = {"_p_FESimple__ControllerBase", "FESimple::ControllerBase *|std::vector< FESimple::ControllerBase * >::value_type", 0, 0, (void*)0, 0};
@@ -22675,7 +22967,6 @@ static swig_type_info _swigt__p_FESimple__GameInfo = {"_p_FESimple__GameInfo", "
 static swig_type_info _swigt__p_FESimple__GameObjBase = {"_p_FESimple__GameObjBase", "FESimple::GameObjBase *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_FESimple__GameObjFactory = {"_p_FESimple__GameObjFactory", "FESimple::GameObjFactory *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_FESimple__GameScene = {"_p_FESimple__GameScene", "FESimple::GameScene *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_FESimple__IOSTouchController = {"_p_FESimple__IOSTouchController", "FESimple::IOSTouchController *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_FESimple__LevelBase = {"_p_FESimple__LevelBase", "FESimple::LevelBase *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_FESimple__LevelBound = {"_p_FESimple__LevelBound", "FESimple::LevelBound *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_FESimple__LevelData = {"_p_FESimple__LevelData", "FESimple::LevelData *", 0, 0, (void*)0, 0};
@@ -22688,6 +22979,7 @@ static swig_type_info _swigt__p_FESimple__SharedReourceMapT_FESimple__sprite_com
 static swig_type_info _swigt__p_FESimple__SharedReourceMapT_FESimple__sprite_desc_t = {"_p_FESimple__SharedReourceMapT_FESimple__sprite_desc_t", "FESimple::SharedReourceMap< FESimple::sprite_desc > *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_FESimple__SpriteBase = {"_p_FESimple__SpriteBase", "FESimple::SpriteBase *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_FESimple__SpriteComponent = {"_p_FESimple__SpriteComponent", "std::vector< FESimple::SpriteComponent * >::value_type|FESimple::SpriteComponent *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_FESimple__TouchController = {"_p_FESimple__TouchController", "FESimple::TouchController *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_FESimple__animation = {"_p_FESimple__animation", "FESimple::animation *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_FESimple__b2fixture_def = {"_p_FESimple__b2fixture_def", "FESimple::b2fixture_def *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_FESimple__physic_desc = {"_p_FESimple__physic_desc", "FESimple::physic_desc *", 0, 0, (void*)0, 0};
@@ -22763,7 +23055,6 @@ static swig_type_info *swig_type_initial[] = {
   &_swigt__p_FESimple__GameObjBase,
   &_swigt__p_FESimple__GameObjFactory,
   &_swigt__p_FESimple__GameScene,
-  &_swigt__p_FESimple__IOSTouchController,
   &_swigt__p_FESimple__LevelBase,
   &_swigt__p_FESimple__LevelBound,
   &_swigt__p_FESimple__LevelData,
@@ -22776,6 +23067,7 @@ static swig_type_info *swig_type_initial[] = {
   &_swigt__p_FESimple__SharedReourceMapT_FESimple__sprite_desc_t,
   &_swigt__p_FESimple__SpriteBase,
   &_swigt__p_FESimple__SpriteComponent,
+  &_swigt__p_FESimple__TouchController,
   &_swigt__p_FESimple__animation,
   &_swigt__p_FESimple__b2fixture_def,
   &_swigt__p_FESimple__physic_desc,
@@ -22843,7 +23135,7 @@ static swig_type_info *swig_type_initial[] = {
 };
 
 static swig_cast_info _swigc__p_FESimple__ClassInfo[] = {  {&_swigt__p_FESimple__ClassInfo, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_FESimple__ControllerBase[] = {  {&_swigt__p_FESimple__ControllerBase, 0, 0, 0},  {&_swigt__p_FESimple__IOSTouchController, _p_FESimple__IOSTouchControllerTo_p_FESimple__ControllerBase, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_FESimple__ControllerBase[] = {  {&_swigt__p_FESimple__ControllerBase, 0, 0, 0},  {&_swigt__p_FESimple__TouchController, _p_FESimple__TouchControllerTo_p_FESimple__ControllerBase, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_FESimple__EditorProxy[] = {  {&_swigt__p_FESimple__EditorProxy, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_FESimple__FixtureUserData[] = {  {&_swigt__p_FESimple__FixtureUserData, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_FESimple__GameBase[] = {  {&_swigt__p_FESimple__GameBase, 0, 0, 0},{0, 0, 0, 0}};
@@ -22851,7 +23143,6 @@ static swig_cast_info _swigc__p_FESimple__GameInfo[] = {  {&_swigt__p_FESimple__
 static swig_cast_info _swigc__p_FESimple__GameObjBase[] = {  {&_swigt__p_FESimple__GameObjBase, 0, 0, 0},  {&_swigt__p_FESimple__SpriteBase, _p_FESimple__SpriteBaseTo_p_FESimple__GameObjBase, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_FESimple__GameObjFactory[] = {  {&_swigt__p_FESimple__GameObjFactory, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_FESimple__GameScene[] = {  {&_swigt__p_FESimple__GameScene, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_FESimple__IOSTouchController[] = {  {&_swigt__p_FESimple__IOSTouchController, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_FESimple__LevelBase[] = {  {&_swigt__p_FESimple__LevelBase, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_FESimple__LevelBound[] = {  {&_swigt__p_FESimple__LevelBound, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_FESimple__LevelData[] = {  {&_swigt__p_FESimple__LevelData, 0, 0, 0},{0, 0, 0, 0}};
@@ -22864,6 +23155,7 @@ static swig_cast_info _swigc__p_FESimple__SharedReourceMapT_FESimple__sprite_com
 static swig_cast_info _swigc__p_FESimple__SharedReourceMapT_FESimple__sprite_desc_t[] = {  {&_swigt__p_FESimple__SharedReourceMapT_FESimple__sprite_desc_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_FESimple__SpriteBase[] = {  {&_swigt__p_FESimple__SpriteBase, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_FESimple__SpriteComponent[] = {  {&_swigt__p_FESimple__SpriteComponent, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_FESimple__TouchController[] = {  {&_swigt__p_FESimple__TouchController, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_FESimple__animation[] = {  {&_swigt__p_FESimple__animation, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_FESimple__b2fixture_def[] = {  {&_swigt__p_FESimple__b2fixture_def, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_FESimple__physic_desc[] = {  {&_swigt__p_FESimple__physic_desc, 0, 0, 0},{0, 0, 0, 0}};
@@ -22939,7 +23231,6 @@ static swig_cast_info *swig_cast_initial[] = {
   _swigc__p_FESimple__GameObjBase,
   _swigc__p_FESimple__GameObjFactory,
   _swigc__p_FESimple__GameScene,
-  _swigc__p_FESimple__IOSTouchController,
   _swigc__p_FESimple__LevelBase,
   _swigc__p_FESimple__LevelBound,
   _swigc__p_FESimple__LevelData,
@@ -22952,6 +23243,7 @@ static swig_cast_info *swig_cast_initial[] = {
   _swigc__p_FESimple__SharedReourceMapT_FESimple__sprite_desc_t,
   _swigc__p_FESimple__SpriteBase,
   _swigc__p_FESimple__SpriteComponent,
+  _swigc__p_FESimple__TouchController,
   _swigc__p_FESimple__animation,
   _swigc__p_FESimple__b2fixture_def,
   _swigc__p_FESimple__physic_desc,
