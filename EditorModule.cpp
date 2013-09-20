@@ -55,8 +55,9 @@ EditorModule::EditorModule()
     AddController* ac = new AddController();
     ac->set_name("_add_controller_");
     get_game_info()->add_controller( ac );
+    
     EditController* ec = new EditController();
-    ac->set_name("_edit_controller_");
+    ec->set_name("_edit_controller_");
     get_game_info()->add_controller( ec );
     
 }
@@ -68,7 +69,7 @@ void EditorModule::pick_object( const cocos2d::CCPoint& pos )
     std::for_each(get_game()->get_objects().begin(), get_game()->get_objects().end(), [pos,this](std::shared_ptr<GameObjBase> obj)
                   {
                       auto spr = std::dynamic_pointer_cast<SpriteBase>(obj);
-                      if ( spr && spr->get_editor_proxy()->hit_test( pos ) )
+                      if ( spr && spr->get_editor_proxy() && spr->get_editor_proxy()->hit_test( pos ) )
                       {
                           selected_objects.push_back(spr);
                           spr->get_editor_proxy()->set_selected(true);

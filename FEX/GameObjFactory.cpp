@@ -10,7 +10,7 @@
 #include "SpriteBase.h"
 #include "GameScene.h"
 #include "GameLayer.h"
-
+#include "python.h"
 FE_NS_BEGIN
 
 
@@ -41,6 +41,10 @@ GameObjPtr GameObjFactory::construct_obj( const Name& classname, const SpawnPara
         obj->set_class_info(it->second);
         return obj;
     }
+    //try construct object by script
+    auto obj_from_script = get_game()->construct_obj( classname, params );
+    if ( obj_from_script )
+        return obj_from_script;
     logger("GameObjFactory") << "constructor of class:<" << classname <<"> not found." << endl;
     return GameObjPtr(nullptr);
 }

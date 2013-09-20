@@ -6556,6 +6556,49 @@ bool SwigDirector_GameBase::is_editor() {
 }
 
 
+FESimple::GameObjPtr SwigDirector_GameBase::construct_obj(FESimple::Name const &classname, FESimple::SpawnParams const &params) {
+  void *swig_argp ;
+  int swig_res = 0 ;
+  
+  FESimple::GameObjPtr c_result;
+  swig::SwigVar_PyObject obj0;
+  obj0 = SWIG_From_std_string(static_cast< std::string >(classname));
+  swig::SwigVar_PyObject obj1;
+  obj1 = swig::from(static_cast< std::map<std::string,std::string,std::less< std::string >,std::allocator< std::pair< std::string const,std::string > > > >(params));
+  if (!swig_get_self()) {
+    Swig::DirectorException::raise("'self' uninitialized, maybe you forgot to call GameBase.__init__.");
+  }
+#if defined(SWIG_PYTHON_DIRECTOR_VTABLE)
+  const size_t swig_method_index = 2;
+  const char * const swig_method_name = "construct_obj";
+  PyObject* method = swig_get_method(swig_method_index, swig_method_name);
+  swig::SwigVar_PyObject result = PyObject_CallFunction(method, (char *)"(OO)" ,(PyObject *)obj0,(PyObject *)obj1);
+#else
+  swig::SwigVar_PyObject result = PyObject_CallMethod(swig_get_self(), (char *)"construct_obj", (char *)"(OO)" ,(PyObject *)obj0,(PyObject *)obj1);
+#endif
+  if (!result) {
+    PyObject *error = PyErr_Occurred();
+    {
+      if( error != NULL ) {
+        fprintf(stderr,"director exception:");
+        PyObject *ptype, *pvalue, *ptraceback;
+        PyErr_Fetch( &ptype, &pvalue, &ptraceback );
+        PyErr_Restore( ptype, pvalue, ptraceback );
+        PyErr_Print();
+        Py_Exit(1);
+      }
+    }
+  }
+  swig_res = SWIG_ConvertPtr(result,&swig_argp,SWIGTYPE_p_std__shared_ptrT_FESimple__GameObjBase_t,  0  | 0);
+  if (!SWIG_IsOK(swig_res)) {
+    Swig::DirectorTypeMismatchException::raise(SWIG_ErrorType(SWIG_ArgError(swig_res)), "in output value of type '""FESimple::GameObjPtr""'");
+  }
+  c_result = *(reinterpret_cast< FESimple::GameObjPtr * >(swig_argp));
+  if (SWIG_IsNewObj(swig_res)) delete reinterpret_cast< FESimple::GameObjPtr * >(swig_argp);
+  return (FESimple::GameObjPtr) c_result;
+}
+
+
 SwigDirector_LevelBase::SwigDirector_LevelBase(PyObject *self): FESimple::LevelBase(), Swig::Director(self) {
   SWIG_DIRECTOR_RGTR((FESimple::LevelBase *)this, this); 
 }
@@ -16561,6 +16604,72 @@ fail:
 }
 
 
+SWIGINTERN PyObject *_wrap_GameBase_construct_obj(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  FESimple::GameBase *arg1 = (FESimple::GameBase *) 0 ;
+  FESimple::Name *arg2 = 0 ;
+  FESimple::SpawnParams *arg3 = 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  int res2 = SWIG_OLDOBJ ;
+  int res3 = SWIG_OLDOBJ ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  PyObject * obj2 = 0 ;
+  Swig::Director *director = 0;
+  bool upcall = false;
+  FESimple::GameObjPtr result;
+  
+  if (!PyArg_ParseTuple(args,(char *)"OOO:GameBase_construct_obj",&obj0,&obj1,&obj2)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_FESimple__GameBase, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "GameBase_construct_obj" "', argument " "1"" of type '" "FESimple::GameBase *""'"); 
+  }
+  arg1 = reinterpret_cast< FESimple::GameBase * >(argp1);
+  {
+    std::string *ptr = (std::string *)0;
+    res2 = SWIG_AsPtr_std_string(obj1, &ptr);
+    if (!SWIG_IsOK(res2)) {
+      SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "GameBase_construct_obj" "', argument " "2"" of type '" "FESimple::Name const &""'"); 
+    }
+    if (!ptr) {
+      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "GameBase_construct_obj" "', argument " "2"" of type '" "FESimple::Name const &""'"); 
+    }
+    arg2 = ptr;
+  }
+  {
+    std::map<std::string,std::string,std::less< std::string >,std::allocator< std::pair< std::string const,std::string > > > *ptr = (std::map<std::string,std::string,std::less< std::string >,std::allocator< std::pair< std::string const,std::string > > > *)0;
+    res3 = swig::asptr(obj2, &ptr);
+    if (!SWIG_IsOK(res3)) {
+      SWIG_exception_fail(SWIG_ArgError(res3), "in method '" "GameBase_construct_obj" "', argument " "3"" of type '" "FESimple::SpawnParams const &""'"); 
+    }
+    if (!ptr) {
+      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "GameBase_construct_obj" "', argument " "3"" of type '" "FESimple::SpawnParams const &""'"); 
+    }
+    arg3 = ptr;
+  }
+  director = SWIG_DIRECTOR_CAST(arg1);
+  upcall = (director && (director->swig_get_self()==obj0));
+  try {
+    if (upcall) {
+      result = (arg1)->FESimple::GameBase::construct_obj((FESimple::Name const &)*arg2,(FESimple::SpawnParams const &)*arg3);
+    } else {
+      result = (arg1)->construct_obj((FESimple::Name const &)*arg2,(FESimple::SpawnParams const &)*arg3);
+    }
+  } catch (Swig::DirectorException&) {
+    SWIG_fail;
+  }
+  resultobj = SWIG_NewPointerObj((new FESimple::GameObjPtr(static_cast< const FESimple::GameObjPtr& >(result))), SWIGTYPE_p_std__shared_ptrT_FESimple__GameObjBase_t, SWIG_POINTER_OWN |  0 );
+  if (SWIG_IsNewObj(res2)) delete arg2;
+  if (SWIG_IsNewObj(res3)) delete arg3;
+  return resultobj;
+fail:
+  if (SWIG_IsNewObj(res2)) delete arg2;
+  if (SWIG_IsNewObj(res3)) delete arg3;
+  return NULL;
+}
+
+
 SWIGINTERN PyObject *_wrap_disown_GameBase(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   FESimple::GameBase *arg1 = (FESimple::GameBase *) 0 ;
@@ -22736,6 +22845,7 @@ static PyMethodDef SwigMethods[] = {
 	 { (char *)"GameBase_is_editor", _wrap_GameBase_is_editor, METH_VARARGS, NULL},
 	 { (char *)"GameBase_get_obj", _wrap_GameBase_get_obj, METH_VARARGS, NULL},
 	 { (char *)"GameBase_get_objects", _wrap_GameBase_get_objects, METH_VARARGS, NULL},
+	 { (char *)"GameBase_construct_obj", _wrap_GameBase_construct_obj, METH_VARARGS, NULL},
 	 { (char *)"disown_GameBase", _wrap_disown_GameBase, METH_VARARGS, NULL},
 	 { (char *)"GameBase_swigregister", GameBase_swigregister, METH_VARARGS, NULL},
 	 { (char *)"LevelTrigger_progress_set", _wrap_LevelTrigger_progress_set, METH_VARARGS, NULL},

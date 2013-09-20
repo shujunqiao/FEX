@@ -125,6 +125,7 @@ public:
     virtual ~SwigDirector_GameBase();
     virtual void update(float delta_time);
     virtual bool is_editor();
+    virtual FESimple::GameObjPtr construct_obj(FESimple::Name const &classname, FESimple::SpawnParams const &params);
 
 
 /* Internal Director utilities */
@@ -158,7 +159,7 @@ private:
       return method;
     }
 private:
-    mutable swig::SwigVar_PyObject vtable[2];
+    mutable swig::SwigVar_PyObject vtable[3];
 #endif
 
 };

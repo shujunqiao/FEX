@@ -561,6 +561,7 @@ class GameBase(_object):
     def is_editor(self): return _FEX.GameBase_is_editor(self)
     def get_obj(self, *args): return _FEX.GameBase_get_obj(self, *args)
     def get_objects(self): return _FEX.GameBase_get_objects(self)
+    def construct_obj(self, *args): return _FEX.GameBase_construct_obj(self, *args)
     def __disown__(self):
         self.this.disown()
         _FEX.disown_GameBase(self)
