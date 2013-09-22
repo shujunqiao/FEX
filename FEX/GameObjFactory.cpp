@@ -10,7 +10,7 @@
 #include "SpriteBase.h"
 #include "GameScene.h"
 #include "GameLayer.h"
-#include "python.h"
+#include "Python.h"
 FE_NS_BEGIN
 
 

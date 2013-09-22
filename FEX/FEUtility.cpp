@@ -142,7 +142,8 @@ std::vector<float> string_to_floats( const std::string& s )
     std::sregex_token_iterator last;
     while( first != last )
     {
-        result.push_back( atof(first->str().c_str()));
+        logger("") << first->str() << "  :   " << *first << endl;
+        result.push_back( stof(*first) );
         first++;
     }
     return result;
@@ -170,6 +171,11 @@ void set_game(GameBase* g)
 class GameBase* get_game()
 {
     return get_game_info()->game;
+}
+
+float phy_data_scale()
+{
+    return 0.5;
 }
 
 float ptm_ratio()

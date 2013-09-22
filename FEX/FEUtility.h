@@ -36,6 +36,7 @@ b2BodyType string_to_b2BodyType( const std::string& str );
 void set_game( class GameBase* game );
 class GameBase* get_game();
 //class ControllerBase get_controller( int id );
+float phy_data_scale();
 float ptm_ratio();
 b2Vec2 point_to_b2Vec2( const cocos2d::CCPoint& pt );
 cocos2d::CCPoint b2Vec2_to_point( const b2Vec2& vec );

@@ -422,7 +422,7 @@
 
 /* Begin PBXFileReference section */
 		04442B4F17BF75BD00D3E3D1 /* libPython.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPython.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		04442CED17BF765A00D3E3D1 /* PythonMac.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = PythonMac.a; path = libPythonMac.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		04442CED17BF765A00D3E3D1 /* libPythonMac.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPythonMac.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		0449BA5A1787C64E00022D0E /* Python-ast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Python-ast.h"; sourceTree = "<group>"; };
 		0449BA5B1787C64E00022D0E /* Python.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Python.h; sourceTree = "<group>"; };
 		0449BA5C1787C64E00022D0E /* abstract.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = abstract.h; sourceTree = "<group>"; };
@@ -829,7 +829,7 @@
 			isa = PBXGroup;
 			children = (
 				04442B4F17BF75BD00D3E3D1 /* libPython.a */,
-				04442CED17BF765A00D3E3D1 /* PythonMac.a */,
+				04442CED17BF765A00D3E3D1 /* libPythonMac.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1321,7 +1321,7 @@
 			);
 			name = PythonMac;
 			productName = Python;
-			productReference = 04442CED17BF765A00D3E3D1 /* PythonMac.a */;
+			productReference = 04442CED17BF765A00D3E3D1 /* libPythonMac.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */

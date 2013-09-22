@@ -89,10 +89,10 @@ void ResourceManager::load_physic_desc( const std::string& filename )
             if ( std::string("circle") == fixture_node.name()  )
             {
                 shape = new b2CircleShape();
-                shape->m_radius = fixture_node.attribute("radius").as_float() / ptm_ratio();
+                shape->m_radius = fixture_node.attribute("radius").as_float() / ptm_ratio()*phy_data_scale();
                 ((b2CircleShape*)shape)->m_p = string_to_b2Vec(fixture_node.attribute("center").as_string());
-                ((b2CircleShape*)shape)->m_p.x /= ptm_ratio();
-                ((b2CircleShape*)shape)->m_p.y /= ptm_ratio();
+                ((b2CircleShape*)shape)->m_p.x /= ptm_ratio()*phy_data_scale();
+                ((b2CircleShape*)shape)->m_p.y /= ptm_ratio()*phy_data_scale();
             }
             if ( std::string("polygon") == fixture_node.name() )
             {
@@ -102,8 +102,8 @@ void ResourceManager::load_physic_desc( const std::string& filename )
                 std::vector<b2Vec2> tmpvecs(floats.size()/2);
                 for ( int i = 0; i < floats.size(); i+=2 )
                 {
-                    tmpvecs[i/2].x = floats[i] / ptm_ratio();
-                    tmpvecs[i/2].y = floats[i+1] / ptm_ratio();
+                    tmpvecs[i/2].x = floats[i] / ptm_ratio()*phy_data_scale();
+                    tmpvecs[i/2].y = floats[i+1] / ptm_ratio()*phy_data_scale();
                 }
                 ((b2PolygonShape*)shape)->Set(&tmpvecs[0], floats.size()/2);
             }
