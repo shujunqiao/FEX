@@ -224,7 +224,7 @@
 		04713BC11760C81900443B48 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0460;
+				LastUpgradeCheck = 0500;
 			};
 			buildConfigurationList = 04713BC41760C81900443B48 /* Build configuration list for PBXProject "FEXMac" */;
 			compatibilityVersion = "Xcode 3.2";
