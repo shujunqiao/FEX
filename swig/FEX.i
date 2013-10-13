@@ -64,8 +64,58 @@ namespace std
 %feature("director") FESimple::TouchController;
 %feature("ref") FESimple::SpriteComponent "$this->retain (); // unref for SpriteComponent"
 %feature("unref") FESimple::SpriteComponent "$this->release(); // unref for SpriteComponent"
+//
+///* Convert from C --> Python */
+//%typemap(out) FESimple::GameObjBase*
+//{
+//    //nimei start
+//    Swig::Director* director;
+//    if ( (director = dynamic_cast<Swig::Director*>($1)) )
+//    {
+//        printf("this is directored gob\n");
+// 
+//        $result = director->swig_get_self();
+//    }
+//    else
+//    {
+//        $result = SWIG_NewPointerObj( SWIG_as_voidptr($1), SWIGTYPE_p_FESimple__GameObjBase, 0 );
+//    }
+//    //nimei end
+//}
+//
+%typemap(out) std::weak_ptr<FESimple::SpriteBase>
+{
+    //nimei start
+    Swig::Director* director;
+    FESimple::SpriteBase* p = ($1).lock().get();
+    if ( (director = dynamic_cast<Swig::Director*>(p)) )
+    {
+        printf("this is directored SpriteBase weakptr\n");
+        $result = director->swig_get_self();
+    }
+    else
+    {
+        $result = SWIG_NewPointerObj( SWIG_as_voidptr(($1).lock().get()), SWIGTYPE_p_FESimple__SpriteBase, SWIG_POINTER_OWN | 0 );
+    }
+    //nimei end
+}
 
-
+%typemap(out) std::shared_ptr<FESimple::SpriteBase>
+{
+    //nimei start
+    Swig::Director* director;
+    FESimple::SpriteBase* p = ($1).get();
+    if ( (director = dynamic_cast<Swig::Director*>(p)) )
+    {
+        printf("this is directored SpriteBase sharedptr\n");        
+        $result = director->swig_get_self();
+    }
+    else
+    {
+        $result = SWIG_NewPointerObj( SWIG_as_voidptr(($1).get()), SWIGTYPE_p_FESimple__SpriteBase, SWIG_POINTER_OWN | 0 );
+    }
+    //nimei end
+}
 
 namespace cocos2d
 {
@@ -187,6 +237,8 @@ namespace cocos2d
     }
     
 }
+
+
 
 %include "../FEX/FE.h"
 %include "../FEX/ClassInfo.h"
