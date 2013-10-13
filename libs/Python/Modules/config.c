@@ -46,6 +46,10 @@ extern "C" {
     extern void initoperator(void);
     extern void init_collections(void);
     extern void inititertools(void);
+    extern void init_md5(void);
+    extern void init_sha256(void);
+    extern void init_sha512(void);
+    extern void init_sha(void);
     /* -- ADDMODULE MARKER 1 -- */
     
     extern void PyMarshal_Init(void);
@@ -55,6 +59,10 @@ extern "C" {
     extern void _PyWarnings_Init(void);
     
     struct _inittab _PyImport_Inittab[] = {
+        {"_md5",init_md5},
+        {"_sha256",init_sha256},
+        {"_sha512",init_sha512},
+        {"_sha",init_sha},
         {"itertools",inititertools},
         {"_collections",init_collections},
         {"operator",initoperator},
