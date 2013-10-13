@@ -17914,6 +17914,19 @@ fail:
 }
 
 
+SWIGINTERN PyObject *_wrap_phy_data_scale(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  float result;
+  
+  if (!PyArg_ParseTuple(args,(char *)":phy_data_scale")) SWIG_fail;
+  result = (float)FESimple::phy_data_scale();
+  resultobj = SWIG_From_float(static_cast< float >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
 SWIGINTERN PyObject *_wrap_ptm_ratio(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   float result;
@@ -21941,7 +21954,21 @@ SWIGINTERN PyObject *_wrap_SpriteComponent_get_owner(PyObject *SWIGUNUSEDPARM(se
   }
   arg1 = reinterpret_cast< FESimple::SpriteComponent * >(argp1);
   result = (arg1)->get_owner();
-  resultobj = SWIG_NewPointerObj((new std::weak_ptr< FESimple::SpriteBase >(static_cast< const std::weak_ptr< FESimple::SpriteBase >& >(result))), SWIGTYPE_p_std__weak_ptrT_FESimple__SpriteBase_t, SWIG_POINTER_OWN |  0 );
+  {
+    //nimei start
+    Swig::Director* director;
+    FESimple::SpriteBase* p = (result).lock().get();
+    if ( (director = dynamic_cast<Swig::Director*>(p)) )
+    {
+      printf("this is directored SpriteBase weakptr\n");
+      resultobj = director->swig_get_self();
+    }
+    else
+    {
+      resultobj = SWIG_NewPointerObj( SWIG_as_voidptr((result).lock().get()), SWIGTYPE_p_FESimple__SpriteBase, SWIG_POINTER_OWN | 0 );
+    }
+    //nimei end
+  }
   return resultobj;
 fail:
   return NULL;
@@ -22895,6 +22922,7 @@ static PyMethodDef SwigMethods[] = {
 	 { (char *)"string_to_b2BodyType", _wrap_string_to_b2BodyType, METH_VARARGS, NULL},
 	 { (char *)"set_game", _wrap_set_game, METH_VARARGS, NULL},
 	 { (char *)"get_game", _wrap_get_game, METH_VARARGS, NULL},
+	 { (char *)"phy_data_scale", _wrap_phy_data_scale, METH_VARARGS, NULL},
 	 { (char *)"ptm_ratio", _wrap_ptm_ratio, METH_VARARGS, NULL},
 	 { (char *)"point_to_b2Vec2", _wrap_point_to_b2Vec2, METH_VARARGS, NULL},
 	 { (char *)"b2Vec2_to_point", _wrap_b2Vec2_to_point, METH_VARARGS, NULL},

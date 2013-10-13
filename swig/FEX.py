@@ -725,6 +725,10 @@ def get_game():
   return _FEX.get_game()
 get_game = _FEX.get_game
 
+def phy_data_scale():
+  return _FEX.phy_data_scale()
+phy_data_scale = _FEX.phy_data_scale
+
 def ptm_ratio():
   return _FEX.ptm_ratio()
 ptm_ratio = _FEX.ptm_ratio
