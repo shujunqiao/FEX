@@ -54,7 +54,7 @@ GameObjBase::GameObjBase()
 
 }
 
-GameObjBase::~GameObjBase()
+GameObjBase::~GameObjBase() throw()
 {
 
     logger("obj lifetime") << "object: " << name << "( " << this << " ) destoryed" << endl;
