@@ -175,7 +175,7 @@ class GameBase* get_game()
 
 float phy_data_scale()
 {
-    return 0.5;
+    return 1;
 }
 
 float ptm_ratio()

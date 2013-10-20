@@ -31,7 +31,6 @@ public:
     
     SpriteBase();
     SpriteBase( const SpawnParams& params );
-    SpriteBase( const cocos2d::CCPoint& location, const SpawnParams& params );
     virtual ~SpriteBase();
     
     

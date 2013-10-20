@@ -53,16 +53,16 @@ SpriteBase::SpriteBase( const SpawnParams& params )
         init( location, desc );
     }
 }
-
-SpriteBase::SpriteBase( const cocos2d::CCPoint& location, const SpawnParams& params )
-:GameObjBase(params)
-{
-    if ( params.find("sprite_desc") != params.end() )
-    {
-        auto desc = ResourceManager::instance()->sprite_descs.item( params.find("sprite_desc")->second);
-        init( location, desc );
-    }
-}
+//
+//SpriteBase::SpriteBase( const cocos2d::CCPoint& location, const SpawnParams& params )
+//:GameObjBase(params)
+//{
+//    if ( params.find("sprite_desc") != params.end() )
+//    {
+//        auto desc = ResourceManager::instance()->sprite_descs.item( params.find("sprite_desc")->second);
+//        init( location, desc );
+//    }
+//}
 
 SpriteBase::~SpriteBase()
 {
