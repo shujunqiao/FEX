@@ -145,6 +145,7 @@ void ResourceManager::load_sprite_component_desc( const std::string& filename )
             
             std::vector<std::string> frame_names = split_string(animit.attribute("frames").as_string(), ",");
             std::string texture = animit.attribute("texture").as_string();
+            printf( "%s end with %d", texture.c_str(), ends_with( texture,".plist") );
             if ( ends_with( texture,".plist") )
             {
                 //add all frames in plistfile
@@ -152,8 +153,15 @@ void ResourceManager::load_sprite_component_desc( const std::string& filename )
             }
             else
             {
-               // CCSpriteFrameCache::sharedSpriteFrameCache()->addSpriteFramesWithFile(texture.c_str());
-                
+                CCRect rect;
+                rect.origin = CCPoint(0, 0);
+                CCTexture2D* tex = CCTextureCache::sharedTextureCache()->addImage(texture.c_str());
+                rect.size = tex->getContentSize();
+                if ( CCSpriteFrameCache::sharedSpriteFrameCache()->spriteFrameByName(texture.c_str()) == NULL )
+                {
+                    CCSpriteFrameCache::sharedSpriteFrameCache()->addSpriteFrame(CCSpriteFrame::createWithTexture(tex, rect), texture.c_str());
+                }
+                frame_names = {texture};
             }
             CCArray* array_frames = CCArray::create();//array to create ccanimation
             float frame_speed = animit.attribute("frame_speed").as_float();

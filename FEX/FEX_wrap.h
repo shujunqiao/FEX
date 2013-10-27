@@ -69,7 +69,6 @@ class SwigDirector_SpriteBase : public FESimple::SpriteBase, public Swig::Direct
 public:
     SwigDirector_SpriteBase(PyObject *self);
     SwigDirector_SpriteBase(PyObject *self, FESimple::SpawnParams const &params);
-    SwigDirector_SpriteBase(PyObject *self, cocos2d::CCPoint const &location, FESimple::SpawnParams const &params);
     virtual FESimple::ClassInfo *get_class_info();
     virtual ~SwigDirector_SpriteBase();
     virtual void added_to_game(FESimple::GameBase *game, FESimple::Name const &to_layer);

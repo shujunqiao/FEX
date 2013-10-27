@@ -42,12 +42,12 @@ void TouchController::ccTouchCancelled(CCTouch *pTouch, CCEvent *pEvent)
 
 void TouchController::plug()
 {
-    logger("debug") << name << "pluged" << endl;    
+    logger("debug") << name << " pluged" << endl;
     CCDirector::sharedDirector()->getTouchDispatcher()->addTargetedDelegate(this, 0, false);
 }
 void TouchController::unplug()
 {
-    logger("debug") << name << "unpluged" << endl;
+    logger("debug") << name << " unpluged" << endl;
     CCDirector::sharedDirector()->getTouchDispatcher()->removeDelegate(this);
 }
 

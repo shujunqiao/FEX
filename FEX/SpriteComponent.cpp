@@ -33,7 +33,8 @@ SpriteComponent::SpriteComponent(  const CCPoint& location, const std::shared_pt
     //create physics body
     phy_desc = ResourceManager::instance()->physic_descs.item(desc->physic_desc_name);
     setPosition(location);
-    init_physics(phy_desc);
+    if ( phy_desc )
+        init_physics(phy_desc);
     //logger("sprite component") << this << " created retaincount:" << retainCount() <<  endl;
     //scheduleUpdate();
 }

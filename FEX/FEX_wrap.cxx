@@ -6218,13 +6218,6 @@ SwigDirector_SpriteBase::SwigDirector_SpriteBase(PyObject *self, FESimple::Spawn
 
 
 
-SwigDirector_SpriteBase::SwigDirector_SpriteBase(PyObject *self, cocos2d::CCPoint const &location, FESimple::SpawnParams const &params): FESimple::SpriteBase(location, params), Swig::Director(self) {
-  SWIG_DIRECTOR_RGTR((FESimple::SpriteBase *)this, this); 
-}
-
-
-
-
 FESimple::ClassInfo *SwigDirector_SpriteBase::get_class_info() {
   void *swig_argp ;
   int swig_res ;
@@ -15585,64 +15578,14 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_new_SpriteBase__SWIG_2(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
-  PyObject *resultobj = 0;
-  PyObject *arg1 = (PyObject *) 0 ;
-  cocos2d::CCPoint *arg2 = 0 ;
-  FESimple::SpawnParams *arg3 = 0 ;
-  void *argp2 = 0 ;
-  int res2 = 0 ;
-  int res3 = SWIG_OLDOBJ ;
-  PyObject * obj0 = 0 ;
-  PyObject * obj1 = 0 ;
-  PyObject * obj2 = 0 ;
-  FESimple::SpriteBase *result = 0 ;
-  
-  if (!PyArg_ParseTuple(args,(char *)"OOO:new_SpriteBase",&obj0,&obj1,&obj2)) SWIG_fail;
-  arg1 = obj0;
-  res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_cocos2d__CCPoint,  0  | 0);
-  if (!SWIG_IsOK(res2)) {
-    SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "new_SpriteBase" "', argument " "2"" of type '" "cocos2d::CCPoint const &""'"); 
-  }
-  if (!argp2) {
-    SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "new_SpriteBase" "', argument " "2"" of type '" "cocos2d::CCPoint const &""'"); 
-  }
-  arg2 = reinterpret_cast< cocos2d::CCPoint * >(argp2);
-  {
-    std::map<std::string,std::string,std::less< std::string >,std::allocator< std::pair< std::string const,std::string > > > *ptr = (std::map<std::string,std::string,std::less< std::string >,std::allocator< std::pair< std::string const,std::string > > > *)0;
-    res3 = swig::asptr(obj2, &ptr);
-    if (!SWIG_IsOK(res3)) {
-      SWIG_exception_fail(SWIG_ArgError(res3), "in method '" "new_SpriteBase" "', argument " "3"" of type '" "FESimple::SpawnParams const &""'"); 
-    }
-    if (!ptr) {
-      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "new_SpriteBase" "', argument " "3"" of type '" "FESimple::SpawnParams const &""'"); 
-    }
-    arg3 = ptr;
-  }
-  if ( arg1 != Py_None ) {
-    /* subclassed */
-    result = (FESimple::SpriteBase *)new SwigDirector_SpriteBase(arg1,(cocos2d::CCPoint const &)*arg2,(FESimple::SpawnParams const &)*arg3); 
-  } else {
-    result = (FESimple::SpriteBase *)new FESimple::SpriteBase((cocos2d::CCPoint const &)*arg2,(FESimple::SpawnParams const &)*arg3); 
-  }
-  
-  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_FESimple__SpriteBase, SWIG_POINTER_NEW |  0 );
-  if (SWIG_IsNewObj(res3)) delete arg3;
-  return resultobj;
-fail:
-  if (SWIG_IsNewObj(res3)) delete arg3;
-  return NULL;
-}
-
-
 SWIGINTERN PyObject *_wrap_new_SpriteBase(PyObject *self, PyObject *args) {
   int argc;
-  PyObject *argv[4];
+  PyObject *argv[3];
   int ii;
   
   if (!PyTuple_Check(args)) SWIG_fail;
   argc = args ? (int)PyObject_Length(args) : 0;
-  for (ii = 0; (ii < 3) && (ii < argc); ii++) {
+  for (ii = 0; (ii < 2) && (ii < argc); ii++) {
     argv[ii] = PyTuple_GET_ITEM(args,ii);
   }
   if (argc == 1) {
@@ -15663,28 +15606,12 @@ SWIGINTERN PyObject *_wrap_new_SpriteBase(PyObject *self, PyObject *args) {
       }
     }
   }
-  if (argc == 3) {
-    int _v;
-    _v = (argv[0] != 0);
-    if (_v) {
-      int res = SWIG_ConvertPtr(argv[1], 0, SWIGTYPE_p_cocos2d__CCPoint, 0);
-      _v = SWIG_CheckState(res);
-      if (_v) {
-        int res = swig::asptr(argv[2], (std::map<std::string,std::string,std::less< std::string >,std::allocator< std::pair< std::string const,std::string > > >**)(0));
-        _v = SWIG_CheckState(res);
-        if (_v) {
-          return _wrap_new_SpriteBase__SWIG_2(self, args);
-        }
-      }
-    }
-  }
   
 fail:
   SWIG_SetErrorMsg(PyExc_NotImplementedError,"Wrong number or type of arguments for overloaded function 'new_SpriteBase'.\n"
     "  Possible C/C++ prototypes are:\n"
     "    FESimple::SpriteBase::SpriteBase()\n"
-    "    FESimple::SpriteBase::SpriteBase(FESimple::SpawnParams const &)\n"
-    "    FESimple::SpriteBase::SpriteBase(PyObject *,cocos2d::CCPoint const &,FESimple::SpawnParams const &)\n");
+    "    FESimple::SpriteBase::SpriteBase(PyObject *,FESimple::SpawnParams const &)\n");
   return 0;
 }
 
