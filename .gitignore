@@ -23,3 +23,7 @@ libs/external/Box2D/proj.mac/Box2D.xcodeproj/xcuserdata/fancyzero.xcuserdatad/xc
 *.xcuserstate
 
 FEXGameTemplate/GameSADiOS.xcodeproj/project.xcworkspace/xcuserdata/fancyzero.xcuserdatad/UserInterfaceState.xcuserstate
+
+libs/Python.xcodeproj/xcuserdata/fancyzero.xcuserdatad/xcschemes/xcschememanagement.plist
+
+FEXMac.xcodeproj/xcuserdata/fancyzero.xcuserdatad/xcschemes/xcschememanagement.plist
