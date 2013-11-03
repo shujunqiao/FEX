@@ -175,6 +175,8 @@ public:
     void set_angular_damping( float damping );
     void apply_linear_impulse( const cocos2d::CCPoint& v );
     void apply_angular_impulse( float i );
+    void set_fixed_rotation( bool fixed );
+    void set_rotation( float angle );
     void wakeup();
     void color_mask( const cocos2d::ccColor4F& color, float time );
     void color_tint( const cocos2d::ccColor4F& color, float time );

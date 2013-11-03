@@ -54,16 +54,12 @@ struct LevelData
 class LevelBase
 {
 public:
-    LevelBase()
-    {
-        reset();
-    }
+    LevelBase();
     virtual ~LevelBase()
     {
         logger("debug")<< "level destroyed" << endl;
     }
     virtual bool attach( const LevelData* data );  //附加关卡，不删除现有内容
-    virtual void reset();   //重置关卡，删除所有游戏对象
     virtual void triggering_trigger( LevelTrigger& trigger );
     void update( float delta_time );
 

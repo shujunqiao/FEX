@@ -10,6 +10,8 @@
 #include "pugixml.hpp"
 #include "GameObjFactory.h"
 FE_NS_BEGIN
+
+
 LevelData::LevelData( const std::string& filename )
 {
     load(filename);
@@ -64,19 +66,20 @@ bool LevelData::load( const std::string& filename )
     }
     return true;
 }
+//////////////
+
+LevelBase::LevelBase()
+{
+    current_trigger = 0;
+    level_data.clear();
+    start_time = current_time();
+}
 
 bool LevelBase::attach( const LevelData* data )
 {
     level_data.bound = data->bound;
     level_data.triggers.insert(level_data.triggers.end(), data->triggers.begin(), data->triggers.end());
     return true;
-}
-
-void LevelBase::reset()
-{
-    current_trigger = 0;
-    level_data.clear();
-    start_time = current_time();
 }
 
 void LevelBase::triggering_trigger( LevelTrigger& trigger )

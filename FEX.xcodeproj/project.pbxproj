@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		040A59E6177E6FA00010E979 /* CollisionListener.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 040A59E4177E6FA00010E979 /* CollisionListener.cpp */; };
-		045E880917A545E200C99DB7 /* FEX_wrap.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 045E880617A545E200C99DB7 /* FEX_wrap.cxx */; };
-		045E880B17A545E200C99DB7 /* zlibmodule.c in Sources */ = {isa = PBXBuildFile; fileRef = 045E880817A545E200C99DB7 /* zlibmodule.c */; };
 		04A627B1177BEC7900E1760D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04713BD81760C81900443B48 /* Foundation.framework */; };
 		04A627ED177BEDD200E1760D /* CCPhyDebugNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04A627CB177BEDD200E1760D /* CCPhyDebugNode.cpp */; };
 		04A627EE177BEDD200E1760D /* ControllerBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04A627CE177BEDD200E1760D /* ControllerBase.cpp */; };
@@ -44,9 +42,6 @@
 /* Begin PBXFileReference section */
 		040A59E4177E6FA00010E979 /* CollisionListener.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CollisionListener.cpp; path = FEX/CollisionListener.cpp; sourceTree = "<group>"; };
 		040A59E5177E6FA00010E979 /* CollisionListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CollisionListener.h; path = FEX/CollisionListener.h; sourceTree = "<group>"; };
-		045E880617A545E200C99DB7 /* FEX_wrap.cxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FEX_wrap.cxx; path = FEX/FEX_wrap.cxx; sourceTree = "<group>"; };
-		045E880717A545E200C99DB7 /* FEX_wrap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FEX_wrap.h; path = FEX/FEX_wrap.h; sourceTree = "<group>"; };
-		045E880817A545E200C99DB7 /* zlibmodule.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = zlibmodule.c; path = FEX/zlibmodule.c; sourceTree = "<group>"; };
 		04713BCC1760C81900443B48 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		04713BCE1760C81900443B48 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		04713BD01760C81900443B48 /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
@@ -144,9 +139,6 @@
 			children = (
 				04B472D1180D234E001B9EDA /* TouchController.cpp */,
 				04B472D2180D234E001B9EDA /* TouchController.h */,
-				045E880617A545E200C99DB7 /* FEX_wrap.cxx */,
-				045E880717A545E200C99DB7 /* FEX_wrap.h */,
-				045E880817A545E200C99DB7 /* zlibmodule.c */,
 				04A627CB177BEDD200E1760D /* CCPhyDebugNode.cpp */,
 				04A627CC177BEDD200E1760D /* CCPhyDebugNode.h */,
 				04A627CD177BEDD200E1760D /* ClassInfo.h */,
@@ -262,8 +254,6 @@
 				04A627FA177BEDD200E1760D /* SpriteBase.cpp in Sources */,
 				04A627FB177BEDD200E1760D /* SpriteComponent.cpp in Sources */,
 				040A59E6177E6FA00010E979 /* CollisionListener.cpp in Sources */,
-				045E880917A545E200C99DB7 /* FEX_wrap.cxx in Sources */,
-				045E880B17A545E200C99DB7 /* zlibmodule.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

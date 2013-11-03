@@ -77,10 +77,6 @@ public:
     {
         return objects;
     }
-    virtual GameObjPtr construct_obj( const Name& classname, const SpawnParams& params )
-    {
-        return nullptr;
-    }
 protected:
     std::unique_ptr<LevelBase>              level;
     std::unique_ptr<GameScene>              scene;       // visible world

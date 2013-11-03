@@ -44,8 +44,8 @@ cocos2d::CCPoint b2Vec2_to_point( const b2Vec2& vec );
 cocos2d::CCPoint& operator << (cocos2d::CCPoint& pt, const std::string& str);
 bool& operator << (bool& b, const std::string& str);
 cocos2d::CCRect& operator << (cocos2d::CCRect& rc, const std::string& str );
-cocos2d::CCPoint operator + ( const cocos2d::CCPoint& pt1, const cocos2d::CCPoint pt2 );
-cocos2d::CCPoint operator - ( const cocos2d::CCPoint& pt1, const cocos2d::CCPoint pt2 );
+cocos2d::CCPoint operator + ( const cocos2d::CCPoint& pt1, const cocos2d::CCPoint& pt2 );
+cocos2d::CCPoint operator - ( const cocos2d::CCPoint& pt1, const cocos2d::CCPoint& pt2 );
 
 float angle_to_rad( float angle );
 float rad_to_angle( float rad );

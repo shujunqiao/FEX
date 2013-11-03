@@ -13,9 +13,9 @@
 #include <random>
 #include "FE.h"
 #include "GameBase.h"
+#include "SpriteBase.h"
+
 using namespace FESimple;
-#include "FEX_wrap.cxx"
-#include "FEX_wrap.h"
 
 
 FE_NS_BEGIN
@@ -211,12 +211,12 @@ cocos2d::CCRect& operator << (cocos2d::CCRect& rc, const std::string& str )
     return rc;
 }
 
-cocos2d::CCPoint operator + ( const cocos2d::CCPoint& pt1, const cocos2d::CCPoint pt2 )
+cocos2d::CCPoint operator + ( const cocos2d::CCPoint& pt1, const cocos2d::CCPoint& pt2 )
 {
     return cocos2d::CCPoint( pt1.x + pt2.x, pt1.y + pt2.y );
 }
 
-cocos2d::CCPoint operator - ( const cocos2d::CCPoint& pt1, const cocos2d::CCPoint pt2 )
+cocos2d::CCPoint operator - ( const cocos2d::CCPoint& pt1, const cocos2d::CCPoint& pt2 )
 {
     return cocos2d::CCPoint( pt1.x - pt2.x, pt1.y - pt2.y );
 }
@@ -258,14 +258,14 @@ GameObjPtr make_gameobj_ptr( GameObjBase* p )
 
 bool init_python(const std::string& python_home)
 {
-    char path[1024];
-    strcpy(path,python_home.c_str());
-    Py_SetPythonHome(path);
-    Py_Initialize();
-    
-    init_FEX();
-    PyRun_SimpleString("import sys");
-    PyRun_SimpleString("print sys.path");
+//    char path[1024];
+//    strcpy(path,python_home.c_str());
+//    Py_SetPythonHome(path);
+//    Py_Initialize();
+//    
+//    init_FEX();
+//    PyRun_SimpleString("import sys");
+//    PyRun_SimpleString("print sys.path");
     return true;
 }
 
@@ -303,7 +303,6 @@ public:
 
 SpriteComponent* pick_sprite( const cocos2d::CCPoint world_point )
 {
-    SpriteComponent* cmp;
     b2AABB aabb;
     aabb.lowerBound = aabb.upperBound = point_to_b2Vec2( world_point );
     pick_sprite_cb cb;

@@ -14,6 +14,7 @@
 FE_NS_BEGIN
 
 void register_FEX_classes();
+std::map<std::string,const ClassInfo*>& get_classes_map();
 
 class GameObjFactory
 {

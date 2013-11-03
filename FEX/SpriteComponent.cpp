@@ -48,7 +48,7 @@ SpriteComponent::~SpriteComponent()
 
 bool SpriteComponent::init_shader()
 {
-    setShaderProgram(CCShaderCache::sharedShaderCache()->programForKey("base_shader"));
+    setShaderProgram(CCShaderCache::sharedShaderCache()->programForKey("base"));
     return true;
 }
 
@@ -316,6 +316,18 @@ void SpriteComponent::apply_angular_impulse( float i )
 {
     if ( phy_body )
         phy_body->ApplyAngularImpulse( i );
+}
+
+void SpriteComponent::set_fixed_rotation( bool fixed )
+{
+    if ( phy_body )
+        phy_body->SetFixedRotation( fixed );
+}
+
+void SpriteComponent::set_rotation( float angle )
+{
+    if ( phy_body )
+        phy_body->SetTransform( phy_body->GetPosition(), CC_DEGREES_TO_RADIANS(angle) );
 }
 
 void SpriteComponent::wakeup()

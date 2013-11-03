@@ -49,16 +49,36 @@ CCPoint& CCPoint::operator= (const CCPoint& other)
     return *this;
 }
 
+float CCPoint::length()
+{
+    return sqrtf(x*x + y*y);
+}
+
+CCPoint CCPoint::normalized()
+{
+    float len = length();
+    return CCPoint( x/len, y/len );
+}
+
 void CCPoint::setPoint(float x, float y)
 {
     this->x = x;
     this->y = y;
+}
+CCPoint CCPoint::operator- ()
+{
+    return CCPoint( -x, -y );
 }
 
 bool CCPoint::equals(const CCPoint& target) const
 {
     return (fabs(this->x - target.x) < FLT_EPSILON)
         && (fabs(this->y - target.y) < FLT_EPSILON);
+}
+
+CCPoint CCPoint::operator* (float s)
+{
+    return CCPoint( x*s, y*s );
 }
 
 // implementation of CCSize

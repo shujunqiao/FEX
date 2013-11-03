@@ -19,7 +19,10 @@
 FE_NS_BEGIN
 
 class GameObjBase;
+class SpriteBase;
+
 typedef std::shared_ptr<GameObjBase> GameObjPtr;
+typedef std::shared_ptr<SpriteBase> SpritePtr;
 typedef std::string Name;
 typedef std::map<Name, std::string> SpawnParams;
 

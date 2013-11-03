@@ -46,8 +46,12 @@ public:
     CCPoint(float x, float y);
     CCPoint(const CCPoint& other);
     CCPoint& operator= (const CCPoint& other);
+    CCPoint operator* ( float s );
+    CCPoint operator-();
     void setPoint(float x, float y);
     bool equals(const CCPoint& target) const;
+    float length();
+    CCPoint normalized();
 };
 
 class CC_DLL CCSize
