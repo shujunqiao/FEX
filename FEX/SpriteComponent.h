@@ -176,16 +176,17 @@ public:
     void apply_linear_impulse( const cocos2d::CCPoint& v );
     void apply_angular_impulse( float i );
     void set_fixed_rotation( bool fixed );
+    float get_rotation();
     void set_rotation( float angle );
     void wakeup();
     void color_mask( const cocos2d::ccColor4F& color, float time );
     void color_tint( const cocos2d::ccColor4F& color, float time );
     void set_shader( const Name& shader_name );
-    void set_owner(std::weak_ptr<SpriteBase> s)
+    void set_owner( SpriteBase* s)
     {
         owner = s;
     }
-    class std::weak_ptr<SpriteBase> get_owner()
+    class SpriteBase* get_owner()
     {
         return owner;
     }
@@ -195,7 +196,7 @@ public:
     bool hit_test( const cocos2d::CCPoint& world_point); //return true if this component contain point in world-space
 protected:
     float                           color_mask_expire_time;
-    std::weak_ptr<SpriteBase>       owner;
+    SpriteBase*                     owner;
     std::vector<sprite_animation>   animations;
     b2Body*                         phy_body;
     std::shared_ptr<physic_desc>    phy_desc;    

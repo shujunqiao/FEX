@@ -262,12 +262,12 @@ CCAffineTransform SpriteComponent::nodeToParentTransform()
 // physics callbacks
 void SpriteComponent::begin_contact( class b2Contact* contact )
 {
-    owner.lock()->begin_contact(contact);
+    owner->begin_contact(contact);
 }
 
 void SpriteComponent::end_contact( class b2Contact* contact )
 {
-    owner.lock()->end_contact(contact);
+    owner->end_contact(contact);
 }
 
 // physics methods
@@ -322,6 +322,14 @@ void SpriteComponent::set_fixed_rotation( bool fixed )
 {
     if ( phy_body )
         phy_body->SetFixedRotation( fixed );
+}
+
+float SpriteComponent::get_rotation()
+{
+    if ( phy_body )
+        return (phy_body->GetAngle());
+    else
+        return CC_DEGREES_TO_RADIANS(getRotation());
 }
 
 void SpriteComponent::set_rotation( float angle )
