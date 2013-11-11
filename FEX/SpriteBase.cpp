@@ -45,8 +45,8 @@ SpriteBase::SpriteBase( const SpawnParams& params )
 :GameObjBase( params )
 {
     cocos2d::CCPoint location;
-    if ( params.find("init_location") != params.end() )
-        location = string_to_point(params.find("init_location")->second.c_str());
+    if ( params.find("position") != params.end() )
+        location = string_to_point(params.find("position")->second.c_str());
     if ( params.find("sprite_desc") != params.end() )
     {
         auto desc = ResourceManager::instance()->sprite_descs.item( params.find("sprite_desc")->second);
@@ -78,7 +78,7 @@ void SpriteBase::added_to_game( GameBase* game, const Name& to_layer )
         if ( comp != nullptr )
         {
             game->get_scene()->get_layer(to_layer)->cclayer()->addChild( comp );
-            comp->set_owner( std::dynamic_pointer_cast<SpriteBase>(shared_from_this()));
+            comp->set_owner( this );
         }
     }
 }
@@ -101,7 +101,7 @@ void SpriteBase::remove_all_component()
     for (auto c: components )
     {
         logger("memory") << "component retaincount: " << c->retainCount() << endl;
-        c->set_owner(std::shared_ptr<SpriteBase>(nullptr));
+        c->set_owner( nullptr );
         c->stopAllActions();
         c->release();
     }
@@ -111,13 +111,12 @@ void SpriteBase::remove_all_component()
 void SpriteBase::add_component( SpriteComponent* comp )
 {
     components.push_back( comp );
-    if ( added )//to avoid shared from this called in constructor
-        comp->set_owner( std::dynamic_pointer_cast<SpriteBase>(shared_from_this()) );
+    comp->set_owner( this );
 }
 
 void SpriteBase::remove_component( SpriteComponent * comp )
 {
-    comp->set_owner(std::shared_ptr<SpriteBase>(nullptr));
+    comp->set_owner( nullptr );
     components.erase(std::find(components.begin(), components.end(), comp));
 }
 
@@ -153,12 +152,29 @@ void SpriteBase::update( float delta_time )
 }
 
 //position , rotation, ect..
-void SpriteBase::set_position( cocos2d::CCPoint pos )
+void SpriteBase::set_position( const cocos2d::CCPoint& pos )
 {
     for( auto c : components )
     {
         c->setPosition( pos );
     }
+}
+
+cocos2d::CCPoint SpriteBase::get_position()
+{
+    if ( components.size() )
+        return components[0]->getPosition();
+    else
+        return {0,0};
+}
+
+float SpriteBase::get_rotation()
+{
+    if ( components.size() )
+        return components[0]->get_rotation();
+    else
+        return 0;
+
 }
 
 void SpriteBase::set_rotation( float angle )

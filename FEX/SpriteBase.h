@@ -42,7 +42,7 @@ public:
     void add_component( SpriteComponent* );
     void remove_component( SpriteComponent * );
     SpriteComponent* component( unsigned int index );
-    unsigned int component_count()
+    std::vector<SpriteComponent*>::size_type component_count()
     {
         return components.size();
     }
@@ -71,13 +71,13 @@ public:
     virtual void update( float delta_time );
     
     //position , rotation, ect..
-    virtual void set_position( cocos2d::CCPoint pos );
+    virtual void set_position( const cocos2d::CCPoint& pos );
+    virtual cocos2d::CCPoint get_position();
     virtual void set_rotation( float angle );
-    
+    virtual float get_rotation();
 protected:
     void init( const cocos2d::CCPoint& location, const std::shared_ptr<sprite_desc> desc );
     std::vector< SpriteComponent* > components;
-    bool        added = false;//is added to game
 };
 
 
