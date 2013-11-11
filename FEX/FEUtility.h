@@ -76,6 +76,8 @@ SpriteComponent* pick_sprite( const cocos2d::CCPoint world_point );
 GameObjBase* get_raw_ptr( std::shared_ptr<GameObjBase>& ptr );
 SpriteBase* get_raw_ptr( std::shared_ptr<SpriteBase>& ptr );
 SpriteBase* get_raw_ptr( std::weak_ptr<SpriteBase>& ptr );
+
+cocos2d::CCPoint radians_to_vector( float rad );
 FE_NS_END
 
 

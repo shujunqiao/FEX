@@ -322,7 +322,11 @@ SpriteBase* get_raw_ptr( std::shared_ptr<SpriteBase>& ptr )
 SpriteBase* get_raw_ptr( std::weak_ptr<SpriteBase>& ptr )
 {
     return ptr.lock().get();
-    
+}
+
+cocos2d::CCPoint radians_to_vector( float rad )
+{
+    return cocos2d::CCPoint( cosf(rad), sinf(rad) );
 }
 
 FE_NS_END
