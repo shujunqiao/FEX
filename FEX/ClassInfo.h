@@ -46,6 +46,8 @@ public:
 static ClassInfo  classinfo;\
 virtual ClassInfo* get_class_info(){ return &classname::classinfo; };
 
+#define IMPLEMENT_ABSTARCT_CLASS_INFO(classname,parent_classes) ClassInfo classname::classinfo = {#classname,parent_classes,[](const SpawnParams& p){return nullptr;}};
+
 #define IMPLEMENT_CLASS_INFO(classname,parent_classes) ClassInfo classname::classinfo = {#classname,parent_classes,[](const SpawnParams& p){return new classname(p);}};
 
 
