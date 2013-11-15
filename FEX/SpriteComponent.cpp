@@ -89,6 +89,8 @@ void SpriteComponent::init_physics( const std::shared_ptr<physic_desc> phy )
                 }
             }
                 break;
+            default:
+                break;
         }
         phy_body->CreateFixture( dynamic_cast<b2FixtureDef*>(&fixdef) )->SetUserData(this);
     }
