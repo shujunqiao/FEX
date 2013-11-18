@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		040A59E6177E6FA00010E979 /* CollisionListener.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 040A59E4177E6FA00010E979 /* CollisionListener.cpp */; };
+		040E1DD618374F6C00A69BEE /* Button.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 040E1DD418374F6C00A69BEE /* Button.cpp */; };
 		04A627B1177BEC7900E1760D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04713BD81760C81900443B48 /* Foundation.framework */; };
 		04A627ED177BEDD200E1760D /* CCPhyDebugNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04A627CB177BEDD200E1760D /* CCPhyDebugNode.cpp */; };
 		04A627EE177BEDD200E1760D /* ControllerBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04A627CE177BEDD200E1760D /* ControllerBase.cpp */; };
@@ -42,6 +43,8 @@
 /* Begin PBXFileReference section */
 		040A59E4177E6FA00010E979 /* CollisionListener.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CollisionListener.cpp; path = FEX/CollisionListener.cpp; sourceTree = "<group>"; };
 		040A59E5177E6FA00010E979 /* CollisionListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CollisionListener.h; path = FEX/CollisionListener.h; sourceTree = "<group>"; };
+		040E1DD418374F6C00A69BEE /* Button.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Button.cpp; path = FEX/Button.cpp; sourceTree = "<group>"; };
+		040E1DD518374F6C00A69BEE /* Button.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Button.h; path = FEX/Button.h; sourceTree = "<group>"; };
 		04713BCC1760C81900443B48 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		04713BCE1760C81900443B48 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		04713BD01760C81900443B48 /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
@@ -137,6 +140,8 @@
 		04A627CA177BEDC600E1760D /* Src */ = {
 			isa = PBXGroup;
 			children = (
+				040E1DD418374F6C00A69BEE /* Button.cpp */,
+				040E1DD518374F6C00A69BEE /* Button.h */,
 				04B472D1180D234E001B9EDA /* TouchController.cpp */,
 				04B472D2180D234E001B9EDA /* TouchController.h */,
 				04A627CB177BEDD200E1760D /* CCPhyDebugNode.cpp */,
@@ -246,6 +251,7 @@
 				04A627F3177BEDD200E1760D /* GameObjBase.cpp in Sources */,
 				04A627F4177BEDD200E1760D /* GameObjFactory.cpp in Sources */,
 				04A627F5177BEDD200E1760D /* GameScene.cpp in Sources */,
+				040E1DD618374F6C00A69BEE /* Button.cpp in Sources */,
 				04B472D3180D234E001B9EDA /* TouchController.cpp in Sources */,
 				04A627F6177BEDD200E1760D /* GLES-Render.cpp in Sources */,
 				04A627F7177BEDD200E1760D /* LevelBase.cpp in Sources */,

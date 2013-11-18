@@ -89,7 +89,7 @@ void LevelBase::triggering_trigger( LevelTrigger& trigger )
         GameObjPtr object = GameObjFactory::construct_obj(trigger.params["class"], trigger.params);
         //object->set_trigger_id(trigger["id"]);
         if (object)
-            get_game()->add_game_object(object, trigger.params["layer"]);
+            get_game()->add_object(object, trigger.params["layer"]);
 	}
 }
 

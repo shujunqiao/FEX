@@ -16,7 +16,7 @@ GameBase::GameBase()
     logger("debug")<<"GameBase Created from c++" << endl;
     GameObjPtr layer(new GameLayer());
     layer->set_name( "root" );
-    add_game_object( layer, "");
+    add_object( layer, "");
     cocos2d::CCDirector::sharedDirector()->runWithScene(scene->ccscene());
 }
 
@@ -47,7 +47,7 @@ void GameBase::update(float delta_time)
     }
 }
 
-void GameBase::clean()
+void GameBase::clear()
 {
     for ( auto i: objects )
     {
@@ -56,7 +56,7 @@ void GameBase::clean()
     objects.clear();
 }
 
-void GameBase::add_game_object( GameObjPtr obj, const Name& to_layer)
+void GameBase::add_object( GameObjPtr obj, const Name& to_layer)
 {
     objects.push_back( obj );
     obj->added_to_game( this, to_layer );

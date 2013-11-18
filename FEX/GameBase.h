@@ -26,9 +26,9 @@ public:
     virtual ~GameBase();
     
     virtual void update(float delta_time);
-    void clean();                       //删除所有对象，关卡
+    void clear();                       //删除所有对象
     
-    void add_game_object( GameObjPtr obj, const Name& to_layer );
+    void add_object( GameObjPtr obj, const Name& to_layer );
     void remove_game_object( GameObjPtr obj );
 
     //scene
