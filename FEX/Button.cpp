@@ -11,7 +11,7 @@ FE_NS_BEGIN
 Button::Button( SpawnParams const &params, std::function<void(void*)> handler)
 :handler(handler),SpriteBase(params)
 {
-    retain();retain();//can be deleted only by shared_ptr, work around for "double refcount management"
+    //retain();retain();//can be deleted only by shared_ptr, work around for "double refcount management"
     
     cocos2d::CCDirector::sharedDirector()->getTouchDispatcher()->addTargetedDelegate(this, 10, false);
     

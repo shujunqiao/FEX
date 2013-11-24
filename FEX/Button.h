@@ -14,7 +14,7 @@
 #include <functional>
 FE_NS_BEGIN
 
-class Button : public SpriteBase, public cocos2d::CCTargetedTouchDelegate, public cocos2d::CCObject
+class Button : public SpriteBase, public cocos2d::CCTargetedTouchDelegate//, public cocos2d::CCObject
 {
 public:
     Button( SpawnParams const &params, std::function<void(void*)> handler );
