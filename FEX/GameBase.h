@@ -12,6 +12,7 @@
 #include <memory>
 #include <list>
 #include <algorithm>
+#include "EventDispatcher.h"
 class b2World;
 FE_NS_BEGIN
 
@@ -77,11 +78,18 @@ public:
     {
         return objects;
     }
+    
+    class EventDispatcher*    get_event_dispatcher()
+    {
+        return event_dispatcher.get();
+    }
+    
 protected:
     std::unique_ptr<LevelBase>              level;
     std::unique_ptr<GameScene>              scene;       // visible world
     std::unique_ptr<b2World>                phy_world;
     std::list<GameObjPtr>                   objects;
+    std::unique_ptr<class EventDispatcher>        event_dispatcher;
 };
 FE_NS_END
 

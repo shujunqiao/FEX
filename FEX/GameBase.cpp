@@ -5,6 +5,7 @@
 #include "GameLayer.h"
 #include "cocos2d.h"
 #include "LevelBase.h"
+#include "EventDispatcher.h"
 FE_NS_BEGIN
 
 
@@ -12,12 +13,14 @@ FE_NS_BEGIN
 GameBase::GameBase()
 :scene( new GameScene() )
 ,phy_world( new b2World(b2Vec2(0,0)) )
+,event_dispatcher(new IOSEventDispatcher())
 {
     logger("debug")<<"GameBase Created from c++" << endl;
     GameObjPtr layer(new GameLayer());
     layer->set_name( "root" );
     add_object( layer, "");
     cocos2d::CCDirector::sharedDirector()->runWithScene(scene->ccscene());
+    CCEGLView::sharedOpenGLView()->setTouchDelegate( get_event_dispatcher() );
 }
 
 GameBase::~GameBase()
@@ -45,6 +48,9 @@ void GameBase::update(float delta_time)
     {
         c->update( delta_time );
     }
+    //remove all dead sprites
+    objects.erase(std::remove_if(objects.begin(), objects.end(), [&](std::shared_ptr<GameObjBase> obj){return obj->is_dead();}), objects.end());
+    get_event_dispatcher()->remove_dead_handlers();
 }
 
 void GameBase::clear()
@@ -52,8 +58,8 @@ void GameBase::clear()
     for ( auto i: objects )
     {
         logger("memory") << "object: " << i << " refcount: " << i.use_count() << endl;
+        i->set_dead(true);
     }
-    objects.clear();
 }
 
 void GameBase::add_object( GameObjPtr obj, const Name& to_layer)

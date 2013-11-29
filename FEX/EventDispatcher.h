@@ -14,9 +14,15 @@
 
 using namespace cocos2d;
 FE_NS_USING;
-
-class EventDispatcher
+FE_NS_BEGIN
+class EventDispatcher :public cocos2d::EGLTouchDelegate
 {
+public:
+    void remove_handler( std::shared_ptr<GameObjBase> h );
+    void add_handler( std::shared_ptr<GameObjBase> h );
+    void remove_dead_handlers();
+protected:
+    std::vector<std::shared_ptr<GameObjBase>> handlers;
     
 };
 
@@ -25,26 +31,41 @@ class EventHandler
 public:
     enum Type
     {
-        et_unknown,
-        et_touch,
-        et_mouse,
-        et_keyboard,
+        et_unknown = 1,
+        et_touch = 2,
+        et_mouse = 4,
+        et_keyboard = 8,
     };
     
-    virtual Type get_type()
+    unsigned int get_type()
     {
-        return et_unknown;
+        return type;
+    }
+    void add_type( Type t)
+    {
+        type |= t;
+    }
+    EventHandler()
+    :type(0),priority(0)
+    {
+        
+    }
+    int get_priority()
+    {
+        return priority;
     }
 protected:
-    int prority;
+    unsigned int type;
+    int priority;
 };
 
 class TouchEventHandler:public EventHandler
 {
 public:
-    EventHandler::Type get_type()
+    TouchEventHandler()
+    :EventHandler()
     {
-        return EventHandler::Type::et_touch;
+        add_type(et_touch);
     }
     virtual void touchesBegan(CCSet* touches, CCEvent* pEvent){};
     virtual void touchesMoved(CCSet* touches, CCEvent* pEvent){};
@@ -53,16 +74,14 @@ public:
     
 };
 
-class IOSEventDispatcher :public EventDispatcher, public cocos2d::EGLTouchDelegate
+class IOSEventDispatcher :public EventDispatcher
 {
 public:
     virtual void touchesBegan(CCSet* touches, CCEvent* pEvent);
     virtual void touchesMoved(CCSet* touches, CCEvent* pEvent);
     virtual void touchesEnded(CCSet* touches, CCEvent* pEvent);
     virtual void touchesCancelled(CCSet* touches, CCEvent* pEvent);
-protected:
-    std::vector<std::shared_ptr<EventHandler>> handlers;
     
 };
-
+FE_NS_END
 #endif /* defined(__FEX__EventDispatcher__) */

@@ -12,14 +12,15 @@
 #include "FE.h"
 #include "SpriteBase.h"
 #include <functional>
+#include "EventDispatcher.h"
 FE_NS_BEGIN
 
-class Button : public SpriteBase, public cocos2d::CCTargetedTouchDelegate//, public cocos2d::CCObject
+class Button : public SpriteBase, public TouchEventHandler
 {
 public:
     Button( SpawnParams const &params, std::function<void(void*)> handler );
     ~Button();
-    virtual bool ccTouchBegan(cocos2d::CCTouch *pTouch, cocos2d::CCEvent *pEvent);
+    virtual void touchesBegan(CCSet* touches, CCEvent* pEvent);
     
 protected:
     std::function<void(void*)> handler;
